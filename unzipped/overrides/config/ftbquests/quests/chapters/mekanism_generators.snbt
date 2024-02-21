@@ -1,0 +1,978 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mekanism_generators"
+	group: "37DA37ED2FACCAC8"
+	hide_quest_details_until_startable: true
+	icon: {
+		Count: 1b
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "mekanismgenerators:item/turbine_blade"
+		}
+	}
+	id: "3C54A985855BAF91"
+	images: [
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 3.0d
+			hover: [ ]
+			image: "minecraft:textures/gui/presets/aotd_fission_reactor.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 9.0d
+			y: 1.0d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 3.0d
+			hover: [ ]
+			image: "minecraft:textures/gui/presets/fusion_reactor.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 2.0d
+			y: 6.0d
+		}
+	]
+	order_index: 2
+	progression_mode: "flexible"
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["61D239FE8DDD98E0"]
+			description: ["Generates constant power dependant only on its y-level, so long as the blades have enough clearance. Maxes out at 480 FE/t at y=255 or above."]
+			id: "040DE9498B04EB45"
+			optional: true
+			rewards: [
+				{
+					id: "7DF407764AFCDF04"
+					item: "mekanism:energy_tablet"
+					type: "item"
+				}
+				{
+					id: "39A4177A3834026E"
+					item: "mekanism:energy_tablet"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			subtitle: "Constant Free Energy"
+			tasks: [{
+				disable_toast: true
+				id: "0F6003ACF7AC34A9"
+				item: "mekanismgenerators:wind_generator"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -4.0d
+		}
+		{
+			id: "50009778B7D24D59"
+			rewards: [
+				{
+					id: "26B56FAB9B5AFDCA"
+					item: "mekanismgenerators:solar_generator"
+					type: "item"
+				}
+				{
+					id: "1D6ABE3EEEAF5ACD"
+					item: "mekanismgenerators:solar_generator"
+					type: "item"
+				}
+			]
+			shape: "square"
+			subtitle: "Free Daylight Energy"
+			tasks: [{
+				disable_toast: true
+				id: "4BA4F49CC955D7E6"
+				item: "mekanismgenerators:solar_generator"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["50009778B7D24D59"]
+			hide: false
+			id: "7B5D35854C483470"
+			rewards: [{
+				id: "120ADE73C129873E"
+				item: "mekanismgenerators:advanced_solar_generator"
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				disable_toast: true
+				id: "71BEE78CA948BBAD"
+				item: "mekanismgenerators:advanced_solar_generator"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["50009778B7D24D59"]
+			description: ["The solar panels from &oMore Solar Panels&r become exponentially better as you increase the tiers. These solar panels &oalso function at night&r (with reduced power generation)."]
+			id: "087EE100EF49475F"
+			optional: true
+			rewards: [{
+				id: "65AF2FC0552A1C4C"
+				item: "mekanism:energy_tablet"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				disable_toast: true
+				id: "18434177FAA957BD"
+				item: "solarpanels:advanced_solar_panel"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"087EE100EF49475F"
+				"5507B5A25122B5EE"
+			]
+			id: "797C39ACBFBA3755"
+			optional: true
+			rewards: [{
+				id: "75677C06AC7A9425"
+				item: "mekanism:energy_tablet"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				disable_toast: true
+				id: "67709ED9E2195E05"
+				item: "solarpanels:hybrid_solar_panel"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"797C39ACBFBA3755"
+				"401F21347665C41E"
+			]
+			id: "7AB042780E0870DC"
+			optional: true
+			rewards: [{
+				id: "6964F92830F8DE27"
+				item: "mekanism:energy_tablet"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				disable_toast: true
+				id: "1814AB572C47F781"
+				item: "solarpanels:ultimate_hybrid_solar_panel"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"7AB042780E0870DC"
+				"74008E93D76D5E3E"
+			]
+			id: "33BA019227F8FEB8"
+			optional: true
+			rewards: [{
+				id: "691FF64162DA35AC"
+				item: "solarpanels:improved_energy_tablet"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				disable_toast: true
+				id: "4D935D893E7068E4"
+				item: "solarpanels:quantum_solar_panel"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"33BA019227F8FEB8"
+				"10038E93A72CE4B5"
+			]
+			id: "2CCEAB2BAAB20BA3"
+			optional: true
+			rewards: [{
+				id: "5C155F6CC1BB14D5"
+				item: "solarpanels:quantum_energy_tablet"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				disable_toast: true
+				id: "3ECD6A4A2B254070"
+				item: "solarpanels:spectral_solar_panel"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"2CCEAB2BAAB20BA3"
+				"40247D71817C3322"
+			]
+			id: "5255C21AD41F3736"
+			optional: true
+			rewards: [{
+				id: "3BAA811A0790CB03"
+				item: "solarpanels:spectral_energy_tablet"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				disable_toast: true
+				id: "0438F5C51E17FEE3"
+				item: "solarpanels:singular_solar_panel"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5255C21AD41F3736"]
+			id: "0485AE95FE750529"
+			optional: true
+			rewards: [{
+				id: "5529243E103774D7"
+				item: "solarpanels:singular_energy_tablet"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				disable_toast: true
+				id: "21AD4C2FF1EA89FF"
+				item: "solarpanels:light_absorbing_solar_panel"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"0485AE95FE750529"
+				"3818692FCB23260D"
+			]
+			id: "168C97330DC42F0A"
+			optional: true
+			rewards: [{
+				id: "381F7D92253B0F80"
+				item: "solarpanels:light_absorbing_energy_tablet"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				disable_toast: true
+				id: "10395D1A6272AD1F"
+				item: "solarpanels:photonic_solar_panel"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"77A988766B0D62D3"
+				"3A69D3B9F6DA4D17"
+			]
+			id: "2B6228865F19BB19"
+			shape: "square"
+			subtitle: "Needed for Uranium Hexaflouride"
+			tasks: [{
+				disable_toast: true
+				id: "2878B68745F11140"
+				item: "mekanism:chemical_infuser"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"261EC605D7331140"
+				"5C384B64865C8226"
+				"6DB5CD9F495351C3"
+			]
+			id: "3A69D3B9F6DA4D17"
+			rewards: [{
+				id: "587EFF72D94C5049"
+				item: "mekanism:chemical_oxidizer"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "Needed for Uranium Oxide"
+			tasks: [{
+				disable_toast: true
+				id: "779DDA7A68F78DBC"
+				item: "mekanism:chemical_oxidizer"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7660E92DA19A2896"
+				"13D1880E930A5EC4"
+				"0DC630AA75E6F1A6"
+				"74008E93D76D5E3E"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"&l&aGas Upgrade&r&ls recommended!&r"
+				""
+				"A note on creating &6Sulfuric Acid&r:"
+				""
+				"Although you can &odirectly&r convert &eSulfur Dust&r into &6Sulfuric Acid&r, the recommended method outlined here uses several intermediary steps but is &n50 times more efficient&r."
+				""
+				"The creation of &eSulfur Dust&r from &0Coal&r/&0Charcoal&r is also included on this page, but ultimately these steps are optional. &eSulfur Dust&r can alternatively be created from &7Gunpowder&r, &7Gunpowder&r from &8Flint&r, and &8Flint&r eventually from &7Cobblestone&r."
+			]
+			id: "77A988766B0D62D3"
+			rewards: [{
+				id: "1D0BF843E23F333A"
+				item: "mekanism:chemical_dissolution_chamber"
+				type: "item"
+			}]
+			shape: "gear"
+			subtitle: "Needed for Hydrofluoric Acid"
+			tasks: [{
+				disable_toast: true
+				id: "52FBB9C33562868F"
+				item: "mekanism:chemical_dissolution_chamber"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			disable_toast: true
+			id: "7660E92DA19A2896"
+			shape: "rsquare"
+			tasks: [{
+				disable_toast: true
+				id: "462C7F57D349A1B7"
+				item: "mekanism:fluorite_gem"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"2FCA9A1DB2A44243"
+				"22B9EE2D880A3725"
+			]
+			id: "13D1880E930A5EC4"
+			optional: true
+			shape: "diamond"
+			subtitle: "Needed for Sulfuric Acid"
+			tasks: [{
+				disable_toast: true
+				id: "0EB3E578A156FFAB"
+				item: "mekanism:chemical_infuser"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"4C140EB2F8767E3E"
+				"0DF9F82D9511EE63"
+			]
+			id: "2FCA9A1DB2A44243"
+			optional: true
+			rewards: [{
+				id: "1552F532BE22AFEE"
+				item: "mekanism:chemical_infuser"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "Needed for Sulfur Trioxide"
+			tasks: [{
+				disable_toast: true
+				id: "3011B0503BC30EAC"
+				item: "mekanism:chemical_infuser"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"5BAB7CC59E011066"
+				"261EC605D7331140"
+			]
+			description: [""]
+			id: "4C140EB2F8767E3E"
+			optional: true
+			shape: "diamond"
+			subtitle: "Needed for Sulfur Dioxide"
+			tasks: [{
+				disable_toast: true
+				id: "09F15453AFCCF56D"
+				item: "mekanism:chemical_oxidizer"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"0DF9F82D9511EE63"
+				"1599787492F01BB7"
+				"20397741D8700612"
+			]
+			description: [
+				"Tip: you can dispose of the Hydrogen byproduct by outputting to a Chemical Tank and setting the tank to dump excess."
+				""
+				"Optionally, Gunpowder and &bHydrogen Chloride&r can be used in a &7Chemical Injection Chamber&r to create &eSulfur Dust&r."
+			]
+			id: "5BAB7CC59E011066"
+			optional: true
+			rewards: [{
+				id: "350BE9A4E9C72741"
+				item: "mekanism:pressurized_reaction_chamber"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "Needed for Sulfur Dust"
+			tasks: [{
+				disable_toast: true
+				id: "7147938A43EA6DA6"
+				item: "mekanism:pressurized_reaction_chamber"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"78A10BADE264F811"
+				"261EC605D7331140"
+			]
+			id: "22B9EE2D880A3725"
+			optional: true
+			rewards: [{
+				id: "1BD8828287D20773"
+				item: "mekanism:rotary_condensentrator"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "Needed for Water Vapor"
+			tasks: [{
+				disable_toast: true
+				id: "3D0CCD81D6E0C4A9"
+				item: "mekanism:rotary_condensentrator"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["78A10BADE264F811"]
+			description: ["Tip: you can dispose of the Hydrogen byproduct by outputting to a Chemical Tank and setting the tank to dump excess."]
+			id: "0DF9F82D9511EE63"
+			optional: true
+			rewards: [{
+				id: "52B3624CD8B129CC"
+				item: "mekanism:electrolytic_separator"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "Needed for Oxygen"
+			tasks: [{
+				disable_toast: true
+				id: "02E280FF8C214CDC"
+				item: "mekanism:electrolytic_separator"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4B02E1C3F918DDC6"]
+			id: "78A10BADE264F811"
+			optional: true
+			rewards: [{
+				id: "574EC8C960F4FE7E"
+				item: "mekanism:electric_pump"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "Needed for Water"
+			tasks: [{
+				disable_toast: true
+				id: "4060CD60C94CB04B"
+				item: "mekanism:electric_pump"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3544AA70216D2F8F"]
+			description: [
+				"Do not attempt to pick up or break while containing &aradioactive&r material! This will &airradiate&r the area!"
+				""
+				"&8Nuclear Waste&r is needed for many end-game recipes!"
+				""
+				"&0Spent Nuclear Waste&r has no uses, and can be safely destroyed."
+			]
+			id: "1F65A34CE8A22B2E"
+			optional: true
+			rewards: [{
+				count: 3
+				id: "66B7B4C85093F1E2"
+				item: "mekanism:radioactive_waste_barrel"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "Nuclear Waste Disposal"
+			tasks: [{
+				disable_toast: true
+				id: "12C23D19B50FB9ED"
+				item: "mekanism:radioactive_waste_barrel"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.5d
+		}
+		{
+			disable_toast: true
+			id: "79AEA19175F5A380"
+			shape: "rsquare"
+			tasks: [{
+				disable_toast: true
+				id: "63C5615887DF6922"
+				item: "mekanism:ingot_uranium"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["25DFACEB8666557F"]
+			id: "43997AB7F0553626"
+			optional: true
+			rewards: [
+				{
+					count: 64
+					id: "07C20834C1AEEBD0"
+					item: "mekanism:bio_fuel"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "4E41D6CFA12AAAF8"
+					item: "mekanism:bio_fuel"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			subtitle: "Better Energy"
+			tasks: [{
+				disable_toast: true
+				id: "17FE9C51CF4B200D"
+				item: "mekanismgenerators:bio_generator"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["202B90FF4BCF6291"]
+			id: "25DFACEB8666557F"
+			rewards: [{
+				count: 64
+				id: "0D67BBFDCE51B66B"
+				item: "mekanism:bio_fuel"
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "Eventually Necessary"
+			tasks: [{
+				disable_toast: true
+				id: "07CC9D3D844EE250"
+				item: "mekanism:bio_fuel"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"2A0D932FF917AF0D"
+				"29988517B4DF4E18"
+			]
+			description: [
+				"&l&dBuilding a Fission Reactor is NOT required to defeat the Ender Dragon, only to 100\\% the modpack.&r"
+				""
+				"&lMekanism&r includes several &aradioactive&r fluids. &lBreaking any object that contains radioactive fluids will &n&airradiate the surrounding chunks&r. Additionally, a Fission Reactor that is backed up on &8Nuclear Waste&r will also begin to &airradiate&r the area."
+				""
+				"Radiation disperses up to &oseveral chunks&r away in each direction, and can take &nseveral real-time hours&r to completely dissipate. Any mobs (including the player) that absorb &e60μsv or more&r of radiation will gradually take damage until they &4&l&o&ndie&r. Higher dosage means faster death."
+				"{@pagebreak}"
+				"&aRadioactive&r materials cannot be stored in Chemical Tanks or &8Dynamic Tank&r multiblocks, and &ncannot be trashed&r. They can only be stored in &eRadioactive Waste Barrel&rs, &aPressurized Tube&rs, and a select few machines."
+				""
+				"Again, breaking any object that contains radioactive fluids will &n&airradiate the surrounding chunks&r. This includes &eRadioactive Waste Barrels&r, and also applies to picking up an object via the &lCarry On&r mod."
+				"{@pagebreak}"
+				"After building an Industrial Turbine to generate power, you will probably be producing much more power than is needed. Consider building an Energized Induction Matrix multiblock to store the power, otherwise you will need to trash the power."
+				""
+				"If your Industrial Turbine becomes fully charged, it will &ostop consuming &7Steam&r, &cdepleting your reactor's coolant supply&r."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "chipped:block/lime_concrete/warning_lime_concrete"
+				}
+			}
+			id: "3544AA70216D2F8F"
+			rewards: [{
+				id: "5ED74FE4B0D7187B"
+				item: "mekanism:geiger_counter"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "Fission Reactor Safety Information"
+			tasks: [{
+				disable_toast: true
+				id: "4471514513D5E2D7"
+				title: "KNOWING THE RISKS, I WISH TO CONTINUE"
+				type: "checkmark"
+			}]
+			title: "RADIATION"
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3544AA70216D2F8F"]
+			description: [
+				"Wearing the full &6Hazmat Suit&r guarantees 100\\% radiation prevention! Does not prevent damage from radiation you have already absorbed."
+				""
+				"The &eGeiger Counter&r tells you local levels of radiation."
+				"The &cDosimeter&r tells you how irradiated you currently are."
+			]
+			icon: "mekanism:hazmat_mask"
+			id: "3AF752FBCC722CC0"
+			optional: true
+			rewards: [{
+				id: "50CB3B133DC5AA63"
+				item: "mekanism:dosimeter"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "\"Optional\""
+			tasks: [
+				{
+					id: "6D901C8F0BF055FD"
+					item: "mekanism:hazmat_mask"
+					type: "item"
+				}
+				{
+					id: "638973EFFDAAEF66"
+					item: "mekanism:hazmat_gown"
+					type: "item"
+				}
+				{
+					id: "4ABA132DCFB8A980"
+					item: "mekanism:hazmat_pants"
+					type: "item"
+				}
+				{
+					id: "6B098E0D74C4FDCF"
+					item: "mekanism:hazmat_boots"
+					type: "item"
+				}
+			]
+			title: "Hazmat Kit"
+			x: 6.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["330515F72EF92065"]
+			description: [
+				"Turn ten buckets of &8Nuclear Waste&r into one &2Plutonium Pellet&r, then into four &7Reprocessed Fissile Fragments&r. Reprocessed fuel can then be turned into two buckets of Fissile Fuel each, recycling 80\\% of your original Fissile Fuel!"
+				""
+				"Creating a &2Plutonium Pellet&r requires Fluorite Dust and generates one bucket of &0Spent Nuclear Waste&r, which must be disposed of in a &6Radioactive Waste Barrel&r."
+			]
+			id: "17727FFC6815FEE6"
+			optional: true
+			rewards: [{
+				id: "387FF3CBDE71FE19"
+				item: "mekanism:chemical_oxidizer"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "Reprocess Nuclear Waste"
+			tasks: [{
+				disable_toast: true
+				id: "460C86588784B40D"
+				item: "mekanism:reprocessed_fissile_fragment"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 1.0d
+		}
+		{
+			disable_toast: true
+			id: "20397741D8700612"
+			optional: true
+			shape: "rsquare"
+			tasks: [{
+				id: "3BF37E8E777DB7F7"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "minecraft:coal"
+							}
+							{
+								Count: 1b
+								id: "minecraft:charcoal"
+							}
+							{
+								Count: 1b
+								id: "minecraft:coal_block"
+							}
+							{
+								Count: 1b
+								id: "mekanism:block_charcoal"
+							}
+						]
+					}
+				}
+				title: "Coal or Charcoal"
+				type: "item"
+			}]
+			title: "Carbon"
+			x: -3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["79AEA19175F5A380"]
+			id: "5C384B64865C8226"
+			shape: "square"
+			subtitle: "Needed for Yellow Cake Uranium"
+			tasks: [{
+				id: "36BFD616D503A74C"
+				item: "mekanism:enrichment_chamber"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5C6355E15C1CDDF1"
+				"4B02E1C3F918DDC6"
+			]
+			description: [
+				"Have you considered using an &7Electrolytic Separator&r for Hydrogen fuel?"
+				""
+				"Well, so did the author of &lMekanism&r, which is why &aEnergy Upgrade&rs &odo not increase the efficiency of &7Electrolytic Separator&rs, only their energy capacity. No free energy loop :("
+			]
+			id: "5213D2F4E55D5541"
+			optional: true
+			rewards: [{
+				count: 2
+				id: "6D80538958B175AA"
+				item: "mekanism:steel_casing"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "Infinite Energy?"
+			tasks: [{
+				id: "153E4C66CE9D1D3F"
+				item: "mekanismgenerators:gas_burning_generator"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["330515F72EF92065"]
+			description: [
+				"Apply to any &7Electric Pump&r pumping &9Water&r to instead start pumping &1Heavy Water&r."
+				""
+				"I'm concerned by the implications..."
+			]
+			id: "11550CC463A8FD0A"
+			optional: true
+			shape: "rsquare"
+			subtitle: "Needed for Heavy Water"
+			tasks: [{
+				id: "4B857423B8F47612"
+				item: "mekanism:upgrade_filter"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"3922AAC0A2A06400"
+				"330515F72EF92065"
+			]
+			id: "5C0FF49619EBA219"
+			optional: true
+			shape: "diamond"
+			subtitle: "Needed for Tritium"
+			tasks: [{
+				id: "48D9007FCB21CBA0"
+				item: "mekanism:solar_neutron_activator"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["11550CC463A8FD0A"]
+			id: "6E5DBE92BF20FBC2"
+			optional: true
+			shape: "diamond"
+			subtitle: "Needed for Deuterium"
+			tasks: [{
+				id: "7BFE3A483359EA37"
+				item: "mekanism:electrolytic_separator"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"5C0FF49619EBA219"
+				"6E5DBE92BF20FBC2"
+			]
+			description: ["Even if you do not use &5D-T Fuel&r in your Fusion Reactor, consider keeping one of these around in case you need more &eHohlraum&rs."]
+			id: "654B09F77DDA0928"
+			optional: true
+			shape: "diamond"
+			subtitle: "Needed for D-T Fuel"
+			tasks: [{
+				id: "42CDE0082C48D7A5"
+				item: "mekanism:chemical_infuser"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["654B09F77DDA0928"]
+			id: "1E079BD516879402"
+			optional: true
+			shape: "diamond"
+			subtitle: "Needed to Ignite Fusion Reactors"
+			tasks: [{
+				id: "3D8043F7BA18EBB1"
+				item: {
+					Count: 1b
+					id: "mekanismgenerators:hohlraum"
+					tag: {
+						mekData: {
+							GasTanks: [{
+								Tank: 0b
+								stored: {
+									amount: 10L
+									gasName: "mekanismgenerators:fusion_fuel"
+								}
+							}]
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2B6228865F19BB19"]
+			description: [
+				"By now, you should have at least crafted all the machines required to produce Fissile Fuel. The organization of the quests themselves should serve as the Fissile Fuel recipe if you need a reminder. Next, you will assemble your Fission Reactor."
+				""
+				"&l&dBuilding a Fission Reactor is NOT required to defeat the Ender Dragon, only to 100\\% the modpack.&r"
+			]
+			id: "302DECA91C4A6496"
+			shape: "square"
+			subtitle: "Needed for Fissile Fuel"
+			tasks: [{
+				id: "5AA17B2AAC1EF979"
+				item: "mekanism:isotopic_centrifuge"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["302DECA91C4A6496"]
+			description: [
+				"A Fission Reactor accumulates damage over time if the reactor's temperature rises above 1200K. The reactor's temperature is determined by the fuel burn rate, the shape of the reactor, the number and positions of the &7Fission Fuel Assembly&rs, and the type of &9coolant&r used. A running Fission Reactor will &oalways overheat&r if the &9coolant&r runs out."
+				""
+				"&dThe rate that fuel is burned can be changed in the \"Stats\" tab in the Fission Reactor gui.&r"
+				"{@pagebreak}"
+				"Once a reactor's damage exceeds 100\\%, the reactor will have a &ameltdown&r after a random amount of time. The higher the damage is past 100\\%, the sooner the explosion is guaranteed to be. A &ameltdown&r causes a &clarge explosion&r, destroying blocks, and &airradiating&r the surrounding chunks."
+				""
+				"A reactor's damage &owill slowly go down over time&r so long as it is operated at safe temperatures. A reactor that was rebuilt following a meltdown will start with some amount of damage. This can be avoided by breaking and re-placing all surviving reactor blocks."
+			]
+			icon: "minecraft:cracked_stone_bricks"
+			id: "2A0D932FF917AF0D"
+			shape: "gear"
+			tasks: [{
+				id: "38974CD8D0E047AA"
+				title: "I UNDERSTAND"
+				type: "checkmark"
+			}]
+			title: "Fission Reactor: Damage"
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["302DECA91C4A6496"]
+			description: [
+				"Fission Reactors take in Fissile Fuel and &9coolant&r and output &8Nuclear Waste&r (&aradioactive&r) and &6heated coolant&r, which can generate power after building additional multiblock structures. &8Nuclear Waste&r and direct access to sunlight &orequired&r for end-game &lMekanism&r recipes."
+				""
+				"&dThe rate that fuel is burned can be changed in the \"Stats\" tab in the Fission Reactor gui.&r"
+				"{@pagebreak}"
+				"You can use either &1Water&r or &bSodium&r as your &9coolant&r, with &1Water&r turning into &7Steam&r and &bSodium&r turning into &6Superheated Sodium&r."
+				""
+				"Both coolants have the same energy efficiency, but a &bSodium&r-cooled reactor can achieve higher reaction rates. Using &bSodium&r also requires pumping the &6Superheated Sodium&r into a &0Thermoelectric Boiler&r multiblock first, which outputs &7Steam&r."
+				""
+				"&7Steam&r can then be pumped into an Industrial Turbine multiblock to generate power (and recycle &1Water&r)."
+			]
+			icon: "minecraft:water_bucket"
+			id: "29988517B4DF4E18"
+			shape: "gear"
+			tasks: [{
+				id: "1946A8A12ECA466D"
+				title: "I UNDERSTAND"
+				type: "checkmark"
+			}]
+			title: "Fission Reactor: Coolant"
+			x: 4.0d
+			y: 0.0d
+		}
+	]
+	title: "Generators"
+}

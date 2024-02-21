@@ -1,0 +1,4492 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "adventure_equipment"
+	group: "11332E0C2CB4D054"
+	hide_quest_until_deps_visible: true
+	icon: {
+		Count: 1b
+		id: "born_in_chaos_v1:sharpened_dark_metal_sword"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "49312B19A5122C3E"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["5490E0FF9D15FB0D"]
+			id: "6B2664D6F3AD84EF"
+			rewards: [{
+				count: 16
+				id: "268793D97BBE02C9"
+				item: "minecraft:iron_ingot"
+				team_reward: false
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "0CFE6207B6D82484"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "548FDC5A982EF50A"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "36FDA93E677C8357"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "10A1010659B1B096"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Iron Armor"
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			id: "3C90CA68E53E9345"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "000AF9F7BA76FC14"
+				item: "minecraft:iron_bars"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "Craftable!"
+			tasks: [
+				{
+					id: "42EA2C73A4ED43D6"
+					item: {
+						Count: 1b
+						id: "minecraft:chainmail_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1E22C66FC8B80543"
+					item: {
+						Count: 1b
+						id: "minecraft:chainmail_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4281A5A3E895E07F"
+					item: {
+						Count: 1b
+						id: "minecraft:chainmail_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6C8CF7B01E5F1E97"
+					item: {
+						Count: 1b
+						id: "minecraft:chainmail_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Chainmail Armor"
+			x: 3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6B2664D6F3AD84EF"]
+			id: "646CA11F9128DD51"
+			optional: true
+			rewards: [{
+				id: "0EDB7B7AF9654FC0"
+				item: "aotdextras:obscurium_ingot"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "2B6C9A7B9B43B14D"
+					item: {
+						Count: 1b
+						id: "born_in_chaos_v1:spiny_shell_armor_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "442EFE98F3EC7275"
+					item: {
+						Count: 1b
+						id: "born_in_chaos_v1:spiny_shell_armor_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Spiny Armor"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6B2664D6F3AD84EF"]
+			id: "24C92E444192648C"
+			optional: true
+			rewards: [{
+				count: 2
+				id: "68E6AF620130182D"
+				item: "aotdextras:obscurium_ingot"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "0025557884364A29"
+					item: {
+						Count: 1b
+						id: "aquamirae:terrible_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3ED5857CE09A0920"
+					item: {
+						Count: 1b
+						id: "aquamirae:terrible_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "073338CCAFC068EC"
+					item: {
+						Count: 1b
+						id: "aquamirae:terrible_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5E46436D297117A2"
+					item: {
+						Count: 1b
+						id: "aquamirae:terrible_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Terrible Armor"
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"288D9B4B31959997"
+				"2ED556D1B5D75583"
+			]
+			hide: false
+			id: "3BB6136AF114EF0C"
+			rewards: [{
+				count: 16
+				id: "45FC2140D55E8A79"
+				item: "mekanism:ingot_bronze"
+				team_reward: false
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4FE3D128421BB031"
+					item: {
+						Count: 1b
+						id: "mekanismtools:bronze_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7CCC67CE9B04E251"
+					item: {
+						Count: 1b
+						id: "mekanismtools:bronze_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6F4227341DF984E6"
+					item: {
+						Count: 1b
+						id: "mekanismtools:bronze_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1C9AC27E250CF414"
+					item: {
+						Count: 1b
+						id: "mekanismtools:bronze_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Bronze Armor"
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3BB6136AF114EF0C"]
+			id: "644758EDE9D762AD"
+			optional: true
+			rewards: [{
+				count: 2
+				id: "18D2948DCF64C715"
+				item: "aotdextras:obscurium_block"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "34702F631C3862A1"
+					item: {
+						Count: 1b
+						id: "undead_unleashed:shadow_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "724239365B76B307"
+					item: {
+						Count: 1b
+						id: "undead_unleashed:shadow_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "275CFF5614C3C648"
+					item: {
+						Count: 1b
+						id: "undead_unleashed:shadow_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4AD16BDEEA9916F8"
+					item: {
+						Count: 1b
+						id: "undead_unleashed:shadow_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Nightweaver Armor"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3BB6136AF114EF0C"]
+			id: "48B92B0EB5FBCCF0"
+			optional: true
+			rewards: [{
+				count: 2
+				id: "361B0801F553376C"
+				item: "aotdextras:obscurium_block"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "0AD5FFA7C8A8DC08"
+					item: {
+						Count: 1b
+						id: "born_in_chaos_v1:nightmare_mantleofthe_night_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "55D32331BFCF491B"
+					item: {
+						Count: 1b
+						id: "born_in_chaos_v1:nightmare_mantleofthe_night_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "36590FF8215FF498"
+					item: {
+						Count: 1b
+						id: "born_in_chaos_v1:nightmare_mantleofthe_night_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "303A862AE0F3A028"
+					item: {
+						Count: 1b
+						id: "born_in_chaos_v1:nightmare_mantleofthe_night_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Nightmare Armor"
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6B2664D6F3AD84EF"
+				"69408C9F74F8A508"
+			]
+			id: "3B818871E40F04CE"
+			optional: true
+			rewards: [{
+				count: 2
+				id: "0D73565F301A2C13"
+				item: "aotdextras:obscurium_ingot"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "6F974491E6124816"
+					item: {
+						Count: 1b
+						id: "unusualend:chorus_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "42CEAC06404FC978"
+					item: {
+						Count: 1b
+						id: "unusualend:enderling_scrap_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7770194995D35FDB"
+					item: {
+						Count: 1b
+						id: "unusualend:bolok_scale_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&lUnusual End&r Armor"
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			id: "5490E0FF9D15FB0D"
+			rewards: [{
+				id: "7F7096CE6FE187DF"
+				item: "aotdextras:obscurium_ingot"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "182E7102E7C83781"
+				item: "aotdextras:obscurium_ingot"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5490E0FF9D15FB0D"]
+			description: ["Make note of the uncapped growth of Sugar Cane and the Enrichment Chamber recipe for Obscurium, if you haven't already."]
+			id: "288D9B4B31959997"
+			rewards: [{
+				id: "5D12F22C38C30144"
+				item: "aotdextras:obscurium_block"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "Invest in Sugar Cane!"
+			tasks: [{
+				id: "12D067E607A43E2C"
+				item: "aotdextras:obscurium_block"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["288D9B4B31959997"]
+			id: "03D04FC4143DAE22"
+			rewards: [{
+				id: "705829BAB6F58FDD"
+				item: "aotdextras:occultium_ingot"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "092F600493E61794"
+				item: "aotdextras:occultium_ingot"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["03D04FC4143DAE22"]
+			id: "64DF84ECE6309CF9"
+			rewards: [{
+				id: "0A7F820AC7AEE8E9"
+				item: "aotdextras:nihilum_ingot"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "4E99231A58087385"
+				item: "aotdextras:nihilum_ingot"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["64DF84ECE6309CF9"]
+			id: "1AAD629AEAD5CC94"
+			rewards: [{
+				id: "50978E9B43880340"
+				item: "aotdextras:nihilum_block"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "4E49DF21AF36C448"
+				item: "aotdextras:nihilum_block"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["03D04FC4143DAE22"]
+			hide: false
+			id: "1B1E79910C731F02"
+			rewards: [{
+				count: 16
+				id: "481D8676C32D3B38"
+				item: "mekanism:ingot_steel"
+				team_reward: false
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "72EC2F4B4F709030"
+					item: {
+						Count: 1b
+						id: "mekanismtools:steel_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "24FE224D60FC6F23"
+					item: {
+						Count: 1b
+						id: "mekanismtools:steel_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0989B726975867AA"
+					item: {
+						Count: 1b
+						id: "mekanismtools:steel_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0CD094FDB599BC28"
+					item: {
+						Count: 1b
+						id: "mekanismtools:steel_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Steel Armor"
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"03D04FC4143DAE22"
+				"292DBB3F48EF0999"
+				"64BD4DC6EC6F0255"
+			]
+			hide_dependency_lines: true
+			id: "58B6EE60036DD3A1"
+			optional: true
+			shape: "diamond"
+			tasks: [
+				{
+					id: "1D58A4C0A637E426"
+					item: {
+						Count: 1b
+						id: "aquamirae:three_bolt_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "58DA9253D8BE5B8F"
+					item: {
+						Count: 1b
+						id: "aquamirae:three_bolt_suit"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "43E2FBCD9A6E9DB2"
+					item: {
+						Count: 1b
+						id: "aquamirae:three_bolt_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7919257B89C40D2E"
+					item: {
+						Count: 1b
+						id: "aquamirae:three_bolt_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Three-Bolt Suit"
+			x: 5.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1B1E79910C731F02"]
+			id: "317D6EDE69C5A647"
+			rewards: [{
+				count: 16
+				id: "227BE4C29F6B3183"
+				item: "minecraft:diamond"
+				team_reward: false
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "2335D3E5C0BBBDBA"
+					item: {
+						Count: 1b
+						id: "minecraft:diamond_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "201CD35B104E76B3"
+					item: {
+						Count: 1b
+						id: "minecraft:diamond_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6F78D5DF97E123A1"
+					item: {
+						Count: 1b
+						id: "minecraft:diamond_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "688174DC78CE7082"
+					item: {
+						Count: 1b
+						id: "minecraft:diamond_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Diamond Armor"
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["317D6EDE69C5A647"]
+			dependency_requirement: "one_completed"
+			id: "33C632C2FBCA15B6"
+			optional: true
+			rewards: [{
+				count: 2
+				id: "281C5E51B200F88D"
+				item: "aotdextras:occultium_ingot"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "17B0563F336BA138"
+					item: {
+						Count: 1b
+						id: "undead_unleashed:grave_metal_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "49523C81AE8BA2CA"
+					item: {
+						Count: 1b
+						id: "undead_unleashed:grave_metal_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "01738433F8EF7C69"
+					item: {
+						Count: 1b
+						id: "undead_unleashed:grave_metal_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "764B66DBA32171B4"
+					item: {
+						Count: 1b
+						id: "undead_unleashed:grave_metal_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Grave Metal Armor"
+			x: 2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5A6037FC53A5CA7D"]
+			dependency_requirement: "one_completed"
+			id: "39DA41F2BECB139E"
+			optional: true
+			rewards: [{
+				count: 2
+				id: "1DC7B5C8FD346CB3"
+				item: "aotdextras:occultium_ingot"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "7683D9F890E7BFB9"
+					item: {
+						Count: 1b
+						id: "monsterplus:crystal_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "392E9E0C672DF53B"
+					item: {
+						Count: 1b
+						id: "monsterplus:crystal_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6E3E8DBF90E2500D"
+					item: {
+						Count: 1b
+						id: "monsterplus:crystal_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "77BC029F859167BA"
+					item: {
+						Count: 1b
+						id: "monsterplus:crystal_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Ancient Crystal Armor"
+			x: 3.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["317D6EDE69C5A647"]
+			dependency_requirement: "one_completed"
+			id: "2A718021C6286CF8"
+			optional: true
+			rewards: [{
+				count: 2
+				id: "686B607D29992B3D"
+				item: "aotdextras:occultium_ingot"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "10474911608AC7DF"
+					item: {
+						Count: 1b
+						id: "minecraft:netherite_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6E3E278862CE1498"
+					item: {
+						Count: 1b
+						id: "minecraft:netherite_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "367E155165424076"
+					item: {
+						Count: 1b
+						id: "minecraft:netherite_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5643F1F1F0CCE511"
+					item: {
+						Count: 1b
+						id: "minecraft:netherite_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Netherite Armor"
+			x: 2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["64DF84ECE6309CF9"]
+			hide: false
+			id: "44C92F2DEA6CF79F"
+			rewards: [{
+				count: 16
+				id: "2D939AD7FCACAB48"
+				item: "mekanism:block_osmium"
+				team_reward: false
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "7AFF75764169BD49"
+					item: {
+						Count: 1b
+						id: "mekanismtools:osmium_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "40A3C0785428D84E"
+					item: {
+						Count: 1b
+						id: "mekanismtools:osmium_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7880150782F82FF3"
+					item: {
+						Count: 1b
+						id: "mekanismtools:osmium_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "12B387116C2983C3"
+					item: {
+						Count: 1b
+						id: "mekanismtools:osmium_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Osmium Armor"
+			x: 3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["44C92F2DEA6CF79F"]
+			description: ["&cEXPERIMENTAL RECIPE; MIGHT NEED BALANCE CHANGES"]
+			id: "0909EED5F6B462DB"
+			optional: true
+			rewards: [{
+				count: 2
+				id: "7A5950374235C75D"
+				item: "aotdextras:nihilum_ingot"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "0BED5C6745D3DFD6"
+					item: {
+						Count: 1b
+						id: "tenebrous_lands:siege_armor_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "53DEE72FCB003802"
+					item: {
+						Count: 1b
+						id: "tenebrous_lands:siege_armor_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "61DC44BD24A6D7BF"
+					item: {
+						Count: 1b
+						id: "tenebrous_lands:siege_armor_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2A379645F2B6E801"
+					item: {
+						Count: 1b
+						id: "tenebrous_lands:siege_armor_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Siege Armor"
+			x: 2.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1AAD629AEAD5CC94"]
+			hide: false
+			id: "410B2BD836BEAC32"
+			rewards: [{
+				count: 16
+				id: "1F7E845DB9EC805D"
+				item: "majruszsdifficulty:enderium_ingot"
+				team_reward: false
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "2CEE57D31830B841"
+					item: {
+						Count: 1b
+						id: "majruszsdifficulty:enderium_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "23E2765550A538C9"
+					item: {
+						Count: 1b
+						id: "majruszsdifficulty:enderium_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "66E3D93E3CB8652A"
+					item: {
+						Count: 1b
+						id: "majruszsdifficulty:enderium_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "18A2C465F981B59C"
+					item: {
+						Count: 1b
+						id: "majruszsdifficulty:enderium_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Enderium Armor"
+			x: 3.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["410B2BD836BEAC32"]
+			id: "7DDFC69A7541C0E7"
+			optional: true
+			rewards: [{
+				count: 2
+				id: "0C3DF62CB3859D39"
+				item: "aotdextras:nihilum_block"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "12986CF6FBD67D8D"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "aquamirae:abyssal_heaume"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "aquamirae:abyssal_tiara"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+					title: "Either Blinding Abyss Helmet"
+					type: "item"
+				}
+				{
+					id: "75B04058D186DD10"
+					item: {
+						Count: 1b
+						id: "aquamirae:abyssal_brigantine"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4F690711912465E1"
+					item: {
+						Count: 1b
+						id: "aquamirae:abyssal_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "592CE937186AE45E"
+					item: {
+						Count: 1b
+						id: "aquamirae:abyssal_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Blinding Abyss Armor"
+			x: 1.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["410B2BD836BEAC32"]
+			description: ["RECIPE MIGHT NEED BALANCE CHANGING"]
+			id: "0F9A5A7D414C84ED"
+			optional: true
+			rewards: [{
+				count: 2
+				id: "77598F7ABBB4EB4E"
+				item: "aotdextras:nihilum_block"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "5A92F10A9EB25B10"
+					item: {
+						Count: 1b
+						id: "born_in_chaos_v1:dark_metal_armor_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2952A8BDFD6A36E4"
+					item: {
+						Count: 1b
+						id: "born_in_chaos_v1:dark_metal_armor_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "145AA4D91EA054DB"
+					item: {
+						Count: 1b
+						id: "born_in_chaos_v1:dark_metal_armor_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6E3FB4FF2C667C4A"
+					item: {
+						Count: 1b
+						id: "born_in_chaos_v1:dark_metal_armor_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Dark Metal Armor"
+			x: 2.5d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"410B2BD836BEAC32"
+				"0DC630AA75E6F1A6"
+			]
+			id: "7AB61B9A0F2470AB"
+			optional: true
+			rewards: [{
+				count: 2
+				id: "733600A8C58329FC"
+				item: "aotdextras:nihilum_block"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "3A1D4AB55F35211A"
+					item: {
+						Count: 1b
+						id: "mekanismtools:refined_obsidian_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7CC901AA56E291DF"
+					item: {
+						Count: 1b
+						id: "mekanismtools:refined_obsidian_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3BA0A8E779AAC259"
+					item: {
+						Count: 1b
+						id: "mekanismtools:refined_obsidian_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "65CD33F2F958DC56"
+					item: {
+						Count: 1b
+						id: "mekanismtools:refined_obsidian_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Refined Obsidian Armor"
+			x: 3.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["40247D71817C3322"]
+			description: ["But without the Obscurium dependency!"]
+			id: "6FB3232144575A0D"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "3EDBBA88FFDD131A"
+				item: "mekanism:ingot_refined_glowstone"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "Bronze Equivalent"
+			tasks: [
+				{
+					id: "7FC1F1AE7839BA47"
+					item: {
+						Count: 1b
+						id: "mekanismtools:refined_glowstone_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7160429B50C1C969"
+					item: {
+						Count: 1b
+						id: "mekanismtools:refined_glowstone_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "475C63D132C411B8"
+					item: {
+						Count: 1b
+						id: "mekanismtools:refined_glowstone_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "292B3593BB6E62DA"
+					item: {
+						Count: 1b
+						id: "mekanismtools:refined_glowstone_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Refined Glowstone Armor"
+			x: 5.5d
+			y: -1.0d
+		}
+		{
+			hide_dependency_lines: true
+			id: "74664C8CB3F5ACFF"
+			optional: true
+			rewards: [{
+				id: "399A910A57FCE800"
+				item: "minecraft:lantern"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "6F4245F974B63853"
+				item: {
+					Count: 1b
+					id: "mining_helmet:mining_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 5.5d
+			y: -4.5d
+		}
+		{
+			id: "31B7280FE82259B7"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "31D72EBAFA43546F"
+				item: "minecraft:gold_ingot"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "0497E480765E994E"
+					item: {
+						Count: 1b
+						id: "minecraft:golden_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7E1F88D2D82DEDE4"
+					item: {
+						Count: 1b
+						id: "minecraft:golden_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "72D929C7F0BB5311"
+					item: {
+						Count: 1b
+						id: "minecraft:golden_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3CEC92830227689B"
+					item: {
+						Count: 1b
+						id: "minecraft:golden_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Golden Armor"
+			x: 3.0d
+			y: -5.0d
+		}
+		{
+			id: "22975CBF7D5CE95C"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "331DD9DC8B3ACC38"
+				item: "minecraft:lapis_lazuli"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "058B3099D4D9BEBD"
+					item: {
+						Count: 1b
+						id: "mekanismtools:lapis_lazuli_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6F6658BCDDBC4FDC"
+					item: {
+						Count: 1b
+						id: "mekanismtools:lapis_lazuli_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "21AC199F1587D18D"
+					item: {
+						Count: 1b
+						id: "mekanismtools:lapis_lazuli_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "79ECA7F49D9A3A4F"
+					item: {
+						Count: 1b
+						id: "mekanismtools:lapis_lazuli_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Lapis Lazuli Armor"
+			x: 3.0d
+			y: -6.0d
+		}
+		{
+			id: "223654AF0744EAA1"
+			optional: true
+			rewards: [{
+				id: "418557A04371E4F2"
+				item: "minecraft:scute"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "361EA737BA9FE5A3"
+				item: {
+					Count: 1b
+					id: "minecraft:turtle_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: -5.5d
+		}
+		{
+			id: "292DBB3F48EF0999"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "27CBD882CB9E6C8C"
+				item: "minecraft:leather"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "5D964479732283E1"
+					item: {
+						Count: 1b
+						id: "minecraft:leather_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "76D9C51C7AE7DF32"
+					item: {
+						Count: 1b
+						id: "minecraft:leather_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "341C3A58472A4766"
+					item: {
+						Count: 1b
+						id: "minecraft:leather_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "53DFE981D85D1EC0"
+					item: {
+						Count: 1b
+						id: "minecraft:leather_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Leather Armor"
+			x: 3.0d
+			y: -7.0d
+		}
+		{
+			id: "5C7772CBB5EE2ED9"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "22BB26D4AA5A746E"
+				item: "majruszsdifficulty:cloth"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "Leather + Set Bonus"
+			tasks: [
+				{
+					id: "7147C19C19BDC862"
+					item: {
+						Count: 1b
+						id: "majruszsdifficulty:tattered_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "61E9BA1B0D5FDE39"
+					item: {
+						Count: 1b
+						id: "majruszsdifficulty:tattered_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1C404F4AF1FD6277"
+					item: {
+						Count: 1b
+						id: "majruszsdifficulty:tattered_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7753C37CC731BBE0"
+					item: {
+						Count: 1b
+						id: "majruszsdifficulty:tattered_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Tattered Armor"
+			x: 5.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["03D04FC4143DAE22"]
+			id: "292C6C261E4CD650"
+			rewards: [{
+				id: "5382CBBCE1E8BC24"
+				item: "aotdextras:occultium_block"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "275CA7259518325A"
+				item: "aotdextras:occultium_block"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0C22F74403852C98"]
+			hide_dependency_lines: true
+			id: "475193CFE987BBAB"
+			optional: true
+			rewards: [{
+				id: "7727DBF251031DDA"
+				item: "mekanism:free_runners"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "54FA6C7192E8F29A"
+				item: "mekanism:free_runners_armored"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["5298D928D9D091CB"]
+			hide_dependency_lines: true
+			id: "1424933E61DE6163"
+			optional: true
+			rewards: [{
+				id: "6AF0B14B162FDEFB"
+				item: "mekanism:block_steel"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "630606A8DBF10FB3"
+				item: "mekanism:jetpack_armored"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["410B2BD836BEAC32"]
+			description: [
+				"The MekaSuit has the base stats of Netherite armor when unpowered, and offers 80+% damage immunity for most damage types when powered (at the cost of energy)."
+				""
+				"Although the MekaSuit is &lnot&r enchantable, there are &nplenty&r of modules you can apply. Many of these modules even mimic vanilla enchantments!"
+			]
+			id: "68CDACA72DE023D4"
+			optional: true
+			rewards: [{
+				count: 2
+				id: "390DF757AC5F1B32"
+				item: "aotdextras:nihilum_block"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "The &oBest&r Armor?"
+			tasks: [
+				{
+					id: "30B2459CFA0D13D4"
+					item: "mekanism:mekasuit_helmet"
+					type: "item"
+				}
+				{
+					id: "4D89A949DD69A6C9"
+					item: "mekanism:mekasuit_bodyarmor"
+					type: "item"
+				}
+				{
+					id: "6D8206FDEB28EE6B"
+					item: "mekanism:mekasuit_pants"
+					type: "item"
+				}
+				{
+					id: "37FE6A3948AA64E8"
+					item: "mekanism:mekasuit_boots"
+					type: "item"
+				}
+			]
+			title: "MekaSuit"
+			x: 4.5d
+			y: 8.0d
+		}
+		{
+			id: "03A385154B5B46E5"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "710B19D01C73E338"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "minecraft:wooden_sword"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "minecraft:wooden_shovel"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "minecraft:wooden_pickaxe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "minecraft:wooden_axe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "minecraft:wooden_hoe"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				title: "Any Wooden Tool"
+				type: "item"
+			}]
+			title: "Wooden Tools"
+			x: -1.0d
+			y: -7.5d
+		}
+		{
+			id: "11DFA47627FE9CED"
+			optional: true
+			shape: "diamond"
+			subtitle: "Stone-Level"
+			tasks: [{
+				id: "0C9F43FA34845A84"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "mekanismtools:lapis_lazuli_sword"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "mekanismtools:lapis_lazuli_shovel"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "mekanismtools:lapis_lazuli_pickaxe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "mekanismtools:lapis_lazuli_axe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "mekanismtools:lapis_lazuli_hoe"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				title: "Any Lapis Lazuli Tool"
+				type: "item"
+			}]
+			title: "Lapis Lazuli Tools"
+			x: -0.5d
+			y: -6.5d
+		}
+		{
+			id: "3B60136E02E9BE98"
+			optional: true
+			shape: "diamond"
+			subtitle: "Wood-Level"
+			tasks: [{
+				id: "7B9861C8D26BBB4C"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "minecraft:golden_sword"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "minecraft:golden_shovel"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "minecraft:golden_pickaxe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "minecraft:golden_axe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "minecraft:golden_hoe"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				title: "Any Golden Tool"
+				type: "item"
+			}]
+			title: "Golden Tools"
+			x: -1.5d
+			y: -7.0d
+		}
+		{
+			id: "0AEECF0A6A67770E"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "481A7AD5A388E45E"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "minecraft:stone_sword"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "minecraft:stone_shovel"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "minecraft:stone_pickaxe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "minecraft:stone_axe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "minecraft:stone_hoe"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				title: "Any Stone Tool"
+				type: "item"
+			}]
+			title: "Stone Tools"
+			x: -1.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["40247D71817C3322"]
+			id: "0E2FF45C5841AD28"
+			optional: true
+			shape: "diamond"
+			subtitle: "Diamond-Level, 0.25x Durability"
+			tasks: [{
+				id: "6A095E1F07B50AEF"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "mekanismtools:refined_glowstone_sword"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "mekanismtools:refined_glowstone_shovel"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "mekanismtools:refined_glowstone_pickaxe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "mekanismtools:refined_glowstone_axe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "mekanismtools:refined_glowstone_hoe"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				title: "Any Refined Glowstone Tool"
+				type: "item"
+			}]
+			title: "Refined Glowstone Weapons"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			id: "12F6E45E2433390F"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "224DC51DC778C662"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "minecraft:iron_sword"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "minecraft:iron_shovel"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "minecraft:iron_pickaxe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "minecraft:iron_axe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "minecraft:iron_hoe"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				title: "Any Iron Tool"
+				type: "item"
+			}]
+			title: "Iron Tools"
+			x: -1.0d
+			y: -5.0d
+		}
+		{
+			id: "609157DCFBFBB499"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "42900E8A52C372AA"
+				item: {
+					Count: 1b
+					id: "graveyard:bone_dagger"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"2ED556D1B5D75583"
+				"5490E0FF9D15FB0D"
+			]
+			hide: false
+			id: "1DEB0B061A1D3600"
+			rewards: [{
+				id: "6F3A81A2DFA0A75E"
+				item: "aotdextras:obscurium_ingot"
+				team_reward: false
+				type: "item"
+			}]
+			subtitle: "Iron-Level, 1.5x Durability"
+			tasks: [{
+				id: "11332B85494B0F2B"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "mekanismtools:bronze_sword"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "mekanismtools:bronze_shovel"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "mekanismtools:bronze_pickaxe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "mekanismtools:bronze_axe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "mekanismtools:bronze_hoe"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				title: "Any Bronze Tool"
+				type: "item"
+			}]
+			title: "Bronze Tools"
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["03D04FC4143DAE22"]
+			hide: false
+			id: "5D32BDED3AB392FC"
+			rewards: [{
+				id: "327F8087D2885F45"
+				item: "aotdextras:occultium_ingot"
+				team_reward: false
+				type: "item"
+			}]
+			tasks: [{
+				id: "44F1AE8045BBB50A"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "minecraft:diamond_sword"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "minecraft:diamond_shovel"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "minecraft:diamond_pickaxe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "minecraft:diamond_axe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "minecraft:diamond_hoe"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				title: "Any Diamond Tool"
+				type: "item"
+			}]
+			title: "Diamond Tools"
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"4B02E1C3F918DDC6"
+				"288D9B4B31959997"
+			]
+			hide: false
+			id: "48EAAB57FBBB3776"
+			rewards: [{
+				id: "4EB35FD901D598A8"
+				item: "aotdextras:obscurium_block"
+				team_reward: false
+				type: "item"
+			}]
+			subtitle: "Diamond-Level, 0.32x Durability"
+			tasks: [{
+				id: "6A09338BC563481C"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "mekanismtools:steel_sword"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "mekanismtools:steel_shovel"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "mekanismtools:steel_pickaxe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "mekanismtools:steel_axe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "mekanismtools:steel_hoe"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				title: "Any Steel Tool"
+				type: "item"
+			}]
+			title: "Steel Tools"
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["292C6C261E4CD650"]
+			hide: false
+			id: "15F6BB632541EBB1"
+			rewards: [{
+				id: "33ED852D8974E292"
+				item: "aotdextras:occultium_block"
+				team_reward: false
+				type: "item"
+			}]
+			tasks: [{
+				id: "09A05AC5AC4D6BF6"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "minecraft:netherite_sword"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "minecraft:netherite_shovel"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "minecraft:netherite_pickaxe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "minecraft:netherite_axe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "minecraft:netherite_hoe"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				title: "Any Netherite Tool"
+				type: "item"
+			}]
+			title: "Netherite Tools"
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["64DF84ECE6309CF9"]
+			hide: false
+			id: "6D80E6CC2689C694"
+			rewards: [{
+				id: "16FD99835C8FC595"
+				item: "aotdextras:nihilum_ingot"
+				team_reward: false
+				type: "item"
+			}]
+			subtitle: "Iron-Level, 4x Durability"
+			tasks: [{
+				id: "6BD7D65E5558BB5F"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "mekanismtools:osmium_sword"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "mekanismtools:osmium_shovel"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "mekanismtools:osmium_pickaxe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "mekanismtools:osmium_axe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "mekanismtools:osmium_hoe"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				title: "Any Osmium Tool"
+				type: "item"
+			}]
+			title: "Osmium Tools"
+			x: -1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"0DC630AA75E6F1A6"
+				"25B43E68B157DAEB"
+			]
+			id: "015ACDE886A50456"
+			subtitle: "Netherite-Level, 2x Durability"
+			tasks: [{
+				id: "26631E42A1FA621B"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "mekanismtools:refined_obsidian_sword"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "mekanismtools:refined_obsidian_shovel"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "mekanismtools:refined_obsidian_pickaxe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "mekanismtools:refined_obsidian_axe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "mekanismtools:refined_obsidian_hoe"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				title: "Any Refined Obsidian Tool"
+				type: "item"
+			}]
+			title: "Refined Obsidian Tools"
+			x: -1.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["12F6E45E2433390F"]
+			id: "5E6B4E12839EBF8B"
+			optional: true
+			rewards: [{
+				count: 4
+				id: "3C0BBC720895836F"
+				item: "undead_unleashed:grave_metal_scrap"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "19846D0DEA067681"
+				item: {
+					Count: 1b
+					id: "undead_unleashed:grave_metal_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1AAD629AEAD5CC94"]
+			hide: false
+			id: "25B43E68B157DAEB"
+			rewards: [{
+				id: "21D9773C9B881DE0"
+				item: "aotdextras:nihilum_block"
+				team_reward: false
+				type: "item"
+			}]
+			subtitle: "Netherite-Level, 1.05x Durability"
+			tasks: [{
+				id: "0703FF08364B060B"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "majruszsdifficulty:enderium_sword"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "majruszsdifficulty:enderium_shovel"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "majruszsdifficulty:enderium_pickaxe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "majruszsdifficulty:enderium_axe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "majruszsdifficulty:enderium_hoe"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				title: "Any Enderium Tool"
+				type: "item"
+			}]
+			title: "Enderium Tools"
+			x: -1.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["0DF31FB295B2A3B7"]
+			id: "6EAD818FB73244FA"
+			optional: true
+			shape: "diamond"
+			subtitle: "Diamond-Level"
+			tasks: [{
+				id: "0CE55E87712DC918"
+				item: "mekanism:atomic_disassembler"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"6EAD818FB73244FA"
+				"60FA1E8682D25076"
+			]
+			description: ["Not the best &oweapon&r, although its damage can be boosted to 37 with &7Attack Amplification Unit&rs."]
+			id: "768A52BFA8235163"
+			optional: true
+			shape: "diamond"
+			subtitle: "The Best &oMultitool&r"
+			tasks: [{
+				id: "3638227807ECD13F"
+				item: "mekanism:meka_tool"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["67719D6F9CE41903"]
+			id: "53B56FE3223FC903"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "43D421CDBD66133B"
+				item: {
+					Count: 1b
+					id: "deep_dark_regrowth:omnitrident"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -6.0d
+			y: 0.5d
+		}
+		{
+			description: ["This quest can only be completed by &ocrafting&r a trident."]
+			icon: {
+				Count: 1b
+				id: "minecraft:trident"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "67719D6F9CE41903"
+			optional: true
+			shape: "diamond"
+			subtitle: "Craftable!"
+			tasks: [
+				{
+					id: "71D17B1CFF9327D0"
+					item: "apotheosis:inert_trident"
+					type: "item"
+				}
+				{
+					id: "5BA7C8348F1E58EB"
+					item: {
+						Count: 1b
+						id: "minecraft:trident"
+						tag: {
+							Damage: 0
+						}
+					}
+					only_from_crafting: true
+					type: "item"
+				}
+			]
+			title: "Trident"
+			x: -6.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["15F6BB632541EBB1"]
+			id: "6D9D92F3A4C76148"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "45242B9AF0351CD3"
+				item: {
+					Count: 1b
+					id: "undead_unleashed:moonlight_greatsword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["61086CE7086729C1"]
+			id: "1E82E87971F6556B"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "7BC387D8D7EAE86F"
+				item: {
+					Count: 1b
+					id: "undead_unleashed:reaping_scythe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["12F6E45E2433390F"]
+			id: "375EE86785A94318"
+			optional: true
+			rewards: [{
+				id: "63A589674F7B9B53"
+				item: "undead_unleashed:necrotic_dust"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "235F2208DCF44456"
+				item: {
+					Count: 1b
+					id: "undead_unleashed:tombdigger_maul"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["48EAAB57FBBB3776"]
+			id: "3224FD1D5021A695"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "6BCC0EE5DDC78FC2"
+				item: {
+					Count: 1b
+					id: "monsterplus:crystal_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5D32BDED3AB392FC"]
+			id: "11B7AD1A432FD007"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "3B93E3F29B4BE2A2"
+				item: {
+					Count: 1b
+					id: "john_mod_reborn:immortality_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"11B7AD1A432FD007"
+				"292C6C261E4CD650"
+			]
+			id: "7C0FC708533D53F6"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "6BF23D1D024AD435"
+				item: "john_mod_reborn:perennial_blade"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"015ACDE886A50456"
+				"2A148D5CD80EEFB1"
+			]
+			description: ["Definitively the strongest weapon (after you max out its heart canisters)."]
+			id: "6DA6D2DBB3919895"
+			optional: true
+			shape: "diamond"
+			subtitle: "Just Add Love"
+			tasks: [{
+				id: "57BCB68E1E27AFE4"
+				item: "bhc:blade_of_vitality"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["609157DCFBFBB499"]
+			description: ["Gives several seconds of Strength and Regeneration after &nsacrificing&r an animal."]
+			id: "2FD25E26F0E3379A"
+			optional: true
+			rewards: [{
+				id: "2ADC14D1E85AA778"
+				item: "born_in_chaos_v1:nightmare_claw"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "09D75F4BD4DFC89D"
+				item: {
+					Count: 1b
+					id: "born_in_chaos_v1:dark_ritual_dagger"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -5.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["5D32BDED3AB392FC"]
+			description: ["Deals roughly double damage to undead."]
+			id: "190091266990DB82"
+			optional: true
+			rewards: [{
+				id: "29CE4D8C730AEC88"
+				item: {
+					Count: 1b
+					id: "born_in_chaos_v1:sharpened_dark_metal_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "55A48F95D5EADD87"
+				item: {
+					Count: 1b
+					id: "born_in_chaos_v1:sharpened_dark_metal_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			description: ["Has high armor penetration when both in water (no actual damage buff)."]
+			id: "6A9478DE5A4196D4"
+			optional: true
+			rewards: [{
+				id: "67F1590AE01470F7"
+				item: "born_in_chaos_v1:bone_handle"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "4192352088B28849"
+				item: {
+					Count: 1b
+					id: "born_in_chaos_v1:shell_mace"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -5.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5D32BDED3AB392FC"]
+			id: "43430DDCCBA5A2D9"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "6BD04C8D21623AA9"
+				item: {
+					Count: 1b
+					id: "born_in_chaos_v1:great_reaper_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.5d
+		}
+		{
+			description: ["Deals more than double damage on certain &lBorn in Chaos&r enemies."]
+			id: "689CEB721A3D7869"
+			optional: true
+			rewards: [{
+				id: "25BCBD7E197DD848"
+				item: "born_in_chaos_v1:seedof_chaos"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "178B3C49C104E88F"
+				item: {
+					Count: 1b
+					id: "born_in_chaos_v1:spiritual_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5D32BDED3AB392FC"]
+			id: "367AF96649B156F2"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "7D1444893DC53601"
+				item: {
+					Count: 1b
+					id: "born_in_chaos_v1:skullbreaker_hammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["190091266990DB82"]
+			description: ["Debuffs you unless currently affected by Strength."]
+			id: "544F50E266A66D8F"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "4D8A629B66FCEE57"
+				item: {
+					Count: 1b
+					id: "born_in_chaos_v1:darkwarblade"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["190091266990DB82"]
+			description: ["Slows and Poisons non-undead targets. Also applies Nausea on targeted players."]
+			id: "1FC8BAE9255748CD"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "691B96C73D07C550"
+				item: {
+					Count: 1b
+					id: "born_in_chaos_v1:intoxicating_dagger"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["61086CE7086729C1"]
+			description: ["Debuffs the target and heals the user."]
+			id: "010FB78DF9B5FFC4"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "65EABEFF5DBD51EB"
+				item: {
+					Count: 1b
+					id: "born_in_chaos_v1:nightmare_scythe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["190091266990DB82"]
+			description: [
+				"Deals delayed, percent-based damage based on target's current health percent."
+				""
+				"I.e. deals bigger damage to healthy targets with high max health."
+			]
+			id: "741CFE6852EB8686"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "5D2581970670AE3B"
+				item: {
+					Count: 1b
+					id: "born_in_chaos_v1:soul_cutlass"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["48EAAB57FBBB3776"]
+			description: ["Gives the &ntarget&r Resistance II and Regeneration II for several seconds."]
+			id: "3DA9E220A978876C"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "2AFBC1816AF373BB"
+				item: {
+					Count: 1b
+					id: "tenebrous_lands:siege_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["15F6BB632541EBB1"]
+			description: ["A strong sword. Nothing else in this version of &lTenebrous Lands&r."]
+			id: "0A4785DCE5408A83"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "7952224E2BE72F95"
+				item: {
+					Count: 1b
+					id: "tenebrous_lands:undead_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["48EAAB57FBBB3776"]
+			description: ["Damages the &nuser&r with lightning on every swing. Lightning Rods do not help. The best thing you can do is to keep moving."]
+			id: "61086CE7086729C1"
+			optional: true
+			rewards: [{
+				id: "4C1733FB34E2A692"
+				item: {
+					Count: 1b
+					id: "tenebrous_lands:ash_scythe"
+					tag: {
+						Damage: 0
+					}
+				}
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "60C3FEFB14AF7608"
+				item: {
+					Count: 1b
+					id: "tenebrous_lands:ash_scythe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6D80E6CC2689C694"]
+			id: "3F644324457213AE"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "2448DE4E77AF8A2C"
+				item: {
+					Count: 1b
+					id: "tenebrous_lands:axe_of_the_forgotten"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1DEB0B061A1D3600"]
+			id: "4F6F4BEB0C8345C9"
+			optional: true
+			rewards: [{
+				id: "4041DEBC6D8F16F2"
+				item: {
+					Count: 1b
+					id: "aquamirae:remnants_saber"
+					tag: {
+						Damage: 0
+					}
+				}
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "6383DBEB944DDFB1"
+				item: {
+					Count: 1b
+					id: "aquamirae:remnants_saber"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4F6F4BEB0C8345C9"]
+			id: "0122976CF94ABBD9"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "24A1BCFF786C1C3F"
+				item: {
+					Count: 1b
+					id: "aquamirae:poisoned_blade"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4F6F4BEB0C8345C9"]
+			id: "205393763A2939CD"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "3F0221EA0974C67C"
+				item: {
+					Count: 1b
+					id: "aquamirae:terrible_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4F6F4BEB0C8345C9"]
+			id: "6D01B476948280C3"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "507264B771B8CB75"
+				item: {
+					Count: 1b
+					id: "aquamirae:fin_cutter"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6D80E6CC2689C694"]
+			id: "701C015D0BD4517E"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "73D7969FF10DDE54"
+				item: {
+					Count: 1b
+					id: "aquamirae:divider"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6D80E6CC2689C694"]
+			id: "614EF3E45689D05C"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "2B517F4BB0E65E60"
+				item: {
+					Count: 1b
+					id: "aquamirae:whisper_of_the_abyss"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			hide_dependency_lines: true
+			id: "112AED781E211DFA"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "78C2B868F00DADF5"
+				item: {
+					Count: 1b
+					id: "aquamirae:poisoned_chakra"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -8.0d
+			y: -0.5d
+		}
+		{
+			hide_dependency_lines: true
+			id: "06DC20B70B64EA49"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "1B6CCFEFC3435860"
+				item: {
+					Count: 1b
+					id: "aquamirae:maze_rose"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -8.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"25B43E68B157DAEB"
+				"5F24222EFD4610D6"
+			]
+			description: ["Delayed AOE damage."]
+			id: "65A6AF3FDACD09DD"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "64B4EEBA6EBDB2E9"
+				item: {
+					Count: 1b
+					id: "monsterplus:gnawing_jaw"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"25B43E68B157DAEB"
+				"32C1E4E5A26EBBA1"
+			]
+			description: ["Summons a line of Crystal Spikes on the ground on swing."]
+			id: "6C8F67DFC889CDFB"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "3240CEA2DA430994"
+				item: {
+					Count: 1b
+					id: "monsterplus:darkstar"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 8.0d
+		}
+		{
+			id: "7F5F24E678211032"
+			optional: true
+			rewards: [{
+				count: 8
+				id: "2042D181090C4CCE"
+				item: "minecraft:arrow"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "4FEE9406F7E1BFA4"
+				item: {
+					Count: 1b
+					id: "minecraft:bow"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: -3.0d
+		}
+		{
+			id: "162D256EFC3D4AD3"
+			optional: true
+			rewards: [{
+				count: 4
+				id: "1510206B296E0231"
+				item: "minecraft:firework_rocket"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "08EA4B0C7FBFDF6B"
+				item: {
+					Count: 1b
+					id: "minecraft:crossbow"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -6.5d
+			y: -2.5d
+		}
+		{
+			id: "167B1C8A402506F4"
+			optional: true
+			rewards: [{
+				id: "7559F5D594E8A879"
+				item: "born_in_chaos_v1:seedof_chaos"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "282DF6C2F1C6EE86"
+				item: {
+					Count: 1b
+					id: "born_in_chaos_v1:staffof_magic_arrows"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: -2.0d
+		}
+		{
+			id: "3889F3B40834975A"
+			optional: true
+			rewards: [{
+				id: "5C3C9A2FA5E7068D"
+				item: "born_in_chaos_v1:bone_handle"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "7047E1C11AA1D7BB"
+				item: {
+					Count: 1b
+					id: "born_in_chaos_v1:staffofthe_summoner"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: 0.0d
+		}
+		{
+			id: "7255FCFAA0B8549D"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "063656E9754D4853"
+				item: "born_in_chaos_v1:intoxicatind_bomb"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "2BC1059BD580DB0D"
+				item: "born_in_chaos_v1:intoxicatind_bomb"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -4.0d
+		}
+		{
+			id: "703B4D20DCAABDD3"
+			optional: true
+			rewards: [{
+				id: "4F9969D010C1E6D7"
+				item: "born_in_chaos_v1:hound_trap"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "6AE6C146ED1C7966"
+				item: "born_in_chaos_v1:hound_trap"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -5.0d
+		}
+		{
+			id: "5B863079B3F649B7"
+			optional: true
+			rewards: [{
+				id: "149E1FDD2B97F03C"
+				item: "born_in_chaos_v1:spiny_shell_trap"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "3F6B39F81B9042B4"
+				item: "born_in_chaos_v1:spiny_shell_trap"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["03A385154B5B46E5"]
+			id: "366E7E9E1BEE53BF"
+			optional: true
+			rewards: [
+				{
+					count: 4
+					id: "56CBAB54A4BF3B8D"
+					item: "minecraft:oak_sapling"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "00294BB77C8EB32E"
+					item: "minecraft:spruce_sapling"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "0813354AA8EFBFD4"
+				item: {
+					Count: 1b
+					id: "mekanismtools:wood_paxel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["11DFA47627FE9CED"]
+			id: "1C961AB2D7B1964C"
+			optional: true
+			rewards: [
+				{
+					count: 4
+					id: "4FE8F94568E217C0"
+					item: "upgrade_aquatic:river_sapling"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1CEB49D55ACFF446"
+					item: "minecraft:mangrove_propagule"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "2D0E9CA16EBAD1AD"
+				item: {
+					Count: 1b
+					id: "mekanismtools:lapis_lazuli_paxel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["3B60136E02E9BE98"]
+			id: "6BEF480488126726"
+			optional: true
+			rewards: [
+				{
+					count: 4
+					id: "550FAAB99A997826"
+					item: "minecraft:acacia_sapling"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "20E4EF13168E6650"
+					item: "minecraft:dark_oak_sapling"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "757BB9A342109CA4"
+				item: {
+					Count: 1b
+					id: "mekanismtools:gold_paxel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["0AEECF0A6A67770E"]
+			id: "7B6382579C301529"
+			optional: true
+			rewards: [
+				{
+					count: 4
+					id: "66B17E879EEE0079"
+					item: "minecraft:birch_sapling"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "34272C4080427854"
+					item: "minecraft:jungle_sapling"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "5A2D7DAB43E26870"
+				item: {
+					Count: 1b
+					id: "mekanismtools:stone_paxel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["12F6E45E2433390F"]
+			id: "278AEBA24418CECE"
+			optional: true
+			rewards: [{
+				id: "6A9C6E6752212DAA"
+				item: "minecraft:iron_block"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "33F740AC390A50B6"
+				item: {
+					Count: 1b
+					id: "mekanismtools:iron_paxel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"40247D71817C3322"
+				"0E2FF45C5841AD28"
+			]
+			id: "3B9284D939B3499D"
+			optional: true
+			rewards: [{
+				id: "0663AC4F9B6ADE34"
+				item: "mekanism:block_refined_glowstone"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "5F31EEB44BC69D38"
+				item: {
+					Count: 1b
+					id: "mekanismtools:refined_glowstone_paxel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"5D32BDED3AB392FC"
+				"79626EE4ED78104A"
+			]
+			id: "3E3EA10966899061"
+			optional: true
+			rewards: [{
+				id: "696FA239ED3D9B22"
+				item: "minecraft:diamond_block"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "067143131CEB4CD9"
+				item: {
+					Count: 1b
+					id: "mekanismtools:diamond_paxel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"278AEBA24418CECE"
+				"1DEB0B061A1D3600"
+			]
+			id: "3EEF07414EF20BD2"
+			optional: true
+			rewards: [{
+				id: "11720D7A7F08A806"
+				item: "mekanism:block_bronze"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "1FDD505D030F2E54"
+				item: {
+					Count: 1b
+					id: "mekanismtools:bronze_paxel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"48EAAB57FBBB3776"
+				"3EEF07414EF20BD2"
+			]
+			id: "79626EE4ED78104A"
+			optional: true
+			rewards: [{
+				id: "2EF01B94FE4FCD21"
+				item: "mekanism:block_steel"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "3DCF360C636BBFFB"
+				item: {
+					Count: 1b
+					id: "mekanismtools:steel_paxel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"15F6BB632541EBB1"
+				"3E3EA10966899061"
+			]
+			id: "48CF9DAD6CC97717"
+			optional: true
+			rewards: [{
+				id: "672CB4DD29671D2C"
+				item: "minecraft:netherite_block"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "73DD68DD2F293109"
+				item: {
+					Count: 1b
+					id: "mekanismtools:netherite_paxel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"48CF9DAD6CC97717"
+				"6D80E6CC2689C694"
+			]
+			id: "0DF31FB295B2A3B7"
+			optional: true
+			rewards: [{
+				id: "1D6E2657D3AD025E"
+				item: "mekanism:block_osmium"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "1B8B2FB91721365B"
+				item: {
+					Count: 1b
+					id: "mekanismtools:osmium_paxel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"0DF31FB295B2A3B7"
+				"015ACDE886A50456"
+			]
+			id: "60FA1E8682D25076"
+			optional: true
+			rewards: [{
+				id: "4251DB3CEAB111F1"
+				item: "mekanism:block_refined_obsidian"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "1FC1BE6DB6E1FFAE"
+				item: {
+					Count: 1b
+					id: "mekanismtools:refined_obsidian_paxel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["44C92F2DEA6CF79F"]
+			description: [
+				"The Ancient Heartplate will occasionally play the Warden Heartbeat sound, which be a little annoying. As a reminder, you can mute individual sounds from the Extreme Sound Muffler menu!"
+				""
+				"&cEXPERIMENTAL RECIPE; MIGHT NEED BALANCE CHANGES"
+			]
+			id: "6D1CA6A27F8EA661"
+			optional: true
+			rewards: [{
+				count: 2
+				id: "3EA968C774C0354D"
+				item: "aotdextras:nihilum_ingot"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "790B8C0200051488"
+					item: {
+						Count: 1b
+						id: "deep_dark_regrowth:ancient_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4EFEF172EFC86436"
+					item: {
+						Count: 1b
+						id: "deep_dark_regrowth:ancient_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "280932BE11337AA4"
+					item: {
+						Count: 1b
+						id: "deep_dark_regrowth:ancient_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1E0BE381DE79914E"
+					item: {
+						Count: 1b
+						id: "deep_dark_regrowth:ancient_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Ancient Armor"
+			x: 3.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1B1E79910C731F02"]
+			id: "5A6037FC53A5CA7D"
+			rewards: [{
+				count: 16
+				id: "4B3C86CA58710DD7"
+				item: "deep_dark_regrowth:plasma_chunk"
+				team_reward: false
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "477158BC3D786BC7"
+					item: {
+						Count: 1b
+						id: "deep_dark_regrowth:phantom_armor_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "133075B05292FEE6"
+					item: {
+						Count: 1b
+						id: "deep_dark_regrowth:phantom_armor_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "48F6563EA5DE529C"
+					item: {
+						Count: 1b
+						id: "deep_dark_regrowth:phantom_armor_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "62B24C042A4AC986"
+					item: {
+						Count: 1b
+						id: "deep_dark_regrowth:phantom_armor_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Phantom Armor"
+			x: 3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5A6037FC53A5CA7D"]
+			dependency_requirement: "one_completed"
+			description: ["Grants &7Weakness&r and Invisibility when worn."]
+			id: "0B8552681949303E"
+			optional: true
+			rewards: [{
+				count: 2
+				id: "71B4634DD8344260"
+				item: "aotdextras:occultium_ingot"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "5C0CB223AD424923"
+					item: {
+						Count: 1b
+						id: "deep_dark_regrowth:corruption_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "22CB330F5161C423"
+					item: {
+						Count: 1b
+						id: "deep_dark_regrowth:corruption_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0E8B22D80C96FB4E"
+					item: {
+						Count: 1b
+						id: "deep_dark_regrowth:corruption_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5A29E404ECF3B527"
+					item: {
+						Count: 1b
+						id: "deep_dark_regrowth:corruption_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Corruption Armor"
+			x: 4.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["5490E0FF9D15FB0D"]
+			id: "577BFA994924725E"
+			rewards: [{
+				id: "6225C6CDEDF6B874"
+				item: {
+					Count: 1b
+					id: "minecraft:enchanted_book"
+					tag: {
+						StoredEnchantments: [{
+							id: "minecraft:unbreaking"
+							lvl: 3s
+						}]
+					}
+				}
+				team_reward: false
+				type: "item"
+			}]
+			tasks: [{
+				id: "3D2CC31B14339BED"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "mekanismtools:lapis_lazuli_shield"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "minecraft:shield"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "mekanismtools:refined_glowstone_shield"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "mekanismtools:bronze_shield"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "mekanismtools:steel_shield"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "mekanismtools:osmium_shield"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "mekanismtools:refined_obsidian_shield"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				title: "Any Shield"
+				type: "item"
+			}]
+			title: "Shields"
+			x: 5.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["609157DCFBFBB499"]
+			hide_dependent_lines: true
+			id: "5F24222EFD4610D6"
+			optional: true
+			rewards: [{
+				id: "056006BA97B426D6"
+				item: "minecraft:ghast_tear"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "2C83CE9FC65F5E23"
+				item: {
+					Count: 1b
+					id: "unusualend:shiny_dagger"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["609157DCFBFBB499"]
+			hide_dependent_lines: true
+			id: "32C1E4E5A26EBBA1"
+			optional: true
+			rewards: [{
+				id: "2F68F21ED3308757"
+				item: "minecraft:fermented_spider_eye"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "5C7B0E1751392A15"
+				item: {
+					Count: 1b
+					id: "unusualend:moult_dagger"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5C6355E15C1CDDF1"]
+			description: ["Uses energy in place of durability. Can be enchanted with bow enchantments."]
+			id: "11985A88839C0CB2"
+			optional: true
+			rewards: [
+				{
+					id: "6714D3C57A6CFE37"
+					item: "mekanism:energy_tablet"
+					team_reward: false
+					type: "item"
+				}
+				{
+					count: 64
+					id: "6AAF97B87B0D467E"
+					item: "minecraft:arrow"
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				disable_toast: true
+				id: "4A25CA796F1D975E"
+				item: "mekanism:electric_bow"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"5C6355E15C1CDDF1"
+				"1AAE6F8E715E7126"
+				"2ED556D1B5D75583"
+			]
+			hide_dependency_lines: false
+			id: "0CE2AC0E3703AC28"
+			optional: true
+			rewards: [{
+				id: "0190C01DD88A4819"
+				item: {
+					Count: 1b
+					id: "mekanism:advanced_chemical_tank"
+					tag: {
+						mekData: {
+							GasTanks: [{
+								Tank: 0b
+								stored: {
+									amount: 16000L
+									gasName: "mekanism:hydrogen"
+								}
+							}]
+						}
+					}
+				}
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				disable_toast: true
+				id: "31DAFFC9C17A6798"
+				item: "mekanism:flamethrower"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1E82E87971F6556B"]
+			description: [
+				"The &eTome of Reflection&r is a &oBauble Charm&r that negates one received attack with a 20 second cooldown. &7Lost Soul&rs must be in your inventory to function."
+				""
+				"&7Lost Soul&rs can be easily acquired with the &7Reaping Scythe&r."
+			]
+			id: "0403272F404DDA7E"
+			optional: true
+			rewards: [{
+				id: "28D7E25E5C0038E5"
+				item: "minecraft:diamond"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "Damage Negation!"
+			tasks: [{
+				id: "1544EB7FD256C6E2"
+				item: "undead_unleashed:tome_of_reflection"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"577BFA994924725E"
+				"21C18833C0563ED4"
+			]
+			dependency_requirement: "all_started"
+			id: "141D2900E48DF892"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "4FD837F47DFF7A44"
+				item: {
+					Count: 1b
+					id: "unusualend:blob_shield"
+					tag: {
+						Damage: 0
+						Enchantments: [
+							{
+								id: "apotheosis:shield_bash"
+								lvl: 5
+							}
+							{
+								id: "minecraft:unbreaking"
+								lvl: 3
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: 5.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["12F6E45E2433390F"]
+			id: "14BD296FCE5A01CE"
+			optional: true
+			rewards: [{
+				count: 4
+				id: "7A1F59D1EE7101B5"
+				item: "undead_unleashed:grave_metal_scrap"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "791FC78D7EE3E853"
+				item: {
+					Count: 1b
+					id: "undead_unleashed:grave_metal_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			description: [
+				"Most tools, weapons, and armor can be recycled either through a &lMekanism&r Crusher or an &lApotheosis&r Salvaging Table. This also includes horse armor and minecarts!"
+				""
+				"See the &lApotheosis&r page for more information on using the Salvaging Table."
+			]
+			icon: "mekanism:basic_crushing_factory"
+			id: "34B86660F419AEA4"
+			rewards: [{
+				id: "30B19D9DE5EA3E42"
+				item: {
+					Count: 1b
+					id: "minecraft:iron_axe"
+					tag: {
+						Damage: 250
+					}
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "Free Resources"
+			tasks: [{
+				id: "3059A256DF6B22C4"
+				title: "CLICK ME"
+				type: "checkmark"
+			}]
+			title: "Recycling"
+			x: 1.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["173CA2C4F61684B2"]
+			description: ["Must be held in your main hand or off hand to work."]
+			id: "6D3DFF253A4BB707"
+			optional: true
+			rewards: [{
+				id: "7569A66C64374AAC"
+				item: "born_in_chaos_v1:death_totem"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "Cheat Death?"
+			tasks: [{
+				disable_toast: true
+				id: "6A26AF2D6880D74B"
+				item: "born_in_chaos_v1:death_totem"
+				type: "item"
+			}]
+			title: "Death Totem"
+			x: 4.0d
+			y: 10.0d
+		}
+		{
+			dependencies: [
+				"21C18833C0563ED4"
+				"6D3DFF253A4BB707"
+				"2A148D5CD80EEFB1"
+			]
+			dependency_requirement: "one_started"
+			id: "4980DD5CFACDD242"
+			optional: true
+			rewards: [{
+				id: "178C3D240C650E96"
+				item: "unusualend:void_totem"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "Lootable and Craftable!"
+			tasks: [{
+				id: "0FCCEC78B58DFA7B"
+				item: "unusualend:void_totem"
+				type: "item"
+			}]
+			title: "Void Insurance"
+			x: 3.0d
+			y: 10.0d
+		}
+		{
+			id: "2A148D5CD80EEFB1"
+			optional: true
+			rewards: [{
+				id: "1FF18E76671FD703"
+				item: "minecraft:totem_of_undying"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "1E75AC6E76AAF6F6"
+				item: "minecraft:totem_of_undying"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 10.0d
+		}
+		{
+			id: "5B53354309A5B791"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "413619D244195857"
+				item: {
+					Count: 1b
+					id: "deep_dark_regrowth:awareness_glasses_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3DFA2B70FDE19ED3"]
+			id: "72C311F96DD71C76"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "62D7E93EBDF89339"
+				item: {
+					Count: 1b
+					id: "born_in_chaos_v1:staffof_blindness"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: -1.0d
+		}
+	]
+	title: "Equipment"
+}

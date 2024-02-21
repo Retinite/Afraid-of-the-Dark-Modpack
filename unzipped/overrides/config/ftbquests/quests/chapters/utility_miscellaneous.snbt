@@ -1,0 +1,711 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "utility_miscellaneous"
+	group: "039D51C47AD8D82F"
+	icon: {
+		Count: 1b
+		id: "constructionwand:diamond_wand"
+		tag: {
+			Damage: 0
+			wand_options: { }
+		}
+	}
+	id: "0CB9722754C9B1C0"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&bShift&r+&bScroll&r can quickly change the basic shape."
+				""
+				"&bCtrl&r+&bShift&r+&bRight Click&r a block to &oundo the previous operation&r."
+				""
+				"If you craft any &oWand Cores&r, you can apply them in a crafting grid and access your wand's options by &bCtrl&r+&bShift&r+&bRight Click&ring the air (by default). Stone Wands cannot be modified."
+			]
+			id: "4FC75C1D76C3FC6C"
+			rewards: [{
+				id: "0D130C8B72EEEBE7"
+				item: {
+					Count: 1b
+					id: "constructionwand:iron_wand"
+					tag: {
+						Damage: 0
+						wand_options: { }
+					}
+				}
+				team_reward: false
+				type: "item"
+			}]
+			shape: "gear"
+			subtitle: "Easy Block Placement"
+			tasks: [{
+				id: "25B76ABE14D28613"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "constructionwand:stone_wand"
+								tag: {
+									Damage: 0
+									wand_options: { }
+								}
+							}
+							{
+								Count: 1b
+								id: "constructionwand:iron_wand"
+								tag: {
+									Damage: 0
+									wand_options: { }
+								}
+							}
+							{
+								Count: 1b
+								id: "constructionwand:diamond_wand"
+								tag: {
+									Damage: 0
+									wand_options: { }
+								}
+							}
+							{
+								Count: 1b
+								id: "constructionwand:infinity_wand"
+								tag: {
+									wand_options: { }
+								}
+							}
+						]
+					}
+				}
+				title: "Any Wand"
+				type: "item"
+			}]
+			title: "Construction Wands"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4FC75C1D76C3FC6C"]
+			id: "291B4EE578FB46B8"
+			optional: true
+			shape: "diamond"
+			subtitle: "No Constraints!"
+			tasks: [{
+				id: "548DC2CFAF4223E8"
+				item: "constructionwand:core_angel"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4FC75C1D76C3FC6C"]
+			description: ["Destroy blocks instead of placing them, &c&nbut all blocks that are destroyed are voided&r. Thankfully there's an undo button!"]
+			id: "66780574B9DD7AEC"
+			optional: true
+			shape: "diamond"
+			subtitle: "Destroy, Build, Destroy!"
+			tasks: [{
+				id: "35387DEB1EEDF5AC"
+				item: "constructionwand:core_destruction"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Just scroll while using!"
+				""
+				"By default, '&bZ&r' will swap to your spyglass if you have one. Put it in your belt Bauble slot!"
+			]
+			id: "4ED186741BE138A8"
+			rewards: [{
+				count: 2
+				id: "13AC3E31AEC241C5"
+				item: "minecraft:copper_ingot"
+				team_reward: false
+				type: "item"
+			}]
+			subtitle: "Zoom In and Out!"
+			tasks: [{
+				id: "74104157A293BCFD"
+				item: "minecraft:spyglass"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			id: "0FE5C8C01B76B08B"
+			rewards: [{
+				id: "423E6BC349BC8EC4"
+				item: {
+					Count: 1b
+					id: "minecraft:fishing_rod"
+					tag: {
+						Damage: 63
+					}
+				}
+				team_reward: false
+				type: "item"
+			}]
+			tasks: [{
+				id: "12ACFD9AC3A9A9CF"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "trashcans:energy_trash_can"
+							}
+							{
+								Count: 1b
+								id: "trashcans:liquid_trash_can"
+							}
+							{
+								Count: 1b
+								id: "trashcans:item_trash_can"
+							}
+							{
+								Count: 1b
+								id: "trashcans:ultimate_trash_can"
+							}
+						]
+					}
+				}
+				title: "Any Trash Can"
+				type: "item"
+			}]
+			title: "Trash Cans"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			description: [
+				"&0Searchlight&rs provide an impressive amount of light at a considerable distance, and can be toggled with a redstone signal. Their angle can be updated with a &bRight Click&r."
+				""
+				"On walls, they can only be placed from below (pointing below the horizon), and on floors they can only be placed at a 45° angle or lower. There is no angular restriction on ceiling lights."
+				""
+				"The &lSearchlight&r mod also comes with bright, decorative wall lights!"
+			]
+			id: "4103C2BBFEC50AAE"
+			rewards: [{
+				id: "36D4B1A6A4761BCC"
+				item: "searchlight:wall_light_iron"
+				type: "item"
+			}]
+			shape: "gear"
+			subtitle: "(And Wall Lights!)"
+			tasks: [{
+				id: "526008BCE204A45C"
+				item: "searchlight:searchlight"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			description: [
+				"Does no damage or knockback, but applies 120 seconds of &eGlowing&r to all entities in a 64-block radius!"
+				""
+				"Very useful for finding caves and identifying mobs through walls."
+			]
+			id: "402555F292EF5D5D"
+			shape: "gear"
+			subtitle: "As a Treat"
+			tasks: [{
+				id: "5A0526FDF3CB72B9"
+				item: "aotdextras:glow_tnt"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			id: "1D3C472E2DF1D1CD"
+			rewards: [{
+				count: 2
+				id: "06AE4D58EE6AE9DE"
+				item: "aotdextras:obscurium_ingot"
+				team_reward: false
+				type: "item"
+			}]
+			subtitle: "Locate Any Biome!"
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "naturescompass:item/naturescompass_16"
+					}
+				}
+				id: "6C7C3EB53B5961FE"
+				item: {
+					Count: 1b
+					id: "naturescompass:naturescompass"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			id: "0450E9EB79084D6E"
+			tasks: [
+				{
+					id: "0CD9CA8A037C0A35"
+					item: "drinkbeer:beer_barrel"
+					type: "item"
+				}
+				{
+					id: "0AABD82F938733AA"
+					item: "drinkbeer:empty_beer_mug"
+					type: "item"
+				}
+				{
+					id: "1E0DB988C1A687AE"
+					item: "drinkbeer:recipe_board_package"
+					type: "item"
+				}
+			]
+			title: "Brewing Beer"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0450E9EB79084D6E"]
+			description: [
+				"The Bartering Box allows you to submit requested items once every few minutes to receive random rewards. Many of the rewards are &ospices&r, and this is the only way to obtain them!"
+				""
+				"You can use the Bartending Table to apply any spices you have collected. You must be holding a beer in your hand to access the Bartending Table."
+			]
+			id: "5D67000EF4DFF157"
+			shape: "gear"
+			tasks: [
+				{
+					id: "122ED3CFDD06BD04"
+					item: "drinkbeer:trade_box_normal"
+					type: "item"
+				}
+				{
+					id: "09BD62F8BBF1270C"
+					item: "drinkbeer:bartending_table_normal"
+					type: "item"
+				}
+			]
+			title: "The Spice of Life"
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2B180DE0B1EF6870"]
+			description: [""]
+			id: "512988EF1AB0A731"
+			shape: "rsquare"
+			subtitle: "Can Destroy Your Obsidian"
+			tasks: [
+				{
+					disable_toast: true
+					id: "7D0DD28403695155"
+					item: "fluxnetworks:flux_dust"
+					type: "item"
+				}
+				{
+					id: "5355426F392D107C"
+					item: "fluxnetworks:flux_core"
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: -4.0d
+		}
+		{
+			id: "2B180DE0B1EF6870"
+			rewards: [{
+				id: "5DEFB118747F2C9A"
+				item: "minecraft:ender_eye"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "1890E00674E587D0"
+					item: "minecraft:obsidian"
+					type: "item"
+				}
+				{
+					id: "2346ED38858D22D3"
+					item: "minecraft:ender_eye"
+					type: "item"
+				}
+				{
+					id: "6C6581FF5392096D"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+				{
+					icon: "minecraft:bedrock"
+					id: "3E1950D71D66E871"
+					observe_type: 0
+					timer: 0L
+					title: "Reach Bedrock"
+					to_observe: "minecraft:bedrock"
+					type: "observation"
+				}
+			]
+			title: "Flux Network Prerequisites"
+			x: -1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2AAE9EF387D1E2D0"]
+			description: [
+				"By the way, \"wireless charging is (in)effective\" just means on/off."
+				""
+				"&o(Recipe changed for balancing)&r"
+			]
+			id: "138781EAF3250FB4"
+			optional: true
+			rewards: [{
+				count: 8
+				id: "56344FD268A0C5E9"
+				item: "fluxnetworks:flux_core"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "Wireless Charging!"
+			tasks: [{
+				disable_toast: true
+				id: "06E8748B6D9CFD56"
+				item: "fluxnetworks:flux_controller"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["512988EF1AB0A731"]
+			id: "2AAE9EF387D1E2D0"
+			rewards: [{
+				id: "6C662D6535CEEA54"
+				item: "fluxnetworks:flux_configurator"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "Inputs and Outputs, Respectively"
+			tasks: [
+				{
+					id: "7B3C7D63CB01154E"
+					item: "fluxnetworks:flux_plug"
+					type: "item"
+				}
+				{
+					id: "1B90393D54208491"
+					item: "fluxnetworks:flux_point"
+					type: "item"
+				}
+			]
+			title: "Flux Plugs and Flux Points"
+			x: 0.5d
+			y: -4.0d
+		}
+		{
+			disable_toast: true
+			id: "51C842C2FC13BDFE"
+			rewards: [{
+				id: "333388160EF7379A"
+				item: "minecraft:ender_pearl"
+				team_reward: false
+				type: "item"
+			}]
+			subtitle: "Return to Nearest"
+			tasks: [{
+				id: "794190AB9B943318"
+				item: "waystones:return_scroll"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 4.0d
+		}
+		{
+			description: ["Must be used on a waystone to assign its target before it can be used."]
+			id: "1C28D6CADB280332"
+			rewards: [{
+				count: 2
+				id: "6424D54F92C8B800"
+				item: "minecraft:ender_pearl"
+				team_reward: false
+				type: "item"
+			}]
+			subtitle: "Return to Preset"
+			tasks: [{
+				id: "6CE2E6FE538285D9"
+				item: "waystones:bound_scroll"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.0d
+		}
+		{
+			id: "24C5A7C3D3EAAF00"
+			rewards: [{
+				count: 2
+				id: "093D3F4D35EF8579"
+				item: "minecraft:ender_pearl"
+				team_reward: false
+				type: "item"
+			}]
+			subtitle: "One-Way Trip to Anywhere"
+			tasks: [{
+				id: "6A4F3E799E719C44"
+				item: "waystones:warp_scroll"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["50C50A8AA14F1AE1"]
+			description: ["Does not actually use durability, despite the description."]
+			id: "725B0C5AA6A25BD7"
+			rewards: [{
+				count: 4
+				id: "632AC6A0073D70C1"
+				item: "minecraft:ender_pearl"
+				type: "item"
+			}]
+			subtitle: "Five-Minute Cooldown"
+			tasks: [{
+				id: "53A067BA3360CDDE"
+				item: {
+					Count: 1b
+					id: "waystones:warp_stone"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4CED91B768D1F4EA"]
+			description: [
+				"Place the &5Attuned Shard&r from one &7Warp Plate&r into the center of another to link the latter to the former. &o(Directed graphs!!)&r"
+				""
+				"You can create additional &7Attuned Shard&rs with more &8Flint&r and &dWarp Dust&r."
+			]
+			id: "4E019581C590D900"
+			rewards: [{
+				id: "550CF9AA3C02E387"
+				item: "waystones:warp_plate"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "Point-to-Point Teleporters"
+			tasks: [{
+				id: "42D9F2C47A972458"
+				item: "waystones:warp_plate"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["725B0C5AA6A25BD7"]
+			description: ["Useful for secret bases."]
+			id: "083D6DAD94AB3D3B"
+			optional: true
+			rewards: [{
+				id: "10978AC170AFE968"
+				item: "waystones:warp_scroll"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "Warp &lFrom&r, Not &lTo&r"
+			tasks: [{
+				id: "0D8DB69B015B7212"
+				item: "waystones:portstone"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"4E019581C590D900"
+				"50C50A8AA14F1AE1"
+			]
+			description: [
+				"&bShift&r + &bRight Click&r to edit a &7Waystone&r (renaming reserved for the owner)."
+				""
+				"Each player has their own list of known &7Waystone&rs, however &oglobal&r &7Waystone&rs are automatically added to each player's list."
+			]
+			id: "5010D4D9158DFEF7"
+			rewards: [{
+				id: "0148287F6BC4F944"
+				item: {
+					Count: 1b
+					id: "waystones:warp_stone"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "The Classic"
+			tasks: [{
+				id: "3F4BE3A6842FC56C"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "waystones:waystone"
+							}
+							{
+								Count: 1b
+								id: "waystones:mossy_waystone"
+							}
+							{
+								Count: 1b
+								id: "waystones:sandy_waystone"
+							}
+						]
+					}
+				}
+				title: "Any Waystone"
+				type: "item"
+			}]
+			title: "Waystones"
+			x: 1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"4E019581C590D900"
+				"50C50A8AA14F1AE1"
+			]
+			description: ["&7Sharestone&rs offer 17 separate networks of global &7Waystones&r to choose from, perfect for teams who want to teleport to their team's waystones without personally visiting first."]
+			id: "1DD2CC79EC7D259A"
+			optional: true
+			rewards: [{
+				id: "4AF67923F151ECDD"
+				item: "waystones:warp_scroll"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "Waystones With Friends"
+			tasks: [{
+				id: "7D63DF52B012C31C"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "waystones:sharestone"
+							}
+							{
+								Count: 1b
+								id: "waystones:white_sharestone"
+							}
+							{
+								Count: 1b
+								id: "waystones:orange_sharestone"
+							}
+							{
+								Count: 1b
+								id: "waystones:magenta_sharestone"
+							}
+							{
+								Count: 1b
+								id: "waystones:light_blue_sharestone"
+							}
+							{
+								Count: 1b
+								id: "waystones:yellow_sharestone"
+							}
+							{
+								Count: 1b
+								id: "waystones:lime_sharestone"
+							}
+							{
+								Count: 1b
+								id: "waystones:pink_sharestone"
+							}
+							{
+								Count: 1b
+								id: "waystones:gray_sharestone"
+							}
+							{
+								Count: 1b
+								id: "waystones:light_gray_sharestone"
+							}
+							{
+								Count: 1b
+								id: "waystones:cyan_sharestone"
+							}
+							{
+								Count: 1b
+								id: "waystones:purple_sharestone"
+							}
+							{
+								Count: 1b
+								id: "waystones:blue_sharestone"
+							}
+							{
+								Count: 1b
+								id: "waystones:brown_sharestone"
+							}
+							{
+								Count: 1b
+								id: "waystones:green_sharestone"
+							}
+							{
+								Count: 1b
+								id: "waystones:red_sharestone"
+							}
+							{
+								Count: 1b
+								id: "waystones:black_sharestone"
+							}
+						]
+					}
+				}
+				title: "Any Sharestone"
+				type: "item"
+			}]
+			title: "Sharestones"
+			x: 1.5d
+			y: 5.0d
+		}
+		{
+			id: "4645F165220D1575"
+			tasks: [{
+				id: "45C6164533293974"
+				item: "mekanismadditions:obsidian_tnt"
+				type: "item"
+			}]
+			title: "Bigger TNT"
+			x: -1.5d
+			y: 1.5d
+		}
+	]
+	title: "Miscellaneous"
+}

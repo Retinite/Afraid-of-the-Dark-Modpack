@@ -1,0 +1,362 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "modpack_bosses"
+	group: ""
+	icon: "minecraft:dragon_head"
+	id: "335C3BE04721130D"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			id: "55FBE8EAD0C29929"
+			rewards: [{
+				id: "70E15E8BF625D9C7"
+				item: "bhc:blue_heart"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				entity: "minecraft:ender_dragon"
+				icon: "minecraft:dragon_head"
+				id: "222C39D777D817CD"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			id: "5A52C641F93F4A78"
+			rewards: [{
+				id: "4164627A448CE05E"
+				item: "bhc:blue_heart"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				entity: "minecraft:wither"
+				icon: "graveyard:wither_skull_pile"
+				id: "3F961D1F866E4D44"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			id: "251069B43E6AF820"
+			rewards: [{
+				count: 2
+				id: "2981D072DB73FA42"
+				item: "bhc:green_heart"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				entity: "upgrade_aquatic:great_thrasher"
+				icon: "upgrade_aquatic:thrasher_tooth"
+				id: "5D999C5AEC77C539"
+				type: "kill"
+				value: 1L
+			}]
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			id: "19F1674292AE31C2"
+			rewards: [{
+				count: 2
+				id: "4CB806727D5CED8A"
+				item: "bhc:yellow_heart"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				entity: "minecraft:elder_guardian"
+				icon: "majruszsdifficulty:elder_guardian_treasure_bag"
+				id: "4A260DA35501348D"
+				type: "kill"
+				value: 3L
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			id: "6FD021FD2E5C236E"
+			rewards: [{
+				id: "7F722B7C0362E6DA"
+				item: "bhc:yellow_heart"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				entity: "john_mod_reborn:mega_john"
+				icon: "john_mod_reborn:bloody_tear"
+				id: "1150A7B8B587F724"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.5d
+			y: 2.5d
+		}
+		{
+			id: "5DF2D7A268EBDADB"
+			rewards: [{
+				id: "1886C30E36608441"
+				item: "bhc:yellow_heart"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				entity: "majruszsdifficulty:tank"
+				icon: "minecraft:skeleton_skull"
+				id: "4857635C16BFCB44"
+				type: "kill"
+				value: 2L
+			}]
+			x: -0.5d
+			y: 2.5d
+		}
+		{
+			id: "128DD0DF7EEAA278"
+			rewards: [{
+				count: 2
+				id: "3311DA27CDBB9A99"
+				item: "bhc:yellow_heart"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				entity: "majruszsdifficulty:cerberus"
+				icon: "minecraft:wither_skeleton_skull"
+				id: "6E19E6DDFEF9E0C8"
+				type: "kill"
+				value: 1L
+			}]
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			id: "4DA840B95105FC9B"
+			rewards: [{
+				id: "0FDEEE287E4F6DF5"
+				item: "bhc:blue_heart"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				entity: "graveyard:lich"
+				icon: "graveyard:black_bone_staff"
+				id: "05BCAFADF655D98E"
+				type: "kill"
+				value: 1L
+			}]
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["21C18833C0563ED4"]
+			dependency_requirement: "one_started"
+			id: "750D9027DB9ACDA8"
+			rewards: [{
+				id: "146BB00E629A76EA"
+				item: "bhc:green_heart"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				entity: "unusualend:endstone_golem"
+				icon: "unusualend:golem_altar"
+				id: "54A0DA93AE2F71E8"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			id: "0A433323059EF6A0"
+			rewards: [{
+				id: "6CB7ED105D7DCB0A"
+				item: "bhc:blue_heart"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				entity: "whisperwoods:hirschgeist"
+				icon: {
+					Count: 1b
+					id: "whisperwoods:hirschgeist_skull"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "0676AF93F22DE3A3"
+				type: "kill"
+				value: 1L
+			}]
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			id: "7854EFBAE08B9047"
+			rewards: [{
+				id: "4F33F1E59804833D"
+				item: "bhc:blue_heart"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				entity: "minecraft:warden"
+				icon: {
+					Count: 1b
+					id: "deep_dark_regrowth:warden_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "37DBF947B06E6F34"
+				type: "kill"
+				value: 1L
+			}]
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			id: "301D12E7B6EF1EFD"
+			rewards: [{
+				id: "2A0511FEA1A68E55"
+				item: "bhc:green_heart"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				entity: "born_in_chaos_v1:sir_pumpkinhead"
+				icon: "born_in_chaos_v1:flaming_evil_pumpkin"
+				id: "5039997A71230273"
+				type: "kill"
+				value: 1L
+			}]
+			x: -0.5d
+			y: 1.5d
+		}
+		{
+			id: "2C734223D6FCFBA1"
+			invisible: true
+			rewards: [{
+				id: "1AC87323E681D538"
+				item: "bhc:blue_heart"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				entity: "born_in_chaos_v1:lord_pumpkinhead_head"
+				icon: "born_in_chaos_v1:infernal_evil_pumpkin"
+				id: "27B529806FEF9334"
+				type: "kill"
+				value: 1L
+			}]
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			id: "22E60188D9AFD2A7"
+			rewards: [{
+				id: "2381A8651BC4B354"
+				item: "bhc:green_heart"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				entity: "aquamirae:captain_cornelia"
+				icon: {
+					Count: 1b
+					id: "aquamirae:three_bolt_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "34C1004B4B58452F"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			id: "07AF4C7C75993E4D"
+			rewards: [{
+				id: "222420438ED99B88"
+				item: "bhc:green_heart"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				entity: "born_in_chaos_v1:missioner"
+				icon: "born_in_chaos_v1:shattered_skull"
+				id: "33BF51C4E5E506DF"
+				type: "kill"
+				value: 1L
+			}]
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			id: "4C09ABEB358C0F24"
+			rewards: [{
+				id: "4D1CEF7296962C8D"
+				item: "bhc:green_heart"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				entity: "aquamirae:maze_mother"
+				icon: "aquamirae:abyssal_amethyst"
+				id: "61EA4E6BD05DD5F3"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			id: "019B5F8DEC581FEC"
+			rewards: [{
+				count: 2
+				id: "5B8AEA77769DD760"
+				item: "bhc:yellow_heart"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				entity: "monsterplus:abyssologer"
+				icon: "monsterplus:crystal_shard"
+				id: "3D287A61036B8A31"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+	]
+	title: "Bosses"
+}

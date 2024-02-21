@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:jigsaw",
+  "biomes": ["small_end_islands", "end_midlands"],
+  "step": "surface_structures",
+  "spawn_overrides": {
+	  "monster": {
+		  "bounding_box": "full",
+		  "spawns": []
+	  }
+  },
+  "terrain_adaptation": "beard_box",
+  "start_pool": "aotd:end_lighthouse",
+  "size": 1,
+  "start_height": {
+    "type": "minecraft:uniform",
+    "min_inclusive": {
+      "absolute": 40
+    },
+    "max_inclusive": {
+      "absolute": 120
+    }
+  },
+  "project_start_to_heightmap": "WORLD_SURFACE_WG",
+  "max_distance_from_center": 80,
+  "use_expansion_hack": false
+}

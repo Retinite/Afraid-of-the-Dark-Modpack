@@ -1,0 +1,448 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "utility_storage"
+	group: "039D51C47AD8D82F"
+	icon: "functionalstorage:oak_4"
+	id: "1395DC84482825E8"
+	order_index: 1
+	progression_mode: "flexible"
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Stores several stacks of the same item. Convenient and upgradeable!"]
+			id: "565765DC702982C9"
+			rewards: [{
+				id: "01DF425E251BF811"
+				item: "functionalstorage:oak_1"
+				type: "item"
+			}]
+			tasks: [{
+				disable_toast: true
+				id: "390C87A8E5BEEBA6"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "functionalstorage:drawer"
+					}
+				}
+				title: "Any Drawer"
+				type: "item"
+			}]
+			title: "Storage Drawers"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["565765DC702982C9"]
+			description: ["Drawers for fluids!"]
+			id: "15FD46FFFF3AB160"
+			optional: true
+			rewards: [{
+				id: "1E17B2ABACA6099F"
+				item: "minecraft:bucket"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				disable_toast: true
+				id: "4A0B8DD68039104A"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "functionalstorage:fluid_1"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:fluid_2"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:fluid_4"
+							}
+						]
+					}
+				}
+				title: "Any Fluid Drawer"
+				type: "item"
+			}]
+			title: "Fluid Drawers"
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["565765DC702982C9"]
+			description: ["Use the &7Linking Tool&r to connect drawers to a &7Storage Controller&r to automate your storage! &bRight Click&r the controller and it will automatically place items in the appropriate drawer. Pushing and pulling using pipes is also possible through the controller!"]
+			id: "07A1B23354347DE0"
+			rewards: [{
+				id: "028C609EA5FB782F"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [
+				{
+					disable_toast: true
+					id: "24F8CF50C35E46D1"
+					item: "functionalstorage:storage_controller"
+					type: "item"
+				}
+				{
+					id: "2A37AEAA8F6EB99D"
+					item: {
+						Count: 1b
+						id: "functionalstorage:linking_tool"
+						tag: {
+							Action: "ADD"
+							Mode: "SINGLE"
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["07A1B23354347DE0"]
+			description: ["Use a &7Controller Extension&r if you have too many drawers for a single controller, or if you want multiple input/output locations for attaching pipes."]
+			id: "0EEABF0C6A15DF3D"
+			optional: true
+			rewards: [{
+				id: "28004EAD699DBF5D"
+				item: "functionalstorage:controller_extension"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				disable_toast: true
+				id: "5140DB00BF647C89"
+				item: "functionalstorage:controller_extension"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["565765DC702982C9"]
+			description: [
+				"Automatically represents any resource with \"compressed\" and \"uncompressed\" recipes simultaneously."
+				""
+				"For example, all iron in a system can be represented as blocks, ingots, and nuggets in a single &7Compacting Drawer&r rather than needing three separate drawers and crafting between them."
+			]
+			id: "78368E1949B9CE2C"
+			optional: true
+			rewards: [
+				{
+					id: "406CECCE43EB2554"
+					item: "minecraft:iron_block"
+					type: "item"
+				}
+				{
+					id: "623EDEC789FCFD6E"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					id: "01AC47726E6BF470"
+					item: "minecraft:iron_nugget"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				disable_toast: true
+				id: "395ED487956EB9D3"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "functionalstorage:simple_compacting_drawer"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:compacting_drawer"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:compacting_framed_drawer"
+							}
+						]
+					}
+				}
+				title: "Any Compacting Drawer"
+				type: "item"
+			}]
+			title: "Compacting Drawer"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["565765DC702982C9"]
+			description: ["Offers several options for drawers, including (un)locking drawers so that the type stays fixed even when empty."]
+			id: "60BF414918892562"
+			optional: true
+			rewards: [{
+				id: "5970648452A6F43A"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				disable_toast: true
+				id: "59EB3CBF1B274CBE"
+				item: {
+					Count: 1b
+					id: "functionalstorage:configuration_tool"
+					tag: {
+						Mode: "LOCKING"
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["565765DC702982C9"]
+			description: ["There are a variety of useful upgrades for drawers. Apply upgrades with &cRight Click&r (&onot on the front face&r), and access upgrades by &cShift&r + &cRight Click&ring."]
+			id: "10ABF0BDEAA77BAC"
+			optional: true
+			rewards: [{
+				count: 4
+				id: "635D3D15F6E90508"
+				item: "functionalstorage:gold_upgrade"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "64039AFA39F95CF9"
+					item: {
+						Count: 1b
+						id: "functionalstorage:collector_upgrade"
+						tag: {
+							Direction: "down"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "19550FDE4ADAC97E"
+					item: {
+						Count: 1b
+						id: "functionalstorage:pusher_upgrade"
+						tag: {
+							Direction: "down"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7ADFCFD3BC46C0A1"
+					item: {
+						Count: 1b
+						id: "functionalstorage:puller_upgrade"
+						tag: {
+							Direction: "down"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5C7EEE427AF40A28"
+					item: "functionalstorage:void_upgrade"
+					type: "item"
+				}
+				{
+					id: "61F071A9B677719F"
+					item: "functionalstorage:copper_upgrade"
+					type: "item"
+				}
+			]
+			title: "Drawer Upgrades"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["565765DC702982C9"]
+			description: ["An &5Ender Chest&r drawer!"]
+			id: "0F1B855BF8A43CED"
+			optional: true
+			rewards: [
+				{
+					count: 8
+					id: "097BA87398272DAF"
+					item: "minecraft:obsidian"
+					type: "item"
+				}
+				{
+					id: "1A99ABC4A0BB9285"
+					item: "minecraft:ender_eye"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				disable_toast: true
+				id: "318EE455D4149CAB"
+				item: "functionalstorage:ender_drawer"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["565765DC702982C9"]
+			description: [
+				"Does not store stacks of items."
+				""
+				"(As of the current version of &lFunctional Storage&r, the Armory Cabinet has no interface, and can only be interacted with through pipes and Controllers.)"
+			]
+			id: "4ECF25B176512D2E"
+			optional: true
+			rewards: [{
+				id: "55E0EC95089059E5"
+				item: "minecraft:netherite_ingot"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "Stores 4096 Unique Items!"
+			tasks: [{
+				disable_toast: true
+				id: "74E3FB743E2E5786"
+				item: "functionalstorage:armory_cabinet"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			description: ["Be sure to check out some of the other &c&lIron Chests&r items too, such as the chest locks or the dolly."]
+			id: "2756454419A57C3F"
+			rewards: [{
+				id: "663D8D313971F5F6"
+				item: "ironchests:copper_chest_upgrade"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2EE9618DA4AA9535"
+				item: "ironchests:copper_chest"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2756454419A57C3F"]
+			id: "34313466812FFA95"
+			rewards: [{
+				id: "14084DCBE2D2132E"
+				item: "ironchests:iron_chest_upgrade"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3582A483204B3BBA"
+				item: "ironchests:iron_chest"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["34313466812FFA95"]
+			id: "1958AA6E85F3B6AA"
+			rewards: [{
+				id: "12C9EEB43823EA87"
+				item: "ironchests:gold_chest_upgrade"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7B652EF2CE282760"
+				item: "ironchests:gold_chest"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1958AA6E85F3B6AA"]
+			description: ["A &o&bDiamond Chest&r can be upgraded to either the blast-resistant &o&5Obsidian Chest&r, the transparent &o&dCrystal Chest&r, or the ultimate &o&8Netherite Chest&r. Only the &o&8Netherite Chest&r has an upgraded storage space (and is also blast-resistant)."]
+			id: "46A041C16AA07573"
+			rewards: [{
+				id: "583213E956FD21A3"
+				item: "ironchests:diamond_chest_upgrade"
+				type: "item"
+			}]
+			subtitle: "Unlocks Quests Elsewhere"
+			tasks: [{
+				id: "0A6CE1A94C16419D"
+				item: "ironchests:diamond_chest"
+				type: "item"
+			}]
+			title: "Diamond Chest"
+			x: 1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["565765DC702982C9"]
+			id: "036103DEEAB49174"
+			optional: true
+			shape: "diamond"
+			subtitle: "Custom Drawer Textures!"
+			tasks: [{
+				id: "4C53A834E379FDCD"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "functionalstorage:framed_1"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:framed_2"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:framed_4"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:compacting_framed_drawer"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:framed_simple_compacting_drawer"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:framed_storage_controller"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:framed_controller_extension"
+							}
+						]
+					}
+				}
+				title: "Any Framed Drawer"
+				type: "item"
+			}]
+			title: "Framed Drawers"
+			x: -2.0d
+			y: 0.0d
+		}
+	]
+	title: "Storage"
+}

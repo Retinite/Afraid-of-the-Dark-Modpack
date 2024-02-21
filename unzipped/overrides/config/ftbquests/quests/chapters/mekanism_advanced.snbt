@@ -1,0 +1,1955 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "diamond"
+	filename: "mekanism_advanced"
+	group: "37DA37ED2FACCAC8"
+	hide_quest_details_until_startable: true
+	icon: "mekanism:module_color_modulation_unit"
+	id: "099039BD5A15D510"
+	order_index: 1
+	progression_mode: "flexible"
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["25DFACEB8666557F"]
+			description: [
+				"You will need two &7Pressurized Reaction Chambers&r, an &7Electrolytic Separator&r, a &7Rotary Condensentrator&r, &2Bio Fuel&r, and &1Water&r (likely from an &7Electric Pump&r) to create HDPE Pellets."
+				""
+				"Be sure to use an &7Enrichment Chamber&r to convert the HDPE Pellets into HDPE Sheets!"
+			]
+			id: "5507B5A25122B5EE"
+			rewards: [{
+				count: 32
+				id: "22EFCD816A427B41"
+				item: "mekanism:hdpe_sheet"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			subtitle: "The Plastic Age"
+			tasks: [{
+				disable_toast: true
+				id: "6EFBC39265CFD43D"
+				item: "mekanism:hdpe_sheet"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"5507B5A25122B5EE"
+				"2ED556D1B5D75583"
+			]
+			id: "5364CB94F946CD52"
+			rewards: [
+				{
+					id: "32BABF8C8BCD13C8"
+					item: "mekanism:steel_casing"
+					type: "item"
+				}
+				{
+					id: "1641E9710452738A"
+					item: "mekanism:pressurized_reaction_chamber"
+					type: "item"
+				}
+			]
+			shape: "square"
+			subtitle: "Uses Nuclear Waste!"
+			tasks: [{
+				disable_toast: true
+				id: "59E1C9A0E7D28D24"
+				item: "mekanism:solar_neutron_activator"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2B6228865F19BB19"]
+			id: "5983BABAE536699D"
+			rewards: [{
+				count: 2
+				id: "44978532CCB16EE5"
+				item: "mekanism:ultimate_control_circuit"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "Uses Nuclear Waste!"
+			tasks: [{
+				disable_toast: true
+				id: "56C9ABD931C5EB28"
+				item: "mekanism:isotopic_centrifuge"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"5364CB94F946CD52"
+				"330515F72EF92065"
+			]
+			id: "4C962ECD330AD934"
+			rewards: [{
+				count: 8
+				id: "479EB3DE64620971"
+				item: "mekanism:pellet_polonium"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.5d
+			subtitle: "The Penultimate Resource"
+			tasks: [{
+				disable_toast: true
+				id: "2E6FE2A114F2DB02"
+				item: "mekanism:pellet_polonium"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"5983BABAE536699D"
+				"330515F72EF92065"
+			]
+			description: ["You need 72 in total to build the SPS."]
+			id: "60D6E96D843533C8"
+			rewards: [{
+				count: 8
+				id: "15F67421AB4F6743"
+				item: "mekanism:pellet_plutonium"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 0.8d
+			tasks: [{
+				disable_toast: true
+				id: "17C0ABF63B16FCCF"
+				item: "mekanism:pellet_plutonium"
+				type: "item"
+			}]
+			x: -0.0357142857142847d
+			y: -1.9464285714285765d
+		}
+		{
+			dependencies: [
+				"6B213F13077F8353"
+				"4FB0DB7786B5F58A"
+			]
+			hide_dependent_lines: true
+			id: "3818692FCB23260D"
+			rewards: [{
+				count: 2
+				id: "7989FEAE666BEE6F"
+				item: "mekanism:pellet_antimatter"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 2.0d
+			subtitle: "The Ultimate Resource"
+			tasks: [{
+				disable_toast: true
+				id: "0971A863658F5E56"
+				item: "mekanism:pellet_antimatter"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"7660E92DA19A2896"
+				"74008E93D76D5E3E"
+				"0DC630AA75E6F1A6"
+				"4B02E1C3F918DDC6"
+			]
+			id: "6B213F13077F8353"
+			rewards: [{
+				id: "4F2CEE9A8BAECDC1"
+				item: "mekanism:chemical_crystallizer"
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				disable_toast: true
+				id: "1188900CBBBBF1D8"
+				item: "mekanism:chemical_crystallizer"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"5507B5A25122B5EE"
+				"4C962ECD330AD934"
+				"3922AAC0A2A06400"
+			]
+			description: ["'&bP&r' - change head mode"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "7FDFFF6540D5EC6E"
+			rewards: [
+				{
+					id: "6F53A6D9F676F6B0"
+					item: "mekanism:ultimate_control_circuit"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "0F88A25D70692E5B"
+					item: "mekanism:pellet_polonium"
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "circle"
+			tasks: [{
+				disable_toast: true
+				id: "1F90F29CB8E7ABC6"
+				item: "mekanism:mekasuit_helmet"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5507B5A25122B5EE"
+				"4C962ECD330AD934"
+				"3922AAC0A2A06400"
+			]
+			description: ["'&bL&r' - change chest mode"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "1FC5FF0FD6445AE4"
+			rewards: [
+				{
+					id: "7202590DD2AB2F58"
+					item: "mekanism:ultimate_control_circuit"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "5363C7FF8DEEDFB0"
+					item: "mekanism:pellet_polonium"
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "circle"
+			tasks: [{
+				disable_toast: true
+				id: "6F0E0C16BB30CF25"
+				item: "mekanism:mekasuit_bodyarmor"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"5507B5A25122B5EE"
+				"4C962ECD330AD934"
+				"3922AAC0A2A06400"
+			]
+			description: ["'&bM&r' - change leggings mode"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "7D4A5D773D4AF6CF"
+			rewards: [
+				{
+					id: "01ED83677D28C34F"
+					item: "mekanism:ultimate_control_circuit"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "4BD3D1A8ED81157C"
+					item: "mekanism:pellet_polonium"
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "circle"
+			tasks: [{
+				disable_toast: true
+				id: "79BF95643BC12885"
+				item: "mekanism:mekasuit_pants"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"5507B5A25122B5EE"
+				"4C962ECD330AD934"
+				"3922AAC0A2A06400"
+			]
+			description: ["'&bN&r' - change boots mode"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "16A544D3E7BB73B2"
+			rewards: [
+				{
+					id: "5E4284B91B298E4E"
+					item: "mekanism:ultimate_control_circuit"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "4CACE4EEC94BA8FF"
+					item: "mekanism:pellet_polonium"
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "circle"
+			tasks: [{
+				disable_toast: true
+				id: "526806FD3CE4B2A3"
+				item: "mekanism:mekasuit_boots"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"5507B5A25122B5EE"
+				"4C962ECD330AD934"
+				"3922AAC0A2A06400"
+			]
+			description: [
+				"* Does not function as a &aConfigurator&r."
+				""
+				"'&bK&r' - change item mode"
+			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "0BBA3C8B3C852A9C"
+			rewards: [
+				{
+					id: "7A4FF756ADD91A39"
+					item: "mekanism:ultimate_control_circuit"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "465D60098F4718F4"
+					item: "mekanism:pellet_polonium"
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "circle"
+			subtitle: "The Ultimate Multitool*"
+			tasks: [{
+				disable_toast: true
+				id: "41F6DDBB14C54B81"
+				item: "mekanism:meka_tool"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"5507B5A25122B5EE"
+				"2ED556D1B5D75583"
+			]
+			description: [
+				"'&b\\\\ &r' - module tweaker"
+				""
+				"Be sure to check the settings for a module after you have installed it, as some modules have odd default values!"
+			]
+			hide_dependent_lines: true
+			icon: "mekanism:module_base"
+			id: "1FE4AA5D3CE272C4"
+			rewards: [
+				{
+					count: 8
+					id: "3FE5A6DD643CDF4F"
+					item: "mekanism:module_base"
+					type: "item"
+				}
+				{
+					id: "20A2D83B8E85B750"
+					item: "mekanism:steel_casing"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			subtitle: "Upgrades, People! Upgrades!"
+			tasks: [
+				{
+					disable_toast: true
+					id: "61AD691547B06BF2"
+					item: "mekanism:module_base"
+					type: "item"
+				}
+				{
+					id: "498E71B478CBE3C3"
+					item: "mekanism:modification_station"
+					type: "item"
+				}
+			]
+			title: "Modules"
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"1FE4AA5D3CE272C4"
+				"3922AAC0A2A06400"
+			]
+			id: "0F421B52A85EAC43"
+			optional: true
+			rewards: [{
+				count: 4
+				id: "78FA2ED35519F242"
+				item: "mekanism:module_energy_unit"
+				team_reward: false
+				type: "item"
+			}]
+			subtitle: "Bigger Batteries"
+			tasks: [{
+				count: 4L
+				disable_toast: true
+				id: "29973EE97A1AB41C"
+				item: "mekanism:module_energy_unit"
+				type: "item"
+			}]
+			title: "Energy Unit"
+			x: -4.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1FE4AA5D3CE272C4"]
+			id: "2A0BF58083394BFE"
+			optional: true
+			rewards: [
+				{
+					count: 2
+					id: "685DF3CF00CD8B2F"
+					item: "mekanism:alloy_infused"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "3635EA79F838CB0A"
+					item: "mekanism:block_lead"
+					team_reward: false
+					type: "item"
+				}
+			]
+			tasks: [{
+				disable_toast: true
+				id: "61DC5FDE6932808F"
+				item: "mekanism:module_radiation_shielding_unit"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1FE4AA5D3CE272C4"]
+			id: "30290E1357027FB6"
+			optional: true
+			rewards: [
+				{
+					count: 2
+					id: "690BB66D82101D79"
+					item: "mekanism:alloy_infused"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "33033BA3CC503D10"
+					item: "mekanism:laser_amplifier"
+					team_reward: false
+					type: "item"
+				}
+			]
+			subtitle: "Laser Insurance"
+			tasks: [{
+				disable_toast: true
+				id: "35B29C658C16D8A4"
+				item: "mekanism:module_laser_dissipation_unit"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1FE4AA5D3CE272C4"]
+			id: "6B110F5268677060"
+			optional: true
+			rewards: [{
+				count: 3
+				id: "597D9B77CCEE7244"
+				item: "mekanism:module_color_modulation_unit"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "Custom Colors"
+			tasks: [{
+				disable_toast: true
+				id: "071702E09BB9E5F5"
+				item: "mekanism:module_color_modulation_unit"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7FDFFF6540D5EC6E"
+				"1FE4AA5D3CE272C4"
+			]
+			id: "76F15FBC5108EFC5"
+			optional: true
+			rewards: [
+				{
+					count: 2
+					id: "076869619F714A3C"
+					item: "mekanism:alloy_infused"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "6F20F9696B83AC95"
+					item: "mekanism:electrolytic_core"
+					team_reward: false
+					type: "item"
+				}
+			]
+			subtitle: "Respiration"
+			tasks: [{
+				disable_toast: true
+				id: "4583D86DF5393A00"
+				item: "mekanism:module_electrolytic_breathing_unit"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7FDFFF6540D5EC6E"
+				"1FE4AA5D3CE272C4"
+			]
+			id: "437E6C19FBA18385"
+			optional: true
+			rewards: [{
+				id: "54B551A0C6B3C596"
+				item: "mekanism:module_base"
+				team_reward: false
+				type: "item"
+			}]
+			subtitle: "No Bad Potion Effects"
+			tasks: [{
+				disable_toast: true
+				id: "1EDF5FC62BF516B8"
+				item: "mekanism:module_inhalation_purification_unit"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7FDFFF6540D5EC6E"
+				"1FE4AA5D3CE272C4"
+			]
+			id: "5D389FACF9E98C17"
+			rewards: [
+				{
+					count: 2
+					id: "59C3807033244EA7"
+					item: "mekanism:pellet_polonium"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "0467A4A644C06FF1"
+					item: "observed:observereye"
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "circle"
+			tasks: [{
+				disable_toast: true
+				id: "4A4EA6FCCD1C14F8"
+				item: "mekanism:module_vision_enhancement_unit"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7FDFFF6540D5EC6E"
+				"5ED0D6E73AE2EA8E"
+				"1FE4AA5D3CE272C4"
+			]
+			id: "42D9982DC9FF2A8B"
+			optional: true
+			rewards: [{
+				id: "50AE2C6687B744DA"
+				item: "mekanism:module_base"
+				team_reward: false
+				type: "item"
+			}]
+			subtitle: "Always Stay Full"
+			tasks: [{
+				disable_toast: true
+				id: "340F2DF4E28ECC06"
+				item: "mekanism:module_nutritional_injection_unit"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7FDFFF6540D5EC6E"
+				"1FE4AA5D3CE272C4"
+				"50009778B7D24D59"
+			]
+			id: "740E99E2012F5259"
+			optional: true
+			rewards: [
+				{
+					count: 4
+					id: "5100D47DA3C1E623"
+					item: "mekanism:pellet_polonium"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "1A2AADB59119A7E3"
+					item: "mekanismgenerators:solar_generator"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "60C85B876378D752"
+					item: "mekanismgenerators:solar_generator"
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			subtitle: "Daylight Energy"
+			tasks: [{
+				disable_toast: true
+				id: "5A3AC6E4F1A7D0EC"
+				item: "mekanismgenerators:module_solar_recharging_unit"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7D4A5D773D4AF6CF"
+				"1FE4AA5D3CE272C4"
+			]
+			id: "042F69788646DBF8"
+			optional: true
+			rewards: [
+				{
+					count: 4
+					id: "5B9BE45C81504E30"
+					item: "mekanism:pellet_polonium"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "6C16CEA096B57C17"
+					item: "mekanismgenerators:heat_generator"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "0CE605BE6A90AE94"
+					item: "mekanismgenerators:heat_generator"
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			subtitle: "Fire Resistance (+Energy)"
+			tasks: [{
+				disable_toast: true
+				id: "1CFC13A01D197963"
+				item: "mekanismgenerators:module_geothermal_generator_unit"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"1FC5FF0FD6445AE4"
+				"1FE4AA5D3CE272C4"
+			]
+			id: "4A8B6B49B722C15D"
+			optional: true
+			rewards: [{
+				id: "5B8D682E378F9E53"
+				item: "mekanism:module_base"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				disable_toast: true
+				id: "16D45A45E27A38B6"
+				item: "mekanism:module_dosimeter_unit"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"1FC5FF0FD6445AE4"
+				"1FE4AA5D3CE272C4"
+			]
+			id: "2DC7BCEFED14D2D8"
+			optional: true
+			rewards: [{
+				id: "34A4B3ABA2BFEEC5"
+				item: "mekanism:module_base"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				disable_toast: true
+				id: "4C88EA8F3AC732F4"
+				item: "mekanism:module_geiger_unit"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"1FC5FF0FD6445AE4"
+				"1FE4AA5D3CE272C4"
+			]
+			id: "221662B39C99ABC2"
+			optional: true
+			rewards: [{
+				id: "76330F361138C924"
+				item: "mekanism:module_base"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "pentagon"
+			tasks: [{
+				disable_toast: true
+				id: "21F805B8D11EA41A"
+				item: "mekanism:module_jetpack_unit"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"1FC5FF0FD6445AE4"
+				"1FE4AA5D3CE272C4"
+			]
+			description: ["Optionally, can also charge your inventory!"]
+			id: "73304F1A0CCD1B69"
+			optional: true
+			rewards: [{
+				id: "0B1289C80FDEC8DA"
+				item: "mekanism:module_base"
+				team_reward: false
+				type: "item"
+			}]
+			subtitle: "Equal Charge Across Armor"
+			tasks: [{
+				disable_toast: true
+				id: "6E6A9AD93F0946E3"
+				item: "mekanism:module_charge_distribution_unit"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"1FC5FF0FD6445AE4"
+				"3818692FCB23260D"
+				"1FE4AA5D3CE272C4"
+			]
+			hide_dependency_lines: true
+			id: "7E8A491CC6BA3265"
+			optional: true
+			rewards: [{
+				id: "7691D10B72388C9E"
+				item: "mekanism:module_base"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "pentagon"
+			subtitle: "Creative Flight"
+			tasks: [{
+				disable_toast: true
+				id: "104EEC715F6C0EC3"
+				item: "mekanism:module_gravitational_modulating_unit"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"1FC5FF0FD6445AE4"
+				"3818692FCB23260D"
+				"51C247E2BBB6F41C"
+				"1FE4AA5D3CE272C4"
+			]
+			description: ["Combine with the Jetpack Unit for continuous firework thrust!"]
+			id: "673EF357A4DF2599"
+			optional: true
+			rewards: [{
+				id: "426ED9B8F9444C82"
+				item: "mekanism:module_base"
+				team_reward: false
+				type: "item"
+			}]
+			subtitle: "Infinite Elytra"
+			tasks: [{
+				disable_toast: true
+				id: "618088A81B8B614A"
+				item: "mekanism:module_elytra_unit"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"7D4A5D773D4AF6CF"
+				"1FE4AA5D3CE272C4"
+			]
+			id: "61296CE16D114A82"
+			optional: true
+			rewards: [{
+				id: "62B89F2613FBEE02"
+				item: "mekanism:module_base"
+				team_reward: false
+				type: "item"
+			}]
+			subtitle: "Better Aqua Affinity"
+			tasks: [{
+				disable_toast: true
+				id: "7118AD3400DC76CE"
+				item: "mekanism:module_gyroscopic_stabilization_unit"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"7D4A5D773D4AF6CF"
+				"1FE4AA5D3CE272C4"
+			]
+			id: "1D13136695F60E80"
+			optional: true
+			rewards: [
+				{
+					count: 2
+					id: "18090ADE4AD2D726"
+					item: "mekanism:pellet_polonium"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "1A6565F6F04E9EB7"
+					item: "minecraft:lightning_rod"
+					team_reward: false
+					type: "item"
+				}
+			]
+			subtitle: "Better Depth Strider"
+			tasks: [{
+				disable_toast: true
+				id: "5DF04992B6ECA852"
+				item: "mekanism:module_hydrostatic_repulsor_unit"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"7D4A5D773D4AF6CF"
+				"1FE4AA5D3CE272C4"
+			]
+			id: "41B87F94E80A634B"
+			optional: true
+			rewards: [
+				{
+					count: 2
+					id: "24DBAD432B582781"
+					item: "mekanism:pellet_polonium"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "2E372503D071860C"
+					item: {
+						Count: 1b
+						id: "minecraft:diamond_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					team_reward: false
+					type: "item"
+				}
+			]
+			subtitle: "Super Sprint Speed"
+			tasks: [{
+				disable_toast: true
+				id: "6E22DED0046D6F90"
+				item: "mekanism:module_locomotive_boosting_unit"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"7D4A5D773D4AF6CF"
+				"1FE4AA5D3CE272C4"
+			]
+			id: "3B08611C8AA7661D"
+			optional: true
+			rewards: [
+				{
+					count: 3
+					id: "7577954A2504116C"
+					item: "mekanism:pellet_polonium"
+					team_reward: false
+					type: "item"
+				}
+				{
+					count: 2
+					id: "15C2591CB490E525"
+					item: "minecraft:blue_ice"
+					team_reward: false
+					type: "item"
+				}
+			]
+			subtitle: "Better Swift Sneak"
+			tasks: [{
+				disable_toast: true
+				id: "4E30F0C50DEA8580"
+				item: "mekanism:module_motorized_servo_unit"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"16A544D3E7BB73B2"
+				"1FE4AA5D3CE272C4"
+			]
+			description: ["&bCtrl + Space&r (default) to super jump."]
+			id: "0DB98B278B53DC23"
+			optional: true
+			rewards: [
+				{
+					count: 2
+					id: "104F55A3490ECCC6"
+					item: "mekanism:pellet_polonium"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "45FAAFB56A67BD1F"
+					item: "mekanism:free_runners"
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				disable_toast: true
+				id: "649ECF126947DDAA"
+				item: "mekanism:module_hydraulic_propulsion_unit"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"16A544D3E7BB73B2"
+				"1FE4AA5D3CE272C4"
+			]
+			id: "56C36AC0B7BEDBB1"
+			optional: true
+			rewards: [
+				{
+					count: 2
+					id: "2EC36E6620551513"
+					item: "mekanism:pellet_polonium"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "02ECD0047A8B4113"
+					item: "minecraft:iron_bars"
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				disable_toast: true
+				id: "049A8E27518F75D4"
+				item: "mekanism:module_magnetic_attraction_unit"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"16A544D3E7BB73B2"
+				"1FE4AA5D3CE272C4"
+			]
+			id: "4F2BD364233B196E"
+			optional: true
+			rewards: [
+				{
+					id: "2041FE8FDAA114AE"
+					item: "mekanism:pellet_polonium"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "6234D235C1664D9B"
+					item: "mekanism:hydrogen_bucket"
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				disable_toast: true
+				id: "36AAE63DBFA4548A"
+				item: "mekanism:module_frost_walker_unit"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"0BBA3C8B3C852A9C"
+				"1FE4AA5D3CE272C4"
+			]
+			id: "4EE9FF2E155C6E79"
+			optional: true
+			rewards: [
+				{
+					count: 2
+					id: "0271D6DDEEFD4694"
+					item: "mekanism:alloy_infused"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "17D9F436EFDC1E70"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			subtitle: "Efficiency"
+			tasks: [{
+				disable_toast: true
+				id: "309386A279629739"
+				item: "mekanism:module_excavation_escalation_unit"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"0BBA3C8B3C852A9C"
+				"1FE4AA5D3CE272C4"
+			]
+			description: ["Check your settings once installed! Defaults to low damage!"]
+			id: "2A1FCF3856BBFC2A"
+			optional: true
+			rewards: [
+				{
+					count: 2
+					id: "08B67FDCC7D7185F"
+					item: "mekanism:alloy_infused"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "34FC280668A94698"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				disable_toast: true
+				id: "0454FA99FFCDA3EA"
+				item: "mekanism:module_attack_amplification_unit"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"0BBA3C8B3C852A9C"
+				"1FE4AA5D3CE272C4"
+			]
+			description: [
+				"\"Extended Vein Mining\" - when false, vein mining &owill only work on &lores&r. When true, will work on any material."
+				""
+				"With 4 modules installed, can mine up to 128 blocks at once."
+			]
+			id: "1D7120BBF228D3D2"
+			optional: true
+			rewards: [
+				{
+					count: 2
+					id: "5D37BDB4D17F6816"
+					item: "mekanism:pellet_polonium"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "25C40EE7E502BFE5"
+					item: {
+						Count: 1b
+						id: "mekanismtools:diamond_paxel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			subtitle: "Vein Miner!"
+			tasks: [{
+				disable_toast: true
+				id: "4538454F51B53D69"
+				item: "mekanism:module_vein_mining_unit"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"0BBA3C8B3C852A9C"
+				"1FE4AA5D3CE272C4"
+			]
+			description: [
+				"With 4 modules installed, can mine up to a 9x9 square at once! Much cleaner excavation than vein miner."
+				""
+				"Hold &bShift&r to only mine 1 block at a time instead."
+			]
+			id: "2CD76885D7EBD497"
+			optional: true
+			rewards: [
+				{
+					count: 2
+					id: "10D2F8AD61029F2F"
+					item: "mekanism:pellet_polonium"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "39C6115F31FEA936"
+					item: "minecraft:tnt"
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			subtitle: "&oPlane Miner!?!&r"
+			tasks: [{
+				disable_toast: true
+				id: "084393E1CAD7954E"
+				item: "mekanism:module_blasting_unit"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"0BBA3C8B3C852A9C"
+				"1FE4AA5D3CE272C4"
+			]
+			id: "6822D7DDAE2576E6"
+			optional: true
+			rewards: [{
+				id: "7596A685F14BDB42"
+				item: "mekanism:module_base"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "pentagon"
+			tasks: [{
+				disable_toast: true
+				id: "05A0992CE6319340"
+				item: "mekanism:module_silk_touch_unit"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"0BBA3C8B3C852A9C"
+				"1FE4AA5D3CE272C4"
+			]
+			id: "3BCF409EBC19BD2F"
+			optional: true
+			rewards: [
+				{
+					count: 2
+					id: "42A781DB849364A7"
+					item: "mekanism:pellet_polonium"
+					team_reward: false
+					type: "item"
+				}
+				{
+					count: 2
+					id: "01B65C7DF32B803F"
+					item: "minecraft:diamond_block"
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "pentagon"
+			tasks: [{
+				disable_toast: true
+				id: "6BF41ED3255FD988"
+				item: "mekanism:module_fortune_unit"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"0BBA3C8B3C852A9C"
+				"1FE4AA5D3CE272C4"
+			]
+			id: "18BA3F2DB5B8A415"
+			optional: true
+			rewards: [
+				{
+					count: 2
+					id: "6055650C3637DFF6"
+					item: "mekanism:alloy_infused"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "1E563229A89A7F0E"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "pentagon"
+			tasks: [{
+				disable_toast: true
+				id: "6A469C9266A0863C"
+				item: "mekanism:module_farming_unit"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"0BBA3C8B3C852A9C"
+				"1FE4AA5D3CE272C4"
+			]
+			id: "771E42F6B8DBAEE6"
+			optional: true
+			rewards: [{
+				id: "39E4897205C2B3C8"
+				item: "mekanism:module_base"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "pentagon"
+			tasks: [{
+				disable_toast: true
+				id: "373C10A2316F2636"
+				item: "mekanism:module_shearing_unit"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"0BBA3C8B3C852A9C"
+				"3818692FCB23260D"
+				"1FE4AA5D3CE272C4"
+			]
+			id: "18021E6BF9B3B813"
+			optional: true
+			rewards: [{
+				id: "31832B305BE0F290"
+				item: "mekanism:module_base"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "pentagon"
+			subtitle: "Move Like an Enderman!"
+			tasks: [{
+				disable_toast: true
+				id: "0DB801B191670520"
+				item: "mekanism:module_teleportation_unit"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5507B5A25122B5EE"]
+			hide_dependent_lines: true
+			id: "51C247E2BBB6F41C"
+			optional: true
+			rewards: [{
+				id: "5222FF610839A561"
+				item: {
+					Count: 1b
+					id: "minecraft:elytra"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				disable_toast: true
+				id: "004B038026F1A704"
+				item: {
+					Count: 1b
+					id: "mekanism:hdpe_elytra"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"4B02E1C3F918DDC6"
+				"261EC605D7331140"
+			]
+			id: "5ED0D6E73AE2EA8E"
+			optional: true
+			rewards: [{
+				id: "3710554194C1F751"
+				item: "mekanism:canteen"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "Liquid Diet"
+			tasks: [{
+				disable_toast: true
+				id: "7A799D4BF819887E"
+				item: "mekanism:nutritional_liquifier"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"401F21347665C41E"
+				"3922AAC0A2A06400"
+			]
+			description: [
+				"A &nsingle&r &7Laser&r can transfer up to 4kFE/t, making it only a little worse than the &bElite Universal Cable&r. However, laser beams are able to travel up to &l256 blocks&r from their source (in this modpack). In addition, laser beams can be combined for higher transfer rates via the &7Laser Amplifier&r."
+				""
+				"A laser beam will break blocks and deal fire damage to any entities passing through, with the block breaking speed / damage determined by the beam's energy."
+				"{@pagebreak}"
+				"A &7Laser Amplifier&r is able to merge up to five laser beams (but not split them) and can manually set the energy transfer rate of a beam &oup to a maximum of 400MFE/t&r (equal to 10000 &7Laser&rs). Attaching a cable (and setting the cable to &lpull&r) allows for power to be pulled from the &7Laser Amplifier&r's internal storage. &7Laser Amplifier&rs can be controlled by redstone, and can also output redstone signals."
+				""
+				"&cWarning&r: Overfilling will dump the excess power."
+				"{@pagebreak}"
+				"Note that &7Laser&rs can only be turned off by cutting their power. If energy conservation is an issue for you, you can use the &aConfigurator&r to enable \"Redstone Sensitivity\" for any pipes and cables, allowing you to automatically turn of the laser's power."
+				""
+				"The &7Laser Amplifier&r has options for both Redstone inputs and Redstone outputs."
+			]
+			icon: "mekanism:laser"
+			id: "36059BDB7CF78444"
+			optional: true
+			rewards: [{
+				count: 3
+				id: "39E41F44CD7F7FA4"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "Long-Range Cables"
+			tasks: [
+				{
+					id: "08D1A42A2CE3EC18"
+					item: "mekanism:laser"
+					type: "item"
+				}
+				{
+					id: "23FEA37823A7AB9F"
+					item: "mekanism:laser_amplifier"
+					type: "item"
+				}
+			]
+			title: "Lasers!"
+			x: -4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"36059BDB7CF78444"
+				"6DB5CD9F495351C3"
+			]
+			description: [
+				"Laser beams from a &7Laser Tractor Beam&r collect any blocks they break in their internal storage, which can then be accessed by Logistical Transporters."
+				""
+				"Otherwise, the &7Laser Tractor Beam&r is able to redirect and merge laser beams like the &7Laser Amplifier&r."
+			]
+			id: "63B0B141435039B8"
+			optional: true
+			rewards: [{
+				id: "4F16E68B9B9693D7"
+				item: "mekanism:laser_amplifier"
+				type: "item"
+			}]
+			subtitle: "Auto-Mining"
+			tasks: [{
+				id: "77E2039C86B1AC7E"
+				item: "mekanism:laser_tractor_beam"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"4B02E1C3F918DDC6"
+				"5C6355E15C1CDDF1"
+			]
+			id: "7159EA9CD7A2F4D4"
+			rewards: [{
+				id: "013AD74E18C2FCDD"
+				item: "mekanism:chargepad"
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				id: "55501F36C92AA395"
+				item: "mekanism:chargepad"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"7159EA9CD7A2F4D4"
+				"6DB5CD9F495351C3"
+				"0DC630AA75E6F1A6"
+				"74008E93D76D5E3E"
+			]
+			description: ["Must be placed on a &aChargepad&r."]
+			id: "7476472F01F198BB"
+			shape: "square"
+			subtitle: "Your Personal Assistant"
+			tasks: [{
+				id: "033DB432E92C0E18"
+				item: "mekanism:robit"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"7476472F01F198BB"
+				"075379CCA2298AA8"
+			]
+			description: [
+				"Step 1: Open \"Config\""
+				""
+				"Edit the radius and depth of the miner to your liking. The miner is able to search up to all y-levels and up to 32 blocks away horizontally (in a square)."
+				""
+				""
+				"Step 2: Add Filters"
+				""
+				"Provide Silk-Touched versions of each material you want the miner to collect."
+				""
+				""
+				"Step 3: Press \"Start\""
+				""
+				"\"Stop\" will pause the mining process, and \"Reset\" will allow you to edit the configuration again."
+				""
+				""
+				"Optionally, you can specify what materials to replace mined blocks with."
+			]
+			id: "15F17744773C5CF1"
+			shape: "square"
+			subtitle: "AFK Mining"
+			tasks: [{
+				id: "565514682F15FD2D"
+				item: "mekanism:digital_miner"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["15F17744773C5CF1"]
+			description: [
+				"If you've seen this item in JEI and been confused, then be a little disappointed instead!"
+				""
+				"When installed, any blocks mined by the Digital Miner are replaced with your choice of stone."
+			]
+			id: "3636044A87ED16EA"
+			optional: true
+			subtitle: "So &lthat's&r what this is for!"
+			tasks: [{
+				id: "0F69782B7F2AFC54"
+				item: "mekanism:upgrade_stone_generator"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"261EC605D7331140"
+				"4B02E1C3F918DDC6"
+			]
+			hide_dependent_lines: true
+			icon: "mekanism:personal_chest"
+			id: "6DB5CD9F495351C3"
+			rewards: [{
+				id: "2EAD95EF9C6D5EA3"
+				item: "mekanism:personal_barrel"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "Better Shulker Boxes"
+			tasks: [{
+				id: "5CC2F31B6B84A251"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "mekanism:personal_chest"
+							}
+							{
+								Count: 1b
+								id: "mekanism:personal_barrel"
+							}
+						]
+					}
+				}
+				title: "Personal Chest or Personal Barrel"
+				type: "item"
+			}]
+			title: "Personal Storage"
+			x: 4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"15F17744773C5CF1"
+				"6BCDD430AD171DC7"
+				"50C50A8AA14F1AE1"
+			]
+			dependency_requirement: "one_completed"
+			description: ["Used in the &7Digital Miner&r, the &aTeleporter&r, and the &5Quantum Entangloporter&r."]
+			hide_dependency_lines: true
+			id: "404E71DE59F75C06"
+			optional: true
+			subtitle: "Chunkloading"
+			tasks: [{
+				id: "2FA291A7CA0AB285"
+				item: "mekanism:upgrade_anchor"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"7E9EB5F28B524B41"
+				"45E9966E19333CF0"
+			]
+			description: [
+				"Works with the \"Transporter Config\" gui in Mekanism machines."
+				""
+				"Otherwise, use a &aConfigurator&r to color code &aLogistical Transporter&rs."
+			]
+			id: "075379CCA2298AA8"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "304303F8A6F60BD1"
+				item: "mekanism:basic_logistical_transporter"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "Specific Item Destinations!"
+			tasks: [{
+				disable_toast: true
+				id: "068F6C2F937EEF0A"
+				item: "mekanism:logistical_sorter"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["261EC605D7331140"]
+			description: [
+				"&bRight Click&r to view the tags of blocks in front of you."
+				""
+				"&bShift + Right Click&r to open up the menu."
+			]
+			hide_dependency_lines: true
+			id: "3CC9A464A71A41B7"
+			optional: true
+			rewards: [{
+				id: "077D0201E221B802"
+				item: "mekanism:basic_control_circuit"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "Look Up Item Tags"
+			tasks: [{
+				id: "4F652A778D83B920"
+				item: "mekanism:dictionary"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["7E9EB5F28B524B41"]
+			id: "219DDC709DC5FE81"
+			optional: true
+			tasks: [
+				{
+					id: "052A8E0B56F00CD9"
+					item: "mekanism:diversion_transporter"
+					type: "item"
+				}
+				{
+					id: "7C5A8BB6C8827571"
+					item: "mekanism:restrictive_transporter"
+					type: "item"
+				}
+			]
+			title: "Advanced Logistics"
+			x: 6.5d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"5C6355E15C1CDDF1"
+				"4B02E1C3F918DDC6"
+			]
+			id: "08EC9EFE02F56216"
+			optional: true
+			subtitle: "Study Your Pipes!"
+			tasks: [{
+				id: "31F0D667D49898CC"
+				item: "mekanism:network_reader"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"261EC605D7331140"
+				"4B02E1C3F918DDC6"
+			]
+			description: [
+				"Each crafting recipe needs to be recorded on its own Crafting Formula."
+				""
+				"Each &7Formulaic Assemblicator&r can only auto-craft one recipe at a time."
+			]
+			icon: "mekanism:formulaic_assemblicator"
+			id: "4DDBD14613C038F4"
+			optional: true
+			subtitle: "Auto-Crafting"
+			tasks: [
+				{
+					id: "763E1227255B74A9"
+					item: "mekanism:formulaic_assemblicator"
+					type: "item"
+				}
+				{
+					id: "1B824133D967C390"
+					item: "mekanism:crafting_formula"
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["78A10BADE264F811"]
+			id: "5CB130B09C95ED19"
+			optional: true
+			subtitle: "Fill Your Holes"
+			tasks: [{
+				id: "20DA66D73707DECC"
+				item: "mekanism:fluidic_plenisher"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["401F21347665C41E"]
+			id: "134330C6E9CFF9D6"
+			optional: true
+			subtitle: "Who Should Touch Your Stuff?"
+			tasks: [{
+				id: "4B0D01032A3E2C23"
+				item: "mekanism:security_desk"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"74008E93D76D5E3E"
+				"0DC630AA75E6F1A6"
+			]
+			id: "422303CDB0CEE50B"
+			optional: true
+			subtitle: "Custom Chunk Loading"
+			tasks: [{
+				id: "6DE7BDCED3418AE3"
+				item: "mekanism:dimensional_stabilizer"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3818692FCB23260D"]
+			id: "1E1C89875246E50F"
+			shape: "square"
+			subtitle: "Scientific Transmutation"
+			tasks: [{
+				id: "08CE8D1E090D21C6"
+				item: "mekanism:antiprotonic_nucleosynthesizer"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"74008E93D76D5E3E"
+				"0DC630AA75E6F1A6"
+			]
+			description: [
+				"&5Quantum Entangloporter&rs can send and recieve any resource (power, items, fluids, etc.) over any distance, including across dimensions!"
+				""
+				"Does not require power to function."
+				""
+				"You must specify a frequency before it can connect to any pipes."
+			]
+			id: "6BCDD430AD171DC7"
+			shape: "square"
+			subtitle: "Portal Pipes"
+			tasks: [{
+				id: "638EDF21BB6329D0"
+				item: "mekanism:quantum_entangloporter"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"4C962ECD330AD934"
+				"07A1B23354347DE0"
+				"0F1B855BF8A43CED"
+				"10ABF0BDEAA77BAC"
+			]
+			dependency_requirement: "all_started"
+			description: [
+				"Accessable anywhere, QIO keeps all of your items stored &oin the cloud&r. Does not require power!"
+				""
+				"Welcome to the new age."
+			]
+			hide_dependency_lines: true
+			icon: "mekanism:qio_drive_array"
+			id: "272BCA4A10A23511"
+			shape: "square"
+			subtitle: "Digital Storage"
+			tasks: [
+				{
+					id: "65CC044FDEE06C87"
+					item: "mekanism:qio_drive_array"
+					type: "item"
+				}
+				{
+					id: "0C0DA819ABB91F75"
+					item: "mekanism:qio_dashboard"
+					type: "item"
+				}
+				{
+					id: "6633F796F770F3A8"
+					item: "mekanism:qio_drive_base"
+					type: "item"
+				}
+			]
+			title: "Quantum Item Orchestration (QIO)"
+			x: 5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["272BCA4A10A23511"]
+			id: "4D2D71536D141B78"
+			tasks: [{
+				id: "373A39823C6DBF87"
+				item: "mekanism:portable_qio_dashboard"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["272BCA4A10A23511"]
+			id: "2A99A0FCA0CE5C1F"
+			subtitle: "Network Peripherals"
+			tasks: [
+				{
+					id: "2A0B71D28978FEDC"
+					item: "mekanism:qio_importer"
+					type: "item"
+				}
+				{
+					id: "70727C35A83CBD29"
+					item: "mekanism:qio_exporter"
+					type: "item"
+				}
+				{
+					id: "3AF941B4954E6E14"
+					item: "mekanism:qio_redstone_adapter"
+					type: "item"
+				}
+			]
+			title: "QIO IO"
+			x: 4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["272BCA4A10A23511"]
+			id: "5674BA14F3DADD9F"
+			tasks: [{
+				id: "3429226D29FC039D"
+				item: "mekanism:qio_drive_hyper_dense"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5674BA14F3DADD9F"]
+			id: "3CBB497E42796744"
+			tasks: [{
+				id: "075B28926EFB5E6B"
+				item: "mekanism:qio_drive_time_dilating"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"3CBB497E42796744"
+				"3818692FCB23260D"
+			]
+			id: "2541D5FED23826D1"
+			tasks: [{
+				id: "3EC935CC40A6D71D"
+				item: "mekanism:qio_drive_supermassive"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 2.0d
+		}
+	]
+	title: "Advanced"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "aotd:end_lighthouse",
+  "fallback": "minecraft:empty",
+  "elements": [{
+      "weight": 1,
+      "element": {
+		"element_type": "minecraft:single_pool_element",
+		"location": "aotd:end_lighthouse",
+		"projection": "rigid",
+		"processors": "minecraft:empty"
+      }
+    }]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "aotd:end_campfire",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 10,
+      "element": {
+		"element_type": "minecraft:single_pool_element",
+		"location": "aotd:end_campfire_a",
+		"projection": "terrain_matching",
+		"processors": "minecraft:empty"
+      }
+    },
+	{
+      "weight": 1,
+      "element": {
+		"element_type": "minecraft:single_pool_element",
+		"location": "aotd:end_campfire_b",
+		"projection": "terrain_matching",
+		"processors": "minecraft:empty"
+      }
+    },
+	{
+      "weight": 1,
+      "element": {
+		"element_type": "minecraft:single_pool_element",
+		"location": "aotd:end_campfire_c",
+		"projection": "terrain_matching",
+		"processors": "minecraft:empty"
+      }
+    }
+	]
+}

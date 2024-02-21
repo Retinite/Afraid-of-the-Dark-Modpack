@@ -1,0 +1,22 @@
+
+#Generator Energy Storage Config. This config is synced from server to client.
+[storage]
+	#Base energy storage (Joules).
+	advancedSolarPanel = "333334"
+	#Base energy storage (Joules).
+	hybridSolarPanel = "1000000"
+	#Base energy storage (Joules).
+	ultimateHybridSolarPanel = "3000000"
+	#Base energy storage (Joules).
+	quantumSolarPanel = "9000000"
+	#Base energy storage (Joules).
+	spectralSolarPanel = "27000000"
+	#Base energy storage (Joules).
+	singularSolarPanel = "81000000"
+	#Base energy storage (Joules).
+	lightAbsorbingSolarPanel = "243000000"
+	#Base energy storage (Joules).
+	photonicSolarPanel = "729000000"
+	#Base energy storage (Joules).
+	creativeSolarPanel = "2000000000"
+

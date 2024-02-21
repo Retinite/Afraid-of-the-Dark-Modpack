@@ -1,0 +1,209 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	disable_toast: true
+	filename: "modpack_night_vision"
+	group: ""
+	icon: "mekanism:module_vision_enhancement_unit"
+	id: "3232E1E706C17ECD"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["73D90E16E7875B13"]
+			id: "1D47E8D9FE4253ED"
+			subtitle: "Now Harder to Craft!"
+			tasks: [{
+				id: "7FFEDF40CA2C5212"
+				item: {
+					Count: 1b
+					id: "minecraft:potion"
+					tag: {
+						Potion: "minecraft:night_vision"
+					}
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1D47E8D9FE4253ED"]
+			description: [
+				"Wear in your Bauble slot!"
+				""
+				"You can also apply Unbreaking to get up to 100 minutes of &1Night Vision&r!"
+			]
+			id: "08E637FD4B504BD2"
+			subtitle: "~25 Minute Bauble"
+			tasks: [{
+				id: "3C5AFF051BFC944A"
+				item: {
+					Count: 1b
+					id: "apotheosis:potion_charm"
+					tag: {
+						Damage: 0
+						Potion: "minecraft:night_vision"
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["08E637FD4B504BD2"]
+			description: ["Can craft either by &l&oApotheosis&r infusing, or with a &1Night Vision&r Totem/Bottle."]
+			id: "50032BEB92430575"
+			subtitle: "Still Drops on Death"
+			tasks: [{
+				id: "463F0388CDFD4D58"
+				item: {
+					Count: 1b
+					id: "apotheosis:potion_charm"
+					tag: {
+						Damage: 0
+						Potion: "minecraft:night_vision"
+						Unbreakable: 1b
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			title: "Unbreakable Charm of Night Vision"
+			x: 0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["08E637FD4B504BD2"]
+			description: ["Wear in your Bauble slot!"]
+			id: "0B4E177CC1CE99AC"
+			subtitle: "Annoying Particles"
+			tasks: [{
+				id: "2E70BED65E966156"
+				item: "observed:observer_lenses"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["73D90E16E7875B13"]
+			id: "7016586EB104F233"
+			subtitle: "Limited Distance"
+			tasks: [{
+				id: "68F39ED3CCF01CCD"
+				item: "mekanism:module_vision_enhancement_unit"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.5d
+		}
+		{
+			description: [
+				"Raw - 10 Seconds"
+				"Cooked - 5 Seconds"
+			]
+			id: "6ECB0F799B4A44E2"
+			subtitle: "Eat Up!"
+			tasks: [
+				{
+					id: "0670D2083D2128C9"
+					item: "illuminative:glow_fish_item"
+					type: "item"
+				}
+				{
+					id: "725FFC1883343B45"
+					item: "illuminative:cooked_glow_fish"
+					type: "item"
+				}
+			]
+			title: "Glow Fish"
+			x: 2.5d
+			y: -2.0d
+		}
+		{
+			description: ["90 Seconds (1:30)"]
+			id: "5CC11DE7FC468891"
+			subtitle: "Chew Up!"
+			tasks: [{
+				id: "60B4DDA859B9799E"
+				item: "observed:observereye"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"0B4E177CC1CE99AC"
+				"7016586EB104F233"
+			]
+			description: [
+				"Craftable! Can convert to/from an unbreakable &1Charm of Night Vision&r."
+				""
+				"Reminder: you will drop one random Ability on death."
+			]
+			id: "34EA6A77A2533CA2"
+			shape: "circle"
+			subtitle: "Chance of Dropping on Death"
+			tasks: [{
+				id: "44670850FFB88E76"
+				item: {
+					Count: 1b
+					id: "everlastingabilities:ability_totem"
+					tag: {
+						"everlastingabilities:abilityStoreStack": [{
+							level: 1
+							name: "everlastingabilities:effect/night_vision"
+						}]
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			title: "Night Vision Ability"
+			x: -0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"5CC11DE7FC468891"
+				"6ECB0F799B4A44E2"
+			]
+			id: "73D90E16E7875B13"
+			shape: "square"
+			subtitle: "Localized Night Vision"
+			tasks: [
+				{
+					id: "3322DEDB80B12E55"
+					item: "aotdextras:luxum_lamp"
+					type: "item"
+				}
+				{
+					id: "2CA8AC3BC76A135C"
+					item: "aotdextras:luxum_block"
+					type: "item"
+				}
+			]
+			title: "Luxum"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["73D90E16E7875B13"]
+			description: ["Gives you occasional Nausea."]
+			id: "12931D31C93A1B03"
+			subtitle: "Drink Up!"
+			tasks: [{
+				id: "362F5A7FE4A507F3"
+				item: "drinkbeer:beer_mug_night_howl_kvass"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+	]
+	title: "Night Vision Guide"
+}

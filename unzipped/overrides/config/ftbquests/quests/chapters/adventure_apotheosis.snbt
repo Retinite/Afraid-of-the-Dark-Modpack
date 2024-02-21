@@ -1,0 +1,1292 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "adventure_apotheosis"
+	group: "11332E0C2CB4D054"
+	hide_quest_details_until_startable: true
+	icon: "apotheosis:blazing_hellshelf"
+	id: "5EACD59581DA123A"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "7945DE4AD82B3DE0"
+			rewards: [
+				{
+					count: 32
+					id: "0AF25312B092DFD3"
+					item: "apotheosis:obsidian_arrow"
+					team_reward: false
+					type: "item"
+				}
+				{
+					count: 32
+					id: "1277F44C3AC27D69"
+					item: "apotheosis:broadhead_arrow"
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "square"
+			subtitle: "Actually Useful!"
+			tasks: [{
+				id: "7FC980984D045682"
+				item: "minecraft:fletching_table"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			description: [
+				"&c&lApotheosis&r overhauls Minecraft's enchanting system by adding a variety of new bookshelves and decor that contribute to three primary enchantment stats:"
+				""
+				"&aEterna&r: enchantment level"
+				"&cQuanta&r: variance in enchantment level"
+				"&5Arcana&r: number \\& rarity of enchantments"
+				""
+				"There are also two secondary stats:"
+				"&eRectification&r: reduces the chance of negative &cQuanta&r outcomes"
+				"&3Enchanting Clues&r: reveals more about your next enchantment"
+				""
+				"The vanilla (wooden) bookshelves work essentially the same as before, requiring 15 to reach a level 30 enchantment."
+			]
+			hide_dependent_lines: true
+			icon: "minecraft:enchanting_table"
+			id: "3B9DBB624DBAD2D5"
+			rewards: [{
+				count: 16
+				id: "5069CF82F77B6C7E"
+				item: "minecraft:book"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "3606715C5128C263"
+				item: "minecraft:enchanting_table"
+				type: "item"
+			}]
+			title: "Enchanting Overhaul"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7E546068C651138E"
+				"35E0414D13E9839B"
+				"60232DED8F026114"
+				"46A041C16AA07573"
+			]
+			description: [
+				"Converts your enchanted books into points, allowing you to store, retreive, and &l&dcombine&r enchantments &owithout using an &7Anvil&r! Stores up to 2^15 points for &oeach&r enchantment (equal to one level XVI enchantment), however you can only extract up to the maximum level of the enchantments you give it."
+				""
+				"For example, you can convert 100 Power I books into 100 points, however you will need to have stored a Power V book previously if you want to extract any Power book of level up to V (which would cost 16 points to extract)."
+				""
+				"The Enchantment Library can safely be picked up &oand upgraded&r! Note that each Enchantment Library has its own storage and record of maximum-level enchantments."
+			]
+			hide_dependent_lines: true
+			id: "6EAA1396BB63AFDC"
+			rewards: [
+				{
+					count: 2
+					id: "2D6F3442651E5E1E"
+					item: "apotheosis:seashelf"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "67C7C1EE2F3DA47F"
+					item: "apotheosis:hellshelf"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "Enchantments Made Easy!"
+			tasks: [{
+				id: "041B180F6BEC9531"
+				item: "apotheosis:library"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6EAA1396BB63AFDC"
+				"55C6047D939F784D"
+			]
+			description: ["Is able to store 2^30 points for each enchantment, equal to one level XXXI (31) enchantment."]
+			id: "1942DF4A6F008A53"
+			optional: true
+			rewards: [
+				{
+					count: 16
+					id: "28B7E180052B4F66"
+					item: "apotheosis:infused_hellshelf"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "3D0FBAFD80EBBA55"
+					item: "apotheosis:infused_seashelf"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "16DDD41E9B66526F"
+					item: "apotheosis:deepshelf"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Absolutely Absurd"
+			tasks: [{
+				id: "0C4D91FE14A585EC"
+				item: "apotheosis:ender_library"
+				type: "item"
+			}]
+			x: 10.600000000000001d
+			y: 0.0d
+		}
+		{
+			description: [
+				"And Repairable!"
+				""
+				"Reminder: falling anvils &omay lose durability&r."
+			]
+			id: "590D8D834833D3D6"
+			rewards: [
+				{
+					id: "2CCC92DC4626FE3F"
+					item: "minecraft:damaged_anvil"
+					type: "item"
+				}
+				{
+					id: "408DEE8DEF1AC7B5"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:unbreaking"
+								lvl: 3s
+							}]
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "square"
+			subtitle: "Now Enchantable!"
+			tasks: [{
+				id: "36855B54E1B01E46"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "minecraft:anvil"
+							}
+							{
+								Count: 1b
+								id: "minecraft:chipped_anvil"
+							}
+							{
+								Count: 1b
+								id: "minecraft:damaged_anvil"
+							}
+						]
+					}
+				}
+				title: "Any Anvil"
+				type: "item"
+			}]
+			title: "Anvils"
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["590D8D834833D3D6"]
+			description: [
+				"Drop an &7Anvil&r onto any &dgem&r (obtained by mob drop or loot chest) to convert it into &9Gem Dust&r, at least until you have a &oSalvaging Table&r."
+				""
+				"&lEvery&r (lvl 1) &lEnchanted Book and every&r (lowest-tier) &dGem&r &lnow has a recipe using &9Gem Dust&r&l!&r"
+			]
+			id: "7B89564BA9259C4B"
+			rewards: [{
+				count: 16
+				id: "61A093D94B811F90"
+				item: "apotheosis:gem_dust"
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "56E922473AE223F1"
+				item: "apotheosis:gem_dust"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7EC54637441573C3"]
+			description: ["The rarity of a &dgem&r can be increased by combining two &dgems&r of the same rarity together with &9Gem Dust&r."]
+			id: "35BD6DD9B4F4FCA1"
+			rewards: [{
+				count: 16
+				id: "695C3470A802A0D8"
+				item: "apotheosis:rare_material"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "Upgrade Gems"
+			tasks: [{
+				id: "74EA7A2625136D22"
+				item: "apotheosis:gem_cutting_table"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7B89564BA9259C4B"]
+			description: ["Rarity materials can now be (de)compressed to obtain different rarities!"]
+			id: "7EC54637441573C3"
+			rewards: [
+				{
+					count: 64
+					id: "701E005F4094F34B"
+					item: "apotheosis:common_material"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "3E0A501941E59D13"
+					item: "apotheosis:uncommon_material"
+					type: "item"
+				}
+			]
+			shape: "square"
+			subtitle: "Scrap Extra Items and Gems"
+			tasks: [{
+				id: "5FEB1CD87BF8E40D"
+				item: "apotheosis:salvaging_table"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6A749C30A9410B7F"]
+			id: "0D1E009915B7B54C"
+			rewards: [{
+				count: 4
+				id: "062ACDEBB406BC3D"
+				item: "apotheosis:mythic_material"
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				id: "48CC7F6FF8E6F195"
+				item: "apotheosis:reforging_table"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7B89564BA9259C4B"]
+			id: "208746C62DAB6F45"
+			optional: true
+			rewards: [{
+				id: "7298EB78E81D66F4"
+				item: "apotheosis:sigil_of_socketing"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "Add Three Sockets!"
+			tasks: [{
+				id: "1530D7DA75A7F9A8"
+				item: "apotheosis:sigil_of_socketing"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"208746C62DAB6F45"
+				"49BEC5BE2AD3A732"
+			]
+			hide_dependency_lines: true
+			id: "5B78DF74E7F32901"
+			optional: true
+			rewards: [{
+				id: "10DB8E05CD4432C6"
+				item: "apotheosis:superior_sigil_of_socketing"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "Add Four Sockets!"
+			tasks: [{
+				id: "7549664FAF71A265"
+				item: "apotheosis:superior_sigil_of_socketing"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7EC54637441573C3"]
+			id: "6A749C30A9410B7F"
+			rewards: [{
+				count: 8
+				id: "211FD59DA6676BF0"
+				item: "apotheosis:epic_material"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "Reroll Affixes"
+			tasks: [{
+				id: "121B2784EDAF35BE"
+				item: "apotheosis:simple_reforging_table"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["590D8D834833D3D6"]
+			description: ["Note that regular &oCobwebs&r are similarly able to remove enchantments (but not curses)."]
+			id: "75B0215F5174C7B1"
+			optional: true
+			rewards: [{
+				count: 3
+				id: "352A1909DCB78738"
+				item: "apotheosis:prismatic_web"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "Removes Curses!"
+			tasks: [{
+				id: "32299020EC5314F5"
+				item: "apotheosis:prismatic_web"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3B9DBB624DBAD2D5"]
+			id: "70196079D9DCE35D"
+			optional: true
+			rewards: [{
+				id: "284641A0A5C2A50E"
+				item: "minecraft:bookshelf"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "---&aEterna&r, +++&cQuanta&r"
+			tasks: [{
+				disable_toast: true
+				id: "0F652A86A1A96F18"
+				item: "apotheosis:beeshelf"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3B9DBB624DBAD2D5"]
+			id: "0B17264539450C52"
+			optional: true
+			rewards: [{
+				id: "5AD8838DFB3A56F0"
+				item: "minecraft:bookshelf"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "-&aEterna&r, --&cQuanta&r"
+			tasks: [{
+				disable_toast: true
+				id: "3AF47EB2F620516D"
+				item: "apotheosis:melonshelf"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3B9DBB624DBAD2D5"]
+			description: [
+				"Seashelves are characterized by higher &5Arcana&r and &eRectification&r."
+				""
+				"Candles also provide &5Arcana&r!"
+			]
+			hide_dependent_lines: true
+			id: "7BA8FF82A523C9DF"
+			rewards: [{
+				id: "1C1BB060C44D91C5"
+				item: "apotheosis:seashelf"
+				type: "item"
+			}]
+			shape: "gear"
+			subtitle: "+&aEterna&r, +&5Arcana&r"
+			tasks: [{
+				id: "401EE93233725CE5"
+				item: "apotheosis:seashelf"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"7A46BAD609207DB3"
+				"65E72632C4110F0A"
+			]
+			dependency_requirement: "one_completed"
+			description: ["Endshelves are characterized by offering the highest &aEterna&r stats and stat cap, plus balanced &cQuanta&r and &5Arcana&r stats."]
+			icon: "apotheosis:endshelf"
+			id: "67DD5956A20FDE6B"
+			rewards: [{
+				count: 16
+				id: "5582B61E5F6CC191"
+				item: "minecraft:dragon_breath"
+				type: "item"
+			}]
+			size: 1.2d
+			subtitle: "+&aEterna&r, ++&cQuanta&r, ++&5Arcana&r"
+			tasks: [
+				{
+					id: "2E1C9E06176E29BE"
+					item: "apotheosis:infused_breath"
+					type: "item"
+				}
+				{
+					id: "2526E0006109C807"
+					item: "apotheosis:endshelf"
+					type: "item"
+				}
+			]
+			title: "Endshelf"
+			x: 8.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3B9DBB624DBAD2D5"]
+			description: [
+				"Hellshelves are characterized by higher &cQuanta&r and &3Enchanting Clues&r."
+				""
+				"Mob Heads also provide &cQuanta&r!"
+				""
+				"Having trouble finding Ghast Tears? Now you can craft them using an &7Enrichment Chamber&r and &0Corruption&r from &lThe Graveyard&r!"
+			]
+			hide_dependent_lines: true
+			id: "00D299E69480336D"
+			rewards: [{
+				id: "062A839E0FEF3227"
+				item: "apotheosis:hellshelf"
+				type: "item"
+			}]
+			shape: "gear"
+			subtitle: "+&aEterna&r, +&cQuanta&r"
+			tasks: [{
+				id: "4113512037589AE8"
+				item: "apotheosis:hellshelf"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"00D299E69480336D"
+				"3B9DBB624DBAD2D5"
+			]
+			id: "35E0414D13E9839B"
+			rewards: [{
+				id: "1E049328E2E0D54C"
+				item: "apotheosis:infused_hellshelf"
+				type: "item"
+			}]
+			size: 1.2d
+			subtitle: "+&aEterna&r +&cQuanta&r"
+			tasks: [{
+				id: "525FC5D78C93F9F8"
+				item: "apotheosis:infused_hellshelf"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"7BA8FF82A523C9DF"
+				"3B9DBB624DBAD2D5"
+			]
+			id: "7E546068C651138E"
+			rewards: [{
+				id: "7E8F7671647F5F3A"
+				item: "apotheosis:infused_seashelf"
+				type: "item"
+			}]
+			size: 1.2d
+			subtitle: "+&aEterna&r, +&5Arcana&r"
+			tasks: [{
+				id: "41E4D0B9283089AE"
+				item: "apotheosis:infused_seashelf"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["67DD5956A20FDE6B"]
+			id: "55C6047D939F784D"
+			rewards: [
+				{
+					id: "7995A21650D7164B"
+					item: "apotheosis:endshelf"
+					type: "item"
+				}
+				{
+					id: "71A4A0F622053393"
+					item: "minecraft:dragon_head"
+					type: "item"
+				}
+			]
+			shape: "circle"
+			subtitle: "+++&aEterna&r"
+			tasks: [{
+				id: "27DD2E2DA16B6C21"
+				item: "apotheosis:draconic_endshelf"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["67DD5956A20FDE6B"]
+			id: "0437E18865C5A80D"
+			optional: true
+			rewards: [{
+				id: "149FD7E0D7A0F4D8"
+				item: "apotheosis:endshelf"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "++&aEterna&r, ++&cQuanta&r, ++&5Arcana&r"
+			tasks: [{
+				id: "1D2D9684A0EF7476"
+				item: "apotheosis:pearl_endshelf"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["200B2E346F9DA290"]
+			id: "2E4820E37EFE52E5"
+			optional: true
+			rewards: [{
+				count: 4
+				id: "78A058ECC8238A3F"
+				item: "minecraft:amethyst_block"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "++&eRectification&r"
+			tasks: [{
+				id: "2F912E2A976ADAB7"
+				item: "apotheosis:rectifier_t2"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["7E546068C651138E"]
+			description: ["&5Amethyst Clusters&r also provide &eRectification&r!"]
+			id: "200B2E346F9DA290"
+			optional: true
+			rewards: [{
+				count: 4
+				id: "2ABAF362A8085B3F"
+				item: "minecraft:amethyst_block"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "+&eRectification&r"
+			tasks: [{
+				id: "259C94CBFA2AE26C"
+				item: "apotheosis:rectifier"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2E4820E37EFE52E5"]
+			id: "3E84EAF7A5CFE150"
+			optional: true
+			rewards: [{
+				id: "3361F9B8F5741F26"
+				item: "minecraft:budding_amethyst"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "+++&eRectification&r"
+			tasks: [{
+				id: "06762D6D4553FEC1"
+				item: "apotheosis:rectifier_t3"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["35E0414D13E9839B"]
+			id: "3ED1FE187F001401"
+			optional: true
+			rewards: [{
+				count: 4
+				id: "3931B3DD31C57EBF"
+				item: "minecraft:gold_block"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "+1 &3Clue&r"
+			tasks: [{
+				id: "489B62A7D06A3E00"
+				item: "apotheosis:sightshelf"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3ED1FE187F001401"]
+			id: "41F0738E226975BE"
+			optional: true
+			rewards: [{
+				count: 4
+				id: "6B0BD1D04D217EC7"
+				item: "minecraft:emerald_block"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "+2 &3Clues&r"
+			tasks: [{
+				id: "610A4F627B2087B8"
+				item: "apotheosis:sightshelf_t2"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["35E0414D13E9839B"]
+			hide_dependent_lines: true
+			id: "3F933033E4FE729C"
+			optional: true
+			rewards: [{
+				id: "02A3A1E826F9CC08"
+				item: "apotheosis:infused_hellshelf"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "++&aEterna&r, ++&cQuanta&r, -1 &3Clue&r"
+			tasks: [{
+				id: "225B505A648AD5FB"
+				item: "apotheosis:blazing_hellshelf"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["35E0414D13E9839B"]
+			hide_dependent_lines: true
+			id: "5DBCFF4F5AB10B17"
+			optional: true
+			rewards: [{
+				id: "4810E3E1FAD1195E"
+				item: "apotheosis:infused_hellshelf"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "+&aEterna&r, +&cQuanta&r, ++&5Arcana&r"
+			tasks: [{
+				id: "3E2F8C43E3391D37"
+				item: "apotheosis:glowing_hellshelf"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7E546068C651138E"]
+			hide_dependent_lines: true
+			id: "14BCD68E6D20854F"
+			optional: true
+			rewards: [{
+				id: "2912F23966131317"
+				item: "apotheosis:infused_seashelf"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "+&aEterna&r, ++&cQuanta&r, +&5Arcana&r"
+			tasks: [{
+				id: "6569397973E53FC2"
+				item: "apotheosis:crystal_seashelf"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7E546068C651138E"]
+			hide_dependent_lines: true
+			id: "6D4406D5B5B9E466"
+			optional: true
+			rewards: [
+				{
+					id: "51E1BF350D7EBD53"
+					item: "apotheosis:infused_seashelf"
+					type: "item"
+				}
+				{
+					id: "3839D36A38499850"
+					item: "minecraft:heart_of_the_sea"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			subtitle: "++&aEterna&r, ++&5Arcana&r, -&eRectification&r"
+			tasks: [{
+				id: "70A19B9F4205477A"
+				item: "apotheosis:heart_seashelf"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["590D8D834833D3D6"]
+			id: "254E12AE9E52463C"
+			optional: true
+			rewards: [{
+				id: "28C14D07BFFEB1D0"
+				item: "minecraft:anvil"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "Extract Enchantments!"
+			tasks: [{
+				id: "7D6DA8B0930F0A54"
+				item: "apotheosis:scrap_tome"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"254E12AE9E52463C"
+				"7BA8FF82A523C9DF"
+				"00D299E69480336D"
+			]
+			hide_dependency_lines: true
+			id: "527940026C830BDD"
+			min_required_dependencies: 2
+			optional: true
+			rewards: [{
+				count: 8
+				id: "7BB4A7ADBFFD47B6"
+				item: "apotheosis:improved_scrap_tome"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "Extract All Enchantments!"
+			tasks: [{
+				id: "15846B366516CC42"
+				item: "apotheosis:improved_scrap_tome"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"527940026C830BDD"
+				"3F933033E4FE729C"
+				"5DBCFF4F5AB10B17"
+				"14BCD68E6D20854F"
+				"6D4406D5B5B9E466"
+			]
+			hide_dependency_lines: true
+			id: "31B0022415BB953B"
+			min_required_dependencies: 2
+			optional: true
+			rewards: [{
+				count: 4
+				id: "26F50D69D6A47665"
+				item: "apotheosis:extraction_tome"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "Extract Without Destroying!"
+			tasks: [{
+				id: "752F54B59C5282F6"
+				item: "apotheosis:extraction_tome"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["590D8D834833D3D6"]
+			id: "1B8F7FEE27F97BE4"
+			optional: true
+			rewards: [
+				{
+					id: "2BF2188E8F89DA9B"
+					item: "apotheosis:other_tome"
+					type: "item"
+				}
+				{
+					id: "7F62169EA7593C35"
+					item: "apotheosis:helmet_tome"
+					type: "item"
+				}
+				{
+					id: "1A587F2D714E71BE"
+					item: "apotheosis:chestplate_tome"
+					type: "item"
+				}
+				{
+					id: "34E064BD4DDC659F"
+					item: "apotheosis:leggings_tome"
+					type: "item"
+				}
+				{
+					id: "1D84248942226D2F"
+					item: "apotheosis:boots_tome"
+					type: "item"
+				}
+				{
+					id: "6CB45AC7349BF94B"
+					item: "apotheosis:weapon_tome"
+					type: "item"
+				}
+				{
+					id: "7281ABBD3BBA57C6"
+					item: "apotheosis:pickaxe_tome"
+					type: "item"
+				}
+				{
+					id: "0A067023862A3A91"
+					item: "apotheosis:fishing_tome"
+					type: "item"
+				}
+				{
+					id: "0AB85704D8345543"
+					item: "apotheosis:bow_tome"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			subtitle: "Enchantment Categories!"
+			tasks: [{
+				id: "28448EE607EEB28E"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "apotheosis:other_tome"
+							}
+							{
+								Count: 1b
+								id: "apotheosis:helmet_tome"
+							}
+							{
+								Count: 1b
+								id: "apotheosis:chestplate_tome"
+							}
+							{
+								Count: 1b
+								id: "apotheosis:leggings_tome"
+							}
+							{
+								Count: 1b
+								id: "apotheosis:boots_tome"
+							}
+							{
+								Count: 1b
+								id: "apotheosis:weapon_tome"
+							}
+							{
+								Count: 1b
+								id: "apotheosis:pickaxe_tome"
+							}
+							{
+								Count: 1b
+								id: "apotheosis:fishing_tome"
+							}
+							{
+								Count: 1b
+								id: "apotheosis:bow_tome"
+							}
+						]
+					}
+				}
+				title: "Any Tome"
+				type: "item"
+			}]
+			title: "Tomes"
+			x: -3.5d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Using &opotions&r and &6&oBlaze Powder&r, you can create &oBauble Charms&r that constantly apply their effects until they run out of durability."
+				""
+				"This quest detects &oany&r kind of potion charm, not just Regeneration."
+			]
+			id: "37B1E6AC2FE685BB"
+			subtitle: "Lasts for ~25 minutes!"
+			tasks: [{
+				id: "4D0D7ABF9D779992"
+				item: {
+					Count: 1b
+					id: "apotheosis:potion_charm"
+					tag: {
+						Damage: 0
+						Potion: "minecraft:regeneration"
+					}
+				}
+				type: "item"
+			}]
+			title: "Potion Charms"
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			description: [
+				"Spawners (and some other blocks) can now be picked up with &bSilk Touch II&r!"
+				""
+				"Right-clicking on the spawner with certain items will also change its behavior. For example, using a mob's &oSpawn Egg&r (obtained from the new &5&oCapturing&r&o enchantment&r), you can change the spawned mobs to that same type! See the &1Chronicle of Shadows&r for more information."
+			]
+			id: "75BAE5546F82C695"
+			rewards: [{
+				id: "51C9023AB1ADE86F"
+				item: {
+					Count: 1b
+					id: "minecraft:enchanted_book"
+					tag: {
+						StoredEnchantments: [{
+							id: "apotheosis:capturing"
+							lvl: 3s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "Collectable and Customizable!"
+			tasks: [{
+				id: "093A001E1BA5D83F"
+				item: "minecraft:spawner"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3B9DBB624DBAD2D5"]
+			id: "6A3D9733896E49DF"
+			optional: true
+			rewards: [{
+				id: "2A7827BA70DD2EB1"
+				item: "minecraft:bookshelf"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "-&aEterna&r, --&5Arcana&r"
+			tasks: [{
+				id: "1951949820731A6C"
+				item: "apotheosis:stoneshelf"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3B9DBB624DBAD2D5"]
+			description: ["Deepshelves are characterized by high &aEterna&r and very high tradeoffs between &cQuanta&r and &5Arcana&r, although you will need a fairly advanced enchanting station to create the infused &oDeepshelf&r."]
+			id: "7B2D8F45AC0CBE4D"
+			rewards: [{
+				id: "004089C287D81CB8"
+				item: "apotheosis:dormant_deepshelf"
+				type: "item"
+			}]
+			subtitle: "+Nothing"
+			tasks: [{
+				id: "0E84771B93042BC2"
+				item: "apotheosis:dormant_deepshelf"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7B2D8F45AC0CBE4D"
+				"3F933033E4FE729C"
+				"5DBCFF4F5AB10B17"
+				"14BCD68E6D20854F"
+				"6D4406D5B5B9E466"
+			]
+			dependency_requirement: "one_completed"
+			id: "49BEC5BE2AD3A732"
+			rewards: [{
+				id: "13CD0FC3BE888475"
+				item: "apotheosis:deepshelf"
+				type: "item"
+			}]
+			size: 1.2d
+			subtitle: "+&aEterna&r, ++&cQuanta&r, ++&5Arcana&r"
+			tasks: [{
+				id: "4FAE1FF8107F4430"
+				item: "apotheosis:deepshelf"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["49BEC5BE2AD3A732"]
+			id: "6ED72003D191D32B"
+			optional: true
+			rewards: [{
+				id: "1E7D219BB7E5F0AA"
+				item: "apotheosis:deepshelf"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "+&aEterna&r, +++&cQuanta&r"
+			tasks: [{
+				id: "047DA86EEB46C90F"
+				item: "apotheosis:soul_touched_deepshelf"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["49BEC5BE2AD3A732"]
+			id: "3FA4AA58BE9D5C47"
+			optional: true
+			rewards: [{
+				id: "4DD9AB4C639135DB"
+				item: "apotheosis:deepshelf"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "+&aEterna&r, +++&5Arcana&r"
+			tasks: [{
+				id: "49F9ABD111F43EFD"
+				item: "apotheosis:echoing_deepshelf"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6ED72003D191D32B"]
+			id: "65E72632C4110F0A"
+			optional: true
+			rewards: [{
+				count: 2
+				id: "77DF687858E3A52A"
+				item: "apotheosis:deepshelf"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "++&aEterna&r, +++&cQuanta&r, ++&5Arcana&r, +&eRectification&r"
+			tasks: [{
+				id: "6EA15656A1F9B969"
+				item: "apotheosis:soul_touched_sculkshelf"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3FA4AA58BE9D5C47"]
+			id: "7A46BAD609207DB3"
+			optional: true
+			rewards: [{
+				count: 2
+				id: "47EBB88AA4D0DC76"
+				item: "apotheosis:deepshelf"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "++&aEterna&r, ++&cQuanta&r, +++&5Arcana&r, +1 &3Clue&r"
+			tasks: [{
+				id: "325C9C9A93722CAE"
+				item: "apotheosis:echoing_sculkshelf"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["590D8D834833D3D6"]
+			description: [
+				"&oSplitting&r is used on an enchanted book with mixed enchantments. The result is as many enchanted books as there were unique enchantment types."
+				""
+				"e.g. 1x &dPower V + Punch II + Mending&r -> 1x &dPower V&r, 1x &dPunch II&r, 1x &dMending&r"
+				""
+				""
+				"&oObliteration&r is used on an enchanted book with a single enchantment of level II or higher and divides it into two books one level lower."
+				""
+				"e.g. 1x &dPower V&r -> 2x &dPower IV&r"
+			]
+			hide_dependent_lines: true
+			id: "60232DED8F026114"
+			rewards: [
+				{
+					id: "2A3FF311778C7E82"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "apotheosis:splitting"
+								lvl: 1s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "29802CB56F1BE139"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "apotheosis:obliteration"
+								lvl: 1s
+							}]
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "1EB3BA9F35521CD2"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "apotheosis:splitting"
+								lvl: 1s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6A57267575B86B2F"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "apotheosis:obliteration"
+								lvl: 1s
+							}]
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Anvil Enchantments"
+			x: -4.5d
+			y: 1.0d
+		}
+		{
+			id: "5D6BAF1607CE4036"
+			rewards: [{
+				id: "0E01C5E9AF83B6AD"
+				item: "minecraft:ender_pearl"
+				type: "item"
+			}]
+			subtitle: "Magical Leads"
+			tasks: [{
+				id: "4598BFDC04283CB6"
+				item: {
+					Count: 1b
+					id: "apotheosis:ender_lead"
+					tag: {
+						Damage: 0
+						entity_data: { }
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7B89564BA9259C4B"]
+			id: "0530A61540D8B3CB"
+			rewards: [{
+				count: 8
+				id: "5CDA2DE7C4A886F3"
+				item: "apotheosis:gem_dust"
+				team_reward: false
+				type: "item"
+			}]
+			subtitle: "Further Customization"
+			tasks: [
+				{
+					id: "7E838D0FE914E0AD"
+					item: "apotheosis:vial_of_extraction"
+					type: "item"
+				}
+				{
+					id: "5EA6F4D1A923245A"
+					item: "apotheosis:vial_of_expulsion"
+					type: "item"
+				}
+				{
+					id: "374AE52458C1FA69"
+					item: "apotheosis:vial_of_unnaming"
+					type: "item"
+				}
+			]
+			title: "Apotheotic Vials"
+			x: -5.5d
+			y: 1.0d
+		}
+	]
+	title: "Apotheosis"
+}

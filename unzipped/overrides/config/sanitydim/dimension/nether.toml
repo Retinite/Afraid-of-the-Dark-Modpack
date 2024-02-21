@@ -1,0 +1,21 @@
+# Dimensions to apply this config to, e.g. minecraft:overworld, minecraft:the_nether, minecraft:the_end
+applied_dimensions = [ "minecraft:the_nether"]
+
+# Anything that is not present in this config will default to whatever is set in default.toml
+[sanity]
+	[sanity.passive]
+		passive = -0.2
+		monster = -0.5
+		darkness = -0.2
+		lightness = 0.5
+		blocks = ["minecraft:soul_campfire[lit=true];1.0;4;false", "minecraft:campfire[lit=true];-1.0;4;false", "minecraft:lava;-0.5;5;false", "minecraft:flowing_lava;-0.6;5;false", "minecraft:fire;-0.2;4;false", "minecraft:soul_fire;0.2;4;false", "aotdextras:luxum_lamp;2;3;false", "aotdextras:luxum_block;2.5;6;false", "aotdextras:nihilum_block;-2;3;false"]
+		
+	[sanity.active]
+		hurt_ratio = -2.0
+		changed_dimension = 0.0
+		
+	[sanity.multiplayer]
+		sane_player_company = 0.1
+		
+	[sanity.entity]
+		sane_see_inner_entities = true

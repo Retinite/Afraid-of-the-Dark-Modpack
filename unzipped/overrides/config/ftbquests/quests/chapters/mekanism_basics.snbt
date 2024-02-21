@@ -1,0 +1,1327 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mekanism_basics"
+	group: "37DA37ED2FACCAC8"
+	hide_quest_details_until_startable: true
+	icon: "mekanism:raw_osmium"
+	id: "15730FA9D8A650A2"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["5BDCD4103A33AFB3"]
+			dependency_requirement: "one_started"
+			description: [
+				"&lMekanism&r machine GUIs can be overwhelming at first, but all you need to worry about right now is where to place the 2 inputs."
+				""
+				"For the Metallurgic Infuser, the &oinfuse type&r goes into the yellow box, and the main ingredient goes in the red box."
+				""
+				"Optionally, &4Redstone Dust&r can be placed in the energy slot (next to the &apower bar&r), where it will be &nconsumed&r for 4kFE per &4Redstone Dust&r. &eEnergy Tablet&rs can also be placed here to charge the machine, but power cannot be pulled &oout from&r the machine."
+				"{@pagebreak}"
+				"Note: &lMekanism&r generator blocks are always placed facing away from you. Generator blocks also have an energy slot where items can be placed &oto charge&r."
+				""
+				"The &oThermal Generator&r can accept any burnable fuel to generate power. It also generates power passively for each side that is touching &cLava&r. \"Lava-logging\" counts as an additional side. It also generates extra passive power when in the &4Nether&r!"
+				""
+				"Place the &agreen&r face of the &oThermal Generator&r next to any side of the Metallurgic Infuser to transfer power. Power cables will require &7Steel&r."
+			]
+			hide: false
+			icon: "mekanism:metallurgic_infuser"
+			id: "373F31EF730C160D"
+			rewards: [
+				{
+					id: "187D58E2F3928053"
+					item: "mekanism:enriched_carbon"
+					type: "item"
+				}
+				{
+					id: "567302C82832DB42"
+					item: "mekanism:enriched_redstone"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			subtitle: "Read Me!"
+			tasks: [
+				{
+					disable_toast: true
+					id: "2E9560E5AC51E073"
+					item: "mekanism:metallurgic_infuser"
+					type: "item"
+				}
+				{
+					id: "7F7033317F1A5C33"
+					item: "mekanismgenerators:heat_generator"
+					type: "item"
+				}
+			]
+			title: "First Steps"
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["373F31EF730C160D"]
+			id: "261EC605D7331140"
+			rewards: [{
+				count: 8
+				id: "71EA581AEA689562"
+				item: "mekanism:basic_control_circuit"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				disable_toast: true
+				id: "61D239FE8DDD98E0"
+				item: "mekanism:basic_control_circuit"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["261EC605D7331140"]
+			id: "5C6355E15C1CDDF1"
+			rewards: [
+				{
+					count: 4
+					id: "2A6DBD4D231D1C2A"
+					item: "mekanism:advanced_control_circuit"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "5642D6E9FD82B1A5"
+					item: "mekanism:alloy_infused"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [
+				{
+					disable_toast: true
+					id: "626BD3D8355B7F31"
+					item: "mekanism:advanced_control_circuit"
+					type: "item"
+				}
+				{
+					id: "6C09331D478DEC90"
+					item: "mekanism:alloy_infused"
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5C6355E15C1CDDF1"]
+			id: "401F21347665C41E"
+			rewards: [
+				{
+					count: 2
+					id: "55B94D792700980E"
+					item: "mekanism:elite_control_circuit"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "623B3140785BEC62"
+					item: "mekanism:alloy_reinforced"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [
+				{
+					disable_toast: true
+					id: "105D46C175A03A23"
+					item: "mekanism:elite_control_circuit"
+					type: "item"
+				}
+				{
+					id: "18C91F0295DF7BA4"
+					item: "mekanism:alloy_reinforced"
+					type: "item"
+				}
+			]
+			title: "&bElite Control Circuit&r"
+			x: 6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"401F21347665C41E"
+				"1599787492F01BB7"
+				"0DC630AA75E6F1A6"
+			]
+			hide_dependent_lines: true
+			id: "74008E93D76D5E3E"
+			rewards: [
+				{
+					id: "286D6B567DE4C0A9"
+					item: "mekanism:ultimate_control_circuit"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "12E64A4BDDE019E8"
+					item: "mekanism:alloy_atomic"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.5d
+			subtitle: "Unlocks Quests Elsewhere"
+			tasks: [
+				{
+					disable_toast: true
+					id: "44D49F5308440AD1"
+					item: "mekanism:ultimate_control_circuit"
+					type: "item"
+				}
+				{
+					id: "0A1BE67BE9949752"
+					item: "mekanism:alloy_atomic"
+					type: "item"
+				}
+			]
+			title: "&dUltimate Control Circuit&r"
+			x: 8.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"4B02E1C3F918DDC6"
+				"261EC605D7331140"
+			]
+			icon: "mekanism:crusher"
+			id: "202B90FF4BCF6291"
+			rewards: [{
+				id: "4C1259ECD25B26F1"
+				item: "mekanism:steel_casing"
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [
+				{
+					disable_toast: true
+					id: "4D02B57A6A7483B6"
+					item: "mekanism:crusher"
+					type: "item"
+				}
+				{
+					id: "27398336B063452A"
+					item: "mekanism:bio_fuel"
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"4B02E1C3F918DDC6"
+				"261EC605D7331140"
+			]
+			description: ["One you have multiple machines up and running, play around with the \"Side Config\" tab in the GUI to specify specific sides for items, liquids, gasses, etc."]
+			hide_dependent_lines: true
+			id: "1599787492F01BB7"
+			rewards: [{
+				id: "2466EEE2A6B9A6DC"
+				item: "mekanism:steel_casing"
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				disable_toast: true
+				id: "5BC1D4BC2C32E6E0"
+				item: "mekanism:enrichment_chamber"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["261EC605D7331140"]
+			description: [
+				"&bShift&r + &bRight Click&r an existing machine to upgrade it! Each level adds the ability to process two more items at once. Most (but not all) &lMekanism&r machines can be upgraded this way."
+				""
+				"Note that you can apply the same upgrades in a crafting table - the only difference in cost is a single wooden plank."
+				""
+				"Turn \"Auto-sort\" on after installing to evenly distribute work!"
+			]
+			hide_dependent_lines: true
+			id: "0E3F7479492CB3B6"
+			optional: true
+			rewards: [{
+				count: 4
+				id: "5278636FE151E0D7"
+				item: "mekanism:basic_tier_installer"
+				type: "item"
+			}]
+			shape: "gear"
+			subtitle: "Parallel Processing!"
+			tasks: [{
+				disable_toast: true
+				id: "05D082492DD5C52A"
+				item: "mekanism:basic_tier_installer"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"0E3F7479492CB3B6"
+				"5C6355E15C1CDDF1"
+			]
+			hide_dependent_lines: true
+			id: "2113519FB0C84FBE"
+			optional: true
+			rewards: [{
+				count: 3
+				id: "6D6383129A445E9B"
+				item: "mekanism:advanced_tier_installer"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "75C871C1BD0F2B2A"
+				item: "mekanism:advanced_tier_installer"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"2113519FB0C84FBE"
+				"401F21347665C41E"
+			]
+			hide_dependent_lines: true
+			id: "62039C05198A2D79"
+			optional: true
+			rewards: [{
+				count: 2
+				id: "5C43CB1C908D8107"
+				item: "mekanism:elite_tier_installer"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "65DB4BB353E6EF31"
+				item: "mekanism:elite_tier_installer"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"62039C05198A2D79"
+				"74008E93D76D5E3E"
+			]
+			id: "7116174DAE714A5A"
+			optional: true
+			rewards: [{
+				id: "256D11D9BC667C87"
+				item: "mekanism:ultimate_tier_installer"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "01D75A573A729EE6"
+				item: "mekanism:ultimate_tier_installer"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5C6355E15C1CDDF1"]
+			description: ["A machine with &oSpeed Upgrade&rs and &6insufficient power&r will actually &cbecome less efficient&r, drawing even more power than is required."]
+			id: "1CE4A831640CDBD7"
+			optional: true
+			rewards: [
+				{
+					count: 4
+					id: "0A1D9FA8A3B0BD54"
+					item: "mekanism:upgrade_muffling"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "13B298AA7A5ACDA1"
+					item: "mekanism:upgrade_speed"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			subtitle: "Remove if Low-Power!"
+			tasks: [{
+				disable_toast: true
+				id: "5B907ECB57EF7FBF"
+				item: "mekanism:upgrade_speed"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5C6355E15C1CDDF1"]
+			description: ["Note: upgrades increase their effectiveness exponentially, so higher stacks on one machine is more energy-efficient than spreading them out."]
+			id: "389C694647AE1EA0"
+			optional: true
+			rewards: [
+				{
+					count: 4
+					id: "68A641BA8679F711"
+					item: "mekanism:upgrade_muffling"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "57AAC4867A297ED1"
+					item: "mekanism:upgrade_energy"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			subtitle: "Add if Low-Power!"
+			tasks: [{
+				disable_toast: true
+				id: "2BDE1FFB6BA17C9D"
+				item: "mekanism:upgrade_energy"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["373F31EF730C160D"]
+			description: [
+				"Use &o&0Coal&r or &o&0Charcoal&r at a &oMetallurgic Infuser&r to turn &oIron&r into &oEnriched Iron&r, and further into &o&7Steel Dust&r."
+				""
+				"You will need a lot of &o&7Steel Casing&rs as you progress."
+			]
+			hide_dependent_lines: true
+			id: "4B02E1C3F918DDC6"
+			rewards: [
+				{
+					id: "778A82450593EBE6"
+					item: "mekanism:block_steel"
+					type: "item"
+				}
+				{
+					id: "3DDE2F24286EEBDD"
+					item: "mekanism:steel_casing"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.5d
+			subtitle: "Unlocks Quests Elsewhere"
+			tasks: [
+				{
+					id: "4570F504ABE973FF"
+					item: "mekanism:ingot_steel"
+					type: "item"
+				}
+				{
+					id: "3FDE2BBFE798BAE0"
+					item: "mekanism:steel_casing"
+					type: "item"
+				}
+			]
+			title: "Steel"
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1599787492F01BB7"]
+			description: [
+				"1x &cEnriched Redstone&r"
+				"-> 8x &cInfused Alloy&r"
+				"-> 4x &aBasic Control Circuit&r"
+				"-> 2x &cAdvanced Control Circuit&r"
+				""
+				"1x &bEnriched Diamond&r"
+				"-> 4x &bReinforced Alloy&r"
+				"-> 2x &bElite Control Circuit&r"
+				""
+				"1x &dEnriched Refined Obsidian&r"
+				"-> 2x &dAtomic Alloy&r"
+				"-> 1x &dUltimate Control Circuit&r"
+				""
+				"1x &8Enriched Carbon&r"
+				"-> 8x &7Enriched Iron&r"
+				"-> 4x &8Steel Dust&r"
+			]
+			id: "135ED90F0D075746"
+			optional: true
+			rewards: [
+				{
+					count: 8
+					id: "66CE7A5A03B9C54C"
+					item: "mekanism:enriched_redstone"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7A5EF64B1DB8F267"
+					item: "mekanism:enriched_carbon"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "40A8C08B5CE59CFB"
+					item: "mekanism:enriched_diamond"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "8x The Efficiency!!!"
+			tasks: [{
+				disable_toast: true
+				id: "4EAB4E00202975D8"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "mekanism:enriched"
+					}
+				}
+				title: "Any Enriched Resource"
+				type: "item"
+			}]
+			title: "Enriched Resources"
+			x: 3.5d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"261EC605D7331140"
+				"4B02E1C3F918DDC6"
+			]
+			id: "38DC1F6C5F43A30D"
+			rewards: [{
+				id: "7E4E893600B19353"
+				item: "mekanism:steel_casing"
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				disable_toast: true
+				id: "282B6629E20AA710"
+				item: "mekanism:energized_smelter"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"4B02E1C3F918DDC6"
+				"5C6355E15C1CDDF1"
+			]
+			description: ["&6Sawdust&r can be obtained from processing logs."]
+			icon: "mekanism:precision_sawmill"
+			id: "73DC5EF97C0A7490"
+			optional: true
+			rewards: [{
+				id: "2F9B81FC62774862"
+				item: "mekanism:steel_casing"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "Recyle Wooden Items"
+			tasks: [
+				{
+					disable_toast: true
+					id: "0D31B61C82BE9665"
+					item: "mekanism:precision_sawmill"
+					type: "item"
+				}
+				{
+					id: "1399F593F5BD3115"
+					item: "mekanism:sawdust"
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"4B02E1C3F918DDC6"
+				"5C6355E15C1CDDF1"
+			]
+			id: "517E1246EF3E3DEC"
+			rewards: [{
+				id: "294A74584EF1EF74"
+				item: "mekanism:steel_casing"
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				disable_toast: true
+				id: "01A47567B66438C1"
+				item: "mekanism:osmium_compressor"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"517E1246EF3E3DEC"
+				"1599787492F01BB7"
+			]
+			description: [""]
+			hide_dependent_lines: true
+			id: "0DC630AA75E6F1A6"
+			rewards: [{
+				id: "1AEC3C1EF69714BE"
+				item: "mekanism:block_refined_obsidian"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.25d
+			subtitle: "Unlocks Quests Elsewhere"
+			tasks: [{
+				disable_toast: true
+				id: "17920A0D9D1915B4"
+				item: "mekanism:ingot_refined_obsidian"
+				type: "item"
+			}]
+			title: "&5Refined Obsidian Ingot&r"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4B02E1C3F918DDC6"]
+			description: [
+				"NOTE: LOWER TRANSFER LIMIT THAN DEFAULT MEKANISM"
+				""
+				"Consider upgrading to higher tiers."
+			]
+			id: "5910AFDFB6A8B962"
+			rewards: [{
+				count: 16
+				id: "2B3ECB0E249F29FE"
+				item: "mekanism:basic_universal_cable"
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.8d
+			subtitle: "Energy"
+			tasks: [{
+				disable_toast: true
+				id: "5E4E8236F04D3FD1"
+				item: "mekanism:basic_universal_cable"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4B02E1C3F918DDC6"]
+			description: [
+				"NOTE: LOWER TRANSFER LIMIT THAN DEFAULT MEKANISM"
+				""
+				"Consider upgrading to higher tiers."
+			]
+			id: "6030D3189CF1DA2D"
+			rewards: [{
+				count: 16
+				id: "7432E844A4C192B7"
+				item: "mekanism:basic_mechanical_pipe"
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.8d
+			subtitle: "Liquids"
+			tasks: [{
+				disable_toast: true
+				id: "618E44B1EFEF963C"
+				item: "mekanism:basic_mechanical_pipe"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4B02E1C3F918DDC6"]
+			description: [
+				"NOTE: LOWER TRANSFER LIMIT THAN DEFAULT MEKANISM"
+				""
+				"Consider upgrading to higher tiers."
+			]
+			id: "5037A8055BDA875E"
+			rewards: [{
+				count: 16
+				id: "4DF3BE983C2DC63B"
+				item: "mekanism:basic_pressurized_tube"
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.8d
+			subtitle: "Gases"
+			tasks: [{
+				disable_toast: true
+				id: "4A5A72F2C35CB3D0"
+				item: "mekanism:basic_pressurized_tube"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"261EC605D7331140"
+				"4B02E1C3F918DDC6"
+			]
+			description: [
+				"NOTE: LOWER TRANSFER SPEED THAN DEFAULT MEKANISM"
+				""
+				"Consider upgrading to higher tiers."
+			]
+			hide_dependent_lines: true
+			id: "7E9EB5F28B524B41"
+			rewards: [{
+				count: 16
+				id: "27CF6E8DBCFCB3AB"
+				item: "mekanism:basic_logistical_transporter"
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.8d
+			subtitle: "Items"
+			tasks: [{
+				disable_toast: true
+				id: "4666C7DB23DBA962"
+				item: "mekanism:basic_logistical_transporter"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"1AAE6F8E715E7126"
+				"5C6355E15C1CDDF1"
+			]
+			hide_dependency_lines: true
+			icon: "mekanism:scuba_mask"
+			id: "6BF155DF7F988DF6"
+			optional: true
+			rewards: [{
+				id: "29851498A5A271BD"
+				item: {
+					Count: 1b
+					id: "mekanism:advanced_chemical_tank"
+					tag: {
+						mekData: {
+							GasTanks: [{
+								Tank: 0b
+								stored: {
+									amount: 16000L
+									gasName: "mekanism:oxygen"
+								}
+							}]
+						}
+					}
+				}
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "7E692C42DE1E68D4"
+					item: "mekanism:scuba_mask"
+					type: "item"
+				}
+				{
+					id: "06CF4E1781964FEE"
+					item: "mekanism:scuba_tank"
+					type: "item"
+				}
+			]
+			title: "Scuba Gear"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"1AAE6F8E715E7126"
+				"4B02E1C3F918DDC6"
+			]
+			description: [
+				"Uses Hydrogen to fly! Use an &7Electrolytic Separator&r if you do not already have a source of Hydrogen. Depending on the &ochest mode switch&r (see: &lMekanism&r key binds), allows you to hover in place. Cannot be enchanted. Does not reduce the chance of bleeding."
+				""
+				"Be sure to check out the &oArmored Jetpack&r too!"
+			]
+			hide_dependency_lines: true
+			id: "5298D928D9D091CB"
+			optional: true
+			rewards: [{
+				id: "38F014FF1346A616"
+				item: {
+					Count: 1b
+					id: "mekanism:advanced_chemical_tank"
+					tag: {
+						mekData: {
+							GasTanks: [{
+								Tank: 0b
+								stored: {
+									amount: 16000L
+									gasName: "mekanism:hydrogen"
+								}
+							}]
+						}
+					}
+				}
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "Easy Nether Exploration!"
+			tasks: [{
+				disable_toast: true
+				id: "11E1115A333FFFB5"
+				item: "mekanism:jetpack"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5C6355E15C1CDDF1"]
+			description: [
+				"Prevents fall damage in exchange for charge. Depending on the &ofeet mode switch&r (see: &lMekanism&r key binds), allows you to fluidly walk up 1 block steps. Cannot be enchanted. Does not reduce the chance of bleeding."
+				""
+				"This is equivalent to Step Assist 1 from &lEverlasting Abilities&r, however &othey are not compatable&r."
+				""
+				"Be sure to check out the &oArmored Free Runners&r too!"
+			]
+			hide_dependency_lines: true
+			id: "0C22F74403852C98"
+			optional: true
+			rewards: [
+				{
+					id: "382C44D023905C36"
+					item: "mekanism:energy_tablet"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "4F396A10E3EB564B"
+					item: "mekanism:energy_tablet"
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			subtitle: "No Fall Damage!"
+			tasks: [{
+				disable_toast: true
+				id: "223DF6CD02E6DDCE"
+				item: "mekanism:free_runners"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5BDCD4103A33AFB3"]
+			dependency_requirement: "one_started"
+			description: ["Able to move fluids out of Mekanism machines. From there, fluids can either be voided (by &bShift + Right Click&ring the air) or transferred into another machine."]
+			hide_dependency_lines: true
+			id: "4C0B2276943A06FE"
+			optional: true
+			rewards: [{
+				id: "79B7EC38B7F37C82"
+				item: "mekanism:ingot_osmium"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "Practically Necessary"
+			tasks: [{
+				disable_toast: true
+				id: "1EF85AC188174223"
+				item: "mekanism:gauge_dropper"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5C6355E15C1CDDF1"]
+			description: [
+				"&o(Herein, \"pipes\" refer to Pipes, Cables, Tubes, Transporters, and Conductors.)&r"
+				""
+				"&bRight Click&r a pipe to toggle \"Redstone Sensitivity\" for that pipe segment."
+				""
+				"Depending on the &aConfigurator&r's mode, &bRight Click&r a machine face to cycle through input and output options for that specific face. This can still be done from the machine's GUI, but this method may be more convenient."
+				""
+				"You can change the mode with &bShift + Scroll&r. The &oWrench&r mode allows for breaking pipes instantly."
+				""
+				"&bShift + Right Click&r the &nconnecting edge&r of a pipe to push to, pull from, or disconnet from adjacent pipes and machines."
+				""
+				"&bShift + Right Click&r the &ncenter&r of a &aLogistical Transporter&r to color code the pipe for use with a &aLogistical Sorter&r."
+				""
+				"Power is only necessary for &oEmpty&r mode, which forcibly ejects items from machines."
+			]
+			hide_dependent_lines: true
+			id: "45E9966E19333CF0"
+			rewards: [{
+				id: "63892399B227112D"
+				item: "mekanism:energy_tablet"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				disable_toast: true
+				id: "142765679630823E"
+				item: "mekanism:configurator"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			description: [
+				"&lMekanism&r generally requires a lot of &oIron&r, &o&4Redstone&r, and &o&3Osmium&r."
+				""
+				"&oTin&r is largely used for &o&6Bronze&r and late-game recipes."
+				""
+				"&o&7Lead&r is almost exclusively used in the handling of radioactive materials."
+				""
+				"&o&2Uranium&r is used solely for the production of &o&8Fissile Fuel&r. Note that &o&8Nuclear Waste&r is necessary for many late-game recipes."
+				""
+				"&oSalt&r is used for creating &o&bHydrogen Chloride&r in ore processing, and can be used in place of a &o&6Thermal Evaporation Plant&r for creating &o&eBrine&r."
+			]
+			icon: "mekanism:raw_osmium"
+			id: "5BDCD4103A33AFB3"
+			rewards: [
+				{
+					id: "4F8DE5867FCB111C"
+					item: "mekanism:block_raw_tin"
+					type: "item"
+				}
+				{
+					id: "08BA39D1A9A2194E"
+					item: "mekanism:block_raw_lead"
+					type: "item"
+				}
+				{
+					id: "3B6B83EDFE2E8A39"
+					item: "mekanism:block_raw_osmium"
+					type: "item"
+				}
+				{
+					id: "035F5C354B592EC8"
+					item: "mekanism:block_raw_uranium"
+					type: "item"
+				}
+				{
+					id: "65CEE27988CD3B9B"
+					item: "mekanism:block_salt"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			subtitle: "The Foundation"
+			tasks: [
+				{
+					id: "5DDF7DCB352AED6C"
+					item: "mekanism:raw_tin"
+					type: "item"
+				}
+				{
+					id: "06B9BC7E5B2ED964"
+					item: "mekanism:raw_lead"
+					type: "item"
+				}
+				{
+					id: "5CE55F154C928685"
+					item: "mekanism:raw_osmium"
+					type: "item"
+				}
+				{
+					id: "56F0F606A6B47BC0"
+					item: "mekanism:raw_uranium"
+					type: "item"
+				}
+				{
+					id: "4D88BA7FA774D57D"
+					item: "mekanism:salt"
+					type: "item"
+				}
+			]
+			title: "&lMekanism&r Resources"
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["517E1246EF3E3DEC"]
+			description: ["Piglins treat &eRefined Glowstone&r Ingots and Armor like Gold."]
+			hide_dependent_lines: true
+			id: "40247D71817C3322"
+			rewards: [{
+				id: "11D18F1EF3A34C29"
+				item: "mekanism:block_refined_glowstone"
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "Unlocks Quests Elsewhere"
+			tasks: [{
+				disable_toast: true
+				id: "467F72965CDC5673"
+				item: "mekanism:ingot_refined_glowstone"
+				type: "item"
+			}]
+			title: "&eRefined Glowstone Ingot&r"
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5BDCD4103A33AFB3"]
+			dependency_requirement: "one_started"
+			description: [
+				"&bShift&r + &bScroll&r to toggle &aBucket Mode&r."
+				""
+				"When enabled, &bRight Click&r to pick up liquids, and &bShift&r + &bRight Click&r to place liquids."
+			]
+			hide_dependency_lines: true
+			id: "002CEC85032B3FEC"
+			optional: true
+			rewards: [{
+				id: "454EE9DB2A8D7541"
+				item: "mekanism:basic_fluid_tank"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "Big Buckets"
+			tasks: [{
+				disable_toast: true
+				id: "7B78520A912C873D"
+				item: "mekanism:basic_fluid_tank"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["5BDCD4103A33AFB3"]
+			dependency_requirement: "one_started"
+			hide_dependency_lines: true
+			id: "1AAE6F8E715E7126"
+			optional: true
+			rewards: [{
+				id: "127E43E975F6A6D5"
+				item: "mekanism:basic_chemical_tank"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				disable_toast: true
+				id: "7D8A14348389A2EB"
+				item: "mekanism:basic_chemical_tank"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"4B02E1C3F918DDC6"
+				"5C6355E15C1CDDF1"
+			]
+			description: [
+				"Use the &2Seismic Reader&r on a block in any &lchunk&r that contains an active &8Seismic Vibrator&r to instantly view all blocks in that 1x1 vertical column all the way down to &0Bedrock&r."
+				""
+				"Use &bF3+G&r to toggle chunk boarders."
+			]
+			hide_dependency_lines: true
+			icon: "mekanism:seismic_vibrator"
+			id: "616F2FC47F40511A"
+			optional: true
+			rewards: [
+				{
+					id: "38063B407B67F617"
+					item: "mekanism:steel_casing"
+					type: "item"
+				}
+				{
+					id: "68E409416BBB52F9"
+					item: "mekanism:energy_tablet"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			subtitle: "Vertical X-Ray"
+			tasks: [
+				{
+					id: "357D4B04F2FEE5A4"
+					item: "mekanism:seismic_reader"
+					type: "item"
+				}
+				{
+					id: "6D814B4A873ADB2E"
+					item: "mekanism:seismic_vibrator"
+					type: "item"
+				}
+			]
+			title: "Seismology"
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"73DC5EF97C0A7490"
+				"5C6355E15C1CDDF1"
+			]
+			hide_dependency_lines: true
+			icon: "mekanism:painting_machine"
+			id: "30E6A74AA5F2AD0B"
+			optional: true
+			rewards: [
+				{
+					id: "0D68D6355D760F30"
+					item: "mekanism:steel_casing"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "0A56E51D732BC2A2"
+					item: "mekanism:advanced_control_circuit"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "27A1A12A21B71EDF"
+					item: "mekanism:alloy_infused"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			subtitle: "Repaints Too!"
+			tasks: [
+				{
+					id: "5FA4FF68A956E073"
+					item: "mekanism:pigment_extractor"
+					type: "item"
+				}
+				{
+					id: "61A4A29B0679F6D6"
+					item: "mekanism:painting_machine"
+					type: "item"
+				}
+			]
+			title: "Pigments"
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4B02E1C3F918DDC6"]
+			description: [
+				"&oQuintessential&r"
+				""
+				"NOTE: LOWER TRANSFER LIMIT THAN DEFAULT MEKANISM"
+				""
+				"Consider upgrading to higher tiers."
+			]
+			id: "2E8F03DBE313C53C"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "02C90A24AD3EB560"
+				item: "mekanism:basic_thermodynamic_conductor"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 0.8d
+			subtitle: "Heat"
+			tasks: [{
+				id: "11A6629F68826A21"
+				item: "mekanism:basic_thermodynamic_conductor"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["261EC605D7331140"]
+			description: [
+				"Each bin can only hold &oone&r type of item, however the &aBasic Bin&r can hold 64 * 64 of its selected item."
+				""
+				"Bins can also be upgraded!"
+			]
+			id: "49664840A873C770"
+			optional: true
+			rewards: [{
+				id: "677CD53802A585CB"
+				item: "mekanism:basic_control_circuit"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "Cheap, Large-Scale Storage"
+			tasks: [{
+				id: "238731596DECCA85"
+				item: "mekanism:basic_bin"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"261EC605D7331140"
+				"4B02E1C3F918DDC6"
+			]
+			hide_dependency_lines: true
+			id: "2F04AA3E76C24F79"
+			optional: true
+			rewards: [{
+				id: "6EE98D6E3C17EE96"
+				item: "mekanism:steel_casing"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "Fuel to Heat (Not Power)"
+			tasks: [{
+				id: "522D40602AFB9176"
+				item: "mekanism:fuelwood_heater"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"5C6355E15C1CDDF1"
+				"4B02E1C3F918DDC6"
+			]
+			hide_dependency_lines: true
+			id: "27CF5749FC5746A6"
+			optional: true
+			rewards: [{
+				id: "1C85C2667705BB32"
+				item: "mekanism:steel_casing"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "Power to Heat"
+			tasks: [{
+				id: "7AF0124CB3322C74"
+				item: "mekanism:resistive_heater"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"261EC605D7331140"
+				"4B02E1C3F918DDC6"
+			]
+			description: [
+				"Yes! Meshes well with proximity voice chat if you want to add such a mod to the modpack."
+				""
+				"&bShift&r + &bRight Click&r to toggle on/off."
+				"&bShift&r + &bScroll&r to change frequency."
+				""
+				"The default port for the voice channel is 36123 (modifiable in config/Mekanism/additions.toml), if you know how to set this up. Note that Minecraft will have to be completely closed to edit any of Mekanism's config files."
+			]
+			hide_dependency_lines: true
+			id: "2EB743C9E4FA1666"
+			optional: true
+			shape: "diamond"
+			subtitle: "Wait, Really?"
+			tasks: [{
+				id: "7B976611651D6150"
+				item: {
+					Count: 1b
+					id: "mekanismadditions:walkie_talkie"
+					tag: {
+						mekData: {
+							channel: 1
+							running: 0b
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["373F31EF730C160D"]
+			description: ["Better (and Cheaper) Than Iron!"]
+			hide: false
+			id: "2ED556D1B5D75583"
+			rewards: [{
+				id: "54E0D1616AD132BD"
+				item: "mekanism:block_bronze"
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "Unlocks Quests Elsewhere"
+			tasks: [{
+				id: "3FDBEA3F60D95B40"
+				item: "mekanism:ingot_bronze"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["401F21347665C41E"]
+			id: "0E35A5906772B40E"
+			optional: true
+			shape: "diamond"
+			subtitle: "Decorative Ore"
+			tasks: [{
+				id: "33F37DB799577E52"
+				item: "mekanism:combiner"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["73DC5EF97C0A7490"]
+			description: [
+				"&bRight Click&r with a &6Cardboard Box&r in hand on (almost) any block or machine to store it easily! &6Cardboard Box&res can be easily broken by hand and stored in your inventory."
+				""
+				"To unpackage, place the &6Cardboard Box&r in the world and &bShift&r + &bRight Click&r the block."
+			]
+			id: "03C3F8CB26BAC77F"
+			optional: true
+			rewards: [{
+				id: "036FE1CE6C02AD75"
+				item: "mekanism:cardboard_box"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "Silk Touch Alternative"
+			tasks: [{
+				id: "15C1FD176B0D2FD2"
+				item: "mekanism:cardboard_box"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 4.5d
+		}
+	]
+	title: "Basics"
+}

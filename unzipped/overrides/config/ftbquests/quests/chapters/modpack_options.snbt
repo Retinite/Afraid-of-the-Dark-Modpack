@@ -1,0 +1,313 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "modpack_options"
+	group: ""
+	icon: {
+		Count: 1b
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "titanium:textures/items/iron/gear.png"
+		}
+	}
+	id: "2F2351620DAC250B"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			can_repeat: true
+			description: ["Vanilla Minecraft day/night cycle."]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "ftblibrary:icons/time"
+				}
+			}
+			id: "6933BE61183B5D57"
+			rewards: [{
+				auto: "invisible"
+				command: "/gamerule doDaylightCycle true"
+				id: "6A783271BC986960"
+				ignore_reward_blocking: true
+				player_command: true
+				type: "command"
+			}]
+			shape: "octagon"
+			subtitle: "[Default]"
+			tasks: [{
+				disable_toast: true
+				id: "4F0A7AE0675F1105"
+				title: "CLICK ME"
+				type: "checkmark"
+			}]
+			title: "Vanilla Daylight Cycle"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"Sets the time to midnight and keeps it there."
+				""
+				"The sky's &o&evisible&r light level will depend on the moon phase, ranging from 15 to 0. The fuller the moon, the more dangerous the mobs (a vanilla feature)."
+				""
+				"&cNote&r: &lMekanism&r's Solar Neutron Activator requires daylight to function! MekaSuit Armor, Fusion Reactors, and other end-game &lMekanism&r recipes will become impossible!"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:item/clock_31"
+				}
+			}
+			id: "7A5FC1BC2C4868D4"
+			rewards: [
+				{
+					auto: "invisible"
+					command: "/gamerule doDaylightCycle false"
+					id: "4F316E7446C2C1AF"
+					ignore_reward_blocking: true
+					player_command: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/time set midnight"
+					id: "5361558E6C067C7F"
+					ignore_reward_blocking: true
+					player_command: true
+					type: "command"
+				}
+			]
+			shape: "pentagon"
+			subtitle: "Hardest\\n &cEXPERIMENTAL"
+			tasks: [{
+				disable_toast: true
+				id: "4915422ADEA8F00D"
+				title: "CLICK ME"
+				type: "checkmark"
+			}]
+			title: "Always Midnight"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"Advance the moon's phase by one stage (different moon phases have different brightness levels)."
+				""
+				"&o&cMay also start/stop certain events.&r"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:textures/environment/moon_phases.png"
+				}
+			}
+			id: "0EF82D3C380910A0"
+			rewards: [{
+				auto: "invisible"
+				command: "/time add 24000"
+				id: "51C267539240113B"
+				ignore_reward_blocking: true
+				player_command: true
+				type: "command"
+			}]
+			shape: "square"
+			size: 3.0d
+			subtitle: "Changes Surface Darkness"
+			tasks: [{
+				disable_toast: true
+				id: "106C42DE0884073C"
+				title: "CLICK ME"
+				type: "checkmark"
+			}]
+			title: "Change Moon Phase"
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"Sets the time to noon and keeps it there."
+				""
+				"The sky will always be at light level 15. The surface will almost always be safe."
+				""
+				"&cNote&r: Some enemy drops will become &onearly&r impossible to collect. Also, &8Grave Soil&r will always yield lesser rewards."
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:item/clock_00"
+				}
+			}
+			id: "3146D21F7EF981E5"
+			rewards: [
+				{
+					auto: "invisible"
+					command: "/gamerule doDaylightCycle false"
+					id: "731D0A06BB9EA0FF"
+					ignore_reward_blocking: true
+					player_command: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/time set noon"
+					id: "6FA5BC7B75896547"
+					ignore_reward_blocking: true
+					player_command: true
+					type: "command"
+				}
+			]
+			subtitle: "Easier\\n &cEXPERIMENTAL"
+			tasks: [{
+				disable_toast: true
+				id: "71288BB959C0DF9D"
+				title: "CLICK ME"
+				type: "checkmark"
+			}]
+			title: "Always Noon"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"Sets the time to twilight and keeps it there."
+				""
+				"The sky will always be at light level 10. The surface will be safe, so long as you stay away from cave entrances. &8Grave Soil&r will always yield greater rewards. Also, you can sleep to clear weather at any time."
+				""
+				"&cNote&r: &lMekanism&r's Solar Neutron Activator requires daylight to function! MekaSuit Armor, Fusion Reactors, and other end-game &lMekanism&r recipes will become impossible!"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:item/clock_15"
+				}
+			}
+			id: "78FB622D11361EB2"
+			rewards: [
+				{
+					auto: "invisible"
+					command: "/gamerule doDaylightCycle false"
+					id: "125D005351B0F6F3"
+					ignore_reward_blocking: true
+					player_command: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/time set 12786"
+					id: "6A8AC4827094AC82"
+					ignore_reward_blocking: true
+					player_command: true
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "Harder\\n &cEXPERIMENTAL"
+			tasks: [{
+				disable_toast: true
+				id: "6FE4CDC30FBFAF27"
+				title: "CLICK ME"
+				type: "checkmark"
+			}]
+			title: "Always Twilight"
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			can_repeat: true
+			icon: "bhc:red_heart_canister"
+			id: "67A341258981B82B"
+			rewards: [{
+				auto: "invisible"
+				command: "/gamerule keepInventory true"
+				id: "62A9B3879C8BB1A4"
+				player_command: true
+				type: "command"
+			}]
+			shape: "heart"
+			tasks: [{
+				id: "3A35CA17B94C176C"
+				title: "CLICK ME"
+				type: "checkmark"
+			}]
+			title: "Keep Inventory"
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			icon: "bhc:red_heart_melted"
+			id: "02826483D0552FF5"
+			rewards: [{
+				auto: "invisible"
+				command: "/gamerule keepInventory false"
+				id: "5D13F92AD3F16D39"
+				player_command: true
+				type: "command"
+			}]
+			shape: "diamond"
+			subtitle: "[Default]"
+			tasks: [{
+				id: "31F46DD45858A6D8"
+				title: "CLICK ME"
+				type: "checkmark"
+			}]
+			title: "No Keeping Inventory"
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			can_repeat: true
+			icon: "minecraft:creeper_head"
+			id: "4AB4DF6499F6484B"
+			rewards: [{
+				auto: "invisible"
+				command: "/gamerule mobGriefing true"
+				id: "0988A9F5F8D95B8E"
+				player_command: true
+				type: "command"
+			}]
+			shape: "diamond"
+			subtitle: "[Default]"
+			tasks: [{
+				id: "182EDABA5B844E33"
+				title: "CLICK ME"
+				type: "checkmark"
+			}]
+			title: "Mob Griefing"
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			can_repeat: true
+			icon: "graveyard:creeper_skeleton"
+			id: "0828DE57CFCF1F8E"
+			rewards: [{
+				auto: "invisible"
+				command: "/gamerule mobGriefing false"
+				id: "7717DA3CA1B1C1BD"
+				player_command: true
+				type: "command"
+			}]
+			shape: "heart"
+			tasks: [{
+				id: "0216C1648F9992F8"
+				title: "CLICK ME"
+				type: "checkmark"
+			}]
+			title: "No Mob Griefing"
+			x: 1.5d
+			y: 0.0d
+		}
+	]
+	subtitle: ["For Ops Only"]
+	title: "Modpack Options"
+}

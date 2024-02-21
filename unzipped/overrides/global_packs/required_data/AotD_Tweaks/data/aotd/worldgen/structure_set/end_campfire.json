@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "aotd:end_campfire",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 16,
+    "separation": 12,
+    "salt": 360629845,
+	"exclusion_zone": {
+		"chunk_count": 1,
+		"other_set": "minecraft:end_cities"
+	}
+  }
+}

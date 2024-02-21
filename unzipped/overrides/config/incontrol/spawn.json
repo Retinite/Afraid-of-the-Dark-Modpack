@@ -1,0 +1,91 @@
+[
+  {
+	  "mob": "tenebrous_lands:demogon",
+	  "mincount": 2,
+	  "result": "deny"
+  },
+  {
+	  "dimension": "minecraft:the_end",
+	  "mob": "tenebrous_lands:demogon",
+	  "result": "deny"
+  },
+  {
+	  "mob": "tenebrous_lands:abaddon",
+	  "mincount": 2,
+	  "result": "deny"
+  },
+  {
+	  "dimension": "minecraft:the_end",
+	  "mob": "tenebrous_lands:abaddon",
+	  "result": "deny"
+  },
+  {
+	  "mob": "tenebrous_lands:stalker",
+	  "mincount": 1,
+	  "result": "deny"
+  },
+  {
+	  "dimension": "minecraft:the_end",
+	  "mob": "tenebrous_lands:stalker",
+	  "result": "deny"
+  },
+  {
+	  "mob": "tenebrous_lands:eynelvoonge",
+	  "maxcount": 3,
+	  "healthmultiply": 4,
+	  "damagemultiply": 2,
+	  "result": "allow"
+  },
+  {
+	  "mob": "tenebrous_lands:eynelvoonge",
+	  "mincount": 3,
+	  "result": "deny"
+  },
+  {
+	  "mob": "tenebrous_lands:shiva",
+	  "mincount": 1,
+	  "result": "deny"
+  },
+  {
+	  "dimension": "minecraft:the_end",
+	  "mob": "tenebrous_lands:shiva",
+	  "result": "deny"
+  },
+  {
+	  "mob": "tenebrous_lands:scarecrow",
+	  "mincount": 1,
+	  "result": "deny"
+  },
+  {
+	  "dimension": "minecraft:the_end",
+	  "mob": "tenebrous_lands:scarecrow",
+	  "result": "deny"
+  },
+  {
+	  "mob": "tenebrous_lands:skinwalker",
+	  "mincount": 1,
+	  "result": "deny"
+  },
+  {
+	  "dimension": "minecraft:the_end",
+	  "mob": "tenebrous_lands:skinwalker",
+	  "result": "deny"
+  },
+  {
+	  "mob": "tenebrous_lands:tartarus",
+	  "mincount": 1,
+	  "result": "deny"
+  },
+  {
+	  "mob": "tenebrous_lands:wendigo",
+	  "maxcount": 1,
+	  "healthmultiply": 4,
+	  "damagemultiply": 3,
+	  "result": "allow"
+  },
+  {
+	  "mob": "tenebrous_lands:wendigo",
+	  "mincount": 1,
+	  "result": "deny"
+  }
+]

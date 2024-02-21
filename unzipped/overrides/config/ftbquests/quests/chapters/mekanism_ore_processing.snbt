@@ -1,0 +1,475 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mekanism_ore_processing"
+	group: "37DA37ED2FACCAC8"
+	icon: "mekanism:clump_lead"
+	id: "658D37B92221792B"
+	order_index: 4
+	progression_mode: "flexible"
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["216381A3C99B8B6F"]
+			id: "33BC40ADA607B8A1"
+			shape: "square"
+			subtitle: "3:4 (raw), 1:2 (ore)"
+			tasks: [{
+				disable_toast: true
+				id: "45CE01E3EC7248E1"
+				item: "mekanism:enrichment_chamber"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"357798372C85697D"
+				"5C6355E15C1CDDF1"
+				"351E0925C2D04D79"
+			]
+			id: "244357C5D51D03CC"
+			rewards: [{
+				id: "166F6477CB8E58B4"
+				item: "mekanism:enrichment_chamber"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "1:2 (raw), 1:3 (ore)"
+			tasks: [{
+				disable_toast: true
+				id: "60502DE3B9E7B583"
+				item: "mekanism:purification_chamber"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["244357C5D51D03CC"]
+			id: "03A3F35D9A7C7724"
+			shape: "square"
+			subtitle: "Best for Netherite!"
+			tasks: [{
+				disable_toast: true
+				id: "417EE4E042F219B0"
+				item: "mekanism:crusher"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["17D2D65003FDD72B"]
+			hide_dependent_lines: true
+			id: "216381A3C99B8B6F"
+			shape: "square"
+			subtitle: "1:1 (raw), 1:1 (ore)"
+			tasks: [{
+				disable_toast: true
+				id: "09297DD83901A795"
+				item: "mekanism:energized_smelter"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"380EE0B250F5119E"
+				"7EF8D9068CEA9DF5"
+			]
+			id: "78AA59DA9B05CBEF"
+			rewards: [{
+				id: "357758BB3DE96618"
+				item: "mekanism:enrichment_chamber"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "3:8 (raw), 1:4 (ore)"
+			tasks: [{
+				disable_toast: true
+				id: "5014F9B6EFD74EC4"
+				item: "mekanism:chemical_injection_chamber"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"07C733A110C67CEE"
+				"2F6B430D3A83473A"
+			]
+			id: "03326473AB153F96"
+			shape: "square"
+			subtitle: "3:10 (raw), 1:5 (ore)"
+			tasks: [{
+				disable_toast: true
+				id: "3F88BF4F49986A85"
+				item: "mekanism:chemical_dissolution_chamber"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["03326473AB153F96"]
+			id: "01F3F56BFB81F2BD"
+			rewards: [{
+				count: 2
+				id: "7CAC0D98CA984BC0"
+				item: "mekanism:ultimate_control_circuit"
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				disable_toast: true
+				id: "3DBD67CB2D363A1F"
+				item: "mekanism:chemical_washer"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["01F3F56BFB81F2BD"]
+			id: "10038E93A72CE4B5"
+			shape: "square"
+			tasks: [{
+				disable_toast: true
+				id: "40A70378B6F2D594"
+				item: "mekanism:chemical_crystallizer"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			description: [
+				"This page is a reference guide for more efficient resource processing. To upgrade your processing setup, simply append the new machines onto the &obeginning&r of your existing setup."
+				""
+				"With &o&lApotheosis&r, the &5Fortune&r enchantment now goes up to level 5. The expected yield &omultiplier&r from &5Fortune Z&r is given by &l1/(Z+2) + (Z+1)/2&r, so &5Fortune III&r has an expected yield multiplier of 2.2, and &5Fortune V&r has an expected yield multiplier of 3.14."
+				""
+				"Thus, for maximal yield the general strategy is to use &5Fortune II+&r on &oore&r (blocks) to obtain &nraw&r resources, then process the &nraw&r resources using &l&oMekanism&r machines."
+				""
+				"The &7Enrichment Chamber&r should always be used to process Nether Quartz Ore and &eNether Gold Ore&r. It is also roughly equivalent to &5Fortune II&r on &1Lapis Lazuli Ore&r, &5III&r on &bDiamond Ore&r, &aEmerald Ore&r, and &bFluorite Ore&r, and &5IV&r on &4Redstone Ore&r."
+			]
+			hide_dependent_lines: true
+			icon: "minecraft:raw_iron"
+			id: "17D2D65003FDD72B"
+			shape: "gear"
+			subtitle: "Optimal Efficiency"
+			tasks: [{
+				disable_toast: true
+				id: "4CB82FBA1123B798"
+				title: "CLICK ME"
+				type: "checkmark"
+			}]
+			title: "How to Process"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["33BC40ADA607B8A1"]
+			hide_dependent_lines: true
+			icon: "mekanism:energized_smelter"
+			id: "351E0925C2D04D79"
+			rewards: [{
+				id: "330850C5464BCE41"
+				item: "minecraft:raw_iron_block"
+				type: "item"
+			}]
+			tasks: [{
+				disable_toast: true
+				id: "2B87CF18B8DDA2C3"
+				title: "CLICK ME"
+				type: "checkmark"
+			}]
+			title: "Energized Smelter"
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["53E6BFBE3A716CD9"]
+			description: ["See the &oGenerators&r page for creating &eSulfuric Acid&r."]
+			icon: "mekanism:sulfuric_acid_bucket"
+			id: "07C733A110C67CEE"
+			shape: "rsquare"
+			subtitle: "A Use for Gunpowder!"
+			tasks: [{
+				disable_toast: true
+				id: "32E8E5D8F81F490B"
+				title: "CLICK ME"
+				type: "checkmark"
+			}]
+			title: "Sulfuric Acid"
+			x: -1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["53E6BFBE3A716CD9"]
+			description: ["Alternatively, for unlimited &bHydrogen Chloride&r, use a &6Thermal Evaporation Plant&r (see Mekanism \\& Utilities: Advanced) to create &eBrine&r. You can then turn &eBrine&r into &3Chlorine&r and &3Chlorine&r into &bHydrogen Chloride&r."]
+			icon: "mekanism:hydrogen_chloride_bucket"
+			id: "380EE0B250F5119E"
+			shape: "rsquare"
+			subtitle: "A Use for Salt!"
+			tasks: [{
+				disable_toast: true
+				id: "0CEDAEFC50B1A609"
+				title: "CLICK ME"
+				type: "checkmark"
+			}]
+			title: "Hydrogen Chloride"
+			x: -1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["53E6BFBE3A716CD9"]
+			description: ["An &7Electrolytic Separater&r is recommended."]
+			icon: "mekanism:oxygen_bucket"
+			id: "357798372C85697D"
+			shape: "rsquare"
+			subtitle: "A Use for Flint!"
+			tasks: [{
+				disable_toast: true
+				id: "1963BD7AFD815A34"
+				title: "CLICK ME"
+				type: "checkmark"
+			}]
+			title: "Oxygen"
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["12887FCE0ADCC9FD"]
+			hide_dependent_lines: true
+			icon: "mekanism:energized_smelter"
+			id: "7EF8D9068CEA9DF5"
+			rewards: [
+				{
+					id: "7ECCCC86670E801C"
+					item: "minecraft:raw_iron_block"
+					type: "item"
+				}
+				{
+					id: "23498E6DA8F3EA15"
+					item: "mekanism:block_raw_osmium"
+					type: "item"
+				}
+			]
+			tasks: [{
+				disable_toast: true
+				id: "730CAEC1832918BD"
+				title: "CLICK ME"
+				type: "checkmark"
+			}]
+			title: "Energized Smelter"
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6AEAB204B452F502"]
+			hide_dependent_lines: true
+			icon: "mekanism:energized_smelter"
+			id: "2F6B430D3A83473A"
+			rewards: [
+				{
+					id: "7F204DDC2493EF0A"
+					item: "minecraft:raw_iron_block"
+					type: "item"
+				}
+				{
+					id: "553E27CBE55C725F"
+					item: "mekanism:block_raw_osmium"
+					type: "item"
+				}
+				{
+					id: "613EE9385D3FB23B"
+					item: "mekanism:block_raw_tin"
+					type: "item"
+				}
+			]
+			tasks: [{
+				disable_toast: true
+				id: "6AB431E6C9756BEE"
+				title: "CLICK ME"
+				type: "checkmark"
+			}]
+			title: "Energized Smelter"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["305AAFC308688B1A"]
+			icon: "mekanism:energized_smelter"
+			id: "7A5F7289B1F99A25"
+			rewards: [
+				{
+					id: "4B4225225F3A43FE"
+					item: "minecraft:raw_iron_block"
+					type: "item"
+				}
+				{
+					id: "5996EDC720390AEA"
+					item: "mekanism:block_raw_osmium"
+					type: "item"
+				}
+				{
+					id: "351D49602F4D704B"
+					item: "mekanism:block_raw_tin"
+					type: "item"
+				}
+				{
+					id: "6F30A2868533E61D"
+					item: "mekanism:block_raw_lead"
+					type: "item"
+				}
+			]
+			tasks: [{
+				disable_toast: true
+				id: "04AAD713BA8D0D79"
+				title: "CLICK ME"
+				type: "checkmark"
+			}]
+			title: "Energized Smelter"
+			x: 7.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["03A3F35D9A7C7724"]
+			icon: "mekanism:enrichment_chamber"
+			id: "12887FCE0ADCC9FD"
+			tasks: [{
+				disable_toast: true
+				id: "7810F35C51F05384"
+				title: "CLICK ME"
+				type: "checkmark"
+			}]
+			title: "Enrichment Chamber"
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["41FAF06F88FB4792"]
+			icon: "mekanism:enrichment_chamber"
+			id: "6AEAB204B452F502"
+			tasks: [{
+				disable_toast: true
+				id: "106EA40D6C1141FD"
+				title: "CLICK ME"
+				type: "checkmark"
+			}]
+			title: "Enrichment Chamber"
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7557333EC45F1899"]
+			icon: "mekanism:enrichment_chamber"
+			id: "305AAFC308688B1A"
+			tasks: [{
+				disable_toast: true
+				id: "68C1C38255E519BB"
+				title: "CLICK ME"
+				type: "checkmark"
+			}]
+			title: "Enrichment Chamber"
+			x: 6.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["78AA59DA9B05CBEF"]
+			icon: "mekanism:purification_chamber"
+			id: "050AE6C635120240"
+			tasks: [{
+				disable_toast: true
+				id: "3FAFAB70040DCEF3"
+				title: "CLICK ME"
+				type: "checkmark"
+			}]
+			title: "Purification Chamber"
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["050AE6C635120240"]
+			icon: "mekanism:crusher"
+			id: "41FAF06F88FB4792"
+			tasks: [{
+				disable_toast: true
+				id: "623E00BCFCBC0C24"
+				title: "CLICK ME"
+				type: "checkmark"
+			}]
+			title: "Crusher"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2F2A05FEEE1F297E"]
+			icon: "mekanism:purification_chamber"
+			id: "5279E6D27471C479"
+			tasks: [{
+				disable_toast: true
+				id: "216379FE9828E403"
+				title: "CLICK ME"
+				type: "checkmark"
+			}]
+			title: "Purification Chamber"
+			x: 4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5279E6D27471C479"]
+			icon: "mekanism:crusher"
+			id: "7557333EC45F1899"
+			tasks: [{
+				disable_toast: true
+				id: "33D017101ADF653A"
+				title: "CLICK ME"
+				type: "checkmark"
+			}]
+			title: "Crusher"
+			x: 5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["10038E93A72CE4B5"]
+			icon: "mekanism:chemical_injection_chamber"
+			id: "2F2A05FEEE1F297E"
+			tasks: [{
+				disable_toast: true
+				id: "4E69246B16DEF81D"
+				title: "CLICK ME"
+				type: "checkmark"
+			}]
+			title: "Chemical Injection Chamber"
+			x: 3.0d
+			y: 5.0d
+		}
+		{
+			description: [
+				"Applying 8x &aGas Upgrade&rs to a machine &lreduces gas consumption by 90\\%!&r This saves a huge amount of time, energy, and raw resources!"
+				""
+				"&aGas Upgrade&rs can only be applied to &7Purification Chamber&rs, &7Chemical Injection Chamber&rs, and &7Chemical Dissolution Chamber&rs."
+			]
+			hide_dependent_lines: true
+			icon: "mekanism:upgrade_gas"
+			id: "53E6BFBE3A716CD9"
+			optional: true
+			shape: "gear"
+			subtitle: "Practically Necessary"
+			tasks: [{
+				id: "226A95CB979F62D7"
+				title: "CLICK ME"
+				type: "checkmark"
+			}]
+			title: "Gas Upgrade"
+			x: -2.0d
+			y: 4.0d
+		}
+	]
+	title: "Ore Processing"
+}

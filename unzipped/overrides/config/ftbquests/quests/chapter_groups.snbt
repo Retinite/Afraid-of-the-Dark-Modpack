@@ -1,0 +1,7 @@
+{
+	chapter_groups: [
+		{ id: "11332E0C2CB4D054", title: "Adventure Mods" }
+		{ id: "37DA37ED2FACCAC8", title: "Mekanism" }
+		{ id: "039D51C47AD8D82F", title: "Utility Mods" }
+	]
+}

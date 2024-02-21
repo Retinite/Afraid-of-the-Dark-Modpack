@@ -1,0 +1,282 @@
+{
+  "pools": [
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:bowl",
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.75
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:ender_pearl",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 4
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:glass_bottle"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "unusualend:wandering_pearl"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "unusualend:bottled_shulker_bullet"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "unusualend:enderblob_moult",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "unusualend:chorus_fungus",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "unusualend:chorus_roots",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "unusualend:warped_wart"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "unusualend:shiny_crystal"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "unusualend:chorus_petal",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.3
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "unusualend:end_blob",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.3
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "unusualend:end_blob_jelly",
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.3
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "unusualend:chorus_tea",
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.3
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "unusualend:chorus_juice",
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.5
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "unusualend:ender_stew",
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.9
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "unusualend:wandering_stew"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "unusualend:floating_pouch"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "unusualend:moult_dagger"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "unusualend:chorus_helmet"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "unusualend:enderling_scrap_leggings"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "unusualend:bolok_scale_boots"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "unusualend:blob_shield"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.5
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "unusualend:ender_firefly_egg"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 4,
+          "name": "unusualend:chorus_pie"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "unusualend:ancient_shard"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "unusualend:golem_orb"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 4,
+          "name": "unusualend:void_totem"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "unusualend:enderfirefly_bucket"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.05
+        }
+      ]
+    }
+  ]
+}

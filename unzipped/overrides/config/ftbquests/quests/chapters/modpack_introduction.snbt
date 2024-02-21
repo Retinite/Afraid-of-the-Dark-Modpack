@@ -1,0 +1,838 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "gear"
+	filename: "modpack_introduction"
+	group: ""
+	icon: "minecraft:skeleton_skull"
+	id: "6BAEB97C1DD06635"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&0&lAfraid of the Dark&r is designed to be spooky, scary, and somewhat difficult. This questbook serves as an introduction to many of the mods, &lsome of which have been nerfed and/or have had recipes altered&r. Good luck, and have fun!"
+				""
+				""
+				""
+				"If you are new to &lFTB Quests&r, continue to the next page by &bScrolling&r, pressing '&bPage Down&r', or clicking on the arrow below."
+				""
+				"Basic &lFTB Teams&r and &lFTB Chunks&r information is on page 4."
+				""
+				"{@pagebreak}"
+				"The &3&oQuest Book&r item is just a shortcut. You can access your quests at any time from the top left of your inventory screen."
+				""
+				"Your questbook is divided into &ochapters&r, with each chapter containing multiple &oquests&r. You can browse the chapters by hovering over the left edge of the quest navigation screen. &7Note that some quests (and even chapters) can be hidden until certain criteria are met.&r"
+				""
+				"Most quests require collecting specific items in your inventory to complete, but some may have other requirements. &aYou can click on the quest's individual \"Tasks\" for more information.&r &lIf you don't know how to craft a required item, press '&b&lR&r&l' (default) to view its recipe!&r"
+				""
+				"{@pagebreak}"
+				"Most quests list other quests as prerequisites, hence all the connecting lines between quests. When viewing a quest, you can view its prerequisites by clicking on the arrow in the top left, which may be flashing &4red&r if the prerequisites are not met. Similarly, you can use the arrow in the top right to view a quest's dependants."
+				""
+				"The shape of the quest icon is arbitrary, but each modpack tends to come up with their own guidelines for the easiest readability. Here, &ogenerally&r:"
+				" &7gear&r = &cimportant information&r"
+				" &7square&r = &8machine/functional block&r"
+				" &7rounded square&r = &2resource&r"
+				" &7circle&r = &6equipment&r"
+				" &7diamond&r = &3optional&r"
+				""
+				"{@pagebreak}"
+				"&lFTB Teams&r allows players to create and join teams. You can access your teams menu at any time from the top left of your inventory screen."
+				""
+				"When on a team:"
+				" - Most quest progress is shared"
+				" - Most quest rewards are reduced"
+				" - Team chat is available"
+				" - Other teams can be \"allied\""
+				" - Chunks can be claimed (via &lFTB Chunks&r), allowing for team-based chunk protection"
+				"{@pagebreak}"
+				"&lFTB Chunks&r allows you (and your team) to claim chunks, protecting them from un-allied players' griefing. The menu to claim chunks is in the top left of your inventory screen. The hotkeys for the chunks map and &lFTB Chunks&r waypoints are disabled by default, in favor of using &c&lJourney Map&r's &lFTB Chunks&r integration."
+			]
+			icon: "ftbquests:book"
+			id: "318126553F4ED0EC"
+			rewards: [
+				{
+					id: "02F3FA6B408F7FA3"
+					item: "ftbquests:book"
+					team_reward: false
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					command: "/gamerule disableElytraMovementCheck true"
+					id: "18D46B2F5A3545E1"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/scoreboard objectives add Deaths deathCount"
+					id: "737BDF29181E4CD6"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/scoreboard objectives setdisplay list Deaths"
+					id: "36F0305409F69D55"
+					silent: true
+					type: "command"
+				}
+			]
+			size: 2.0d
+			subtitle: "Read Me!"
+			tasks: [{
+				disable_toast: true
+				id: "4D0C8771AE88A9B5"
+				title: "CLICK ME"
+				type: "checkmark"
+			}]
+			title: "Welcome!"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["318126553F4ED0EC"]
+			description: [
+				"&l&cEverlasting Abilities&r"
+				"Equip permanent perks at the cost of &aexp&r. Mobs will occasionally spawn with obvious particle effects, and killing one will drop its ability. One random ability of yours will drop when you die - and &lnot on your corpse!&r"
+				""
+				"The &ncraftable&r &6ability bottle&r allows you to store and swap abilities. You can also craft three abilities together to make a &onew random ability&r (recipes are fixed by your world seed)."
+				""
+				"&o&cThe more passive abilities you have, the faster your hunger drains!&r"
+			]
+			icon: {
+				Count: 1b
+				id: "everlastingabilities:ability_bottle"
+				tag: {
+					"everlastingabilities:abilityStoreStack": [ ]
+				}
+			}
+			id: "5208A083200FA0CC"
+			rewards: [{
+				id: "5E2DD31E9989349D"
+				item: {
+					Count: 1b
+					id: "everlastingabilities:ability_totem"
+					tag: {
+						"everlastingabilities:abilityStoreStack": [{
+							level: 1
+							name: "everlastingabilities:effect/speed"
+						}]
+					}
+				}
+				team_reward: false
+				type: "item"
+			}]
+			subtitle: "Perks!"
+			tasks: [{
+				disable_toast: true
+				id: "1363C4012961D51E"
+				item: {
+					Count: 1b
+					id: "everlastingabilities:ability_bottle"
+					tag: {
+						"everlastingabilities:abilityStoreStack": [ ]
+					}
+				}
+				type: "item"
+			}]
+			title: "Everlasting Abilities"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["318126553F4ED0EC"]
+			description: [
+				"&l&cCarry On&r"
+				"&bShift&r + &bRight Click&r to pick up / put down most entities and blocks! (Picking up hostile mobs and spawners has been disabled.)"
+				"&eCaution&r: placed blocks will &osometimes preserve their original orientation&r even though they update visually. This can lead to unexpected behavior, especially with blocks that have side-specific inputs and outputs."
+				""
+				"&l&cCrafting Tweaks&r"
+				"&bK&r - in any inventory screen with a crafting table (including a &oBackpack&r), compresses the hovered stack"
+				""
+				"&l&cExtreme Sound Muffler&r"
+				"Adds a button to your inventory screen that allows for adjusting the volume of individual sounds. You can also sort by recent sounds, and muffle specified sounds locally!"
+				""
+				"&l&cInventory Sorter&r"
+				"&bMiddle Mouse Click&r - sort the inventory by item count"
+				""
+				"&l&cJEI&r"
+				"'&bU&r' on an item - view use(s)"
+				"'&bR&r' on an item - view recipe(s)"
+				"'&bA&r' on an item - (un)bookmark"
+				"&bCtrl&r + '&bF&r' - quick search"
+				"&bRight Click&r on search bar - quick clear"
+				"'&a@&r' in search bar - filter by mod"
+				"'&a#&r' in search bar - search by tooltip"
+				"'&a\\&&r' in search bar - search by ID"
+				"'&a$&r' in search bar - search by oredict"
+				"'&a%&r' in search bar - sort by creativetab"
+				"'&a^&r' in search bar - search by color"
+				"'&a|&r' in search bar - combine queries"
+				""
+				"&l&cJourney Map&r"
+				"'&bJ&r' - open Journey map"
+				"'&bB&r' - create waypoint shortcut"
+				""
+				"&l&cMekanism&r"
+				"'&bK&r'/'&bP&r'/'&bL&r'/'&bM&r'/'&bN&r' - change item/head/chest/legs/feet mode"
+				"'&b\\\\ &r' - module tweaker"
+				""
+				"&l&cMouse Tweaks&r"
+				"&bScroll&r - transfer items one at a time, either direction"
+			]
+			icon: "mekanism:crafting_formula"
+			id: "291B44B5B29B8F26"
+			rewards: [{
+				id: "36CB6B21F8B53313"
+				item: "minecraft:chest"
+				team_reward: false
+				type: "item"
+			}]
+			subtitle: "Pay Attention!"
+			tasks: [{
+				disable_toast: true
+				id: "3F223AC86F390830"
+				item: "minecraft:crafting_table"
+				type: "item"
+			}]
+			title: "Useful Controls"
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["318126553F4ED0EC"]
+			description: [
+				"&l&cBaubley Heart Canisters&r"
+				"Collect heart drops from enemies to craft health upgrades. You will need to craft a &bHeart Amulet&r to equip the heart canisters. This will remain on your corpse when you die! Note that you can also &oeat hearts and craft Health Patches for instant health&r!"
+				""
+				"&l&cSpice of Life: Carrot Edition&r"
+				"Permanently increases your max health based on how many unique foods you've eaten! Track your progress in either the &oFood Book&r or the &oChallenges&r page."
+			]
+			icon: "solcarrot:food_book"
+			id: "2D7ECFB306CF4E83"
+			rewards: [
+				{
+					count: 5
+					id: "11B38552E5887E04"
+					item: "bhc:wither_bone"
+					team_reward: false
+					type: "item"
+				}
+				{
+					count: 2
+					id: "465843E701F1486B"
+					item: "minecraft:golden_apple"
+					team_reward: false
+					type: "item"
+				}
+				{
+					count: 2
+					id: "60B684C3BAFF8968"
+					item: "bhc:relic_apple"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "471EE481FCE0F35D"
+					item: "minecraft:enchanted_golden_apple"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "683B8023C07DE419"
+					item: {
+						Count: 1b
+						id: "bhc:yellow_heart_patch"
+						tag: {
+							Damage: 0
+						}
+					}
+					team_reward: false
+					type: "item"
+				}
+			]
+			subtitle: "Low Health for Now..."
+			tasks: [
+				{
+					disable_toast: true
+					id: "67B230CEAB07177E"
+					item: "solcarrot:food_book"
+					type: "item"
+				}
+				{
+					id: "07CF439900778CE2"
+					item: "bhc:heart_amulet"
+					type: "item"
+				}
+			]
+			title: "Extra Health"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["318126553F4ED0EC"]
+			description: [
+				"&l&cChipped&r"
+				"Provides &nseven&r new workstations that offer &ohundreds&r of new cosmetic blocks. Beautify everything!"
+				""
+				"&l&cThe Graveyard&r"
+				"In a &ospooky&r mood? Recreate skeletal decor from &oThe Graveyard&r at the &7Ossuary&r using Bone Blocks!"
+			]
+			icon: "chipped:nether_engraved_glowstone"
+			id: "672F6F9EBD41853D"
+			rewards: [{
+				id: "416B66B602E6960D"
+				item: "chipped:alchemy_bench"
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "So Many Options..."
+			tasks: [{
+				disable_toast: true
+				id: "3A39159922D079DE"
+				title: "CLICK ME"
+				type: "checkmark"
+			}]
+			title: "Decor"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["318126553F4ED0EC"]
+			description: [
+				"&l&cSophisticated Backpacks&r"
+				"Carry around a chest on your back! Lots of upgrades to choose from, including on-the-go crafting and smelting!"
+				""
+				"Backpacks themselves can also be upgraded! In addition, backpacks can be placed with &bShift&r + &bRight Click&r, and can be dyed (similar to &6Leather&r armor). Placing dye to the &oright&r of the backpack will apply the dye to the detailing specifically."
+			]
+			icon: {
+				Count: 1b
+				id: "sophisticatedbackpacks:backpack"
+				tag: {
+					contentsUuid: [I;
+						-275449302
+						219039354
+						-1609621103
+						217097022
+					]
+					inventorySlots: 27
+					upgradeSlots: 1
+				}
+			}
+			id: "6FAB120B2F708146"
+			rewards: [{
+				id: "71B6C811602056DD"
+				item: "sophisticatedbackpacks:upgrade_base"
+				team_reward: false
+				type: "item"
+			}]
+			subtitle: "Bigger Inventory!"
+			tasks: [{
+				disable_toast: true
+				id: "2F0596B9D5AD983B"
+				item: {
+					Count: 1b
+					id: "sophisticatedbackpacks:backpack"
+					tag: {
+						contentsUuid: [I;
+							1333537515
+							571821180
+							-1522808644
+							856000552
+						]
+						inventorySlots: 27
+						upgradeSlots: 1
+					}
+				}
+				type: "item"
+			}]
+			title: "Sophisticated Backpacks"
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["318126553F4ED0EC"]
+			description: [
+				"&l&cWaystones&r"
+				"Easily set up locations to teleport to and between!"
+				""
+				"Short distances are free, and long distances start costing &alevels&r. Leashed animals can teleport with you (&ofor a higher cost&r)!"
+				""
+				"&oWaystone&rs are almost always found in villages."
+			]
+			icon: "waystones:waystone"
+			id: "2F1B456E0D983B8A"
+			subtitle: "No More Commuting!"
+			tasks: [{
+				disable_toast: true
+				id: "41451CBCF3E60C47"
+				item: "waystones:return_scroll"
+				type: "item"
+			}]
+			title: "Waystones"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["318126553F4ED0EC"]
+			description: [
+				"&l&cDynamic Lights&r"
+				"Hold any light source in your hand or offhand and generate light! Also works when dropping a light source!"
+				""
+				"&l&cFireflies&r"
+				"Adds surface fireflies and firefly lanterns."
+				""
+				"&l&cMining Helmet&r"
+				"Adds a helmet (equivalent to an iron helmet) that provides dynamic light!"
+				""
+				"&l&cSanity: Descent Into Madness&r"
+				"Bad things like taking damage, being near danger, and especially being in the dark will gradually lower your sanity (bottom left brain meter). At medium sanity, you will begin hallucinating sounds, and at low sanity, your inner demons will begin attacking you! Stay in the light to stay sane."
+				""
+				"&l&cSearchlight&r"
+				"Adds a few new wall lights and an adjustable floodlight."
+			]
+			icon: "minecraft:torch"
+			id: "018777470D67C569"
+			rewards: [{
+				id: "41460B83215AE094"
+				item: "minecraft:campfire"
+				team_reward: false
+				type: "item"
+			}]
+			subtitle: "Tip: Keep Some At Spawn"
+			tasks: [{
+				count: 16L
+				disable_toast: true
+				id: "050350FE18CB25C5"
+				item: "minecraft:torch"
+				type: "item"
+			}]
+			title: "Lights"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["318126553F4ED0EC"]
+			description: [
+				"&l&cApoth&aeosis&r"
+				"Includes a module for added difficulty, and offers \"Bosses\" that spawn at night and in new dungeons. Bosses have different difficulty levels depending on color, and can drop valuable loot. On the bright side, scavenged weapons and armor are more common and more powerful!"
+				""
+				"&l&aDon't Break Items&r"
+				"Because of the progressive nature of armor and tools, accidentally losing equipment becomes much more punishing. &lDon't Break Items&r prevents item durability from dropping below 1, but in exchange prevents those items from being used. &lApotheosis&r affixes still work when broken! Broken items &4lose their enchantments&r, including Curse of Binding!"
+				""
+				"&l&cDusk&r"
+				"Mobs are stronger and spawn more frequently at night."
+				""
+				"&l&cMarjrusz's Progressive Difficulty&r"
+				"Introduces an additional difficulty mode (\"Normal\", \"Expert\", \"Master\") that introduces many small changes to &4hostile mobs&r. Also introduces the &8&oUndead Army&r, a horde that occasionally spawns on your location based on how many &8&oundead&r mobs you have killed. Expert mode is triggered by either killing the &8&oWither&r or by entering &e&oThe End&r, and Master mode is triggered by killing the &5&oEnder Dragon&r."
+				""
+				"&l&cZombie Awareness&r"
+				"When you take damage or are at less than max health (including &cSpice of Life&r health but &nnot&r &cBaubley Heart Canisters&r), you will leave a trail of blood that zombies will follow. Stay healthy!"
+			]
+			icon: "born_in_chaos_v1:shattered_skull"
+			id: "7CFC505397B0C825"
+			rewards: [
+				{
+					id: "66C7AEAC24DEDB41"
+					item: {
+						Count: 1b
+						id: "graveyard:bone_dagger"
+						tag: {
+							Damage: 0
+						}
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7F517244EDB8A7B8"
+					item: "majruszsdifficulty:bandage"
+					team_reward: false
+					type: "item"
+				}
+			]
+			subtitle: "And Deadlier Creepers"
+			tasks: [{
+				disable_toast: true
+				id: "4857235A555785FB"
+				item: {
+					Count: 1b
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "apotheosis:apoth_chronicle"
+					}
+				}
+				type: "item"
+			}]
+			title: "Difficulty"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["018777470D67C569"]
+			description: ["Create &oTorch&res using &oStick&rs at a &oCampfire&r!"]
+			hide: true
+			id: "4D9C14CAC1A78F28"
+			rewards: [{
+				id: "35F060AC982658B7"
+				item: "minecraft:lantern"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				id: "3B39DBB55AE8EB45"
+				item: "minecraft:campfire"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["7CFC505397B0C825"]
+			description: [
+				"Slightly better than a Stone Sword, and &oextremely cheap&r!"
+				""
+				"(Reminder: press '&bR&r' over an item to view its recipe!)"
+			]
+			hide: true
+			id: "7A64B40D6D8C6595"
+			rewards: [{
+				id: "1E9B3D75738E04BA"
+				item: {
+					Count: 1b
+					id: "minecraft:golden_chestplate"
+					tag: {
+						Damage: 0
+						Enchantments: [{
+							id: "minecraft:blast_protection"
+							lvl: 5s
+						}]
+						RepairCost: 1
+					}
+				}
+				team_reward: false
+				type: "item"
+			}]
+			shape: "circle"
+			tasks: [{
+				id: "2084149E354FE119"
+				item: {
+					Count: 1b
+					id: "graveyard:bone_dagger"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["7CFC505397B0C825"]
+			description: ["Stops and prevents &4Bleeding&r, and also provides some regeneration!"]
+			hide: true
+			id: "0222BF4A0D310ACF"
+			rewards: [{
+				id: "3744504F671281CC"
+				item: "majruszsdifficulty:golden_bandage"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "circle"
+			tasks: [{
+				id: "235DD39DE1D1C2C7"
+				item: "majruszsdifficulty:bandage"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["318126553F4ED0EC"]
+			description: [
+				"                This is &eThe End&r."
+				""
+				"{image:minecraft:textures/gui/presets/dark_end.png width:177 height:100 align:1}"
+				""
+				"    Many horrors stalk the darkness."
+				""
+				"          Light will keep you sane."
+				""
+				"{@pagebreak}"
+				"{image:minecraft:textures/gui/presets/dark_underwater.png width:177 height:100 align:1}"
+				""
+				"   Night Vision is not easy to acquire."
+				""
+				"            &4It is too easy to die.&r"
+				""
+				"{@pagebreak}"
+				"{image:minecraft:textures/gui/presets/dark_overworld.png width:177 height:100 align:1}"
+				""
+				" &0Combine the &2mekanical&0 with the &5magical&0"
+				""
+				"            &7before &fhope &8fades...&r"
+				" "
+			]
+			hide_dependency_lines: true
+			icon: "graveyard:corruption"
+			id: "56D5200B9771889C"
+			rewards: [{
+				id: "779BD891100A2BBA"
+				item: "chipped:burning_coal_lantern"
+				team_reward: false
+				type: "item"
+			}]
+			size: 3.0d
+			subtitle: "Afraid of the Dark? &oWhy?&r"
+			tasks: [{
+				id: "432C001E482021EF"
+				title: "CLICK ME"
+				type: "checkmark"
+			}]
+			title: "Modpack Overview"
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["318126553F4ED0EC"]
+			description: [
+				"Mods are grouped by function (somewhat arbitrarily) and listed alphabetically."
+				""
+				"Thank you."
+				""
+				"{@pagebreak}"
+				"&a&lAPIs and Libraries&r"
+				""
+				"Architectury API (Fabric/Forge/NeoForge)"
+				"Balm (Forge Edition)"
+				"Blueprint"
+				"Bookshelf"
+				"Citadel"
+				"Cloth Config API (Fabric/Forge/NeoForge)"
+				"Collective"
+				"CoroUtil"
+				"CreativeCore"
+				"Cupboard"
+				"Curios API (Forge/NeoForge)"
+				"Cyclops Core"
+				"FTB Library (Forge)"
+				"GeckoLib"
+				"InsaneLib"
+				"Majrusz Library"
+				"Obscure API (Forge)"
+				"Placebo"
+				"Puzzles Lib [Forge \\& Fabric]"
+				"Resourceful Lib"
+				"Sophisticated Core"
+				"SuperMartijn642's Config Lib"
+				"SuperMartijn642's Core Lib"
+				"TerraBlender (Forge)"
+				"YUNG's API (Forge)"
+				"{@pagebreak}"
+				"&a&lPerformance Optimization&r"
+				""
+				"Alternate Current"
+				"Better Fps - Render Distance[Forge]"
+				"Chunk Sending[Forge/Fabric]"
+				"Clumps"
+				"Entity Culling Fabric/Forge"
+				"Farsight [Forge]"
+				"FastSuite"
+				"FerriteCore (Forge)"
+				"Limited Chunkloading - Chunk cleanup[Forge/Fabric]"
+				"Login Protection[Forge/Fabric]"
+				"Memory Settings[Forge/Fabric]"
+				"MemoryLeakFix"
+				"Pluto"
+				"Rubidium"
+				"Saturn"
+				"Server Performance - Smooth Chunk Save[Forge/Fabric]"
+				"Structure Essentials[Forge/Fabric]"
+				"Titanium"
+				"{@pagebreak}"
+				"&a&lQuality of Life&r"
+				""
+				"AppleSkin"
+				"Armor Toughness Bar"
+				"Bad Wither No Cookie - Reloaded"
+				"Better Advancements"
+				"BetterF3"
+				"Carry On"
+				"Clickable advancements[Forge/Fabric]"
+				"Configured"
+				"Controlling"
+				"Crafting Tweaks"
+				"Default Options"
+				"Durability Tooltip"
+				"Enchantment Descriptions"
+				"Extreme sound muffler (Forge)"
+				"Fast Leaf Decay"
+				"Game Menu Mod Option [Forge]"
+				"Health Overlay (Forge)"
+				"Inventory Sorter"
+				"Jade"
+				"JourneyMap Integration"
+				"Just Enough Items (JEI)"
+				"Just Enough Resources (JER)"
+				"Model Gap Fix"
+				"Mouse Tweaks"
+				"Not Enough Crashes (Forge)"
+				"Overloaded Armor Bar"
+				"Resourceful Config"
+				"ServerConfig Updater"
+				"Spyglass Improvements: Zoom, Quick Access... [Fabric/Forge]"
+				"Traveler's Titles (Forge)"
+				"Visual Workbench [Forge \\& Fabric]"
+				"{@pagebreak}"
+				"&a&lAtmospheric \\& Aesthetic Mods&r"
+				""
+				"Biome Music[Forge/Fabric]"
+				"Chipped"
+				"ConnectedTexturesMod"
+				"Distant Friends"
+				"Eerie Music[Forge/Fabric]"
+				"Gardens of the Dead"
+				"Night's Light"
+				"Nyctophobia (FORGE)"
+				"Searchlight (\\& Wall Lights) (Forge)"
+				"Sound Physics Remastered"
+				"YUNG's Better Desert Temples (Forge)"
+				"YUNG's Better Dungeons (Forge)"
+				"YUNG's Better End Island (Forge)"
+				"YUNG's Better Jungle Temples (Forge)"
+				"YUNG's Better Mineshafts (Forge)"
+				"YUNG's Better Nether Fortresses (Forge)"
+				"YUNG's Better Ocean Monuments (Forge)"
+				"YUNG's Better Strongholds (Forge)"
+				"YUNG's Better Witch Huts (Forge)"
+				"YUNG's Bridges (Forge)"
+				"YUNG's Extras (Forge)"
+				"{@pagebreak}"
+				"&a&lMajor Mods&r"
+				""
+				"Apotheosis"
+				"Aquamirae (Forge)"
+				"Born in Chaos"
+				"FTB Quests (Forge)"
+				"Magnesium/Rubidium Dynamic Lights"
+				"Mekanism"
+				"Mekanism Generators"
+				"Mekanism Tools"
+				"True Darkness"
+				"{@pagebreak}"
+				"&a&lMinor Mods&r"
+				""
+				"Baubley Heart Canisters"
+				"CraftTweaker"
+				"Creeper Overhaul"
+				"Dangers in the Darkness"
+				"Deep Dark: Regrowth"
+				"Drink Beer Refill"
+				"EverlastingAbilities"
+				"Flux Networks"
+				"Functional Storage"
+				"Illuminative"
+				"In Control!"
+				"Iron Chests: Restocked"
+				"JourneyMap"
+				"Majrusz's Progressive Difficulty"
+				"Mekanism Additions"
+				"Mekanism-MoreSolarPanels"
+				"Monster Plus"
+				"Rotten Creatures"
+				"Sanity: Descent Into Madness"
+				"Sophisticated Backpacks"
+				"Spice of Life: Carrot Edition"
+				"Tenebrous Lands [Forge]"
+				"The Graveyard (FORGE)"
+				"The John Reborn"
+				"Undead Unleashed!"
+				"Unusual End"
+				"Upgrade Aquatic"
+				"Waystones"
+				"Whisperwoods"
+				"{@pagebreak}"
+				"&a&lMini Mods&r"
+				""
+				"AttributeFix"
+				"Better Cave Dweller"
+				"Construction Wand"
+				"Corpse"
+				"Dark Mode Everywhere"
+				"Difficult Caves"
+				"Dusk[Forge/Fabric]"
+				"Eyes in the Darkness"
+				"Fading Night Vision"
+				"FTB Chunks (Forge)"
+				"FTB Teams (Forge)"
+				"Giant Spawn"
+				"Husk Spawn"
+				"Item Filters"
+				"JEITweaker"
+				"Kiwi Boi"
+				"Magma Monsters"
+				"Max Health Fix"
+				"Mimic Mod"
+				"Miner's Helmet"
+				"Mobs Properties Randomness"
+				"Nyf's Spiders"
+				"Observed"
+				"Quests Additions (Forge)"
+				"Savage Ender Dragon[Forge/Fabric]"
+				"Skeleton Horse Spawn"
+				"Starter Kit"
+				"Stray Spawn"
+				"Trash Cans"
+				"Zombie Awareness"
+			]
+			hide_dependency_lines: true
+			icon: "minecraft:filled_map"
+			id: "11C594BF8AAD98F1"
+			rewards: [{
+				id: "77EBCDA5D2EBD56D"
+				item: "minecraft:cake"
+				team_reward: false
+				type: "item"
+			}]
+			size: 3.0d
+			subtitle: "And Players Like You!"
+			tasks: [{
+				id: "4C8D01A5EE594D68"
+				title: "CLICK ME"
+				type: "checkmark"
+			}]
+			title: "Credits"
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["018777470D67C569"]
+			dependency_requirement: "one_started"
+			icon: "minecraft:soul_campfire"
+			id: "454DA5F957FE348D"
+			invisible: true
+			optional: true
+			rewards: [{
+				id: "746EEF74EB5F0F86"
+				item: "minecraft:soul_campfire"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "Works Differently!"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "685C45E7338E6AD4"
+				secret: true
+				title: "Visit the Nether"
+				type: "dimension"
+			}]
+			title: "Nether Sanity"
+			x: 0.5d
+			y: 3.5d
+		}
+	]
+	title: "Introduction"
+}

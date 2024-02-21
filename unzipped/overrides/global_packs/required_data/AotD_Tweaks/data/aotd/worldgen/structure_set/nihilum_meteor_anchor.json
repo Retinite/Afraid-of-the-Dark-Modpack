@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "aotd:nihilum_meteor_anchor",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 32,
+    "separation": 24,
+    "salt": 902877466
+  }
+}

@@ -1,0 +1,726 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "adventure_creepies_and_cryptids"
+	group: "11332E0C2CB4D054"
+	hide_quest_until_deps_visible: true
+	icon: "deep_dark_regrowth:aware_lens"
+	id: "37A81FA3EDDC3DEC"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Freed Spirits are dropped from &7Baby John&rs, and can be converted to experience with a &cRight Click&r."
+				""
+				"&dImmortality Gems&r are dropped from (normal) &7John&rs 20\\% of the time."
+				""
+				"Bloody Tears are dropped by the &8Mega John&r, who spawns on full moons from &8The Hunted&r."
+				""
+				"The &5Veil O' Johns&r highlights all nearby &7John&rs when activated."
+			]
+			id: "11A0CCD00A4A2259"
+			rewards: [{
+				id: "7B2FD0103D4FA1B5"
+				item: "john_mod_reborn:veil_o_johns"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "08818892D7DCF481"
+					item: "john_mod_reborn:freed_spirit"
+					type: "item"
+				}
+				{
+					id: "6A3BFC9C2F0DCA44"
+					item: "john_mod_reborn:immortalitygem"
+					type: "item"
+				}
+				{
+					id: "7EEFC166552B51E9"
+					item: "john_mod_reborn:bloody_tear"
+					type: "item"
+				}
+			]
+			title: "&lJohn Mod Reborn&r Resources"
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			description: ["Reminder: press '&bU&r' while hovering over an item to view its uses in other recipes."]
+			id: "4CED91B768D1F4EA"
+			rewards: [{
+				count: 32
+				id: "1E1C5F2DC0D5C9FD"
+				item: "minecraft:amethyst_shard"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "More Useful Than You Think!"
+			tasks: [
+				{
+					id: "715943A70A2F7D99"
+					item: "monsterplus:crystal_shard"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "011D5B5664300D43"
+					item: "monsterplus:ancient_crystal"
+					type: "item"
+				}
+			]
+			title: "Ancient Crystals"
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Use an &oEmpty Bottle&r on a &7Shy Spirit&r (a rare night/nether mob) to capture it as a &oSpirit in a Bottle&r."
+				""
+				"Excess &0Dark Metal&r can be converted into &7Steel&r."
+			]
+			id: "173CA2C4F61684B2"
+			rewards: [{
+				id: "75018D5F78BE7B8F"
+				item: "born_in_chaos_v1:nightmare_stalker_skull"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "Unlocks Quests Elsewhere"
+			tasks: [
+				{
+					id: "1BDF08604EFE6658"
+					item: "born_in_chaos_v1:pieceofdarkmetal"
+					type: "item"
+				}
+				{
+					id: "05CE68024E89960B"
+					item: "born_in_chaos_v1:monster_skin"
+					type: "item"
+				}
+				{
+					id: "19D29A4956E1FA30"
+					item: "born_in_chaos_v1:ethereal_spirit"
+					type: "item"
+				}
+				{
+					id: "055D4A7FB1392406"
+					item: "born_in_chaos_v1:seedof_chaos"
+					type: "item"
+				}
+				{
+					id: "11E16B5CFD12DFE8"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "born_in_chaos_v1:spiritinabottle"
+								}
+								{
+									Count: 1b
+									id: "born_in_chaos_v1:nightmare_claw"
+								}
+								{
+									Count: 1b
+									id: "born_in_chaos_v1:fangofthe_hound_leader"
+								}
+								{
+									Count: 1b
+									id: "born_in_chaos_v1:orbofthe_summoner"
+								}
+							]
+						}
+					}
+					title: "Any Rare &lBorn in Chaos&r Resource"
+					type: "item"
+				}
+			]
+			title: "&lBorn in Chaos&r Resources"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"460E02A9E10857EF"
+				"56031EDAADED1723"
+			]
+			description: [
+				"Killing a &7Haunter&r with a &8Reaping Scythe&r will &oguarantee&r a &bLost Soul&r drop."
+				""
+				"Enchant with &5Undertaker&r to turn nearby &2Grass&r and &2Soil&r into &8Grave Soil&r when killing mobs. Also prevents &7Haunter&rs from spawning when killing mobs."
+			]
+			id: "0F215DA932BD902B"
+			rewards: [{
+				id: "7A14A77279AB9CBD"
+				item: {
+					Count: 1b
+					id: "minecraft:enchanted_book"
+					tag: {
+						StoredEnchantments: [{
+							id: "undead_unleashed:undertaker"
+							lvl: 1s
+						}]
+					}
+				}
+				team_reward: false
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "0450CCCBAA464E78"
+					item: "undead_unleashed:grave_metal_ingot"
+					type: "item"
+				}
+				{
+					id: "40349FD517182276"
+					item: "undead_unleashed:cursed_cloth"
+					type: "item"
+				}
+				{
+					id: "04839E882A4B23AB"
+					item: "undead_unleashed:necrotic_dust"
+					type: "item"
+				}
+				{
+					id: "2853A49219E46CD2"
+					item: "undead_unleashed:lost_soul"
+					type: "item"
+				}
+			]
+			title: "&lUndead Unleashed&r Resources"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"When broken during the day, can drop Bones, &8Grave Metal Scraps&r, &eGold Nuggets&r, and &aExperience&r. At night it can additionally drop &eGold Ingots&r, Skeleton Skulls, and &bDiamonds&r! Will also spawn &7Skeletons&r at night, so be careful!"
+				""
+				"&8Grave Metal Ingot&rs can convert Chainmail armor into &8Grave Metal&r armor! Excess &8Grave Metal Ingot&rs can be converted into &7Steel&r."
+			]
+			id: "56031EDAADED1723"
+			rewards: [{
+				id: "38756668106B5735"
+				item: "undead_unleashed:grave_metal_scrap"
+				team_reward: false
+				type: "item"
+			}]
+			subtitle: "Observe Grave Soil"
+			tasks: [{
+				icon: "undead_unleashed:grave_soil"
+				id: "2022604A3A1BBB04"
+				observe_type: 0
+				timer: 0L
+				title: "Observe Grave Soil"
+				to_observe: "undead_unleashed:grave_soil"
+				type: "observation"
+			}]
+			title: "The Grave Truth"
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Obtained by killing any &7&oTenebrous Lands&r mob."
+				""
+				"Excess &7Zenyr Ingot&rs can be converted into Iron Ingots."
+			]
+			id: "4DBF7238FC53616A"
+			rewards: [{
+				id: "78AA8809E82F1613"
+				item: "minecraft:wither_rose"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				disable_toast: true
+				id: "2A456371FD7A1550"
+				item: "tenebrous_lands:zenyr"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			description: ["&5Enderium Shard&rs can be located by using the &5Enderium Shard Locator&r, which tells you how close you are to the nearest shard. The &5Enderium Shard Locator&r is normally given as part of the &0Ender Dragon Treasure Bag&r, but since this requires killing the &0Ender Dragon&r first, a locator has been provided early."]
+			id: "69408C9F74F8A508"
+			rewards: [{
+				id: "281505F226DAFFC1"
+				item: "majruszsdifficulty:enderium_shard_locator"
+				team_reward: false
+				type: "item"
+			}]
+			subtitle: "Unlocks Quests Elsewhere"
+			tasks: [{
+				dimension: "minecraft:the_end"
+				disable_toast: true
+				icon: "minecraft:end_stone"
+				id: "388504B889C6D091"
+				secret: true
+				title: "Visit The End"
+				type: "dimension"
+			}]
+			title: "Fight or Flight Activated!"
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["69408C9F74F8A508"]
+			description: [
+				"Note: Chorus Flowers can be sheared to yield &dChorus Petals&r."
+				""
+				"An &dEnder Firefly&r can be tamed by feeding it &5End Blob&rs. &dEnder Firefly&rs will kill nearby &5Enderblob&rs, giving a chance to drop &eFirefly Bulb&rs and &6Firefly Egg&rs. They will also hunt nearby &5Endermite&rs, however this will not yield any extra drops."
+				""
+				"You can collect an Endstone Trapper by &bRight Clicking&r on it while holding &eEndstone&r."
+			]
+			id: "21C18833C0563ED4"
+			shape: "rsquare"
+			subtitle: "\\& Enderium from &lMajrusz's Progressive Difficulty&r"
+			tasks: [
+				{
+					id: "51C0E482F9C8E689"
+					item: "unusualend:end_blob"
+					type: "item"
+				}
+				{
+					id: "4A17C858262E6448"
+					item: "unusualend:ancient_shard"
+					type: "item"
+				}
+				{
+					id: "158D5C0634933ADF"
+					item: "unusualend:enderling_scrap"
+					type: "item"
+				}
+				{
+					id: "0689C39C3CDC9311"
+					item: "unusualend:shiny_crystal"
+					type: "item"
+				}
+				{
+					id: "69C2DC5226826D63"
+					item: "unusualend:bolok_scale"
+					type: "item"
+				}
+				{
+					id: "264F0C28E1408A42"
+					item: "majruszsdifficulty:enderium_shard"
+					type: "item"
+				}
+				{
+					id: "3B7E32D59C17A2AE"
+					item: "majruszsdifficulty:enderium_ingot"
+					type: "item"
+				}
+			]
+			title: "&lUnusual End&r Resources"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["12101293E2AADAC8"]
+			id: "7A4C7ECC1B56B03A"
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "22BB942F5ECC60C2"
+					item: "aquamirae:oxygelium"
+					type: "item"
+				}
+				{
+					id: "310D840C99207F0C"
+					item: "aquamirae:fin"
+					type: "item"
+				}
+				{
+					id: "407B6742C8D2F52E"
+					item: "aquamirae:esca"
+					type: "item"
+				}
+				{
+					id: "49A25F807437E062"
+					item: "aquamirae:anglers_fang"
+					type: "item"
+				}
+				{
+					id: "21F88C10E95C1598"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "aquamirae:ship_graveyard_echo"
+								}
+								{
+									Count: 1b
+									id: "aquamirae:abyssal_amethyst"
+								}
+								{
+									Count: 1b
+									id: "obscure_api:astral_dust"
+								}
+							]
+						}
+					}
+					title: "Any Rare &lAquamirae&r Resource"
+					type: "item"
+				}
+			]
+			title: "&lAquamirae&r Resources"
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			description: ["Found in the Deep Frozen Ocean biome. Consider crafting a Nature's Compass."]
+			id: "12101293E2AADAC8"
+			subtitle: "Find an Ice Maze"
+			tasks: [{
+				biome: "#aquamirae:ice_maze"
+				icon: "minecraft:blue_ice"
+				id: "2DC1C811982DD097"
+				title: "Find an Ice Maze"
+				type: "biome"
+			}]
+			title: "Lost at Sea"
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7A4C7ECC1B56B03A"]
+			dependency_requirement: "one_started"
+			icon: {
+				Count: 1b
+				id: "aquamirae:three_bolt_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "64BD4DC6EC6F0255"
+			rewards: [{
+				id: "47432F008DFC4519"
+				item: "aquamirae:treasure_pouch"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Unlocks Quests Elsewhere"
+			tasks: [
+				{
+					id: "3327AA1CEA94B879"
+					item: "aquamirae:shell_horn"
+					type: "item"
+				}
+				{
+					entity: "aquamirae:captain_cornelia"
+					icon: {
+						Count: 1b
+						id: "aquamirae:three_bolt_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "02F1E9A528547715"
+					type: "kill"
+					value: 1L
+				}
+				{
+					block: "aquamirae:frozen_chest"
+					block_type: 0
+					checkItem: false
+					icon: "aquamirae:frozen_chest"
+					id: "5E8EEB0B2D43AB09"
+					isItemInteraction: false
+					title: "Open a Frozen Chest"
+					type: "questsadditions:use"
+					value: 1L
+				}
+			]
+			title: "Kill &d&lCaptain Cornelia&r"
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependency_requirement: "one_started"
+			id: "5BBC220EDF3F3B9E"
+			rewards: [{
+				id: "2741C3462688229A"
+				item: "born_in_chaos_v1:empty_fel_lamp"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				entity: "born_in_chaos_v1:sir_pumpkinhead_without_horse"
+				icon: "born_in_chaos_v1:flaming_evil_pumpkin"
+				id: "2C4586DD0D294842"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Sir Pumkinhead"
+			x: 0.0d
+			y: -3.250000000000014d
+		}
+		{
+			dependencies: ["3DFA2B70FDE19ED3"]
+			id: "66971C6223A8E23C"
+			invisible: true
+			rewards: [{
+				id: "2A6A4694246123D2"
+				item: "born_in_chaos_v1:lord_pumpkinheads_empty_lamp"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				entity: "born_in_chaos_v1:lord_pumpkinhead_head"
+				icon: "born_in_chaos_v1:infernal_evil_pumpkin"
+				id: "43EECFBE9263D97F"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&aLord Pumpinhead&r"
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"5BBC220EDF3F3B9E"
+				"173CA2C4F61684B2"
+			]
+			description: [
+				"The &bTransmuting Elixir&r can be used by Right Clicking on blocks and entities. Some examples are:"
+				""
+				"Block of Iron        -> &0Dark Metal Block&r"
+				"&aBlock of Emerald&r    -> &bBlock of Diamond&r"
+				"&eBlocks of Raw Gold&r  -> &8Ancient Debris&r"
+				"&4Seared Spirit&r          -> &2Infernal Spirit&r"
+				"&aInfernal Evil Pumpkin&r ->"
+				"&a&kLord Pumpkinhead&r"
+			]
+			icon: "born_in_chaos_v1:transmuting_elixir"
+			id: "3DFA2B70FDE19ED3"
+			rewards: [{
+				id: "2C9FA578932E4566"
+				item: "born_in_chaos_v1:evil_carved_pumpkin"
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "Summoning Spirit Halloween"
+			tasks: [{
+				id: "1E5F8F3952B214BF"
+				item: "born_in_chaos_v1:transmuting_elixir"
+				type: "item"
+			}]
+			title: "Transmuting Elixir"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependency_requirement: "one_started"
+			id: "460E02A9E10857EF"
+			rewards: [{
+				id: "4B9994EEA289D015"
+				item: "undead_unleashed:necrotic_dust"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				entity: "undead_unleashed:graveriser"
+				icon: "graveyard:gravestone"
+				id: "027A573C9CAB21C3"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Kill a &7&lGraveriser&r"
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["21C18833C0563ED4"]
+			dependency_requirement: "one_started"
+			description: ["Activate a &eGolem Altar&r by using a bottle of &dDragon's Breath&r on it."]
+			id: "048B5EAB0F0A39D5"
+			rewards: [{
+				id: "697F26C404E806D1"
+				item: "unusualend:golem_orb"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				entity: "unusualend:endstone_golem"
+				icon: "unusualend:golem_altar"
+				id: "73C195BE4F1D5ED5"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Kill an &e&lEndstone Golem&r"
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3E3E385DA8A302C9"]
+			dependency_requirement: "one_started"
+			description: [
+				"&dEtherium Gem&rs can only be mined with &oNetherite&r-level pickaxes."
+				""
+				"Ever find \"unbreakable deepslate\" underground? Dig around to the &oVault Door&r and be sure to bring a &3Soul Key&r with you!"
+			]
+			id: "188E09C655A7C537"
+			rewards: [{
+				id: "7E38EC31C833D9D3"
+				item: "deep_dark_regrowth:soul_key"
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "1884632C52D720A7"
+					item: "deep_dark_regrowth:plasma_chunk"
+					type: "item"
+				}
+				{
+					id: "36AA0CC2830F4D86"
+					item: "deep_dark_regrowth:plasma"
+					type: "item"
+				}
+				{
+					id: "55452F3B3915DF7C"
+					item: "deep_dark_regrowth:plasmatic_sculk"
+					type: "item"
+				}
+				{
+					id: "7F4BE4FA9C53068A"
+					item: "deep_dark_regrowth:corrupted_matter"
+					type: "item"
+				}
+				{
+					id: "70A30E4E30DCCBF3"
+					item: "deep_dark_regrowth:sculk_carapace_piece"
+					type: "item"
+				}
+				{
+					id: "6996939F5E61C37F"
+					item: "deep_dark_regrowth:sculk_remnants"
+					type: "item"
+				}
+				{
+					id: "23AF99B150E7C4C5"
+					item: "deep_dark_regrowth:soul_of_the_depths"
+					type: "item"
+				}
+				{
+					id: "37C821F5046B7A6C"
+					item: "deep_dark_regrowth:etherium_gem"
+					type: "item"
+				}
+			]
+			title: "&lDeep Dark: Regrowth&r Resources"
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"Custom resources with custom effects!"
+				""
+				"&oThe majority of recipes and progression now depend on these ingots.&r"
+			]
+			id: "0D37EE30FE95381E"
+			shape: "rsquare"
+			size: 1.5d
+			subtitle: "Agglomerated Resources"
+			tasks: [
+				{
+					disable_toast: true
+					id: "7FCF228D79A6C759"
+					item: "aotdextras:obscurium_ingot"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "4E1466E4A0E53CB6"
+					item: "aotdextras:occultium_ingot"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "2169B770AA21329E"
+					item: "aotdextras:nihilum_ingot"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "0E28B99792B5DFA4"
+					item: "aotdextras:luxum_ingot"
+					type: "item"
+				}
+			]
+			title: "&lAfraid of the Dark&r Resources"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: ["Consider crafting a Nature's Compass."]
+			icon: "minecraft:sculk_catalyst"
+			id: "3E3E385DA8A302C9"
+			subtitle: "Visit the Deep Dark"
+			tasks: [
+				{
+					biome: "minecraft:deep_dark"
+					icon: "minecraft:sculk_catalyst"
+					id: "65D2A71504CAA8F1"
+					title: "Visit the Deep Dark"
+					type: "biome"
+				}
+				{
+					biome: "deep_dark_regrowth:rotten_caverns"
+					icon: "deep_dark_regrowth:spectating_galm"
+					id: "400A7AB40AA3A627"
+					title: "&oAlso&r Find a Rotten Cavern"
+					type: "biome"
+				}
+			]
+			title: "Dirty Little Secret"
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3E3E385DA8A302C9"]
+			id: "42A0C98B77E5C4D5"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				entity: "minecraft:warden"
+				icon: {
+					Count: 1b
+					id: "deep_dark_regrowth:warden_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "0C0F5FC0CE6D5A9F"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Kill the &l&3Warden&r"
+			x: -3.0d
+			y: 3.0d
+		}
+	]
+	title: "Creepies \\& Cryptids"
+}

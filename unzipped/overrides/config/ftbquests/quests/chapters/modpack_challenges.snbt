@@ -1,0 +1,3009 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "modpack_challenges"
+	group: ""
+	icon: "solcarrot:food_book"
+	id: "266EE1EB9BD1D5D8"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"In alphabetical order (aside from &lDrink Beer Refill&r items)."
+				""
+				"Health will be maxed out after eating 105 out of 115 total food items."
+			]
+			icon: "solcarrot:food_book"
+			id: "3013BAC5A71D0B7E"
+			rewards: [{
+				id: "07783CC7186AD771"
+				item: {
+					Count: 1b
+					id: "everlastingabilities:ability_totem"
+					tag: {
+						"everlastingabilities:abilityStoreStack": [{
+							level: 1
+							name: "everlastingabilities:effect/saturation"
+						}]
+					}
+				}
+				team_reward: false
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "Maxes Out Your Health!"
+			tasks: [
+				{
+					id: "35C255EF2CA380D8"
+					item: "deep_dark_regrowth:apatine"
+					type: "item"
+				}
+				{
+					id: "28488A4F01493A08"
+					item: "minecraft:apple"
+					type: "item"
+				}
+				{
+					id: "7D5C29228AFE675A"
+					item: "minecraft:baked_potato"
+					type: "item"
+				}
+				{
+					id: "1E52CBEBB22780F8"
+					item: "minecraft:beetroot"
+					type: "item"
+				}
+				{
+					id: "4D61DEA62212F6D1"
+					item: "minecraft:beetroot_soup"
+					type: "item"
+				}
+				{
+					id: "60BADC1A86BE5694"
+					item: "upgrade_aquatic:boiled_blue_pickerelweed"
+					type: "item"
+				}
+				{
+					id: "291C7E4B1BA2FDE4"
+					item: "upgrade_aquatic:boiled_purple_pickerelweed"
+					type: "item"
+				}
+				{
+					id: "00A12D4874052507"
+					item: "minecraft:bread"
+					type: "item"
+				}
+				{
+					id: "6DA4E21509F0A01A"
+					item: "minecraft:carrot"
+					type: "item"
+				}
+				{
+					id: "429E9AD5484C8CC1"
+					item: "minecraft:chorus_fruit"
+					type: "item"
+				}
+				{
+					id: "7E1F59CA22E7C9BD"
+					item: "unusualend:chorus_juice"
+					type: "item"
+				}
+				{
+					id: "3C96F0087884186F"
+					item: "unusualend:chorus_petal"
+					type: "item"
+				}
+				{
+					id: "7A189F3008FE7957"
+					item: "unusualend:chorus_pie"
+					type: "item"
+				}
+				{
+					id: "1A4EA6D638D07B01"
+					item: "unusualend:chorus_tea"
+					type: "item"
+				}
+				{
+					id: "4BE6CDF7DB541949"
+					item: "minecraft:cooked_chicken"
+					type: "item"
+				}
+				{
+					id: "316F469585656CF7"
+					item: "minecraft:cooked_cod"
+					type: "item"
+				}
+				{
+					id: "5A028390CEB75600"
+					item: "illuminative:cooked_glow_fish"
+					type: "item"
+				}
+				{
+					id: "41140D00742D78DE"
+					item: "upgrade_aquatic:cooked_lionfish"
+					type: "item"
+				}
+				{
+					id: "161F9EF981CE2CDE"
+					item: "minecraft:cooked_mutton"
+					type: "item"
+				}
+				{
+					id: "28F8AF1D8AE69616"
+					item: "upgrade_aquatic:cooked_perch"
+					type: "item"
+				}
+				{
+					id: "585C4C0E02B35403"
+					item: "upgrade_aquatic:cooked_pike"
+					type: "item"
+				}
+				{
+					id: "58473FD6C66790AE"
+					item: "minecraft:cooked_porkchop"
+					type: "item"
+				}
+				{
+					id: "73AF79C1E549875D"
+					item: "minecraft:cooked_rabbit"
+					type: "item"
+				}
+				{
+					id: "33A65C3D7077D9F4"
+					item: "minecraft:cooked_salmon"
+					type: "item"
+				}
+				{
+					id: "6D1F6D6E8477F722"
+					item: "aquamirae:cooked_spinefish"
+					type: "item"
+				}
+				{
+					id: "38C35F7D9598F647"
+					item: "minecraft:cookie"
+					type: "item"
+				}
+				{
+					id: "79AC642C9FFF3451"
+					item: "born_in_chaos_v1:corpse_maggot"
+					type: "item"
+				}
+				{
+					id: "025A2BD47E6C7A11"
+					item: "minecraft:dried_kelp"
+					type: "item"
+				}
+				{
+					id: "2B678ED79E8490F4"
+					item: "minecraft:enchanted_golden_apple"
+					type: "item"
+				}
+				{
+					id: "6DFA547F722C1C36"
+					item: "unusualend:end_blob"
+					type: "item"
+				}
+				{
+					id: "4559468E726D62DD"
+					item: "unusualend:end_blob_jelly"
+					type: "item"
+				}
+				{
+					id: "189782DB0FB6DA8B"
+					item: "unusualend:ender_stew"
+					type: "item"
+				}
+				{
+					id: "12C56BC5376ED6BE"
+					item: "aquamirae:esca"
+					type: "item"
+				}
+				{
+					id: "29EFD13C678B3512"
+					item: "deep_dark_regrowth:exxo_plant"
+					type: "item"
+				}
+				{
+					id: "5FFC9335667A4AAE"
+					item: "observed:observereye"
+					type: "item"
+				}
+				{
+					id: "377C7D1F6CD90B03"
+					item: "aquamirae:fin"
+					type: "item"
+				}
+				{
+					id: "3F8B1221C6400073"
+					item: "born_in_chaos_v1:fried_maggot"
+					type: "item"
+				}
+				{
+					id: "3732BE689142F133"
+					item: "rottencreatures:frozen_rotten_flesh"
+					type: "item"
+				}
+				{
+					id: "6D3899584A10D61A"
+					item: "undead_unleashed:ghost_pepper"
+					type: "item"
+				}
+				{
+					id: "134A59F21C96E095"
+					item: "minecraft:glow_berries"
+					type: "item"
+				}
+				{
+					id: "40C88E4FEC34D819"
+					item: "born_in_chaos_v1:sea_terror_eye"
+					type: "item"
+				}
+				{
+					id: "3EB8B9EC8C999273"
+					item: "minecraft:golden_apple"
+					type: "item"
+				}
+				{
+					id: "5F09C6AD37066576"
+					item: "minecraft:golden_carrot"
+					type: "item"
+				}
+				{
+					id: "2B24B8C67E4965A8"
+					item: "born_in_chaos_v1:holiday_candy"
+					type: "item"
+				}
+				{
+					id: "5F0C4CDC56D80310"
+					item: "minecraft:honey_bottle"
+					type: "item"
+				}
+				{
+					id: "7CBDE0F60881AB46"
+					item: "kiwiboi:kiwicake"
+					type: "item"
+				}
+				{
+					id: "717773FCBA1CEA6D"
+					item: "born_in_chaos_v1:magical_holiday_candy"
+					type: "item"
+				}
+				{
+					id: "051E96BF7BBA2FF9"
+					item: "rottencreatures:magma_rotten_flesh"
+					type: "item"
+				}
+				{
+					id: "00B8873B20E22D02"
+					item: "minecraft:melon_slice"
+					type: "item"
+				}
+				{
+					id: "498522EEA292F400"
+					item: "born_in_chaos_v1:mint_candy"
+					type: "item"
+				}
+				{
+					id: "74D6567006FCD1E3"
+					item: "born_in_chaos_v1:mint_ice_cream"
+					type: "item"
+				}
+				{
+					id: "7259DF0774D966A9"
+					item: "born_in_chaos_v1:monster_flesh"
+					type: "item"
+				}
+				{
+					id: "7B837CF57E5E87AC"
+					item: "upgrade_aquatic:mulberry"
+					type: "item"
+				}
+				{
+					id: "30A72B0A08E76A8F"
+					item: "upgrade_aquatic:mulberry_bread"
+					type: "item"
+				}
+				{
+					id: "2294E4777F068012"
+					item: "upgrade_aquatic:mulberry_jam_bottle"
+					type: "item"
+				}
+				{
+					id: "20BDC51457393E07"
+					item: "upgrade_aquatic:mulberry_pie"
+					type: "item"
+				}
+				{
+					id: "45857F44313ECEDF"
+					item: "minecraft:mushroom_stew"
+					type: "item"
+				}
+				{
+					id: "6E29FE43112419F7"
+					item: "minecraft:poisonous_potato"
+					type: "item"
+				}
+				{
+					id: "31EE40D54126AB03"
+					item: "aquamirae:poseidons_breakfast"
+					type: "item"
+				}
+				{
+					id: "211FEA91CF3FB02E"
+					item: "minecraft:potato"
+					type: "item"
+				}
+				{
+					id: "6FCC42E9A5880025"
+					item: "minecraft:pufferfish"
+					type: "item"
+				}
+				{
+					id: "74DBAE1B39F314CF"
+					item: "minecraft:pumpkin_pie"
+					type: "item"
+				}
+				{
+					id: "5E14A56BD9BEF009"
+					item: "minecraft:rabbit_stew"
+					type: "item"
+				}
+				{
+					id: "02A3A5E794D084FE"
+					item: "minecraft:beef"
+					type: "item"
+				}
+				{
+					id: "62869D1E0EB49F53"
+					item: "minecraft:chicken"
+					type: "item"
+				}
+				{
+					id: "376EE707DAAA08A8"
+					item: "minecraft:cod"
+					type: "item"
+				}
+				{
+					id: "6EDD5608F7702CCE"
+					item: "illuminative:glow_fish_item"
+					type: "item"
+				}
+				{
+					id: "25C33A5D082933B7"
+					item: "upgrade_aquatic:lionfish"
+					type: "item"
+				}
+				{
+					id: "7D3762B45786B35F"
+					item: "minecraft:mutton"
+					type: "item"
+				}
+				{
+					id: "7A7BD5E0A860DBB0"
+					item: "upgrade_aquatic:perch"
+					type: "item"
+				}
+				{
+					id: "68582F07E099651E"
+					item: "upgrade_aquatic:pike"
+					type: "item"
+				}
+				{
+					id: "01FA266028841A02"
+					item: "minecraft:porkchop"
+					type: "item"
+				}
+				{
+					id: "480BB0927775965D"
+					item: "minecraft:rabbit"
+					type: "item"
+				}
+				{
+					id: "21582AC16F3381F2"
+					item: "minecraft:salmon"
+					type: "item"
+				}
+				{
+					id: "53CD11F221EEAFB8"
+					item: {
+						Count: 1b
+						id: "aquamirae:sweet_lance"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "32E9E5630A2782AB"
+					item: "bhc:relic_apple"
+					type: "item"
+				}
+				{
+					id: "37AB6436318ED8C3"
+					item: "born_in_chaos_v1:rotten_fish"
+					type: "item"
+				}
+				{
+					id: "526EA20403FCE057"
+					item: "minecraft:rotten_flesh"
+					type: "item"
+				}
+				{
+					id: "6C46B4D0A697F0A9"
+					item: "aquamirae:sea_casserole"
+					type: "item"
+				}
+				{
+					id: "2C54F5ED9793D17A"
+					item: "aquamirae:sea_stew"
+					type: "item"
+				}
+				{
+					id: "066C8195AB3D45DE"
+					item: "aquamirae:sharp_bones"
+					type: "item"
+				}
+				{
+					id: "37FE8E5A04961D6A"
+					item: "born_in_chaos_v1:smoked_fish"
+					type: "item"
+				}
+				{
+					id: "0C93AE9C7A76FCCC"
+					item: "born_in_chaos_v1:smoked_flesh"
+					type: "item"
+				}
+				{
+					id: "0E0830172363024E"
+					item: "born_in_chaos_v1:smoked_monster_flesh"
+					type: "item"
+				}
+				{
+					id: "579CF20DF0A2DB6E"
+					item: "minecraft:spider_eye"
+					type: "item"
+				}
+				{
+					id: "3EA26651CA9EFF43"
+					item: "aquamirae:spinefish"
+					type: "item"
+				}
+				{
+					id: "7827E9362996A192"
+					item: "minecraft:cooked_beef"
+					type: "item"
+				}
+				{
+					id: "4A84B6D5168C82EC"
+					item: "minecraft:suspicious_stew"
+					type: "item"
+				}
+				{
+					id: "305985A59249E7BD"
+					item: "minecraft:sweet_berries"
+					type: "item"
+				}
+				{
+					id: "41287DAA196AAE1F"
+					item: "minecraft:tropical_fish"
+					type: "item"
+				}
+				{
+					id: "6A3B08BB5F636934"
+					item: "unusualend:wandering_stew"
+					type: "item"
+				}
+				{
+					id: "2A852079CCDDE5AB"
+					item: "drinkbeer:beer_mug"
+					type: "item"
+				}
+				{
+					id: "0C701323C2639DC0"
+					item: "drinkbeer:beer_mug_blaze_stout"
+					type: "item"
+				}
+				{
+					id: "436E062CF87F979E"
+					item: "drinkbeer:beer_mug_blaze_milk_stout"
+					type: "item"
+				}
+				{
+					id: "49F00C655565697F"
+					item: "drinkbeer:beer_mug_apple_lambic"
+					type: "item"
+				}
+				{
+					id: "460EED8A4746728B"
+					item: "drinkbeer:beer_mug_sweet_berry_kriek"
+					type: "item"
+				}
+				{
+					id: "78A75AB2FF6E0499"
+					item: "drinkbeer:beer_mug_haars_icey_pale_lager"
+					type: "item"
+				}
+				{
+					id: "60A01823ED2E83F5"
+					item: "drinkbeer:beer_mug_pumpkin_kvass"
+					type: "item"
+				}
+				{
+					id: "62C4890A7569EBCA"
+					item: "drinkbeer:beer_mug_night_howl_kvass"
+					type: "item"
+				}
+				{
+					id: "41C8C749F92A673E"
+					item: "drinkbeer:beer_mug_frothy_pink_eggnog"
+					type: "item"
+				}
+				{
+					id: "249CA6CFF970100E"
+					item: "drinkbeer:spice_blaze_paprika"
+					type: "item"
+				}
+				{
+					id: "466EBDF3696B8D1C"
+					item: "drinkbeer:spice_dried_eglia_bud"
+					type: "item"
+				}
+				{
+					id: "2606F76BE27DA8EC"
+					item: "drinkbeer:spice_smoked_eglia_bud"
+					type: "item"
+				}
+				{
+					id: "5F0B16C1A2C948FA"
+					item: "drinkbeer:spice_amethyst_nigella_seeds"
+					type: "item"
+				}
+				{
+					id: "3F257D40AADB96F3"
+					item: "drinkbeer:spice_citrine_nigella_seeds"
+					type: "item"
+				}
+				{
+					id: "37E397547A8A3D3A"
+					item: "drinkbeer:spice_ice_mint"
+					type: "item"
+				}
+				{
+					id: "169EF7FF0DC2FB19"
+					item: "drinkbeer:spice_ice_patchouli"
+					type: "item"
+				}
+				{
+					id: "2D8411DD0F2FB209"
+					item: "drinkbeer:spice_storm_shards"
+					type: "item"
+				}
+				{
+					id: "2D71804584DD4777"
+					item: "drinkbeer:spice_roasted_red_pine_nuts"
+					type: "item"
+				}
+				{
+					id: "7DB2CCDC086C3637"
+					item: "drinkbeer:spice_glace_goji_berries"
+					type: "item"
+				}
+				{
+					id: "0E2EDD26241F51C0"
+					item: "drinkbeer:spice_frozen_persimmon"
+					type: "item"
+				}
+				{
+					id: "26D90C13BA2A9FB8"
+					item: "drinkbeer:spice_roasted_pecans"
+					type: "item"
+				}
+				{
+					id: "0587DCA8D0970309"
+					item: "drinkbeer:spice_silver_needle_white_tea"
+					type: "item"
+				}
+				{
+					id: "660116B5682F4187"
+					item: "drinkbeer:spice_golden_cinnamon_powder"
+					type: "item"
+				}
+				{
+					id: "5F486EF15C533310"
+					item: "drinkbeer:spice_dried_selaginella"
+					type: "item"
+				}
+			]
+			title: "Every Food"
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			hide_dependency_lines: true
+			icon: "majruszsdifficulty:undead_army_treasure_bag"
+			id: "4D9DD81B160AF73F"
+			rewards: [{
+				count: 3
+				id: "13D296C52E701A55"
+				item: "bhc:blue_heart"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "2B8814136D2B138E"
+					item: "majruszsdifficulty:undead_army_treasure_bag"
+					type: "item"
+				}
+				{
+					id: "24C6AC78BB8AE5BB"
+					item: "majruszsdifficulty:elder_guardian_treasure_bag"
+					type: "item"
+				}
+				{
+					id: "60601E8ED57F5B6D"
+					item: "majruszsdifficulty:wither_treasure_bag"
+					type: "item"
+				}
+				{
+					id: "399490677D1DB606"
+					item: "majruszsdifficulty:ender_dragon_treasure_bag"
+					type: "item"
+				}
+				{
+					id: "5199F41127762E3F"
+					item: "majruszsdifficulty:angler_treasure_bag"
+					type: "item"
+				}
+				{
+					id: "7C06D39B8D35D4DB"
+					item: "majruszsdifficulty:pillager_treasure_bag"
+					type: "item"
+				}
+				{
+					id: "35D0BFFB06CC4582"
+					item: "majruszsdifficulty:warden_treasure_bag"
+					type: "item"
+				}
+			]
+			title: "Every Treasure Bag"
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			id: "1B2536A2021BFFE3"
+			shape: "hexagon"
+			subtitle: "Vital for Your Health"
+			tasks: [{
+				id: "043D2D368119F08A"
+				item: {
+					Count: 1b
+					id: "bhc:blade_of_vitality"
+					tag: {
+						bhc_itemlist: {
+							Items: [
+								{
+									Count: 10b
+									Slot: 0
+									id: "bhc:red_heart_canister"
+								}
+								{
+									Count: 10b
+									Slot: 1
+									id: "bhc:yellow_heart_canister"
+								}
+								{
+									Count: 10b
+									Slot: 2
+									id: "bhc:green_heart_canister"
+								}
+								{
+									Count: 10b
+									Slot: 3
+									id: "bhc:blue_heart_canister"
+								}
+							]
+							Size: 4
+						}
+						heart_amount: [I;
+							20
+							20
+							20
+							20
+						]
+					}
+				}
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			title: "Max-Strength Vitality Blade"
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependency_requirement: "one_started"
+			id: "32DBFE096CDBBD50"
+			shape: "hexagon"
+			subtitle: "A Fine Addition to Your Collection"
+			tasks: [
+				{
+					id: "5AFF9DF1BBE02ED6"
+					item: "graveyard:white_bone_staff"
+					type: "item"
+				}
+				{
+					id: "29D070FB0DADA5B3"
+					item: "graveyard:black_bone_staff"
+					type: "item"
+				}
+				{
+					id: "1F2AA38F5CC18964"
+					item: "graveyard:red_bone_staff"
+					type: "item"
+				}
+				{
+					id: "04BC083036582211"
+					item: "graveyard:cyan_bone_staff"
+					type: "item"
+				}
+				{
+					id: "6A56AE968E82FE86"
+					item: "graveyard:purple_bone_staff"
+					type: "item"
+				}
+			]
+			title: "All &lThe Graveyard&r Staffs"
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependency_requirement: "one_started"
+			id: "1748FA94AA88D81D"
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "6AF1582D42D3BE18"
+					item: "sophisticatedbackpacks:advanced_pickup_upgrade"
+					type: "item"
+				}
+				{
+					id: "00FE00349A1A4E16"
+					item: "sophisticatedbackpacks:advanced_filter_upgrade"
+					type: "item"
+				}
+				{
+					id: "59BF91BDEDE0E071"
+					item: "sophisticatedbackpacks:advanced_magnet_upgrade"
+					type: "item"
+				}
+				{
+					id: "697A92884C855055"
+					item: "sophisticatedbackpacks:advanced_feeding_upgrade"
+					type: "item"
+				}
+				{
+					id: "7573B52A511BAE4F"
+					item: "sophisticatedbackpacks:advanced_compacting_upgrade"
+					type: "item"
+				}
+				{
+					id: "52B6513B7E571CAA"
+					item: "sophisticatedbackpacks:advanced_void_upgrade"
+					type: "item"
+				}
+				{
+					id: "2A59A011CBB99F4C"
+					item: "sophisticatedbackpacks:advanced_restock_upgrade"
+					type: "item"
+				}
+				{
+					id: "24AC703ABD52E9A5"
+					item: "sophisticatedbackpacks:advanced_deposit_upgrade"
+					type: "item"
+				}
+				{
+					id: "07E3A1BDB21AC155"
+					item: "sophisticatedbackpacks:advanced_refill_upgrade"
+					type: "item"
+				}
+				{
+					id: "66CF2612C7D19E3E"
+					item: "sophisticatedbackpacks:inception_upgrade"
+					type: "item"
+				}
+				{
+					id: "32C52862CF6AAD57"
+					item: "sophisticatedbackpacks:everlasting_upgrade"
+					type: "item"
+				}
+				{
+					id: "0BBCACF16392342A"
+					item: "sophisticatedbackpacks:auto_smelting_upgrade"
+					type: "item"
+				}
+				{
+					id: "1B5355E88125EF40"
+					item: "sophisticatedbackpacks:auto_smoking_upgrade"
+					type: "item"
+				}
+				{
+					id: "1D47621E17D58F84"
+					item: "sophisticatedbackpacks:auto_blasting_upgrade"
+					type: "item"
+				}
+				{
+					id: "087740F0959FEABD"
+					item: "sophisticatedbackpacks:crafting_upgrade"
+					type: "item"
+				}
+				{
+					id: "5B044FD98CE5B41D"
+					item: "sophisticatedbackpacks:stonecutter_upgrade"
+					type: "item"
+				}
+				{
+					id: "0A9ABDDF10A1B057"
+					item: "sophisticatedbackpacks:stack_upgrade_tier_4"
+					type: "item"
+				}
+				{
+					id: "35C6B6CCE4E6C272"
+					item: "sophisticatedbackpacks:jukebox_upgrade"
+					type: "item"
+				}
+				{
+					id: "654AD717AB391BAA"
+					item: "sophisticatedbackpacks:advanced_tool_swapper_upgrade"
+					type: "item"
+				}
+				{
+					id: "05A7D4D8C7F6A6A1"
+					item: "sophisticatedbackpacks:tank_upgrade"
+					type: "item"
+				}
+				{
+					id: "4A8A7409E1B62DC0"
+					item: "sophisticatedbackpacks:battery_upgrade"
+					type: "item"
+				}
+				{
+					id: "0874497C57C2AF73"
+					item: "sophisticatedbackpacks:xp_pump_upgrade"
+					type: "item"
+				}
+				{
+					id: "7116F1A5702418FB"
+					item: "sophisticatedbackpacks:anvil_upgrade"
+					type: "item"
+				}
+				{
+					id: "53CC78DB87A6E497"
+					item: "sophisticatedbackpacks:chipped/botanist_workbench_upgrade"
+					type: "item"
+				}
+				{
+					id: "52ED6C35F6DD03EC"
+					item: "sophisticatedbackpacks:chipped/glassblower_workbench_upgrade"
+					type: "item"
+				}
+				{
+					id: "6FB1077F9B4FA98E"
+					item: "sophisticatedbackpacks:chipped/carpenter_workbench_upgrade"
+					type: "item"
+				}
+				{
+					id: "4BFB9D5F066E045B"
+					item: "sophisticatedbackpacks:chipped/shepherd_workbench_upgrade"
+					type: "item"
+				}
+				{
+					id: "61484AB68990298F"
+					item: "sophisticatedbackpacks:chipped/mason_workbench_upgrade"
+					type: "item"
+				}
+				{
+					id: "311102F63493CB98"
+					item: "sophisticatedbackpacks:chipped/philosopher_workbench_upgrade"
+					type: "item"
+				}
+				{
+					id: "51B5DD5FC92C5889"
+					item: "sophisticatedbackpacks:chipped/tinkerer_workbench_upgrade"
+					type: "item"
+				}
+			]
+			title: "Every Backpack Upgrade"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			id: "22FC2810ECC2219E"
+			shape: "hexagon"
+			subtitle: "Only the Best for You"
+			tasks: [
+				{
+					id: "2616A6F83C167B45"
+					item: "mekanism:ultimate_universal_cable"
+					type: "item"
+				}
+				{
+					id: "4B662F2054523403"
+					item: "mekanism:ultimate_mechanical_pipe"
+					type: "item"
+				}
+				{
+					id: "0609A34B8E790FBC"
+					item: "mekanism:ultimate_pressurized_tube"
+					type: "item"
+				}
+				{
+					id: "16C8B4F168161069"
+					item: "mekanism:ultimate_logistical_transporter"
+					type: "item"
+				}
+				{
+					id: "13E51EE1EB207939"
+					item: "mekanism:ultimate_thermodynamic_conductor"
+					type: "item"
+				}
+				{
+					id: "771134C24778992E"
+					item: "mekanism:ultimate_fluid_tank"
+					type: "item"
+				}
+				{
+					id: "400B0EB3F5823B38"
+					item: "mekanism:ultimate_chemical_tank"
+					type: "item"
+				}
+				{
+					id: "7F53C00A493B2C8B"
+					item: "mekanism:ultimate_bin"
+					type: "item"
+				}
+				{
+					id: "22F31415B5184E27"
+					item: "mekanism:ultimate_tier_installer"
+					type: "item"
+				}
+				{
+					id: "384C02B6BF996E46"
+					item: "mekanism:ultimate_smelting_factory"
+					type: "item"
+				}
+				{
+					id: "1CC698EE6AF3EBB8"
+					item: "mekanism:ultimate_enriching_factory"
+					type: "item"
+				}
+				{
+					id: "7650776F3F39A7EE"
+					item: "mekanism:ultimate_crushing_factory"
+					type: "item"
+				}
+				{
+					id: "4C4ECB73AF29F716"
+					item: "mekanism:ultimate_compressing_factory"
+					type: "item"
+				}
+				{
+					id: "1DAB1475F02EA13F"
+					item: "mekanism:ultimate_combining_factory"
+					type: "item"
+				}
+				{
+					id: "0CC162B0F3A59D55"
+					item: "mekanism:ultimate_purifying_factory"
+					type: "item"
+				}
+				{
+					id: "7559140FEE4B178A"
+					item: "mekanism:ultimate_injecting_factory"
+					type: "item"
+				}
+				{
+					id: "11D9C7FBCB5D119C"
+					item: "mekanism:ultimate_infusing_factory"
+					type: "item"
+				}
+				{
+					id: "642C707B7199FC16"
+					item: "mekanism:ultimate_sawing_factory"
+					type: "item"
+				}
+				{
+					id: "08CCEAD960FB76D5"
+					item: "mekanism:ultimate_induction_cell"
+					type: "item"
+				}
+				{
+					id: "71B8EA405CE21C20"
+					item: "mekanism:ultimate_induction_provider"
+					type: "item"
+				}
+				{
+					id: "4D91857B5D86C3B9"
+					item: "trashcans:ultimate_trash_can"
+					type: "item"
+				}
+				{
+					id: "2809994F4803608D"
+					item: {
+						Count: 1b
+						id: "sophisticatedbackpacks:netherite_backpack"
+						tag: {
+							contentsUuid: [I;
+								-1999578758
+								-1457697989
+								-1706513367
+								-1477046990
+							]
+							inventorySlots: 120
+							upgradeSlots: 7
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "74C2BFCE1674BAD6"
+					item: "ironchests:netherite_chest"
+					type: "item"
+				}
+				{
+					id: "400438A701AAAE6C"
+					item: "functionalstorage:netherite_upgrade"
+					type: "item"
+				}
+				{
+					id: "5ADBFE66CBD0F88E"
+					item: "mekanism:qio_drive_supermassive"
+					type: "item"
+				}
+			]
+			title: "&dUltimate Obsession&r"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["178240DF5110CD4F"]
+			description: ["An air-cooled fusion reactor is fine, so long as you have enough fuel."]
+			id: "570FF4F901127985"
+			shape: "square"
+			subtitle: "1TFE"
+			tasks: [{
+				id: "25471EE13E659A77"
+				max_input: 1000000000L
+				type: "forge_energy"
+				value: 1000000000000L
+			}]
+			title: "Fission Reactor Stress Test"
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			description: [
+				"Build larger Task Screens for more throughput (and a larger screen)."
+				""
+				"Pay attention to the different Task Screen sizes used in the crafting recipes!"
+			]
+			id: "420F5955A6621CA0"
+			rewards: [{
+				id: "6554C8C65BF2B493"
+				item: "ftbquests:task_screen_configurator"
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "Submit Submission Quests Here"
+			tasks: [{
+				id: "2D1281C51C288357"
+				item: "ftbquests:screen_1"
+				type: "item"
+			}]
+			title: "Task Screens"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"22FC2810ECC2219E"
+				"77FD8AF4F0C65F9F"
+				"3B4DB3C594ABBB62"
+				"71F8B333C1AA58A0"
+				"0999F5EF031AEDBE"
+				"32E988963719511C"
+				"54FA8D1C2F01D0BB"
+				"59B4FDDD116CD928"
+				"35FBFF6240677FF0"
+				"5D7A9F47D60BCD3C"
+				"4D9DD81B160AF73F"
+				"3013BAC5A71D0B7E"
+				"32DBFE096CDBBD50"
+				"1B2536A2021BFFE3"
+				"1748FA94AA88D81D"
+				"627E945BD9C37540"
+				"570FF4F901127985"
+				"3A2B40AA010B454A"
+				"178240DF5110CD4F"
+				"420F5955A6621CA0"
+				"56FA94AF3253BDD9"
+				"53E13E166B92759A"
+				"2262C92F7C33CD04"
+			]
+			hide_dependency_lines: true
+			hide_details_until_startable: true
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "ftblibrary:icons/check"
+				}
+			}
+			id: "74855531C3834BC6"
+			rewards: [{
+				id: "796C067D1656DA7C"
+				item: "born_in_chaos_v1:supreme_measure"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "heart"
+			size: 2.0d
+			subtitle: "Completionist"
+			title: "100%"
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["420F5955A6621CA0"]
+			description: ["Be careful about how you submit this quest! Hot Fission Reactors are dangerous!"]
+			id: "627E945BD9C37540"
+			shape: "square"
+			tasks: [{
+				amount: 1000000L
+				fluid: "mekanism:superheated_sodium"
+				id: "49DBFF54DDA50670"
+				type: "fluid"
+			}]
+			title: "Sodium Reactor"
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["420F5955A6621CA0"]
+			id: "178240DF5110CD4F"
+			shape: "square"
+			tasks: [{
+				amount: 100000L
+				fluid: "mekanismgenerators:fusion_fuel"
+				id: "39EC59CFD6A636CF"
+				type: "fluid"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"2D7ECFB306CF4E83"
+				"11C594BF8AAD98F1"
+				"2F1B456E0D983B8A"
+				"5208A083200FA0CC"
+				"672F6F9EBD41853D"
+				"018777470D67C569"
+				"7A64B40D6D8C6595"
+				"291B44B5B29B8F26"
+				"56D5200B9771889C"
+				"6FAB120B2F708146"
+				"0222BF4A0D310ACF"
+				"4D9C14CAC1A78F28"
+				"7CFC505397B0C825"
+			]
+			disable_toast: true
+			icon: "ftbquests:book"
+			id: "3B4DB3C594ABBB62"
+			rewards: [{
+				id: "023CA05541A9058F"
+				item: "bhc:green_heart_canister"
+				team_reward: false
+				type: "item"
+			}]
+			subtitle: "Complete the Introduction"
+			tasks: [{
+				id: "2018369DF53A02A4"
+				title: "Congrats!"
+				type: "checkmark"
+			}]
+			title: "Properly Introduced"
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"7854EFBAE08B9047"
+				"07AF4C7C75993E4D"
+				"2C734223D6FCFBA1"
+				"4DA840B95105FC9B"
+				"5A52C641F93F4A78"
+				"750D9027DB9ACDA8"
+				"55FBE8EAD0C29929"
+				"0A433323059EF6A0"
+				"5DF2D7A268EBDADB"
+				"128DD0DF7EEAA278"
+				"019B5F8DEC581FEC"
+				"22E60188D9AFD2A7"
+				"301D12E7B6EF1EFD"
+				"4C09ABEB358C0F24"
+				"251069B43E6AF820"
+				"19F1674292AE31C2"
+				"6FD021FD2E5C236E"
+			]
+			disable_toast: true
+			icon: "minecraft:dragon_head"
+			id: "71F8B333C1AA58A0"
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "Complete Bosses"
+			tasks: [{
+				id: "6C514CDC683CEF7C"
+				title: "Congrats!"
+				type: "checkmark"
+			}]
+			title: "Slay Every Boss"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"34EA6A77A2533CA2"
+				"50032BEB92430575"
+			]
+			disable_toast: true
+			icon: "minecraft:golden_carrot"
+			id: "54FA8D1C2F01D0BB"
+			subtitle: "Complete Night Vision Guide"
+			tasks: [{
+				id: "440AED54B85DF25C"
+				title: "Congrats!"
+				type: "checkmark"
+			}]
+			title: "Permanent Night Vision"
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"35BD6DD9B4F4FCA1"
+				"0D1E009915B7B54C"
+				"75B0215F5174C7B1"
+				"1B8F7FEE27F97BE4"
+				"5B78DF74E7F32901"
+				"31B0022415BB953B"
+				"7945DE4AD82B3DE0"
+				"5D6BAF1607CE4036"
+				"75BAE5546F82C695"
+				"70196079D9DCE35D"
+				"0B17264539450C52"
+				"6A3D9733896E49DF"
+				"41F0738E226975BE"
+				"3E84EAF7A5CFE150"
+				"3F933033E4FE729C"
+				"5DBCFF4F5AB10B17"
+				"14BCD68E6D20854F"
+				"6D4406D5B5B9E466"
+				"7A46BAD609207DB3"
+				"3FA4AA58BE9D5C47"
+				"6ED72003D191D32B"
+				"65E72632C4110F0A"
+				"0437E18865C5A80D"
+				"1942DF4A6F008A53"
+			]
+			disable_toast: true
+			icon: {
+				Count: 1b
+				id: "apotheosis:gem"
+				tag: {
+					gem: "apotheosis:overworld/royalty"
+					rarity: "ancient"
+				}
+			}
+			id: "77FD8AF4F0C65F9F"
+			subtitle: "Complete Apotheosis"
+			tasks: [{
+				id: "33BB9EE95DB88F36"
+				title: "Congrats!"
+				type: "checkmark"
+			}]
+			title: "Apotheotic Master"
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"188E09C655A7C537"
+				"7A4C7ECC1B56B03A"
+				"21C18833C0563ED4"
+				"0F215DA932BD902B"
+				"4CED91B768D1F4EA"
+				"11A0CCD00A4A2259"
+				"173CA2C4F61684B2"
+				"0D37EE30FE95381E"
+				"4DBF7238FC53616A"
+			]
+			disable_toast: true
+			icon: "deep_dark_regrowth:soul_of_the_depths"
+			id: "32E988963719511C"
+			subtitle: "Complete Creepies \\& Cryptids"
+			tasks: [{
+				id: "39C958AB2D66F9AA"
+				title: "Congrats!"
+				type: "checkmark"
+			}]
+			title: "Cryptid Connoisseur"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"167B1C8A402506F4"
+				"703B4D20DCAABDD3"
+				"06DC20B70B64EA49"
+				"0CE2AC0E3703AC28"
+				"112AED781E211DFA"
+				"53B56FE3223FC903"
+				"7F5F24E678211032"
+				"7255FCFAA0B8549D"
+				"162D256EFC3D4AD3"
+				"3889F3B40834975A"
+				"72C311F96DD71C76"
+				"5B863079B3F649B7"
+				"11985A88839C0CB2"
+				"689CEB721A3D7869"
+				"6A9478DE5A4196D4"
+				"5F24222EFD4610D6"
+				"32C1E4E5A26EBBA1"
+				"2FD25E26F0E3379A"
+				"205393763A2939CD"
+				"6D01B476948280C3"
+				"0122976CF94ABBD9"
+				"010FB78DF9B5FFC4"
+				"1E82E87971F6556B"
+				"0403272F404DDA7E"
+				"544F50E266A66D8F"
+				"741CFE6852EB8686"
+				"1FC8BAE9255748CD"
+				"366E7E9E1BEE53BF"
+				"1C961AB2D7B1964C"
+				"7B6382579C301529"
+				"6BEF480488126726"
+				"34B86660F419AEA4"
+				"74664C8CB3F5ACFF"
+				"3C90CA68E53E9345"
+				"292DBB3F48EF0999"
+				"5B53354309A5B791"
+				"22975CBF7D5CE95C"
+				"5C7772CBB5EE2ED9"
+				"223654AF0744EAA1"
+				"31B7280FE82259B7"
+				"141D2900E48DF892"
+				"6FB3232144575A0D"
+				"3B9284D939B3499D"
+				"3224FD1D5021A695"
+				"3DA9E220A978876C"
+				"43430DDCCBA5A2D9"
+				"7C0FC708533D53F6"
+				"367AF96649B156F2"
+				"6D9D92F3A4C76148"
+				"0A4785DCE5408A83"
+				"701C015D0BD4517E"
+				"3F644324457213AE"
+				"614EF3E45689D05C"
+				"6C8F67DFC889CDFB"
+				"65A6AF3FDACD09DD"
+				"768A52BFA8235163"
+				"6DA6D2DBB3919895"
+				"4980DD5CFACDD242"
+				"7DDFC69A7541C0E7"
+				"7AB61B9A0F2470AB"
+				"0F9A5A7D414C84ED"
+				"68CDACA72DE023D4"
+				"475193CFE987BBAB"
+				"1424933E61DE6163"
+				"58B6EE60036DD3A1"
+				"2A718021C6286CF8"
+				"646CA11F9128DD51"
+				"644758EDE9D762AD"
+				"3B818871E40F04CE"
+				"6D1CA6A27F8EA661"
+				"24C92E444192648C"
+				"0909EED5F6B462DB"
+				"33C632C2FBCA15B6"
+				"0B8552681949303E"
+				"48B92B0EB5FBCCF0"
+				"39DA41F2BECB139E"
+			]
+			disable_toast: true
+			icon: {
+				Count: 1b
+				id: "minecraft:netherite_hoe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0999F5EF031AEDBE"
+			subtitle: "Complete Equipment"
+			tasks: [{
+				id: "0DD83DCFB7B62AA2"
+				title: "Congrats!"
+				type: "checkmark"
+			}]
+			title: "Collecter's Anxiety"
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"6BF155DF7F988DF6"
+				"616F2FC47F40511A"
+				"2EB743C9E4FA1666"
+				"30E6A74AA5F2AD0B"
+				"49664840A873C770"
+				"1AAE6F8E715E7126"
+				"4C0B2276943A06FE"
+				"5298D928D9D091CB"
+				"0C22F74403852C98"
+				"002CEC85032B3FEC"
+				"389C694647AE1EA0"
+				"0E35A5906772B40E"
+				"1CE4A831640CDBD7"
+				"73DC5EF97C0A7490"
+				"7116174DAE714A5A"
+				"135ED90F0D075746"
+				"40247D71817C3322"
+				"2ED556D1B5D75583"
+				"6030D3189CF1DA2D"
+				"5910AFDFB6A8B962"
+				"5037A8055BDA875E"
+				"2E8F03DBE313C53C"
+				"7E9EB5F28B524B41"
+				"2F04AA3E76C24F79"
+				"27CF5749FC5746A6"
+				"282586D0ED8AAD81"
+				"03C3F8CB26BAC77F"
+			]
+			disable_toast: true
+			icon: "mekanism:advanced_control_circuit"
+			id: "52B6928D38931A34"
+			shape: "square"
+			subtitle: "Sufficient at Mekanism"
+			tasks: [{
+				id: "2D83D489599675CE"
+				title: "Congrats!"
+				type: "checkmark"
+			}]
+			title: "Mekanism Apprentice"
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"52B6928D38931A34"
+				"7FDFFF6540D5EC6E"
+				"7D4A5D773D4AF6CF"
+				"0BBA3C8B3C852A9C"
+				"1FC5FF0FD6445AE4"
+				"16A544D3E7BB73B2"
+				"3818692FCB23260D"
+			]
+			disable_toast: true
+			icon: "mekanism:elite_control_circuit"
+			id: "184B2037A6D67E99"
+			shape: "square"
+			subtitle: "Competent at Mekanism"
+			tasks: [{
+				id: "6DC9B565F14A9B65"
+				title: "Congrats!"
+				type: "checkmark"
+			}]
+			title: "Mekanism Journeyman"
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"184B2037A6D67E99"
+				"040DE9498B04EB45"
+				"5213D2F4E55D5541"
+				"43997AB7F0553626"
+				"168C97330DC42F0A"
+				"1F65A34CE8A22B2E"
+				"17727FFC6815FEE6"
+				"3AF752FBCC722CC0"
+				"7A5F7289B1F99A25"
+				"6B110F5268677060"
+				"042F69788646DBF8"
+				"740E99E2012F5259"
+				"2A0BF58083394BFE"
+				"0F421B52A85EAC43"
+				"30290E1357027FB6"
+				"76F15FBC5108EFC5"
+				"42D9982DC9FF2A8B"
+				"437E6C19FBA18385"
+				"1D13136695F60E80"
+				"7E8A491CC6BA3265"
+				"18021E6BF9B3B813"
+				"56C36AC0B7BEDBB1"
+				"73304F1A0CCD1B69"
+				"771E42F6B8DBAEE6"
+				"4F2BD364233B196E"
+				"61296CE16D114A82"
+				"5ED0D6E73AE2EA8E"
+				"4EE9FF2E155C6E79"
+				"2DC7BCEFED14D2D8"
+				"3BCF409EBC19BD2F"
+				"5D389FACF9E98C17"
+				"41B87F94E80A634B"
+				"3B08611C8AA7661D"
+				"0DB98B278B53DC23"
+				"2CD76885D7EBD497"
+				"673EF357A4DF2599"
+				"1D7120BBF228D3D2"
+				"2A1FCF3856BBFC2A"
+				"18BA3F2DB5B8A415"
+				"6822D7DDAE2576E6"
+				"4A8B6B49B722C15D"
+				"221662B39C99ABC2"
+				"63B0B141435039B8"
+				"2541D5FED23826D1"
+				"4D2D71536D141B78"
+				"2A99A0FCA0CE5C1F"
+				"1E1C89875246E50F"
+				"6BCDD430AD171DC7"
+				"404E71DE59F75C06"
+				"08EC9EFE02F56216"
+				"219DDC709DC5FE81"
+				"3636044A87ED16EA"
+				"422303CDB0CEE50B"
+				"134330C6E9CFF9D6"
+				"3CC9A464A71A41B7"
+				"4DDBD14613C038F4"
+				"5CB130B09C95ED19"
+				"6C6637CA5861745D"
+				"19FBF91143C12A4B"
+				"50C50A8AA14F1AE1"
+				"6958EAC3CFB3286A"
+				"5B9ED47E832C73D5"
+				"3F9FEE762D953BBB"
+			]
+			disable_toast: true
+			icon: "mekanism:ultimate_control_circuit"
+			id: "5D7A9F47D60BCD3C"
+			shape: "square"
+			subtitle: "Multiblock Aficionado"
+			tasks: [{
+				id: "566EA7AB38A9C727"
+				title: "Congrats!"
+				type: "checkmark"
+			}]
+			title: "Mekanism Master"
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"4ECF25B176512D2E"
+				"15FD46FFFF3AB160"
+				"0F1B855BF8A43CED"
+				"78368E1949B9CE2C"
+				"60BF414918892562"
+				"10ABF0BDEAA77BAC"
+				"0EEABF0C6A15DF3D"
+				"036103DEEAB49174"
+				"46A041C16AA07573"
+			]
+			disable_toast: true
+			icon: "functionalstorage:storage_controller"
+			id: "35FBFF6240677FF0"
+			subtitle: "Complete Storage"
+			tasks: [{
+				id: "51AAD8D9E91D8556"
+				title: "Congrats!"
+				type: "checkmark"
+			}]
+			title: "Storage Solutionist"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"5D67000EF4DFF157"
+				"4103C2BBFEC50AAE"
+				"402555F292EF5D5D"
+				"0FE5C8C01B76B08B"
+				"4ED186741BE138A8"
+				"291B4EE578FB46B8"
+				"66780574B9DD7AEC"
+				"1D3C472E2DF1D1CD"
+				"138781EAF3250FB4"
+				"083D6DAD94AB3D3B"
+				"5010D4D9158DFEF7"
+				"1DD2CC79EC7D259A"
+				"51C842C2FC13BDFE"
+				"1C28D6CADB280332"
+				"24C5A7C3D3EAAF00"
+				"4645F165220D1575"
+			]
+			disable_toast: true
+			icon: "minecraft:spyglass"
+			id: "59B4FDDD116CD928"
+			subtitle: "Complete Miscellaneous"
+			tasks: [{
+				id: "0872279ACD357E8B"
+				title: "Congrats!"
+				type: "checkmark"
+			}]
+			title: "Utilitarian"
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["420F5955A6621CA0"]
+			description: [
+				"Creating HDPE Pellets produces 100mb of &dEthylene&r, and consumes 50mb of &dLiquid Ethylene&r."
+				""
+				"Doing the math, this quest requires making 2000 HDPE Pellets (or half that number if you just throw away the substrate)."
+			]
+			id: "3A2B40AA010B454A"
+			shape: "square"
+			tasks: [{
+				amount: 100000L
+				fluid: "mekanism:ethene"
+				id: "2D5E91AA141BBFBA"
+				type: "fluid"
+			}]
+			title: "Automated HDPE"
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			id: "56FA94AF3253BDD9"
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "08703FCED862CD6E"
+					item: "deep_dark_regrowth:ancient_illusioner_mask_helmet"
+					type: "item"
+				}
+				{
+					id: "64ADFC7F4BE1D366"
+					item: {
+						Count: 1b
+						id: "aquamirae:coral_lance"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:unbreaking"
+								lvl: 4s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "439C00896990C462"
+					item: {
+						Count: 1b
+						id: "aquamirae:dagger_of_greed"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2FE45253E91AB31C"
+					item: "born_in_chaos_v1:mesh_door"
+					type: "item"
+				}
+				{
+					id: "6D39E460530FB880"
+					item: {
+						Count: 1b
+						id: "born_in_chaos_v1:trident_hayfork"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "77F22ADD3F308E2F"
+					item: {
+						Count: 1b
+						id: "born_in_chaos_v1:pumpkin_pistol"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "476DD72467EF4675"
+					item: {
+						Count: 1b
+						id: "born_in_chaos_v1:pumpkin_staff"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "14991DAA98EB8CD9"
+					item: {
+						Count: 1b
+						id: "born_in_chaos_v1:soulbane"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1C3B1ABC44AA4B18"
+					item: {
+						Count: 1b
+						id: "aquamirae:sweet_lance"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:looting"
+								lvl: 1s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5F75F11DAE9F9FA4"
+					item: {
+						Count: 1b
+						id: "majruszsdifficulty:wither_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3C10527A208F098F"
+					item: {
+						Count: 1b
+						id: "born_in_chaos_v1:wood_splitter_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Uncraftable Loot"
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			id: "53E13E166B92759A"
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "1D9904E832A473C2"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:protection"
+								lvl: 10s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "6649AFF1D03A1487"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:fire_protection"
+								lvl: 10s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "709732C3E5AD0F09"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:feather_falling"
+								lvl: 10s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "6258158A88258A4F"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:blast_protection"
+								lvl: 10s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "11EF25B4A5D90FDB"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:projectile_protection"
+								lvl: 10s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "0DC0B27EA11CB5BA"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:respiration"
+								lvl: 5s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "3ABBEAB9C0BB0274"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:aqua_affinity"
+								lvl: 1s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "5779A524D12A4E6D"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:thorns"
+								lvl: 5s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "36376C110FFD0E60"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:depth_strider"
+								lvl: 5s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "7376926026502664"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:frost_walker"
+								lvl: 5s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "6548DF1960813318"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:binding_curse"
+								lvl: 1s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "500D59357965A530"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:soul_speed"
+								lvl: 5s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "234119A79962C782"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:swift_sneak"
+								lvl: 5s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "4D396B8593700B89"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:sharpness"
+								lvl: 8s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "30E3DCDCF75C2990"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:smite"
+								lvl: 8s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "402A9FA1F8E8AB9A"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:bane_of_arthropods"
+								lvl: 8s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "1FDC2ABA8A7455EF"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:knockback"
+								lvl: 3s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "64F46BD63590F832"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:fire_aspect"
+								lvl: 4s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "5C15451E529E1AA9"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:looting"
+								lvl: 5s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "52322088D00F0171"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:sweeping"
+								lvl: 5s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "7A45385D082C9484"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:efficiency"
+								lvl: 5s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "22C3A566FEE910EE"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:silk_touch"
+								lvl: 2s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "3BBFD52ED4E2F6D8"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:unbreaking"
+								lvl: 5s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "03A33ED4B3FA0CFE"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:fortune"
+								lvl: 5s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "0ED957D46B6DC037"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:power"
+								lvl: 8s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "471473BC83CB3E35"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:punch"
+								lvl: 3s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "45CEFE0A29E43901"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:flame"
+								lvl: 1s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "20F6A6DB074E5A3B"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:infinity"
+								lvl: 1s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "133E75CEDFF16640"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:luck_of_the_sea"
+								lvl: 5s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "1D6B9790DFB6E705"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:lure"
+								lvl: 5s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "7EB5291A3DA65180"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:loyalty"
+								lvl: 5s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "39B1DE0D40396E22"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:impaling"
+								lvl: 8s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "657A774FDE391043"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:riptide"
+								lvl: 5s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "4F177A5519C5EEAC"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:channeling"
+								lvl: 1s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "450A9CAA5784A35C"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:multishot"
+								lvl: 1s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "3087699732F75462"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:quick_charge"
+								lvl: 4s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "7D2AE72EDD2CE90A"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:piercing"
+								lvl: 5s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "26EE37B67D37302C"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:mending"
+								lvl: 1s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "2B0B32678B211661"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:vanishing_curse"
+								lvl: 1s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "77D9C239B4B63D00"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "undead_unleashed:undertaker"
+								lvl: 7s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "703519071C53AE9D"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "unusualend:everlasting"
+								lvl: 1s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "37EE9B3D78E9CDD5"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "unusualend:boloks_fury"
+								lvl: 7s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "5D651EBCDE5FFF57"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "apotheosis:miners_fervor"
+								lvl: 5s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "67FD0173B3E46F2F"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "apotheosis:stable_footing"
+								lvl: 1s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "070FC4627EA84C88"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "apotheosis:scavenger"
+								lvl: 3s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "399AB639DC671FFF"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "apotheosis:life_mending"
+								lvl: 3s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "2097E024A46CDEE8"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "apotheosis:icy_thorns"
+								lvl: 5s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "2BD8D0002AAC7C03"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "apotheosis:tempting"
+								lvl: 1s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "516E708F38623C92"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "apotheosis:shield_bash"
+								lvl: 7s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "0796FDE7E593750C"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "apotheosis:reflective"
+								lvl: 7s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "474CBA35E0E49620"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "apotheosis:berserkers_fury"
+								lvl: 3s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "48BC49245000BF6C"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "apotheosis:knowledge"
+								lvl: 3s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "27D7E7F87FAE66A2"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "apotheosis:splitting"
+								lvl: 1s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "59E8900D342CF4A2"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "apotheosis:natures_blessing"
+								lvl: 7s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "414CD0D8C7586202"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "apotheosis:rebounding"
+								lvl: 5s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "511688FE6883FED9"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "apotheosis:bane_of_illagers"
+								lvl: 5s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "70543ABF928FBBD5"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "apotheosis:obliteration"
+								lvl: 1s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "0C244B068B02F0D2"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "apotheosis:crescendo"
+								lvl: 5s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "60652FFAA526E144"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "apotheosis:endless_quiver"
+								lvl: 1s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "43B1921950C70E07"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "apotheosis:chromatic"
+								lvl: 1s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "5C3DBEC8B5B605AD"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "apotheosis:exploitation"
+								lvl: 1s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "6D6C3AADEEEFB863"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "apotheosis:growth_serum"
+								lvl: 1s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "756DB7F26A24E930"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "apotheosis:earths_boon"
+								lvl: 5s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "213A10C0B1448990"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "apotheosis:chainsaw"
+								lvl: 1s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "50BEE2307D7BE834"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "apotheosis:spearfishing"
+								lvl: 5s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "4F31B506AFF0746B"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "apotheosis:capturing"
+								lvl: 7s
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "2A5956D51B868093"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "obscure_api:mirror"
+								lvl: 1s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "79A1E9B88DD34334"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "obscure_api:fast_spin"
+								lvl: 9s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6070F963757EBB7D"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "obscure_api:distance"
+								lvl: 7s
+							}]
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Every Max-Level Enchantment"
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"74008E93D76D5E3E"
+				"45E9966E19333CF0"
+				"6030D3189CF1DA2D"
+				"5910AFDFB6A8B962"
+				"5037A8055BDA875E"
+				"7E9EB5F28B524B41"
+			]
+			disable_toast: true
+			icon: "mekanism:basic_control_circuit"
+			id: "282586D0ED8AAD81"
+			rewards: [
+				{
+					count: 16
+					id: "531BCCE5F2774F45"
+					item: "mekanism:alloy_infused"
+					team_reward: false
+					type: "item"
+				}
+				{
+					count: 8
+					id: "02A3C8BD971B12E3"
+					item: "mekanism:basic_control_circuit"
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "square"
+			subtitle: "Completed the Tutorial"
+			tasks: [{
+				id: "048DBAF203EED5BE"
+				title: "Congrats!"
+				type: "checkmark"
+			}]
+			title: "Mekanism Novice"
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			id: "2262C92F7C33CD04"
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "3D60F32C425731FD"
+					item: {
+						Count: 1b
+						id: "born_in_chaos_v1:charmof_power"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "54F672AB672E41DE"
+					item: {
+						Count: 1b
+						id: "born_in_chaos_v1:charmof_resistance"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3059BA0E10317659"
+					item: {
+						Count: 1b
+						id: "born_in_chaos_v1:charmof_stealth"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1B323E9148998FFA"
+					item: {
+						Count: 1b
+						id: "born_in_chaos_v1:charmof_endurance"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3BA9FE67327CEADE"
+					item: {
+						Count: 1b
+						id: "born_in_chaos_v1:charmof_fury"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Every Missionary Charm"
+			x: 2.5d
+			y: 0.0d
+		}
+	]
+	title: "Challenges"
+}
