@@ -146,21 +146,59 @@
 			y: 2.0d
 		}
 		{
+			description: [
+				"To summon the Corrupted Champion, you will first need to collect all three parts of the Bone Staff from various &lThe Graveyard&r structures. Next, you will need a full &4Vial of Blood&r, obtained by killing 8 Villagers with a Bone Dagger while holding an empty bottle in your off-hand."
+				""
+				"Look for a Lich Prison (a rare large floating island structure) and place the Bone Staff pieces on the three &0Corrupted Deepslate Center&r blocks before the altar. The Bone Staff pieces must be in order from head-to-tail or tail-to-head. Which piece you place first does not matter."
+				""
+				"Lastly, use the &4Vial of Blood&r on the center of the altar, and prepare for a fight!"
+			]
+			icon: "graveyard:black_bone_staff"
 			id: "4DA840B95105FC9B"
 			rewards: [{
+				count: 2
 				id: "0FDEEE287E4F6DF5"
 				item: "bhc:blue_heart"
 				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
-			tasks: [{
-				entity: "graveyard:lich"
-				icon: "graveyard:black_bone_staff"
-				id: "05BCAFADF655D98E"
-				type: "kill"
-				value: 1L
-			}]
+			tasks: [
+				{
+					id: "46C8341FE2DD752E"
+					item: "graveyard:upper_bone_staff"
+					type: "item"
+				}
+				{
+					id: "53281B088556481B"
+					item: "graveyard:middle_bone_staff"
+					type: "item"
+				}
+				{
+					id: "068957F5626150E4"
+					item: "graveyard:lower_bone_staff"
+					type: "item"
+				}
+				{
+					id: "5A8786A400A1B5B0"
+					item: {
+						Count: 1b
+						id: "graveyard:vial_of_blood"
+						tag: {
+							Blood: 0.8f
+						}
+					}
+					type: "item"
+				}
+				{
+					entity: "graveyard:lich"
+					icon: "graveyard:black_bone_staff"
+					id: "5CDB3D6C3F41693A"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Kill: 1x Corrupted Champion"
 			x: -1.5d
 			y: -0.5d
 		}
@@ -207,7 +245,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 1.5d
+			x: -1.5d
 			y: 0.5d
 		}
 		{
@@ -271,8 +309,8 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -1.5d
-			y: 0.5d
+			x: 1.5d
+			y: -0.5d
 		}
 		{
 			id: "22E60188D9AFD2A7"
@@ -316,7 +354,7 @@
 				value: 1L
 			}]
 			x: 1.5d
-			y: -0.5d
+			y: 0.5d
 		}
 		{
 			id: "4C09ABEB358C0F24"

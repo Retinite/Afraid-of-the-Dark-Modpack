@@ -3,7 +3,6 @@
 	default_quest_shape: "diamond"
 	filename: "mekanism_advanced"
 	group: "37DA37ED2FACCAC8"
-	hide_quest_details_until_startable: true
 	icon: "mekanism:module_color_modulation_unit"
 	id: "099039BD5A15D510"
 	order_index: 1
@@ -1590,8 +1589,9 @@
 			icon: "mekanism:personal_chest"
 			id: "6DB5CD9F495351C3"
 			rewards: [{
-				id: "2EAD95EF9C6D5EA3"
-				item: "mekanism:personal_barrel"
+				count: 5
+				id: "70B8883A1D58EFB1"
+				item: "mekanism:ingot_steel"
 				team_reward: false
 				type: "item"
 			}]

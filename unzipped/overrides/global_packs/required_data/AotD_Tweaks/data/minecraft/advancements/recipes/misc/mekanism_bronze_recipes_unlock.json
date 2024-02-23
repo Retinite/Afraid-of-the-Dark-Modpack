@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_required_items": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mekanism:ingot_bronze"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_required_items"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mekanism:processing/bronze/ingot/from_block",
+      "mekanism:processing/bronze/ingot/from_nuggets",
+      "mekanism:storage_blocks/bronze",
+      "mekanism:nuggets/bronze"
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_required_items": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mekanism:ingot_steel"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_required_items"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mekanism:processing/steel/ingot/from_block",
+      "mekanism:processing/steel/ingot/from_nuggets",
+      "mekanism:storage_blocks/steel",
+      "mekanism:nuggets/steel",
+	  "mekanism:transmitter/mechanical_pipe/basic",
+	  "mekanism:transmitter/pressurized_tube/basic",
+	  "mekanism:transmitter/logistical_transporter/basic",
+	  "mekanism:transmitter/universal_cable/basic",
+	  "mekanism:transmitter/thermodynamic_conductor/basic",
+	  "mekanism:steel_casing"
+    ]
+  }
+}

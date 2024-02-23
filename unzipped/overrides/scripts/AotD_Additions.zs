@@ -117,7 +117,7 @@ craftingTable.addShaped("aotd.wither_skeleton_skull", <item: minecraft:wither_sk
 
 // add recipe for Unusual End's Void Totem
 craftingTable.addShapeless("unusualend.void_totem", <item: unusualend:void_totem>,
-	[<item: minecraft:totem_of_undying>, <item: born_in_chaos_v1:death_totem>, <item: unusualend:wandering_pearl>, <item: unusualend:end_blob_jelly>]);
+	[<item: minecraft:totem_of_undying>, <item: born_in_chaos_v1:death_totem>, <item: unusualend:wandering_pearl>]);
 
 // add recipe for ghast tears since ghasts are very rare
 <recipetype:mekanism:enriching>.addRecipe("corruption_into_tear", <item: graveyard:corruption> * 8, <item: minecraft:ghast_tear>);
@@ -125,10 +125,6 @@ craftingTable.addShapeless("unusualend.void_totem", <item: unusualend:void_totem
 // add recipes for Aquamirae's Coral Lance and Sweet Lance transmutations
 smithing.addRecipe("aquamirae.coral_transmutation", <item:aquamirae:coral_lance>, <item:aquamirae:sweet_lance>, <item:born_in_chaos_v1:transmuting_elixir>);
 smithing.addRecipe("aquamirae.sweet_transmutation", <item:aquamirae:sweet_lance>, <item:aquamirae:coral_lance>, <item:born_in_chaos_v1:transmuting_elixir>);
-
-// add renewable recipes for Deep Dark Regrowth's Galm and Born in Chaos's Black Argillite, used in Nihilum ingots
-smithing.addRecipe("deep_dark_regrowth.galm", <item: deep_dark_regrowth:galm>, <item: minecraft:sculk>, <item: graveyard:corruption>);
-smithing.addRecipe("born_in_chaos_v1.black_argillite", <item: born_in_chaos_v1:black_argillite>, <item: minecraft:stone>, <item: graveyard:corruption>);
 
 // add Mekanism recipes for Illuminative's Glowing Mushrooms and Deep Dark Regrowth Infected Mushrooms
 <recipetype:mekanism:crushing>.addRecipe("glowing_into_biofuel", <item: illuminative:glowing_mushroom>, <item: mekanism:bio_fuel> * 5);
@@ -158,8 +154,8 @@ craftingTable.addShapeless("apotheosis.epic_material_decompress", <item: apotheo
 craftingTable.addShapeless("apotheosis.rare_material_decompress", <item: apotheosis:uncommon_material> * 3, [<item: apotheosis:rare_material>]);
 craftingTable.addShapeless("apotheosis.uncommon_material_decompress", <item: apotheosis:common_material> * 3, [<item: apotheosis:uncommon_material>]);
 
-// make the wooden paxel count as fuel
-<item: mekanismtools:wood_paxel>.burnTime = 400;
+// make the wooden paxel count as fuel DOES NOT WORK PROPERLY
+//<item: mekanismtools:wood_paxel>.burnTime = 400;
 
 // allow extra Soul Jars to be converted into Lost Souls
 <recipetype:mekanism:crushing>.addRecipe("soul_jar_into_lost_soul", <item: majruszsdifficulty:soul_jar>, <item: undead_unleashed:lost_soul>);
@@ -172,3 +168,43 @@ smithing.addRecipe("unusualend.golem_orb", <item:unusualend:golem_orb>, <item:bo
 
 // add sculk soil recipe
 craftingTable.addShapeless("deep_dark_regrowth.sculk_soil", <item:deep_dark_regrowth:sculk_soil>, [<item:minecraft:soul_soil>, <item:minecraft:sculk>]);
+
+// add Minecraft Saddle recipe & recycle
+craftingTable.addShaped("aotd.saddle", <item:minecraft:saddle>,
+	[[<item:minecraft:leather>,       <item:minecraft:leather>,       <item:minecraft:leather>],
+	 [<item:minecraft:leather>,       IIngredientEmpty.getInstance(), <item:minecraft:leather>],
+	 [<item:minecraft:tripwire_hook>, IIngredientEmpty.getInstance(), <item:minecraft:tripwire_hook>]]);
+<recipetype:mekanism:sawing>.addRecipe("aotd_saddle_recycling", <item:minecraft:saddle>, <item:minecraft:leather> * 3, <item:minecraft:tripwire_hook> * 2, 0.5);
+
+// various iron recycling recipes ------------------------------------------------------------------------------------------------------------
+
+<recipetype:mekanism:crushing>.addRecipe("aotd_blast_recycling", <item:minecraft:blast_furnace>, <item:mekanism:dust_iron> * 3);
+// related: smoker recycling
+<recipetype:mekanism:sawing>.addRecipe("aotd_smoker_recycling", <item:minecraft:smoker>, <item:minecraft:furnace>, <item:mekanism:sawdust> * 8);
+
+<recipetype:mekanism:crushing>.addRecipe("aotd_compass_recycling", <item:minecraft:compass>, <item:mekanism:dust_iron> * 2);
+// related: clock recycling
+<recipetype:mekanism:crushing>.addRecipe("aotd_clock_recycling", <item:minecraft:clock>, <item:mekanism:dust_gold> * 2);
+// related: recovery compass recycling
+<recipetype:mekanism:crushing>.addRecipe("aotd_recovery_compass_recycling", <item:minecraft:recovery_compass>, <item:minecraft:echo_shard> * 6);
+
+<recipetype:mekanism:crushing>.addRecipe("aotd_anvil_recycling", <item:minecraft:anvil>, <item:mekanism:dust_iron> * 27);
+<recipetype:mekanism:crushing>.addRecipe("aotd_chipped_anvil_recycling", <item:minecraft:chipped_anvil>, <item:mekanism:dust_iron> * 18);
+<recipetype:mekanism:crushing>.addRecipe("aotd_damaged_anvil_recycling", <item:minecraft:damaged_anvil>, <item:mekanism:dust_iron> * 9);
+
+<recipetype:mekanism:crushing>.addRecipe("aotd_chain_recycling", <item:minecraft:chain>, <item:mekanism:dust_iron>);
+<recipetype:mekanism:crushing>.addRecipe("aotd_iron_bars_recycling", <item:minecraft:iron_bars>, <item:minecraft:iron_nugget> * 8);
+<recipetype:mekanism:crushing>.addRecipe("aotd_iron_door_recycling", <item:minecraft:iron_door>, <item:mekanism:dust_iron>);
+<recipetype:mekanism:crushing>.addRecipe("aotd_iron_trapdoor_recycling", <item:minecraft:iron_trapdoor>, <item:mekanism:dust_iron> * 2);
+
+<recipetype:mekanism:crushing>.addRecipe("aotd_cauldron_recycling", <item:minecraft:cauldron>, <item:mekanism:dust_iron> * 5);
+<recipetype:mekanism:crushing>.addRecipe("aotd_hopper_recycling", <item:minecraft:hopper>, <item:mekanism:dust_iron> * 3);
+
+<recipetype:mekanism:crushing>.addRecipe("aotd_crossbow_recycling", <item:minecraft:crossbow>.anyDamage(), <item:mekanism:dust_iron>);
+<recipetype:mekanism:crushing>.addRecipe("aotd_flint_and_steel_recycling", <item:minecraft:flint_and_steel>.anyDamage(), <item:minecraft:iron_nugget> * 7);
+
+<recipetype:mekanism:crushing>.addRecipe("aotd_rail_recycling", <item:minecraft:rail>, <item:minecraft:iron_nugget> * 6);
+<recipetype:mekanism:crushing>.addRecipe("aotd_activator_rail_recycling", <item:minecraft:activator_rail>, <item:minecraft:iron_nugget> * 6);
+<recipetype:mekanism:crushing>.addRecipe("aotd_detector_rail_recycling", <item:minecraft:detector_rail>, <item:minecraft:iron_nugget> * 6);
+// related: powered rail recycling
+<recipetype:mekanism:crushing>.addRecipe("aotd_powered_rail_recycling", <item:minecraft:powered_rail>, <item:minecraft:gold_nugget> * 6);

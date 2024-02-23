@@ -135,7 +135,7 @@
 				""
 				"The sky will always be at light level 15. The surface will almost always be safe."
 				""
-				"&cNote&r: Some enemy drops will become &onearly&r impossible to collect. Also, &8Grave Soil&r will always yield lesser rewards."
+				"&cNote&r: Some enemy drops will become &onearly&r impossible to collect."
 			]
 			icon: {
 				Count: 1b

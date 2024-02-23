@@ -87,5 +87,33 @@
 	  "mob": "tenebrous_lands:wendigo",
 	  "mincount": 1,
 	  "result": "deny"
+  },
+  {
+	  "mob": "upgrade_aquatic:thrasher",
+	  "maxcount": 2,
+	  "healthmultiply": 0.5,
+	  "result": "allow"
+  },
+  {
+	  "mob": "upgrade_aquatic:thrasher",
+	  "mincount": 2,
+	  "result": "deny"
+  },
+  {
+	  "mob": "upgrade_aquatic:great_thrasher",
+	  "mincount": 1,
+	  "result": "allow"
+  },
+  {
+	  "mob": "john_mod_reborn:baby_john",
+	  "healthmultiply": 0.5,
+	  "speedmultiply": 0.5,
+	  "result": "deny"
+  },
+  {
+	  "mob": "john_mod_reborn:john",
+	  "damagemultiply": 2,
+	  "speedmultiply": 0.5,
+	  "result": "allow"
   }
 ]

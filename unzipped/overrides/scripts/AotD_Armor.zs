@@ -288,3 +288,10 @@ addShearsRecycling(<item:minecraft:leather_horse_armor>, <item:minecraft:leather
 addCrusherRecycling(<item:minecraft:iron_horse_armor>, <item:mekanism:dust_iron> * 2);
 addCrusherRecycling(<item:minecraft:golden_horse_armor>, <item:mekanism:dust_gold> * 2);
 addCrusherRecycling(<item:minecraft:diamond_horse_armor>, <item:mekanism:dust_diamond> * 2);
+
+// upgraded backpacks
+addShearsRecycling(<item:sophisticatedbackpacks:copper_backpack>, <item:minecraft:copper_ingot> * 6);
+addShearsRecycling(<item:sophisticatedbackpacks:iron_backpack>, <item:minecraft:iron_ingot> * 6);
+addShearsRecycling(<item:sophisticatedbackpacks:gold_backpack>, <item:minecraft:gold_ingot> * 6);
+addShearsRecycling(<item:sophisticatedbackpacks:diamond_backpack>, <item:minecraft:diamond> * 6);
+addShearsRecycling(<item:sophisticatedbackpacks:netherite_backpack>, <item:minecraft:netherite_ingot>);

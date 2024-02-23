@@ -641,6 +641,12 @@
 			hide_dependency_lines: true
 			id: "58B6EE60036DD3A1"
 			optional: true
+			rewards: [{
+				count: 4
+				id: "082AE9414144D324"
+				item: "aquamirae:treasure_pouch"
+				type: "item"
+			}]
 			shape: "diamond"
 			tasks: [
 				{
@@ -2475,6 +2481,12 @@
 				"25B43E68B157DAEB"
 			]
 			id: "015ACDE886A50456"
+			rewards: [{
+				id: "7733F61F2620C413"
+				item: "mekanism:block_refined_obsidian"
+				team_reward: false
+				type: "item"
+			}]
 			subtitle: "Netherite-Level, 2x Durability"
 			tasks: [{
 				id: "26631E42A1FA621B"
@@ -2555,7 +2567,10 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["1AAD629AEAD5CC94"]
+			dependencies: [
+				"1AAD629AEAD5CC94"
+				"78AA59DA9B05CBEF"
+			]
 			hide: false
 			id: "25B43E68B157DAEB"
 			rewards: [{
@@ -2621,6 +2636,12 @@
 			dependencies: ["0DF31FB295B2A3B7"]
 			id: "6EAD818FB73244FA"
 			optional: true
+			rewards: [{
+				id: "30EF2A0518FC7425"
+				item: "solarpanels:improved_energy_tablet"
+				team_reward: false
+				type: "item"
+			}]
 			shape: "diamond"
 			subtitle: "Diamond-Level"
 			tasks: [{
@@ -2653,6 +2674,12 @@
 			dependencies: ["67719D6F9CE41903"]
 			id: "53B56FE3223FC903"
 			optional: true
+			rewards: [{
+				id: "4EA89D52B1315DA5"
+				item: "minecraft:nether_star"
+				team_reward: false
+				type: "item"
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "43D421CDBD66133B"
@@ -2679,6 +2706,12 @@
 			}
 			id: "67719D6F9CE41903"
 			optional: true
+			rewards: [{
+				id: "66E0AC7E7C7F9321"
+				item: "apotheosis:inert_trident"
+				team_reward: false
+				type: "item"
+			}]
 			shape: "diamond"
 			subtitle: "Craftable!"
 			tasks: [
@@ -2708,6 +2741,12 @@
 			dependencies: ["15F6BB632541EBB1"]
 			id: "6D9D92F3A4C76148"
 			optional: true
+			rewards: [{
+				id: "337C742D4A05B276"
+				item: "minecraft:netherite_ingot"
+				team_reward: false
+				type: "item"
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "45242B9AF0351CD3"
@@ -2727,6 +2766,12 @@
 			dependencies: ["61086CE7086729C1"]
 			id: "1E82E87971F6556B"
 			optional: true
+			rewards: [{
+				id: "5B9EB64609FADE45"
+				item: "undead_unleashed:necrotic_dust"
+				team_reward: false
+				type: "item"
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "7BC387D8D7EAE86F"
@@ -2771,6 +2816,12 @@
 			dependencies: ["48EAAB57FBBB3776"]
 			id: "3224FD1D5021A695"
 			optional: true
+			rewards: [{
+				id: "5AEEDD17CE18ADBD"
+				item: "monsterplus:ancient_crystal"
+				team_reward: false
+				type: "item"
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "6BCC0EE5DDC78FC2"
@@ -2788,9 +2839,17 @@
 		}
 		{
 			dependencies: ["5D32BDED3AB392FC"]
+			description: ["* Does not dropped cooked mob drops."]
 			id: "11B7AD1A432FD007"
 			optional: true
+			rewards: [{
+				id: "53E26B91C21F0823"
+				item: "john_mod_reborn:immortalitygem"
+				team_reward: false
+				type: "item"
+			}]
 			shape: "diamond"
+			subtitle: "Free Fire Aspect*"
 			tasks: [{
 				id: "3B93E3F29B4BE2A2"
 				item: {
@@ -2812,6 +2871,13 @@
 			]
 			id: "7C0FC708533D53F6"
 			optional: true
+			rewards: [{
+				count: 2
+				id: "6B6EBC0CA7C899C4"
+				item: "aotdextras:occultium_ingot"
+				team_reward: false
+				type: "item"
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "6BF23D1D024AD435"
@@ -2829,6 +2895,13 @@
 			description: ["Definitively the strongest weapon (after you max out its heart canisters)."]
 			id: "6DA6D2DBB3919895"
 			optional: true
+			rewards: [{
+				count: 16
+				id: "0B322B5E899E8FD7"
+				item: "bhc:canister"
+				team_reward: false
+				type: "item"
+			}]
 			shape: "diamond"
 			subtitle: "Just Add Love"
 			tasks: [{
@@ -2925,6 +2998,13 @@
 			dependencies: ["5D32BDED3AB392FC"]
 			id: "43430DDCCBA5A2D9"
 			optional: true
+			rewards: [{
+				count: 2
+				id: "4AA5DB09711B6E64"
+				item: "born_in_chaos_v1:dark_metal_ingot"
+				team_reward: false
+				type: "item"
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "6BD04C8D21623AA9"
@@ -2969,6 +3049,13 @@
 			dependencies: ["5D32BDED3AB392FC"]
 			id: "367AF96649B156F2"
 			optional: true
+			rewards: [{
+				count: 7
+				id: "2E18C53C58C719AD"
+				item: "born_in_chaos_v1:dark_metal_ingot"
+				team_reward: false
+				type: "item"
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "7D1444893DC53601"
@@ -2986,9 +3073,16 @@
 		}
 		{
 			dependencies: ["190091266990DB82"]
-			description: ["Debuffs you unless currently affected by Strength."]
+			description: ["Debuffs &nthe user&r unless currently affected by Strength."]
 			id: "544F50E266A66D8F"
 			optional: true
+			rewards: [{
+				count: 7
+				id: "0239035F20217DC3"
+				item: "born_in_chaos_v1:dark_metal_ingot"
+				team_reward: false
+				type: "item"
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "4D8A629B66FCEE57"
@@ -3009,6 +3103,13 @@
 			description: ["Slows and Poisons non-undead targets. Also applies Nausea on targeted players."]
 			id: "1FC8BAE9255748CD"
 			optional: true
+			rewards: [{
+				count: 2
+				id: "265F448DCF699DC3"
+				item: "born_in_chaos_v1:intoxicating_decoction"
+				team_reward: false
+				type: "item"
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "691B96C73D07C550"
@@ -3029,6 +3130,12 @@
 			description: ["Debuffs the target and heals the user."]
 			id: "010FB78DF9B5FFC4"
 			optional: true
+			rewards: [{
+				id: "29FA4E72F21F9FAD"
+				item: "born_in_chaos_v1:nightmare_claw"
+				team_reward: false
+				type: "item"
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "65EABEFF5DBD51EB"
@@ -3053,7 +3160,14 @@
 			]
 			id: "741CFE6852EB8686"
 			optional: true
+			rewards: [{
+				id: "52481172E43D5D28"
+				item: "born_in_chaos_v1:nightmare_claw"
+				team_reward: false
+				type: "item"
+			}]
 			shape: "diamond"
+			subtitle: "The Bigger They Are..."
 			tasks: [{
 				id: "5D2581970670AE3B"
 				item: {
@@ -3073,7 +3187,15 @@
 			description: ["Gives the &ntarget&r Resistance II and Regeneration II for several seconds."]
 			id: "3DA9E220A978876C"
 			optional: true
+			rewards: [{
+				count: 2
+				id: "78A022DF18BDF1B4"
+				item: "tenebrous_lands:zenyr"
+				team_reward: false
+				type: "item"
+			}]
 			shape: "diamond"
+			subtitle: "1HKO or Bust"
 			tasks: [{
 				id: "2AFBC1816AF373BB"
 				item: {
@@ -3093,6 +3215,12 @@
 			description: ["A strong sword. Nothing else in this version of &lTenebrous Lands&r."]
 			id: "0A4785DCE5408A83"
 			optional: true
+			rewards: [{
+				id: "0A96CF08003EB31A"
+				item: "minecraft:netherite_ingot"
+				team_reward: false
+				type: "item"
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "7952224E2BE72F95"
@@ -3144,6 +3272,12 @@
 			dependencies: ["6D80E6CC2689C694"]
 			id: "3F644324457213AE"
 			optional: true
+			rewards: [{
+				id: "2ABAFEBF29CF3877"
+				item: "minecraft:netherite_ingot"
+				team_reward: false
+				type: "item"
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "2448DE4E77AF8A2C"
@@ -3194,6 +3328,13 @@
 			dependencies: ["4F6F4BEB0C8345C9"]
 			id: "0122976CF94ABBD9"
 			optional: true
+			rewards: [{
+				count: 2
+				id: "440F62A477768CFC"
+				item: "aquamirae:anglers_fang"
+				team_reward: false
+				type: "item"
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "24A1BCFF786C1C3F"
@@ -3213,6 +3354,12 @@
 			dependencies: ["4F6F4BEB0C8345C9"]
 			id: "205393763A2939CD"
 			optional: true
+			rewards: [{
+				id: "453AB247886B5576"
+				item: "aquamirae:ship_graveyard_echo"
+				team_reward: false
+				type: "item"
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "3F0221EA0974C67C"
@@ -3232,6 +3379,12 @@
 			dependencies: ["4F6F4BEB0C8345C9"]
 			id: "6D01B476948280C3"
 			optional: true
+			rewards: [{
+				id: "1754C7A951847BDD"
+				item: "aquamirae:abyssal_amethyst"
+				team_reward: false
+				type: "item"
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "507264B771B8CB75"
@@ -3251,7 +3404,15 @@
 			dependencies: ["6D80E6CC2689C694"]
 			id: "701C015D0BD4517E"
 			optional: true
+			rewards: [{
+				count: 2
+				id: "17611B364A94DDC5"
+				item: "aquamirae:abyssal_amethyst"
+				team_reward: false
+				type: "item"
+			}]
 			shape: "diamond"
+			subtitle: "Max Health Reduction"
 			tasks: [{
 				id: "73D7969FF10DDE54"
 				item: {
@@ -3270,7 +3431,15 @@
 			dependencies: ["6D80E6CC2689C694"]
 			id: "614EF3E45689D05C"
 			optional: true
+			rewards: [{
+				count: 2
+				id: "4C3C460DD8227EFC"
+				item: "aquamirae:abyssal_amethyst"
+				team_reward: false
+				type: "item"
+			}]
 			shape: "diamond"
+			subtitle: "Armor Reduction"
 			tasks: [{
 				id: "2B517F4BB0E65E60"
 				item: {
@@ -3289,6 +3458,22 @@
 			hide_dependency_lines: true
 			id: "112AED781E211DFA"
 			optional: true
+			rewards: [
+				{
+					count: 2
+					id: "3CEEC85F0EA5950D"
+					item: "aquamirae:anglers_fang"
+					team_reward: false
+					type: "item"
+				}
+				{
+					count: 2
+					id: "230CD4813E806E39"
+					item: "minecraft:diamond"
+					team_reward: false
+					type: "item"
+				}
+			]
 			shape: "diamond"
 			tasks: [{
 				id: "78C2B868F00DADF5"
@@ -3308,6 +3493,22 @@
 			hide_dependency_lines: true
 			id: "06DC20B70B64EA49"
 			optional: true
+			rewards: [
+				{
+					count: 2
+					id: "74C87C6ED250FE05"
+					item: "aquamirae:abyssal_amethyst"
+					team_reward: false
+					type: "item"
+				}
+				{
+					count: 2
+					id: "6B5536BCC5BFDA8D"
+					item: "minecraft:diamond"
+					team_reward: false
+					type: "item"
+				}
+			]
 			shape: "diamond"
 			tasks: [{
 				id: "1B6CCFEFC3435860"
@@ -3331,6 +3532,12 @@
 			description: ["Delayed AOE damage."]
 			id: "65A6AF3FDACD09DD"
 			optional: true
+			rewards: [{
+				id: "54A334D36FE2C3CD"
+				item: "majruszsdifficulty:enderium_ingot"
+				team_reward: false
+				type: "item"
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "64B4EEBA6EBDB2E9"
@@ -3354,6 +3561,12 @@
 			description: ["Summons a line of Crystal Spikes on the ground on swing."]
 			id: "6C8F67DFC889CDFB"
 			optional: true
+			rewards: [{
+				id: "1EBBE7F63DD878F8"
+				item: "majruszsdifficulty:enderium_ingot"
+				team_reward: false
+				type: "item"
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "3240CEA2DA430994"
@@ -3399,8 +3612,46 @@
 			optional: true
 			rewards: [{
 				count: 4
-				id: "1510206B296E0231"
-				item: "minecraft:firework_rocket"
+				id: "1D0EDF0540788726"
+				item: {
+					Count: 1b
+					id: "minecraft:firework_rocket"
+					tag: {
+						Fireworks: {
+							Explosions: [
+								{
+									Colors: [I;15790320]
+									Type: 0b
+								}
+								{
+									Colors: [I;15790320]
+									Type: 0b
+								}
+								{
+									Colors: [I;15790320]
+									Type: 0b
+								}
+								{
+									Colors: [I;15790320]
+									Type: 0b
+								}
+								{
+									Colors: [I;15790320]
+									Type: 0b
+								}
+								{
+									Colors: [I;15790320]
+									Type: 0b
+								}
+								{
+									Colors: [I;15790320]
+									Type: 0b
+								}
+							]
+							Flight: 1b
+						}
+					}
+				}
 				team_reward: false
 				type: "item"
 			}]
@@ -3826,6 +4077,7 @@
 			id: "0DF31FB295B2A3B7"
 			optional: true
 			rewards: [{
+				count: 9
 				id: "1D6E2657D3AD025E"
 				item: "mekanism:block_osmium"
 				team_reward: false
@@ -3854,6 +4106,7 @@
 			id: "60FA1E8682D25076"
 			optional: true
 			rewards: [{
+				count: 3
 				id: "4251DB3CEAB111F1"
 				item: "mekanism:block_refined_obsidian"
 				team_reward: false
@@ -4278,8 +4531,9 @@
 			id: "0403272F404DDA7E"
 			optional: true
 			rewards: [{
-				id: "28D7E25E5C0038E5"
-				item: "minecraft:diamond"
+				count: 4
+				id: "725DB522A72BCA58"
+				item: "undead_unleashed:lost_soul"
 				team_reward: false
 				type: "item"
 			}]
@@ -4301,6 +4555,21 @@
 			dependency_requirement: "all_started"
 			id: "141D2900E48DF892"
 			optional: true
+			rewards: [{
+				id: "55269E08F05033FD"
+				item: {
+					Count: 1b
+					id: "minecraft:enchanted_book"
+					tag: {
+						StoredEnchantments: [{
+							id: "apotheosis:shield_bash"
+							lvl: 5s
+						}]
+					}
+				}
+				team_reward: false
+				type: "item"
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "4FD837F47DFF7A44"
@@ -4422,7 +4691,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			subtitle: "Lootable and Craftable!"
+			subtitle: "Now Craftable!"
 			tasks: [{
 				id: "0FCCEC78B58DFA7B"
 				item: "unusualend:void_totem"
@@ -4453,6 +4722,12 @@
 		{
 			id: "5B53354309A5B791"
 			optional: true
+			rewards: [{
+				id: "1EB6A20F258AEE9A"
+				item: "deep_dark_regrowth:aware_lens"
+				team_reward: false
+				type: "item"
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "413619D244195857"
@@ -4472,6 +4747,12 @@
 			dependencies: ["3DFA2B70FDE19ED3"]
 			id: "72C311F96DD71C76"
 			optional: true
+			rewards: [{
+				id: "32DB475BB3CE4084"
+				item: "born_in_chaos_v1:transmuting_elixir"
+				team_reward: false
+				type: "item"
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "62D7E93EBDF89339"

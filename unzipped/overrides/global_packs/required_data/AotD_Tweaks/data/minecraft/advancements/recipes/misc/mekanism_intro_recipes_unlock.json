@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_required_items": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mekanism:ingot_osmium"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_required_items"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mekanism:processing/osmium/ingot/from_block",
+      "mekanism:processing/osmium/ingot/from_nuggets",
+      "mekanism:storage_blocks/osmium",
+      "mekanism:nuggets/osmium",
+      "mekanism:metallurgic_infuser",
+	  "mekanismgenerators:generator/heat",
+	  "mekanism:gauge_dropper",
+	  "mekanism:fluid_tank/basic",
+	  "mekanism:chemical_tank/basic"
+    ]
+  }
+}

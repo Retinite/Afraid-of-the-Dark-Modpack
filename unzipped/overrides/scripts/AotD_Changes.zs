@@ -6,9 +6,6 @@ import crafttweaker.api.ingredient.type.IIngredientEmpty;
 import mods.jeitweaker.Jei;
 import crafttweaker.api.tag.MCTag;
 
-// TODO: drastically increase Nutritional Paste conversion for Eternal Candy
-//<recipetype:mekanism:liquifier>.removeByName("mekanism:liquifier/born_in_chaos_v1/eternal_candy");
-
 // unify all trident recipes
 <recipetype:mekanism:nucleosynthesizing>.removeByName("mekanism:nucleosynthesizing/trident");
 craftingTable.remove(<item: minecraft:trident>);
@@ -309,3 +306,14 @@ craftingTable.addShaped("unusualend.purpur_tank_recipe", <item:unusualend:purpur
 	[[<item:minecraft:purpur_block>, <item:minecraft:ender_pearl>, <item:minecraft:purpur_block>],
 	 [<item:minecraft:end_stone>,    <item:minecraft:barrel>,      <item:minecraft:end_stone>],
 	 [<item:minecraft:purpur_block>, <item:minecraft:end_stone>,   <item:minecraft:purpur_block>]]);
+
+// reduce leather generation from Born in Chaos's Monster Skin
+craftingTable.removeByName("born_in_chaos_v1:monster_skin_k");
+<recipetype:mekanism:purifying>.addRecipe("purify_monster_skin", <item:born_in_chaos_v1:monster_skin> * 8, <gas:mekanism:oxygen>, <item:minecraft:leather>);
+
+// change Born in Chaos's Soul Soil recipe for balance
+craftingTable.removeByName("born_in_chaos_v1:solsoil_k");
+craftingTable.addShaped("born_in_chaos_v1.solsoil_k", <item:minecraft:soul_soil>,
+	[[<item:born_in_chaos_v1:ethereal_spirit>, <item:born_in_chaos_v1:ethereal_spirit>, <item:born_in_chaos_v1:ethereal_spirit>],
+	 [<item:born_in_chaos_v1:ethereal_spirit>, <tag:items:minecraft:sand>,              <item:born_in_chaos_v1:ethereal_spirit>],
+	 [<item:born_in_chaos_v1:ethereal_spirit>, <item:born_in_chaos_v1:ethereal_spirit>, <item:born_in_chaos_v1:ethereal_spirit>]]);

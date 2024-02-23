@@ -1,0 +1,31 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_required_items": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mekanism:energy_tablet"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_required_items"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mekanismgenerators:generator/solar",
+      "mekanismgenerators:generator/wind",
+	  "mekanism:energy_cube/basic",
+	  "mekanism:electric_bow",
+	  "mekanism:configurator"
+    ]
+  }
+}

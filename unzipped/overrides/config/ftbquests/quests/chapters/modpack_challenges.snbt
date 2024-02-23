@@ -726,6 +726,7 @@
 		}
 		{
 			dependency_requirement: "one_started"
+			description: ["Consider crafting an Explorer's Compass and looking for a Lich Prison."]
 			id: "32DBFE096CDBBD50"
 			shape: "hexagon"
 			subtitle: "A Fine Addition to Your Collection"
@@ -1154,6 +1155,11 @@
 			shape: "heart"
 			size: 2.0d
 			subtitle: "Completionist"
+			tasks: [{
+				id: "7BF13A25643008C0"
+				title: "There is nothing left to teach you."
+				type: "checkmark"
+			}]
 			title: "100%"
 			x: 0.0d
 			y: -4.5d
@@ -1317,7 +1323,7 @@
 				title: "Congrats!"
 				type: "checkmark"
 			}]
-			title: "Apotheotic Master"
+			title: "Apothic Master"
 			x: 1.0d
 			y: -2.0d
 		}

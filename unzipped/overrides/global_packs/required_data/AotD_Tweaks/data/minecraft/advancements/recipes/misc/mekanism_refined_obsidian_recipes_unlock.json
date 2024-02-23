@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_required_items": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mekanism:ingot_refined_obsidian"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_required_items"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mekanism:processing/refined_obsidian/ingot/from_block",
+      "mekanism:processing/refined_obsidian/ingot/from_nuggets",
+      "mekanism:storage_blocks/refined_obsidian",
+      "mekanism:nuggets/refined_obsidian"
+    ]
+  }
+}

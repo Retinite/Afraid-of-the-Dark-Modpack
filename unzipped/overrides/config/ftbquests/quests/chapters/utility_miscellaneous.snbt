@@ -91,6 +91,12 @@
 			dependencies: ["4FC75C1D76C3FC6C"]
 			id: "291B4EE578FB46B8"
 			optional: true
+			rewards: [{
+				count: 2
+				id: "2065BD0A7AD4768A"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
 			shape: "diamond"
 			subtitle: "No Constraints!"
 			tasks: [{
@@ -106,6 +112,11 @@
 			description: ["Destroy blocks instead of placing them, &c&nbut all blocks that are destroyed are voided&r. Thankfully there's an undo button!"]
 			id: "66780574B9DD7AEC"
 			optional: true
+			rewards: [{
+				id: "1B232F37EDF3A733"
+				item: "minecraft:diamond_block"
+				type: "item"
+			}]
 			shape: "diamond"
 			subtitle: "Destroy, Build, Destroy!"
 			tasks: [{
@@ -130,13 +141,14 @@
 				team_reward: false
 				type: "item"
 			}]
+			shape: "gear"
 			subtitle: "Zoom In and Out!"
 			tasks: [{
 				id: "74104157A293BCFD"
 				item: "minecraft:spyglass"
 				type: "item"
 			}]
-			x: -2.0d
+			x: 0.0d
 			y: 0.0d
 		}
 		{
@@ -217,6 +229,12 @@
 				"Very useful for finding caves and identifying mobs through walls."
 			]
 			id: "402555F292EF5D5D"
+			rewards: [{
+				count: 8
+				id: "6492EBA21DE179ED"
+				item: "minecraft:tnt"
+				type: "item"
+			}]
 			shape: "gear"
 			subtitle: "As a Treat"
 			tasks: [{
@@ -232,7 +250,7 @@
 			rewards: [{
 				count: 2
 				id: "06AE4D58EE6AE9DE"
-				item: "aotdextras:obscurium_ingot"
+				item: "aotdextras:obscurium_block"
 				team_reward: false
 				type: "item"
 			}]
@@ -258,6 +276,12 @@
 		}
 		{
 			id: "0450E9EB79084D6E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "68F93EF550671E4E"
+				table_id: 7005302816860271090L
+				type: "choice"
+			}]
 			tasks: [
 				{
 					id: "0CD9CA8A037C0A35"
@@ -287,6 +311,13 @@
 				"You can use the Bartending Table to apply any spices you have collected. You must be holding a beer in your hand to access the Bartending Table."
 			]
 			id: "5D67000EF4DFF157"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "48456C1299FED98B"
+				table_id: 7005302816860271090L
+				team_reward: false
+				type: "choice"
+			}]
 			shape: "gear"
 			tasks: [
 				{
@@ -327,6 +358,7 @@
 			y: -4.0d
 		}
 		{
+			dependencies: ["78AA59DA9B05CBEF"]
 			id: "2B180DE0B1EF6870"
 			rewards: [{
 				id: "5DEFB118747F2C9A"
@@ -478,7 +510,8 @@
 			rewards: [{
 				count: 4
 				id: "632AC6A0073D70C1"
-				item: "minecraft:ender_pearl"
+				item: "minecraft:ender_eye"
+				team_reward: false
 				type: "item"
 			}]
 			subtitle: "Five-Minute Cooldown"
@@ -553,14 +586,8 @@
 			]
 			id: "5010D4D9158DFEF7"
 			rewards: [{
-				id: "0148287F6BC4F944"
-				item: {
-					Count: 1b
-					id: "waystones:warp_stone"
-					tag: {
-						Damage: 0
-					}
-				}
+				id: "4353AB985AFC572F"
+				item: "mekanism:teleporter"
 				type: "item"
 			}]
 			shape: "square"
@@ -697,6 +724,12 @@
 		}
 		{
 			id: "4645F165220D1575"
+			rewards: [{
+				id: "7F063BC8F5781152"
+				item: "mekanismadditions:obsidian_tnt"
+				team_reward: false
+				type: "item"
+			}]
 			tasks: [{
 				id: "45C6164533293974"
 				item: "mekanismadditions:obsidian_tnt"
@@ -705,6 +738,35 @@
 			title: "Bigger TNT"
 			x: -1.5d
 			y: 1.5d
+		}
+		{
+			description: ["* Not all structures from every mod are discoverable."]
+			id: "0D6AC85B8103B362"
+			rewards: [{
+				count: 2
+				id: "21A9D89BD516B6DE"
+				item: "aotdextras:occultium_block"
+				type: "item"
+			}]
+			subtitle: "Locate Any* Structure!"
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "explorerscompass:item/explorerscompass_16"
+					}
+				}
+				id: "3E66A4E9852C472C"
+				item: {
+					Count: 1b
+					id: "explorerscompass:explorerscompass"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
 		}
 	]
 	title: "Miscellaneous"

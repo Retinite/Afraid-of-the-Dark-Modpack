@@ -106,6 +106,7 @@
 				"Cooked - 5 Seconds"
 			]
 			id: "6ECB0F799B4A44E2"
+			shape: "rsquare"
 			subtitle: "Eat Up!"
 			tasks: [
 				{
@@ -126,6 +127,7 @@
 		{
 			description: ["90 Seconds (1:30)"]
 			id: "5CC11DE7FC468891"
+			shape: "rsquare"
 			subtitle: "Chew Up!"
 			tasks: [{
 				id: "60B4DDA859B9799E"
@@ -173,20 +175,13 @@
 				"6ECB0F799B4A44E2"
 			]
 			id: "73D90E16E7875B13"
-			shape: "square"
+			shape: "rsquare"
 			subtitle: "Localized Night Vision"
-			tasks: [
-				{
-					id: "3322DEDB80B12E55"
-					item: "aotdextras:luxum_lamp"
-					type: "item"
-				}
-				{
-					id: "2CA8AC3BC76A135C"
-					item: "aotdextras:luxum_block"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "36682E358C15EF1C"
+				item: "aotdextras:luxum_ingot"
+				type: "item"
+			}]
 			title: "Luxum"
 			x: 0.0d
 			y: -1.5d

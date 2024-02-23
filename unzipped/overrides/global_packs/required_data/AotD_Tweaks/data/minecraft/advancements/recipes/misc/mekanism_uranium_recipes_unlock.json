@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_required_items": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mekanism:ingot_uranium"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_required_items"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mekanism:processing/uranium/ingot/from_block",
+      "mekanism:processing/uranium/ingot/from_nuggets",
+      "mekanism:storage_blocks/uranium",
+      "mekanism:nuggets/uranium"
+    ]
+  }
+}

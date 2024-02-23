@@ -1,0 +1,18 @@
+{
+	id: "143C08448822F612"
+	loot_size: 4
+	order_index: 0
+	rewards: [
+		{ item: "apotheosis:other_tome" }
+		{ item: "apotheosis:helmet_tome" }
+		{ item: "apotheosis:chestplate_tome" }
+		{ item: "apotheosis:leggings_tome" }
+		{ item: "apotheosis:boots_tome" }
+		{ item: "apotheosis:weapon_tome" }
+		{ item: "apotheosis:pickaxe_tome" }
+		{ item: "apotheosis:fishing_tome" }
+		{ item: "apotheosis:bow_tome" }
+	]
+	title: "Tome Reward"
+	use_title: true
+}

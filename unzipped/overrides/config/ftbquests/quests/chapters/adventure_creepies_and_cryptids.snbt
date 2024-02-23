@@ -51,13 +51,36 @@
 		{
 			description: ["Reminder: press '&bU&r' while hovering over an item to view its uses in other recipes."]
 			id: "4CED91B768D1F4EA"
-			rewards: [{
-				count: 32
-				id: "1E1C5F2DC0D5C9FD"
-				item: "minecraft:amethyst_shard"
-				team_reward: false
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 32
+					id: "1E1C5F2DC0D5C9FD"
+					item: "minecraft:amethyst_shard"
+					team_reward: false
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p crafttweaker:aotd.budding_amethyst"
+					id: "13C9234088170AB1"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p crafttweaker:waystones.warp_dust"
+					id: "264E924702DC9273"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p waystones:warp_plate"
+					id: "475957233C344372"
+					silent: true
+					type: "command"
+				}
+			]
 			shape: "rsquare"
 			subtitle: "More Useful Than You Think!"
 			tasks: [
@@ -166,7 +189,7 @@
 					tag: {
 						StoredEnchantments: [{
 							id: "undead_unleashed:undertaker"
-							lvl: 1s
+							lvl: 5s
 						}]
 					}
 				}
@@ -202,7 +225,7 @@
 		}
 		{
 			description: [
-				"When broken during the day, can drop Bones, &8Grave Metal Scraps&r, &eGold Nuggets&r, and &aExperience&r. At night it can additionally drop &eGold Ingots&r, Skeleton Skulls, and &bDiamonds&r! Will also spawn &7Skeletons&r at night, so be careful!"
+				"When broken during the day, can drop Bones, &8Grave Metal Scraps&r, &eGold Nuggets&r, and &aExperience&r. At night it can additionally drop &eGold Ingots&r, and Skeleton Skulls. Will also spawn &7Skeletons&r at night, so be careful!"
 				""
 				"&8Grave Metal Ingot&rs can convert Chainmail armor into &8Grave Metal&r armor! Excess &8Grave Metal Ingot&rs can be converted into &7Steel&r."
 			]
@@ -276,13 +299,27 @@
 		{
 			dependencies: ["69408C9F74F8A508"]
 			description: [
-				"Note: Chorus Flowers can be sheared to yield &dChorus Petals&r."
+				"Chorus Flowers can be sheared to yield &dChorus Petals&r."
 				""
 				"An &dEnder Firefly&r can be tamed by feeding it &5End Blob&rs. &dEnder Firefly&rs will kill nearby &5Enderblob&rs, giving a chance to drop &eFirefly Bulb&rs and &6Firefly Egg&rs. They will also hunt nearby &5Endermite&rs, however this will not yield any extra drops."
 				""
 				"You can collect an Endstone Trapper by &bRight Clicking&r on it while holding &eEndstone&r."
 			]
 			id: "21C18833C0563ED4"
+			rewards: [
+				{
+					id: "1B6B53231DC88449"
+					item: "unusualend:shiny_gloopstone"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "6CC14BDB746312DF"
+					item: "majruszsdifficulty:enderium_shard_ore"
+					team_reward: false
+					type: "item"
+				}
+			]
 			shape: "rsquare"
 			subtitle: "\\& Enderium from &lMajrusz's Progressive Difficulty&r"
 			tasks: [
@@ -329,6 +366,13 @@
 		{
 			dependencies: ["12101293E2AADAC8"]
 			id: "7A4C7ECC1B56B03A"
+			rewards: [{
+				count: 4
+				id: "46AAD3F2E9655CBB"
+				item: "aquamirae:ship_graveyard_echo"
+				team_reward: false
+				type: "item"
+			}]
 			shape: "rsquare"
 			tasks: [
 				{
@@ -382,8 +426,17 @@
 			y: -2.0d
 		}
 		{
-			description: ["Found in the Deep Frozen Ocean biome. Consider crafting a Nature's Compass."]
+			description: [
+				"Found in the Deep Frozen Ocean biome. Consider crafting a Nature's Compass."
+				""
+				"Beware the freezing cold waters, and stay warm by the fire."
+			]
 			id: "12101293E2AADAC8"
+			rewards: [{
+				id: "65BDB6676E93EA25"
+				item: "minecraft:campfire"
+				type: "item"
+			}]
 			subtitle: "Find an Ice Maze"
 			tasks: [{
 				biome: "#aquamirae:ice_maze"
@@ -558,6 +611,7 @@
 			rewards: [{
 				id: "697F26C404E806D1"
 				item: "unusualend:golem_orb"
+				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -585,6 +639,7 @@
 			rewards: [{
 				id: "7E38EC31C833D9D3"
 				item: "deep_dark_regrowth:soul_key"
+				team_reward: false
 				type: "item"
 			}]
 			shape: "rsquare"
@@ -678,6 +733,21 @@
 			description: ["Consider crafting a Nature's Compass."]
 			icon: "minecraft:sculk_catalyst"
 			id: "3E3E385DA8A302C9"
+			rewards: [{
+				id: "7AB8AE67B1C8A65F"
+				item: {
+					Count: 1b
+					id: "minecraft:enchanted_book"
+					tag: {
+						StoredEnchantments: [{
+							id: "minecraft:swift_sneak"
+							lvl: 3s
+						}]
+					}
+				}
+				team_reward: false
+				type: "item"
+			}]
 			subtitle: "Visit the Deep Dark"
 			tasks: [
 				{
@@ -702,6 +772,18 @@
 		{
 			dependencies: ["3E3E385DA8A302C9"]
 			id: "42A0C98B77E5C4D5"
+			rewards: [
+				{
+					id: "43F73764180BCB2A"
+					item: "apotheosis:warden_tendril"
+					type: "item"
+				}
+				{
+					id: "686711B59A11E98E"
+					item: "deep_dark_regrowth:soul_of_the_depths"
+					type: "item"
+				}
+			]
 			shape: "hexagon"
 			size: 1.5d
 			tasks: [{

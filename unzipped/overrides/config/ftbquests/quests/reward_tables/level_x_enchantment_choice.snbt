@@ -1,0 +1,61 @@
+{
+	id: "3552FC9474CC4F6F"
+	loot_size: 1
+	order_index: 1
+	rewards: [
+		{
+			item: {
+				Count: 1b
+				id: "minecraft:enchanted_book"
+				tag: {
+					StoredEnchantments: [{
+						id: "minecraft:protection"
+						lvl: 10s
+					}]
+				}
+			}
+			title: "Protection X"
+		}
+		{
+			item: {
+				Count: 1b
+				id: "minecraft:enchanted_book"
+				tag: {
+					StoredEnchantments: [{
+						id: "minecraft:fire_protection"
+						lvl: 10s
+					}]
+				}
+			}
+			title: "Fire Protection X"
+		}
+		{
+			item: {
+				Count: 1b
+				id: "minecraft:enchanted_book"
+				tag: {
+					StoredEnchantments: [{
+						id: "minecraft:blast_protection"
+						lvl: 10s
+					}]
+				}
+			}
+			title: "Blast Protection X"
+		}
+		{
+			item: {
+				Count: 1b
+				id: "minecraft:enchanted_book"
+				tag: {
+					StoredEnchantments: [{
+						id: "minecraft:projectile_protection"
+						lvl: 10s
+					}]
+				}
+			}
+			title: "Projectile Protection X"
+		}
+	]
+	title: "Level X Enchantment Reward"
+	use_title: true
+}

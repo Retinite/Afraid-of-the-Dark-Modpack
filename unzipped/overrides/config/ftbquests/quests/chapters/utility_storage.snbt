@@ -15,6 +15,7 @@
 			rewards: [{
 				id: "01DF425E251BF811"
 				item: "functionalstorage:oak_1"
+				team_reward: false
 				type: "item"
 			}]
 			tasks: [{
@@ -273,23 +274,18 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["565765DC702982C9"]
+			dependencies: [
+				"565765DC702982C9"
+				"78AA59DA9B05CBEF"
+			]
 			description: ["An &5Ender Chest&r drawer!"]
 			id: "0F1B855BF8A43CED"
 			optional: true
-			rewards: [
-				{
-					count: 8
-					id: "097BA87398272DAF"
-					item: "minecraft:obsidian"
-					type: "item"
-				}
-				{
-					id: "1A99ABC4A0BB9285"
-					item: "minecraft:ender_eye"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "2FEB380A5D50CAC9"
+				item: "unusualend:ancient_shard"
+				type: "item"
+			}]
 			shape: "diamond"
 			tasks: [{
 				disable_toast: true
@@ -396,6 +392,11 @@
 			dependencies: ["565765DC702982C9"]
 			id: "036103DEEAB49174"
 			optional: true
+			rewards: [{
+				id: "29EE2B1D77FCE51E"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
 			shape: "diamond"
 			subtitle: "Custom Drawer Textures!"
 			tasks: [{

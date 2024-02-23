@@ -3,7 +3,6 @@
 	default_quest_shape: ""
 	filename: "mekanism_generators"
 	group: "37DA37ED2FACCAC8"
-	hide_quest_details_until_startable: true
 	icon: {
 		Count: 1b
 		id: "ftbquests:custom_icon"
@@ -82,6 +81,13 @@
 					id: "1D6ABE3EEEAF5ACD"
 					item: "mekanismgenerators:solar_generator"
 					type: "item"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanismgenerators:generator/advanced_solar"
+					id: "4313A471900A05F8"
+					silent: true
+					type: "command"
 				}
 			]
 			shape: "square"
@@ -291,6 +297,13 @@
 				"3A69D3B9F6DA4D17"
 			]
 			id: "2B6228865F19BB19"
+			rewards: [{
+				auto: "invisible"
+				command: "/recipe give @p mekanism:isotopic_centrifuge"
+				id: "2A5B713376B7B785"
+				silent: true
+				type: "command"
+			}]
 			shape: "square"
 			subtitle: "Needed for Uranium Hexaflouride"
 			tasks: [{
@@ -362,6 +375,29 @@
 		{
 			disable_toast: true
 			id: "7660E92DA19A2896"
+			rewards: [
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:processing/fluorite/from_block"
+					id: "1A6F68F98AC70899"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:storage_blocks/fluorite"
+					id: "4113F09178B291E4"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:chemical_dissolution_chamber"
+					id: "5ED1C4D01402CC91"
+					silent: true
+					type: "command"
+				}
+			]
 			shape: "rsquare"
 			tasks: [{
 				disable_toast: true
@@ -421,6 +457,13 @@
 			description: [""]
 			id: "4C140EB2F8767E3E"
 			optional: true
+			rewards: [{
+				auto: "invisible"
+				command: "/recipe give @p mekanism:chemical_infuser"
+				id: "36CEEEED43A95C05"
+				silent: true
+				type: "command"
+			}]
 			shape: "diamond"
 			subtitle: "Needed for Sulfur Dioxide"
 			tasks: [{
@@ -489,11 +532,27 @@
 			description: ["Tip: you can dispose of the Hydrogen byproduct by outputting to a Chemical Tank and setting the tank to dump excess."]
 			id: "0DF9F82D9511EE63"
 			optional: true
-			rewards: [{
-				id: "52B3624CD8B129CC"
-				item: "mekanism:electrolytic_separator"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "52B3624CD8B129CC"
+					item: "mekanism:electrolytic_separator"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:pressurized_reaction_chamber"
+					id: "1B303BFA4CE12191"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanismgenerators:generator/gas_burning"
+					id: "08B26E209F4C0130"
+					silent: true
+					type: "command"
+				}
+			]
 			shape: "diamond"
 			subtitle: "Needed for Oxygen"
 			tasks: [{
@@ -509,11 +568,27 @@
 			dependencies: ["4B02E1C3F918DDC6"]
 			id: "78A10BADE264F811"
 			optional: true
-			rewards: [{
-				id: "574EC8C960F4FE7E"
-				item: "mekanism:electric_pump"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "574EC8C960F4FE7E"
+					item: "mekanism:electric_pump"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:electrolytic_separator"
+					id: "63CEE3FB536BA47E"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:rotary_condensentrator"
+					id: "6013D4A966A8CEB6"
+					silent: true
+					type: "command"
+				}
+			]
 			shape: "diamond"
 			subtitle: "Needed for Water"
 			tasks: [{
@@ -598,12 +673,21 @@
 		{
 			dependencies: ["202B90FF4BCF6291"]
 			id: "25DFACEB8666557F"
-			rewards: [{
-				count: 64
-				id: "0D67BBFDCE51B66B"
-				item: "mekanism:bio_fuel"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 64
+					id: "0D67BBFDCE51B66B"
+					item: "mekanism:bio_fuel"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanismgenerators:generator/bio"
+					id: "19B7AB0894AB5080"
+					silent: true
+					type: "command"
+				}
+			]
 			shape: "rsquare"
 			subtitle: "Eventually Necessary"
 			tasks: [{
@@ -643,12 +727,77 @@
 				}
 			}
 			id: "3544AA70216D2F8F"
-			rewards: [{
-				id: "5ED74FE4B0D7187B"
-				item: "mekanism:geiger_counter"
-				team_reward: false
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "5ED74FE4B0D7187B"
+					item: "mekanism:geiger_counter"
+					team_reward: false
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:geiger_counter"
+					id: "1CAEC7DCB51C125B"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:dosimeter"
+					id: "253B05E00DFCE0A3"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:radioactive_waste_barrel"
+					id: "2766A500EA81B76A"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanismgenerators:fission_reactor/casing"
+					id: "16BDFA2B954268EB"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanismgenerators:fission_reactor/logic_adapter"
+					id: "53E0FF33B11A47C3"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanismgenerators:fission_reactor/port"
+					id: "23EEE4F04750A469"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanismgenerators:reactor/glass"
+					id: "059E14B76BAC7B34"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanismgenerators:fission_reactor/control_rod_assembly"
+					id: "6543B69E4811219B"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanismgenerators:fission_reactor/fuel_assembly"
+					id: "0A61944821BA0840"
+					silent: true
+					type: "command"
+				}
+			]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "Fission Reactor Safety Information"
@@ -736,6 +885,22 @@
 			disable_toast: true
 			id: "20397741D8700612"
 			optional: true
+			rewards: [
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:storage_blocks/charcoal"
+					id: "3D0C31419D879888"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:charcoal"
+					id: "5F06D5DBC2ECA652"
+					silent: true
+					type: "command"
+				}
+			]
 			shape: "rsquare"
 			tasks: [{
 				id: "3BF37E8E777DB7F7"
@@ -773,6 +938,13 @@
 		{
 			dependencies: ["79AEA19175F5A380"]
 			id: "5C384B64865C8226"
+			rewards: [{
+				auto: "invisible"
+				command: "/recipe give @p mekanism:chemical_oxidizer"
+				id: "0F8888141BD8BF54"
+				silent: true
+				type: "command"
+			}]
 			shape: "square"
 			subtitle: "Needed for Yellow Cake Uranium"
 			tasks: [{
@@ -902,6 +1074,7 @@
 						}
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: -0.5d

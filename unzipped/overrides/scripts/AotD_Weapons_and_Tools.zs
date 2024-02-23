@@ -79,7 +79,7 @@ smithing.addRecipe("born_in_chaos_v1.dark_ritual_dagger", <item:born_in_chaos_v1
 // IRON LEVEL --------------------------------------------------------------------------------------------------------------------------------
 addRecyclingToolsSuite("minecraft:iron", <item:mekanism:dust_iron>);
 
-<tag:items:aotdextras:iron_level_axe>.add([<item:minecraft:iron_axe>, <item:undead_unleashed:grave_metal_axe>]);
+<tag:items:aotdextras:iron_level_axe>.add([<item:minecraft:iron_axe>, <item:undead_unleashed:grave_metal_axe>, <item:born_in_chaos_v1:wood_splitter_axe>]);
 <tag:items:aotdextras:iron_level_shovel>.add([<item:minecraft:iron_shovel>, <item:undead_unleashed:tombdigger_maul>]);
 craftingTable.remove(<item:undead_unleashed:grave_metal_sword>);
 craftingTable.remove(<item:undead_unleashed:grave_metal_axe>);
@@ -91,6 +91,7 @@ addCrusherRecycling(<item:undead_unleashed:grave_metal_sword>, <item:undead_unle
 addCrusherRecycling(<item:undead_unleashed:grave_metal_axe>, <item:undead_unleashed:grave_metal_scrap> * 2);
 addCrusherRecycling(<item:undead_unleashed:tombdigger_maul>, <item:undead_unleashed:necrotic_dust>);
 
+addCrusherRecycling(<item:born_in_chaos_v1:wood_splitter_axe>, <item:mekanism:dust_iron>);
 addCrusherRecycling(<item:born_in_chaos_v1:spiritual_sword>, <item:born_in_chaos_v1:seedof_chaos>);
 addCrusherRecycling(<item:born_in_chaos_v1:shell_mace>, <item:born_in_chaos_v1:spiny_shell>);
 
@@ -104,7 +105,7 @@ craftingTable.remove(<item:aquamirae:terrible_sword>);
 craftingTable.remove(<item:aquamirae:poisoned_blade>);
 craftingTable.remove(<item:aquamirae:fin_cutter>);
 craftingTable.addShaped("aquamirae.remnants_saber", <item:aquamirae:remnants_saber>, [[IIngredientEmpty.getInstance(), IIngredientEmpty.getInstance(), <item:aquamirae:sharp_bones>], [<item:minecraft:leather>, <item:aquamirae:sharp_bones>, IIngredientEmpty.getInstance()], [<item:mekanismtools:bronze_sword>.anyDamage(), IIngredientEmpty.getInstance(), IIngredientEmpty.getInstance()]]);
-craftingTable.addShaped("aquamirae.terrible_sword", <item:aquamirae:terrible_sword>, [[IIngredientEmpty.getInstance(), <item:aquamirae:ship_graveyard_echo>, <item:aquamirae:anglers_fang>], [<item:minecraft:iron_ingot>, <item:minecraft:ender_eye>, <item:aquamirae:ship_graveyard_echo>], [<item:aquamirae:remnants_saber>.anyDamage(), <item:minecraft:iron_ingot>, IIngredientEmpty.getInstance()]]);
+craftingTable.addShaped("aquamirae.terrible_sword", <item:aquamirae:terrible_sword>, [[IIngredientEmpty.getInstance(), <item:aquamirae:ship_graveyard_echo>, <item:aquamirae:anglers_fang>], [<item:minecraft:iron_ingot>, <item:upgrade_aquatic:elder_eye>, <item:aquamirae:ship_graveyard_echo>], [<item:aquamirae:remnants_saber>.anyDamage(), <item:minecraft:iron_ingot>, IIngredientEmpty.getInstance()]]);
 craftingTable.addShaped("aquamirae.poisoned_blade", <item:aquamirae:poisoned_blade>, [[IIngredientEmpty.getInstance(), <item:aquamirae:anglers_fang>, <item:minecraft:iron_ingot>], [<item:aquamirae:anglers_fang>, <item:minecraft:iron_ingot>, <item:aquamirae:anglers_fang>], [<item:aquamirae:remnants_saber>.anyDamage(), <item:aquamirae:anglers_fang>, IIngredientEmpty.getInstance()]]);
 craftingTable.addShaped("aquamirae.fin_cutter", <item:aquamirae:fin_cutter>, [[IIngredientEmpty.getInstance(), <item:aquamirae:ship_graveyard_echo>, <item:aquamirae:abyssal_amethyst>], [<item:aquamirae:ship_graveyard_echo>, <item:minecraft:diamond>, <item:aquamirae:fin>], [<item:aquamirae:remnants_saber>.anyDamage(), <item:aquamirae:fin>, <item:aquamirae:fin>]]);
 addCrusherRecycling(<item:aquamirae:remnants_saber>, <item:aquamirae:sharp_bones>);
@@ -168,8 +169,8 @@ addToolsCraftingSuite("minecraft:netherite", <item:minecraft:netherite_ingot>, <
 addRecyclingToolsSuite("minecraft:netherite", <item:minecraft:netherite_ingot>);
 
 craftingTable.remove(<item:tenebrous_lands:undead_sword>);
-smithing.addRecipe("tenebrous_lands.bone_sword", <item:tenebrous_lands:undead_sword>, <item:minecraft:netherite_sword>.anyDamage(), <item:minecraft:bone> * 64);
-addCrusherRecycling(<item:tenebrous_lands:undead_sword>, <item:minecraft:bone_meal> * 48);
+smithing.addRecipe("tenebrous_lands.bone_sword", <item:tenebrous_lands:undead_sword>, <item:minecraft:netherite_sword>.anyDamage(), <item:minecraft:bone_block> * 64);
+addCrusherRecycling(<item:tenebrous_lands:undead_sword>, <item:minecraft:bone_meal> * 64);
 
 addCrusherRecycling(<item:undead_unleashed:moonlight_greatsword>, <item:minecraft:netherite_scrap> * 2);
 
@@ -279,7 +280,7 @@ craftingTable.addShaped("mekanismtools.refined_obsidian_shield", <item: mekanism
 	[[<tag:items: minecraft:planks>,           <item:aotdextras:obscurium_ingot>,       <tag:items: minecraft:planks>],
 	 [<item: mekanism:ingot_refined_obsidian>, <tag:items: minecraft:planks>,           <item: mekanism:ingot_refined_obsidian>],
 	 [IIngredientEmpty.getInstance(),          <item: mekanism:ingot_refined_obsidian>, IIngredientEmpty.getInstance()]]);
-smithing.addRecipe("unusualend.end_blob_shield_smthing", <item:unusualend:blob_shield>.withTag({Enchantments: [{lvl: 5, id: "apotheosis:shield_bash"}, {lvl: 3, id: "minecraft:unbreaking"}]}), <tag:items: forge:tools/shields>, <item: unusualend:enderblob_block>);
+smithing.addRecipe("unusualend.end_blob_shield_smthing", <item:unusualend:blob_shield>.withTag({Enchantments: [{lvl: 5, id: "apotheosis:shield_bash"}, {lvl: 3, id: "minecraft:unbreaking"}]}), <item:mekanismtools:lapis_lazuli_shield>, <item: unusualend:enderblob_block>);
 addCrusherRecycling(<item:mekanismtools:lapis_lazuli_shield>, <item:mekanism:dust_lapis_lazuli>);
 addCrusherRecycling(<item:mekanismtools:refined_glowstone_shield>, <item:minecraft:glowstone_dust>);
 addCrusherRecycling(<item:minecraft:shield>, <item:mekanism:dust_iron>);

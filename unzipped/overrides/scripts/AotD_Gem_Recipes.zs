@@ -22,9 +22,9 @@ if(cost > 1) {
 	dust_corners = IIngredientEmpty.getInstance();
 }
 craftingTable.addShaped("aotd." + enchant + "_book", <item:minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:modid + ":" + enchant,lvl:1}]}),
-	[[dust_corners, specialIngredient,     dust_corners],
-	 [dust_center,  <item:minecraft:book>, dust_center],
-	 [dust_corners, specialIngredient,     dust_corners]]);
+	[[dust_corners, specialIngredient.anyDamage(),     dust_corners],
+	 [dust_center,  <item:minecraft:book>,             dust_center],
+	 [dust_corners, specialIngredient.anyDamage(),     dust_corners]]);
 }
 function addBookRecipe2(modid as string, enchant as string, specialIngredient1 as IIngredient, specialIngredient2 as IIngredient, cost as int) as void {
 var dust_corners as IIngredient;
@@ -40,9 +40,9 @@ if(cost > 1) {
 	dust_corners = IIngredientEmpty.getInstance();
 }
 craftingTable.addShaped("aotd." + enchant + "_book", <item:minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:modid + ":" + enchant,lvl:1}]}),
-	[[dust_corners, specialIngredient1,    dust_corners],
-	 [dust_center,  <item:minecraft:book>, dust_center],
-	 [dust_corners, specialIngredient2,    dust_corners]]);
+	[[dust_corners, specialIngredient1.anyDamage(),    dust_corners],
+	 [dust_center,  <item:minecraft:book>,             dust_center],
+	 [dust_corners, specialIngredient2.anyDamage(),    dust_corners]]);
 }
 
 // Enchantment Recipes ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -140,22 +140,24 @@ addBookRecipe2("apotheosis", "growth_serum", <item:minecraft:shears>, <item:apot
 
 function addGemRecipe3(input1 as IIngredient, input2 as IIngredient, input3 as IIngredient, gemType as string, rarityType as string) as void {
 craftingTable.addShapedMirrored("aotd." + gemType, MirrorAxis.ALL, <item:apotheosis:gem>.withTag({gem:"apotheosis:" + gemType,rarity:rarityType}),
-	[[input1,                         <item:apotheosis:gem_dust>, IIngredientEmpty.getInstance()],
-	 [<item:apotheosis:gem_dust>,     input2,                     <item:apotheosis:gem_dust>],
-	 [IIngredientEmpty.getInstance(), <item:apotheosis:gem_dust>, input3]]);
+	[[input1.anyDamage(),             <item:apotheosis:gem_dust>, IIngredientEmpty.getInstance()],
+	 [<item:apotheosis:gem_dust>,     input2.anyDamage(),         <item:apotheosis:gem_dust>],
+	 [IIngredientEmpty.getInstance(), <item:apotheosis:gem_dust>, input3.anyDamage()]]);
 }
 function addGemRecipe4(input1 as IIngredient, input2 as IIngredient, input3 as IIngredient, input4 as IIngredient, gemType as string, rarityType as string) as void {
 craftingTable.addShapedMirrored("aotd." + gemType, MirrorAxis.ALL, <item:apotheosis:gem>.withTag({gem:"apotheosis:" + gemType,rarity:rarityType}),
-	[[input1,                     <item:apotheosis:gem_dust>,     input2],
+	[[input1.anyDamage(),         <item:apotheosis:gem_dust>,     input2.anyDamage()],
 	 [<item:apotheosis:gem_dust>, IIngredientEmpty.getInstance(), <item:apotheosis:gem_dust>],
-	 [input3,                     <item:apotheosis:gem_dust>,     input4]]);
+	 [input3.anyDamage(),         <item:apotheosis:gem_dust>,     input4.anyDamage()]]);
 }
 function addGemRecipe5(input1 as IIngredient, input2 as IIngredient, input3 as IIngredient, input4 as IIngredient, input5 as IIngredient, gemType as string, rarityType as string) as void {
 craftingTable.addShapedMirrored("aotd." + gemType, MirrorAxis.ALL, <item:apotheosis:gem>.withTag({gem:"apotheosis:" + gemType,rarity:rarityType}),
-	[[input1,                     <item:apotheosis:gem_dust>, input2],
-	 [<item:apotheosis:gem_dust>, input3,                     <item:apotheosis:gem_dust>],
-	 [input4,                     <item:apotheosis:gem_dust>, input5]]);
+	[[input1.anyDamage(),         <item:apotheosis:gem_dust>, input2.anyDamage()],
+	 [<item:apotheosis:gem_dust>, input3.anyDamage(),         <item:apotheosis:gem_dust>],
+	 [input4.anyDamage(),         <item:apotheosis:gem_dust>, input5.anyDamage()]]);
 }
+
+<recipetype:mekanism:crushing>.addRecipe("aotd_crusher_gem_dust", <item:apotheosis:gem>, <item:apotheosis:gem_dust>);
 
 var helmets = <item:minecraft:leather_helmet>;
 var chestplates = <item:minecraft:leather_chestplate>;

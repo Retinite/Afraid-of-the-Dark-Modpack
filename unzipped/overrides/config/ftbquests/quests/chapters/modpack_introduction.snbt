@@ -77,6 +77,34 @@
 					silent: true
 					type: "command"
 				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p everlastingabilities:ability_bottle"
+					id: "467FD2EC7D8B2387"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p apotheosis:book"
+					id: "4221A3B7CD455178"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p bhc:heart_amulet"
+					id: "429003F2C5E3559D"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p waystones:return_scroll"
+					id: "4FA2E0F51EFDFF8E"
+					silent: true
+					type: "command"
+				}
 			]
 			size: 2.0d
 			subtitle: "Read Me!"
@@ -400,15 +428,28 @@
 				team_reward: false
 				type: "item"
 			}]
-			subtitle: "Tip: Keep Some At Spawn"
-			tasks: [{
-				count: 16L
-				disable_toast: true
-				id: "050350FE18CB25C5"
-				item: "minecraft:torch"
-				type: "item"
-			}]
-			title: "Lights"
+			subtitle: "Tip: Keep Torches At Spawn"
+			tasks: [
+				{
+					count: 16L
+					disable_toast: true
+					id: "050350FE18CB25C5"
+					item: "minecraft:torch"
+					type: "item"
+				}
+				{
+					id: "3B6F4EAADC35BC9E"
+					item: {
+						Count: 1b
+						id: "sanitydim:garland"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Lights \\& Sanity"
 			x: 0.0d
 			y: 2.0d
 		}
@@ -450,6 +491,27 @@
 					item: "majruszsdifficulty:bandage"
 					team_reward: false
 					type: "item"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p graveyard:bone_dagger"
+					id: "37E3C778F517A36C"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p majruszsdifficulty:bandage"
+					id: "3B791050E769298C"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p majruszsdifficulty:golden_bandage"
+					id: "36EF90973605182C"
+					silent: true
+					type: "command"
 				}
 			]
 			subtitle: "And Deadlier Creepers"
@@ -659,7 +721,6 @@
 				"Armor Toughness Bar"
 				"Bad Wither No Cookie - Reloaded"
 				"Better Advancements"
-				"BetterF3"
 				"Carry On"
 				"Clickable advancements[Forge/Fabric]"
 				"Configured"
@@ -764,6 +825,7 @@
 				"Dark Mode Everywhere"
 				"Difficult Caves"
 				"Dusk[Forge/Fabric]"
+				"Explorer's Compass"
 				"Eyes in the Darkness"
 				"Fading Night Vision"
 				"FTB Chunks (Forge)"
@@ -778,6 +840,7 @@
 				"Mimic Mod"
 				"Miner's Helmet"
 				"Mobs Properties Randomness"
+				"Nature's Compass"
 				"Nyf's Spiders"
 				"Observed"
 				"Quests Additions (Forge)"

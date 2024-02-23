@@ -17,8 +17,8 @@ craftingTable.addShaped("mekanism.free_runners", <item:mekanism:free_runners>,
 
 craftingTable.removeByName("mekanism:jetpack");
 craftingTable.addShaped("mekanism.jetpack", <item:mekanism:jetpack>,
-	[[<tag:items:forge:ingots/steel>, <tag:items:forge:circuits/basic>, <tag:items:forge:ingots/steel>],
-	[<tag:items:forge:ingots/tin>, <item:mekanism:advanced_chemical_tank>, <tag:items:forge:ingots/tin>],
+	[[<tag:items:forge:ingots/steel>, <tag:items:forge:circuits/elite>, <tag:items:forge:ingots/steel>],
+	[<item:mekanism:advanced_chemical_tank>, <item:minecraft:netherite_ingot>, <item:mekanism:advanced_chemical_tank>],
 	[IIngredientEmpty.getInstance(), <item:minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 3, id: "minecraft:unbreaking"}, {lvl: 1, id: "minecraft:mending"}]}), IIngredientEmpty.getInstance()]]);
 
 // Modules

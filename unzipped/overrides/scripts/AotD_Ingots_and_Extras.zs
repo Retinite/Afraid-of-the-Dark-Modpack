@@ -48,7 +48,7 @@ craftingTable.addShapeless("aotdextras.luxum_ingot", <item: aotdextras:luxum_ing
 	 <item: aquamirae:luminescent_lamp>,	         <item: observed:observereye>,             <item: minecraft:shroomlight>]);
 <recipetype:mekanism:crushing>.addRecipe("luxum_lamp_recycle", <item: aotdextras:luxum_lamp>, <item: aotdextras:luxum_ingot>);
 
-<tag:items: aotdextras:epic_drops>.add([<item: john_mod_reborn:bloody_tear>, <item: deep_dark_regrowth:plasmatic_sculk>, <item: deep_dark_regrowth:etherium_gem>, <item: deep_dark_regrowth:aware_lens>, <item: apotheosis:epic_material>]);
+<tag:items: aotdextras:epic_drops>.add([<item: john_mod_reborn:bloody_tear>, <item: deep_dark_regrowth:plasmatic_sculk>, <item: deep_dark_regrowth:etherium_gem>, <item: deep_dark_regrowth:aware_lens>, <item: apotheosis:epic_material>, <item: unusualend:shiny_crystal>]);
 <tag:items: aotdextras:boss_drops>.add([<item: minecraft:nether_star>, <item: deep_dark_regrowth:soul_of_the_depths>, <item: aquamirae:abyssal_amethyst>, <item: whisperwoods:hirschgeist_skull>, <item: apotheosis:warden_tendril>]);
 craftingTable.addShaped("aotdextras.nihilum_ingot", <item: aotdextras:nihilum_ingot>,
 	[[<item: deep_dark_regrowth:galm>,          <item: aotdextras:occultium_ingot>, <item: born_in_chaos_v1:black_argillite>],
@@ -63,19 +63,20 @@ smithing.addRecipe("aotd.nihilum_from_luxum_block", <item:aotdextras:nihilum_blo
 
 // Component resources -----------------------------------------------------------------------------------------------------------------------
 
+smithing.addRecipe("born_in_chaos_v1.black_argillite", <item: born_in_chaos_v1:black_argillite>, <tag:items:forge:stone>, <item:graveyard:corruption>);
 smithing.addRecipe("deep_dark_regrowth.corrupted_matter", <item:deep_dark_regrowth:corrupted_matter>, <item:deep_dark_regrowth:galm>, <item:deep_dark_regrowth:plasmatic_sculk>);
 
 craftingTable.remove(<item:monsterplus:ancient_crystal>);
 craftingTable.addShaped("monsterplus.ancient_crystal", <item:monsterplus:ancient_crystal>,
 	[[<item:minecraft:amethyst_shard>, <item:monsterplus:crystal_shard>, <item:minecraft:amethyst_shard>],
-	[<item:monsterplus:crystal_shard>, <item:monsterplus:crystal_clump>, <item:monsterplus:crystal_shard>],
-	[<item:minecraft:amethyst_shard>,  <item:monsterplus:crystal_shard>, <item:minecraft:amethyst_shard>]]);
+	 [<item:monsterplus:crystal_shard>,<item:monsterplus:crystal_clump>, <item:monsterplus:crystal_shard>],
+	 [<item:minecraft:amethyst_shard>, <item:monsterplus:crystal_shard>, <item:minecraft:amethyst_shard>]]);
 
 craftingTable.remove(<item:bhc:soul_heart_crystal>);
 craftingTable.addShaped("bhc.soul_heart_crystal", <item:bhc:soul_heart_crystal>,
 	[[<item:minecraft:echo_shard>, <item:bhc:red_heart>,           <item:minecraft:echo_shard>],
-	[<item:bhc:yellow_heart>,      <item:bhc:soul_heart_canister>, <item:bhc:green_heart>],
-	[<item:minecraft:echo_shard>,  <item:bhc:blue_heart>,          <item:minecraft:echo_shard>]]);
+	 [<item:bhc:yellow_heart>,     <item:bhc:soul_heart_canister>, <item:bhc:green_heart>],
+	 [<item:minecraft:echo_shard>, <item:bhc:blue_heart>,          <item:minecraft:echo_shard>]]);
 
 // Miscellaneous -----------------------------------------------------------------------------------------------------------------------------
 
@@ -83,13 +84,19 @@ craftingTable.addShaped("bhc.soul_heart_crystal", <item:bhc:soul_heart_crystal>,
 craftingTable.remove(<item:aotdextras:glow_tnt>);
 craftingTable.addShaped("aotdextras.glow_tnt", <item:aotdextras:glow_tnt> * 9,
 	[[<item:minecraft:tnt>, <item:minecraft:tnt>,          <item:minecraft:tnt>],
-	[<item:minecraft:tnt>,  <item:aotdextras:luxum_ingot>, <item:minecraft:tnt>],
-	[<item:minecraft:tnt>,  <item:minecraft:tnt>,          <item:minecraft:tnt>]]);
+	 [<item:minecraft:tnt>, <item:aotdextras:luxum_ingot>, <item:minecraft:tnt>],
+	 [<item:minecraft:tnt>, <item:minecraft:tnt>,          <item:minecraft:tnt>]]);
 
 // incorporate nature's compass recipe
 craftingTable.remove(<item: naturescompass:naturescompass>);
 craftingTable.addShaped("naturescompass.naturescompass", <item: naturescompass:naturescompass>,
-	[[<item:aotdextras:obscurium_ingot>, <tag:items:minecraft:logs>, <item:aotdextras:obscurium_ingot>],
-	[<tag:items:minecraft:logs>,         <item:minecraft:compass>,   <tag:items:minecraft:logs>],
-	[<item:aotdextras:obscurium_ingot>,  <tag:items:minecraft:logs>, <item:aotdextras:obscurium_ingot>]]);
+	[[<item:aotdextras:obscurium_block>, <tag:items:minecraft:logs>, <item:aotdextras:obscurium_block>],
+	 [<tag:items:minecraft:logs>,        <item:minecraft:compass>,   <tag:items:minecraft:logs>],
+	 [<item:aotdextras:obscurium_block>, <tag:items:minecraft:logs>, <item:aotdextras:obscurium_block>]]);
 
+// incorporate explorer's compass recipe
+craftingTable.remove(<item: explorerscompass:explorerscompass>);
+craftingTable.addShaped("explorerscompass.explorerscompass", <item: explorerscompass:explorerscompass>,
+	[[<item:unusualend:ancient_shard>,   <item:aotdextras:occultium_block>, <item:unusualend:ancient_shard>],
+	 [<item:aotdextras:occultium_block>, <item:minecraft:compass>,          <item:aotdextras:occultium_block>],
+	 [<item:unusualend:ancient_shard>,   <item:aotdextras:occultium_block>, <item:unusualend:ancient_shard>]]);

@@ -122,22 +122,28 @@
 			optional: true
 			rewards: [
 				{
-					count: 16
-					id: "28B7E180052B4F66"
-					item: "apotheosis:infused_hellshelf"
-					type: "item"
+					exclude_from_claim_all: true
+					id: "0536391CB9DE5509"
+					table_id: 3842411146645360495L
+					type: "choice"
 				}
 				{
-					count: 16
-					id: "3D0FBAFD80EBBA55"
-					item: "apotheosis:infused_seashelf"
-					type: "item"
+					exclude_from_claim_all: true
+					id: "450C7DEA4BAF30C4"
+					table_id: 3842411146645360495L
+					type: "choice"
 				}
 				{
-					count: 16
-					id: "16DDD41E9B66526F"
-					item: "apotheosis:deepshelf"
-					type: "item"
+					exclude_from_claim_all: true
+					id: "026C072ABF35A3E1"
+					table_id: 3842411146645360495L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "524E96BBF6A98E50"
+					table_id: 3842411146645360495L
+					type: "choice"
 				}
 			]
 			shape: "diamond"
@@ -213,13 +219,13 @@
 		{
 			dependencies: ["590D8D834833D3D6"]
 			description: [
-				"Drop an &7Anvil&r onto any &dgem&r (obtained by mob drop or loot chest) to convert it into &9Gem Dust&r, at least until you have a &oSalvaging Table&r."
+				"Drop an &7Anvil&r onto any &dGem&r (obtained by mob drop or loot chest) to convert it into &9Gem Dust&r, at least until you have a &oSalvaging Table&r. A &lMekanism&r &7Crusher&r also works, but only yields 1 &9Gem Dust&r per &dGem&r, regardless of rarity."
 				""
 				"&lEvery&r (lvl 1) &lEnchanted Book and every&r (lowest-tier) &dGem&r &lnow has a recipe using &9Gem Dust&r&l!&r"
 			]
 			id: "7B89564BA9259C4B"
 			rewards: [{
-				count: 16
+				count: 8
 				id: "61A093D94B811F90"
 				item: "apotheosis:gem_dust"
 				type: "item"
@@ -238,7 +244,7 @@
 			description: ["The rarity of a &dgem&r can be increased by combining two &dgems&r of the same rarity together with &9Gem Dust&r."]
 			id: "35BD6DD9B4F4FCA1"
 			rewards: [{
-				count: 16
+				count: 8
 				id: "695C3470A802A0D8"
 				item: "apotheosis:rare_material"
 				type: "item"
@@ -265,7 +271,7 @@
 					type: "item"
 				}
 				{
-					count: 32
+					count: 8
 					id: "3E0A501941E59D13"
 					item: "apotheosis:uncommon_material"
 					type: "item"
@@ -285,7 +291,6 @@
 			dependencies: ["6A749C30A9410B7F"]
 			id: "0D1E009915B7B54C"
 			rewards: [{
-				count: 4
 				id: "062ACDEBB406BC3D"
 				item: "apotheosis:mythic_material"
 				type: "item"
@@ -345,7 +350,6 @@
 			dependencies: ["7EC54637441573C3"]
 			id: "6A749C30A9410B7F"
 			rewards: [{
-				count: 8
 				id: "211FD59DA6676BF0"
 				item: "apotheosis:epic_material"
 				type: "item"
@@ -857,49 +861,28 @@
 			optional: true
 			rewards: [
 				{
-					id: "2BF2188E8F89DA9B"
-					item: "apotheosis:other_tome"
-					type: "item"
+					exclude_from_claim_all: true
+					id: "195C0E8AE5796185"
+					table_id: 1458049469795989010L
+					type: "choice"
 				}
 				{
-					id: "7F62169EA7593C35"
-					item: "apotheosis:helmet_tome"
-					type: "item"
+					exclude_from_claim_all: true
+					id: "27C1ECB84245AB0B"
+					table_id: 1458049469795989010L
+					type: "choice"
 				}
 				{
-					id: "1A587F2D714E71BE"
-					item: "apotheosis:chestplate_tome"
-					type: "item"
+					exclude_from_claim_all: true
+					id: "6322D6C00B7518FF"
+					table_id: 1458049469795989010L
+					type: "choice"
 				}
 				{
-					id: "34E064BD4DDC659F"
-					item: "apotheosis:leggings_tome"
-					type: "item"
-				}
-				{
-					id: "1D84248942226D2F"
-					item: "apotheosis:boots_tome"
-					type: "item"
-				}
-				{
-					id: "6CB45AC7349BF94B"
-					item: "apotheosis:weapon_tome"
-					type: "item"
-				}
-				{
-					id: "7281ABBD3BBA57C6"
-					item: "apotheosis:pickaxe_tome"
-					type: "item"
-				}
-				{
-					id: "0A067023862A3A91"
-					item: "apotheosis:fishing_tome"
-					type: "item"
-				}
-				{
-					id: "0AB85704D8345543"
-					item: "apotheosis:bow_tome"
-					type: "item"
+					exclude_from_claim_all: true
+					id: "567867428CBA1943"
+					table_id: 1458049469795989010L
+					type: "choice"
 				}
 			]
 			shape: "diamond"
@@ -964,6 +947,13 @@
 				"This quest detects &oany&r kind of potion charm, not just Regeneration."
 			]
 			id: "37B1E6AC2FE685BB"
+			rewards: [{
+				count: 6
+				id: "343B17170E672656"
+				item: "minecraft:blaze_powder"
+				team_reward: false
+				type: "item"
+			}]
 			subtitle: "Lasts for ~25 minutes!"
 			tasks: [{
 				id: "4D0D7ABF9D779992"
@@ -1233,6 +1223,7 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["78AA59DA9B05CBEF"]
 			id: "5D6BAF1607CE4036"
 			rewards: [{
 				id: "0E01C5E9AF83B6AD"

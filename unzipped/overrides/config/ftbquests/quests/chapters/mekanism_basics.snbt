@@ -3,7 +3,6 @@
 	default_quest_shape: ""
 	filename: "mekanism_basics"
 	group: "37DA37ED2FACCAC8"
-	hide_quest_details_until_startable: true
 	icon: "mekanism:raw_osmium"
 	id: "15730FA9D8A650A2"
 	order_index: 0
@@ -39,6 +38,34 @@
 					item: "mekanism:enriched_redstone"
 					type: "item"
 				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:processing/steel/ingot/from_dust_blasting"
+					id: "0A2DD2807B0563B5"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:processing/steel/ingot/from_dust_smelting"
+					id: "4E56859C21CA9785"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:processing/bronze/ingot/from_dust_blasting"
+					id: "6249436D2F65CF70"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:processing/bronze/ingot/from_dust_smelting"
+					id: "75C2935599C82989"
+					silent: true
+					type: "command"
+				}
 			]
 			shape: "gear"
 			subtitle: "Read Me!"
@@ -62,12 +89,56 @@
 		{
 			dependencies: ["373F31EF730C160D"]
 			id: "261EC605D7331140"
-			rewards: [{
-				count: 8
-				id: "71EA581AEA689562"
-				item: "mekanism:basic_control_circuit"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "71EA581AEA689562"
+					item: "mekanism:basic_control_circuit"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:bin/basic"
+					id: "5E1910DFD8C343B9"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:energized_smelter"
+					id: "51E3CCA265651DCC"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:crusher"
+					id: "06023E8D21784460"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:enrichment_chamber"
+					id: "6C684BD6926EFE72"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:tier_installer/basic"
+					id: "113F8BE6F98B0A5E"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:control_circuit/advanced"
+					id: "1E8C07E8C242B709"
+					silent: true
+					type: "command"
+				}
+			]
 			shape: "rsquare"
 			size: 1.5d
 			tasks: [{
@@ -95,22 +166,85 @@
 					item: "mekanism:alloy_infused"
 					type: "item"
 				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:control_circuit/elite"
+					id: "737FA7272DA12A76"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:energy_tablet"
+					id: "437AC50180DEA8AA"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:precision_sawmill"
+					id: "30C3D0D519E97AF5"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:upgrade/energy"
+					id: "5A1CC0705539487C"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:upgrade/speed"
+					id: "5575593849E6CE40"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:upgrade/muffling"
+					id: "7F77932ABE1EDD6F"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:solar_panel"
+					id: "3983484423B3B165"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:osmium_compressor"
+					id: "77A726A97553AB63"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:electric_pump"
+					id: "532F735B23B18C17"
+					silent: true
+					type: "command"
+				}
 			]
 			shape: "rsquare"
 			size: 1.5d
 			tasks: [
 				{
-					disable_toast: true
-					id: "626BD3D8355B7F31"
-					item: "mekanism:advanced_control_circuit"
-					type: "item"
-				}
-				{
 					id: "6C09331D478DEC90"
 					item: "mekanism:alloy_infused"
 					type: "item"
 				}
+				{
+					id: "1815EB6D14251C52"
+					item: "mekanism:advanced_control_circuit"
+					type: "item"
+				}
 			]
+			title: "&cAdvanced Materials&r"
 			x: 4.5d
 			y: 1.5d
 		}
@@ -130,23 +264,29 @@
 					item: "mekanism:alloy_reinforced"
 					type: "item"
 				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:control_circuit/ultimate"
+					id: "6EACB063451E2443"
+					silent: true
+					type: "command"
+				}
 			]
 			shape: "rsquare"
 			size: 1.5d
 			tasks: [
 				{
-					disable_toast: true
-					id: "105D46C175A03A23"
-					item: "mekanism:elite_control_circuit"
-					type: "item"
-				}
-				{
 					id: "18C91F0295DF7BA4"
 					item: "mekanism:alloy_reinforced"
 					type: "item"
 				}
+				{
+					id: "7D948F3D9A3DD5E8"
+					item: "mekanism:elite_control_circuit"
+					type: "item"
+				}
 			]
-			title: "&bElite Control Circuit&r"
+			title: "&bElite Materials&r"
 			x: 6.5d
 			y: 1.5d
 		}
@@ -176,18 +316,17 @@
 			subtitle: "Unlocks Quests Elsewhere"
 			tasks: [
 				{
-					disable_toast: true
-					id: "44D49F5308440AD1"
-					item: "mekanism:ultimate_control_circuit"
-					type: "item"
-				}
-				{
 					id: "0A1BE67BE9949752"
 					item: "mekanism:alloy_atomic"
 					type: "item"
 				}
+				{
+					id: "0A68C40822C6BC9B"
+					item: "mekanism:ultimate_control_circuit"
+					type: "item"
+				}
 			]
-			title: "&dUltimate Control Circuit&r"
+			title: "&dUltimate Materials&r"
 			x: 8.5d
 			y: 1.5d
 		}
@@ -255,12 +394,35 @@
 			hide_dependent_lines: true
 			id: "0E3F7479492CB3B6"
 			optional: true
-			rewards: [{
-				count: 4
-				id: "5278636FE151E0D7"
-				item: "mekanism:basic_tier_installer"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "5278636FE151E0D7"
+					item: "mekanism:basic_tier_installer"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:tier_installer/advanced"
+					id: "5C36E5D025072BDB"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:tier_installer/elite"
+					id: "11CE6B2B2C5355AB"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:tier_installer/ultimate"
+					id: "5C7957EFC746F812"
+					silent: true
+					type: "command"
+				}
+			]
 			shape: "gear"
 			subtitle: "Parallel Processing!"
 			tasks: [{
@@ -287,6 +449,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
+			subtitle: "5-In-1"
 			tasks: [{
 				id: "75C871C1BD0F2B2A"
 				item: "mekanism:advanced_tier_installer"
@@ -310,6 +473,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
+			subtitle: "7-In-1"
 			tasks: [{
 				id: "65DB4BB353E6EF31"
 				item: "mekanism:elite_tier_installer"
@@ -331,6 +495,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
+			subtitle: "9-In-1"
 			tasks: [{
 				id: "01D75A573A729EE6"
 				item: "mekanism:ultimate_tier_installer"
@@ -463,7 +628,7 @@
 			optional: true
 			rewards: [
 				{
-					count: 8
+					count: 4
 					id: "66CE7A5A03B9C54C"
 					item: "mekanism:enriched_redstone"
 					type: "item"
@@ -475,7 +640,6 @@
 					type: "item"
 				}
 				{
-					count: 2
 					id: "40A8C08B5CE59CFB"
 					item: "mekanism:enriched_diamond"
 					type: "item"
@@ -531,11 +695,34 @@
 			icon: "mekanism:precision_sawmill"
 			id: "73DC5EF97C0A7490"
 			optional: true
-			rewards: [{
-				id: "2F9B81FC62774862"
-				item: "mekanism:steel_casing"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "2F9B81FC62774862"
+					item: "mekanism:steel_casing"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:cardboard_box"
+					id: "013C06F5D7B3E890"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:paper"
+					id: "473778EC7B18CA4B"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:dye_base"
+					id: "7274F19186F3FC76"
+					silent: true
+					type: "command"
+				}
+			]
 			shape: "diamond"
 			subtitle: "Recyle Wooden Items"
 			tasks: [
@@ -609,12 +796,35 @@
 				"Consider upgrading to higher tiers."
 			]
 			id: "5910AFDFB6A8B962"
-			rewards: [{
-				count: 16
-				id: "2B3ECB0E249F29FE"
-				item: "mekanism:basic_universal_cable"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "2B3ECB0E249F29FE"
+					item: "mekanism:advanced_universal_cable"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:transmitter/universal_cable/advanced"
+					id: "061E69C73BD4D4D9"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:transmitter/universal_cable/elite"
+					id: "5AD323439508DA26"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:transmitter/universal_cable/ultimate"
+					id: "2A424F2802057933"
+					silent: true
+					type: "command"
+				}
+			]
 			shape: "square"
 			size: 0.8d
 			subtitle: "Energy"
@@ -635,12 +845,35 @@
 				"Consider upgrading to higher tiers."
 			]
 			id: "6030D3189CF1DA2D"
-			rewards: [{
-				count: 16
-				id: "7432E844A4C192B7"
-				item: "mekanism:basic_mechanical_pipe"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "7432E844A4C192B7"
+					item: "mekanism:advanced_mechanical_pipe"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:transmitter/mechanical_pipe/advanced"
+					id: "1CC648E8746CC999"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:transmitter/mechanical_pipe/elite"
+					id: "33166D91CB7B1850"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:transmitter/mechanical_pipe/ultimate"
+					id: "42BBCFDCDD6C9104"
+					silent: true
+					type: "command"
+				}
+			]
 			shape: "square"
 			size: 0.8d
 			subtitle: "Liquids"
@@ -661,12 +894,35 @@
 				"Consider upgrading to higher tiers."
 			]
 			id: "5037A8055BDA875E"
-			rewards: [{
-				count: 16
-				id: "4DF3BE983C2DC63B"
-				item: "mekanism:basic_pressurized_tube"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "4DF3BE983C2DC63B"
+					item: "mekanism:advanced_pressurized_tube"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:transmitter/pressurized_tube/advanced"
+					id: "6150401876FEA616"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:transmitter/pressurized_tube/elite"
+					id: "4F17EAA03E13F749"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:transmitter/pressurized_tube/ultimate"
+					id: "3BC45F9CA394193D"
+					silent: true
+					type: "command"
+				}
+			]
 			shape: "square"
 			size: 0.8d
 			subtitle: "Gases"
@@ -691,12 +947,35 @@
 			]
 			hide_dependent_lines: true
 			id: "7E9EB5F28B524B41"
-			rewards: [{
-				count: 16
-				id: "27CF6E8DBCFCB3AB"
-				item: "mekanism:basic_logistical_transporter"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "27CF6E8DBCFCB3AB"
+					item: "mekanism:advanced_logistical_transporter"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:transmitter/logistical_transporter/advanced"
+					id: "7AF5AED225D06FA1"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:transmitter/logistical_transporter/elite"
+					id: "63CF35F8312F6652"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:transmitter/logistical_transporter/ultimate"
+					id: "451DE9FD782086BC"
+					silent: true
+					type: "command"
+				}
+			]
 			shape: "square"
 			size: 0.8d
 			subtitle: "Items"
@@ -1031,6 +1310,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
+			subtitle: "Non-Liquid Buckets"
 			tasks: [{
 				disable_toast: true
 				id: "7D8A14348389A2EB"
@@ -1141,12 +1421,35 @@
 			]
 			id: "2E8F03DBE313C53C"
 			optional: true
-			rewards: [{
-				count: 16
-				id: "02C90A24AD3EB560"
-				item: "mekanism:basic_thermodynamic_conductor"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "02C90A24AD3EB560"
+					item: "mekanism:advanced_thermodynamic_conductor"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:transmitter/thermodynamic_conductor/advanced"
+					id: "296BC838E6E1FE13"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:transmitter/thermodynamic_conductor/elite"
+					id: "031C9CE5C0D2A628"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/recipe give @p mekanism:transmitter/thermodynamic_conductor/ultimate"
+					id: "6A54EDC0091FC297"
+					silent: true
+					type: "command"
+				}
+			]
 			shape: "diamond"
 			size: 0.8d
 			subtitle: "Heat"
@@ -1310,6 +1613,7 @@
 			rewards: [{
 				id: "036FE1CE6C02AD75"
 				item: "mekanism:cardboard_box"
+				team_reward: false
 				type: "item"
 			}]
 			shape: "diamond"
