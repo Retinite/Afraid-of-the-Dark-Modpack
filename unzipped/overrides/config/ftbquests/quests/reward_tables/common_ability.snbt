@@ -1,0 +1,104 @@
+{
+	icon: {
+		Count: 1b
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "ironchests:textures/block/barrels/copper/top.png"
+		}
+	}
+	id: "62AD8347EAA5C7EA"
+	loot_size: 1
+	order_index: 3
+	rewards: [
+		{
+			icon: "minecraft:bone_meal"
+			item: {
+				Count: 1b
+				id: "everlastingabilities:ability_totem"
+				tag: {
+					"everlastingabilities:abilityStoreStack": [{
+						level: 1
+						name: "everlastingabilities:special/bonemealer"
+					}]
+				}
+			}
+			title: "Bonemealer AoE"
+		}
+		{
+			icon: "minecraft:wheat"
+			item: {
+				Count: 1b
+				id: "everlastingabilities:ability_totem"
+				tag: {
+					"everlastingabilities:abilityStoreStack": [{
+						level: 1
+						name: "everlastingabilities:special/fertility"
+					}]
+				}
+			}
+			title: "Fertility AoE"
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:textures/mob_effect/haste.png"
+				}
+			}
+			item: {
+				Count: 1b
+				id: "everlastingabilities:ability_totem"
+				tag: {
+					"everlastingabilities:abilityStoreStack": [{
+						level: 1
+						name: "everlastingabilities:effect/haste"
+					}]
+				}
+			}
+			title: "Haste"
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:textures/mob_effect/jump_boost.png"
+				}
+			}
+			item: {
+				Count: 1b
+				id: "everlastingabilities:ability_totem"
+				tag: {
+					"everlastingabilities:abilityStoreStack": [{
+						level: 1
+						name: "everlastingabilities:effect/jump_boost"
+					}]
+				}
+			}
+			title: "Jump Boost"
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:textures/mob_effect/luck.png"
+				}
+			}
+			item: {
+				Count: 1b
+				id: "everlastingabilities:ability_totem"
+				tag: {
+					"everlastingabilities:abilityStoreStack": [{
+						level: 1
+						name: "everlastingabilities:effect/luck"
+					}]
+				}
+			}
+			title: "Luck"
+		}
+	]
+	title: "Common Ability"
+	use_title: true
+}

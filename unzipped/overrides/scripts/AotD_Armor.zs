@@ -105,7 +105,7 @@ addArmorCraftingSuite("minecraft:iron", <item:minecraft:iron_ingot>, <item:aotde
 addRecyclingArmorSuite("minecraft:iron", <item:mekanism:dust_iron>);
 
 craftingTable.remove(<item:mining_helmet:mining_helmet>);
-craftingTable.addShaped("mining_helmet.mining_helmet", <item:mining_helmet:mining_helmet>, [[IIngredientEmpty.getInstance(), <item:minecraft:lantern>, IIngredientEmpty.getInstance()], [<item:minecraft:leather>, <item:minecraft:iron_ingot>, <item:minecraft:leather>], [<item:minecraft:iron_ingot>, <item:minecraft:leather_helmet>, <item:minecraft:iron_ingot>]]);
+craftingTable.addShaped("mining_helmet.mining_helmet", <item:mining_helmet:mining_helmet>, [[IIngredientEmpty.getInstance(), <item:minecraft:lantern>, IIngredientEmpty.getInstance()], [<item:minecraft:leather>, <item:minecraft:iron_ingot>, <item:minecraft:leather>], [<item:minecraft:iron_ingot>, <item:minecraft:leather_helmet>.anyDamage(), <item:minecraft:iron_ingot>]]);
 addCrusherRecycling(<item:mining_helmet:mining_helmet>, <item:mekanism:dust_iron> * 2);
 
 craftingTable.remove(<item:born_in_chaos_v1:spiny_shell_armor_helmet>);
@@ -215,7 +215,10 @@ addArmorCraftingSuite("mekanismtools:osmium", <item:mekanism:block_osmium>, <ite
 addRecyclingArmorSuite("mekanismtools:osmium", <item:mekanism:dust_osmium>);
 
 removeArmor("tenebrous_lands:siege_armor");
-addSubArmorCraftingSuite("tenebrous_lands:siege_armor", <item:tenebrous_lands:zenyr>, "mekanismtools:osmium");
+smithing.addRecipe("tenebrous_lands.siege_armor_helmet", <item:tenebrous_lands:siege_armor_helmet>, <item:mekanismtools:osmium_helmet>, <item:tenebrous_lands:zenyr> * 20);
+smithing.addRecipe("tenebrous_lands.siege_armor_chestplate", <item:tenebrous_lands:siege_armor_chestplate>, <item:mekanismtools:osmium_chestplate>, <item:tenebrous_lands:zenyr> * 32);
+smithing.addRecipe("tenebrous_lands.siege_armor_leggings", <item:tenebrous_lands:siege_armor_leggings>, <item:mekanismtools:osmium_leggings>, <item:tenebrous_lands:zenyr> * 28);
+smithing.addRecipe("tenebrous_lands.siege_armor_boots", <item:tenebrous_lands:siege_armor_boots>, <item:mekanismtools:osmium_boots>, <item:tenebrous_lands:zenyr> * 16);
 addRecyclingArmorSuite("tenebrous_lands:siege_armor", <item:tenebrous_lands:zenyr>);
 
 removeArmor("deep_dark_regrowth:ancient");

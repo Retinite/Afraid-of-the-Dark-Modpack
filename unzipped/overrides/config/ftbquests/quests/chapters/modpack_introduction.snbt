@@ -122,9 +122,7 @@
 			dependencies: ["318126553F4ED0EC"]
 			description: [
 				"&l&cEverlasting Abilities&r"
-				"Equip permanent perks at the cost of &aexp&r. Mobs will occasionally spawn with obvious particle effects, and killing one will drop its ability. One random ability of yours will drop when you die - and &lnot on your corpse!&r"
-				""
-				"The &ncraftable&r &6ability bottle&r allows you to store and swap abilities. You can also craft three abilities together to make a &onew random ability&r (recipes are fixed by your world seed)."
+				"Equip permanent perks at the cost of &aexp&r. The &ncraftable&r &6ability bottle&r allows you to store and swap abilities. One random ability of yours will drop when you die - and &lnot on your corpse!&r"
 				""
 				"&o&cThe more passive abilities you have, the faster your hunger drains!&r"
 			]
@@ -137,19 +135,11 @@
 			}
 			id: "5208A083200FA0CC"
 			rewards: [{
-				id: "5E2DD31E9989349D"
-				item: {
-					Count: 1b
-					id: "everlastingabilities:ability_totem"
-					tag: {
-						"everlastingabilities:abilityStoreStack": [{
-							level: 1
-							name: "everlastingabilities:effect/speed"
-						}]
-					}
-				}
+				exclude_from_claim_all: true
+				id: "3DD9A41EE98F483A"
+				table_id: 7110483731590531050L
 				team_reward: false
-				type: "item"
+				type: "random"
 			}]
 			subtitle: "Perks!"
 			tasks: [{

@@ -55,13 +55,6 @@ craftingTable.addShaped("apotheosis.library", <item: apotheosis:library>,
 	 [<item:apotheosis:infused_hellshelf>,                                                                      <item:ironchests:obsidian_chest>,   <item:apotheosis:infused_hellshelf>],
 	 [<item:minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1, id: "apotheosis:obliteration"}]}), <item:apotheosis:infused_seashelf>, <item:minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1, id: "apotheosis:splitting"}]})]]);
 
-// decrease the cost of forming the SPS
-craftingTable.remove(<item: mekanism:sps_casing>);
-craftingTable.addShaped("mekanism.sps_casing", <item:mekanism:sps_casing> *4,
-	[[<item:mekanism:hdpe_sheet>, <tag:items:forge:pellets/polonium>, <item:mekanism:hdpe_sheet>],
-	[<tag:items:forge:pellets/polonium>, <tag:items:forge:pellets/plutonium>, <tag:items:forge:pellets/polonium>],
-	[<item:mekanism:hdpe_sheet>, <tag:items:forge:pellets/polonium>, <item:mekanism:hdpe_sheet>]]);
-
 // balance the baubley heart canisters
 craftingTable.remove(<item: bhc:canister>);
 craftingTable.addShaped("bhc.canister", <item: bhc:canister>,
@@ -154,10 +147,6 @@ craftingTable.addShaped("illuminative.magma_lamp_recipe", <item: illuminative:ma
 	[[IIngredientEmpty.getInstance(), <item: minecraft:iron_ingot>,  IIngredientEmpty.getInstance()],
 	[<item: minecraft:iron_ingot>,    <item: minecraft:magma_block>, <item: minecraft:iron_ingot>],
 	[IIngredientEmpty.getInstance(),  <item: minecraft:iron_ingot>,  IIngredientEmpty.getInstance()]]);
-
-// move Graveyard's Dark Iron Ingot recipe into the smithing table
-craftingTable.remove(<item: graveyard:dark_iron_ingot>);
-smithing.addRecipe("graveyard.dark_iron_ingot", <item: graveyard:dark_iron_ingot>, <item: minecraft:iron_ingot>, <item: graveyard:corruption>);
 
 // remove Night Vision Potion dependency from Apotheosis's Shelf of Sight
 craftingTable.remove(<item: apotheosis:sightshelf>);

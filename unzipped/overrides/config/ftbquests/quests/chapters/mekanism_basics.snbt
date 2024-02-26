@@ -294,7 +294,6 @@
 			dependencies: [
 				"401F21347665C41E"
 				"1599787492F01BB7"
-				"0DC630AA75E6F1A6"
 			]
 			hide_dependent_lines: true
 			id: "74008E93D76D5E3E"
@@ -1543,11 +1542,24 @@
 				"&bShift&r + &bRight Click&r to toggle on/off."
 				"&bShift&r + &bScroll&r to change frequency."
 				""
-				"The default port for the voice channel is 36123 (modifiable in config/Mekanism/additions.toml), if you know how to set this up. Note that Minecraft will have to be completely closed to edit any of Mekanism's config files."
+				"To work, you will first need to enable it from config/Mekanism/additions.toml. Note that Minecraft will have to be completely closed to edit any of Mekanism's config files."
 			]
 			hide_dependency_lines: true
 			id: "2EB743C9E4FA1666"
 			optional: true
+			rewards: [{
+				id: "47563689D0AEEAD1"
+				item: {
+					Count: 1b
+					id: "mekanismadditions:walkie_talkie"
+					tag: {
+						mekData: {
+							channel: 1
+						}
+					}
+				}
+				type: "item"
+			}]
 			shape: "diamond"
 			subtitle: "Wait, Really?"
 			tasks: [{

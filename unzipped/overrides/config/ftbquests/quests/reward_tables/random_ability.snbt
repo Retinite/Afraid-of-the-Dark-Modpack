@@ -1,0 +1,503 @@
+{
+	icon: {
+		Count: 1b
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "ftblibrary:icons/dice"
+		}
+	}
+	id: "22CA6548CE6DA34F"
+	loot_size: 1
+	order_index: 8
+	rewards: [
+		{
+			icon: "minecraft:bone_meal"
+			item: {
+				Count: 1b
+				id: "everlastingabilities:ability_totem"
+				tag: {
+					"everlastingabilities:abilityStoreStack": [{
+						level: 1
+						name: "everlastingabilities:special/bonemealer"
+					}]
+				}
+			}
+			title: "Bonemealer AoE"
+			weight: 16.0f
+		}
+		{
+			icon: "minecraft:wheat"
+			item: {
+				Count: 1b
+				id: "everlastingabilities:ability_totem"
+				tag: {
+					"everlastingabilities:abilityStoreStack": [{
+						level: 1
+						name: "everlastingabilities:special/fertility"
+					}]
+				}
+			}
+			title: "Fertility AoE"
+			weight: 16.0f
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:textures/mob_effect/haste.png"
+				}
+			}
+			item: {
+				Count: 1b
+				id: "everlastingabilities:ability_totem"
+				tag: {
+					"everlastingabilities:abilityStoreStack": [{
+						level: 1
+						name: "everlastingabilities:effect/haste"
+					}]
+				}
+			}
+			title: "Haste"
+			weight: 16.0f
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:textures/mob_effect/jump_boost.png"
+				}
+			}
+			item: {
+				Count: 1b
+				id: "everlastingabilities:ability_totem"
+				tag: {
+					"everlastingabilities:abilityStoreStack": [{
+						level: 1
+						name: "everlastingabilities:effect/jump_boost"
+					}]
+				}
+			}
+			title: "Jump Boost"
+			weight: 16.0f
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:textures/mob_effect/luck.png"
+				}
+			}
+			item: {
+				Count: 1b
+				id: "everlastingabilities:ability_totem"
+				tag: {
+					"everlastingabilities:abilityStoreStack": [{
+						level: 1
+						name: "everlastingabilities:effect/luck"
+					}]
+				}
+			}
+			title: "Luck"
+			weight: 16.0f
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:textures/mob_effect/absorption.png"
+				}
+			}
+			item: {
+				Count: 1b
+				id: "everlastingabilities:ability_totem"
+				tag: {
+					"everlastingabilities:abilityStoreStack": [{
+						level: 1
+						name: "everlastingabilities:effect/absorption"
+					}]
+				}
+			}
+			title: "Absorption"
+			weight: 8.0f
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:textures/mob_effect/invisibility.png"
+				}
+			}
+			item: {
+				Count: 1b
+				id: "everlastingabilities:ability_totem"
+				tag: {
+					"everlastingabilities:abilityStoreStack": [{
+						level: 1
+						name: "everlastingabilities:effect/invisibility"
+					}]
+				}
+			}
+			title: "Invisibility"
+			weight: 8.0f
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:textures/mob_effect/slowness.png"
+				}
+			}
+			item: {
+				Count: 1b
+				id: "everlastingabilities:ability_totem"
+				tag: {
+					"everlastingabilities:abilityStoreStack": [{
+						level: 1
+						name: "everlastingabilities:effect/slowness"
+					}]
+				}
+			}
+			title: "Slowness AoE"
+			weight: 8.0f
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:textures/mob_effect/speed.png"
+				}
+			}
+			item: {
+				Count: 1b
+				id: "everlastingabilities:ability_totem"
+				tag: {
+					"everlastingabilities:abilityStoreStack": [{
+						level: 1
+						name: "everlastingabilities:effect/speed"
+					}]
+				}
+			}
+			title: "Speed"
+			weight: 8.0f
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:textures/mob_effect/dolphins_grace.png"
+				}
+			}
+			item: {
+				Count: 1b
+				id: "everlastingabilities:ability_totem"
+				tag: {
+					"everlastingabilities:abilityStoreStack": [{
+						level: 1
+						name: "everlastingabilities:effect/dolphins_grace"
+					}]
+				}
+			}
+			title: "Dolphin's Grace"
+			weight: 4.0f
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:textures/mob_effect/glowing.png"
+				}
+			}
+			item: {
+				Count: 1b
+				id: "everlastingabilities:ability_totem"
+				tag: {
+					"everlastingabilities:abilityStoreStack": [{
+						level: 1
+						name: "everlastingabilities:effect/glowing"
+					}]
+				}
+			}
+			title: "Glowing AoE"
+			weight: 4.0f
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:textures/mob_effect/levitation.png"
+				}
+			}
+			item: {
+				Count: 1b
+				id: "everlastingabilities:ability_totem"
+				tag: {
+					"everlastingabilities:abilityStoreStack": [{
+						level: 1
+						name: "everlastingabilities:effect/levitation"
+					}]
+				}
+			}
+			title: "Levitation AoE"
+			weight: 4.0f
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:textures/mob_effect/strength.png"
+				}
+			}
+			item: {
+				Count: 1b
+				id: "everlastingabilities:ability_totem"
+				tag: {
+					"everlastingabilities:abilityStoreStack": [{
+						level: 1
+						name: "everlastingabilities:effect/strength"
+					}]
+				}
+			}
+			title: "Strength"
+			weight: 4.0f
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:textures/mob_effect/water_breathing.png"
+				}
+			}
+			item: {
+				Count: 1b
+				id: "everlastingabilities:ability_totem"
+				tag: {
+					"everlastingabilities:abilityStoreStack": [{
+						level: 1
+						name: "everlastingabilities:effect/water_breathing"
+					}]
+				}
+			}
+			title: "Water Breathing"
+			weight: 4.0f
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:textures/mob_effect/weakness.png"
+				}
+			}
+			item: {
+				Count: 1b
+				id: "everlastingabilities:ability_totem"
+				tag: {
+					"everlastingabilities:abilityStoreStack": [{
+						level: 1
+						name: "everlastingabilities:effect/weakness"
+					}]
+				}
+			}
+			title: "Weakness AoE"
+			weight: 4.0f
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:textures/mob_effect/conduit_power.png"
+				}
+			}
+			item: {
+				Count: 1b
+				id: "everlastingabilities:ability_totem"
+				tag: {
+					"everlastingabilities:abilityStoreStack": [{
+						level: 1
+						name: "everlastingabilities:effect/conduit_power"
+					}]
+				}
+			}
+			title: "Conduit Power"
+			weight: 2.0f
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:textures/mob_effect/fire_resistance.png"
+				}
+			}
+			item: {
+				Count: 1b
+				id: "everlastingabilities:ability_totem"
+				tag: {
+					"everlastingabilities:abilityStoreStack": [{
+						level: 1
+						name: "everlastingabilities:effect/fire_resistance"
+					}]
+				}
+			}
+			title: "Fire Resistance"
+			weight: 2.0f
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:textures/mob_effect/poison.png"
+				}
+			}
+			item: {
+				Count: 1b
+				id: "everlastingabilities:ability_totem"
+				tag: {
+					"everlastingabilities:abilityStoreStack": [{
+						level: 1
+						name: "everlastingabilities:effect/poison"
+					}]
+				}
+			}
+			title: "Poison AoE"
+			weight: 2.0f
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:textures/mob_effect/resistance.png"
+				}
+			}
+			item: {
+				Count: 1b
+				id: "everlastingabilities:ability_totem"
+				tag: {
+					"everlastingabilities:abilityStoreStack": [{
+						level: 1
+						name: "everlastingabilities:effect/resistance"
+					}]
+				}
+			}
+			title: "Resistance"
+			weight: 2.0f
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:textures/mob_effect/slow_falling.png"
+				}
+			}
+			item: {
+				Count: 1b
+				id: "everlastingabilities:ability_totem"
+				tag: {
+					"everlastingabilities:abilityStoreStack": [{
+						level: 1
+						name: "everlastingabilities:effect/slow_falling"
+					}]
+				}
+			}
+			title: "Slow Falling"
+			weight: 2.0f
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:textures/mob_effect/blindness.png"
+				}
+			}
+			item: {
+				Count: 1b
+				id: "everlastingabilities:ability_totem"
+				tag: {
+					"everlastingabilities:abilityStoreStack": [{
+						level: 1
+						name: "everlastingabilities:effect/blindness"
+					}]
+				}
+			}
+			title: "Blindness AoE"
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:textures/mob_effect/regeneration.png"
+				}
+			}
+			item: {
+				Count: 1b
+				id: "everlastingabilities:ability_totem"
+				tag: {
+					"everlastingabilities:abilityStoreStack": [{
+						level: 1
+						name: "everlastingabilities:effect/regeneration"
+					}]
+				}
+			}
+			title: "Regeneration"
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:textures/mob_effect/saturation.png"
+				}
+			}
+			item: {
+				Count: 1b
+				id: "everlastingabilities:ability_totem"
+				tag: {
+					"everlastingabilities:abilityStoreStack": [{
+						level: 1
+						name: "everlastingabilities:effect/saturation"
+					}]
+				}
+			}
+			title: "Saturation"
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:textures/mob_effect/wither.png"
+				}
+			}
+			item: {
+				Count: 1b
+				id: "everlastingabilities:ability_totem"
+				tag: {
+					"everlastingabilities:abilityStoreStack": [{
+						level: 1
+						name: "everlastingabilities:effect/wither"
+					}]
+				}
+			}
+			title: "Wither AoE"
+		}
+	]
+	title: "Random Ability"
+}

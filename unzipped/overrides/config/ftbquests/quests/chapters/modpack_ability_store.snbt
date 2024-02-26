@@ -1,0 +1,841 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "modpack_reward_store"
+	group: ""
+	icon: "minecraft:emerald"
+	id: "0B4BD6CAC70ADF8B"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			can_repeat: true
+			description: ["Note: Luck only affects fishing rewards."]
+			id: "46F3C1155B9E1B03"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "49C14E5657645F26"
+				table_id: 7110483731590531050L
+				type: "random"
+			}]
+			shape: "diamond"
+			size: 2.0d
+			subtitle: "Submit 16 Obscurium Ingots"
+			tasks: [{
+				consume_items: true
+				count: 16L
+				id: "544B7A3B82E983C3"
+				item: "aotdextras:obscurium_ingot"
+				type: "item"
+			}]
+			title: "Common Ability"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			id: "48C717A403F05EBF"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "025300707FE0DC6D"
+				table_id: 3833145541680742441L
+				type: "random"
+			}]
+			shape: "diamond"
+			size: 2.0d
+			subtitle: "Submit 16 Obscurium Blocks"
+			tasks: [{
+				consume_items: true
+				count: 16L
+				id: "5BE8188044812235"
+				item: "aotdextras:obscurium_block"
+				type: "item"
+			}]
+			title: "Uncommon Ability"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			id: "2522DF3484E95497"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "715911E88EF0F61C"
+				table_id: 7229915172908260108L
+				type: "random"
+			}]
+			shape: "diamond"
+			size: 2.0d
+			subtitle: "Submit 16 Occultium Ingots"
+			tasks: [{
+				consume_items: true
+				count: 16L
+				id: "130829100E5D40A6"
+				item: "aotdextras:occultium_ingot"
+				type: "item"
+			}]
+			title: "Rare Ability"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			id: "5F26FDDFC4AB95A7"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "104055FF4E09A3B5"
+				table_id: 1611928854952774845L
+				type: "random"
+			}]
+			shape: "diamond"
+			size: 2.0d
+			subtitle: "Submit 16 Occultium Blocks"
+			tasks: [{
+				consume_items: true
+				count: 16L
+				id: "61C1D639BEFBB0AA"
+				item: "aotdextras:occultium_block"
+				type: "item"
+			}]
+			title: "Epic Ability"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			description: ["Note: Blindness II de-aggros any mobs within 3 blocks of you."]
+			id: "09B23214EBF81DF1"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "755C3BA165E46C04"
+				table_id: 1485737753405707727L
+				type: "random"
+			}]
+			shape: "diamond"
+			size: 2.0d
+			subtitle: "Submit 16 Nihilum Ingots"
+			tasks: [{
+				consume_items: true
+				count: 16L
+				id: "307B8536B3B83910"
+				item: "aotdextras:nihilum_ingot"
+				type: "item"
+			}]
+			title: "Legendary Ability"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			description: ["Each ability tier has half the chance of being rewarded as the tier below it."]
+			id: "526382F266936A7A"
+			rewards: [{
+				id: "331572E7195D373C"
+				table_id: 2506927505960444751L
+				title: "Random Ability"
+				type: "random"
+			}]
+			shape: "diamond"
+			subtitle: "Of Any Tier!"
+			tasks: [{
+				consume_items: true
+				count: 64L
+				id: "25D1F3B661B6602A"
+				item: "aotdextras:luxum_lamp"
+				type: "item"
+			}]
+			title: "Random Ability"
+			x: -5.5d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			id: "02049FDA74726999"
+			rewards: [{
+				exclude_from_claim_all: true
+				icon: {
+					Count: 1b
+					id: "everlastingabilities:ability_totem"
+					tag: {
+						"everlastingabilities:abilityStoreStack": [{
+							level: 1
+							name: "everlastingabilities:special/power_stare"
+						}]
+					}
+				}
+				id: "61F1C40065A879D9"
+				table_id: 2506927505960444751L
+				title: "Any Ability"
+				type: "choice"
+			}]
+			shape: "diamond"
+			subtitle: "Of Any Tier!"
+			tasks: [{
+				consume_items: true
+				count: 8L
+				id: "7CCF7E4CB62B72F2"
+				item: "aotdextras:nihilum_block"
+				type: "item"
+			}]
+			title: "Any Ability"
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "ftblibrary:icons/refresh"
+				}
+			}
+			id: "6962275DB3B39161"
+			min_required_tasks: 1
+			rewards: [{
+				count: 8
+				id: "12DE75CB952FDE07"
+				item: "aotdextras:obscurium_ingot"
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					icon: "minecraft:bone_meal"
+					id: "0F38817E5497C1C3"
+					item: {
+						Count: 1b
+						id: "everlastingabilities:ability_totem"
+						tag: {
+							"everlastingabilities:abilityStoreStack": [{
+								level: 1
+								name: "everlastingabilities:special/bonemealer"
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					consume_items: true
+					icon: "minecraft:wheat"
+					id: "402CF63CFF0FC672"
+					item: {
+						Count: 1b
+						id: "everlastingabilities:ability_totem"
+						tag: {
+							"everlastingabilities:abilityStoreStack": [{
+								level: 1
+								name: "everlastingabilities:special/fertility"
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					consume_items: true
+					icon: {
+						Count: 1b
+						id: "ftbquests:custom_icon"
+						tag: {
+							Icon: "minecraft:textures/mob_effect/haste.png"
+						}
+					}
+					id: "58B626E92443917A"
+					item: {
+						Count: 1b
+						id: "everlastingabilities:ability_totem"
+						tag: {
+							"everlastingabilities:abilityStoreStack": [{
+								level: 1
+								name: "everlastingabilities:effect/haste"
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					consume_items: true
+					icon: {
+						Count: 1b
+						id: "ftbquests:custom_icon"
+						tag: {
+							Icon: "minecraft:textures/mob_effect/jump_boost.png"
+						}
+					}
+					id: "28DCA37DCC7A8B8D"
+					item: {
+						Count: 1b
+						id: "everlastingabilities:ability_totem"
+						tag: {
+							"everlastingabilities:abilityStoreStack": [{
+								level: 1
+								name: "everlastingabilities:effect/jump_boost"
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					consume_items: true
+					icon: {
+						Count: 1b
+						id: "ftbquests:custom_icon"
+						tag: {
+							Icon: "minecraft:textures/mob_effect/luck.png"
+						}
+					}
+					id: "7F41CB8145138430"
+					item: {
+						Count: 1b
+						id: "everlastingabilities:ability_totem"
+						tag: {
+							"everlastingabilities:abilityStoreStack": [{
+								level: 1
+								name: "everlastingabilities:effect/luck"
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+			]
+			title: "Common Ability Recycling"
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "ftblibrary:icons/refresh"
+				}
+			}
+			id: "7C2B036824A61457"
+			min_required_tasks: 1
+			rewards: [{
+				count: 8
+				id: "053D267CCE1A3DE9"
+				item: "aotdextras:obscurium_block"
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					icon: {
+						Count: 1b
+						id: "ftbquests:custom_icon"
+						tag: {
+							Icon: "minecraft:textures/mob_effect/absorption.png"
+						}
+					}
+					id: "3B9687BE01D5B0A2"
+					item: {
+						Count: 1b
+						id: "everlastingabilities:ability_totem"
+						tag: {
+							"everlastingabilities:abilityStoreStack": [{
+								level: 1
+								name: "everlastingabilities:effect/absorption"
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					consume_items: true
+					icon: {
+						Count: 1b
+						id: "ftbquests:custom_icon"
+						tag: {
+							Icon: "minecraft:textures/mob_effect/invisibility.png"
+						}
+					}
+					id: "1D871BB85A70C0C9"
+					item: {
+						Count: 1b
+						id: "everlastingabilities:ability_totem"
+						tag: {
+							"everlastingabilities:abilityStoreStack": [{
+								level: 1
+								name: "everlastingabilities:effect/invisibility"
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					consume_items: true
+					icon: {
+						Count: 1b
+						id: "ftbquests:custom_icon"
+						tag: {
+							Icon: "minecraft:textures/mob_effect/slowness.png"
+						}
+					}
+					id: "5F0FC1FD9FED13DB"
+					item: {
+						Count: 1b
+						id: "everlastingabilities:ability_totem"
+						tag: {
+							"everlastingabilities:abilityStoreStack": [{
+								level: 1
+								name: "everlastingabilities:effect/slowness"
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					consume_items: true
+					icon: {
+						Count: 1b
+						id: "ftbquests:custom_icon"
+						tag: {
+							Icon: "minecraft:textures/mob_effect/speed.png"
+						}
+					}
+					id: "54AD3748AB3E00F1"
+					item: {
+						Count: 1b
+						id: "everlastingabilities:ability_totem"
+						tag: {
+							"everlastingabilities:abilityStoreStack": [{
+								level: 1
+								name: "everlastingabilities:effect/speed"
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+			]
+			title: "Uncommon Ability Recycling"
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "ftblibrary:icons/refresh"
+				}
+			}
+			id: "29A105E7171F9365"
+			min_required_tasks: 1
+			rewards: [{
+				count: 8
+				id: "1B93DC9ABAC6EDD7"
+				item: "aotdextras:occultium_ingot"
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					icon: {
+						Count: 1b
+						id: "ftbquests:custom_icon"
+						tag: {
+							Icon: "minecraft:textures/mob_effect/dolphins_grace.png"
+						}
+					}
+					id: "44723CA81FEB9447"
+					item: {
+						Count: 1b
+						id: "everlastingabilities:ability_totem"
+						tag: {
+							"everlastingabilities:abilityStoreStack": [{
+								level: 1
+								name: "everlastingabilities:effect/dolphins_grace"
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					consume_items: true
+					icon: {
+						Count: 1b
+						id: "ftbquests:custom_icon"
+						tag: {
+							Icon: "minecraft:textures/mob_effect/glowing.png"
+						}
+					}
+					id: "2B978BBA17267221"
+					item: {
+						Count: 1b
+						id: "everlastingabilities:ability_totem"
+						tag: {
+							"everlastingabilities:abilityStoreStack": [{
+								level: 1
+								name: "everlastingabilities:effect/glowing"
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					consume_items: true
+					icon: {
+						Count: 1b
+						id: "ftbquests:custom_icon"
+						tag: {
+							Icon: "minecraft:textures/mob_effect/levitation.png"
+						}
+					}
+					id: "45C112330D79B0B2"
+					item: {
+						Count: 1b
+						id: "everlastingabilities:ability_totem"
+						tag: {
+							"everlastingabilities:abilityStoreStack": [{
+								level: 1
+								name: "everlastingabilities:effect/levitation"
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					consume_items: true
+					icon: {
+						Count: 1b
+						id: "ftbquests:custom_icon"
+						tag: {
+							Icon: "minecraft:textures/mob_effect/strength.png"
+						}
+					}
+					id: "4529092BBB7D2893"
+					item: {
+						Count: 1b
+						id: "everlastingabilities:ability_totem"
+						tag: {
+							"everlastingabilities:abilityStoreStack": [{
+								level: 1
+								name: "everlastingabilities:effect/strength"
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					consume_items: true
+					icon: {
+						Count: 1b
+						id: "ftbquests:custom_icon"
+						tag: {
+							Icon: "minecraft:textures/mob_effect/water_breathing.png"
+						}
+					}
+					id: "61031B802D6D9714"
+					item: {
+						Count: 1b
+						id: "everlastingabilities:ability_totem"
+						tag: {
+							"everlastingabilities:abilityStoreStack": [{
+								level: 1
+								name: "everlastingabilities:effect/water_breathing"
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					consume_items: true
+					icon: {
+						Count: 1b
+						id: "ftbquests:custom_icon"
+						tag: {
+							Icon: "minecraft:textures/mob_effect/weakness.png"
+						}
+					}
+					id: "78073B0878A5244D"
+					item: {
+						Count: 1b
+						id: "everlastingabilities:ability_totem"
+						tag: {
+							"everlastingabilities:abilityStoreStack": [{
+								level: 1
+								name: "everlastingabilities:effect/weakness"
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+			]
+			title: "Rare Ability Recycling"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "ftblibrary:icons/refresh"
+				}
+			}
+			id: "4C5677F0D16BE63C"
+			min_required_tasks: 1
+			rewards: [{
+				count: 8
+				id: "41D92A2F5F284B45"
+				item: "aotdextras:occultium_block"
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					icon: {
+						Count: 1b
+						id: "ftbquests:custom_icon"
+						tag: {
+							Icon: "minecraft:textures/mob_effect/conduit_power.png"
+						}
+					}
+					id: "42F3137CE3C16DE4"
+					item: {
+						Count: 1b
+						id: "everlastingabilities:ability_totem"
+						tag: {
+							"everlastingabilities:abilityStoreStack": [{
+								level: 1
+								name: "everlastingabilities:effect/conduit_power"
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					consume_items: true
+					icon: {
+						Count: 1b
+						id: "ftbquests:custom_icon"
+						tag: {
+							Icon: "minecraft:textures/mob_effect/fire_resistance.png"
+						}
+					}
+					id: "27723A96CDA6F380"
+					item: {
+						Count: 1b
+						id: "everlastingabilities:ability_totem"
+						tag: {
+							"everlastingabilities:abilityStoreStack": [{
+								level: 1
+								name: "everlastingabilities:effect/fire_resistance"
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					consume_items: true
+					icon: {
+						Count: 1b
+						id: "ftbquests:custom_icon"
+						tag: {
+							Icon: "minecraft:textures/mob_effect/poison.png"
+						}
+					}
+					id: "7246985E35441EF5"
+					item: {
+						Count: 1b
+						id: "everlastingabilities:ability_totem"
+						tag: {
+							"everlastingabilities:abilityStoreStack": [{
+								level: 1
+								name: "everlastingabilities:effect/poison"
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					consume_items: true
+					icon: {
+						Count: 1b
+						id: "ftbquests:custom_icon"
+						tag: {
+							Icon: "minecraft:textures/mob_effect/resistance.png"
+						}
+					}
+					id: "10B8D933BDAB2D04"
+					item: {
+						Count: 1b
+						id: "everlastingabilities:ability_totem"
+						tag: {
+							"everlastingabilities:abilityStoreStack": [{
+								level: 1
+								name: "everlastingabilities:effect/resistance"
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					consume_items: true
+					icon: {
+						Count: 1b
+						id: "ftbquests:custom_icon"
+						tag: {
+							Icon: "minecraft:textures/mob_effect/slow_falling.png"
+						}
+					}
+					id: "6DE18041F6D5A462"
+					item: {
+						Count: 1b
+						id: "everlastingabilities:ability_totem"
+						tag: {
+							"everlastingabilities:abilityStoreStack": [{
+								level: 1
+								name: "everlastingabilities:effect/slow_falling"
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+			]
+			title: "Epic Ability Recycling"
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "ftblibrary:icons/refresh"
+				}
+			}
+			id: "067AB0C878B9221C"
+			min_required_tasks: 1
+			rewards: [{
+				count: 8
+				id: "3ADCEC0855685EFA"
+				item: "aotdextras:nihilum_ingot"
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					icon: {
+						Count: 1b
+						id: "ftbquests:custom_icon"
+						tag: {
+							Icon: "minecraft:textures/mob_effect/blindness.png"
+						}
+					}
+					id: "146A2D35697DD0E4"
+					item: {
+						Count: 1b
+						id: "everlastingabilities:ability_totem"
+						tag: {
+							"everlastingabilities:abilityStoreStack": [{
+								level: 1
+								name: "everlastingabilities:effect/blindness"
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					consume_items: true
+					icon: {
+						Count: 1b
+						id: "ftbquests:custom_icon"
+						tag: {
+							Icon: "minecraft:textures/mob_effect/regeneration.png"
+						}
+					}
+					id: "53310B04059CA4AB"
+					item: {
+						Count: 1b
+						id: "everlastingabilities:ability_totem"
+						tag: {
+							"everlastingabilities:abilityStoreStack": [{
+								level: 1
+								name: "everlastingabilities:effect/regeneration"
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					consume_items: true
+					icon: {
+						Count: 1b
+						id: "ftbquests:custom_icon"
+						tag: {
+							Icon: "minecraft:textures/mob_effect/saturation.png"
+						}
+					}
+					id: "6D0DB8F617377C20"
+					item: {
+						Count: 1b
+						id: "everlastingabilities:ability_totem"
+						tag: {
+							"everlastingabilities:abilityStoreStack": [{
+								level: 1
+								name: "everlastingabilities:effect/saturation"
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					consume_items: true
+					icon: {
+						Count: 1b
+						id: "ftbquests:custom_icon"
+						tag: {
+							Icon: "minecraft:textures/mob_effect/wither.png"
+						}
+					}
+					id: "5CAB837B9DBB3109"
+					item: {
+						Count: 1b
+						id: "everlastingabilities:ability_totem"
+						tag: {
+							"everlastingabilities:abilityStoreStack": [{
+								level: 1
+								name: "everlastingabilities:effect/wither"
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+			]
+			title: "Legendary Ability Recycling"
+			x: 4.0d
+			y: 1.5d
+		}
+	]
+	title: "Ability Store"
+}

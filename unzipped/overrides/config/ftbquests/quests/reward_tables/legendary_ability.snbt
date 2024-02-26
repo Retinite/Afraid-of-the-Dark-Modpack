@@ -1,0 +1,96 @@
+{
+	icon: {
+		Count: 1b
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "ironchests:textures/block/barrels/netherite/top.png"
+		}
+	}
+	id: "149E669D6D2255CF"
+	loot_size: 1
+	order_index: 7
+	rewards: [
+		{
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:textures/mob_effect/blindness.png"
+				}
+			}
+			item: {
+				Count: 1b
+				id: "everlastingabilities:ability_totem"
+				tag: {
+					"everlastingabilities:abilityStoreStack": [{
+						level: 1
+						name: "everlastingabilities:effect/blindness"
+					}]
+				}
+			}
+			title: "Blindness AoE"
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:textures/mob_effect/regeneration.png"
+				}
+			}
+			item: {
+				Count: 1b
+				id: "everlastingabilities:ability_totem"
+				tag: {
+					"everlastingabilities:abilityStoreStack": [{
+						level: 1
+						name: "everlastingabilities:effect/regeneration"
+					}]
+				}
+			}
+			title: "Regeneration"
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:textures/mob_effect/saturation.png"
+				}
+			}
+			item: {
+				Count: 1b
+				id: "everlastingabilities:ability_totem"
+				tag: {
+					"everlastingabilities:abilityStoreStack": [{
+						level: 1
+						name: "everlastingabilities:effect/saturation"
+					}]
+				}
+			}
+			title: "Saturation"
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:textures/mob_effect/wither.png"
+				}
+			}
+			item: {
+				Count: 1b
+				id: "everlastingabilities:ability_totem"
+				tag: {
+					"everlastingabilities:abilityStoreStack": [{
+						level: 1
+						name: "everlastingabilities:effect/wither"
+					}]
+				}
+			}
+			title: "Wither AoE"
+		}
+	]
+	title: "Legendary Ability"
+	use_title: true
+}

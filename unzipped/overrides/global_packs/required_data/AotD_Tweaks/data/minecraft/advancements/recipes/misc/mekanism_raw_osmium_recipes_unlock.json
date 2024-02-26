@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_required_items": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mekanism:raw_osmium"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_required_items"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mekanism:processing/osmium/raw_storage_blocks/from_raw",
+      "mekanism:processing/osmium/raw/from_raw_block",
+      "mekanism:processing/osmium/ingot/from_raw_blasting",
+      "mekanism:processing/osmium/ingot/from_raw_smelting"
+    ]
+  }
+}

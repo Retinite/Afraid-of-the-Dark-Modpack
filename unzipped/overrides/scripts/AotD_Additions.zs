@@ -142,20 +142,28 @@ smithing.addRecipe("born_in_chaos_v1.staffof_blindness", <item: born_in_chaos_v1
 
 // modify Apotheosis's rarity materials to be converted back and forth
 craftingTable.addShapeless("apotheosis.uncommon_material", <item: apotheosis:uncommon_material>,
-	[<item: apotheosis:common_material>, <item: apotheosis:common_material>, <item: apotheosis:common_material>]);
+	[<item: apotheosis:common_material>, <item: apotheosis:common_material>, <item: apotheosis:common_material>,
+	 <item: apotheosis:common_material>, <item: apotheosis:common_material>, <item: apotheosis:common_material>,
+	 <item: apotheosis:common_material>, <item: apotheosis:common_material>]);
 craftingTable.addShapeless("apotheosis.rare_material", <item: apotheosis:rare_material>,
-	[<item: apotheosis:uncommon_material>, <item: apotheosis:uncommon_material>, <item: apotheosis:uncommon_material>]);
+	[<item: apotheosis:uncommon_material>, <item: apotheosis:uncommon_material>, <item: apotheosis:uncommon_material>,
+	 <item: apotheosis:uncommon_material>, <item: apotheosis:uncommon_material>, <item: apotheosis:uncommon_material>,
+	 <item: apotheosis:uncommon_material>, <item: apotheosis:uncommon_material>]);
 craftingTable.addShapeless("apotheosis.epic_material", <item: apotheosis:epic_material>,
-	[<item: apotheosis:rare_material>, <item: apotheosis:rare_material>, <item: apotheosis:rare_material>]);
+	[<item: apotheosis:rare_material>, <item: apotheosis:rare_material>, <item: apotheosis:rare_material>,
+	 <item: apotheosis:rare_material>, <item: apotheosis:rare_material>, <item: apotheosis:rare_material>,
+	 <item: apotheosis:rare_material>, <item: apotheosis:rare_material>]);
 craftingTable.addShapeless("apotheosis.mythic_material", <item: apotheosis:mythic_material>,
-	[<item: apotheosis:epic_material>, <item: apotheosis:epic_material>, <item: apotheosis:epic_material>]);
-craftingTable.addShapeless("apotheosis.mythic_material_decompress", <item: apotheosis:epic_material> * 3, [<item: apotheosis:mythic_material>]);
-craftingTable.addShapeless("apotheosis.epic_material_decompress", <item: apotheosis:rare_material> * 3, [<item: apotheosis:epic_material>]);
-craftingTable.addShapeless("apotheosis.rare_material_decompress", <item: apotheosis:uncommon_material> * 3, [<item: apotheosis:rare_material>]);
-craftingTable.addShapeless("apotheosis.uncommon_material_decompress", <item: apotheosis:common_material> * 3, [<item: apotheosis:uncommon_material>]);
+	[<item: apotheosis:epic_material>, <item: apotheosis:epic_material>, <item: apotheosis:epic_material>,
+	 <item: apotheosis:epic_material>, <item: apotheosis:epic_material>, <item: apotheosis:epic_material>,
+	 <item: apotheosis:epic_material>, <item: apotheosis:epic_material>]);
+craftingTable.addShapeless("apotheosis.mythic_material_decompress", <item: apotheosis:epic_material> * 8, [<item: apotheosis:mythic_material>]);
+craftingTable.addShapeless("apotheosis.epic_material_decompress", <item: apotheosis:rare_material> * 8, [<item: apotheosis:epic_material>]);
+craftingTable.addShapeless("apotheosis.rare_material_decompress", <item: apotheosis:uncommon_material> * 8, [<item: apotheosis:rare_material>]);
+craftingTable.addShapeless("apotheosis.uncommon_material_decompress", <item: apotheosis:common_material> * 8, [<item: apotheosis:uncommon_material>]);
 
-// make the wooden paxel count as fuel DOES NOT WORK PROPERLY
-//<item: mekanismtools:wood_paxel>.burnTime = 400;
+// make the wooden paxel count as fuel
+<item: mekanismtools:wood_paxel>.burnTime = 800;
 
 // allow extra Soul Jars to be converted into Lost Souls
 <recipetype:mekanism:crushing>.addRecipe("soul_jar_into_lost_soul", <item: majruszsdifficulty:soul_jar>, <item: undead_unleashed:lost_soul>);

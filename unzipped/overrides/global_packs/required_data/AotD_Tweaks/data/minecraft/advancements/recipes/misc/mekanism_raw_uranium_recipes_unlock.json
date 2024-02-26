@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_required_items": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mekanism:raw_uranium"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_required_items"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mekanism:processing/uranium/raw_storage_blocks/from_raw",
+      "mekanism:processing/uranium/raw/from_raw_block",
+      "mekanism:processing/uranium/ingot/from_raw_blasting",
+      "mekanism:processing/uranium/ingot/from_raw_smelting"
+    ]
+  }
+}

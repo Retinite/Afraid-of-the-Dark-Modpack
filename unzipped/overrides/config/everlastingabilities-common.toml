@@ -19,9 +19,9 @@
 		#true: Abilities drop when players die; false: Abilities drop when players die by the hand of other players.
 		alwaysDropAbilities = true
 		#Mobs that won't have abilities that can be dropped via totems. You can add things like 'minecraft:pig'.
-		mobDropBlacklist = ["aquamirae:spinefish", "upgrade_aquatic:perch", "upgrade_aquatic:pike", "upgrade_aquatic:nautilus", "fireflies:firefly", "illuminative:glow_fish", "minecraft:armor_stand", "minecraft:bat", "minecraft:bee", "minecraft:boat", "minecraft:cat", "minecraft:chicken", "minecraft:cod", "minecraft:cow", "minecraft:donkey", "minecraft:dolphin", "minecraft:fox", "minecraft:glow_squid", "minecraft:horse", "minecraft:llama", "minecraft:mule", "minecraft:mooshroom", "minecraft:ocelot", "minecraft:panda", "minecraft:parrot", "minecraft:pig", "minecraft:pufferfish", "minecraft:polarbear", "minecraft:rabbit", "minecraft:salmon", "minecraft:sheep", "minecraft:silverfish", "minecraft:squid", "minecraft:trader_llama", "minecraft:tropical_fish", "minecraft:turtle", "minecraft:egg", "minecraft:bee", "minecraft:villager"]
+		mobDropBlacklist = []
 		#1/x chance for mobs to have abilities.
-		mobAbilityChance = 100
+		mobAbilityChance = -1
 		#The amount of exhaustion that should by applied to the player per active ability per second.
 		exhaustionPerAbilityTick = 0.01
 		#The maximum rarity of totems to spawn when a player first logs in. [0-3], -1 disables totem spawning.
@@ -47,7 +47,7 @@
 		#If totems should spawn in loot chests.
 		lootChests = false
 		#This many totems combined in a crafting grid produces a new random totem (0 to disable)
-		totemCraftingCount = 3
+		totemCraftingCount = 0
 		#When combining totems, percentage chance of getting one higher rarity than normal.
 		totemCraftingRarityIncreasePercent = 15
 

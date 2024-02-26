@@ -1,0 +1,136 @@
+{
+	icon: {
+		Count: 1b
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "ironchests:textures/block/barrels/gold/top.png"
+		}
+	}
+	id: "6455D18B45675B0C"
+	loot_size: 1
+	order_index: 5
+	rewards: [
+		{
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:textures/mob_effect/dolphins_grace.png"
+				}
+			}
+			item: {
+				Count: 1b
+				id: "everlastingabilities:ability_totem"
+				tag: {
+					"everlastingabilities:abilityStoreStack": [{
+						level: 1
+						name: "everlastingabilities:effect/dolphins_grace"
+					}]
+				}
+			}
+			title: "Dolphin's Grace"
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:textures/mob_effect/glowing.png"
+				}
+			}
+			item: {
+				Count: 1b
+				id: "everlastingabilities:ability_totem"
+				tag: {
+					"everlastingabilities:abilityStoreStack": [{
+						level: 1
+						name: "everlastingabilities:effect/glowing"
+					}]
+				}
+			}
+			title: "Glowing AoE"
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:textures/mob_effect/levitation.png"
+				}
+			}
+			item: {
+				Count: 1b
+				id: "everlastingabilities:ability_totem"
+				tag: {
+					"everlastingabilities:abilityStoreStack": [{
+						level: 1
+						name: "everlastingabilities:effect/levitation"
+					}]
+				}
+			}
+			title: "Levitation AoE"
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:textures/mob_effect/strength.png"
+				}
+			}
+			item: {
+				Count: 1b
+				id: "everlastingabilities:ability_totem"
+				tag: {
+					"everlastingabilities:abilityStoreStack": [{
+						level: 1
+						name: "everlastingabilities:effect/strength"
+					}]
+				}
+			}
+			title: "Strength"
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:textures/mob_effect/water_breathing.png"
+				}
+			}
+			item: {
+				Count: 1b
+				id: "everlastingabilities:ability_totem"
+				tag: {
+					"everlastingabilities:abilityStoreStack": [{
+						level: 1
+						name: "everlastingabilities:effect/water_breathing"
+					}]
+				}
+			}
+			title: "Water Breathing"
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:textures/mob_effect/weakness.png"
+				}
+			}
+			item: {
+				Count: 1b
+				id: "everlastingabilities:ability_totem"
+				tag: {
+					"everlastingabilities:abilityStoreStack": [{
+						level: 1
+						name: "everlastingabilities:effect/weakness"
+					}]
+				}
+			}
+			title: "Weakness AoE"
+		}
+	]
+	title: "Rare Ability"
+	use_title: true
+}

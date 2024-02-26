@@ -3,7 +3,6 @@
 	default_quest_shape: ""
 	filename: "adventure_apotheosis"
 	group: "11332E0C2CB4D054"
-	hide_quest_details_until_startable: true
 	icon: "apotheosis:blazing_hellshelf"
 	id: "5EACD59581DA123A"
 	order_index: 0
@@ -54,12 +53,6 @@
 			hide_dependent_lines: true
 			icon: "minecraft:enchanting_table"
 			id: "3B9DBB624DBAD2D5"
-			rewards: [{
-				count: 16
-				id: "5069CF82F77B6C7E"
-				item: "minecraft:book"
-				type: "item"
-			}]
 			shape: "gear"
 			size: 2.0d
 			tasks: [{
@@ -348,6 +341,7 @@
 		}
 		{
 			dependencies: ["7EC54637441573C3"]
+			description: ["Also has the ability to add affixes to most equipment, including things like Jetpacks and MekaSuit Armor!"]
 			id: "6A749C30A9410B7F"
 			rewards: [{
 				id: "211FD59DA6676BF0"
@@ -1274,7 +1268,7 @@
 					type: "item"
 				}
 			]
-			title: "Apotheotic Vials"
+			title: "Apothic Vials"
 			x: -5.5d
 			y: 1.0d
 		}

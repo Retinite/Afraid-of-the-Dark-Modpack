@@ -1,0 +1,96 @@
+{
+	icon: {
+		Count: 1b
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "ironchests:textures/block/barrels/iron/top.png"
+		}
+	}
+	id: "3532118FB040C029"
+	loot_size: 1
+	order_index: 4
+	rewards: [
+		{
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:textures/mob_effect/absorption.png"
+				}
+			}
+			item: {
+				Count: 1b
+				id: "everlastingabilities:ability_totem"
+				tag: {
+					"everlastingabilities:abilityStoreStack": [{
+						level: 1
+						name: "everlastingabilities:effect/absorption"
+					}]
+				}
+			}
+			title: "Absorption"
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:textures/mob_effect/invisibility.png"
+				}
+			}
+			item: {
+				Count: 1b
+				id: "everlastingabilities:ability_totem"
+				tag: {
+					"everlastingabilities:abilityStoreStack": [{
+						level: 1
+						name: "everlastingabilities:effect/invisibility"
+					}]
+				}
+			}
+			title: "Invisibility"
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:textures/mob_effect/slowness.png"
+				}
+			}
+			item: {
+				Count: 1b
+				id: "everlastingabilities:ability_totem"
+				tag: {
+					"everlastingabilities:abilityStoreStack": [{
+						level: 1
+						name: "everlastingabilities:effect/slowness"
+					}]
+				}
+			}
+			title: "Slowness AoE"
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:textures/mob_effect/speed.png"
+				}
+			}
+			item: {
+				Count: 1b
+				id: "everlastingabilities:ability_totem"
+				tag: {
+					"everlastingabilities:abilityStoreStack": [{
+						level: 1
+						name: "everlastingabilities:effect/speed"
+					}]
+				}
+			}
+			title: "Speed"
+		}
+	]
+	title: "Uncommon Ability"
+	use_title: true
+}

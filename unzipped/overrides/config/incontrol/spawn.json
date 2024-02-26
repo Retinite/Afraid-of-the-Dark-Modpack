@@ -34,7 +34,7 @@
 	  "maxcount": 3,
 	  "healthmultiply": 4,
 	  "damagemultiply": 2,
-	  "result": "allow"
+	  "result": "default"
   },
   {
 	  "mob": "tenebrous_lands:eynelvoonge",
@@ -81,7 +81,7 @@
 	  "maxcount": 1,
 	  "healthmultiply": 4,
 	  "damagemultiply": 3,
-	  "result": "allow"
+	  "result": "default"
   },
   {
 	  "mob": "tenebrous_lands:wendigo",
@@ -92,7 +92,7 @@
 	  "mob": "upgrade_aquatic:thrasher",
 	  "maxcount": 2,
 	  "healthmultiply": 0.5,
-	  "result": "allow"
+	  "result": "default"
   },
   {
 	  "mob": "upgrade_aquatic:thrasher",
@@ -102,7 +102,7 @@
   {
 	  "mob": "upgrade_aquatic:great_thrasher",
 	  "mincount": 1,
-	  "result": "allow"
+	  "result": "default"
   },
   {
 	  "mob": "john_mod_reborn:baby_john",
@@ -113,7 +113,6 @@
   {
 	  "mob": "john_mod_reborn:john",
 	  "damagemultiply": 2,
-	  "speedmultiply": 0.5,
-	  "result": "allow"
+	  "result": "default"
   }
 ]

@@ -3,9 +3,10 @@
 	default_quest_shape: ""
 	filename: "modpack_challenges"
 	group: ""
+	hide_quest_details_until_startable: true
 	icon: "solcarrot:food_book"
 	id: "266EE1EB9BD1D5D8"
-	order_index: 3
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
@@ -17,13 +18,13 @@
 			icon: "solcarrot:food_book"
 			id: "3013BAC5A71D0B7E"
 			rewards: [{
-				id: "07783CC7186AD771"
+				id: "0C617942BE8D2E32"
 				item: {
 					Count: 1b
 					id: "everlastingabilities:ability_totem"
 					tag: {
 						"everlastingabilities:abilityStoreStack": [{
-							level: 1
+							level: 3
 							name: "everlastingabilities:effect/saturation"
 						}]
 					}
@@ -625,11 +626,11 @@
 			icon: "majruszsdifficulty:undead_army_treasure_bag"
 			id: "4D9DD81B160AF73F"
 			rewards: [{
-				count: 3
-				id: "13D296C52E701A55"
-				item: "bhc:blue_heart"
+				exclude_from_claim_all: true
+				id: "783188803A7FF225"
+				table_id: 1611928854952774845L
 				team_reward: false
-				type: "item"
+				type: "random"
 			}]
 			shape: "hexagon"
 			tasks: [
@@ -675,6 +676,13 @@
 		}
 		{
 			id: "1B2536A2021BFFE3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6C3158CF69086E7B"
+				table_id: 1611928854952774845L
+				team_reward: false
+				type: "random"
+			}]
 			shape: "hexagon"
 			subtitle: "Vital for Your Health"
 			tasks: [{
@@ -728,6 +736,13 @@
 			dependency_requirement: "one_started"
 			description: ["Consider crafting an Explorer's Compass and looking for a Lich Prison."]
 			id: "32DBFE096CDBBD50"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3C49969DE36232E4"
+				table_id: 1485737753405707727L
+				team_reward: false
+				type: "random"
+			}]
 			shape: "hexagon"
 			subtitle: "A Fine Addition to Your Collection"
 			tasks: [
@@ -764,6 +779,13 @@
 		{
 			dependency_requirement: "one_started"
 			id: "1748FA94AA88D81D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6267DC7342E7C9C5"
+				table_id: 3833145541680742441L
+				team_reward: false
+				type: "random"
+			}]
 			shape: "hexagon"
 			tasks: [
 				{
@@ -923,6 +945,13 @@
 		}
 		{
 			id: "22FC2810ECC2219E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7E6E653BDFD4BA49"
+				table_id: 1485737753405707727L
+				team_reward: false
+				type: "random"
+			}]
 			shape: "hexagon"
 			subtitle: "Only the Best for You"
 			tasks: [
@@ -1075,6 +1104,13 @@
 			dependencies: ["178240DF5110CD4F"]
 			description: ["An air-cooled fusion reactor is fine, so long as you have enough fuel."]
 			id: "570FF4F901127985"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3A7452D1896E7684"
+				table_id: 1611928854952774845L
+				team_reward: false
+				type: "random"
+			}]
 			shape: "square"
 			subtitle: "1TFE"
 			tasks: [{
@@ -1146,12 +1182,29 @@
 				}
 			}
 			id: "74855531C3834BC6"
-			rewards: [{
-				id: "796C067D1656DA7C"
-				item: "born_in_chaos_v1:supreme_measure"
-				team_reward: false
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "796C067D1656DA7C"
+					item: "born_in_chaos_v1:supreme_measure"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "3834A3CA40D4B78D"
+					item: {
+						Count: 1b
+						id: "everlastingabilities:ability_totem"
+						tag: {
+							"everlastingabilities:abilityStoreStack": [{
+								level: 1
+								name: "everlastingabilities:special/flight"
+							}]
+						}
+					}
+					team_reward: false
+					type: "item"
+				}
+			]
 			shape: "heart"
 			size: 2.0d
 			subtitle: "Completionist"
@@ -1168,6 +1221,13 @@
 			dependencies: ["420F5955A6621CA0"]
 			description: ["Be careful about how you submit this quest! Hot Fission Reactors are dangerous!"]
 			id: "627E945BD9C37540"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4A98C203E7A76908"
+				table_id: 7229915172908260108L
+				team_reward: false
+				type: "random"
+			}]
 			shape: "square"
 			tasks: [{
 				amount: 1000000L
@@ -1182,6 +1242,13 @@
 		{
 			dependencies: ["420F5955A6621CA0"]
 			id: "178240DF5110CD4F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5DE2F266DDB088B1"
+				table_id: 3833145541680742441L
+				team_reward: false
+				type: "random"
+			}]
 			shape: "square"
 			tasks: [{
 				amount: 100000L
@@ -1212,10 +1279,11 @@
 			icon: "ftbquests:book"
 			id: "3B4DB3C594ABBB62"
 			rewards: [{
-				id: "023CA05541A9058F"
-				item: "bhc:green_heart_canister"
+				exclude_from_claim_all: true
+				id: "3DCCC3B81E16CF76"
+				table_id: 7110483731590531050L
 				team_reward: false
-				type: "item"
+				type: "random"
 			}]
 			subtitle: "Complete the Introduction"
 			tasks: [{
@@ -1250,6 +1318,13 @@
 			disable_toast: true
 			icon: "minecraft:dragon_head"
 			id: "71F8B333C1AA58A0"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "202A60ECBD4B9189"
+				table_id: 1485737753405707727L
+				team_reward: false
+				type: "random"
+			}]
 			shape: "octagon"
 			size: 2.0d
 			subtitle: "Complete Bosses"
@@ -1270,6 +1345,13 @@
 			disable_toast: true
 			icon: "minecraft:golden_carrot"
 			id: "54FA8D1C2F01D0BB"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "50E2697D9D98A581"
+				table_id: 3833145541680742441L
+				team_reward: false
+				type: "random"
+			}]
 			subtitle: "Complete Night Vision Guide"
 			tasks: [{
 				id: "440AED54B85DF25C"
@@ -1306,6 +1388,7 @@
 				"65E72632C4110F0A"
 				"0437E18865C5A80D"
 				"1942DF4A6F008A53"
+				"0530A61540D8B3CB"
 			]
 			disable_toast: true
 			icon: {
@@ -1317,6 +1400,13 @@
 				}
 			}
 			id: "77FD8AF4F0C65F9F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2DB72982BD2C36D3"
+				table_id: 1611928854952774845L
+				team_reward: false
+				type: "random"
+			}]
 			subtitle: "Complete Apotheosis"
 			tasks: [{
 				id: "33BB9EE95DB88F36"
@@ -1342,6 +1432,13 @@
 			disable_toast: true
 			icon: "deep_dark_regrowth:soul_of_the_depths"
 			id: "32E988963719511C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3F2FD21FABAAC270"
+				table_id: 1611928854952774845L
+				team_reward: false
+				type: "random"
+			}]
 			subtitle: "Complete Creepies \\& Cryptids"
 			tasks: [{
 				id: "39C958AB2D66F9AA"
@@ -1440,6 +1537,13 @@
 				}
 			}
 			id: "0999F5EF031AEDBE"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7108EE3709B67DF1"
+				table_id: 1611928854952774845L
+				team_reward: false
+				type: "random"
+			}]
 			subtitle: "Complete Equipment"
 			tasks: [{
 				id: "0DD83DCFB7B62AA2"
@@ -1483,6 +1587,13 @@
 			disable_toast: true
 			icon: "mekanism:advanced_control_circuit"
 			id: "52B6928D38931A34"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5B81965441110B3F"
+				table_id: 3833145541680742441L
+				team_reward: false
+				type: "random"
+			}]
 			shape: "square"
 			subtitle: "Sufficient at Mekanism"
 			tasks: [{
@@ -1507,6 +1618,13 @@
 			disable_toast: true
 			icon: "mekanism:elite_control_circuit"
 			id: "184B2037A6D67E99"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4BFD0F2F47FE5169"
+				table_id: 7229915172908260108L
+				team_reward: false
+				type: "random"
+			}]
 			shape: "square"
 			subtitle: "Competent at Mekanism"
 			tasks: [{
@@ -1587,6 +1705,12 @@
 			disable_toast: true
 			icon: "mekanism:ultimate_control_circuit"
 			id: "5D7A9F47D60BCD3C"
+			rewards: [{
+				id: "7182BBA601AC9C8F"
+				table_id: 1611928854952774845L
+				team_reward: false
+				type: "random"
+			}]
 			shape: "square"
 			subtitle: "Multiblock Aficionado"
 			tasks: [{
@@ -1613,6 +1737,13 @@
 			disable_toast: true
 			icon: "functionalstorage:storage_controller"
 			id: "35FBFF6240677FF0"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "75F690A8CF09D25D"
+				table_id: 7110483731590531050L
+				team_reward: false
+				type: "random"
+			}]
 			subtitle: "Complete Storage"
 			tasks: [{
 				id: "51AAD8D9E91D8556"
@@ -1645,6 +1776,13 @@
 			disable_toast: true
 			icon: "minecraft:spyglass"
 			id: "59B4FDDD116CD928"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "21A1C31B88FC1147"
+				table_id: 3833145541680742441L
+				team_reward: false
+				type: "random"
+			}]
 			subtitle: "Complete Miscellaneous"
 			tasks: [{
 				id: "0872279ACD357E8B"
@@ -1663,6 +1801,13 @@
 				"Doing the math, this quest requires making 2000 HDPE Pellets (or half that number if you just throw away the substrate)."
 			]
 			id: "3A2B40AA010B454A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3DB4E25D692C73A3"
+				table_id: 7229915172908260108L
+				team_reward: false
+				type: "random"
+			}]
 			shape: "square"
 			tasks: [{
 				amount: 100000L
@@ -1676,6 +1821,13 @@
 		}
 		{
 			id: "56FA94AF3253BDD9"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "31AB62E08EA39A56"
+				table_id: 7229915172908260108L
+				team_reward: false
+				type: "random"
+			}]
 			shape: "hexagon"
 			tasks: [
 				{
@@ -1802,6 +1954,23 @@
 		}
 		{
 			id: "53E13E166B92759A"
+			rewards: [{
+				exclude_from_claim_all: true
+				icon: {
+					Count: 1b
+					id: "everlastingabilities:ability_totem"
+					tag: {
+						"everlastingabilities:abilityStoreStack": [{
+							level: 1
+							name: "everlastingabilities:effect/night_vision"
+						}]
+					}
+				}
+				id: "0E6E555A20B18476"
+				table_id: 2506927505960444751L
+				team_reward: false
+				type: "choice"
+			}]
 			shape: "hexagon"
 			tasks: [
 				{
@@ -2919,22 +3088,13 @@
 			disable_toast: true
 			icon: "mekanism:basic_control_circuit"
 			id: "282586D0ED8AAD81"
-			rewards: [
-				{
-					count: 16
-					id: "531BCCE5F2774F45"
-					item: "mekanism:alloy_infused"
-					team_reward: false
-					type: "item"
-				}
-				{
-					count: 8
-					id: "02A3C8BD971B12E3"
-					item: "mekanism:basic_control_circuit"
-					team_reward: false
-					type: "item"
-				}
-			]
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5E1728E2973F5F95"
+				table_id: 7110483731590531050L
+				team_reward: false
+				type: "random"
+			}]
 			shape: "square"
 			subtitle: "Completed the Tutorial"
 			tasks: [{
@@ -2948,6 +3108,12 @@
 		}
 		{
 			id: "2262C92F7C33CD04"
+			rewards: [{
+				id: "39B5FC94E339B79A"
+				table_id: 7229915172908260108L
+				team_reward: false
+				type: "random"
+			}]
 			shape: "hexagon"
 			tasks: [
 				{

@@ -5,14 +5,14 @@
 	group: ""
 	icon: "minecraft:dragon_head"
 	id: "335C3BE04721130D"
-	order_index: 2
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
 			id: "55FBE8EAD0C29929"
 			rewards: [{
 				id: "70E15E8BF625D9C7"
-				item: "bhc:blue_heart"
+				item: "bhc:blue_heart_canister"
 				team_reward: false
 				type: "item"
 			}]
@@ -32,7 +32,7 @@
 			id: "5A52C641F93F4A78"
 			rewards: [{
 				id: "4164627A448CE05E"
-				item: "bhc:blue_heart"
+				item: "bhc:blue_heart_canister"
 				team_reward: false
 				type: "item"
 			}]
@@ -52,7 +52,7 @@
 			rewards: [{
 				count: 2
 				id: "2981D072DB73FA42"
-				item: "bhc:green_heart"
+				item: "bhc:green_heart_canister"
 				team_reward: false
 				type: "item"
 			}]
@@ -72,7 +72,7 @@
 			rewards: [{
 				count: 2
 				id: "4CB806727D5CED8A"
-				item: "bhc:yellow_heart"
+				item: "bhc:yellow_heart_canister"
 				team_reward: false
 				type: "item"
 			}]
@@ -91,7 +91,7 @@
 			id: "6FD021FD2E5C236E"
 			rewards: [{
 				id: "7F722B7C0362E6DA"
-				item: "bhc:yellow_heart"
+				item: "bhc:yellow_heart_canister"
 				team_reward: false
 				type: "item"
 			}]
@@ -110,7 +110,7 @@
 			id: "5DF2D7A268EBDADB"
 			rewards: [{
 				id: "1886C30E36608441"
-				item: "bhc:yellow_heart"
+				item: "bhc:yellow_heart_canister"
 				team_reward: false
 				type: "item"
 			}]
@@ -120,7 +120,7 @@
 				icon: "minecraft:skeleton_skull"
 				id: "4857635C16BFCB44"
 				type: "kill"
-				value: 2L
+				value: 1L
 			}]
 			x: -0.5d
 			y: 2.5d
@@ -130,7 +130,7 @@
 			rewards: [{
 				count: 2
 				id: "3311DA27CDBB9A99"
-				item: "bhc:yellow_heart"
+				item: "bhc:yellow_heart_canister"
 				team_reward: false
 				type: "item"
 			}]
@@ -158,7 +158,7 @@
 			rewards: [{
 				count: 2
 				id: "0FDEEE287E4F6DF5"
-				item: "bhc:blue_heart"
+				item: "bhc:blue_heart_canister"
 				team_reward: false
 				type: "item"
 			}]
@@ -208,7 +208,7 @@
 			id: "750D9027DB9ACDA8"
 			rewards: [{
 				id: "146BB00E629A76EA"
-				item: "bhc:green_heart"
+				item: "bhc:green_heart_canister"
 				team_reward: false
 				type: "item"
 			}]
@@ -227,7 +227,7 @@
 			id: "0A433323059EF6A0"
 			rewards: [{
 				id: "6CB7ED105D7DCB0A"
-				item: "bhc:blue_heart"
+				item: "bhc:blue_heart_canister"
 				team_reward: false
 				type: "item"
 			}]
@@ -252,7 +252,7 @@
 			id: "7854EFBAE08B9047"
 			rewards: [{
 				id: "4F33F1E59804833D"
-				item: "bhc:blue_heart"
+				item: "bhc:blue_heart_canister"
 				team_reward: false
 				type: "item"
 			}]
@@ -277,7 +277,7 @@
 			id: "301D12E7B6EF1EFD"
 			rewards: [{
 				id: "2A0511FEA1A68E55"
-				item: "bhc:green_heart"
+				item: "bhc:green_heart_canister"
 				team_reward: false
 				type: "item"
 			}]
@@ -297,7 +297,7 @@
 			invisible: true
 			rewards: [{
 				id: "1AC87323E681D538"
-				item: "bhc:blue_heart"
+				item: "bhc:blue_heart_canister"
 				team_reward: false
 				type: "item"
 			}]
@@ -316,7 +316,7 @@
 			id: "22E60188D9AFD2A7"
 			rewards: [{
 				id: "2381A8651BC4B354"
-				item: "bhc:green_heart"
+				item: "bhc:green_heart_canister"
 				team_reward: false
 				type: "item"
 			}]
@@ -341,7 +341,7 @@
 			id: "07AF4C7C75993E4D"
 			rewards: [{
 				id: "222420438ED99B88"
-				item: "bhc:green_heart"
+				item: "bhc:green_heart_canister"
 				team_reward: false
 				type: "item"
 			}]
@@ -360,7 +360,7 @@
 			id: "4C09ABEB358C0F24"
 			rewards: [{
 				id: "4D1CEF7296962C8D"
-				item: "bhc:green_heart"
+				item: "bhc:green_heart_canister"
 				team_reward: false
 				type: "item"
 			}]
@@ -380,7 +380,7 @@
 			rewards: [{
 				count: 2
 				id: "5B8AEA77769DD760"
-				item: "bhc:yellow_heart"
+				item: "bhc:yellow_heart_canister"
 				team_reward: false
 				type: "item"
 			}]

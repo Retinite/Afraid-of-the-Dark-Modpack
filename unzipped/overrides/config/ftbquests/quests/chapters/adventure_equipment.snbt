@@ -499,7 +499,11 @@
 		}
 		{
 			dependencies: ["5490E0FF9D15FB0D"]
-			description: ["Make note of the uncapped growth of Sugar Cane and the Enrichment Chamber recipe for Obscurium, if you haven't already."]
+			description: [
+				"Make note of the uncapped growth of Sugar Cane and the Enrichment Chamber recipe for Obscurium, if you haven't already."
+				""
+				"Functions like &6Honey Block&rs when placed!"
+			]
 			id: "288D9B4B31959997"
 			rewards: [{
 				id: "5D12F22C38C30144"
@@ -696,7 +700,7 @@
 			]
 			title: "Three-Bolt Suit"
 			x: 5.5d
-			y: 2.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["1B1E79910C731F02"]
@@ -1010,7 +1014,7 @@
 		}
 		{
 			dependencies: ["44C92F2DEA6CF79F"]
-			description: ["&cEXPERIMENTAL RECIPE; MIGHT NEED BALANCE CHANGES"]
+			description: [""]
 			id: "0909EED5F6B462DB"
 			optional: true
 			rewards: [{
@@ -1726,13 +1730,14 @@
 				type: "item"
 			}]
 			shape: "diamond"
+			subtitle: "Can be Affixed!"
 			tasks: [{
 				id: "54FA6C7192E8F29A"
 				item: "mekanism:free_runners_armored"
 				type: "item"
 			}]
 			x: 5.0d
-			y: 3.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["5298D928D9D091CB"]
@@ -1746,13 +1751,14 @@
 				type: "item"
 			}]
 			shape: "diamond"
+			subtitle: "Can be Affixed!"
 			tasks: [{
 				id: "630606A8DBF10FB3"
 				item: "mekanism:jetpack_armored"
 				type: "item"
 			}]
 			x: 6.0d
-			y: 3.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["410B2BD836BEAC32"]
@@ -2672,6 +2678,7 @@
 		}
 		{
 			dependencies: ["67719D6F9CE41903"]
+			dependency_requirement: "one_started"
 			id: "53B56FE3223FC903"
 			optional: true
 			rewards: [{
@@ -4454,7 +4461,7 @@
 		}
 		{
 			dependencies: ["5C6355E15C1CDDF1"]
-			description: ["Uses energy in place of durability. Can be enchanted with bow enchantments."]
+			description: ["Uses energy in place of durability. Can be enchanted with bow enchantments, and be given Apothic affixes via a Reforgin Table."]
 			id: "11985A88839C0CB2"
 			optional: true
 			rewards: [
@@ -4473,6 +4480,7 @@
 				}
 			]
 			shape: "diamond"
+			subtitle: "Can be Affixed!"
 			tasks: [{
 				disable_toast: true
 				id: "4A25CA796F1D975E"
@@ -4629,6 +4637,7 @@
 			]
 			icon: "mekanism:basic_crushing_factory"
 			id: "34B86660F419AEA4"
+			min_required_tasks: 1
 			rewards: [{
 				id: "30B19D9DE5EA3E42"
 				item: {
@@ -4643,11 +4652,18 @@
 			shape: "gear"
 			size: 2.0d
 			subtitle: "Free Resources"
-			tasks: [{
-				id: "3059A256DF6B22C4"
-				title: "CLICK ME"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "7EAA1F4EF12BC9F0"
+					item: "mekanism:crusher"
+					type: "item"
+				}
+				{
+					id: "25B7D0F66CD8AFF0"
+					item: "apotheosis:salvaging_table"
+					type: "item"
+				}
+			]
 			title: "Recycling"
 			x: 1.0d
 			y: -6.0d

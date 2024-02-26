@@ -29,7 +29,7 @@ craftingTable.addShapeless("aotdextras.obscurium_ingot_alt", <item: aotdextras:o
 <item: aotdextras:obscurium_ingot>.burnTime = 3200;
 
 <tag:items: aotdextras:rare_drops>.add([<item: born_in_chaos_v1:seedof_chaos>, <item: undead_unleashed:necrotic_dust>, <item: minecraft:ghast_tear>, <item: apotheosis:rare_material>, <item:undead_unleashed:lost_soul>]);
-<tag:items: aotdextras:evil_ingots>.add([<item: born_in_chaos_v1:dark_metal_ingot>, <item: tenebrous_lands:zenyr>, <item: undead_unleashed:grave_metal_ingot>, <item: graveyard:dark_iron_ingot>]);
+<tag:items: aotdextras:evil_ingots>.add([<item: born_in_chaos_v1:dark_metal_ingot>, <item: undead_unleashed:grave_metal_ingot>, <item: graveyard:dark_iron_ingot>]);
 craftingTable.remove(<item: aotdextras:occultium_ingot>);
 craftingTable.remove(<item: aotdextras:occultium_block>);
 craftingTable.addShapeless("aotdextras.occultium_ingot", <item: aotdextras:occultium_ingot> * 2,
@@ -41,12 +41,13 @@ craftingTable.addShaped("aotdextras.occultium_block", <item: aotdextras:occultiu
 	 [<item: aotdextras:occultium_ingot>, <item: aotdextras:occultium_ingot>]]);
 craftingTable.addShapeless("aotdextras.occultium_block_decompress", <item: aotdextras:occultium_ingot> * 4, [<item: aotdextras:occultium_block>]);
 
+craftingTable.remove(<item:aotdextras:luxum_lamp>);
 craftingTable.removeByName("aotdextras:luxum_lamp_decompress");
-craftingTable.addShapeless("aotdextras.luxum_ingot", <item: aotdextras:luxum_ingot>,
+smithing.addRecipe("aotd.luxum_lamp", <item:aotdextras:luxum_lamp>, <item:minecraft:redstone_lamp>, <item:aotdextras:luxum_ingot>);
+craftingTable.addShapeless("aotdextras.luxum_ingot", <item: aotdextras:luxum_ingot> * 2,
 	[<item: illuminative:glow_inc_sac_block>,        <item: illuminative:glow_fish_item>, <item: illuminative:glowstone_torch>,
 	 <item: gardens_of_the_dead:glowing_soul_spore>, <item: aotdextras:obscurium_ingot>,       <item: minecraft:glow_lichen>,
 	 <item: aquamirae:luminescent_lamp>,	         <item: observed:observereye>,             <item: minecraft:shroomlight>]);
-<recipetype:mekanism:crushing>.addRecipe("luxum_lamp_recycle", <item: aotdextras:luxum_lamp>, <item: aotdextras:luxum_ingot>);
 
 <tag:items: aotdextras:epic_drops>.add([<item: john_mod_reborn:bloody_tear>, <item: deep_dark_regrowth:plasmatic_sculk>, <item: deep_dark_regrowth:etherium_gem>, <item: deep_dark_regrowth:aware_lens>, <item: apotheosis:epic_material>, <item: unusualend:shiny_crystal>]);
 <tag:items: aotdextras:boss_drops>.add([<item: minecraft:nether_star>, <item: deep_dark_regrowth:soul_of_the_depths>, <item: aquamirae:abyssal_amethyst>, <item: whisperwoods:hirschgeist_skull>, <item: apotheosis:warden_tendril>]);
@@ -54,10 +55,14 @@ craftingTable.addShaped("aotdextras.nihilum_ingot", <item: aotdextras:nihilum_in
 	[[<item: deep_dark_regrowth:galm>,          <item: aotdextras:occultium_ingot>, <item: born_in_chaos_v1:black_argillite>],
 	 [<item: aotdextras:occultium_ingot>,       <item: aotdextras:luxum_lamp>,      <item: aotdextras:occultium_ingot>],
 	 [<item: born_in_chaos_v1:black_argillite>, <item: aotdextras:occultium_ingot>, <item: deep_dark_regrowth:galm>]]);
-craftingTable.addShapeless("aotdextras.nihilum_ingot_alt", <item: aotdextras:nihilum_ingot>,
-	[<tag:items: aotdextras:boss_drops>, <tag:items: aotdextras:epic_drops>, <tag:items: aotdextras:boss_drops>,
-	 <tag:items: aotdextras:epic_drops>, <item: aotdextras:obscurium_block>, <tag:items: aotdextras:epic_drops>,
-	 <tag:items: aotdextras:boss_drops>, <tag:items: aotdextras:epic_drops>, <tag:items: aotdextras:boss_drops>]);
+craftingTable.addShaped("aotdextras.nihilum_ingot_alt", <item: aotdextras:nihilum_ingot>,
+	[[<tag:items: aotdextras:boss_drops>, <tag:items: aotdextras:epic_drops>, <tag:items: aotdextras:boss_drops>],
+	 [<tag:items: aotdextras:epic_drops>, <item: aotdextras:obscurium_block>, <tag:items: aotdextras:epic_drops>],
+	 [<tag:items: aotdextras:boss_drops>, <tag:items: aotdextras:epic_drops>, <tag:items: aotdextras:boss_drops>]]);
+craftingTable.addShaped("aotdextras.nihilum_ingot_alt_b", <item: aotdextras:nihilum_ingot> * 3,
+	[[<tag:items: aotdextras:boss_drops>, <tag:items: aotdextras:epic_drops>, <tag:items: aotdextras:boss_drops>],
+	 [<tag:items: aotdextras:epic_drops>, <item: aotdextras:occultium_block>, <tag:items: aotdextras:epic_drops>],
+	 [<tag:items: aotdextras:boss_drops>, <tag:items: aotdextras:epic_drops>, <tag:items: aotdextras:boss_drops>]]);
 smithing.addRecipe("aotd.nihilum_from_luxum", <item:aotdextras:nihilum_ingot>, <item:aotdextras:luxum_ingot>, <item:mekanism:pellet_antimatter>);
 smithing.addRecipe("aotd.nihilum_from_luxum_block", <item:aotdextras:nihilum_block>, <item:aotdextras:luxum_block>, <item:mekanism:pellet_antimatter>);
 
@@ -77,6 +82,18 @@ craftingTable.addShaped("bhc.soul_heart_crystal", <item:bhc:soul_heart_crystal>,
 	[[<item:minecraft:echo_shard>, <item:bhc:red_heart>,           <item:minecraft:echo_shard>],
 	 [<item:bhc:yellow_heart>,     <item:bhc:soul_heart_canister>, <item:bhc:green_heart>],
 	 [<item:minecraft:echo_shard>, <item:bhc:blue_heart>,          <item:minecraft:echo_shard>]]);
+
+craftingTable.remove(<item:graveyard:dark_iron_ingot>);
+craftingTable.addShaped("graveyard.dark_iron_ingot", <item:graveyard:dark_iron_ingot>,
+	[[<item:graveyard:corruption>, <item:graveyard:corruption>,  <item:graveyard:corruption>],
+	 [<item:graveyard:corruption>, <item:tenebrous_lands:zenyr>, <item:graveyard:corruption>],
+	 [<item:graveyard:corruption>, <item:graveyard:corruption>,  <item:graveyard:corruption>]]);
+
+craftingTable.remove(<item:undead_unleashed:grave_metal_ingot>);
+craftingTable.addShaped("undead_unleashed.grave_metal_ingot", <item:undead_unleashed:grave_metal_ingot>,
+	[[<item:undead_unleashed:grave_metal_scrap>, <item:undead_unleashed:grave_metal_scrap>, <item:undead_unleashed:grave_metal_scrap>],
+	 [<item:undead_unleashed:grave_metal_scrap>, <item:tenebrous_lands:zenyr>,              <item:undead_unleashed:grave_metal_scrap>],
+	 [<item:undead_unleashed:grave_metal_scrap>, <item:undead_unleashed:grave_metal_scrap>, <item:undead_unleashed:grave_metal_scrap>]]);
 
 // Miscellaneous -----------------------------------------------------------------------------------------------------------------------------
 

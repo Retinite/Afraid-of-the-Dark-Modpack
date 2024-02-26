@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_required_items": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mekanism:raw_lead"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_required_items"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mekanism:processing/lead/raw_storage_blocks/from_raw",
+      "mekanism:processing/lead/raw/from_raw_block",
+      "mekanism:processing/lead/ingot/from_raw_blasting",
+      "mekanism:processing/lead/ingot/from_raw_smelting"
+    ]
+  }
+}
