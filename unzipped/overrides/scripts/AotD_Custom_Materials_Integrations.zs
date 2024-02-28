@@ -30,6 +30,7 @@ craftingTable.removeByName("majruszsdifficulty:enderium_ingot_horizontal");
 function addLightRecipe(itemIn as IIngredient, count as int) as void {
 <recipetype:mekanism:reaction>.addRecipe("light_essence_from_" + itemIn.items[0].registryName.path, ItemStackIngredient.from(itemIn), <fluid:mekanism:hydrofluoric_acid> * 100, <gas:crafttweaker:end_essence> * 4, 2000, <gas:crafttweaker:light_essence> * count*20, 1000);
 }
+addLightRecipe(<item:minecraft:glow_berries>, 3);
 addLightRecipe(<item:minecraft:ochre_froglight>, 12);
 addLightRecipe(<item:minecraft:verdant_froglight>, 12);
 addLightRecipe(<item:minecraft:pearlescent_froglight>, 12);
@@ -40,6 +41,8 @@ addLightRecipe(<item:minecraft:glowstone>, 48);
 addLightRecipe(<item:minecraft:glow_ink_sac>, 1);
 addLightRecipe(<item:illuminative:glow_inc_sac_block>, 9);
 addLightRecipe(<item:illuminative:glow_fish_item>, 2);
+addLightRecipe(<item:illuminative:glowing_mushroom_block>, 9);
+addLightRecipe(<item:illuminative:glowing_mushroom>, 2);
 addLightRecipe(<item:illuminative:cooked_glow_fish>, 1);
 addLightRecipe(<item:observed:observereye>, 18);
 addLightRecipe(<item:gardens_of_the_dead:glowing_soul_spore>, 2);

@@ -95,6 +95,17 @@ craftingTable.addShaped("undead_unleashed.grave_metal_ingot", <item:undead_unlea
 	 [<item:undead_unleashed:grave_metal_scrap>, <item:tenebrous_lands:zenyr>,              <item:undead_unleashed:grave_metal_scrap>],
 	 [<item:undead_unleashed:grave_metal_scrap>, <item:undead_unleashed:grave_metal_scrap>, <item:undead_unleashed:grave_metal_scrap>]]);
 
+<recipetype:mekanism:combining>.addRecipe("dark_metal_into_dark_iron", <item: born_in_chaos_v1:dark_metal_ingot>, <item: graveyard:corruption>, <item: graveyard:dark_iron_ingot>);
+<recipetype:mekanism:combining>.addRecipe("dark_metal_into_grave", <item: born_in_chaos_v1:dark_metal_ingot>, <item: undead_unleashed:grave_metal_scrap>, <item: undead_unleashed:grave_metal_ingot>);
+<recipetype:mekanism:combining>.addRecipe("grave_into_dark_iron", <item: undead_unleashed:grave_metal_ingot>, <item: graveyard:corruption>, <item: graveyard:dark_iron_ingot>);
+<recipetype:mekanism:combining>.addRecipe("grave_into_dark_metal", <item: undead_unleashed:grave_metal_ingot>, <item: born_in_chaos_v1:pieceofdarkmetal>, <item: born_in_chaos_v1:dark_metal_ingot>);
+<recipetype:mekanism:combining>.addRecipe("dark_iron_into_grave", <item: graveyard:dark_iron_ingot>, <item: undead_unleashed:grave_metal_scrap>, <item: undead_unleashed:grave_metal_ingot>);
+<recipetype:mekanism:combining>.addRecipe("dark_iron_into_dark_metal", <item: graveyard:dark_iron_ingot>, <item: born_in_chaos_v1:pieceofdarkmetal>, <item: born_in_chaos_v1:dark_metal_ingot>);
+<recipetype:mekanism:enriching>.addRecipe("zenyr_into_iron", <item: tenebrous_lands:zenyr>, <item: minecraft:iron_ingot> * 2);
+<recipetype:mekanism:enriching>.addRecipe("dark_iron_into_steel", <item: graveyard:dark_iron_ingot>, <item: mekanism:ingot_steel> * 2);
+<recipetype:mekanism:enriching>.addRecipe("grave_into_steel", <item: undead_unleashed:grave_metal_ingot>, <item: mekanism:ingot_steel> * 2);
+<recipetype:mekanism:enriching>.addRecipe("dark_metal_into_steel", <item: born_in_chaos_v1:dark_metal_ingot>, <item: mekanism:ingot_steel> * 2);
+
 // Miscellaneous -----------------------------------------------------------------------------------------------------------------------------
 
 // add Glow TNT

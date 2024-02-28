@@ -584,7 +584,7 @@
 		}
 		{
 			dependencies: ["7CFC505397B0C825"]
-			description: ["Stops and prevents &4Bleeding&r, and also provides some regeneration!"]
+			description: ["Stops and prevents &4Bleeding&r, and also provides some regeneration! Can be applied to animals too!"]
 			hide: true
 			id: "0222BF4A0D310ACF"
 			rewards: [{

@@ -67,14 +67,6 @@ craftingTable.addShaped("minecraft.chainmail_boots", <item:minecraft:chainmail_b
 	[<item:minecraft:iron_bars>,  IIngredientEmpty.getInstance(), <item:minecraft:iron_bars>]]);
 
 // allow mob drop conversions into other resources
-furnace.removeByName("undead_unleashed:iron_smelting");
-blastFurnace.removeByName("undead_unleashed:iron_blasting");
-smithing.addRecipe("dark_metal_into_grave", <item: undead_unleashed:grave_metal_ingot>, <item: born_in_chaos_v1:dark_metal_ingot>, <item: undead_unleashed:grave_metal_scrap>);
-smithing.addRecipe("grave_into_dark_metal", <item: born_in_chaos_v1:dark_metal_ingot>, <item: undead_unleashed:grave_metal_ingot>, <item: born_in_chaos_v1:pieceofdarkmetal>);
-<recipetype:mekanism:enriching>.addRecipe("dark_metal_into_steel", <item: born_in_chaos_v1:dark_metal_ingot>, <item: mekanism:ingot_steel>);
-<recipetype:mekanism:enriching>.addRecipe("grave_into_steel", <item: undead_unleashed:grave_metal_ingot>, <item: mekanism:ingot_steel>);
-<recipetype:mekanism:enriching>.addRecipe("zenyr_into_iron", <item: tenebrous_lands:zenyr>, <item: minecraft:iron_ingot> * 2);
-<recipetype:mekanism:enriching>.addRecipe("dark_iron_into_steel", <item: graveyard:dark_iron_ingot>, <item: mekanism:ingot_steel>);
 <recipetype:mekanism:enriching>.addRecipe("gem_into_diamond", <item: john_mod_reborn:immortalitygem>, <item: minecraft:diamond>);
 <recipetype:mekanism:enriching>.addRecipe("tear_into_scrap", <item: john_mod_reborn:bloody_tear>, <item: minecraft:netherite_scrap>);
 <recipetype:mekanism:enriching>.addRecipe("crystal_into_diamond", <item: monsterplus:ancient_crystal>, <item: minecraft:diamond>);
@@ -176,6 +168,10 @@ smithing.addRecipe("unusualend.golem_orb", <item:unusualend:golem_orb>, <item:bo
 
 // add sculk soil recipe
 craftingTable.addShapeless("deep_dark_regrowth.sculk_soil", <item:deep_dark_regrowth:sculk_soil>, [<item:minecraft:soul_soil>, <item:minecraft:sculk>]);
+
+// add Born in Chaos's Marigolds to appropriate tags
+<tag:items:minecraft:small_flowers>.add([<item: born_in_chaos_v1:marigolds>]);
+<tag:items:minecraft:flowers>.add([<item: born_in_chaos_v1:marigolds>]);
 
 // add Minecraft Saddle recipe & recycle
 craftingTable.addShaped("aotd.saddle", <item:minecraft:saddle>,

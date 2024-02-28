@@ -21,7 +21,7 @@ if(cost > 1) {
 } else {
 	dust_corners = IIngredientEmpty.getInstance();
 }
-craftingTable.addShaped("aotd." + enchant + "_book", <item:minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:modid + ":" + enchant,lvl:1}]}),
+craftingTable.addShaped("aotd." + enchant + "_book", <item:minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:modid + ":" + enchant,lvl:1 as short}]}),
 	[[dust_corners, specialIngredient.anyDamage(),     dust_corners],
 	 [dust_center,  <item:minecraft:book>,             dust_center],
 	 [dust_corners, specialIngredient.anyDamage(),     dust_corners]]);
@@ -39,7 +39,7 @@ if(cost > 1) {
 } else {
 	dust_corners = IIngredientEmpty.getInstance();
 }
-craftingTable.addShaped("aotd." + enchant + "_book", <item:minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:modid + ":" + enchant,lvl:1}]}),
+craftingTable.addShaped("aotd." + enchant + "_book", <item:minecraft:enchanted_book>.withTag({StoredEnchantments:[{id:modid + ":" + enchant,lvl:1 as short}]}),
 	[[dust_corners, specialIngredient1.anyDamage(),    dust_corners],
 	 [dust_center,  <item:minecraft:book>,             dust_center],
 	 [dust_corners, specialIngredient2.anyDamage(),    dust_corners]]);
@@ -70,8 +70,7 @@ addBookRecipe("minecraft", "respiration", <item:minecraft:glass_bottle>, 2);
 addBookRecipe2("minecraft", "aqua_affinity", <item:minecraft:glass_bottle>, <item:apotheosis:epic_material>, 3);
 addBookRecipe2("minecraft", "swift_sneak", <item:minecraft:sculk_sensor>, <item:deep_dark_regrowth:soul_of_the_depths>, 3);
 addBookRecipe2("minecraft", "feather_falling", <item:minecraft:feather>, <item:minecraft:phantom_membrane>, 2);
-var sand = <item:minecraft:sand> | <item:minecraft:red_sand>;
-addBookRecipe2("minecraft", "depth_strider", <item:minecraft:sugar>, sand, 2);
+addBookRecipe2("minecraft", "depth_strider", <item:minecraft:leather_boots>, <item:minecraft:water_bucket>, 2);
 addBookRecipe("minecraft", "frost_walker", <item:minecraft:packed_ice>, 2);
 addBookRecipe2("apotheosis", "stable_footing", <item:minecraft:scaffolding>, <item:apotheosis:epic_material>, 3);
 addBookRecipe2("minecraft", "soul_speed", <item:minecraft:netherite_scrap>, <item:minecraft:soul_sand>, 2);
@@ -90,14 +89,14 @@ addBookRecipe2("apotheosis", "bane_of_illagers", <item:minecraft:emerald>, <item
 addBookRecipe2("apotheosis", "capturing", <item:minecraft:egg>, <item:apotheosis:epic_material>, 3);
 
 // trident enchantments
-var trident_tip = <item:undead_unleashed:demon_horn> | <item:upgrade_aquatic:thrasher_tooth>;
-addBookRecipe("minecraft", "impaling", trident_tip, 2);
-var trident = <item:minecraft:trident> | <item:apotheosis:inert_trident>;
-addBookRecipe2("minecraft", "loyalty", <item:minecraft:fishing_rod>, trident, 2);
-addBookRecipe2("minecraft", "riptide", <item:minecraft:water_bucket>, <item:minecraft:rabbit_foot>, 2);
-addBookRecipe2("minecraft", "channeling", <item:minecraft:lightning_rod>, trident, 3);
-var fish = <item:minecraft:cod> | <item:minecraft:salmon> | <item:minecraft:tropical_fish> | <item:minecraft:pufferfish> | <item:illuminative:glow_fish_item> | <item:upgrade_aquatic:pike> | <item:upgrade_aquatic:lionfish> | <item:upgrade_aquatic:perch>;
-addBookRecipe2("apotheosis", "spearfishing", fish, trident, 1);
+<tag:items:aotdextras:trident_tip>.add([<item: upgrade_aquatic:thrasher_tooth>, <item: undead_unleashed:demon_horn>]);
+addBookRecipe("minecraft", "impaling", <tag:items:aotdextras:trident_tip>, 2);
+<tag:items:aotdextras:trident_as_ingredient>.add([<item:minecraft:trident>, <item:apotheosis:inert_trident>]);
+addBookRecipe2("minecraft", "loyalty", <item:minecraft:fishing_rod>, <tag:items:aotdextras:trident_as_ingredient>, 2);
+addBookRecipe2("minecraft", "riptide", <item:minecraft:rabbit_foot>, <item:minecraft:water_bucket>, 2);
+addBookRecipe2("minecraft", "channeling", <item:minecraft:lightning_rod>, <tag:items:aotdextras:trident_as_ingredient>, 3);
+<tag:items:aotdextras:any_raw_fish>.add([<item:minecraft:cod>, <item:minecraft:salmon>, <item:minecraft:tropical_fish>, <item:minecraft:pufferfish>, <item:illuminative:glow_fish_item>, <item:upgrade_aquatic:pike>, <item:upgrade_aquatic:lionfish>, <item:upgrade_aquatic:perch>]);
+addBookRecipe2("apotheosis", "spearfishing", <tag:items:aotdextras:any_raw_fish>, <tag:items:aotdextras:trident_as_ingredient>, 1);
 
 // bow enchantments
 addBookRecipe2("minecraft", "power", <item:minecraft:redstone_torch>, <item:minecraft:bow>, 2);
@@ -118,8 +117,8 @@ addBookRecipe("minecraft", "fortune", <item:minecraft:diamond>, 3);
 addBookRecipe("minecraft", "silk_touch", <item:minecraft:grass_block>, 3);
 addBookRecipe("apotheosis", "miners_fervor", <item:minecraft:golden_pickaxe>, 1);
 addBookRecipe2("apotheosis", "tempting", <item:minecraft:golden_carrot>, <item:minecraft:hay_block>, 3);
-var ore = <item:minecraft:coal_ore> | <item:minecraft:iron_ore> | <item:minecraft:copper_ore> | <item:minecraft:gold_ore> | <item:minecraft:redstone_ore> | <item:minecraft:emerald_ore> | <item:minecraft:lapis_ore> | <item:minecraft:diamond_ore>;
-addBookRecipe2("apotheosis", "earths_boon", ore, <item:minecraft:stone>, 3);
+<tag:items:aotdextras:vanilla_stone_ore>.add([<item:minecraft:coal_ore>, <item:minecraft:iron_ore>, <item:minecraft:copper_ore>, <item:minecraft:gold_ore>, <item:minecraft:redstone_ore>, <item:minecraft:emerald_ore>, <item:minecraft:lapis_ore>, <item:minecraft:diamond_ore>]);
+addBookRecipe2("apotheosis", "earths_boon", <tag:items:aotdextras:vanilla_stone_ore>, <item:minecraft:stone>, 3);
 addBookRecipe2("apotheosis", "chainsaw", <item:minecraft:golden_axe>, <item:apotheosis:epic_material>, 3);
 
 // fishing rod enchantments
@@ -169,28 +168,30 @@ var pickaxes = <item:minecraft:stone_pickaxe>;
 var shields = <item:minecraft:shield>;
 var ranged_weapons = <item:minecraft:bow>;
 
-var mining_tools = pickaxes | <item:minecraft:stone_shovel>;
-var upper_armor = helmets | chestplates;
-var core_armor = chestplates | leggings;
-var lower_armor = leggings | boots;
-var melee_weapons = light_weapons | heavy_weapons;
+<tag:items:aotdextras:mining_tool_example>.add([<item:minecraft:stone_pickaxe>, <item:minecraft:stone_shovel>]);
+<tag:items:aotdextras:upper_armor_example>.add([<item:minecraft:leather_helmet>, <item:minecraft:leather_chestplate>]);
+<tag:items:aotdextras:core_armor_example>.add([<item:minecraft:leather_chestplate>, <item:minecraft:leather_leggings>]);
+<tag:items:aotdextras:lower_armor_example>.add([<item:minecraft:leather_leggings>, <item:minecraft:leather_boots>]);
+<tag:items:aotdextras:melee_weapon_example>.add([<item:minecraft:stone_sword>, <item:minecraft:stone_axe>]);
+<tag:items:aotdextras:light_and_ranged_example>.add([<item:minecraft:stone_sword>, <item:minecraft:bow>]);
+<tag:items:aotdextras:tool_example>.add([<item:minecraft:stone_sword>, <item:minecraft:stone_axe>, <item:minecraft:bow>, <item:minecraft:stone_pickaxe>, <item:minecraft:stone_shovel>]);
 
-addGemRecipe4(light_weapons, heavy_weapons, mining_tools, core_armor, "core/ballast", "common");
-addGemRecipe4(light_weapons, core_armor, heavy_weapons, shields, "core/brawlers", "common");
-addGemRecipe4(light_weapons, heavy_weapons, mining_tools, ranged_weapons, "core/breach", "common");
-addGemRecipe3(ranged_weapons, core_armor, melee_weapons, "core/combatant", "common");
-addGemRecipe4(core_armor, light_weapons, heavy_weapons, shields, "core/guardian", "common");
-addGemRecipe3(ranged_weapons, mining_tools, lower_armor, "core/lightning", "common");
-addGemRecipe3(light_weapons, core_armor, boots, "core/lunar", "common");
-addGemRecipe5(light_weapons | ranged_weapons, heavy_weapons, lower_armor, helmets, shields, "core/samurai", "common");
-addGemRecipe3(ranged_weapons, mining_tools, boots, "core/slipstream", "common");
-addGemRecipe3(light_weapons, core_armor, boots, "core/solar", "common");
-addGemRecipe3(core_armor, melee_weapons | ranged_weapons | mining_tools, boots, "core/splendor", "common");
-addGemRecipe4(heavy_weapons, light_weapons, core_armor, shields, "core/tyrannical", "common");
-addGemRecipe4(light_weapons | ranged_weapons, heavy_weapons, chestplates, helmets, "core/warlord", "common");
-addGemRecipe5(melee_weapons, <item:apotheosis:epic_material>, core_armor, <item:apotheosis:epic_material>, mining_tools, "overworld/earth", "rare");
+addGemRecipe4(light_weapons, heavy_weapons, <tag:items:aotdextras:mining_tool_example>, <tag:items:aotdextras:core_armor_example>, "core/ballast", "common");
+addGemRecipe4(light_weapons, <tag:items:aotdextras:core_armor_example>, heavy_weapons, shields, "core/brawlers", "common");
+addGemRecipe4(light_weapons, heavy_weapons, <tag:items:aotdextras:mining_tool_example>, ranged_weapons, "core/breach", "common");
+addGemRecipe3(ranged_weapons, <tag:items:aotdextras:core_armor_example>, <tag:items:aotdextras:melee_weapon_example>, "core/combatant", "common");
+addGemRecipe4(<tag:items:aotdextras:core_armor_example>, light_weapons, heavy_weapons, shields, "core/guardian", "common");
+addGemRecipe3(ranged_weapons, <tag:items:aotdextras:mining_tool_example>, <tag:items:aotdextras:lower_armor_example>, "core/lightning", "common");
+addGemRecipe3(light_weapons, <tag:items:aotdextras:core_armor_example>, boots, "core/lunar", "common");
+addGemRecipe5(<tag:items:aotdextras:light_and_ranged_example>, heavy_weapons, <tag:items:aotdextras:lower_armor_example>, helmets, shields, "core/samurai", "common");
+addGemRecipe3(ranged_weapons, <tag:items:aotdextras:mining_tool_example>, boots, "core/slipstream", "common");
+addGemRecipe3(light_weapons, <tag:items:aotdextras:core_armor_example>, boots, "core/solar", "common");
+addGemRecipe3(<tag:items:aotdextras:core_armor_example>, <tag:items:aotdextras:tool_example>, boots, "core/splendor", "common");
+addGemRecipe4(heavy_weapons, light_weapons, <tag:items:aotdextras:core_armor_example>, shields, "core/tyrannical", "common");
+addGemRecipe4(<tag:items:aotdextras:light_and_ranged_example>, heavy_weapons, chestplates, helmets, "core/warlord", "common");
+addGemRecipe5(<tag:items:aotdextras:melee_weapon_example>, <item:apotheosis:epic_material>, <tag:items:aotdextras:core_armor_example>, <item:apotheosis:epic_material>, <tag:items:aotdextras:mining_tool_example>, "overworld/earth", "rare");
 addGemRecipe5(helmets, pickaxes, <item:apotheosis:mythic_material>, ranged_weapons, shields, "overworld/royalty", "rare");
 addGemRecipe5(<item:apotheosis:mythic_material>, <item:apotheosis:mythic_material>, <item:minecraft:experience_bottle>, <item:apotheosis:mythic_material>, <item:apotheosis:mythic_material>, "the_end/endersurge", "epic");
 addGemRecipe5(light_weapons, heavy_weapons, <item:apotheosis:mythic_material>, helmets, shields, "the_end/mageslayer", "epic");
-addGemRecipe5(light_weapons | heavy_weapons, chestplates, <item:apotheosis:mythic_material>, ranged_weapons, shields, "the_nether/blood_lord", "rare");
-addGemRecipe5(heavy_weapons, chestplates, <item:apotheosis:mythic_material>, mining_tools, helmets, "the_nether/inferno", "rare");
+addGemRecipe5(<tag:items:aotdextras:melee_weapon_example>, chestplates, <item:apotheosis:mythic_material>, ranged_weapons, shields, "the_nether/blood_lord", "rare");
+addGemRecipe5(heavy_weapons, chestplates, <item:apotheosis:mythic_material>, <tag:items:aotdextras:mining_tool_example>, helmets, "the_nether/inferno", "rare");

@@ -78,10 +78,10 @@ allowServerListing:true
 chatPreview:1
 onlyShowSecureChat:false
 soundCategory_master:0.5
-soundCategory_music:0.25586855
+soundCategory_music:0.25
 soundCategory_record:1.0
 soundCategory_weather:1.0
-soundCategory_block:0.75117373
+soundCategory_block:0.75
 soundCategory_hostile:1.0
 soundCategory_neutral:1.0
 soundCategory_player:1.0

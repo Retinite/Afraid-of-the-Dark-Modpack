@@ -225,7 +225,7 @@
 		}
 		{
 			description: [
-				"When broken during the day, can drop Bones, &8Grave Metal Scraps&r, &eGold Nuggets&r, and &aExperience&r. At night it can additionally drop &eGold Ingots&r, and Skeleton Skulls. Will also spawn &7Skeletons&r at night, so be careful!"
+				"When broken during the day, can drop Bones, &8Grave Metal Scraps&r, &eGold Nuggets&r, and &aExperience&r. At night it can additionally drop &eGold Ingots&r, Skeleton Skulls, and rarely even &bDiamond&rs! Will also spawn &7Skeletons&r at night, so be careful!"
 				""
 				"&8Grave Metal Ingot&rs can convert Chainmail armor into &8Grave Metal&r armor! Excess &8Grave Metal Ingot&rs can be converted into &7Steel&r."
 			]
