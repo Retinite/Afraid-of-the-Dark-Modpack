@@ -26,6 +26,11 @@ craftingTable.addShapeless("aotdextras.obscurium_ingot_alt", <item: aotdextras:o
 <recipetype:mekanism:metallurgic_infusing>.addRecipe("fish_into_obscurium", <tag:items: aotdextras:raw_fish> * 2, <tag:mekanism/infuse_type:mekanism:bio> * 320, <item: aotdextras:obscurium_ingot>);
 <recipetype:mekanism:metallurgic_infusing>.addRecipe("bone_meal_into_obscurium", <item: minecraft:bone_meal> * 32, <tag:mekanism/infuse_type:mekanism:bio> * 640, <item: aotdextras:obscurium_ingot>);
 <recipetype:mekanism:metallurgic_infusing>.addRecipe("sticky_into_obscurium", <tag:items: aotdextras:sticky>, <tag:mekanism/infuse_type:mekanism:bio> * 320, <item: aotdextras:obscurium_ingot>);
+<recipetype:mekanism:enriching>.addRecipe("enriching_rotten_into_obscurium", <tag:items: aotdextras:rotten> * 64, <item: aotdextras:obscurium_ingot>);
+<recipetype:mekanism:enriching>.addRecipe("enriching_meat_into_obscurium", <tag:items: aotdextras:raw_meat> * 32, <item: aotdextras:obscurium_ingot>);
+<recipetype:mekanism:enriching>.addRecipe("enriching_fish_into_obscurium", <tag:items: aotdextras:raw_fish> * 32, <item: aotdextras:obscurium_ingot>);
+<recipetype:mekanism:enriching>.addRecipe("enriching_sticky_into_obscurium", <tag:items: aotdextras:sticky> * 16, <item: aotdextras:obscurium_ingot>);
+<recipetype:mekanism:enriching>.addRecipe("enriching_bone_into_obscurium", <item: minecraft:bone_block> * 16, <item: aotdextras:obscurium_ingot>);
 <item: aotdextras:obscurium_ingot>.burnTime = 3200;
 
 <tag:items: aotdextras:rare_drops>.add([<item: born_in_chaos_v1:seedof_chaos>, <item: undead_unleashed:necrotic_dust>, <item: minecraft:ghast_tear>, <item: apotheosis:rare_material>, <item:undead_unleashed:lost_soul>]);
@@ -51,11 +56,11 @@ craftingTable.addShapeless("aotdextras.luxum_ingot", <item: aotdextras:luxum_ing
 
 <tag:items: aotdextras:epic_drops>.add([<item: john_mod_reborn:bloody_tear>, <item: deep_dark_regrowth:plasmatic_sculk>, <item: deep_dark_regrowth:etherium_gem>, <item: deep_dark_regrowth:aware_lens>, <item: apotheosis:epic_material>, <item: unusualend:shiny_crystal>]);
 <tag:items: aotdextras:boss_drops>.add([<item: minecraft:nether_star>, <item: deep_dark_regrowth:soul_of_the_depths>, <item: aquamirae:abyssal_amethyst>, <item: whisperwoods:hirschgeist_skull>, <item: apotheosis:warden_tendril>]);
-craftingTable.addShaped("aotdextras.nihilum_ingot", <item: aotdextras:nihilum_ingot>,
+craftingTable.addShaped("aotdextras.nihilum_ingot", <item: aotdextras:nihilum_ingot> * 2,
 	[[<item: deep_dark_regrowth:galm>,          <item: aotdextras:occultium_ingot>, <item: born_in_chaos_v1:black_argillite>],
-	 [<item: aotdextras:occultium_ingot>,       <item: aotdextras:luxum_lamp>,      <item: aotdextras:occultium_ingot>],
+	 [<item: aotdextras:occultium_ingot>,       <item: aotdextras:luxum_block>,      <item: aotdextras:occultium_ingot>],
 	 [<item: born_in_chaos_v1:black_argillite>, <item: aotdextras:occultium_ingot>, <item: deep_dark_regrowth:galm>]]);
-craftingTable.addShaped("aotdextras.nihilum_ingot_alt", <item: aotdextras:nihilum_ingot>,
+craftingTable.addShaped("aotdextras.nihilum_ingot_alt", <item: aotdextras:nihilum_ingot> * 2,
 	[[<tag:items: aotdextras:boss_drops>, <tag:items: aotdextras:epic_drops>, <tag:items: aotdextras:boss_drops>],
 	 [<tag:items: aotdextras:epic_drops>, <item: aotdextras:obscurium_block>, <tag:items: aotdextras:epic_drops>],
 	 [<tag:items: aotdextras:boss_drops>, <tag:items: aotdextras:epic_drops>, <tag:items: aotdextras:boss_drops>]]);

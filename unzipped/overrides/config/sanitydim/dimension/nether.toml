@@ -8,7 +8,7 @@ applied_dimensions = [ "minecraft:the_nether"]
 		monster = -0.5
 		darkness = -0.2
 		lightness = 0.5
-		blocks = ["minecraft:soul_campfire[lit=true];1.0;4;false", "minecraft:campfire[lit=true];-1.0;4;false", "minecraft:lava;-0.5;5;false", "minecraft:flowing_lava;-0.6;5;false", "minecraft:fire;-0.2;4;false", "minecraft:soul_fire;0.2;4;false", "aotdextras:luxum_lamp;2;3;false", "aotdextras:luxum_block;2.5;6;false", "aotdextras:nihilum_block;-2;3;false"]
+		blocks = ["minecraft:soul_campfire[lit=true];1.5;5;false", "minecraft:campfire[lit=true];-1.0;4;false", "minecraft:lava;-0.5;5;false", "minecraft:flowing_lava;-0.6;5;false", "minecraft:fire;-0.2;4;false", "minecraft:soul_fire;0.2;4;false", "aotdextras:luxum_lamp;2;3;false", "aotdextras:luxum_block;2.5;6;false", "aotdextras:nihilum_block;-2;3;false", "minecraft:torch;-1.0;3;false", "minecraft:lantern;-1.5;4;false", "minecraft:soul_torch;1.0;3;false", "minecraft:soul_lantern;2.0;5;false", "graveyard:fire_brazier;-1.0;4;false", "graveyard:soul_fire_brazier;2.0;6;false"]
 		
 	[sanity.active]
 		hurt_ratio = -2.0

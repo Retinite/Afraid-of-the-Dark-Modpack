@@ -643,6 +643,10 @@
 		}
 		{
 			dependencies: ["25DFACEB8666557F"]
+			description: [
+				"A single Biofuel equates to 4.8kFE!"
+				"A stack of 64 is then 307.2kFE!"
+			]
 			id: "43997AB7F0553626"
 			optional: true
 			rewards: [

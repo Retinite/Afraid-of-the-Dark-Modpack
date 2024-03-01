@@ -148,7 +148,7 @@
 				item: "minecraft:spyglass"
 				type: "item"
 			}]
-			x: 0.0d
+			x: -2.0d
 			y: 0.0d
 		}
 		{
@@ -210,6 +210,7 @@
 			rewards: [{
 				id: "36D4B1A6A4761BCC"
 				item: "searchlight:wall_light_iron"
+				team_reward: false
 				type: "item"
 			}]
 			shape: "gear"
@@ -271,16 +272,17 @@
 				}
 				type: "item"
 			}]
-			x: 2.0d
+			x: 4.0d
 			y: 0.0d
 		}
 		{
 			id: "0450E9EB79084D6E"
 			rewards: [{
-				exclude_from_claim_all: true
-				id: "68F93EF550671E4E"
+				id: "151FD6915755DFAB"
 				table_id: 7005302816860271090L
-				type: "choice"
+				team_reward: false
+				title: "Random Spice"
+				type: "random"
 			}]
 			tasks: [
 				{
@@ -316,6 +318,7 @@
 				id: "48456C1299FED98B"
 				table_id: 7005302816860271090L
 				team_reward: false
+				title: "Choice of Spice"
 				type: "choice"
 			}]
 			shape: "gear"
@@ -765,7 +768,24 @@
 				}
 				type: "item"
 			}]
-			x: -2.0d
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			id: "55D879B9691B0D19"
+			rewards: [{
+				id: "2C36ED6681D3F7C3"
+				item: "minecraft:white_bed"
+				team_reward: false
+				type: "item"
+			}]
+			subtitle: "Does Not Reset Spawn!"
+			tasks: [{
+				id: "2CE4BDEFF8F55F92"
+				item: "upgrade_aquatic:bedroll"
+				type: "item"
+			}]
+			x: 2.0d
 			y: 0.0d
 		}
 	]

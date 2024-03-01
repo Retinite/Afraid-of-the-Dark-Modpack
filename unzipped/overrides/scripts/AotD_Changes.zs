@@ -183,11 +183,11 @@ craftingTable.addShaped("ftbquests.screen_1", <item:ftbquests:screen_1>,
 
 // incorporate Rotten Creatures' TNT Barrels into Mekanism Additions' Obsidian TNT recipe
 craftingTable.remove(<item:mekanismadditions:obsidian_tnt>);
-var tnt = <item:minecraft:tnt> | <item:rottencreatures:tnt_barrel>;
+<tag:items: minecraft:tnt>.add([<item:minecraft:tnt>, <item:rottencreatures:tnt_barrel>]);
 craftingTable.addShaped("mekanismadditions.obsidian_tnt", <item:mekanismadditions:obsidian_tnt>,
-	[[<item:minecraft:obsidian>, <item:minecraft:obsidian>, <item:minecraft:obsidian>],
-	 [tnt,                       tnt,                       tnt],
-	 [<item:minecraft:obsidian>, <item:minecraft:obsidian>, <item:minecraft:obsidian>]]);
+	[[<item:minecraft:obsidian>,  <item:minecraft:obsidian>,  <item:minecraft:obsidian>],
+	 [<tag:items: minecraft:tnt>, <tag:items: minecraft:tnt>, <tag:items: minecraft:tnt>],
+	 [<item:minecraft:obsidian>,  <item:minecraft:obsidian>,  <item:minecraft:obsidian>]]);
 
 // incorporate Functional Storage into Mekanism QIO recipes
 craftingTable.remove(<item:mekanism:qio_drive_array>);

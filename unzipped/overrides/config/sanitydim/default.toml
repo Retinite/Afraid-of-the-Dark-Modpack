@@ -65,7 +65,7 @@
 		#Supports boolean block state properties (can be omitted together with brackets)
 		#Prefix with TAG_ and follow with a tag registry name to define all blocks with the tag
 		#NOTE: not everything may work correctly with any configuration, e.g. multiblocks like tall flowers and beds; needs testing
-		blocks = ["minecraft:campfire[lit=true];0.1;4;false", "minecraft:soul_campfire[lit=true];-1.0;4;false", "minecraft:lava;-0.5;5;false", "minecraft:flowing_lava;-0.6;5;false", "minecraft:fire;-0.2;4;false", "minecraft:soul_fire;-0.2;4;false", "minecraft:nether_portal;-0.5;12;false", "minecraft:end_portal;-1;12;false", "aotdextras:luxum_lamp;2;3;false", "aotdextras:luxum_block;2.5;6;false", "aotdextras:nihilum_block;-2;3;false"]
+		blocks = ["minecraft:campfire[lit=true];0.1;4;false", "minecraft:soul_campfire[lit=true];-1.0;4;false", "minecraft:lava;-0.5;5;false", "minecraft:flowing_lava;-0.6;5;false", "minecraft:fire;-0.2;4;false", "minecraft:soul_fire;-0.2;4;false", "minecraft:nether_portal;-0.5;12;false", "minecraft:end_portal;-1;12;false", "aotdextras:luxum_lantern;2;3;false", "aotdextras:luxum_block;2.5;6;false", "aotdextras:nihilum_block;-2;3;false", "minecraft:soul_torch;-1.0;3;false", "minecraft:soul_lantern;-1.0;4;false", "graveyard:soul_fire_brazier;-1.0;4;false"]
 
 	#Configuration for active sanity sources
 	[sanity.active]

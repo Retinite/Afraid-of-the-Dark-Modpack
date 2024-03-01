@@ -6,7 +6,7 @@
 	group: ""
 	icon: "mekanism:module_vision_enhancement_unit"
 	id: "3232E1E706C17ECD"
-	order_index: 3
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{

@@ -214,7 +214,7 @@
 		}
 		{
 			dependencies: ["565765DC702982C9"]
-			description: ["There are a variety of useful upgrades for drawers. Apply upgrades with &cRight Click&r (&onot on the front face&r), and access upgrades by &cShift&r + &cRight Click&ring."]
+			description: ["There are a variety of useful upgrades for drawers. Apply upgrades with &bRight Click&r (&onot on the front face&r), and access upgrades by &bShift&r + &bRight Click&ring."]
 			id: "10ABF0BDEAA77BAC"
 			optional: true
 			rewards: [{
