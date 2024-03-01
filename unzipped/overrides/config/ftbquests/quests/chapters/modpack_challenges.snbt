@@ -6,7 +6,7 @@
 	hide_quest_details_until_startable: true
 	icon: "solcarrot:food_book"
 	id: "266EE1EB9BD1D5D8"
-	order_index: 4
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
@@ -1275,7 +1275,6 @@
 				"4D9C14CAC1A78F28"
 				"7CFC505397B0C825"
 			]
-			disable_toast: true
 			icon: "ftbquests:book"
 			id: "3B4DB3C594ABBB62"
 			rewards: [{
@@ -1287,9 +1286,19 @@
 			}]
 			subtitle: "Complete the Introduction"
 			tasks: [{
-				id: "2018369DF53A02A4"
+				advancement: "minecraft:story/root"
+				criterion: ""
+				disable_toast: true
+				icon: {
+					Count: 1b
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "ftblibrary:icons/heart"
+					}
+				}
+				id: "7264337882750537"
 				title: "Congrats!"
-				type: "checkmark"
+				type: "advancement"
 			}]
 			title: "Properly Introduced"
 			x: -1.0d
@@ -1315,7 +1324,6 @@
 				"19F1674292AE31C2"
 				"6FD021FD2E5C236E"
 			]
-			disable_toast: true
 			icon: "minecraft:dragon_head"
 			id: "71F8B333C1AA58A0"
 			rewards: [{
@@ -1329,9 +1337,19 @@
 			size: 2.0d
 			subtitle: "Complete Bosses"
 			tasks: [{
-				id: "6C514CDC683CEF7C"
+				advancement: "minecraft:story/root"
+				criterion: ""
+				disable_toast: true
+				icon: {
+					Count: 1b
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "ftblibrary:icons/heart"
+					}
+				}
+				id: "715713E580A98239"
 				title: "Congrats!"
-				type: "checkmark"
+				type: "advancement"
 			}]
 			title: "Slay Every Boss"
 			x: 0.0d
@@ -1342,7 +1360,6 @@
 				"34EA6A77A2533CA2"
 				"50032BEB92430575"
 			]
-			disable_toast: true
 			icon: "minecraft:golden_carrot"
 			id: "54FA8D1C2F01D0BB"
 			rewards: [{
@@ -1354,9 +1371,19 @@
 			}]
 			subtitle: "Complete Night Vision Guide"
 			tasks: [{
-				id: "440AED54B85DF25C"
+				advancement: "minecraft:story/root"
+				criterion: ""
+				disable_toast: true
+				icon: {
+					Count: 1b
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "ftblibrary:icons/heart"
+					}
+				}
+				id: "4C4A0E17E7A5E08E"
 				title: "Congrats!"
-				type: "checkmark"
+				type: "advancement"
 			}]
 			title: "Permanent Night Vision"
 			x: -2.0d
@@ -1390,7 +1417,6 @@
 				"1942DF4A6F008A53"
 				"0530A61540D8B3CB"
 			]
-			disable_toast: true
 			icon: {
 				Count: 1b
 				id: "apotheosis:gem"
@@ -1409,9 +1435,19 @@
 			}]
 			subtitle: "Complete Apotheosis"
 			tasks: [{
-				id: "33BB9EE95DB88F36"
+				advancement: "minecraft:story/root"
+				criterion: ""
+				disable_toast: true
+				icon: {
+					Count: 1b
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "ftblibrary:icons/heart"
+					}
+				}
+				id: "4E52D817580A83F4"
 				title: "Congrats!"
-				type: "checkmark"
+				type: "advancement"
 			}]
 			title: "Apothic Master"
 			x: 1.0d
@@ -1429,7 +1465,6 @@
 				"0D37EE30FE95381E"
 				"4DBF7238FC53616A"
 			]
-			disable_toast: true
 			icon: "deep_dark_regrowth:soul_of_the_depths"
 			id: "32E988963719511C"
 			rewards: [{
@@ -1441,9 +1476,19 @@
 			}]
 			subtitle: "Complete Creepies \\& Cryptids"
 			tasks: [{
-				id: "39C958AB2D66F9AA"
+				advancement: "minecraft:story/root"
+				criterion: ""
+				disable_toast: true
+				icon: {
+					Count: 1b
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "ftblibrary:icons/heart"
+					}
+				}
+				id: "61538BE2C0776081"
 				title: "Congrats!"
-				type: "checkmark"
+				type: "advancement"
 			}]
 			title: "Cryptid Connoisseur"
 			x: 2.0d
@@ -1528,7 +1573,6 @@
 				"48B92B0EB5FBCCF0"
 				"39DA41F2BECB139E"
 			]
-			disable_toast: true
 			icon: {
 				Count: 1b
 				id: "minecraft:netherite_hoe"
@@ -1546,9 +1590,19 @@
 			}]
 			subtitle: "Complete Equipment"
 			tasks: [{
-				id: "0DD83DCFB7B62AA2"
+				advancement: "minecraft:story/root"
+				criterion: ""
+				disable_toast: true
+				icon: {
+					Count: 1b
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "ftblibrary:icons/heart"
+					}
+				}
+				id: "44A030E4A69AF5CD"
 				title: "Congrats!"
-				type: "checkmark"
+				type: "advancement"
 			}]
 			title: "Collecter's Anxiety"
 			x: 0.0d
@@ -1584,7 +1638,6 @@
 				"282586D0ED8AAD81"
 				"03C3F8CB26BAC77F"
 			]
-			disable_toast: true
 			icon: "mekanism:advanced_control_circuit"
 			id: "52B6928D38931A34"
 			rewards: [{
@@ -1597,9 +1650,19 @@
 			shape: "square"
 			subtitle: "Sufficient at Mekanism"
 			tasks: [{
-				id: "2D83D489599675CE"
+				advancement: "minecraft:story/root"
+				criterion: ""
+				disable_toast: true
+				icon: {
+					Count: 1b
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "ftblibrary:icons/heart"
+					}
+				}
+				id: "1941A1497F4B361A"
 				title: "Congrats!"
-				type: "checkmark"
+				type: "advancement"
 			}]
 			title: "Mekanism Apprentice"
 			x: -1.5d
@@ -1615,7 +1678,6 @@
 				"16A544D3E7BB73B2"
 				"3818692FCB23260D"
 			]
-			disable_toast: true
 			icon: "mekanism:elite_control_circuit"
 			id: "184B2037A6D67E99"
 			rewards: [{
@@ -1628,9 +1690,19 @@
 			shape: "square"
 			subtitle: "Competent at Mekanism"
 			tasks: [{
-				id: "6DC9B565F14A9B65"
+				advancement: "minecraft:story/root"
+				criterion: ""
+				disable_toast: true
+				icon: {
+					Count: 1b
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "ftblibrary:icons/heart"
+					}
+				}
+				id: "2E7A43A2AFE2FD84"
 				title: "Congrats!"
-				type: "checkmark"
+				type: "advancement"
 			}]
 			title: "Mekanism Journeyman"
 			x: 1.5d
@@ -1702,7 +1774,6 @@
 				"5B9ED47E832C73D5"
 				"3F9FEE762D953BBB"
 			]
-			disable_toast: true
 			icon: "mekanism:ultimate_control_circuit"
 			id: "5D7A9F47D60BCD3C"
 			rewards: [{
@@ -1714,9 +1785,19 @@
 			shape: "square"
 			subtitle: "Multiblock Aficionado"
 			tasks: [{
-				id: "566EA7AB38A9C727"
+				advancement: "minecraft:story/root"
+				criterion: ""
+				disable_toast: true
+				icon: {
+					Count: 1b
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "ftblibrary:icons/heart"
+					}
+				}
+				id: "1ED2DCA6046C356C"
 				title: "Congrats!"
-				type: "checkmark"
+				type: "advancement"
 			}]
 			title: "Mekanism Master"
 			x: 2.5d
@@ -1734,7 +1815,6 @@
 				"036103DEEAB49174"
 				"46A041C16AA07573"
 			]
-			disable_toast: true
 			icon: "functionalstorage:storage_controller"
 			id: "35FBFF6240677FF0"
 			rewards: [{
@@ -1746,9 +1826,19 @@
 			}]
 			subtitle: "Complete Storage"
 			tasks: [{
-				id: "51AAD8D9E91D8556"
+				advancement: "minecraft:story/root"
+				criterion: ""
+				disable_toast: true
+				icon: {
+					Count: 1b
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "ftblibrary:icons/heart"
+					}
+				}
+				id: "2B491B59C5A18F55"
 				title: "Congrats!"
-				type: "checkmark"
+				type: "advancement"
 			}]
 			title: "Storage Solutionist"
 			x: 2.0d
@@ -1772,8 +1862,8 @@
 				"1C28D6CADB280332"
 				"24C5A7C3D3EAAF00"
 				"4645F165220D1575"
+				"55D879B9691B0D19"
 			]
-			disable_toast: true
 			icon: "minecraft:spyglass"
 			id: "59B4FDDD116CD928"
 			rewards: [{
@@ -1785,9 +1875,19 @@
 			}]
 			subtitle: "Complete Miscellaneous"
 			tasks: [{
-				id: "0872279ACD357E8B"
+				advancement: "minecraft:story/root"
+				criterion: ""
+				disable_toast: true
+				icon: {
+					Count: 1b
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "ftblibrary:icons/heart"
+					}
+				}
+				id: "71B7473A9029C556"
 				title: "Congrats!"
-				type: "checkmark"
+				type: "advancement"
 			}]
 			title: "Utilitarian"
 			x: -2.0d
@@ -3085,7 +3185,6 @@
 				"5037A8055BDA875E"
 				"7E9EB5F28B524B41"
 			]
-			disable_toast: true
 			icon: "mekanism:basic_control_circuit"
 			id: "282586D0ED8AAD81"
 			rewards: [{
@@ -3098,9 +3197,19 @@
 			shape: "square"
 			subtitle: "Completed the Tutorial"
 			tasks: [{
-				id: "048DBAF203EED5BE"
+				advancement: "minecraft:story/root"
+				criterion: ""
+				disable_toast: true
+				icon: {
+					Count: 1b
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "ftblibrary:icons/heart"
+					}
+				}
+				id: "108ABFDA1AE251C5"
 				title: "Congrats!"
-				type: "checkmark"
+				type: "advancement"
 			}]
 			title: "Mekanism Novice"
 			x: -2.5d
