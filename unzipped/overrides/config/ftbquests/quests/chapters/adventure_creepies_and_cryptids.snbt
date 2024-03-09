@@ -452,6 +452,11 @@
 		{
 			dependencies: ["7A4C7ECC1B56B03A"]
 			dependency_requirement: "one_started"
+			description: [
+				"&dCaptain Cornelia&r's final stage is not supposed to heal so aggressively when close to death. You will need a weapon with &oat least&r 16 damage (25 recommended) to finish her off."
+				""
+				"Smite helps!! Each level provides +2.5 extra damage!"
+			]
 			icon: {
 				Count: 1b
 				id: "aquamirae:three_bolt_helmet"
@@ -468,7 +473,7 @@
 			}]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Unlocks Quests Elsewhere"
+			subtitle: "Unlocks Quests Elsewhere &cBUGGED FIGHT&r"
 			tasks: [
 				{
 					id: "3327AA1CEA94B879"
@@ -763,6 +768,15 @@
 					id: "400A7AB40AA3A627"
 					title: "&oAlso&r Find a Rotten Cavern"
 					type: "biome"
+				}
+				{
+					icon: "deep_dark_regrowth:enlightened_deepslate"
+					id: "49541859D246FCD1"
+					observe_type: 0
+					timer: 0L
+					title: "Requires Netherite!"
+					to_observe: "deep_dark_regrowth:enlightened_deepslate"
+					type: "observation"
 				}
 			]
 			title: "Dirty Little Secret"

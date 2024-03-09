@@ -313,6 +313,11 @@
 			y: -0.5d
 		}
 		{
+			description: [
+				"&dCaptain Cornelia&r's final stage is not supposed to heal so aggressively when close to death. You will need a weapon with &oat least&r 16 damage (25 recommended) to finish her off."
+				""
+				"Smite helps!! Each level provides +2.5 extra damage!"
+			]
 			id: "22E60188D9AFD2A7"
 			rewards: [{
 				id: "2381A8651BC4B354"
@@ -321,6 +326,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
+			subtitle: "&cBUGGED FIGHT&r"
 			tasks: [{
 				entity: "aquamirae:captain_cornelia"
 				icon: {

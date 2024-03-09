@@ -33,7 +33,7 @@ craftingTable.addShapeless("aotdextras.obscurium_ingot_alt", <item: aotdextras:o
 <recipetype:mekanism:enriching>.addRecipe("enriching_bone_into_obscurium", <item: minecraft:bone_block> * 16, <item: aotdextras:obscurium_ingot>);
 <item: aotdextras:obscurium_ingot>.burnTime = 3200;
 
-<tag:items: aotdextras:rare_drops>.add([<item: born_in_chaos_v1:seedof_chaos>, <item: undead_unleashed:necrotic_dust>, <item: minecraft:ghast_tear>, <item: apotheosis:rare_material>, <item:undead_unleashed:lost_soul>]);
+<tag:items: aotdextras:rare_drops>.add([<item: born_in_chaos_v1:seedof_chaos>, <item: undead_unleashed:necrotic_dust>, <item: minecraft:ghast_tear>, <item: apotheosis:epic_material>, <item:undead_unleashed:lost_soul>]);
 <tag:items: aotdextras:evil_ingots>.add([<item: born_in_chaos_v1:dark_metal_ingot>, <item: undead_unleashed:grave_metal_ingot>, <item: graveyard:dark_iron_ingot>]);
 craftingTable.remove(<item: aotdextras:occultium_ingot>);
 craftingTable.remove(<item: aotdextras:occultium_block>);
@@ -48,13 +48,12 @@ craftingTable.addShapeless("aotdextras.occultium_block_decompress", <item: aotde
 
 craftingTable.remove(<item:aotdextras:luxum_lamp>);
 craftingTable.removeByName("aotdextras:luxum_lamp_decompress");
-smithing.addRecipe("aotd.luxum_lamp", <item:aotdextras:luxum_lamp>, <item:minecraft:redstone_lamp>, <item:aotdextras:luxum_ingot>);
 craftingTable.addShapeless("aotdextras.luxum_ingot", <item: aotdextras:luxum_ingot> * 2,
 	[<item: illuminative:glow_inc_sac_block>,        <item: illuminative:glow_fish_item>, <item: illuminative:glowstone_torch>,
 	 <item: gardens_of_the_dead:glowing_soul_spore>, <item: aotdextras:obscurium_ingot>,       <item: minecraft:glow_lichen>,
 	 <item: aquamirae:luminescent_lamp>,	         <item: observed:observereye>,             <item: minecraft:shroomlight>]);
 
-<tag:items: aotdextras:epic_drops>.add([<item: john_mod_reborn:bloody_tear>, <item: deep_dark_regrowth:plasmatic_sculk>, <item: deep_dark_regrowth:etherium_gem>, <item: deep_dark_regrowth:aware_lens>, <item: apotheosis:epic_material>, <item: unusualend:shiny_crystal>]);
+<tag:items: aotdextras:epic_drops>.add([<item: john_mod_reborn:bloody_tear>, <item: deep_dark_regrowth:plasmatic_sculk>, <item: deep_dark_regrowth:etherium_gem>, <item: deep_dark_regrowth:aware_lens>, <item: apotheosis:mythic_material>, <item: unusualend:shiny_crystal>]);
 <tag:items: aotdextras:boss_drops>.add([<item: minecraft:nether_star>, <item: deep_dark_regrowth:soul_of_the_depths>, <item: aquamirae:abyssal_amethyst>, <item: whisperwoods:hirschgeist_skull>, <item: apotheosis:warden_tendril>]);
 craftingTable.addShaped("aotdextras.nihilum_ingot", <item: aotdextras:nihilum_ingot> * 2,
 	[[<item: deep_dark_regrowth:galm>,          <item: aotdextras:occultium_ingot>, <item: born_in_chaos_v1:black_argillite>],
@@ -68,8 +67,9 @@ craftingTable.addShaped("aotdextras.nihilum_ingot_alt_b", <item: aotdextras:nihi
 	[[<tag:items: aotdextras:boss_drops>, <tag:items: aotdextras:epic_drops>, <tag:items: aotdextras:boss_drops>],
 	 [<tag:items: aotdextras:epic_drops>, <item: aotdextras:occultium_block>, <tag:items: aotdextras:epic_drops>],
 	 [<tag:items: aotdextras:boss_drops>, <tag:items: aotdextras:epic_drops>, <tag:items: aotdextras:boss_drops>]]);
-smithing.addRecipe("aotd.nihilum_from_luxum", <item:aotdextras:nihilum_ingot>, <item:aotdextras:luxum_ingot>, <item:mekanism:pellet_antimatter>);
-smithing.addRecipe("aotd.nihilum_from_luxum_block", <item:aotdextras:nihilum_block>, <item:aotdextras:luxum_block>, <item:mekanism:pellet_antimatter>);
+<recipetype:mekanism:combining>.addRecipe("aotd.nihilum_from_astral", <item:aotdextras:luxum_ingot>, <item:obscure_api:astral_dust>, <item:aotdextras:nihilum_ingot>);
+<recipetype:mekanism:combining>.addRecipe("aotd.nihilum_from_luxum", <item:aotdextras:luxum_ingot>, <item:mekanism:pellet_antimatter>, <item:aotdextras:nihilum_ingot>);
+<recipetype:mekanism:combining>.addRecipe("aotd.nihilum_from_luxum_block", <item:aotdextras:luxum_block>, <item:mekanism:pellet_antimatter>, <item:aotdextras:nihilum_block>);
 
 // Component resources -----------------------------------------------------------------------------------------------------------------------
 

@@ -172,6 +172,7 @@ craftingTable.addShapeless("deep_dark_regrowth.sculk_soil", <item:deep_dark_regr
 // add Born in Chaos's Marigolds to appropriate tags
 <tag:items:minecraft:small_flowers>.add([<item: born_in_chaos_v1:marigolds>]);
 <tag:items:minecraft:flowers>.add([<item: born_in_chaos_v1:marigolds>]);
+<recipetype:mekanism:enriching>.addRecipe("enrich_marigold", <item: born_in_chaos_v1:marigolds>, <item: minecraft:orange_dye> * 2);
 
 // add Minecraft Saddle recipe & recycle
 craftingTable.addShaped("aotd.saddle", <item:minecraft:saddle>,

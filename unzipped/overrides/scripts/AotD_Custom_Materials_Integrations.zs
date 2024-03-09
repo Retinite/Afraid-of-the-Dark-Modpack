@@ -54,5 +54,6 @@ addLightRecipe(<item:aotdextras:luxum_lamp>, 512);
 <recipetype:mekanism:injecting>.addRecipe("luminescent_lamp_injection", <item:upgrade_aquatic:prismarine_rod>, <gas:crafttweaker:light_essence>, <item:aquamirae:luminescent_lamp>);
 <recipetype:mekanism:injecting>.addRecipe("luminescent_bubble_injection", <item:aquamirae:oxygelium>, <gas:crafttweaker:light_essence>, <item:aquamirae:luminescent_bubble> * 3);
 <recipetype:mekanism:injecting>.addRecipe("luxum_ingot_injection", <item:aotdextras:occultium_ingot>, <gas:crafttweaker:light_essence> * 128, <item:aotdextras:luxum_ingot>);
+<recipetype:mekanism:injecting>.addRecipe("luxum_lamp_injection", <item:minecraft:redstone_lamp>, <gas:crafttweaker:light_essence> * 512, <item:aotdextras:luxum_lamp>);
 <recipetype:mekanism:injecting>.addRecipe("luxum_ingot_injection_alt", <item:aotdextras:obscurium_ingot>, <gas:crafttweaker:light_essence> * 512, <item:aotdextras:luxum_ingot>);
 <recipetype:mekanism:injecting>.addRecipe("glow_tnt_injection", <item:minecraft:tnt>, <gas:crafttweaker:light_essence> * 5, <item:aotdextras:glow_tnt>);

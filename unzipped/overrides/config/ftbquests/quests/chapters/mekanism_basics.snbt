@@ -20,7 +20,7 @@
 				"{@pagebreak}"
 				"Note: &lMekanism&r generator blocks are always placed facing away from you. Generator blocks also have an energy slot where items can be placed &oto charge&r."
 				""
-				"The &oThermal Generator&r can accept any burnable fuel to generate power. It also generates power passively for each side that is touching &cLava&r. \"Lava-logging\" counts as an additional side. It also generates extra passive power when in the &4Nether&r!"
+				"The &oThermal Generator&r can accept any burnable fuel to generate power. It also generates power passively for each side that is touching &cLava&r. \"&cLava-logging&r\" the generator itself or any connecting cables count as additional sides. It also generates extra passive power when in the &4Nether&r!"
 				""
 				"Place the &agreen&r face of the &oThermal Generator&r next to any side of the Metallurgic Infuser to transfer power. Power cables will require &7Steel&r."
 			]
@@ -1601,10 +1601,16 @@
 		}
 		{
 			dependencies: ["401F21347665C41E"]
+			description: ["Some very important (but optional) recipes have been added for your convenience."]
 			id: "0E35A5906772B40E"
 			optional: true
+			rewards: [{
+				id: "11D2A19105D699E0"
+				item: "mekanism:steel_casing"
+				type: "item"
+			}]
 			shape: "diamond"
-			subtitle: "Decorative Ore"
+			subtitle: "Decorative Ore \\& More!"
 			tasks: [{
 				id: "33F37DB799577E52"
 				item: "mekanism:combiner"

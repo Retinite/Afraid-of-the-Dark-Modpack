@@ -308,7 +308,7 @@
 		{
 			dependencies: ["0450E9EB79084D6E"]
 			description: [
-				"The Bartering Box allows you to submit requested items once every few minutes to receive random rewards. Many of the rewards are &ospices&r, and this is the only way to obtain them!"
+				"The Bartering Box allows you to submit requested items once every few minutes to receive random rewards. Many of the rewards are &ospices&r, and this is the only way to obtain them! (Note: the quest refresh button does not work. Break and re-place if you want a different quest.)"
 				""
 				"You can use the Bartending Table to apply any spices you have collected. You must be holding a beer in your hand to access the Bartending Table."
 			]

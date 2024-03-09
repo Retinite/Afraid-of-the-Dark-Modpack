@@ -196,6 +196,10 @@ craftingTable.addShaped("aquamirae.three_bolt_suit", <item: aquamirae:three_bolt
 	[[<item: mekanism:ingot_bronze>, <item: mekanism:block_bronze>,                    <item: mekanism:ingot_bronze>],
 	 [<item: aquamirae:oxygen_tank>, <item: minecraft:leather_chestplate>.anyDamage(), <item: aquamirae:oxygen_tank>],
 	 [<item: mekanism:ingot_bronze>, <item:aotdextras:occultium_ingot>,                <item: mekanism:ingot_bronze>]]);
+craftingTable.addShaped("aquamirae.three_bolt_suit_from_scuba", <item: aquamirae:three_bolt_suit>,
+	[[<item: mekanism:ingot_bronze>, <item: mekanism:block_bronze>,     <item: mekanism:ingot_bronze>],
+	 [<item: minecraft:leather>,     <item: mekanism:scuba_tank>,       <item: minecraft:leather>],
+	 [<item: mekanism:ingot_bronze>, <item:aotdextras:occultium_ingot>, <item: mekanism:ingot_bronze>]]);
 addShearsRecycling(<item:aquamirae:three_bolt_suit>, <item:mekanism:block_bronze>);
 craftingTable.remove(<item:aquamirae:three_bolt_leggings>);
 craftingTable.addShaped("aquamirae.three_bolt_leggings", <item:aquamirae:three_bolt_leggings>,

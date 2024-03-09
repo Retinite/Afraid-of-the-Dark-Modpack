@@ -140,7 +140,6 @@
 			hide_dependent_lines: true
 			id: "3818692FCB23260D"
 			rewards: [{
-				count: 2
 				id: "7989FEAE666BEE6F"
 				item: "mekanism:pellet_antimatter"
 				type: "item"
@@ -1440,9 +1439,9 @@
 			id: "36059BDB7CF78444"
 			optional: true
 			rewards: [{
-				count: 3
-				id: "39E41F44CD7F7FA4"
-				item: "minecraft:diamond"
+				count: 4
+				id: "098DF56CE0269191"
+				item: "mekanism:advanced_induction_cell"
 				type: "item"
 			}]
 			shape: "diamond"
@@ -1498,6 +1497,7 @@
 			rewards: [{
 				id: "013AD74E18C2FCDD"
 				item: "mekanism:chargepad"
+				team_reward: false
 				type: "item"
 			}]
 			shape: "square"
@@ -1518,6 +1518,18 @@
 			]
 			description: ["Must be placed on a &aChargepad&r."]
 			id: "7476472F01F198BB"
+			rewards: [
+				{
+					id: "19C8A0A467322D71"
+					item: "mekanism:energy_tablet"
+					type: "item"
+				}
+				{
+					id: "2AF83B06E0FE433E"
+					item: "mekanism:energy_tablet"
+					type: "item"
+				}
+			]
 			shape: "square"
 			subtitle: "Your Personal Assistant"
 			tasks: [{
@@ -1552,6 +1564,11 @@
 				"Optionally, you can specify what materials to replace mined blocks with."
 			]
 			id: "15F17744773C5CF1"
+			rewards: [{
+				id: "58ABFC08A0583EDE"
+				item: "mekanism:teleportation_core"
+				type: "item"
+			}]
 			shape: "square"
 			subtitle: "AFK Mining"
 			tasks: [{
@@ -1571,6 +1588,12 @@
 			]
 			id: "3636044A87ED16EA"
 			optional: true
+			rewards: [{
+				count: 8
+				id: "7B5C8BBDE7C9BB8D"
+				item: "mekanism:upgrade_energy"
+				type: "item"
+			}]
 			subtitle: "So &lthat's&r what this is for!"
 			tasks: [{
 				id: "0F69782B7F2AFC54"
@@ -1592,7 +1615,6 @@
 				count: 5
 				id: "70B8883A1D58EFB1"
 				item: "mekanism:ingot_steel"
-				team_reward: false
 				type: "item"
 			}]
 			shape: "square"
@@ -1633,6 +1655,12 @@
 			hide_dependency_lines: true
 			id: "404E71DE59F75C06"
 			optional: true
+			rewards: [{
+				count: 8
+				id: "5464FD2E855ED19E"
+				item: "mekanism:upgrade_energy"
+				type: "item"
+			}]
 			subtitle: "Chunkloading"
 			tasks: [{
 				id: "2FA291A7CA0AB285"
@@ -1655,9 +1683,9 @@
 			id: "075379CCA2298AA8"
 			optional: true
 			rewards: [{
-				count: 16
-				id: "304303F8A6F60BD1"
-				item: "mekanism:basic_logistical_transporter"
+				id: "48E60EC9130B4BE4"
+				item: "mekanism:logistical_sorter"
+				team_reward: false
 				type: "item"
 			}]
 			shape: "diamond"
@@ -1700,6 +1728,13 @@
 			dependencies: ["7E9EB5F28B524B41"]
 			id: "219DDC709DC5FE81"
 			optional: true
+			rewards: [{
+				count: 8
+				id: "3958BED3231A1454"
+				item: "mekanism:basic_logistical_transporter"
+				team_reward: false
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "052A8E0B56F00CD9"
@@ -1723,6 +1758,11 @@
 			]
 			id: "08EC9EFE02F56216"
 			optional: true
+			rewards: [{
+				id: "65E37B116B594FFE"
+				item: "mekanism:energy_tablet"
+				type: "item"
+			}]
 			subtitle: "Study Your Pipes!"
 			tasks: [{
 				id: "31F0D667D49898CC"
@@ -1745,6 +1785,11 @@
 			icon: "mekanism:formulaic_assemblicator"
 			id: "4DDBD14613C038F4"
 			optional: true
+			rewards: [{
+				id: "30448FA0E21F3A4F"
+				item: "mekanism:steel_casing"
+				type: "item"
+			}]
 			subtitle: "Auto-Crafting"
 			tasks: [
 				{
@@ -1765,6 +1810,11 @@
 			dependencies: ["78A10BADE264F811"]
 			id: "5CB130B09C95ED19"
 			optional: true
+			rewards: [{
+				id: "64CC7B0320682B92"
+				item: "mekanism:electric_pump"
+				type: "item"
+			}]
 			subtitle: "Fill Your Holes"
 			tasks: [{
 				id: "20DA66D73707DECC"
@@ -1778,6 +1828,11 @@
 			dependencies: ["401F21347665C41E"]
 			id: "134330C6E9CFF9D6"
 			optional: true
+			rewards: [{
+				id: "7C82493F59C3EEFC"
+				item: "mekanism:steel_casing"
+				type: "item"
+			}]
 			subtitle: "Who Should Touch Your Stuff?"
 			tasks: [{
 				id: "4B0D01032A3E2C23"
@@ -1794,6 +1849,12 @@
 			]
 			id: "422303CDB0CEE50B"
 			optional: true
+			rewards: [{
+				count: 2
+				id: "77600776E0021BD3"
+				item: "mekanism:ultimate_control_circuit"
+				type: "item"
+			}]
 			subtitle: "Custom Chunk Loading"
 			tasks: [{
 				id: "6DE7BDCED3418AE3"
@@ -1806,6 +1867,11 @@
 		{
 			dependencies: ["3818692FCB23260D"]
 			id: "1E1C89875246E50F"
+			rewards: [{
+				id: "74D2273D3CC3CD02"
+				item: "mekanism:pellet_antimatter"
+				type: "item"
+			}]
 			shape: "square"
 			subtitle: "Scientific Transmutation"
 			tasks: [{
@@ -1829,6 +1895,11 @@
 				"You must specify a frequency before it can connect to any pipes."
 			]
 			id: "6BCDD430AD171DC7"
+			rewards: [{
+				id: "149A505A06ECA355"
+				item: "mekanism:quantum_entangloporter"
+				type: "item"
+			}]
 			shape: "square"
 			subtitle: "Portal Pipes"
 			tasks: [{
@@ -1855,6 +1926,20 @@
 			hide_dependency_lines: true
 			icon: "mekanism:qio_drive_array"
 			id: "272BCA4A10A23511"
+			rewards: [
+				{
+					count: 2
+					id: "2F3678C345457347"
+					item: "mekanism:teleportation_core"
+					type: "item"
+				}
+				{
+					id: "3EB556A30F4A42B3"
+					item: "mekanism:qio_drive_base"
+					team_reward: false
+					type: "item"
+				}
+			]
 			shape: "square"
 			subtitle: "Digital Storage"
 			tasks: [
@@ -1881,6 +1966,11 @@
 		{
 			dependencies: ["272BCA4A10A23511"]
 			id: "4D2D71536D141B78"
+			rewards: [{
+				id: "3868C3589A386571"
+				item: "mekanism:qio_dashboard"
+				type: "item"
+			}]
 			tasks: [{
 				id: "373A39823C6DBF87"
 				item: "mekanism:portable_qio_dashboard"
@@ -1892,6 +1982,12 @@
 		{
 			dependencies: ["272BCA4A10A23511"]
 			id: "2A99A0FCA0CE5C1F"
+			rewards: [{
+				count: 3
+				id: "256854597BEA6ABD"
+				item: "mekanism:teleportation_core"
+				type: "item"
+			}]
 			subtitle: "Network Peripherals"
 			tasks: [
 				{
@@ -1917,6 +2013,11 @@
 		{
 			dependencies: ["272BCA4A10A23511"]
 			id: "5674BA14F3DADD9F"
+			rewards: [{
+				id: "199D828C5813701D"
+				item: "functionalstorage:gold_upgrade"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3429226D29FC039D"
 				item: "mekanism:qio_drive_hyper_dense"
@@ -1928,6 +2029,11 @@
 		{
 			dependencies: ["5674BA14F3DADD9F"]
 			id: "3CBB497E42796744"
+			rewards: [{
+				id: "02E87E811AA41C61"
+				item: "functionalstorage:diamond_upgrade"
+				type: "item"
+			}]
 			tasks: [{
 				id: "075B28926EFB5E6B"
 				item: "mekanism:qio_drive_time_dilating"
@@ -1942,6 +2048,11 @@
 				"3818692FCB23260D"
 			]
 			id: "2541D5FED23826D1"
+			rewards: [{
+				id: "15CCDC689FA9A995"
+				item: "mekanism:pellet_antimatter"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3EC935CC40A6D71D"
 				item: "mekanism:qio_drive_supermassive"
