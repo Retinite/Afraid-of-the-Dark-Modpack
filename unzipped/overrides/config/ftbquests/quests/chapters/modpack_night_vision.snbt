@@ -11,6 +11,7 @@
 	quests: [
 		{
 			dependencies: ["73D90E16E7875B13"]
+			description: ["Also, extended Night Vision is disabled."]
 			id: "1D47E8D9FE4253ED"
 			subtitle: "Now Harder to Craft!"
 			tasks: [{
@@ -25,8 +26,8 @@
 				}
 				type: "item"
 			}]
-			x: -0.5d
-			y: -0.5d
+			x: 1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["1D47E8D9FE4253ED"]
@@ -51,49 +52,26 @@
 				match_nbt: true
 				type: "item"
 			}]
-			x: -1.0d
-			y: 0.5d
-		}
-		{
-			dependencies: ["08E637FD4B504BD2"]
-			description: ["Can craft either by &l&oApotheosis&r infusing, or with a &1Night Vision&r Totem/Bottle."]
-			id: "50032BEB92430575"
-			subtitle: "Still Drops on Death"
-			tasks: [{
-				disable_toast: true
-				id: "463F0388CDFD4D58"
-				item: {
-					Count: 1b
-					id: "apotheosis:potion_charm"
-					tag: {
-						Damage: 0
-						Potion: "minecraft:night_vision"
-						Unbreakable: 1b
-					}
-				}
-				match_nbt: true
-				type: "item"
-			}]
-			title: "Unbreakable Charm of Night Vision"
-			x: 0.5d
-			y: 2.5d
+			x: -1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["08E637FD4B504BD2"]
 			description: ["Wear in your Bauble slot!"]
 			id: "0B4E177CC1CE99AC"
-			subtitle: "Annoying Particles"
+			subtitle: "Permanent, Annoying Particles"
 			tasks: [{
 				disable_toast: true
 				id: "2E70BED65E966156"
 				item: "observed:observer_lenses"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 0.5d
+			x: 1.0d
+			y: 2.0d
 		}
 		{
-			dependencies: ["73D90E16E7875B13"]
+			dependencies: ["4A8423FCB7BD9C53"]
+			description: ["At least, when you only have 1/4 installed. Even 2/4 is sufficiently comparable to full &1Night Vision&r except at a distance."]
 			id: "7016586EB104F233"
 			subtitle: "Limited Distance"
 			tasks: [{
@@ -102,8 +80,8 @@
 				item: "mekanism:module_vision_enhancement_unit"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 0.5d
+			x: 1.5d
+			y: 0.0d
 		}
 		{
 			description: [
@@ -130,7 +108,7 @@
 			]
 			title: "Glow Fish"
 			x: 2.5d
-			y: -2.0d
+			y: -3.0d
 		}
 		{
 			description: ["90 Seconds (1:30)"]
@@ -144,40 +122,67 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: -2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
-				"0B4E177CC1CE99AC"
+				"16EA98719802A954"
 				"7016586EB104F233"
 			]
 			description: [
-				"Craftable! Can convert to/from an unbreakable &1Charm of Night Vision&r."
+				"Both the &eAbility Totem&r and &9&lUnbreakable&r&1 Potion Charm&r are craftable &oand interchangeable&r (so long as you do not equip the ability from the totem)."
 				""
-				"Reminder: you will drop one random Ability on death."
+				"NB: the charm is easier to toggle but is guaranteed to drop on death."
 			]
-			id: "34EA6A77A2533CA2"
-			shape: "circle"
-			subtitle: "Chance of Dropping on Death"
-			tasks: [{
-				disable_toast: true
-				id: "44670850FFB88E76"
-				item: {
-					Count: 1b
-					id: "everlastingabilities:ability_totem"
-					tag: {
-						"everlastingabilities:abilityStoreStack": [{
-							level: 1
-							name: "everlastingabilities:effect/night_vision"
-						}]
-					}
+			icon: {
+				Count: 1b
+				id: "everlastingabilities:ability_totem"
+				tag: {
+					"everlastingabilities:abilityStoreStack": [{
+						level: 1
+						name: "everlastingabilities:effect/glowing"
+					}]
 				}
-				match_nbt: true
-				type: "item"
-			}]
-			title: "Night Vision Ability"
-			x: -0.5d
-			y: 2.5d
+			}
+			id: "34EA6A77A2533CA2"
+			progression_mode: "linear"
+			shape: "circle"
+			tasks: [
+				{
+					disable_toast: true
+					id: "44670850FFB88E76"
+					item: {
+						Count: 1b
+						id: "everlastingabilities:ability_totem"
+						tag: {
+							"everlastingabilities:abilityStoreStack": [{
+								level: 1
+								name: "everlastingabilities:effect/night_vision"
+							}]
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "325C820C57A06716"
+					item: {
+						Count: 1b
+						id: "apotheosis:potion_charm"
+						tag: {
+							Damage: 0
+							Potion: "minecraft:night_vision"
+							Unbreakable: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+			]
+			title: "Permanent* Night Vision"
+			x: -1.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -195,7 +200,7 @@
 			}]
 			title: "Luxum"
 			x: 0.0d
-			y: -1.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["73D90E16E7875B13"]
@@ -209,7 +214,45 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -2.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4A8423FCB7BD9C53"]
+			description: ["Consider un-cursing it with a &3Prismatic Cobweb&r!"]
+			id: "16EA98719802A954"
+			subtitle: "Weak, Cursed Helmet"
+			tasks: [{
+				disable_toast: true
+				id: "344C10BB381D9A1A"
+				item: {
+					Count: 1b
+					id: "enemyexpansion:phantasm_helmet"
+					tag: {
+						Damage: 0
+						Enchantments: [{
+							id: "minecraft:binding_curse"
+							lvl: 1
+						}]
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["73D90E16E7875B13"]
+			description: ["Rarely dropped by Phantoms, but can also be crafted. Applies 20 seconds of &1Night Vision&r on hit."]
+			id: "4A8423FCB7BD9C53"
+			subtitle: "Night Vision Projectile"
+			tasks: [{
+				disable_toast: true
+				id: "5721771FE3E82433"
+				item: "enemyexpansion:phantom_eye"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.0d
 		}
 	]
 	title: "Night Vision Guide"

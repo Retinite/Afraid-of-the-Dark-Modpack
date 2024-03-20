@@ -961,9 +961,19 @@
 		}
 		{
 			description: [
-				"Spawners (and some other blocks) can now be picked up with &bSilk Touch II&r!"
+				"Spawners (and some other blocks) can now be picked up with &5Silk Touch II&r!"
 				""
 				"Right-clicking on the spawner with certain items will also change its behavior. For example, using a mob's &oSpawn Egg&r (obtained from the new &5&oCapturing&r&o enchantment&r), you can change the spawned mobs to that same type! See the &1Chronicle of Shadows&r for more information."
+				"{@pagebreak}"
+				"Blocks that can be picked up with &5Silk Touch II&r:"
+				""
+				"Budding Amethyst"
+				"Enderium Shard Ore"
+				"Enlightened Deepslate"
+				"Shiny Gloopstone"
+				"Spawner"
+				""
+				"Note that &lMekanism&r's &7Digital Miner&r only uses &5Silk Touch I&r when Silk Touch mode is enabled."
 			]
 			id: "75BAE5546F82C695"
 			rewards: [{

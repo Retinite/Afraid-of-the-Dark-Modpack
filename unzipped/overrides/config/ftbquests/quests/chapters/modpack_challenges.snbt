@@ -3,7 +3,6 @@
 	default_quest_shape: ""
 	filename: "modpack_challenges"
 	group: ""
-	hide_quest_details_until_startable: true
 	icon: "solcarrot:food_book"
 	id: "266EE1EB9BD1D5D8"
 	order_index: 3
@@ -13,7 +12,7 @@
 			description: [
 				"In alphabetical order (aside from &lDrink Beer Refill&r items)."
 				""
-				"Health will be maxed out after eating 105 out of 115 total food items."
+				"Health will be maxed out after eating 105 out of 117 total food items."
 			]
 			icon: "solcarrot:food_book"
 			id: "3013BAC5A71D0B7E"
@@ -68,6 +67,11 @@
 				{
 					id: "291C7E4B1BA2FDE4"
 					item: "upgrade_aquatic:boiled_purple_pickerelweed"
+					type: "item"
+				}
+				{
+					id: "1E3FD775D1A1E3F4"
+					item: "enemyexpansion:bottled_flutterfly"
 					type: "item"
 				}
 				{
@@ -432,6 +436,11 @@
 					type: "item"
 				}
 				{
+					id: "25BE5B4033B2448A"
+					item: "enemyexpansion:scorpion_tail"
+					type: "item"
+				}
+				{
 					id: "6C46B4D0A697F0A9"
 					item: "aquamirae:sea_casserole"
 					type: "item"
@@ -734,7 +743,11 @@
 		}
 		{
 			dependency_requirement: "one_started"
-			description: ["Consider crafting an Explorer's Compass and looking for a Lich Prison."]
+			description: [
+				"The &7Bone Staff Fragment&rs have recipes to duplicate them, so you only need to find each one once!"
+				""
+				"Consider crafting an Explorer's Compass and looking for a Lich Prison."
+			]
 			id: "32DBFE096CDBBD50"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -1322,7 +1335,6 @@
 				"4C09ABEB358C0F24"
 				"251069B43E6AF820"
 				"19F1674292AE31C2"
-				"6FD021FD2E5C236E"
 			]
 			icon: "minecraft:dragon_head"
 			id: "71F8B333C1AA58A0"
@@ -1356,10 +1368,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"34EA6A77A2533CA2"
-				"50032BEB92430575"
-			]
+			dependencies: ["34EA6A77A2533CA2"]
 			icon: "minecraft:golden_carrot"
 			id: "54FA8D1C2F01D0BB"
 			rewards: [{
@@ -1460,7 +1469,6 @@
 				"21C18833C0563ED4"
 				"0F215DA932BD902B"
 				"4CED91B768D1F4EA"
-				"11A0CCD00A4A2259"
 				"173CA2C4F61684B2"
 				"0D37EE30FE95381E"
 				"4DBF7238FC53616A"
@@ -1542,7 +1550,6 @@
 				"3224FD1D5021A695"
 				"3DA9E220A978876C"
 				"43430DDCCBA5A2D9"
-				"7C0FC708533D53F6"
 				"367AF96649B156F2"
 				"6D9D92F3A4C76148"
 				"0A4785DCE5408A83"
@@ -1572,6 +1579,10 @@
 				"0B8552681949303E"
 				"48B92B0EB5FBCCF0"
 				"39DA41F2BECB139E"
+				"7A3B59BEE3144C41"
+				"28C6B363AE5A6C6D"
+				"699C2395CD000121"
+				"608FF9D964F58F85"
 			]
 			icon: {
 				Count: 1b
@@ -2041,6 +2052,61 @@
 					item: {
 						Count: 1b
 						id: "born_in_chaos_v1:wood_splitter_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "48F4CB03E5E78279"
+					item: {
+						Count: 1b
+						id: "enemyexpansion:troll_molar"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7A6C738E7D2CB242"
+					item: {
+						Count: 1b
+						id: "enemyexpansion:silverhead_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7F002EACDFAD570D"
+					item: {
+						Count: 1b
+						id: "enemyexpansion:headbiter_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "66A6009C3363D27B"
+					item: {
+						Count: 1b
+						id: "enemyexpansion:horsehead_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1E1B28759816CA41"
+					item: {
+						Count: 1b
+						id: "enemyexpansion:meathead_helmet"
 						tag: {
 							Damage: 0
 						}

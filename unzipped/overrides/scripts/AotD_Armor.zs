@@ -5,8 +5,6 @@
 // The majority of added scrapping recipes have been disabled until rarity materials can still be obtained.
 
 import crafttweaker.api.ingredient.type.IIngredientEmpty;
-import mods.jeitweaker.Jei;
-import crafttweaker.api.tag.MCTag;
 import crafttweaker.api.item.IItemStack;
 import crafttweaker.api.ingredient.IIngredient;
 import crafttweaker.api.data.IData;
@@ -116,10 +114,10 @@ addCrusherRecycling(<item:born_in_chaos_v1:spiny_shell_armor_helmet>, <item:born
 addCrusherRecycling(<item:born_in_chaos_v1:spiny_shell_armor_chestplate>, <item:born_in_chaos_v1:spiny_shell> * 4);
 
 removeArmor("aquamirae:terrible");
-craftingTable.addShaped("aquamirae.terrible_helmet", <item:aquamirae:terrible_helmet>, [[<item:aquamirae:anglers_fang>, IIngredientEmpty.getInstance(), <item:aquamirae:anglers_fang>], [<item:aquamirae:fin>, <item:minecraft:iron_ingot>, <item:aquamirae:fin>], [<item:minecraft:iron_ingot>, <item:minecraft:iron_helmet>.anyDamage(), <item:minecraft:iron_ingot>]]);
-craftingTable.addShaped("aquamirae.terrible_chestplate", <item:aquamirae:terrible_chestplate>, [[<item:aquamirae:anglers_fang>, <item:minecraft:iron_chestplate>.anyDamage(), <item:aquamirae:anglers_fang>], [<item:aquamirae:fin>, <item:minecraft:iron_ingot>, <item:aquamirae:fin>], [<item:minecraft:iron_ingot>, <item:aquamirae:ship_graveyard_echo>, <item:minecraft:iron_ingot>]]);
-craftingTable.addShaped("aquamirae.terrible_leggings", <item:aquamirae:terrible_leggings>, [[<item:aquamirae:anglers_fang>, <item:minecraft:iron_ingot>, <item:aquamirae:anglers_fang>], [<item:aquamirae:fin>, <item:minecraft:iron_leggings>.anyDamage(), <item:aquamirae:fin>], [<item:minecraft:iron_ingot>, IIngredientEmpty.getInstance(), <item:minecraft:iron_ingot>]]);
-craftingTable.addShaped("aquamirae.terrible_boots", <item:aquamirae:terrible_boots>, [[<item:aquamirae:anglers_fang>, IIngredientEmpty.getInstance(), <item:aquamirae:anglers_fang>], [<item:minecraft:iron_ingot>, <item:minecraft:iron_boots>.anyDamage(), <item:minecraft:iron_ingot>], [<item:aquamirae:fin>, IIngredientEmpty.getInstance(), <item:aquamirae:fin>]]);
+craftingTable.addShaped("aquamirae.terrible_helmet", <item:aquamirae:terrible_helmet>, [[<tag:items: aotdextras:poisoner>, IIngredientEmpty.getInstance(), <tag:items: aotdextras:poisoner>], [<item:aquamirae:fin>, <item:minecraft:iron_ingot>, <item:aquamirae:fin>], [<item:minecraft:iron_ingot>, <item:minecraft:iron_helmet>.anyDamage(), <item:minecraft:iron_ingot>]]);
+craftingTable.addShaped("aquamirae.terrible_chestplate", <item:aquamirae:terrible_chestplate>, [[<tag:items: aotdextras:poisoner>, <item:minecraft:iron_chestplate>.anyDamage(), <tag:items: aotdextras:poisoner>], [<item:aquamirae:fin>, <item:minecraft:iron_ingot>, <item:aquamirae:fin>], [<item:minecraft:iron_ingot>, <item:aquamirae:ship_graveyard_echo>, <item:minecraft:iron_ingot>]]);
+craftingTable.addShaped("aquamirae.terrible_leggings", <item:aquamirae:terrible_leggings>, [[<tag:items: aotdextras:poisoner>, <item:minecraft:iron_ingot>, <tag:items: aotdextras:poisoner>], [<item:aquamirae:fin>, <item:minecraft:iron_leggings>.anyDamage(), <item:aquamirae:fin>], [<item:minecraft:iron_ingot>, IIngredientEmpty.getInstance(), <item:minecraft:iron_ingot>]]);
+craftingTable.addShaped("aquamirae.terrible_boots", <item:aquamirae:terrible_boots>, [[<tag:items: aotdextras:poisoner>, IIngredientEmpty.getInstance(), <tag:items: aotdextras:poisoner>], [<item:minecraft:iron_ingot>, <item:minecraft:iron_boots>.anyDamage(), <item:minecraft:iron_ingot>], [<item:aquamirae:fin>, IIngredientEmpty.getInstance(), <item:aquamirae:fin>]]);
 addRecyclingArmorSuite("aquamirae:terrible", <item:mekanism:dust_iron>);
 
 craftingTable.remove(<item:unusualend:chorus_helmet>);
@@ -152,10 +150,10 @@ addArmorCraftingSuite("mekanismtools:steel", <item:mekanism:ingot_steel>, <item:
 addRecyclingArmorSuite("mekanismtools:steel", <item:mekanism:dust_steel>);
 
 removeArmor("minecraft:diamond");
-smithing.addRecipe("minecraft.diamond_helmet", <item:minecraft:diamond_helmet>, <item:mekanismtools:steel_helmet>, <item:minecraft:diamond> * 5);
-smithing.addRecipe("minecraft.diamond_chestplate", <item:minecraft:diamond_chestplate>, <item:mekanismtools:steel_chestplate>, <item:minecraft:diamond> * 8);
-smithing.addRecipe("minecraft.diamond_leggings", <item:minecraft:diamond_leggings>, <item:mekanismtools:steel_leggings>, <item:minecraft:diamond> * 7);
-smithing.addRecipe("minecraft.diamond_boots", <item:minecraft:diamond_boots>, <item:mekanismtools:steel_boots>, <item:minecraft:diamond> * 4);
+<recipetype:mekanism:combining>.addRecipe("minecraft.diamond_helmet", <item:mekanismtools:steel_helmet>.anyDamage(), <item:mekanism:dust_diamond> * 5, <item:minecraft:diamond_helmet>);
+<recipetype:mekanism:combining>.addRecipe("minecraft.diamond_chestplate", <item:mekanismtools:steel_chestplate>.anyDamage(), <item:mekanism:dust_diamond> * 8, <item:minecraft:diamond_chestplate>);
+<recipetype:mekanism:combining>.addRecipe("minecraft.diamond_leggings", <item:mekanismtools:steel_leggings>.anyDamage(), <item:mekanism:dust_diamond> * 7, <item:minecraft:diamond_leggings>);
+<recipetype:mekanism:combining>.addRecipe("minecraft.diamond_boots", <item:mekanismtools:steel_boots>.anyDamage(), <item:mekanism:dust_diamond> * 4, <item:minecraft:diamond_boots>);
 addRecyclingArmorSuite("minecraft:diamond", <item:mekanism:dust_diamond>);
 
 craftingTable.remove(<item:deep_dark_regrowth:void_collar_chestplate>);
@@ -219,10 +217,10 @@ addArmorCraftingSuite("mekanismtools:osmium", <item:mekanism:block_osmium>, <ite
 addRecyclingArmorSuite("mekanismtools:osmium", <item:mekanism:dust_osmium>);
 
 removeArmor("tenebrous_lands:siege_armor");
-smithing.addRecipe("tenebrous_lands.siege_armor_helmet", <item:tenebrous_lands:siege_armor_helmet>, <item:mekanismtools:osmium_helmet>, <item:tenebrous_lands:zenyr> * 20);
-smithing.addRecipe("tenebrous_lands.siege_armor_chestplate", <item:tenebrous_lands:siege_armor_chestplate>, <item:mekanismtools:osmium_chestplate>, <item:tenebrous_lands:zenyr> * 32);
-smithing.addRecipe("tenebrous_lands.siege_armor_leggings", <item:tenebrous_lands:siege_armor_leggings>, <item:mekanismtools:osmium_leggings>, <item:tenebrous_lands:zenyr> * 28);
-smithing.addRecipe("tenebrous_lands.siege_armor_boots", <item:tenebrous_lands:siege_armor_boots>, <item:mekanismtools:osmium_boots>, <item:tenebrous_lands:zenyr> * 16);
+<recipetype:mekanism:combining>.addRecipe("tenebrous_lands.siege_armor_helmet", <item:mekanismtools:osmium_helmet>.anyDamage(), <item:tenebrous_lands:zenyr> * 20, <item:tenebrous_lands:siege_armor_helmet>);
+<recipetype:mekanism:combining>.addRecipe("tenebrous_lands.siege_armor_chestplate", <item:mekanismtools:osmium_chestplate>.anyDamage(), <item:tenebrous_lands:zenyr> * 32, <item:tenebrous_lands:siege_armor_chestplate>);
+<recipetype:mekanism:combining>.addRecipe("tenebrous_lands.siege_armor_leggings", <item:mekanismtools:osmium_leggings>.anyDamage(), <item:tenebrous_lands:zenyr> * 28, <item:tenebrous_lands:siege_armor_leggings>);
+<recipetype:mekanism:combining>.addRecipe("tenebrous_lands.siege_armor_boots", <item:mekanismtools:osmium_boots>.anyDamage(), <item:tenebrous_lands:zenyr> * 16, <item:tenebrous_lands:siege_armor_boots>);
 addRecyclingArmorSuite("tenebrous_lands:siege_armor", <item:tenebrous_lands:zenyr>);
 
 removeArmor("deep_dark_regrowth:ancient");
@@ -288,9 +286,9 @@ craftingTable.addShaped("mekanism.mekasuit_boots", <item:mekanism:mekasuit_boots
 // MISC ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 // horse armor
-smithing.addRecipe("minecraft.iron_horse_armor", <item:minecraft:iron_horse_armor>, <item:minecraft:leather_horse_armor>, <item:minecraft:iron_ingot> * 4);
-smithing.addRecipe("minecraft.golden_horse_armor", <item:minecraft:golden_horse_armor>, <item:minecraft:leather_horse_armor>, <item:minecraft:gold_ingot> * 4);
-smithing.addRecipe("minecraft.diamond_horse_armor", <item:minecraft:diamond_horse_armor>, <item:minecraft:leather_horse_armor>, <item:minecraft:diamond> * 4);
+smithing.addRecipe("minecraft.iron_horse_armor", <item:minecraft:iron_horse_armor>, <item:minecraft:leather_horse_armor>, <item:minecraft:iron_block>);
+smithing.addRecipe("minecraft.golden_horse_armor", <item:minecraft:golden_horse_armor>, <item:minecraft:leather_horse_armor>, <item:minecraft:gold_block>);
+smithing.addRecipe("minecraft.diamond_horse_armor", <item:minecraft:diamond_horse_armor>, <item:minecraft:leather_horse_armor>, <item:minecraft:diamond_block>);
 addShearsRecycling(<item:minecraft:leather_horse_armor>, <item:minecraft:leather> * 3);
 addCrusherRecycling(<item:minecraft:iron_horse_armor>, <item:mekanism:dust_iron> * 2);
 addCrusherRecycling(<item:minecraft:golden_horse_armor>, <item:mekanism:dust_gold> * 2);

@@ -703,7 +703,10 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["1B1E79910C731F02"]
+			dependencies: [
+				"1B1E79910C731F02"
+				"0E35A5906772B40E"
+			]
 			id: "317D6EDE69C5A647"
 			rewards: [{
 				count: 16
@@ -1013,7 +1016,10 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["44C92F2DEA6CF79F"]
+			dependencies: [
+				"44C92F2DEA6CF79F"
+				"0E35A5906772B40E"
+			]
 			description: [""]
 			id: "0909EED5F6B462DB"
 			optional: true
@@ -2771,6 +2777,7 @@
 		}
 		{
 			dependencies: ["61086CE7086729C1"]
+			hide_dependent_lines: true
 			id: "1E82E87971F6556B"
 			optional: true
 			rewards: [{
@@ -2820,7 +2827,10 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["48EAAB57FBBB3776"]
+			dependencies: [
+				"48EAAB57FBBB3776"
+				"0E35A5906772B40E"
+			]
 			id: "3224FD1D5021A695"
 			optional: true
 			rewards: [{
@@ -2843,56 +2853,6 @@
 			}]
 			x: -2.0d
 			y: 0.0d
-		}
-		{
-			dependencies: ["5D32BDED3AB392FC"]
-			description: ["* Does not dropped cooked mob drops."]
-			id: "11B7AD1A432FD007"
-			optional: true
-			rewards: [{
-				id: "53E26B91C21F0823"
-				item: "john_mod_reborn:immortalitygem"
-				team_reward: false
-				type: "item"
-			}]
-			shape: "diamond"
-			subtitle: "Free Fire Aspect*"
-			tasks: [{
-				id: "3B93E3F29B4BE2A2"
-				item: {
-					Count: 1b
-					id: "john_mod_reborn:immortality_sword"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 0.5d
-			y: 2.0d
-		}
-		{
-			dependencies: [
-				"11B7AD1A432FD007"
-				"292C6C261E4CD650"
-			]
-			id: "7C0FC708533D53F6"
-			optional: true
-			rewards: [{
-				count: 2
-				id: "6B6EBC0CA7C899C4"
-				item: "aotdextras:occultium_ingot"
-				team_reward: false
-				type: "item"
-			}]
-			shape: "diamond"
-			tasks: [{
-				id: "6BF23D1D024AD435"
-				item: "john_mod_reborn:perennial_blade"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -2945,7 +2905,10 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["5D32BDED3AB392FC"]
+			dependencies: [
+				"5D32BDED3AB392FC"
+				"0E35A5906772B40E"
+			]
 			description: ["Deals roughly double damage to undead."]
 			id: "190091266990DB82"
 			optional: true
@@ -3002,7 +2965,10 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["5D32BDED3AB392FC"]
+			dependencies: [
+				"5D32BDED3AB392FC"
+				"0E35A5906772B40E"
+			]
 			id: "43430DDCCBA5A2D9"
 			optional: true
 			rewards: [{
@@ -3025,7 +2991,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 2.5d
+			y: 2.0d
 		}
 		{
 			description: ["Deals more than double damage on certain &lBorn in Chaos&r enemies."]
@@ -3075,7 +3041,7 @@
 				}
 				type: "item"
 			}]
-			x: -2.5d
+			x: 0.0d
 			y: 2.0d
 		}
 		{
@@ -3133,7 +3099,10 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["61086CE7086729C1"]
+			dependencies: [
+				"61086CE7086729C1"
+				"0E35A5906772B40E"
+			]
 			description: ["Debuffs the target and heals the user."]
 			id: "010FB78DF9B5FFC4"
 			optional: true
@@ -3218,7 +3187,10 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["15F6BB632541EBB1"]
+			dependencies: [
+				"15F6BB632541EBB1"
+				"0E35A5906772B40E"
+			]
 			description: ["A strong sword. Nothing else in this version of &lTenebrous Lands&r."]
 			id: "0A4785DCE5408A83"
 			optional: true
@@ -4546,14 +4518,14 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			subtitle: "Damage Negation!"
+			subtitle: "Damage Negation"
 			tasks: [{
 				id: "1544EB7FD256C6E2"
 				item: "undead_unleashed:tome_of_reflection"
 				type: "item"
 			}]
-			x: -5.0d
-			y: 0.0d
+			x: -7.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -4783,6 +4755,156 @@
 			}]
 			x: -7.0d
 			y: -1.0d
+		}
+		{
+			id: "6BD100E465CFE014"
+			optional: true
+			rewards: [{
+				id: "5EB4A090A34AFC07"
+				item: "unusualend:golem_orb"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "Retaliation"
+			tasks: [{
+				id: "47A9D2DFBBE44193"
+				item: "unusualend:golem_orb"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["6BD100E465CFE014"]
+			id: "28C6B363AE5A6C6D"
+			optional: true
+			rewards: [{
+				count: 6
+				id: "1652D9A58C6C82A0"
+				item: "minecraft:wither_rose"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "Retaliation II"
+			tasks: [{
+				id: "4674870B5DBF2527"
+				item: "unusualend:wither_orb"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6BD100E465CFE014"]
+			id: "699C2395CD000121"
+			optional: true
+			rewards: [{
+				count: 6
+				id: "0B25F07EF0F7D9FF"
+				item: "minecraft:blaze_powder"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "Fire Insurance"
+			tasks: [{
+				id: "13E99D8F5B6AAF5C"
+				item: "unusualend:nether_orb"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["6BD100E465CFE014"]
+			id: "7A3B59BEE3144C41"
+			optional: true
+			rewards: [{
+				count: 4
+				id: "77015BE5CFCE5CCD"
+				item: "minecraft:shulker_shell"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "Levitation Insurance"
+			tasks: [{
+				id: "7FA4850FB94955A0"
+				item: "unusualend:shulker_orb"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4A8423FCB7BD9C53"]
+			description: [
+				"The Phantasm Cape provides both Strength and Resistance."
+				""
+				"Provides level I effects below light level 9, and level II effects below light level 2."
+			]
+			id: "608FF9D964F58F85"
+			optional: true
+			rewards: [{
+				count: 6
+				id: "2C6BF339974804EC"
+				item: "aotdextras:luxum_ingot"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "Iron + Darkness Perks"
+			tasks: [
+				{
+					id: "7334E795B82585F2"
+					item: {
+						Count: 1b
+						id: "enemyexpansion:phantasm_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "05F6871F669541DE"
+					item: {
+						Count: 1b
+						id: "enemyexpansion:phantasm_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6D0EBF3FDAC74F7A"
+					item: {
+						Count: 1b
+						id: "enemyexpansion:phantasm_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4750ED4B323B69CE"
+					item: {
+						Count: 1b
+						id: "enemyexpansion:phantasm_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Phantasm Armor"
+			x: 5.5d
+			y: 0.0d
 		}
 	]
 	title: "Equipment"

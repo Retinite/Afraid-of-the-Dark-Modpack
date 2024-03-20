@@ -99,7 +99,7 @@
 				y = -12
 
 			[client.gui.window.sideConfig]
-				x = 16
+				x = 17
 				y = 16
 
 			[client.gui.window.transporterConfig]

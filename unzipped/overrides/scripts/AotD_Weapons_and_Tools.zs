@@ -5,8 +5,6 @@
 // The majority of added scrapping recipes have been disabled until rarity materials can still be obtained.
 
 import crafttweaker.api.ingredient.type.IIngredientEmpty;
-import mods.jeitweaker.Jei;
-import crafttweaker.api.tag.MCTag;
 import crafttweaker.api.item.IItemStack;
 import crafttweaker.api.ingredient.IIngredient;
 import crafttweaker.api.data.IData;
@@ -79,8 +77,6 @@ smithing.addRecipe("born_in_chaos_v1.dark_ritual_dagger", <item:born_in_chaos_v1
 // IRON LEVEL --------------------------------------------------------------------------------------------------------------------------------
 addRecyclingToolsSuite("minecraft:iron", <item:mekanism:dust_iron>);
 
-<tag:items:aotdextras:iron_level_axe>.add([<item:minecraft:iron_axe>, <item:undead_unleashed:grave_metal_axe>, <item:born_in_chaos_v1:wood_splitter_axe>]);
-<tag:items:aotdextras:iron_level_shovel>.add([<item:minecraft:iron_shovel>, <item:undead_unleashed:tombdigger_maul>]);
 craftingTable.remove(<item:undead_unleashed:grave_metal_sword>);
 craftingTable.remove(<item:undead_unleashed:grave_metal_axe>);
 craftingTable.remove(<item:undead_unleashed:tombdigger_maul>);
@@ -105,8 +101,8 @@ craftingTable.remove(<item:aquamirae:terrible_sword>);
 craftingTable.remove(<item:aquamirae:poisoned_blade>);
 craftingTable.remove(<item:aquamirae:fin_cutter>);
 craftingTable.addShaped("aquamirae.remnants_saber", <item:aquamirae:remnants_saber>, [[IIngredientEmpty.getInstance(), IIngredientEmpty.getInstance(), <item:aquamirae:sharp_bones>], [<item:minecraft:leather>, <item:aquamirae:sharp_bones>, IIngredientEmpty.getInstance()], [<item:mekanismtools:bronze_sword>.anyDamage(), IIngredientEmpty.getInstance(), IIngredientEmpty.getInstance()]]);
-craftingTable.addShaped("aquamirae.terrible_sword", <item:aquamirae:terrible_sword>, [[IIngredientEmpty.getInstance(), <item:aquamirae:ship_graveyard_echo>, <item:aquamirae:anglers_fang>], [<item:minecraft:iron_ingot>, <item:upgrade_aquatic:elder_eye>, <item:aquamirae:ship_graveyard_echo>], [<item:aquamirae:remnants_saber>.anyDamage(), <item:minecraft:iron_ingot>, IIngredientEmpty.getInstance()]]);
-craftingTable.addShaped("aquamirae.poisoned_blade", <item:aquamirae:poisoned_blade>, [[IIngredientEmpty.getInstance(), <item:aquamirae:anglers_fang>, <item:minecraft:iron_ingot>], [<item:aquamirae:anglers_fang>, <item:minecraft:iron_ingot>, <item:aquamirae:anglers_fang>], [<item:aquamirae:remnants_saber>.anyDamage(), <item:aquamirae:anglers_fang>, IIngredientEmpty.getInstance()]]);
+craftingTable.addShaped("aquamirae.terrible_sword", <item:aquamirae:terrible_sword>, [[IIngredientEmpty.getInstance(), <item:minecraft:iron_ingot>, <tag:items: aotdextras:poisoner>], [IIngredientEmpty.getInstance(), <item:aquamirae:ship_graveyard_echo>, <item:minecraft:iron_ingot>], [<item:aquamirae:remnants_saber>.anyDamage(), IIngredientEmpty.getInstance(), IIngredientEmpty.getInstance()]]);
+craftingTable.addShaped("aquamirae.poisoned_blade", <item:aquamirae:poisoned_blade>, [[IIngredientEmpty.getInstance(), <tag:items: aotdextras:poisoner>, <item:minecraft:iron_ingot>], [<tag:items: aotdextras:poisoner>, <item:minecraft:iron_ingot>, <tag:items: aotdextras:poisoner>], [<item:aquamirae:remnants_saber>.anyDamage(), <tag:items: aotdextras:poisoner>, IIngredientEmpty.getInstance()]]);
 craftingTable.addShaped("aquamirae.fin_cutter", <item:aquamirae:fin_cutter>, [[IIngredientEmpty.getInstance(), <item:aquamirae:ship_graveyard_echo>, <item:aquamirae:abyssal_amethyst>], [<item:aquamirae:ship_graveyard_echo>, <item:minecraft:diamond>, <item:aquamirae:fin>], [<item:aquamirae:remnants_saber>.anyDamage(), <item:aquamirae:fin>, <item:aquamirae:fin>]]);
 addCrusherRecycling(<item:aquamirae:remnants_saber>, <item:aquamirae:sharp_bones>);
 addCrusherRecycling(<item:aquamirae:terrible_sword>, <item:aquamirae:ship_graveyard_echo>);
@@ -124,10 +120,10 @@ craftingTable.remove(<item:tenebrous_lands:ash_scythe>);
 craftingTable.remove(<item:undead_unleashed:reaping_scythe>);
 craftingTable.remove(<item:born_in_chaos_v1:nightmare_scythe>);
 craftingTable.addShaped("tenebrous_lands.siege_sword", <item:tenebrous_lands:siege_sword>, [[IIngredientEmpty.getInstance(), <item:tenebrous_lands:zenyr>, <item:minecraft:blackstone>], [<item:tenebrous_lands:zenyr>, <item:minecraft:blackstone>, <item:tenebrous_lands:zenyr>], [<item:mekanismtools:steel_sword>.anyDamage(), <item:tenebrous_lands:zenyr>, IIngredientEmpty.getInstance()]]);
-smithing.addRecipe("monsterplus.crystal_sword", <item:monsterplus:crystal_sword>, <item:mekanismtools:steel_sword>.anyDamage(), <item:monsterplus:ancient_crystal> * 2);
+<recipetype:mekanism:combining>.addRecipe("monsterplus.crystal_sword", <item:mekanismtools:steel_sword>.anyDamage(), <item:monsterplus:ancient_crystal> * 2, <item:monsterplus:crystal_sword>);
 smithing.addRecipe("tenebrous_lands.ash_scythe", <item:tenebrous_lands:ash_scythe>, <item:mekanismtools:steel_hoe>.anyDamage(), <item:minecraft:netherite_ingot>);
 smithing.addRecipe("undead_unleashed.reaping_scythe", <item:undead_unleashed:reaping_scythe>, <item:tenebrous_lands:ash_scythe>.anyDamage(), <item:undead_unleashed:necrotic_dust>);
-smithing.addRecipe("born_in_chaos_v1.nightmare_scythe_k", <item:born_in_chaos_v1:nightmare_scythe>, <item:tenebrous_lands:ash_scythe>.anyDamage(), <item:born_in_chaos_v1:nightmare_claw> * 2);
+<recipetype:mekanism:combining>.addRecipe("born_in_chaos_v1.nightmare_scythe_k", <item:tenebrous_lands:ash_scythe>.anyDamage(), <item:born_in_chaos_v1:nightmare_claw> * 2, <item:born_in_chaos_v1:nightmare_scythe>);
 addCrusherRecycling(<item:tenebrous_lands:siege_sword>, <item:tenebrous_lands:zenyr> * 2);
 addCrusherRecycling(<item:monsterplus:crystal_sword>, <item:monsterplus:ancient_crystal>);
 addCrusherRecycling(<item:tenebrous_lands:ash_scythe>, <item:minecraft:netherite_scrap> * 2);
@@ -139,23 +135,18 @@ removeTools("minecraft:diamond");
 addToolsCraftingSuite("minecraft:diamond", <item:minecraft:diamond>, <item:aotdextras:occultium_ingot>);
 addRecyclingToolsSuite("minecraft:diamond", <item:mekanism:dust_diamond>);
 
-craftingTable.remove(<item:john_mod_reborn:immortality_sword>);
-smithing.remove(<item:john_mod_reborn:perennial_blade>);
 craftingTable.remove(<item:born_in_chaos_v1:great_reaper_axe>);
 craftingTable.remove(<item:born_in_chaos_v1:skullbreaker_hammer>);
 craftingTable.remove(<item:born_in_chaos_v1:sharpened_dark_metal_sword>);
 craftingTable.remove(<item:born_in_chaos_v1:intoxicating_dagger>);
 craftingTable.remove(<item:born_in_chaos_v1:soul_cutlass>);
 craftingTable.remove(<item:born_in_chaos_v1:darkwarblade>);
-smithing.addRecipe("john_mod_reborn.immortality_sword", <item:john_mod_reborn:immortality_sword>, <item:minecraft:diamond_sword>.anyDamage(), <item:john_mod_reborn:immortalitygem> * 2);
-smithing.addRecipe("john_mod_reborn.perennial_blade", <item:john_mod_reborn:perennial_blade>, <item:john_mod_reborn:immortality_sword>.anyDamage(), <item:aotdextras:occultium_block>);
-smithing.addRecipe("born_in_chaos_v1.great_reaper_axe", <item:born_in_chaos_v1:great_reaper_axe>, <item:minecraft:diamond_axe>.anyDamage(), <item:born_in_chaos_v1:dark_metal_ingot> * 3);
+<recipetype:mekanism:combining>.addRecipe("born_in_chaos_v1.great_reaper_axe", <item:minecraft:diamond_axe>.anyDamage(), <item:born_in_chaos_v1:dark_metal_ingot> * 3, <item:born_in_chaos_v1:great_reaper_axe>);
 smithing.addRecipe("born_in_chaos_v1.skullbreaker_hammer", <item:born_in_chaos_v1:skullbreaker_hammer>, <item:minecraft:diamond_shovel>.anyDamage(), <item:born_in_chaos_v1:dark_metal_block>);
-smithing.addRecipe("born_in_chaos_v1.sharpened_dark_metal_sword", <item:born_in_chaos_v1:sharpened_dark_metal_sword>, <item:minecraft:diamond_sword>.anyDamage(), <item:born_in_chaos_v1:dark_metal_ingot> * 2);
-smithing.addRecipe("born_in_chaos_v1.intoxicating_dagger", <item:born_in_chaos_v1:intoxicating_dagger>, <item:born_in_chaos_v1:sharpened_dark_metal_sword>.anyDamage(), <item:born_in_chaos_v1:intoxicating_decoction> * 3);
-smithing.addRecipe("born_in_chaos_v1.soul_saber", <item:born_in_chaos_v1:soul_cutlass>, <item:born_in_chaos_v1:sharpened_dark_metal_sword>.anyDamage(), <item:born_in_chaos_v1:nightmare_claw> * 2);
+<recipetype:mekanism:combining>.addRecipe("born_in_chaos_v1.sharpened_dark_metal_sword", <item:minecraft:diamond_sword>.anyDamage(), <item:born_in_chaos_v1:dark_metal_ingot> * 2, <item:born_in_chaos_v1:sharpened_dark_metal_sword>);
+<recipetype:mekanism:combining>.addRecipe("born_in_chaos_v1.intoxicating_dagger", <item:born_in_chaos_v1:sharpened_dark_metal_sword>.anyDamage(), <item:born_in_chaos_v1:intoxicating_decoction> * 3, <item:born_in_chaos_v1:intoxicating_dagger>);
+<recipetype:mekanism:combining>.addRecipe("born_in_chaos_v1.soul_saber", <item:born_in_chaos_v1:sharpened_dark_metal_sword>.anyDamage(), <item:born_in_chaos_v1:nightmare_claw> * 2, <item:born_in_chaos_v1:soul_cutlass>);
 smithing.addRecipe("born_in_chaos_v1.darkwarblade", <item:born_in_chaos_v1:darkwarblade>, <item:born_in_chaos_v1:sharpened_dark_metal_sword>.anyDamage(), <item:born_in_chaos_v1:dark_metal_block>);
-addCrusherRecycling(<item:john_mod_reborn:immortality_sword>, <item:john_mod_reborn:immortalitygem>);
 addCrusherRecycling(<item:born_in_chaos_v1:great_reaper_axe>, <item:born_in_chaos_v1:pileof_dark_metal>);
 addCrusherRecycling(<item:born_in_chaos_v1:skullbreaker_hammer>, <item:born_in_chaos_v1:pileof_dark_metal> * 4);
 addCrusherRecycling(<item:born_in_chaos_v1:sharpened_dark_metal_sword>, <item:born_in_chaos_v1:pileof_dark_metal>);
@@ -169,7 +160,7 @@ addToolsCraftingSuite("minecraft:netherite", <item:minecraft:netherite_ingot>, <
 addRecyclingToolsSuite("minecraft:netherite", <item:minecraft:netherite_ingot>);
 
 craftingTable.remove(<item:tenebrous_lands:undead_sword>);
-smithing.addRecipe("tenebrous_lands.bone_sword", <item:tenebrous_lands:undead_sword>, <item:minecraft:netherite_sword>.anyDamage(), <item:minecraft:bone_block> * 64);
+<recipetype:mekanism:combining>.addRecipe("tenebrous_lands.bone_sword", <item:minecraft:netherite_sword>.anyDamage(), <item:minecraft:bone_block> * 64, <item:tenebrous_lands:undead_sword>);
 addCrusherRecycling(<item:tenebrous_lands:undead_sword>, <item:minecraft:bone_meal> * 64);
 
 addCrusherRecycling(<item:undead_unleashed:moonlight_greatsword>, <item:minecraft:netherite_scrap> * 2);
@@ -231,7 +222,7 @@ craftingTable.remove(<item:mekanismtools:diamond_paxel>);
 smithing.remove(<item:mekanismtools:netherite_paxel>);
 craftingTable.remove(<item:mekanismtools:osmium_paxel>);
 craftingTable.remove(<item:mekanismtools:refined_obsidian_paxel>);
-craftingTable.addShaped("mekanismtools.iron_paxel", <item:mekanismtools:iron_paxel>, [[<tag:items:aotdextras:iron_level_axe>, <item:minecraft:iron_pickaxe>.anyDamage(), <tag:items:aotdextras:iron_level_shovel>], [IIngredientEmpty.getInstance(), <item:minecraft:stick>, IIngredientEmpty.getInstance()], [IIngredientEmpty.getInstance(), <item:minecraft:stick>, IIngredientEmpty.getInstance()]]);
+craftingTable.addShaped("mekanismtools.iron_paxel", <item:mekanismtools:iron_paxel>, [[<tag:items:aotdextras:iron_level_axe>, <tag:items:aotdextras:iron_level_pickaxe>, <tag:items:aotdextras:iron_level_shovel>], [IIngredientEmpty.getInstance(), <item:minecraft:stick>, IIngredientEmpty.getInstance()], [IIngredientEmpty.getInstance(), <item:minecraft:stick>, IIngredientEmpty.getInstance()]]);
 craftingTable.addShaped("mekanismtools.bronze_paxel", <item:mekanismtools:bronze_paxel>, [[<item:mekanismtools:bronze_axe>.anyDamage(), <item:mekanismtools:bronze_pickaxe>.anyDamage(), <item:mekanismtools:bronze_shovel>.anyDamage()], [IIngredientEmpty.getInstance(), <item:mekanismtools:iron_paxel>.anyDamage(), IIngredientEmpty.getInstance()], [IIngredientEmpty.getInstance(), <item:aotdextras:obscurium_ingot>, IIngredientEmpty.getInstance()]]);
 craftingTable.addShaped("mekanismtools.steel_paxel", <item:mekanismtools:steel_paxel>, [[<item:mekanismtools:steel_axe>.anyDamage(), <item:mekanismtools:steel_pickaxe>.anyDamage(), <item:mekanismtools:steel_shovel>.anyDamage()], [IIngredientEmpty.getInstance(), <item:mekanismtools:bronze_paxel>.anyDamage(), IIngredientEmpty.getInstance()], [IIngredientEmpty.getInstance(), <item:aotdextras:obscurium_block>, IIngredientEmpty.getInstance()]]);
 craftingTable.addShaped("mekanismtools.diamond_paxel", <item:mekanismtools:diamond_paxel>, [[<item:minecraft:diamond_axe>.anyDamage(), <item:minecraft:diamond_pickaxe>.anyDamage(), <item:minecraft:diamond_shovel>.anyDamage()], [IIngredientEmpty.getInstance(), <item:mekanismtools:steel_paxel>.anyDamage(), IIngredientEmpty.getInstance()], [IIngredientEmpty.getInstance(), <item:aotdextras:occultium_ingot>, IIngredientEmpty.getInstance()]]);
@@ -343,7 +334,12 @@ addSalvagingRecipe2(<item:born_in_chaos_v1:hound_trap>, [1,1], [3,4], [<item:mek
 addCrusherRecycling(<item:born_in_chaos_v1:hound_trap>, <item:born_in_chaos_v1:fangofthe_hound_leader> * 2);
 
 // chakrams
-addCrusherRecycling(<item:aquamirae:poisoned_chakra>, <item:aquamirae:anglers_fang> * 2);
+craftingTable.remove(<item:aquamirae:poisoned_chakra>);
+craftingTable.addShaped("aquamirae.poisoned_chakra", <item:aquamirae:poisoned_chakra>,
+	[[<tag:items:aotdextras:poisoner>, <item:minecraft:diamond>,       <tag:items:aotdextras:poisoner>],
+	 [<item:minecraft:diamond>,        IIngredientEmpty.getInstance(), <item:minecraft:diamond>],
+	 [<tag:items:aotdextras:poisoner>, <item:minecraft:diamond>,       <tag:items:aotdextras:poisoner>]]);
+addCrusherRecycling(<item:aquamirae:poisoned_chakra>, <item:mekanism:dust_diamond> * 2);
 addCrusherRecycling(<item:aquamirae:maze_rose>, <item:aquamirae:abyssal_amethyst> * 2);
 
 // minecarts
@@ -363,9 +359,6 @@ addSalvagingRecipe1(<item:minecraft:light_weighted_pressure_plate>, 1, 2, <item:
 addCrusherRecycling(<item:minecraft:light_weighted_pressure_plate>, <item:mekanism:dust_gold>);
 addSalvagingRecipe1(<item:minecraft:heavy_weighted_pressure_plate>, 1, 2, <item:mekanism:dust_iron>);
 addCrusherRecycling(<item:minecraft:heavy_weighted_pressure_plate>, <item:mekanism:dust_iron>);
-
-// veil o' johns
-addSalvagingRecipe1(<item:john_mod_reborn:veil_o_johns>, 1, 1, <item:john_mod_reborn:bloody_tear>);
 
 // staffs
 addCrusherRecycling(<item:born_in_chaos_v1:staffof_magic_arrows>, <item:born_in_chaos_v1:seedof_chaos>);

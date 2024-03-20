@@ -48,6 +48,7 @@
 			y: 0.0d
 		}
 		{
+			description: ["Only found in Frozen Ocean biomes."]
 			id: "251069B43E6AF820"
 			rewards: [{
 				count: 2
@@ -59,7 +60,7 @@
 			shape: "diamond"
 			tasks: [{
 				entity: "upgrade_aquatic:great_thrasher"
-				icon: "upgrade_aquatic:thrasher_tooth"
+				icon: "upgrade_aquatic:tooth_lantern"
 				id: "5D999C5AEC77C539"
 				type: "kill"
 				value: 1L
@@ -86,25 +87,6 @@
 			}]
 			x: 0.0d
 			y: 2.0d
-		}
-		{
-			id: "6FD021FD2E5C236E"
-			rewards: [{
-				id: "7F722B7C0362E6DA"
-				item: "bhc:yellow_heart_canister"
-				team_reward: false
-				type: "item"
-			}]
-			shape: "diamond"
-			tasks: [{
-				entity: "john_mod_reborn:mega_john"
-				icon: "john_mod_reborn:bloody_tear"
-				id: "1150A7B8B587F724"
-				type: "kill"
-				value: 1L
-			}]
-			x: 0.5d
-			y: 2.5d
 		}
 		{
 			id: "5DF2D7A268EBDADB"
@@ -163,6 +145,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
+			subtitle: "Duplicate Your Staff Fragments!"
 			tasks: [
 				{
 					id: "46C8341FE2DD752E"
@@ -400,6 +383,25 @@
 			}]
 			x: 0.0d
 			y: 1.0d
+		}
+		{
+			id: "72799FA01B8BC212"
+			rewards: [{
+				id: "57D886CA9CE1D20D"
+				item: "bhc:yellow_heart_canister"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				entity: "upgrade_aquatic:thrasher"
+				icon: "upgrade_aquatic:thrasher_tooth"
+				id: "3AE193A2DE65A6DB"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.5d
+			y: 2.5d
 		}
 	]
 	title: "Bosses"

@@ -10,45 +10,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			description: [
-				"Freed Spirits are dropped from &7Baby John&rs, and can be converted to experience with a &cRight Click&r."
-				""
-				"&dImmortality Gems&r are dropped from (normal) &7John&rs 20\\% of the time."
-				""
-				"Bloody Tears are dropped by the &8Mega John&r, who spawns on full moons from &8The Hunted&r."
-				""
-				"The &5Veil O' Johns&r highlights all nearby &7John&rs when activated."
-			]
-			id: "11A0CCD00A4A2259"
-			rewards: [{
-				id: "7B2FD0103D4FA1B5"
-				item: "john_mod_reborn:veil_o_johns"
-				team_reward: false
-				type: "item"
-			}]
-			shape: "rsquare"
-			tasks: [
-				{
-					id: "08818892D7DCF481"
-					item: "john_mod_reborn:freed_spirit"
-					type: "item"
-				}
-				{
-					id: "6A3BFC9C2F0DCA44"
-					item: "john_mod_reborn:immortalitygem"
-					type: "item"
-				}
-				{
-					id: "7EEFC166552B51E9"
-					item: "john_mod_reborn:bloody_tear"
-					type: "item"
-				}
-			]
-			title: "&lJohn Mod Reborn&r Resources"
-			x: -1.0d
-			y: 0.0d
-		}
-		{
 			description: ["Reminder: press '&bU&r' while hovering over an item to view its uses in other recipes."]
 			id: "4CED91B768D1F4EA"
 			rewards: [
@@ -329,11 +290,6 @@
 					type: "item"
 				}
 				{
-					id: "4A17C858262E6448"
-					item: "unusualend:ancient_shard"
-					type: "item"
-				}
-				{
 					id: "158D5C0634933ADF"
 					item: "unusualend:enderling_scrap"
 					type: "item"
@@ -351,11 +307,6 @@
 				{
 					id: "264F0C28E1408A42"
 					item: "majruszsdifficulty:enderium_shard"
-					type: "item"
-				}
-				{
-					id: "3B7E32D59C17A2AE"
-					item: "majruszsdifficulty:enderium_ingot"
 					type: "item"
 				}
 			]
@@ -614,9 +565,9 @@
 			description: ["Activate a &eGolem Altar&r by using a bottle of &dDragon's Breath&r on it."]
 			id: "048B5EAB0F0A39D5"
 			rewards: [{
-				id: "697F26C404E806D1"
-				item: "unusualend:golem_orb"
-				team_reward: false
+				count: 4
+				id: "0B1D9CCDB93D2F12"
+				item: "unusualend:ancient_shard"
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -693,46 +644,6 @@
 			title: "&lDeep Dark: Regrowth&r Resources"
 			x: -2.0d
 			y: 2.0d
-		}
-		{
-			description: [
-				"Custom resources with custom effects!"
-				""
-				"&oThe majority of recipes and progression now depend on these ingots.&r"
-			]
-			id: "0D37EE30FE95381E"
-			shape: "rsquare"
-			size: 1.5d
-			subtitle: "Agglomerated Resources"
-			tasks: [
-				{
-					disable_toast: true
-					id: "7FCF228D79A6C759"
-					item: "aotdextras:obscurium_ingot"
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "4E1466E4A0E53CB6"
-					item: "aotdextras:occultium_ingot"
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "2169B770AA21329E"
-					item: "aotdextras:nihilum_ingot"
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "0E28B99792B5DFA4"
-					item: "aotdextras:luxum_ingot"
-					type: "item"
-				}
-			]
-			title: "&lAfraid of the Dark&r Resources"
-			x: 0.0d
-			y: 0.0d
 		}
 		{
 			description: ["Consider crafting a Nature's Compass."]
@@ -816,6 +727,81 @@
 			title: "Kill the &l&3Warden&r"
 			x: -3.0d
 			y: 3.0d
+		}
+		{
+			description: [
+				"Feed a Ladybug some Spider Eyes to receive a Healing Eye. Ladybugs spawn in Lush Caves biomes."
+				""
+				"Both eyes are &othrowable&r, and provide Instant Health/Night Vision respectively on hit. They do cause 1 damage (before Instant Health is applied), so they could kill if you are not careful!"
+			]
+			id: "2CF00323AE1DAF9A"
+			rewards: [{
+				count: 2
+				id: "01534D7F86EB2162"
+				item: "enemyexpansion:phantom_eye"
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "07C935589098B598"
+					item: "enemyexpansion:wasp_thorax"
+					type: "item"
+				}
+				{
+					id: "132E798956ACDDBA"
+					item: "enemyexpansion:healing_eye"
+					type: "item"
+				}
+				{
+					id: "0D8099DF95FDB982"
+					item: "enemyexpansion:phantom_eye"
+					type: "item"
+				}
+			]
+			title: "&lEnemy Expansion&r Resources"
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Custom resources with custom effects!"
+				""
+				"&oThe majority of recipes and progression now depend on these ingots.&r"
+			]
+			id: "0D37EE30FE95381E"
+			shape: "rsquare"
+			size: 1.5d
+			subtitle: "Agglomerated Resources"
+			tasks: [
+				{
+					disable_toast: true
+					id: "7FCF228D79A6C759"
+					item: "aotdextras:obscurium_ingot"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "4E1466E4A0E53CB6"
+					item: "aotdextras:occultium_ingot"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "2169B770AA21329E"
+					item: "aotdextras:nihilum_ingot"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "0E28B99792B5DFA4"
+					item: "aotdextras:luxum_ingot"
+					type: "item"
+				}
+			]
+			title: "&lAfraid of the Dark&r Resources"
+			x: 0.0d
+			y: 0.0d
 		}
 	]
 	title: "Creepies \\& Cryptids"

@@ -116,7 +116,7 @@
 				type: "command"
 			}]
 			shape: "square"
-			size: 3.0d
+			size: 2.0d
 			subtitle: "Changes Surface Darkness"
 			tasks: [{
 				disable_toast: true
@@ -126,7 +126,7 @@
 			}]
 			title: "Change Moon Phase"
 			x: 0.0d
-			y: -3.5d
+			y: -3.0d
 		}
 		{
 			can_repeat: true
@@ -306,6 +306,47 @@
 			title: "No Mob Griefing"
 			x: 1.5d
 			y: 0.0d
+		}
+		{
+			can_repeat: true
+			disable_toast: true
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:textures/entity_icon/villager/profession/cartographer.png"
+				}
+			}
+			id: "6B649D7FF5738599"
+			rewards: [
+				{
+					auto: "invisible"
+					command: "execute store result score @p villageDist at @p run locate structure #minecraft:village"
+					id: "6AA7526A70707082"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "tellraw @p [\"Distance to nearest village: \",{\"score\":{\"name\":\"@p\",\"objective\":\"villageDist\"}},\" blocks away\"]"
+					id: "238D662D6B128E54"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+			]
+			shape: "gear"
+			subtitle: "Available to All Players"
+			tasks: [{
+				disable_toast: true
+				id: "2721C5AF9A19FF30"
+				title: "CLICK ME"
+				type: "checkmark"
+			}]
+			title: "Distance to Nearest Village"
+			x: 0.0d
+			y: -5.0d
 		}
 	]
 	subtitle: ["For Ops Only"]

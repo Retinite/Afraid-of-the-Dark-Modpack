@@ -3,8 +3,8 @@
 // This file adds a variety of crossover recipes, usually to Mekanism machines.
 
 import crafttweaker.api.ingredient.type.IIngredientEmpty;
-import mods.jeitweaker.Jei;
-import crafttweaker.api.tag.MCTag;
+import crafttweaker.api.item.alchemy.Potion;
+import crafttweaker.api.recipe.Brewing;
 
 <recipetype:apotheosis:fletching>.addJsonRecipe("apotheosis.crystal_arrow_fletching", {
 	"type": "apotheosis:fletching",
@@ -67,9 +67,9 @@ craftingTable.addShaped("minecraft.chainmail_boots", <item:minecraft:chainmail_b
 	[<item:minecraft:iron_bars>,  IIngredientEmpty.getInstance(), <item:minecraft:iron_bars>]]);
 
 // allow mob drop conversions into other resources
-<recipetype:mekanism:enriching>.addRecipe("gem_into_diamond", <item: john_mod_reborn:immortalitygem>, <item: minecraft:diamond>);
-<recipetype:mekanism:enriching>.addRecipe("tear_into_scrap", <item: john_mod_reborn:bloody_tear>, <item: minecraft:netherite_scrap>);
 <recipetype:mekanism:enriching>.addRecipe("crystal_into_diamond", <item: monsterplus:ancient_crystal>, <item: minecraft:diamond>);
+craftingTable.addShapeless("majruszsdifficulty.fang_into_bone_meal", <item: minecraft:bone_meal> * 16, [<item: majruszsdifficulty:cerberus_fang>]);
+craftingTable.addShapeless("enemyexpansion.wasp_thorax_into_bone_meal", <item: minecraft:bone_meal> * 12, [<item: enemyexpansion:wasp_thorax>]);
 
 // add born_in_chaos smoking/blasting recipes to mekanism smelters
 <recipetype:mekanism:smelting>.addRecipe("born_in_chaos_v1.dark_metalngot_k", <item: born_in_chaos_v1:pileof_dark_metal>, <item: born_in_chaos_v1:dark_metal_ingot>);
@@ -77,23 +77,12 @@ craftingTable.addShaped("minecraft.chainmail_boots", <item:minecraft:chainmail_b
 <recipetype:mekanism:smelting>.addRecipe("born_in_chaos_v1.smoked_monster_flesh_k", <item: born_in_chaos_v1:monster_flesh>, <item: born_in_chaos_v1:smoked_monster_flesh>);
 <recipetype:mekanism:smelting>.addRecipe("born_in_chaos_v1.smoked_fish_k", <item: born_in_chaos_v1:rotten_fish>, <item: born_in_chaos_v1:smoked_fish>);
 
-// add Mekanism sawmill recipes for new logs (requires new tags)
+// add Mekanism sawmill recipes for new logs
 <recipetype:mekanism:sawing>.addRecipe("sawing.river", <tag:items: upgrade_aquatic:river_logs>, <item: upgrade_aquatic:river_planks> * 6, <item: mekanism:sawdust>, 0.25);
 <recipetype:mekanism:sawing>.addRecipe("sawing.driftwood", <tag:items: upgrade_aquatic:driftwood_logs>, <item: upgrade_aquatic:driftwood_planks> * 6, <item: mekanism:sawdust>, 0.25);
-<tag:items: born_in_chaos_v1:scorched_log>.add([<item: born_in_chaos_v1:scorched_log>, <item: born_in_chaos_v1:scorched_wood>, <item: born_in_chaos_v1:stripped_scorched_log>, <item: born_in_chaos_v1:stripped_scorched_wood>]);
 <recipetype:mekanism:sawing>.addRecipe("sawing.scorched", <tag:items: born_in_chaos_v1:scorched_log>, <item: born_in_chaos_v1:scorched_planks> * 6, <item: mekanism:sawdust>, 0.25);
-<tag:items: born_in_chaos_v1:smoldering_scorched_log>.add([<item: born_in_chaos_v1:smoldering_scorched_log>, <item: born_in_chaos_v1:smoldering_scorched_wood>]);
 <recipetype:mekanism:sawing>.addRecipe("sawing.smoldering", <tag:items: born_in_chaos_v1:smoldering_scorched_log>, <item: born_in_chaos_v1:scorched_planks> * 6, <item: born_in_chaos_v1:fire_dust>, 0.25);
-<tag:items: gardens_of_the_dead:soulblight_stem>.add([<item: gardens_of_the_dead:soulblight_stem>, <item: gardens_of_the_dead:soulblight_hyphae>, <item: gardens_of_the_dead:stripped_soulblight_stem>, <item: gardens_of_the_dead:stripped_soulblight_hyphae>]);
 <recipetype:mekanism:sawing>.addRecipe("sawing.soulblight", <tag:items: gardens_of_the_dead:soulblight_stem>, <item: gardens_of_the_dead:soulblight_planks> * 6, <item: gardens_of_the_dead:soulblight_sprouts>, 0.25);
-
-// add armored variant to jetpack module recipe because it feels like it's missing
-craftingTable.removeByName("mekanism:module_jetpack_unit");
-<tag:items: mekanism:jetpack>.add([<item: mekanism:jetpack>, <item: mekanism:jetpack_armored>]);
-craftingTable.addShaped("mekanism.module_jetpack_unit", <item:mekanism:module_jetpack_unit>,
-	[[<tag:items:forge:alloys/elite>,    <tag:items: mekanism:jetpack>,      <tag:items:forge:alloys/elite>],
-	[<tag:items:forge:alloys/elite>,     <item:mekanism:module_base>,        <tag:items:forge:alloys/elite>],
-	[<tag:items:forge:pellets/polonium>, <tag:items:forge:pellets/polonium>, <tag:items:forge:pellets/polonium>]]);
 
 // add recipe for budding amethyst
 craftingTable.addShaped("aotd.budding_amethyst", <item: minecraft:budding_amethyst>,
@@ -163,15 +152,10 @@ craftingTable.addShapeless("apotheosis.uncommon_material_decompress", <item: apo
 // add chemical injection recipe for Unusual End's Shiny Gloopstone
 <recipetype:mekanism:injecting>.addRecipe("unusualend.shiny_gloopstone", <item:unusualend:shiny_gloopstone>, <gas:mekanism:hydrogen_chloride>, <item:unusualend:shiny_crystal> * 2);
 
-// add early Unusual End's Golem Orb recipe
-smithing.addRecipe("unusualend.golem_orb", <item:unusualend:golem_orb>, <item:born_in_chaos_v1:orbofthe_summoner>, <item:deep_dark_regrowth:heart_goo>);
-
 // add sculk soil recipe
 craftingTable.addShapeless("deep_dark_regrowth.sculk_soil", <item:deep_dark_regrowth:sculk_soil>, [<item:minecraft:soul_soil>, <item:minecraft:sculk>]);
 
 // add Born in Chaos's Marigolds to appropriate tags
-<tag:items:minecraft:small_flowers>.add([<item: born_in_chaos_v1:marigolds>]);
-<tag:items:minecraft:flowers>.add([<item: born_in_chaos_v1:marigolds>]);
 <recipetype:mekanism:enriching>.addRecipe("enrich_marigold", <item: born_in_chaos_v1:marigolds>, <item: minecraft:orange_dye> * 2);
 
 // add Minecraft Saddle recipe & recycle
@@ -180,6 +164,24 @@ craftingTable.addShaped("aotd.saddle", <item:minecraft:saddle>,
 	 [<item:minecraft:leather>,       IIngredientEmpty.getInstance(), <item:minecraft:leather>],
 	 [<item:minecraft:tripwire_hook>, IIngredientEmpty.getInstance(), <item:minecraft:tripwire_hook>]]);
 <recipetype:mekanism:sawing>.addRecipe("aotd_saddle_recycling", <item:minecraft:saddle>, <item:minecraft:leather> * 3, <item:minecraft:tripwire_hook> * 2, 0.5);
+
+// add various Amethyst recipes
+<recipetype:mekanism:crushing>.addRecipe("amethyst_block_crushing", <item:minecraft:amethyst_block>, <item:minecraft:amethyst_shard> * 4);
+<recipetype:mekanism:crushing>.addRecipe("small_amethyst_bud_crushing", <item:minecraft:small_amethyst_bud>, <item:minecraft:amethyst_shard>);
+<recipetype:mekanism:crushing>.addRecipe("medium_amethyst_bud_crushing", <item:minecraft:medium_amethyst_bud>, <item:minecraft:amethyst_shard> * 2);
+<recipetype:mekanism:crushing>.addRecipe("large_amethyst_bud_crushing", <item:minecraft:large_amethyst_bud>, <item:minecraft:amethyst_shard> * 3);
+<recipetype:mekanism:crushing>.addRecipe("amethyst_cluster_crushing", <item:minecraft:amethyst_cluster>, <item:minecraft:amethyst_shard> * 5);
+
+// add recipes to use/recycle Born in Chaos's Charms
+<recipetype:mekanism:crushing>.addRecipe("fury_charm_crushing", <item:born_in_chaos_v1:charmof_fury>.anyDamage(), <item:born_in_chaos_v1:ethereal_spirit> * 3);
+<recipetype:mekanism:crushing>.addRecipe("endurance_charm_crushing", <item:born_in_chaos_v1:charmof_endurance>.anyDamage(), <item:born_in_chaos_v1:ethereal_spirit> * 2);
+<recipetype:mekanism:crushing>.addRecipe("stealth_charm_crushing", <item:born_in_chaos_v1:charmof_stealth>.anyDamage(), <item:born_in_chaos_v1:ethereal_spirit> * 2);
+<recipetype:mekanism:crushing>.addRecipe("resistance_charm_crushing", <item:born_in_chaos_v1:charmof_resistance>.anyDamage(), <item:born_in_chaos_v1:ethereal_spirit> * 2);
+<recipetype:mekanism:crushing>.addRecipe("power_charm_crushing", <item:born_in_chaos_v1:charmof_power>.anyDamage(), <item:born_in_chaos_v1:ethereal_spirit> * 2);
+smithing.addRecipe("unusualend.golem_orb", <item:unusualend:golem_orb>, <item:born_in_chaos_v1:orbofthe_summoner>, <tag:items: born_in_chaos_v1:charms>);
+
+// allow Enemy Expansion's Healing Eye to make regen potions
+brewing.addRecipe(<item:minecraft:potion>.withTag({Potion: "minecraft:regeneration"}), <item:enemyexpansion:healing_eye>, <item:minecraft:potion>.withTag({Potion: "minecraft:water"}));
 
 // various iron recycling recipes ------------------------------------------------------------------------------------------------------------
 

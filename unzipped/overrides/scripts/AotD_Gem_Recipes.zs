@@ -4,8 +4,6 @@
 
 import crafttweaker.api.ingredient.IIngredient;
 import crafttweaker.api.ingredient.type.IIngredientEmpty;
-import mods.jeitweaker.Jei;
-import crafttweaker.api.tag.MCTag;
 import crafttweaker.api.recipe.MirrorAxis;
 
 function addBookRecipe(modid as string, enchant as string, specialIngredient as IIngredient, cost as int) as void {
@@ -89,14 +87,11 @@ addBookRecipe2("apotheosis", "bane_of_illagers", <item:minecraft:emerald>, <item
 addBookRecipe2("apotheosis", "capturing", <item:minecraft:egg>, <item:apotheosis:epic_material>, 3);
 
 // trident enchantments
-<tag:items:aotdextras:trident_tip>.add([<item: upgrade_aquatic:thrasher_tooth>, <item: undead_unleashed:demon_horn>]);
-addBookRecipe("minecraft", "impaling", <tag:items:aotdextras:trident_tip>, 2);
-<tag:items:aotdextras:trident_as_ingredient>.add([<item:minecraft:trident>, <item:apotheosis:inert_trident>]);
+addBookRecipe("minecraft", "impaling", <tag:items:upgrade_aquatic:trident_tip>, 2);
 addBookRecipe2("minecraft", "loyalty", <item:minecraft:fishing_rod>, <tag:items:aotdextras:trident_as_ingredient>, 2);
 addBookRecipe2("minecraft", "riptide", <item:minecraft:rabbit_foot>, <item:minecraft:water_bucket>, 2);
 addBookRecipe2("minecraft", "channeling", <item:minecraft:lightning_rod>, <tag:items:aotdextras:trident_as_ingredient>, 3);
-<tag:items:aotdextras:any_raw_fish>.add([<item:minecraft:cod>, <item:minecraft:salmon>, <item:minecraft:tropical_fish>, <item:minecraft:pufferfish>, <item:illuminative:glow_fish_item>, <item:upgrade_aquatic:pike>, <item:upgrade_aquatic:lionfish>, <item:upgrade_aquatic:perch>]);
-addBookRecipe2("apotheosis", "spearfishing", <tag:items:aotdextras:any_raw_fish>, <tag:items:aotdextras:trident_as_ingredient>, 1);
+addBookRecipe2("apotheosis", "spearfishing", <tag:items:aotdextras:raw_fish>, <tag:items:aotdextras:trident_as_ingredient>, 1);
 
 // bow enchantments
 addBookRecipe2("minecraft", "power", <item:minecraft:redstone_torch>, <item:minecraft:bow>, 2);
@@ -117,8 +112,7 @@ addBookRecipe("minecraft", "fortune", <item:minecraft:diamond>, 3);
 addBookRecipe("minecraft", "silk_touch", <item:minecraft:grass_block>, 3);
 addBookRecipe("apotheosis", "miners_fervor", <item:minecraft:golden_pickaxe>, 1);
 addBookRecipe2("apotheosis", "tempting", <item:minecraft:golden_carrot>, <item:minecraft:hay_block>, 3);
-<tag:items:aotdextras:vanilla_stone_ore>.add([<item:minecraft:coal_ore>, <item:minecraft:iron_ore>, <item:minecraft:copper_ore>, <item:minecraft:gold_ore>, <item:minecraft:redstone_ore>, <item:minecraft:emerald_ore>, <item:minecraft:lapis_ore>, <item:minecraft:diamond_ore>]);
-addBookRecipe2("apotheosis", "earths_boon", <tag:items:aotdextras:vanilla_stone_ore>, <item:minecraft:stone>, 3);
+addBookRecipe2("apotheosis", "earths_boon", <tag:items:forge:ores_in_ground/stone>, <item:minecraft:stone>, 3);
 addBookRecipe2("apotheosis", "chainsaw", <item:minecraft:golden_axe>, <item:apotheosis:epic_material>, 3);
 
 // fishing rod enchantments
@@ -167,14 +161,6 @@ var heavy_weapons = <item:minecraft:stone_axe>;
 var pickaxes = <item:minecraft:stone_pickaxe>;
 var shields = <item:minecraft:shield>;
 var ranged_weapons = <item:minecraft:bow>;
-
-<tag:items:aotdextras:mining_tool_example>.add([<item:minecraft:stone_pickaxe>, <item:minecraft:stone_shovel>]);
-<tag:items:aotdextras:upper_armor_example>.add([<item:minecraft:leather_helmet>, <item:minecraft:leather_chestplate>]);
-<tag:items:aotdextras:core_armor_example>.add([<item:minecraft:leather_chestplate>, <item:minecraft:leather_leggings>]);
-<tag:items:aotdextras:lower_armor_example>.add([<item:minecraft:leather_leggings>, <item:minecraft:leather_boots>]);
-<tag:items:aotdextras:melee_weapon_example>.add([<item:minecraft:stone_sword>, <item:minecraft:stone_axe>]);
-<tag:items:aotdextras:light_and_ranged_example>.add([<item:minecraft:stone_sword>, <item:minecraft:bow>]);
-<tag:items:aotdextras:tool_example>.add([<item:minecraft:stone_sword>, <item:minecraft:stone_axe>, <item:minecraft:bow>, <item:minecraft:stone_pickaxe>, <item:minecraft:stone_shovel>]);
 
 addGemRecipe4(light_weapons, heavy_weapons, <tag:items:aotdextras:mining_tool_example>, <tag:items:aotdextras:core_armor_example>, "core/ballast", "common");
 addGemRecipe4(light_weapons, <tag:items:aotdextras:core_armor_example>, heavy_weapons, shields, "core/brawlers", "common");

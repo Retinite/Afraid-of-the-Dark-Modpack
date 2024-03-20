@@ -4,11 +4,8 @@
 
 import crafttweaker.api.ingredient.type.IIngredientEmpty;
 import mods.jeitweaker.Jei;
-import crafttweaker.api.tag.MCTag;
 
 
-craftingTable.removeByName("john_mod_reborn:table_of_johns_recipe"); // does nothing?
-Jei.hideIngredient(<item: john_mod_reborn:table_of_johns>);
 craftingTable.removeByName("deep_dark_regrowth:life_fruit_r"); // currently bugged
 Jei.hideIngredient(<item: deep_dark_regrowth:life_fruit>);
 craftingTable.removeByName("mekanism:oredictionificator"); // no equivalent ore tags to use with

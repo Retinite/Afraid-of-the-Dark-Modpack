@@ -86,7 +86,7 @@
       "required_game_stage": "expert"
     },
     "creeper_explode_behind_wall": {
-      "is_enabled": true,
+      "is_enabled": false,
       "required_game_stage": "expert",
       "chance": 1.0,
       "is_scaled_by_crd": false
@@ -753,6 +753,10 @@
     "other_applicable_mobs": [
       "minecraft:player",
       "minecraft:villager"
+    ],
+    "immune_mobs": [
+      "minecraft:zombie_horse",
+      "minecraft:skeleton_horse"
     ],
     "effect": {
       "__default": {

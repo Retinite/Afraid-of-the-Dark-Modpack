@@ -103,16 +103,5 @@
 	  "mob": "upgrade_aquatic:great_thrasher",
 	  "mincount": 1,
 	  "result": "default"
-  },
-  {
-	  "mob": "john_mod_reborn:baby_john",
-	  "healthmultiply": 0.5,
-	  "speedmultiply": 0.5,
-	  "result": "deny"
-  },
-  {
-	  "mob": "john_mod_reborn:john",
-	  "damagemultiply": 2,
-	  "result": "default"
   }
 ]

@@ -3,9 +3,6 @@
 // This file overhauls MekaSuit armor and upgrades to require Apotheosis enchantments.
 
 import crafttweaker.api.ingredient.type.IIngredientEmpty;
-import mods.jeitweaker.Jei;
-import crafttweaker.api.tag.MCTag;
-
 
 // Component recipes
 
@@ -94,6 +91,22 @@ craftingTable.addShaped("mekanism.module_nutritional_injection_unit", <item:meka
 	[<item:minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1, id: "apotheosis:growth_serum"}]}), <item:mekanism:module_base>, <item:minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1, id: "apotheosis:growth_serum"}]})],
 	[<tag:items:forge:pellets/polonium>, <tag:items:forge:pellets/polonium>, <tag:items:forge:pellets/polonium>]]);
 
+// Chestplate modules
+
+// increase cost of charge distribution unit
+craftingTable.remove(<item: mekanism:module_charge_distribution_unit>);
+craftingTable.addShaped("mekanism.module_charge_distribution_unit", <item: mekanism:module_charge_distribution_unit>,
+	[[<tag:items:forge:alloys/elite>,     <item:mekanism:elite_induction_provider>, <tag:items:forge:alloys/elite>],
+	 [<tag:items:forge:alloys/elite>,     <item:mekanism:module_base>,              <tag:items:forge:alloys/elite>],
+	 [<tag:items:forge:pellets/polonium>, <tag:items:forge:pellets/polonium>,       <tag:items:forge:pellets/polonium>]]);
+
+// add armored variant to jetpack module recipe because it feels like it's missing
+craftingTable.removeByName("mekanism:module_jetpack_unit");
+craftingTable.addShaped("mekanism.module_jetpack_unit", <item:mekanism:module_jetpack_unit>,
+	[[<tag:items:forge:alloys/elite>,    <tag:items: mekanism:jetpack>,      <tag:items:forge:alloys/elite>],
+	[<tag:items:forge:alloys/elite>,     <item:mekanism:module_base>,        <tag:items:forge:alloys/elite>],
+	[<tag:items:forge:pellets/polonium>, <tag:items:forge:pellets/polonium>, <tag:items:forge:pellets/polonium>]]);
+
 
 // Leggings modules
 
@@ -138,7 +151,6 @@ craftingTable.addShaped("mekanism.module_motorized_servo_unit_2", <item:mekanism
 
 // add armored variant to hydraulic propulsion module recipe because it feels like it's missing
 craftingTable.removeByName("mekanism:module_hydraulic_propulsion_unit");
-<tag:items: mekanism:free_runners>.add([<item: mekanism:free_runners>, <item: mekanism:free_runners_armored>]);
 craftingTable.addShaped("mekanism.module_hydraulic_propulsion_unit", <item:mekanism:module_hydraulic_propulsion_unit>,
 	[[<tag:items:forge:alloys/elite>, <tag:items: mekanism:free_runners>, <tag:items:forge:alloys/elite>],
 	[<item:minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 3, id: "minecraft:riptide"}]}), <item:mekanism:module_base>, <item:minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 3, id: "minecraft:riptide"}]})],

@@ -4,7 +4,6 @@
 
 import mods.mekanism.api.ingredient.ItemStackIngredient;
 import crafttweaker.api.ingredient.type.IIngredientEmpty;
-import crafttweaker.api.tag.MCTag;
 import crafttweaker.api.ingredient.IIngredient;
 
 // Essence of the End

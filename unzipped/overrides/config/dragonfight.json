@@ -15,6 +15,26 @@
     "desc:": "Disables lightning spawns: default:false",
     "disableLightning": true
   },
+  "antiflightAbility": {
+    "desc:": "Enables anti-flight ability: default:true",
+    "antiflightAbility": true
+  },
+  "dragonHealthModifier": {
+    "desc:": "Sets the dragon health modifier: default:1.0",
+    "dragonHealthModifier": 1.0
+  },
+  "dragonDamageModifier": {
+    "desc:": "Sets the dragon damage modifier: default:1.0",
+    "dragonDamageModifier": 1.0
+  },
+  "mobSpawnAmountModifier": {
+    "desc:": "Sets the mob spawn amount modifier: default:1.0",
+    "mobSpawnAmountModifier": 1.0
+  },
+  "dragonXPModifier": {
+    "desc:": "Sets the XP drop modifier: default:1.0",
+    "dragonXPModifier": 1.0
+  },
   "printDragonPhases": {
     "desc:": "Prints the dragon phase in chat if enabled: default:false",
     "printDragonPhases": false
@@ -27,19 +47,38 @@
   "spawnoncrystaldestroy": {
     "desc:": "List of mobs spawning when a crystal is destroyed at range, intended to be flying or ranged to close the gap: e.g. format :  [\"minecraft:zombie\", \"minecraft:creeper\"]",
     "spawnoncrystaldestroy": [
-      "minecraft:phantom", "born_in_chaos_v1:scarlet_persecutor", "born_in_chaos_v1:senor_pumpkin", "deep_dark_regrowth:spectator", "tenebrous_lands:shiva"
+      "minecraft:phantom",
+      "born_in_chaos_v1:scarlet_persecutor",
+      "born_in_chaos_v1:senor_pumpkin",
+      "deep_dark_regrowth:spectator",
+      "tenebrous_lands:shiva"
     ]
   },
   "spawnoncrystalrespawn": {
     "desc:": "List of mobs spawning on crystal respawn, intended to be ranged to ward of players from a distance: e.g. format :  [\"minecraft:zombie\", \"minecraft:creeper\"]",
     "spawnoncrystalrespawn": [
-      "minecraft:blaze", "born_in_chaos_v1:supreme_bonescaller", "born_in_chaos_v1:dark_vortex", "monsterplus:abyssologer", "undead_unleashed:graveriser"
+      "minecraft:blaze",
+      "born_in_chaos_v1:supreme_bonescaller",
+      "born_in_chaos_v1:dark_vortex",
+      "monsterplus:abyssologer",
+      "undead_unleashed:graveriser"
     ]
   },
   "spawnwhilelanded": {
     "desc:": "List of mobs spawning while the dragon is sitting in the middle, intended to be melee and not vulnerable to ranged: e.g. format :  [\"minecraft:zombie\", \"minecraft:creeper\"]",
     "spawnwhilelanded": [
-      "minecraft:enderman", "born_in_chaos_v1:fallen_chaos_knight", "born_in_chaos_v1:dire_hound_leader", "born_in_chaos_v1:nightmare_stalker", "born_in_chaos_v1:skeleton_thrasher", "tenebrous_lands:skinwalker", "tenebrous_lands:wendigo", "majruszsdifficulty:cerberus"
+      "minecraft:enderman",
+      "born_in_chaos_v1:fallen_chaos_knight",
+      "born_in_chaos_v1:dire_hound_leader",
+      "born_in_chaos_v1:nightmare_stalker",
+      "born_in_chaos_v1:skeleton_thrasher",
+      "tenebrous_lands:skinwalker",
+      "tenebrous_lands:wendigo",
+      "majruszsdifficulty:cerberus"
     ]
+  },
+  "crystalPendingRespawns": {
+    "desc:": "List of crystal respawn locations for the end crystals, filled automatically on destroy recommended to not touch. XYZ coords seperated by semicolon",
+    "crystalPendingRespawns": []
   }
 }

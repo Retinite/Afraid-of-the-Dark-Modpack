@@ -12,7 +12,7 @@
 			description: [
 				"&0&lAfraid of the Dark&r is designed to be spooky, scary, and somewhat difficult. This questbook serves as an introduction to many of the mods, &lsome of which have been nerfed and/or have had recipes altered&r. Good luck, and have fun!"
 				""
-				""
+				"~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 				""
 				"If you are new to &lFTB Quests&r, continue to the next page by &bScrolling&r, pressing '&bPage Down&r', or clicking on the arrow below."
 				""
@@ -50,12 +50,6 @@
 			icon: "ftbquests:book"
 			id: "318126553F4ED0EC"
 			rewards: [
-				{
-					id: "02F3FA6B408F7FA3"
-					item: "ftbquests:book"
-					team_reward: false
-					type: "item"
-				}
 				{
 					auto: "invisible"
 					command: "/gamerule disableElytraMovementCheck true"
@@ -103,6 +97,29 @@
 					command: "/recipe give @p waystones:return_scroll"
 					id: "4FA2E0F51EFDFF8E"
 					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/scoreboard objectives add villageDist dummy"
+					id: "71D325FBA7C49A60"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "execute store result score @p villageDist at @p run locate structure #minecraft:village"
+					id: "77FA4640C7D77EE7"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "tellraw @p [\"Distance to nearest village: \",{\"score\":{\"name\":\"@p\",\"objective\":\"villageDist\"}},\" blocks away\"]"
+					id: "140BCF76D997C686"
+					silent: true
+					team_reward: false
 					type: "command"
 				}
 			]
@@ -161,6 +178,9 @@
 		{
 			dependencies: ["318126553F4ED0EC"]
 			description: [
+				"&l&aDistance to Nearest Village&r"
+				"This command is repeatable through the &lModpack Options&r quest page. Its intention is to make the first night more bearable, although you may use it at your discretion."
+				""
 				"&l&cCarry On&r"
 				"&bShift&r + &bRight Click&r to pick up / put down most entities and blocks! (Picking up hostile mobs and spawners has been disabled.)"
 				"&eCaution&r: placed blocks will &osometimes preserve their original orientation&r even though they update visually. This can lead to unexpected behavior, especially with blocks that have side-specific inputs and outputs."

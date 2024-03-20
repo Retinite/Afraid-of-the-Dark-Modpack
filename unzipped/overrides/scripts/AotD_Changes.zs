@@ -3,14 +3,11 @@
 // This file provides a number of misc. recipe changes, usually for balance.
 
 import crafttweaker.api.ingredient.type.IIngredientEmpty;
-import mods.jeitweaker.Jei;
-import crafttweaker.api.tag.MCTag;
 
 // unify all trident recipes
 <recipetype:mekanism:nucleosynthesizing>.removeByName("mekanism:nucleosynthesizing/trident");
 craftingTable.remove(<item: minecraft:trident>);
 craftingTable.remove(<item: apotheosis:inert_trident>);
-<tag:items: upgrade_aquatic:trident_tip>.add([<item: upgrade_aquatic:thrasher_tooth>, <item: undead_unleashed:demon_horn>]);
 craftingTable.addShaped("apotheosis.inert_trident_a", <item: apotheosis:inert_trident>,
 	[[IIngredientEmpty.getInstance(),         <tag:items: upgrade_aquatic:trident_tip>, <tag:items: upgrade_aquatic:trident_tip>],
 	 [IIngredientEmpty.getInstance(),         <item: upgrade_aquatic:prismarine_rod>,   <tag:items: upgrade_aquatic:trident_tip>],
@@ -30,13 +27,6 @@ craftingTable.addShaped("fluxnetworks.fluxcontroller", <item: fluxnetworks:flux_
 	[[<item: fluxnetworks:flux_block>, <item: fluxnetworks:flux_point>,                  <item: fluxnetworks:flux_block>],
 	 [<item: fluxnetworks:flux_plug>,  <item: mekanism:module_charge_distribution_unit>, <item: fluxnetworks:flux_plug>],
 	 [<item: fluxnetworks:flux_block>, <item: mekanism:ultimate_induction_provider>,     <item: fluxnetworks:flux_block>]]);
-
-// increase cost of charge distribution unit
-craftingTable.remove(<item: mekanism:module_charge_distribution_unit>);
-craftingTable.addShaped("mekanism.module_charge_distribution_unit", <item: mekanism:module_charge_distribution_unit>,
-	[[<tag:items:forge:alloys/elite>,     <item:mekanism:elite_induction_provider>, <tag:items:forge:alloys/elite>],
-	 [<tag:items:forge:alloys/elite>,     <item:mekanism:module_base>,              <tag:items:forge:alloys/elite>],
-	 [<tag:items:forge:pellets/polonium>, <tag:items:forge:pellets/polonium>,       <tag:items:forge:pellets/polonium>]]);
 
 // add multiple recipes for Tome of Scrapping
 craftingTable.addShaped("apotheosis.scrap_tome_b", <item:apotheosis:scrap_tome> * 6,
@@ -183,7 +173,6 @@ craftingTable.addShaped("ftbquests.screen_1", <item:ftbquests:screen_1>,
 
 // incorporate Rotten Creatures' TNT Barrels into Mekanism Additions' Obsidian TNT recipe
 craftingTable.remove(<item:mekanismadditions:obsidian_tnt>);
-<tag:items: minecraft:tnt>.add([<item:minecraft:tnt>, <item:rottencreatures:tnt_barrel>]);
 craftingTable.addShaped("mekanismadditions.obsidian_tnt", <item:mekanismadditions:obsidian_tnt>,
 	[[<item:minecraft:obsidian>,  <item:minecraft:obsidian>,  <item:minecraft:obsidian>],
 	 [<tag:items: minecraft:tnt>, <tag:items: minecraft:tnt>, <tag:items: minecraft:tnt>],

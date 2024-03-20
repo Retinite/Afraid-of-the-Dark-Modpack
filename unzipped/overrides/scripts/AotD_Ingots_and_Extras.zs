@@ -3,38 +3,33 @@
 // This file adds a variety of crossover recipes, usually to Mekanism machines.
 
 import crafttweaker.api.ingredient.type.IIngredientEmpty;
-import mods.jeitweaker.Jei;
-import crafttweaker.api.tag.MCTag;
 
 // AotD Extras resources ---------------------------------------------------------------------------------------------------------------------
 
-<tag:items: aotdextras:rotten>.add([<item: minecraft:rotten_flesh>, <item: born_in_chaos_v1:rotten_fish>, <item: rottencreatures:magma_rotten_flesh>, <item: rottencreatures:frozen_rotten_flesh>, <item: born_in_chaos_v1:monster_flesh>, <item: minecraft:poisonous_potato>, <item: minecraft:spider_eye>]);
-<tag:items: aotdextras:raw_meat>.add([<item: minecraft:porkchop>, <item: minecraft:beef>, <item: minecraft:chicken>, <item: minecraft:rabbit>, <item: minecraft:mutton>, <item: born_in_chaos_v1:corpse_maggot>]);
-<tag:items: aotdextras:raw_fish>.add([<item: minecraft:cod>, <item: minecraft:salmon>, <item: minecraft:tropical_fish>, <item: minecraft:pufferfish>, <item: illuminative:glow_fish_item>, <item: upgrade_aquatic:pike>, <item: upgrade_aquatic:lionfish>, <item: upgrade_aquatic:perch>, <item: aquamirae:spinefish>]);
-<tag:items: aotdextras:sticky>.add([<item: minecraft:slime_ball>, <item: minecraft:cobweb>]);
-
 craftingTable.addShapeless("aotdextras.obscurium_ingot", <item: aotdextras:obscurium_ingot> * 3,
-	[<tag:items: aotdextras:rotten>,   <tag:items: aotdextras:raw_meat>, <tag:items: aotdextras:rotten>,
-	 <tag:items: aotdextras:raw_fish>, <tag:items: aotdextras:sticky>,   <tag:items: aotdextras:raw_fish>,
-	 <tag:items: aotdextras:rotten>,   <tag:items: aotdextras:raw_meat>, <tag:items: aotdextras:rotten>]);
+	[<tag:items: aotdextras:any_rotten>, <tag:items: aotdextras:raw_meat>, <tag:items: aotdextras:any_rotten>,
+	 <tag:items: aotdextras:raw_fish>,   <tag:items: aotdextras:sticky>,   <tag:items: aotdextras:raw_fish>,
+	 <tag:items: aotdextras:any_rotten>, <tag:items: aotdextras:raw_meat>, <tag:items: aotdextras:any_rotten>]);
 craftingTable.addShapeless("aotdextras.obscurium_ingot_alt", <item: aotdextras:obscurium_ingot>,
-	[<tag:items: aotdextras:rotten>,   <tag:items: aotdextras:raw_meat>, <tag:items: aotdextras:rotten>,
-	 <tag:items: aotdextras:raw_fish>, <item: minecraft:bone_meal>,      <tag:items: aotdextras:raw_fish>,
-	 <tag:items: aotdextras:rotten>,   <tag:items: aotdextras:raw_meat>, <tag:items: aotdextras:rotten>]);
+	[<tag:items: aotdextras:any_rotten>, <tag:items: aotdextras:raw_meat>, <tag:items: aotdextras:any_rotten>,
+	 <tag:items: aotdextras:raw_fish>,   <item: minecraft:bone_meal>,      <tag:items: aotdextras:raw_fish>,
+	 <tag:items: aotdextras:any_rotten>, <tag:items: aotdextras:raw_meat>, <tag:items: aotdextras:any_rotten>]);
 <recipetype:mekanism:metallurgic_infusing>.addRecipe("rotten_into_obscurium", <tag:items: aotdextras:rotten> * 4, <tag:mekanism/infuse_type:mekanism:bio> * 320, <item: aotdextras:obscurium_ingot>);
 <recipetype:mekanism:metallurgic_infusing>.addRecipe("meat_into_obscurium", <tag:items: aotdextras:raw_meat> * 2, <tag:mekanism/infuse_type:mekanism:bio> * 320, <item: aotdextras:obscurium_ingot>);
 <recipetype:mekanism:metallurgic_infusing>.addRecipe("fish_into_obscurium", <tag:items: aotdextras:raw_fish> * 2, <tag:mekanism/infuse_type:mekanism:bio> * 320, <item: aotdextras:obscurium_ingot>);
 <recipetype:mekanism:metallurgic_infusing>.addRecipe("bone_meal_into_obscurium", <item: minecraft:bone_meal> * 32, <tag:mekanism/infuse_type:mekanism:bio> * 640, <item: aotdextras:obscurium_ingot>);
 <recipetype:mekanism:metallurgic_infusing>.addRecipe("sticky_into_obscurium", <tag:items: aotdextras:sticky>, <tag:mekanism/infuse_type:mekanism:bio> * 320, <item: aotdextras:obscurium_ingot>);
-<recipetype:mekanism:enriching>.addRecipe("enriching_rotten_into_obscurium", <tag:items: aotdextras:rotten> * 64, <item: aotdextras:obscurium_ingot>);
+// harder recipe for Rotten Flesh specifically due to abundance
+<recipetype:mekanism:enriching>.addRecipe("enriching_rotten_flesh_into_leather", <item: minecraft:rotten_flesh> * 4, <item: minecraft:leather>);
+<recipetype:mekanism:enriching>.addRecipe("enriching_leather_into_obscurium", <item: minecraft:leather> * 32, <item: aotdextras:obscurium_ingot>);
+// easier recipe for all other "rotten" items
+<recipetype:mekanism:enriching>.addRecipe("enriching_rotten_into_obscurium", <tag:items: aotdextras:rotten> * 32, <item: aotdextras:obscurium_ingot>);
 <recipetype:mekanism:enriching>.addRecipe("enriching_meat_into_obscurium", <tag:items: aotdextras:raw_meat> * 32, <item: aotdextras:obscurium_ingot>);
 <recipetype:mekanism:enriching>.addRecipe("enriching_fish_into_obscurium", <tag:items: aotdextras:raw_fish> * 32, <item: aotdextras:obscurium_ingot>);
 <recipetype:mekanism:enriching>.addRecipe("enriching_sticky_into_obscurium", <tag:items: aotdextras:sticky> * 16, <item: aotdextras:obscurium_ingot>);
 <recipetype:mekanism:enriching>.addRecipe("enriching_bone_into_obscurium", <item: minecraft:bone_block> * 16, <item: aotdextras:obscurium_ingot>);
 <item: aotdextras:obscurium_ingot>.burnTime = 3200;
 
-<tag:items: aotdextras:rare_drops>.add([<item: born_in_chaos_v1:seedof_chaos>, <item: undead_unleashed:necrotic_dust>, <item: minecraft:ghast_tear>, <item: apotheosis:epic_material>, <item:undead_unleashed:lost_soul>]);
-<tag:items: aotdextras:evil_ingots>.add([<item: born_in_chaos_v1:dark_metal_ingot>, <item: undead_unleashed:grave_metal_ingot>, <item: graveyard:dark_iron_ingot>]);
 craftingTable.remove(<item: aotdextras:occultium_ingot>);
 craftingTable.remove(<item: aotdextras:occultium_block>);
 craftingTable.addShapeless("aotdextras.occultium_ingot", <item: aotdextras:occultium_ingot> * 2,
@@ -53,8 +48,6 @@ craftingTable.addShapeless("aotdextras.luxum_ingot", <item: aotdextras:luxum_ing
 	 <item: gardens_of_the_dead:glowing_soul_spore>, <item: aotdextras:obscurium_ingot>,       <item: minecraft:glow_lichen>,
 	 <item: aquamirae:luminescent_lamp>,	         <item: observed:observereye>,             <item: minecraft:shroomlight>]);
 
-<tag:items: aotdextras:epic_drops>.add([<item: john_mod_reborn:bloody_tear>, <item: deep_dark_regrowth:plasmatic_sculk>, <item: deep_dark_regrowth:etherium_gem>, <item: deep_dark_regrowth:aware_lens>, <item: apotheosis:mythic_material>, <item: unusualend:shiny_crystal>]);
-<tag:items: aotdextras:boss_drops>.add([<item: minecraft:nether_star>, <item: deep_dark_regrowth:soul_of_the_depths>, <item: aquamirae:abyssal_amethyst>, <item: whisperwoods:hirschgeist_skull>, <item: apotheosis:warden_tendril>]);
 craftingTable.addShaped("aotdextras.nihilum_ingot", <item: aotdextras:nihilum_ingot> * 2,
 	[[<item: deep_dark_regrowth:galm>,          <item: aotdextras:occultium_ingot>, <item: born_in_chaos_v1:black_argillite>],
 	 [<item: aotdextras:occultium_ingot>,       <item: aotdextras:luxum_block>,      <item: aotdextras:occultium_ingot>],
@@ -67,9 +60,9 @@ craftingTable.addShaped("aotdextras.nihilum_ingot_alt_b", <item: aotdextras:nihi
 	[[<tag:items: aotdextras:boss_drops>, <tag:items: aotdextras:epic_drops>, <tag:items: aotdextras:boss_drops>],
 	 [<tag:items: aotdextras:epic_drops>, <item: aotdextras:occultium_block>, <tag:items: aotdextras:epic_drops>],
 	 [<tag:items: aotdextras:boss_drops>, <tag:items: aotdextras:epic_drops>, <tag:items: aotdextras:boss_drops>]]);
-<recipetype:mekanism:combining>.addRecipe("aotd.nihilum_from_astral", <item:aotdextras:luxum_ingot>, <item:obscure_api:astral_dust>, <item:aotdextras:nihilum_ingot>);
-<recipetype:mekanism:combining>.addRecipe("aotd.nihilum_from_luxum", <item:aotdextras:luxum_ingot>, <item:mekanism:pellet_antimatter>, <item:aotdextras:nihilum_ingot>);
-<recipetype:mekanism:combining>.addRecipe("aotd.nihilum_from_luxum_block", <item:aotdextras:luxum_block>, <item:mekanism:pellet_antimatter>, <item:aotdextras:nihilum_block>);
+<recipetype:mekanism:combining>.addRecipe("aotd.nihilum_from_astral", <item:aotdextras:luxum_ingot> * 4, <item:obscure_api:astral_dust>, <item:aotdextras:nihilum_ingot> * 4);
+<recipetype:mekanism:combining>.addRecipe("aotd.nihilum_from_luxum", <item:aotdextras:luxum_ingot> * 16, <item:mekanism:pellet_antimatter>, <item:aotdextras:nihilum_ingot> * 4);
+<recipetype:mekanism:combining>.addRecipe("aotd.nihilum_from_luxum_block", <item:aotdextras:luxum_block> * 16, <item:mekanism:pellet_antimatter>, <item:aotdextras:nihilum_block> * 4);
 
 // Component resources -----------------------------------------------------------------------------------------------------------------------
 
@@ -133,3 +126,8 @@ craftingTable.addShaped("explorerscompass.explorerscompass", <item: explorerscom
 	[[<item:unusualend:ancient_shard>,   <item:aotdextras:occultium_block>, <item:unusualend:ancient_shard>],
 	 [<item:aotdextras:occultium_block>, <item:minecraft:compass>,          <item:aotdextras:occultium_block>],
 	 [<item:unusualend:ancient_shard>,   <item:aotdextras:occultium_block>, <item:unusualend:ancient_shard>]]);
+
+// add bone staff fragment duplication recipes
+smithing.addRecipe("upper_bone_staff_dupe", <item:graveyard:upper_bone_staff> * 2, <item:graveyard:upper_bone_staff>, <item:aotdextras:occultium_ingot>);
+smithing.addRecipe("middle_bone_staff_dupe", <item:graveyard:middle_bone_staff> * 2, <item:graveyard:middle_bone_staff>, <item:aotdextras:occultium_ingot>);
+smithing.addRecipe("lower_bone_staff_dupe", <item:graveyard:lower_bone_staff> * 2, <item:graveyard:lower_bone_staff>, <item:aotdextras:occultium_ingot>);

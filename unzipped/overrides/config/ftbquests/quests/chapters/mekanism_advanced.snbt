@@ -1495,9 +1495,8 @@
 			]
 			id: "7159EA9CD7A2F4D4"
 			rewards: [{
-				id: "013AD74E18C2FCDD"
-				item: "mekanism:chargepad"
-				team_reward: false
+				id: "185D78EFE47CDA6F"
+				item: "solarpanels:improved_energy_tablet"
 				type: "item"
 			}]
 			shape: "square"
@@ -1549,19 +1548,20 @@
 				"Step 1: Open \"Config\""
 				""
 				"Edit the radius and depth of the miner to your liking. The miner is able to search up to all y-levels and up to 32 blocks away horizontally (in a square)."
-				""
+				"{@pagebreak}"
 				""
 				"Step 2: Add Filters"
 				""
-				"Provide Silk-Touched versions of each material you want the miner to collect."
+				"Each filter represents a different set of items to mine. When first starting out, consider adding a &otag&r filter for \"&aforge:ores/iron&r\". This will mine both Iron Ore and Deepslate Iron Ore! Consider crafting a &7Dictionary&r to discover other useful item tags."
 				""
+				"You can also provide filters for individual blocks, but note that you will need to provide a Silk-Touched version of the block in the upper-left of the filter. This can also be done by clicking and dragging item icons from JEI!"
+				""
+				"The upper-right of the filter can optionally specify what blocks to &oreplace&r mined blocks with. To work, these replacement blocks need to be provided to the &7Digital Miner&r's inventory."
+				"{@pagebreak}"
 				""
 				"Step 3: Press \"Start\""
 				""
 				"\"Stop\" will pause the mining process, and \"Reset\" will allow you to edit the configuration again."
-				""
-				""
-				"Optionally, you can specify what materials to replace mined blocks with."
 			]
 			id: "15F17744773C5CF1"
 			rewards: [{
@@ -1584,7 +1584,7 @@
 			description: [
 				"If you've seen this item in JEI and been confused, then be a little disappointed instead!"
 				""
-				"When installed, any blocks mined by the Digital Miner are replaced with your choice of stone."
+				"When installed, the &7Digital Miner&r can replace mined blocks with regular &7Stone&r or &7Cobblestone&r for free."
 			]
 			id: "3636044A87ED16EA"
 			optional: true
@@ -1705,6 +1705,8 @@
 				"&bRight Click&r to view the tags of blocks in front of you."
 				""
 				"&bShift + Right Click&r to open up the menu."
+				""
+				"Don't have the item you need on hand? Click and drag an item icon from JEI into the Dictionary!"
 			]
 			hide_dependency_lines: true
 			id: "3CC9A464A71A41B7"
