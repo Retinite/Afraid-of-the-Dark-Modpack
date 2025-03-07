@@ -250,3 +250,34 @@ craftingTable.addShaped("mekanism.module_blasting_unit_2", <item:mekanism:module
 	[[<tag:items:forge:alloys/ultimate>, <item:minecraft:tnt>, <tag:items:forge:alloys/ultimate>],
 	[<item:minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1, id: "apotheosis:obliteration"}, {lvl: 5, id: "minecraft:sweeping"}]}), <item:mekanism:module_base>, <item:minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1, id: "apotheosis:obliteration"}, {lvl: 5, id: "minecraft:sweeping"}]})],
 	[<tag:items:forge:pellets/polonium>, <tag:items:forge:pellets/polonium>, <tag:items:forge:pellets/polonium>]]);
+
+
+// Meka-Bow modules
+
+craftingTable.removeByName("mekaweapons:module_arrowenergy_unit");
+craftingTable.addShaped("mekaweapons.module_arrowenergy_unit", <item:mekaweapons:module_arrowenergy_unit>,
+	[[<item:mekanism:elite_control_circuit>, <item:minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1, id: "minecraft:infinity"}]}), <item:mekanism:elite_control_circuit>],
+	[<item:mekanism:energy_tablet>, <item:mekanism:module_base>, <item:mekanism:energy_tablet>],
+	[<item:mekanism:pellet_polonium>, <item:mekanism:pellet_polonium>, <item:mekanism:pellet_polonium>]]);
+
+craftingTable.removeByName("mekaweapons:module_autofire_unit");
+craftingTable.addShaped("mekaweapons.module_autofire_unit", <item:mekaweapons:module_autofire_unit>,
+	[[<item:mekanism:alloy_reinforced>, <item:minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 3, id: "apotheosis:crescendo"}]}), <item:mekanism:alloy_reinforced>],
+	[<item:mekanism:elite_control_circuit>, <item:mekanism:module_base>, <item:mekanism:elite_control_circuit>],
+	[<item:mekanism:pellet_polonium>, <item:mekanism:pellet_polonium>, <item:mekanism:pellet_polonium>]]);
+
+craftingTable.removeByName("mekaweapons:module_drawspeed_unit");
+craftingTable.addShaped("mekaweapons.module_drawspeed_unit", <item:mekaweapons:module_drawspeed_unit>,
+	[[<item:mekanism:upgrade_speed>, <item:minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 2, id: "minecraft:quick_charge"}]}), <item:mekanism:upgrade_speed>],
+	[<item:mekanism:alloy_reinforced>, <item:mekanism:module_base>, <item:mekanism:alloy_reinforced>],
+	[<item:mekanism:pellet_polonium>, <item:mekanism:pellet_polonium>, <item:mekanism:pellet_polonium>]]);
+craftingTable.addShaped("mekaweapons.module_drawspeed_unit_b", <item:mekaweapons:module_drawspeed_unit> * 3,
+	[[<item:mekanism:upgrade_speed>, <item:minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 4, id: "minecraft:quick_charge"}]}), <item:mekanism:upgrade_speed>],
+	[<item:mekanism:alloy_reinforced>, <item:mekanism:module_base>, <item:mekanism:alloy_reinforced>],
+	[<item:mekanism:pellet_polonium>, <item:mekanism:pellet_polonium>, <item:mekanism:pellet_polonium>]]);
+
+craftingTable.removeByName("mekaweapons:module_gravity_dampener_unit");
+craftingTable.addShaped("mekaweapons.module_gravity_dampener_unit", <item:mekaweapons:module_gravitydampener_unit>,
+	[[<item:mekanism:alloy_atomic>, <item:unusualend:bottled_shulker_bullet>, <item:mekanism:alloy_atomic>],
+	[<item:mekanism:ultimate_control_circuit>, <item:mekanism:module_base>, <item:mekanism:ultimate_control_circuit>],
+	[<item:mekanism:pellet_polonium>, <item:mekanism:pellet_antimatter>, <item:mekanism:pellet_polonium>]]);

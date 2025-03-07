@@ -204,6 +204,33 @@ smithing.addRecipe("aotd_smithing.refined_obsidian_axe", <item:mekanismtools:ref
 smithing.addRecipe("aotd_smithing.refined_obsidian_hoe", <item:mekanismtools:refined_obsidian_hoe>, <item:majruszsdifficulty:enderium_hoe>, <item:mekanism:block_refined_obsidian>);
 addRecyclingToolsSuite("mekanismtools:refined_obsidian", <item:mekanism:dust_refined_obsidian>);
 
+craftingTable.remove(<item:mekaweapons:katana_blade>);
+craftingTable.addShaped("mekaweapons.katana_blade", <item:mekaweapons:katana_blade>,
+	[[IIngredientEmpty.getInstance(),             IIngredientEmpty.getInstance(),  <item:aotdextras:nihilum_ingot>],
+	[<item:mekanism:alloy_atomic>,                <item:aotdextras:nihilum_ingot>, IIngredientEmpty.getInstance()],
+	[<item:mekanismtools:refined_obsidian_sword>, <item:mekanism:alloy_atomic>,    IIngredientEmpty.getInstance()]]);
+
+craftingTable.remove(<item:mekaweapons:mekatana>);
+craftingTable.addShaped("mekaweapons.mekatana", <item:mekaweapons:mekatana>,
+	[[<tag:items:forge:circuits/ultimate>, <item:mekaweapons:katana_blade>,      <tag:items:forge:circuits/ultimate>],
+	[<item:mekanism:hdpe_sheet>,           <item:aotdextras:nihilum_block>,      <item:mekanism:hdpe_sheet>],
+	[<item:mekanism:pellet_polonium>,      <item:mekanism:basic_induction_cell>, <item:mekanism:pellet_polonium>]]);
+
+craftingTable.remove(<item:mekanism:electric_bow>);
+craftingTable.addShaped("mekanism.electric_bow", <item:mekanism:electric_bow>,
+	[[IIngredientEmpty.getInstance(),     <tag:items:mekanism:alloys/infused>, <item:mekaweapons:bow_limb>],
+	[<tag:items:mekanism:alloys/infused>, <item:mekanism:energy_tablet>,       <item:mekaweapons:bow_limb>],
+	[IIngredientEmpty.getInstance(),      <tag:items:mekanism:alloys/infused>, <item:mekaweapons:bow_limb>]]);
+craftingTable.remove(<item:mekaweapons:bow_riser>);
+craftingTable.addShaped("mekaweapons.bow_riser", <item:mekaweapons:bow_riser>,
+	[[<tag:items:forge:circuits/ultimate>,      <item:mekanism:alloy_atomic>,         <tag:items:forge:circuits/ultimate>],
+	[<tag:items:forge:ingots/refined_obsidian>, <item:mekanism:basic_induction_cell>, <tag:items:forge:ingots/refined_obsidian>]]);
+craftingTable.remove(<item:mekaweapons:mekabow>);
+craftingTable.addShaped("mekaweapons.mekabow", <item:mekaweapons:mekabow>,
+	[[<item:mekanism:pellet_polonium>,          <item:mekaweapons:bow_riser>,    <item:mekanism:pellet_polonium>],
+	[<tag:items:forge:ingots/steel>,            <item:aotdextras:nihilum_block>, <tag:items:forge:ingots/steel>],
+	[<tag:items:forge:ingots/refined_obsidian>, <item:mekanism:electric_bow>,    <tag:items:forge:ingots/refined_obsidian>]]);
+
 craftingTable.remove(<item:bhc:blade_of_vitality>);
 craftingTable.addShaped("bhc.blade_of_vitality", <item:bhc:blade_of_vitality>, [[IIngredientEmpty.getInstance(), <item:bhc:canister>, <item:bhc:canister>], [<item:bhc:canister>, <item:bhc:soul_heart_crystal>, <item:bhc:canister>], [<item:mekanismtools:refined_obsidian_sword>, <item:bhc:canister>, IIngredientEmpty.getInstance()]]);
 addCrusherRecycling(<item:bhc:blade_of_vitality>, <item:bhc:soul_heart_crystal>);

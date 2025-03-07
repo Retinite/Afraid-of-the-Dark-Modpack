@@ -33,7 +33,7 @@
 			image: "minecraft:textures/gui/presets/fusion_reactor.png"
 			rotation: 0.0d
 			width: 3.0d
-			x: 2.0d
+			x: 5.0d
 			y: 6.0d
 		}
 	]
@@ -565,7 +565,15 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["4B02E1C3F918DDC6"]
+			dependencies: [
+				"4B02E1C3F918DDC6"
+				"54419EE0FBD8723E"
+			]
+			description: [
+				"Consumes directly adjacent liquid source blocks (does not consume &1Water&r) within 80 blocks below or horizontal from the bottom of the pump (in a diamond shape), providing 1,000mB of the same liquid to any Mechanical Pipe or machine directly above."
+				""
+				"Requires a source block directly below the pump to start the extraction."
+			]
 			id: "78A10BADE264F811"
 			optional: true
 			rewards: [
@@ -590,7 +598,7 @@
 				}
 			]
 			shape: "diamond"
-			subtitle: "Needed for Water"
+			subtitle: "Extracts Fluids"
 			tasks: [{
 				disable_toast: true
 				id: "4060CD60C94CB04B"
@@ -988,9 +996,12 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["330515F72EF92065"]
+			dependencies: [
+				"330515F72EF92065"
+				"78A10BADE264F811"
+			]
 			description: [
-				"Apply to any &7Electric Pump&r pumping &9Water&r to instead start pumping &1Heavy Water&r."
+				"Apply to any &7Electric Pump&r pumping 1,000mB of &9Water&r to instead start pumping 10mB of &1Heavy Water&r."
 				""
 				"I'm concerned by the implications..."
 			]
@@ -1003,8 +1014,8 @@
 				item: "mekanism:upgrade_filter"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 5.0d
+			x: -0.5d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -1020,8 +1031,8 @@
 				item: "mekanism:solar_neutron_activator"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 7.0d
+			x: 0.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["11550CC463A8FD0A"]
@@ -1034,8 +1045,8 @@
 				item: "mekanism:electrolytic_separator"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 5.0d
+			x: 0.5d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -1052,7 +1063,7 @@
 				item: "mekanism:chemical_infuser"
 				type: "item"
 			}]
-			x: -1.5d
+			x: 1.5d
 			y: 6.0d
 		}
 		{
@@ -1081,7 +1092,7 @@
 				match_nbt: true
 				type: "item"
 			}]
-			x: -0.5d
+			x: 2.5d
 			y: 6.0d
 		}
 		{
@@ -1149,6 +1160,26 @@
 			title: "Fission Reactor: Coolant"
 			x: 4.0d
 			y: 0.0d
+		}
+		{
+			id: "54419EE0FBD8723E"
+			optional: true
+			rewards: [{
+				auto: "invisible"
+				command: "/recipe give @p mekanism:electric_pump"
+				id: "6EBCD8D79A6F66B5"
+				silent: true
+				type: "command"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "2D2FFB747DE9B696"
+				item: "minecraft:water_bucket"
+				type: "item"
+			}]
+			title: "Water"
+			x: -2.0d
+			y: 4.5d
 		}
 	]
 	title: "Generators"

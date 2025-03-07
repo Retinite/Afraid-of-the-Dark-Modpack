@@ -1,0 +1,11 @@
+{
+	"unlocked_by_default": true,
+	"title": "Survival",
+	"icon": {
+		"type": "item",
+		"data": {
+			"item": "iron_sword"
+		}
+	},
+	"background": "textures/gui/advancements/backgrounds/stone.png"
+}

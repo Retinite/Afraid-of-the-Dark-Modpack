@@ -188,8 +188,15 @@
 			dependencies: [
 				"5CC11DE7FC468891"
 				"6ECB0F799B4A44E2"
+				"5490E0FF9D15FB0D"
 			]
+			description: ["Note: &eEssence of Light&r is a &lgas&r, so &oa certain Mekanism upgrade&r can reduce all costs by a factor of 10!"]
 			id: "73D90E16E7875B13"
+			rewards: [{
+				id: "4B2DB2BDD9EAD6B5"
+				item: "aotdextras:luxum_lamp"
+				type: "item"
+			}]
 			shape: "rsquare"
 			subtitle: "Localized Night Vision"
 			tasks: [{
@@ -220,7 +227,7 @@
 			dependencies: ["4A8423FCB7BD9C53"]
 			description: ["Consider un-cursing it with a &3Prismatic Cobweb&r!"]
 			id: "16EA98719802A954"
-			subtitle: "Weak, Cursed Helmet"
+			subtitle: "Cursed Night Vision"
 			tasks: [{
 				disable_toast: true
 				id: "344C10BB381D9A1A"

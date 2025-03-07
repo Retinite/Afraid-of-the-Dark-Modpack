@@ -48,7 +48,7 @@ addLightRecipe(<item:gardens_of_the_dead:glowing_soul_spore>, 2);
 addLightRecipe(<item:aquamirae:esca>, 8);
 addLightRecipe(<item:aotdextras:luxum_lamp>, 512);
 
-<recipetype:mekanism:crystallizing>.addRecipe("glowstone_dust_from_light", <gas:crafttweaker:light_essence> * 240, <item:minecraft:glowstone_dust>);
+<recipetype:mekanism:crystallizing>.addRecipe("glowstone_dust_from_light", <gas:crafttweaker:light_essence> * 1200, <item:minecraft:glowstone_dust>);
 <recipetype:mekanism:injecting>.addRecipe("glowstone_torch_injection", <item:minecraft:stick>, <gas:crafttweaker:light_essence>, <item:illuminative:glowstone_torch>);
 <recipetype:mekanism:injecting>.addRecipe("luminescent_lamp_injection", <item:upgrade_aquatic:prismarine_rod>, <gas:crafttweaker:light_essence>, <item:aquamirae:luminescent_lamp>);
 <recipetype:mekanism:injecting>.addRecipe("luminescent_bubble_injection", <item:aquamirae:oxygelium>, <gas:crafttweaker:light_essence>, <item:aquamirae:luminescent_bubble> * 3);

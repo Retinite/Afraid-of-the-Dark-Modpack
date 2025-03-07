@@ -42,7 +42,7 @@
 				type: "checkmark"
 			}]
 			title: "Vanilla Daylight Cycle"
-			x: 0.0d
+			x: -0.5d
 			y: 0.0d
 		}
 		{
@@ -52,7 +52,18 @@
 				""
 				"The sky's &o&evisible&r light level will depend on the moon phase, ranging from 15 to 0. The fuller the moon, the more dangerous the mobs (a vanilla feature)."
 				""
-				"&cNote&r: &lMekanism&r's Solar Neutron Activator requires daylight to function! MekaSuit Armor, Fusion Reactors, and other end-game &lMekanism&r recipes will become impossible!"
+				"&aPros&r:"
+				"* Caves have fewer mobs."
+				"* &8Grave Soil&r always yields greater rewards."
+				"* Sleep to clear weather at any time."
+				""
+				"&cCons&r:"
+				"* The surface is never safe."
+				"* The Solar Neutron Activator will not function."
+				""
+				"&eNote&r: Nightmare Stalkers (which drop a unique resource) do not spawn until day 3."
+				""
+				"&eNote&r: The &oAstral Altar&r (see: Miscellaneous quests) allows you to temporarily change the time to noon/midnight as needed. Also advances the day counter when used."
 			]
 			icon: {
 				Count: 1b
@@ -81,7 +92,7 @@
 				}
 			]
 			shape: "pentagon"
-			subtitle: "Hardest\\n &cEXPERIMENTAL"
+			subtitle: "Hard Mode"
 			tasks: [{
 				disable_toast: true
 				id: "4915422ADEA8F00D"
@@ -90,7 +101,7 @@
 			}]
 			title: "Always Midnight"
 			x: 0.0d
-			y: 2.0d
+			y: 1.0d
 		}
 		{
 			can_repeat: true
@@ -116,7 +127,7 @@
 				type: "command"
 			}]
 			shape: "square"
-			size: 2.0d
+			size: 1.5d
 			subtitle: "Changes Surface Darkness"
 			tasks: [{
 				disable_toast: true
@@ -126,16 +137,24 @@
 			}]
 			title: "Change Moon Phase"
 			x: 0.0d
-			y: -3.0d
+			y: 2.25d
 		}
 		{
 			can_repeat: true
 			description: [
 				"Sets the time to noon and keeps it there."
 				""
-				"The sky will always be at light level 15. The surface will almost always be safe."
+				"&aPros&r:"
+				"* Never worry about nighttime."
 				""
-				"&cNote&r: Some enemy drops will become &onearly&r impossible to collect."
+				"&cCons&r:"
+				"* &8Grave Soil&r always yields lesser rewards."
+				"* Apotheosis bosses will never spawn on the surface."
+				"* Certain nighttime mob drops become unavailable."
+				""
+				"&eNote&r: Nightmare Stalkers (which drop a unique resource) do not spawn until day 3."
+				""
+				"&eNote&r: The &oAstral Altar&r (see: Miscellaneous quests) allows you to temporarily change the time to noon/midnight as needed. Also advances the day counter when used."
 			]
 			icon: {
 				Count: 1b
@@ -163,7 +182,7 @@
 					type: "command"
 				}
 			]
-			subtitle: "Easier\\n &cEXPERIMENTAL"
+			subtitle: "Easy Mode"
 			tasks: [{
 				disable_toast: true
 				id: "71288BB959C0DF9D"
@@ -179,9 +198,22 @@
 			description: [
 				"Sets the time to twilight and keeps it there."
 				""
-				"The sky will always be at light level 10. The surface will be safe, so long as you stay away from cave entrances. &8Grave Soil&r will always yield greater rewards. Also, you can sleep to clear weather at any time."
+				"&aPros&r:"
+				"* Never worry about nighttime."
+				"* Most mobs will not spawn on the surface."
+				"* &8Grave Soil&r always yields greater rewards."
+				"* Sleep to clear weather at any time."
 				""
-				"&cNote&r: &lMekanism&r's Solar Neutron Activator requires daylight to function! MekaSuit Armor, Fusion Reactors, and other end-game &lMekanism&r recipes will become impossible!"
+				"&cCons&r:"
+				"* Some mobs will still spawn on the surface."
+				"* Mobs will not burn on the surface."
+				"* Apotheosis bosses will almost never spawn on the surface."
+				"* Certain nighttime mob drops become unavailable."
+				"* The Solar Neutron Activator will not function."
+				""
+				"&eNote&r: Nightmare Stalkers (which drop a unique resource) do not spawn until day 3."
+				""
+				"&eNote&r: The &oAstral Altar&r (see: Miscellaneous quests) allows you to temporarily change the time to noon/midnight as needed. Also advances the day counter when used."
 			]
 			icon: {
 				Count: 1b
@@ -210,7 +242,7 @@
 				}
 			]
 			shape: "hexagon"
-			subtitle: "Harder\\n &cEXPERIMENTAL"
+			subtitle: "Intermediate Mode"
 			tasks: [{
 				disable_toast: true
 				id: "6FE4CDC30FBFAF27"
@@ -218,8 +250,8 @@
 				type: "checkmark"
 			}]
 			title: "Always Twilight"
-			x: 0.0d
-			y: 1.0d
+			x: 0.5d
+			y: 0.0d
 		}
 		{
 			can_repeat: true
@@ -240,7 +272,7 @@
 			}]
 			title: "Keep Inventory"
 			x: -1.5d
-			y: 0.0d
+			y: 0.5d
 		}
 		{
 			can_repeat: true
@@ -262,7 +294,7 @@
 			}]
 			title: "No Keeping Inventory"
 			x: -1.5d
-			y: 1.0d
+			y: 1.5d
 		}
 		{
 			can_repeat: true
@@ -284,7 +316,7 @@
 			}]
 			title: "Mob Griefing"
 			x: 1.5d
-			y: 1.0d
+			y: 1.5d
 		}
 		{
 			can_repeat: true
@@ -305,48 +337,7 @@
 			}]
 			title: "No Mob Griefing"
 			x: 1.5d
-			y: 0.0d
-		}
-		{
-			can_repeat: true
-			disable_toast: true
-			icon: {
-				Count: 1b
-				id: "ftbquests:custom_icon"
-				tag: {
-					Icon: "minecraft:textures/entity_icon/villager/profession/cartographer.png"
-				}
-			}
-			id: "6B649D7FF5738599"
-			rewards: [
-				{
-					auto: "invisible"
-					command: "execute store result score @p villageDist at @p run locate structure #minecraft:village"
-					id: "6AA7526A70707082"
-					silent: true
-					team_reward: false
-					type: "command"
-				}
-				{
-					auto: "invisible"
-					command: "tellraw @p [\"Distance to nearest village: \",{\"score\":{\"name\":\"@p\",\"objective\":\"villageDist\"}},\" blocks away\"]"
-					id: "238D662D6B128E54"
-					silent: true
-					team_reward: false
-					type: "command"
-				}
-			]
-			shape: "gear"
-			subtitle: "Available to All Players"
-			tasks: [{
-				disable_toast: true
-				id: "2721C5AF9A19FF30"
-				title: "CLICK ME"
-				type: "checkmark"
-			}]
-			title: "Distance to Nearest Village"
-			x: 0.0d
-			y: -5.0d
+			y: 0.5d
 		}
 	]
 	subtitle: ["For Ops Only"]

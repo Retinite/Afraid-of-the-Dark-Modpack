@@ -183,6 +183,10 @@ smithing.addRecipe("unusualend.golem_orb", <item:unusualend:golem_orb>, <item:bo
 // allow Enemy Expansion's Healing Eye to make regen potions
 brewing.addRecipe(<item:minecraft:potion>.withTag({Potion: "minecraft:regeneration"}), <item:enemyexpansion:healing_eye>, <item:minecraft:potion>.withTag({Potion: "minecraft:water"}));
 
+// add Etherium Gem recipes
+<recipetype:mekanism:crushing>.addRecipe("deep_dark_regrowth.etherium_block_decompress", <item:deep_dark_regrowth:etherium_block>, <item:deep_dark_regrowth:etherium_gem> * 2);
+<recipetype:mekanism:enriching>.addRecipe("enrich_enlightened_deepslate", <item:deep_dark_regrowth:enlightened_deepslate>, <item:deep_dark_regrowth:etherium_gem> * 2);
+
 // various iron recycling recipes ------------------------------------------------------------------------------------------------------------
 
 <recipetype:mekanism:crushing>.addRecipe("aotd_blast_recycling", <item:minecraft:blast_furnace>, <item:mekanism:dust_iron> * 3);

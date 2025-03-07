@@ -272,8 +272,8 @@
 				}
 				type: "item"
 			}]
-			x: 4.0d
-			y: 0.0d
+			x: -4.0d
+			y: -1.0d
 		}
 		{
 			id: "0450E9EB79084D6E"
@@ -749,6 +749,7 @@
 				count: 2
 				id: "21A9D89BD516B6DE"
 				item: "aotdextras:occultium_block"
+				team_reward: false
 				type: "item"
 			}]
 			subtitle: "Locate Any* Structure!"
@@ -769,7 +770,7 @@
 				type: "item"
 			}]
 			x: -4.0d
-			y: 0.0d
+			y: 1.0d
 		}
 		{
 			id: "55D879B9691B0D19"
@@ -787,6 +788,59 @@
 			}]
 			x: 2.0d
 			y: 0.0d
+		}
+		{
+			description: [
+				"When given a &eSolar Token&r/&9Lunar Token&r and &4powered&r, the time will become noon or midnight (respectively) for 5 minutes before reverting back."
+				""
+				"Using the Astral Altar also &oincreases the day counter&r, meaning that the phase of the moon will change with each use."
+				""
+				"&cCaution&r: do not activate multiple Astral Altars at the same time. Doing so will not revert the time correctly."
+			]
+			id: "21990BEF1D348929"
+			shape: "gear"
+			subtitle: "Temporarily Change Time!"
+			tasks: [{
+				id: "0AC5A8E4A7ED3D09"
+				item: "aotdextras:astral_altar"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["21990BEF1D348929"]
+			id: "7A4EC535ED7D27A0"
+			rewards: [{
+				id: "7AE1E669FF177A98"
+				item: "aotdextras:luxum_ingot"
+				type: "item"
+			}]
+			subtitle: "Becomes Noon"
+			tasks: [{
+				id: "59A373C688CD8556"
+				item: "aotdextras:solar_token"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["21990BEF1D348929"]
+			id: "46E169CB2DF68E36"
+			rewards: [{
+				id: "10529ECD2B77F1B3"
+				item: "aotdextras:occultium_ingot"
+				type: "item"
+			}]
+			subtitle: "Becomes Midnight"
+			tasks: [{
+				id: "1E4DC51EA2A831A5"
+				item: "aotdextras:lunar_token"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.0d
 		}
 	]
 	title: "Miscellaneous"

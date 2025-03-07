@@ -10,25 +10,11 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["216381A3C99B8B6F"]
-			id: "33BC40ADA607B8A1"
-			shape: "square"
-			subtitle: "3:4 (raw), 1:2 (ore)"
-			tasks: [{
-				disable_toast: true
-				id: "45CE01E3EC7248E1"
-				item: "mekanism:enrichment_chamber"
-				type: "item"
-			}]
-			x: 2.5d
-			y: -0.5d
-		}
-		{
 			dependencies: [
 				"357798372C85697D"
-				"5C6355E15C1CDDF1"
 				"351E0925C2D04D79"
 			]
+			hide_dependency_lines: true
 			id: "244357C5D51D03CC"
 			rewards: [{
 				id: "166F6477CB8E58B4"
@@ -62,9 +48,11 @@
 		}
 		{
 			dependencies: ["17D2D65003FDD72B"]
+			description: ["Just an (&oupgradable&r) electric furnace."]
 			hide_dependent_lines: true
 			id: "216381A3C99B8B6F"
-			shape: "square"
+			optional: true
+			shape: "diamond"
 			subtitle: "1:1 (raw), 1:1 (ore)"
 			tasks: [{
 				disable_toast: true
@@ -79,7 +67,9 @@
 			dependencies: [
 				"380EE0B250F5119E"
 				"7EF8D9068CEA9DF5"
+				"03A3F35D9A7C7724"
 			]
+			hide_dependency_lines: true
 			id: "78AA59DA9B05CBEF"
 			rewards: [{
 				id: "357758BB3DE96618"
@@ -100,8 +90,9 @@
 		{
 			dependencies: [
 				"07C733A110C67CEE"
-				"2F6B430D3A83473A"
+				"78AA59DA9B05CBEF"
 			]
+			hide_dependency_lines: true
 			id: "03326473AB153F96"
 			shape: "square"
 			subtitle: "3:10 (raw), 1:5 (ore)"
@@ -173,9 +164,7 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["33BC40ADA607B8A1"]
-			hide_dependent_lines: true
-			icon: "mekanism:energized_smelter"
+			dependencies: ["17D2D65003FDD72B"]
 			id: "351E0925C2D04D79"
 			rewards: [
 				{
@@ -191,22 +180,27 @@
 					type: "command"
 				}
 			]
+			shape: "square"
+			subtitle: "3:4 (raw), 1:2 (ore)"
 			tasks: [{
-				disable_toast: true
-				id: "2B87CF18B8DDA2C3"
-				title: "CLICK ME"
-				type: "checkmark"
+				id: "0D4D42318696E4F9"
+				item: "mekanism:enrichment_chamber"
+				type: "item"
 			}]
-			title: "Energized Smelter"
-			x: 3.5d
+			x: 2.5d
 			y: -0.5d
 		}
 		{
 			dependencies: ["53E6BFBE3A716CD9"]
-			description: ["See the &oGenerators&r page for creating &eSulfuric Acid&r."]
+			description: [
+				"See the &oMekanism: Generators&r page for creating &eSulfuric Acid&r from &0Carbon&r and &1Water&r."
+				""
+				"&eSulfuric Acid&r can also be made from &8Gunpowder&r and &bHydrogen Chloride&r, and even &8Gunpowder&r can be made (indirectly) from &7Cobblestone&r."
+			]
 			icon: "mekanism:sulfuric_acid_bucket"
 			id: "07C733A110C67CEE"
 			shape: "rsquare"
+			size: 0.5d
 			subtitle: "A Use for Gunpowder!"
 			tasks: [{
 				disable_toast: true
@@ -215,15 +209,16 @@
 				type: "checkmark"
 			}]
 			title: "Sulfuric Acid"
-			x: -4.5d
-			y: 2.0d
+			x: -3.5d
+			y: 1.75d
 		}
 		{
 			dependencies: ["53E6BFBE3A716CD9"]
-			description: ["Alternatively, for unlimited &bHydrogen Chloride&r, use a &6Thermal Evaporation Plant&r (see Mekanism \\& Utilities: Advanced) to create &eBrine&r. You can then turn &eBrine&r into &3Chlorine&r and &3Chlorine&r into &bHydrogen Chloride&r."]
+			description: ["Alternatively, for unlimited &bHydrogen Chloride&r, use a &6Thermal Evaporation Plant&r (see Mekanism: Multiblock Structures) to create &eBrine&r. You can then turn &eBrine&r into &3Chlorine&r and &3Chlorine&r into &bHydrogen Chloride&r."]
 			icon: "mekanism:hydrogen_chloride_bucket"
 			id: "380EE0B250F5119E"
 			shape: "rsquare"
+			size: 0.5d
 			subtitle: "A Use for Salt!"
 			tasks: [{
 				disable_toast: true
@@ -232,8 +227,8 @@
 				type: "checkmark"
 			}]
 			title: "Hydrogen Chloride"
-			x: -1.5d
-			y: 1.0d
+			x: -0.5d
+			y: 0.75d
 		}
 		{
 			dependencies: ["53E6BFBE3A716CD9"]
@@ -241,6 +236,7 @@
 			icon: "mekanism:oxygen_bucket"
 			id: "357798372C85697D"
 			shape: "rsquare"
+			size: 0.5d
 			subtitle: "A Use for Flint!"
 			tasks: [{
 				disable_toast: true
@@ -249,13 +245,12 @@
 				type: "checkmark"
 			}]
 			title: "Oxygen"
-			x: -0.5d
-			y: 0.0d
+			x: 0.5d
+			y: -0.25d
 		}
 		{
-			dependencies: ["12887FCE0ADCC9FD"]
-			hide_dependent_lines: true
-			icon: "mekanism:energized_smelter"
+			dependencies: ["03A3F35D9A7C7724"]
+			icon: "mekanism:enrichment_chamber"
 			id: "7EF8D9068CEA9DF5"
 			rewards: [
 				{
@@ -277,19 +272,16 @@
 				}
 			]
 			tasks: [{
-				disable_toast: true
-				id: "730CAEC1832918BD"
-				title: "CLICK ME"
-				type: "checkmark"
+				id: "7CC96C67436799B8"
+				item: "mekanism:enrichment_chamber"
+				type: "item"
 			}]
-			title: "Energized Smelter"
-			x: 3.5d
+			x: 2.5d
 			y: 0.5d
 		}
 		{
-			dependencies: ["6AEAB204B452F502"]
-			hide_dependent_lines: true
-			icon: "mekanism:energized_smelter"
+			dependencies: ["41FAF06F88FB4792"]
+			icon: "mekanism:enrichment_chamber"
 			id: "2F6B430D3A83473A"
 			rewards: [
 				{
@@ -330,18 +322,16 @@
 				}
 			]
 			tasks: [{
-				disable_toast: true
-				id: "6AB431E6C9756BEE"
-				title: "CLICK ME"
-				type: "checkmark"
+				id: "76BF5CA8871B1CE0"
+				item: "mekanism:enrichment_chamber"
+				type: "item"
 			}]
-			title: "Energized Smelter"
-			x: 3.5d
+			x: 2.5d
 			y: 1.5d
 		}
 		{
-			dependencies: ["305AAFC308688B1A"]
-			icon: "mekanism:energized_smelter"
+			dependencies: ["7557333EC45F1899"]
+			icon: "mekanism:enrichment_chamber"
 			id: "7A5F7289B1F99A25"
 			rewards: [
 				{
@@ -366,54 +356,10 @@
 				}
 			]
 			tasks: [{
-				disable_toast: true
-				id: "04AAD713BA8D0D79"
-				title: "CLICK ME"
-				type: "checkmark"
+				id: "737F1A7ADC523409"
+				item: "mekanism:enrichment_chamber"
+				type: "item"
 			}]
-			title: "Energized Smelter"
-			x: 3.5d
-			y: 2.5d
-		}
-		{
-			dependencies: ["03A3F35D9A7C7724"]
-			icon: "mekanism:enrichment_chamber"
-			id: "12887FCE0ADCC9FD"
-			tasks: [{
-				disable_toast: true
-				id: "7810F35C51F05384"
-				title: "CLICK ME"
-				type: "checkmark"
-			}]
-			title: "Enrichment Chamber"
-			x: 2.5d
-			y: 0.5d
-		}
-		{
-			dependencies: ["41FAF06F88FB4792"]
-			icon: "mekanism:enrichment_chamber"
-			id: "6AEAB204B452F502"
-			tasks: [{
-				disable_toast: true
-				id: "106EA40D6C1141FD"
-				title: "CLICK ME"
-				type: "checkmark"
-			}]
-			title: "Enrichment Chamber"
-			x: 2.5d
-			y: 1.5d
-		}
-		{
-			dependencies: ["7557333EC45F1899"]
-			icon: "mekanism:enrichment_chamber"
-			id: "305AAFC308688B1A"
-			tasks: [{
-				disable_toast: true
-				id: "68C1C38255E519BB"
-				title: "CLICK ME"
-				type: "checkmark"
-			}]
-			title: "Enrichment Chamber"
 			x: 2.5d
 			y: 2.5d
 		}
@@ -422,12 +368,10 @@
 			icon: "mekanism:purification_chamber"
 			id: "050AE6C635120240"
 			tasks: [{
-				disable_toast: true
-				id: "3FAFAB70040DCEF3"
-				title: "CLICK ME"
-				type: "checkmark"
+				id: "0E506DED0386F6B2"
+				item: "mekanism:purification_chamber"
+				type: "item"
 			}]
-			title: "Purification Chamber"
 			x: 0.5d
 			y: 1.5d
 		}
@@ -436,12 +380,10 @@
 			icon: "mekanism:crusher"
 			id: "41FAF06F88FB4792"
 			tasks: [{
-				disable_toast: true
-				id: "623E00BCFCBC0C24"
-				title: "CLICK ME"
-				type: "checkmark"
+				id: "5DA89F10282A678F"
+				item: "mekanism:crusher"
+				type: "item"
 			}]
-			title: "Crusher"
 			x: 1.5d
 			y: 1.5d
 		}
@@ -450,12 +392,10 @@
 			icon: "mekanism:purification_chamber"
 			id: "5279E6D27471C479"
 			tasks: [{
-				disable_toast: true
-				id: "216379FE9828E403"
-				title: "CLICK ME"
-				type: "checkmark"
+				id: "15C785DFA3CF022D"
+				item: "mekanism:purification_chamber"
+				type: "item"
 			}]
-			title: "Purification Chamber"
 			x: 0.5d
 			y: 2.5d
 		}
@@ -464,12 +404,10 @@
 			icon: "mekanism:crusher"
 			id: "7557333EC45F1899"
 			tasks: [{
-				disable_toast: true
-				id: "33D017101ADF653A"
-				title: "CLICK ME"
-				type: "checkmark"
+				id: "3763C5D179FAFCBC"
+				item: "mekanism:crusher"
+				type: "item"
 			}]
-			title: "Crusher"
 			x: 1.5d
 			y: 2.5d
 		}
@@ -478,16 +416,15 @@
 			icon: "mekanism:chemical_injection_chamber"
 			id: "2F2A05FEEE1F297E"
 			tasks: [{
-				disable_toast: true
-				id: "4E69246B16DEF81D"
-				title: "CLICK ME"
-				type: "checkmark"
+				id: "333DB58C56DCE71A"
+				item: "mekanism:chemical_injection_chamber"
+				type: "item"
 			}]
-			title: "Chemical Injection Chamber"
 			x: -0.5d
 			y: 2.5d
 		}
 		{
+			dependencies: ["17D2D65003FDD72B"]
 			description: [
 				"Applying 8x &aGas Upgrade&rs to a machine &lreduces gas consumption by 90\\%!&r This saves a huge amount of energy and raw resources!"
 				""
@@ -515,6 +452,58 @@
 			title: "Gas Upgrade"
 			x: -3.5d
 			y: 0.5d
+		}
+		{
+			dependencies: ["351E0925C2D04D79"]
+			id: "7DF50185605A2FCA"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "2A0CF4143006585B"
+				item: "mekanism:energized_smelter"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7EF8D9068CEA9DF5"]
+			id: "2CB3845384AC72D3"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "091AC125389D5358"
+				item: "mekanism:energized_smelter"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2F6B430D3A83473A"]
+			id: "6CFB02EC5B13C723"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "2556E914632E7955"
+				item: "mekanism:energized_smelter"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7A5F7289B1F99A25"]
+			id: "7AB3577FCCC62A7D"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "25FA42C973840AF2"
+				item: "mekanism:energized_smelter"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 2.5d
 		}
 	]
 	title: "Ore Processing"

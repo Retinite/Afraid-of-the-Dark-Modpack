@@ -646,7 +646,11 @@
 			y: 2.0d
 		}
 		{
-			description: ["Consider crafting a Nature's Compass."]
+			description: [
+				"Consider crafting a Nature's Compass."
+				""
+				"&dEnlightened Deepslate&r is not affected by &5Fortune&r, but can be collected with &5Silk Touch II&r."
+			]
 			icon: "minecraft:sculk_catalyst"
 			id: "3E3E385DA8A302C9"
 			rewards: [{

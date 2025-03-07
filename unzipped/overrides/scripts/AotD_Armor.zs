@@ -11,6 +11,7 @@ import crafttweaker.api.data.IData;
 import crafttweaker.api.util.random.Percentaged;
 import crafttweaker.api.recipe.MirrorAxis;
 import crafttweaker.api.bracket.BracketHandlers;
+import mods.jeitweaker.Jei;
 
 function removeArmor(material as string) as void {
 craftingTable.remove(BracketHandlers.getItem(material + "_helmet"));
@@ -58,17 +59,17 @@ craftingTable.addShaped("aotd_crafting_"+primaryMaterial.items[0].registryName.p
 }
 
 function addRecyclingArmorSuite(material as string, rawMaterial as IItemStack) as void {
-addCrusherRecycling(BracketHandlers.getItem(material + "_helmet"), rawMaterial * 2);
-addCrusherRecycling(BracketHandlers.getItem(material + "_chestplate"), rawMaterial * 4);
-addCrusherRecycling(BracketHandlers.getItem(material + "_leggings"), rawMaterial * 3);
-addCrusherRecycling(BracketHandlers.getItem(material + "_boots"), rawMaterial * 2);
+addCrusherRecycling(BracketHandlers.getItem(material + "_helmet"), rawMaterial);
+addCrusherRecycling(BracketHandlers.getItem(material + "_chestplate"), rawMaterial * 2);
+addCrusherRecycling(BracketHandlers.getItem(material + "_leggings"), rawMaterial * 2);
+addCrusherRecycling(BracketHandlers.getItem(material + "_boots"), rawMaterial);
 }
 
 function addRecyclingArmorShearsSuite(material as string, rawMaterial as IItemStack) as void {
-addShearsRecycling(BracketHandlers.getItem(material + "_helmet"), rawMaterial * 2);
-addShearsRecycling(BracketHandlers.getItem(material + "_chestplate"), rawMaterial * 4);
-addShearsRecycling(BracketHandlers.getItem(material + "_leggings"), rawMaterial * 3);
-addShearsRecycling(BracketHandlers.getItem(material + "_boots"), rawMaterial * 2);
+addShearsRecycling(BracketHandlers.getItem(material + "_helmet"), rawMaterial);
+addShearsRecycling(BracketHandlers.getItem(material + "_chestplate"), rawMaterial * 2);
+addShearsRecycling(BracketHandlers.getItem(material + "_leggings"), rawMaterial * 2);
+addShearsRecycling(BracketHandlers.getItem(material + "_boots"), rawMaterial);
 }
 
 function addShearsRecycling(itemIn as IIngredient, itemOut as IItemStack) as void {
@@ -300,3 +301,15 @@ addShearsRecycling(<item:sophisticatedbackpacks:iron_backpack>, <item:minecraft:
 addShearsRecycling(<item:sophisticatedbackpacks:gold_backpack>, <item:minecraft:gold_ingot> * 6);
 addShearsRecycling(<item:sophisticatedbackpacks:diamond_backpack>, <item:minecraft:diamond> * 6);
 addShearsRecycling(<item:sophisticatedbackpacks:netherite_backpack>, <item:minecraft:netherite_ingot>);
+
+// add Awareness Glasses recipe since it was removed?
+craftingTable.addShaped("deep_dark_regrowth.awareness_glasses_helmet", <item:deep_dark_regrowth:awareness_glasses_helmet>,
+	[[<item:minecraft:string>,             <item:minecraft:string>,        <item:minecraft:string>],
+	[<item:minecraft:string>,              IIngredientEmpty.getInstance(), <item:minecraft:string>],
+	[<item:deep_dark_regrowth:aware_lens>, <item:minecraft:string>,        <item:deep_dark_regrowth:aware_lens>]]);
+
+// add Warden Helmet recipe
+Jei.addIngredient(<item:deep_dark_regrowth:warden_helmet>);
+craftingTable.addShaped("deep_dark_regrowth.warden_helmet", <item:deep_dark_regrowth:warden_helmet>,
+	[[<item:apotheosis:warden_tendril>,  <item:aotdextras:occultium_ingot>, <item:apotheosis:warden_tendril>],
+	[<item:aotdextras:occultium_ingot>,  IIngredientEmpty.getInstance(),    <item:aotdextras:occultium_ingot>]]);

@@ -17,6 +17,8 @@
 	quests: [
 		{
 			dependencies: ["5490E0FF9D15FB0D"]
+			dependency_requirement: "one_started"
+			hide_details_until_startable: false
 			id: "6B2664D6F3AD84EF"
 			rewards: [{
 				count: 16
@@ -25,6 +27,7 @@
 				team_reward: false
 				type: "item"
 			}]
+			subtitle: "New Recipes"
 			tasks: [
 				{
 					id: "0CFE6207B6D82484"
@@ -148,6 +151,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
+			subtitle: "+Perks"
 			tasks: [
 				{
 					id: "2B6C9A7B9B43B14D"
@@ -188,6 +192,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
+			subtitle: "+Set Bonus"
 			tasks: [
 				{
 					id: "0025557884364A29"
@@ -314,6 +319,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
+			subtitle: "+Set Bonus"
 			tasks: [
 				{
 					id: "34702F631C3862A1"
@@ -376,6 +382,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
+			subtitle: "+Set Bonus"
 			tasks: [
 				{
 					id: "0AD5FFA7C8A8DC08"
@@ -441,6 +448,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
+			subtitle: "+Perks"
 			tasks: [
 				{
 					id: "6F974491E6124816"
@@ -481,6 +489,7 @@
 			y: -2.0d
 		}
 		{
+			icon: "aotdextras:obscurium_ingot"
 			id: "5490E0FF9D15FB0D"
 			rewards: [{
 				id: "7F7096CE6FE187DF"
@@ -489,11 +498,22 @@
 				type: "item"
 			}]
 			shape: "rsquare"
-			tasks: [{
-				id: "182E7102E7C83781"
-				item: "aotdextras:obscurium_ingot"
-				type: "item"
-			}]
+			tasks: [
+				{
+					dimension: "minecraft:overworld"
+					disable_toast: true
+					id: "2177C5B97AA6F2B0"
+					secret: true
+					title: "Start Your Adventure"
+					type: "dimension"
+				}
+				{
+					id: "74E9CA8774297070"
+					item: "aotdextras:obscurium_ingot"
+					type: "item"
+				}
+			]
+			title: "Obscurium Ingot"
 			x: 1.0d
 			y: -3.0d
 		}
@@ -652,6 +672,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
+			subtitle: "Steel Equivalent + Perks"
 			tasks: [
 				{
 					id: "1D58A4C0A637E426"
@@ -708,6 +729,7 @@
 				"0E35A5906772B40E"
 			]
 			id: "317D6EDE69C5A647"
+			optional: true
 			rewards: [{
 				count: 16
 				id: "227BE4C29F6B3183"
@@ -715,6 +737,7 @@
 				team_reward: false
 				type: "item"
 			}]
+			shape: "diamond"
 			tasks: [
 				{
 					id: "2335D3E5C0BBBDBA"
@@ -778,6 +801,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
+			subtitle: "+Set Bonus"
 			tasks: [
 				{
 					id: "17B0563F336BA138"
@@ -841,6 +865,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
+			subtitle: "Magic Resistance"
 			tasks: [
 				{
 					id: "7683D9F890E7BFB9"
@@ -904,6 +929,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
+			subtitle: "Easier Recipe, Less Important"
 			tasks: [
 				{
 					id: "10474911608AC7DF"
@@ -965,6 +991,7 @@
 				team_reward: false
 				type: "item"
 			}]
+			subtitle: "9x More Expensive"
 			tasks: [
 				{
 					id: "7AFF75764169BD49"
@@ -1144,6 +1171,7 @@
 		}
 		{
 			dependencies: ["410B2BD836BEAC32"]
+			description: [""]
 			id: "7DDFC69A7541C0E7"
 			optional: true
 			rewards: [{
@@ -1154,6 +1182,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
+			subtitle: "+Set Bonus"
 			tasks: [
 				{
 					id: "12986CF6FBD67D8D"
@@ -1222,7 +1251,7 @@
 		}
 		{
 			dependencies: ["410B2BD836BEAC32"]
-			description: ["RECIPE MIGHT NEED BALANCE CHANGING"]
+			description: [""]
 			id: "0F9A5A7D414C84ED"
 			optional: true
 			rewards: [{
@@ -1233,6 +1262,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
+			subtitle: "+Set Bonus"
 			tasks: [
 				{
 					id: "5A92F10A9EB25B10"
@@ -1288,6 +1318,7 @@
 				"410B2BD836BEAC32"
 				"0DC630AA75E6F1A6"
 			]
+			description: [""]
 			id: "7AB61B9A0F2470AB"
 			optional: true
 			rewards: [{
@@ -1350,7 +1381,8 @@
 		}
 		{
 			dependencies: ["40247D71817C3322"]
-			description: ["But without the Obscurium dependency!"]
+			description: ["No dependency on mob drops!"]
+			hide: false
 			id: "6FB3232144575A0D"
 			optional: true
 			rewards: [{
@@ -1743,7 +1775,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 2.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["5298D928D9D091CB"]
@@ -1764,7 +1796,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 2.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["410B2BD836BEAC32"]
@@ -2038,6 +2070,8 @@
 		}
 		{
 			dependencies: ["40247D71817C3322"]
+			description: ["No dependency on mob drops!"]
+			hide: false
 			id: "0E2FF45C5841AD28"
 			optional: true
 			shape: "diamond"
@@ -2426,6 +2460,7 @@
 		}
 		{
 			dependencies: ["64DF84ECE6309CF9"]
+			description: ["Only the pickaxe level is Iron. Weapon damage is comparable to Netherite."]
 			hide: false
 			id: "6D80E6CC2689C694"
 			rewards: [{
@@ -2646,6 +2681,7 @@
 		}
 		{
 			dependencies: ["0DF31FB295B2A3B7"]
+			description: ["Counts as a mining tool for &lApotheosis&r affixes."]
 			id: "6EAD818FB73244FA"
 			optional: true
 			rewards: [{
@@ -2669,7 +2705,11 @@
 				"6EAD818FB73244FA"
 				"60FA1E8682D25076"
 			]
-			description: ["Not the best &oweapon&r, although its damage can be boosted to 37 with &7Attack Amplification Unit&rs."]
+			description: [
+				"Not the best &oweapon&r, although its damage can be boosted to 37 with &o&eAttack Amplification Unit&rs."
+				""
+				"Counts as a mining tool for &lApotheosis&r affixes."
+			]
 			id: "768A52BFA8235163"
 			optional: true
 			shape: "diamond"
@@ -2685,6 +2725,7 @@
 		{
 			dependencies: ["67719D6F9CE41903"]
 			dependency_requirement: "one_started"
+			description: ["Enchantments can still be applied via &8Anvil&r."]
 			id: "53B56FE3223FC903"
 			optional: true
 			rewards: [{
@@ -2694,6 +2735,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
+			subtitle: "&cUnenchantable&r + AOE"
 			tasks: [{
 				id: "43D421CDBD66133B"
 				item: {
@@ -2709,7 +2751,7 @@
 			y: 0.5d
 		}
 		{
-			description: ["This quest can only be completed by &ocrafting&r a trident."]
+			description: ["This quest can only be completed by &o&ncrafting&r a trident."]
 			icon: {
 				Count: 1b
 				id: "minecraft:trident"
@@ -2859,7 +2901,7 @@
 				"015ACDE886A50456"
 				"2A148D5CD80EEFB1"
 			]
-			description: ["Definitively the strongest weapon (after you max out its heart canisters)."]
+			description: ["Deals &c88 damage&r (after you max out its heart canisters). Can also be enchanted and affixed."]
 			id: "6DA6D2DBB3919895"
 			optional: true
 			rewards: [{
@@ -3587,6 +3629,7 @@
 			y: -3.0d
 		}
 		{
+			description: ["Counts as a bow for &lApotheosis&r affixes."]
 			id: "162D256EFC3D4AD3"
 			optional: true
 			rewards: [{
@@ -3650,6 +3693,7 @@
 			y: -2.5d
 		}
 		{
+			description: ["Counts as a light weapon for &lApotheosis&r affixes."]
 			id: "167B1C8A402506F4"
 			optional: true
 			rewards: [{
@@ -3713,7 +3757,7 @@
 				type: "item"
 			}]
 			x: -7.0d
-			y: -4.0d
+			y: -4.5d
 		}
 		{
 			id: "703B4D20DCAABDD3"
@@ -3730,8 +3774,8 @@
 				item: "born_in_chaos_v1:hound_trap"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -5.0d
+			x: -7.0d
+			y: 6.5d
 		}
 		{
 			id: "5B863079B3F649B7"
@@ -3748,8 +3792,8 @@
 				item: "born_in_chaos_v1:spiny_shell_trap"
 				type: "item"
 			}]
-			x: -6.5d
-			y: -5.0d
+			x: -7.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["03A385154B5B46E5"]
@@ -4108,11 +4152,7 @@
 		}
 		{
 			dependencies: ["44C92F2DEA6CF79F"]
-			description: [
-				"The Ancient Heartplate will occasionally play the Warden Heartbeat sound, which be a little annoying. As a reminder, you can mute individual sounds from the Extreme Sound Muffler menu!"
-				""
-				"&cEXPERIMENTAL RECIPE; MIGHT NEED BALANCE CHANGES"
-			]
+			description: ["The Ancient Heartplate will occasionally play the Warden Heartbeat sound, which be a little annoying. As a reminder, you can mute individual sounds from the Extreme Sound Muffler menu!"]
 			id: "6D1CA6A27F8EA661"
 			optional: true
 			rewards: [{
@@ -4123,6 +4163,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
+			subtitle: "+Set Bonus"
 			tasks: [
 				{
 					id: "790B8C0200051488"
@@ -4174,8 +4215,17 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["1B1E79910C731F02"]
+			dependencies: [
+				"1B1E79910C731F02"
+				"114AFA44D8C680EA"
+			]
+			description: [
+				"Enchantments can still be applied via &8Anvil&r."
+				""
+				"Provides 10 seconds of Invisibility and &o&lcomplete damage reduction&r with a 20 second cooldown."
+			]
 			id: "5A6037FC53A5CA7D"
+			optional: true
 			rewards: [{
 				count: 16
 				id: "4B3C86CA58710DD7"
@@ -4183,6 +4233,8 @@
 				team_reward: false
 				type: "item"
 			}]
+			shape: "diamond"
+			subtitle: "&cUnenchantable&r + Temporarily Invincible"
 			tasks: [
 				{
 					id: "477158BC3D786BC7"
@@ -4236,7 +4288,7 @@
 		{
 			dependencies: ["5A6037FC53A5CA7D"]
 			dependency_requirement: "one_completed"
-			description: ["Grants &7Weakness&r and Invisibility when worn."]
+			description: ["Grants &oslight&r &7Weakness&r and Invisibility when worn."]
 			id: "0B8552681949303E"
 			optional: true
 			rewards: [{
@@ -4247,6 +4299,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
+			subtitle: "+Set Bonus"
 			tasks: [
 				{
 					id: "5C0CB223AD424923"
@@ -4299,6 +4352,7 @@
 		}
 		{
 			dependencies: ["5490E0FF9D15FB0D"]
+			dependency_requirement: "one_started"
 			id: "577BFA994924725E"
 			rewards: [{
 				id: "6225C6CDEDF6B874"
@@ -4315,6 +4369,7 @@
 				team_reward: false
 				type: "item"
 			}]
+			subtitle: "New Recipes"
 			tasks: [{
 				id: "3D2CC31B14339BED"
 				item: {
@@ -4378,7 +4433,7 @@
 				type: "item"
 			}]
 			title: "Shields"
-			x: 5.5d
+			x: 6.5d
 			y: -3.0d
 		}
 		{
@@ -4433,24 +4488,21 @@
 		}
 		{
 			dependencies: ["5C6355E15C1CDDF1"]
-			description: ["Uses energy in place of durability. Can be enchanted with bow enchantments, and be given Apothic affixes via a Reforgin Table."]
+			description: [
+				"Uses energy in place of durability. Can be enchanted with bow enchantments."
+				""
+				"Counts as a bow for &lApotheosis&r affixes."
+			]
+			hide_dependent_lines: true
 			id: "11985A88839C0CB2"
 			optional: true
-			rewards: [
-				{
-					id: "6714D3C57A6CFE37"
-					item: "mekanism:energy_tablet"
-					team_reward: false
-					type: "item"
-				}
-				{
-					count: 64
-					id: "6AAF97B87B0D467E"
-					item: "minecraft:arrow"
-					team_reward: false
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 64
+				id: "6AAF97B87B0D467E"
+				item: "minecraft:arrow"
+				team_reward: false
+				type: "item"
+			}]
 			shape: "diamond"
 			subtitle: "Can be Affixed!"
 			tasks: [{
@@ -4524,8 +4576,8 @@
 				item: "undead_unleashed:tome_of_reflection"
 				type: "item"
 			}]
-			x: -7.0d
-			y: 2.5d
+			x: 6.5d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -4572,7 +4624,7 @@
 				}
 				type: "item"
 			}]
-			x: 5.5d
+			x: 6.5d
 			y: -2.0d
 		}
 		{
@@ -4638,7 +4690,7 @@
 			]
 			title: "Recycling"
 			x: 1.0d
-			y: -6.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["173CA2C4F61684B2"]
@@ -4660,8 +4712,8 @@
 				type: "item"
 			}]
 			title: "Death Totem"
-			x: 4.0d
-			y: 10.0d
+			x: 7.0d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -4686,10 +4738,11 @@
 				type: "item"
 			}]
 			title: "Void Insurance"
-			x: 3.0d
-			y: 10.0d
+			x: 6.5d
+			y: 7.0d
 		}
 		{
+			hide_dependent_lines: true
 			id: "2A148D5CD80EEFB1"
 			optional: true
 			rewards: [{
@@ -4704,8 +4757,8 @@
 				item: "minecraft:totem_of_undying"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 10.0d
+			x: 6.0d
+			y: 6.5d
 		}
 		{
 			id: "5B53354309A5B791"
@@ -4717,6 +4770,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
+			subtitle: "Special Eyes"
 			tasks: [{
 				id: "413619D244195857"
 				item: {
@@ -4773,7 +4827,7 @@
 				type: "item"
 			}]
 			x: -7.0d
-			y: 3.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["6BD100E465CFE014"]
@@ -4794,7 +4848,7 @@
 				type: "item"
 			}]
 			x: -7.0d
-			y: 4.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["6BD100E465CFE014"]
@@ -4814,8 +4868,8 @@
 				item: "unusualend:nether_orb"
 				type: "item"
 			}]
-			x: -8.0d
-			y: 3.5d
+			x: -7.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["6BD100E465CFE014"]
@@ -4835,8 +4889,8 @@
 				item: "unusualend:shulker_orb"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 3.5d
+			x: -6.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["4A8423FCB7BD9C53"]
@@ -4855,7 +4909,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			subtitle: "Iron + Darkness Perks"
+			subtitle: "Iron Equivalent + Perks"
 			tasks: [
 				{
 					id: "7334E795B82585F2"
@@ -4905,6 +4959,138 @@
 			title: "Phantasm Armor"
 			x: 5.5d
 			y: 0.0d
+		}
+		{
+			id: "143849FC101AFA09"
+			optional: true
+			rewards: [{
+				id: "55E036648B98A033"
+				item: "born_in_chaos_v1:bone_heart"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "Damage Shield"
+			tasks: [{
+				id: "3DF6C48810ACF5E1"
+				item: "born_in_chaos_v1:bone_heart"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"015ACDE886A50456"
+				"3922AAC0A2A06400"
+				"4C962ECD330AD934"
+			]
+			description: [
+				"The damage can be boosted to 76 with &o&eAttack Amplification Unit&rs."
+				""
+				"Counts as a light weapon for &lApotheosis&r affixes."
+			]
+			hide_dependency_lines: true
+			id: "7EE644ECCC431403"
+			optional: true
+			shape: "diamond"
+			subtitle: "Upgradable"
+			tasks: [{
+				id: "1F911F347242E484"
+				item: "mekaweapons:mekatana"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 9.5d
+		}
+		{
+			dependencies: [
+				"3922AAC0A2A06400"
+				"4C962ECD330AD934"
+				"11985A88839C0CB2"
+			]
+			description: [
+				"The damage can be boosted to 50 with &o&eAttack Amplification Unit&rs."
+				""
+				"Counts as a bow for &lApotheosis&r affixes."
+			]
+			id: "3D1EED9228CFBEA7"
+			optional: true
+			shape: "diamond"
+			subtitle: "Upgradable"
+			tasks: [{
+				id: "79503651CA13A67C"
+				item: "mekaweapons:mekabow"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["03D04FC4143DAE22"]
+			description: [
+				"Enchantments can still be applied via &8Anvil&r."
+				""
+				"Grants &c&oextreme&r &7Weakness&r, &0Darkness II&r, and &7Resistance II&r when worn."
+				""
+				"Mainly useful for easier travel through the Deep Dark. Does not make the Warden passive."
+			]
+			hide_dependency_lines: true
+			id: "40F63287DD32EAF8"
+			optional: true
+			rewards: [{
+				id: "2D477C6E8A25779F"
+				item: "apotheosis:warden_tendril"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "&cUnenchantable&r + Perks"
+			tasks: [{
+				id: "5066603221A6FCA6"
+				item: {
+					Count: 1b
+					id: "deep_dark_regrowth:warden_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"Enchantments can still be applied via &8Anvil&r."
+				""
+				"Provides 10 seconds of Invisibility and &o&lcomplete damage reduction&r with a 20 second cooldown."
+				""
+				"Must be placed in your Chestplate armor slot. Not a Bauble, sorry."
+			]
+			hide_dependent_lines: true
+			id: "114AFA44D8C680EA"
+			optional: true
+			rewards: [{
+				count: 4
+				id: "679380E6F24CCF37"
+				item: "deep_dark_regrowth:plasma_chunk"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "Temporarily Invincible"
+			tasks: [{
+				id: "19FF996C046F13FC"
+				item: {
+					Count: 1b
+					id: "deep_dark_regrowth:void_collar_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 2.0d
 		}
 	]
 	title: "Equipment"

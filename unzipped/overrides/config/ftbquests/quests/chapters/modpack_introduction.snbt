@@ -139,9 +139,13 @@
 			dependencies: ["318126553F4ED0EC"]
 			description: [
 				"&l&cEverlasting Abilities&r"
-				"Equip permanent perks at the cost of &aexp&r. The &ncraftable&r &6ability bottle&r allows you to store and swap abilities. One random ability of yours will drop when you die - and &lnot on your corpse!&r"
+				"&eAbility Totem&rs will randomly be dropped by hostile mobs, each one containing a random ability. Abilities require &aexperience&r to equip, and doing so will destroy the &eAbility Totem&r. The &ncraftable&r &eAbility Bottle&r allows you to store and swap abilities. One random ability of yours will drop when you die - and &lnot on your corpse!&r"
 				""
-				"&o&cThe more passive abilities you have, the faster your hunger drains!&r"
+				"&2You can also purchase &oand recycle&r&2 Ability Totems from the \"Ability Store\" quest chapter!&r"
+				"&o&6The more passive abilities you have, the faster your hunger drains!&r"
+				""
+				"&l&cPufferfish's Skills&r"
+				"Killing mobs gives you experience and levels (distinct from vanilla Minecraft levels) that you can spend on perk trees! Press &bY&r (by default) to access your perks."
 			]
 			icon: {
 				Count: 1b
@@ -152,7 +156,6 @@
 			}
 			id: "5208A083200FA0CC"
 			rewards: [{
-				exclude_from_claim_all: true
 				id: "3DD9A41EE98F483A"
 				table_id: 7110483731590531050L
 				team_reward: false
@@ -171,16 +174,13 @@
 				}
 				type: "item"
 			}]
-			title: "Everlasting Abilities"
+			title: "Perks"
 			x: -2.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["318126553F4ED0EC"]
 			description: [
-				"&l&aDistance to Nearest Village&r"
-				"This command is repeatable through the &lModpack Options&r quest page. Its intention is to make the first night more bearable, although you may use it at your discretion."
-				""
 				"&l&cCarry On&r"
 				"&bShift&r + &bRight Click&r to pick up / put down most entities and blocks! (Picking up hostile mobs and spawners has been disabled.)"
 				"&eCaution&r: placed blocks will &osometimes preserve their original orientation&r even though they update visually. This can lead to unexpected behavior, especially with blocks that have side-specific inputs and outputs."
@@ -217,7 +217,7 @@
 				"'&b\\\\ &r' - module tweaker"
 				""
 				"&l&cMouse Tweaks&r"
-				"&bScroll&r - transfer items one at a time, either direction"
+				"&bScroll&r - transfer items one at a time, in either direction"
 			]
 			icon: "mekanism:crafting_formula"
 			id: "291B44B5B29B8F26"
@@ -470,7 +470,10 @@
 				"Includes a module for added difficulty, and offers \"Bosses\" that spawn at night and in new dungeons. Bosses have different difficulty levels depending on color, and can drop valuable loot. On the bright side, scavenged weapons and armor are more common and more powerful!"
 				""
 				"&l&aDon't Break Items&r"
-				"Because of the progressive nature of armor and tools, accidentally losing equipment becomes much more punishing. &lDon't Break Items&r prevents item durability from dropping below 1, but in exchange prevents those items from being used. &lApotheosis&r affixes still work when broken! Broken items &4lose their enchantments&r, including Curse of Binding!"
+				"Because of the progressive nature of armor and tools, accidentally losing equipment becomes much more punishing. &lDon't Break Items&r prevents item durability from dropping below 1, but in exchange prevents those items from being used."
+				""
+				"&2&lApotheosis&r&2 affixes still work when broken!"
+				"&6Broken items &olose their enchantments&r&6, (including Curse of Binding)!"
 				""
 				"&l&cDusk&r"
 				"Mobs are stronger and spawn more frequently at night."
@@ -813,6 +816,7 @@
 				"Mekanism Additions"
 				"Mekanism-MoreSolarPanels"
 				"Monster Plus"
+				"Philip's Ruins"
 				"Rotten Creatures"
 				"Sanity: Descent Into Madness"
 				"Sophisticated Backpacks"
@@ -905,6 +909,48 @@
 			title: "Nether Sanity"
 			x: 0.5d
 			y: 3.5d
+		}
+		{
+			can_repeat: true
+			description: ["Intended to make the first night easier, but feel free to keep using it."]
+			disable_toast: true
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:textures/entity_icon/villager/profession/cartographer.png"
+				}
+			}
+			id: "6B649D7FF5738599"
+			optional: true
+			rewards: [
+				{
+					auto: "invisible"
+					command: "execute store result score @p villageDist at @p run locate structure #minecraft:village"
+					id: "6AA7526A70707082"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "tellraw @p [\"Distance to nearest village: \",{\"score\":{\"name\":\"@p\",\"objective\":\"villageDist\"}},\" blocks away\"]"
+					id: "238D662D6B128E54"
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				disable_toast: true
+				id: "2721C5AF9A19FF30"
+				title: "CLICK ME"
+				type: "checkmark"
+			}]
+			title: "Village Locator"
+			x: 0.5d
+			y: -1.0d
 		}
 	]
 	title: "Introduction"

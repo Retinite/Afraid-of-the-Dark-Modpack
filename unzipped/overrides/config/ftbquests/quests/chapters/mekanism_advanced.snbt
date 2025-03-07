@@ -181,7 +181,6 @@
 		}
 		{
 			dependencies: [
-				"5507B5A25122B5EE"
 				"4C962ECD330AD934"
 				"3922AAC0A2A06400"
 			]
@@ -215,7 +214,6 @@
 		}
 		{
 			dependencies: [
-				"5507B5A25122B5EE"
 				"4C962ECD330AD934"
 				"3922AAC0A2A06400"
 			]
@@ -249,7 +247,6 @@
 		}
 		{
 			dependencies: [
-				"5507B5A25122B5EE"
 				"4C962ECD330AD934"
 				"3922AAC0A2A06400"
 			]
@@ -283,7 +280,6 @@
 		}
 		{
 			dependencies: [
-				"5507B5A25122B5EE"
 				"4C962ECD330AD934"
 				"3922AAC0A2A06400"
 			]
@@ -317,7 +313,6 @@
 		}
 		{
 			dependencies: [
-				"5507B5A25122B5EE"
 				"4C962ECD330AD934"
 				"3922AAC0A2A06400"
 			]
@@ -325,6 +320,8 @@
 				"* Does not function as a &aConfigurator&r."
 				""
 				"'&bK&r' - change item mode"
+				""
+				"Counts as a mining tool for &lApotheosis&r affixes."
 			]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
@@ -404,6 +401,7 @@
 				"1FE4AA5D3CE272C4"
 				"3922AAC0A2A06400"
 			]
+			description: ["Can be integrated into any MekaSuit tool, weapon, or armor piece."]
 			id: "0F421B52A85EAC43"
 			optional: true
 			rewards: [{
@@ -413,6 +411,7 @@
 				team_reward: false
 				type: "item"
 			}]
+			size: 1.5d
 			subtitle: "Bigger Batteries"
 			tasks: [{
 				count: 4L
@@ -422,7 +421,7 @@
 				type: "item"
 			}]
 			title: "Energy Unit"
-			x: -4.5d
+			x: -4.0d
 			y: 4.0d
 		}
 		{
@@ -451,7 +450,7 @@
 				type: "item"
 			}]
 			x: -4.5d
-			y: 1.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["1FE4AA5D3CE272C4"]
@@ -480,7 +479,7 @@
 				type: "item"
 			}]
 			x: -4.5d
-			y: 2.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["1FE4AA5D3CE272C4"]
@@ -502,7 +501,7 @@
 				type: "item"
 			}]
 			x: -4.5d
-			y: 0.0d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -1342,6 +1341,7 @@
 				"3818692FCB23260D"
 				"1FE4AA5D3CE272C4"
 			]
+			description: ["Can teleport up to 100 block away! Costs power."]
 			id: "18021E6BF9B3B813"
 			optional: true
 			rewards: [{
@@ -1810,6 +1810,7 @@
 		}
 		{
 			dependencies: ["78A10BADE264F811"]
+			description: ["Functionally the opposite of the &7Electric Pump&r, placing liquid source blocks in a diamond shape with a radius of 80 blocks, centered just below the plenisher."]
 			id: "5CB130B09C95ED19"
 			optional: true
 			rewards: [{
@@ -2062,6 +2063,135 @@
 			}]
 			x: 5.5d
 			y: 2.0d
+		}
+		{
+			dependencies: [
+				"4C962ECD330AD934"
+				"3922AAC0A2A06400"
+			]
+			description: [
+				"From the &lMekanism: Weapons&r mod. Also check out the &oMagentizer&r Bauble!"
+				""
+				"Also accepts &o&eAttack Amplification Unit&rs. Despite the GUI, the damage value cannot be adjusted."
+				""
+				"Counts as a bow for &lApotheosis&r affixes."
+			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "68A49EC75E5B0BF8"
+			rewards: [
+				{
+					id: "68C34A3F2DA25467"
+					item: "mekanism:ultimate_control_circuit"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "44FC1F644C5A4FCD"
+					item: "mekanism:pellet_polonium"
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "circle"
+			tasks: [{
+				id: "3C34A958558F34E3"
+				item: "mekaweapons:mekabow"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"015ACDE886A50456"
+				"4C962ECD330AD934"
+				"3922AAC0A2A06400"
+			]
+			description: [
+				"From the &lMekanism: Weapons&r mod. Also check out the &oMagentizer&r Bauble!"
+				""
+				"Also accepts &o&eAttack Amplification Unit&rs and even the &o&dTeleportation Unit&r."
+				""
+				"Uses much more energy with &o&eAttack Amplification Unit&rs installed. Despite the GUI, the damage value cannot be adjusted."
+				""
+				"Counts as a light weapon for &lApotheosis&r affixes."
+			]
+			hide_dependency_lines: true
+			id: "21E67C7F22F8AFEB"
+			rewards: [
+				{
+					id: "2B3949198F8EA2DE"
+					item: "mekanism:ultimate_control_circuit"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "12110ACD6FE08FA0"
+					item: "mekanism:pellet_polonium"
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "circle"
+			tasks: [{
+				id: "10A3BEDE314179F1"
+				item: "mekaweapons:mekatana"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["68A49EC75E5B0BF8"]
+			id: "4F8D2B3A6A8D96A2"
+			optional: true
+			tasks: [{
+				id: "393C453F35293018"
+				item: "mekaweapons:module_drawspeed_unit"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["68A49EC75E5B0BF8"]
+			id: "7D85BC6DB154B882"
+			optional: true
+			tasks: [{
+				id: "6DBB079A8B767C5D"
+				item: "mekaweapons:module_autofire_unit"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["68A49EC75E5B0BF8"]
+			id: "774213B0F39200CC"
+			optional: true
+			tasks: [{
+				id: "74644A921BC7177D"
+				item: "mekaweapons:module_arrowenergy_unit"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"3818692FCB23260D"
+				"68A49EC75E5B0BF8"
+			]
+			id: "332A86125F89CEE0"
+			optional: true
+			tasks: [{
+				id: "5EE627BF50445C1B"
+				item: "mekaweapons:module_gravitydampener_unit"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 5.0d
 		}
 	]
 	title: "Advanced"

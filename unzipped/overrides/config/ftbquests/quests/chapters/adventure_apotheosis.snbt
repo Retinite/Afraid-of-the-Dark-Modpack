@@ -224,6 +224,7 @@
 				type: "item"
 			}]
 			shape: "rsquare"
+			subtitle: "Can Craft Enchantments!"
 			tasks: [{
 				id: "56E922473AE223F1"
 				item: "apotheosis:gem_dust"

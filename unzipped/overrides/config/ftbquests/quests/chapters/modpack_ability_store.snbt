@@ -1,5 +1,5 @@
 {
-	default_hide_dependency_lines: false
+	default_hide_dependency_lines: true
 	default_quest_shape: ""
 	filename: "modpack_ability_store"
 	group: ""
@@ -10,6 +10,7 @@
 	quests: [
 		{
 			can_repeat: true
+			dependencies: ["51A398EE9AB843D3"]
 			description: ["Note: Luck only affects fishing rewards."]
 			id: "46F3C1155B9E1B03"
 			rewards: [{
@@ -34,6 +35,7 @@
 		}
 		{
 			can_repeat: true
+			dependencies: ["51A398EE9AB843D3"]
 			id: "48C717A403F05EBF"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -57,6 +59,7 @@
 		}
 		{
 			can_repeat: true
+			dependencies: ["51A398EE9AB843D3"]
 			id: "2522DF3484E95497"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -80,6 +83,7 @@
 		}
 		{
 			can_repeat: true
+			dependencies: ["51A398EE9AB843D3"]
 			id: "5F26FDDFC4AB95A7"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -103,6 +107,7 @@
 		}
 		{
 			can_repeat: true
+			dependencies: ["51A398EE9AB843D3"]
 			description: ["Note: Blindness II de-aggros any mobs within 3 blocks of you."]
 			id: "09B23214EBF81DF1"
 			rewards: [{
@@ -127,6 +132,7 @@
 		}
 		{
 			can_repeat: true
+			dependencies: ["51A398EE9AB843D3"]
 			description: ["Each ability tier has half the chance of being rewarded as the tier below it."]
 			id: "526382F266936A7A"
 			rewards: [{
@@ -150,6 +156,7 @@
 		}
 		{
 			can_repeat: true
+			dependencies: ["51A398EE9AB843D3"]
 			id: "02049FDA74726999"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -177,12 +184,13 @@
 				item: "aotdextras:nihilum_block"
 				type: "item"
 			}]
-			title: "Any Ability"
+			title: "Choose an Ability"
 			x: 5.5d
 			y: 0.0d
 		}
 		{
 			can_repeat: true
+			dependencies: ["51A398EE9AB843D3"]
 			icon: {
 				Count: 1b
 				id: "ftbquests:custom_icon"
@@ -309,6 +317,7 @@
 		}
 		{
 			can_repeat: true
+			dependencies: ["51A398EE9AB843D3"]
 			icon: {
 				Count: 1b
 				id: "ftbquests:custom_icon"
@@ -424,6 +433,7 @@
 		}
 		{
 			can_repeat: true
+			dependencies: ["51A398EE9AB843D3"]
 			icon: {
 				Count: 1b
 				id: "ftbquests:custom_icon"
@@ -585,6 +595,7 @@
 		}
 		{
 			can_repeat: true
+			dependencies: ["51A398EE9AB843D3"]
 			icon: {
 				Count: 1b
 				id: "ftbquests:custom_icon"
@@ -723,6 +734,7 @@
 		}
 		{
 			can_repeat: true
+			dependencies: ["51A398EE9AB843D3"]
 			icon: {
 				Count: 1b
 				id: "ftbquests:custom_icon"
@@ -835,6 +847,26 @@
 			title: "Legendary Ability Recycling"
 			x: 4.0d
 			y: 1.5d
+		}
+		{
+			description: [
+				"The Ability Store is all about trading resources for &eAbility Totem&rs and &eAbility Totem&rs for resources."
+				""
+				"&oThis means that you cannot use or equip an ability if you want to recycle it in the Ability Store. &eAbility Bottle&r&os cannot be recycled.&r"
+				""
+				"Abilities have been divided into 5 different tiers. Purchasing an ability from a tier will give you a random ability from that tier. There are also options for purchasing a *random* ability from any tier, and choosing an ability to purchase *from any tier*."
+			]
+			id: "51A398EE9AB843D3"
+			subtitle: "Ability Store How-To"
+			tasks: [{
+				disable_toast: true
+				id: "1CDAEA8E913667B9"
+				title: "CLICK ME"
+				type: "checkmark"
+			}]
+			title: "Read Me"
+			x: 0.0d
+			y: -2.5d
 		}
 	]
 	title: "Ability Store"

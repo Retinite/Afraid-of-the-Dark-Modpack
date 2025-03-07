@@ -1,0 +1,447 @@
+{
+	"armor_pierce": {
+		"title": "+1 Armor Pierce",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "mekanismtools:steel_sword"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apotheosis:armor_pierce",
+					"value": 1,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"armor_shred": {
+		"title": "+10% Armor Shred",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "mekanismtools:steel_axe"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apotheosis:armor_shred",
+					"value": 0.1,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"arrow_damage": {
+		"title": "+12.5% Arrow Damage",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "arrow"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apotheosis:arrow_damage",
+					"value": 0.125,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"cold_damage": {
+		"title": "+0.5 Cold Damage",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "rottencreatures:freeze"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apotheosis:cold_damage",
+					"value": 0.5,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"crit_chance": {
+		"title": "+5% Crit Chance",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "luck"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apotheosis:crit_chance",
+					"value": 0.05,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"crit_damage": {
+		"title": "+10% Crit Damage",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "aquamirae:dagger_of_greed"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apotheosis:crit_damage",
+					"value": 0.10,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"dodge_chance": {
+		"title": "+5% Dodge Chance",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "speed"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apotheosis:dodge_chance",
+					"value": 0.05,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"draw_speed": {
+		"title": "+10% Draw Speed",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "bow"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apotheosis:draw_speed",
+					"value": 0.1,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"fire_damage": {
+		"title": "+0.5 Fire Damage",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "apotheosis:detonation"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apotheosis:fire_damage",
+					"value": 0.5,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"healing_received": {
+		"title": "+10% Healing Received",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "instant_health"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apotheosis:healing_received",
+					"value": 0.1,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"life_steal": {
+		"title": "+5% Life Steal",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "upgrade_aquatic:vibing"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apotheosis:life_steal",
+					"value": 0.05,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"overheal": {
+		"title": "+10% Overheal",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "health_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apotheosis:overheal",
+					"value": 0.1,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"prot_pierce": {
+		"title": "+1 Protection Pierce",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "mekanismtools:lapis_lazuli_sword"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apotheosis:prot_pierce",
+					"value": 1,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"prot_shred": {
+		"title": "+10% Protection Shred",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "mekanismtools:lapis_lazuli_axe"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "apotheosis:prot_shred",
+					"value": 0.1,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"attack_range": {
+		"title": "+0.25 Attack Range",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "tenebrous_lands:siege_sword"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "forge:attack_range",
+					"value": 0.25,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"armor": {
+		"title": "+1 Armor",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "iron_chestplate"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.armor",
+					"value": 1,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"armor_toughness": {
+		"title": "+1 Armor Toughness",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "diamond_chestplate"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.armor_toughness",
+					"value": 1,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"attack_damage": {
+		"title": "+1 Attack Damage",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "strength"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.attack_damage",
+					"value": 1,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"attack_speed": {
+		"title": "+10% Attack Speed",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "golden_sword"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.attack_speed",
+					"value": 0.1,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"knockback_resistance": {
+		"title": "+10% Knockback Resistance",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "upgrade_aquatic:repellence"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.knockback_resistance",
+					"value": 0.1,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"movement_speed": {
+		"title": "+10% Movement Speed",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "speed"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.movement_speed",
+					"value": 0.1,
+					"operation": "multiply_total"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "forge:swim_speed",
+					"value": 0.1,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"magic_damage": {
+		"title": "+0.5 Magic Damage",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "monsterplus:crystal_sword"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "obscure_api:magic_damage",
+					"value": 0.5,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"magic_resistance": {
+		"title": "+10% Magic Resistance",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "resistance"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "obscure_api:magic_resistance",
+					"value": 0.1,
+					"operation": "addition"
+				}
+			}
+		]
+	}
+}

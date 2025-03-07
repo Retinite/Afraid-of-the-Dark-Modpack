@@ -287,7 +287,9 @@ craftingTable.addShaped("unusualend.purpur_tank_recipe", <item:unusualend:purpur
 
 // reduce leather generation from Born in Chaos's Monster Skin
 craftingTable.removeByName("born_in_chaos_v1:monster_skin_k");
-<recipetype:mekanism:purifying>.addRecipe("purify_monster_skin", <item:born_in_chaos_v1:monster_skin> * 8, <gas:mekanism:oxygen>, <item:minecraft:leather>);
+craftingTable.addShapeless("born_in_chaos_v1.monster_skin_k", <item: minecraft:leather>,
+	[<item:born_in_chaos_v1:monster_skin>, <item:born_in_chaos_v1:monster_skin>]);
+<recipetype:mekanism:purifying>.addRecipe("purify_monster_skin", <item:born_in_chaos_v1:monster_skin>, <gas:mekanism:oxygen>, <item:minecraft:leather>);
 
 // change Born in Chaos's Soul Soil recipe for balance
 craftingTable.removeByName("born_in_chaos_v1:solsoil_k");

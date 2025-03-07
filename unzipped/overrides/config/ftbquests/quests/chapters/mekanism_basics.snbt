@@ -1030,8 +1030,8 @@
 				}
 			]
 			title: "Scuba Gear"
-			x: 0.0d
-			y: 2.0d
+			x: -0.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -1074,8 +1074,8 @@
 				item: "mekanism:jetpack"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 2.5d
+			x: 0.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["5C6355E15C1CDDF1"]
@@ -1112,7 +1112,7 @@
 				type: "item"
 			}]
 			x: 0.5d
-			y: 1.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["5BDCD4103A33AFB3"]
@@ -1643,6 +1643,25 @@
 			}]
 			x: 4.5d
 			y: 4.5d
+		}
+		{
+			dependencies: ["5C6355E15C1CDDF1"]
+			hide_dependency_lines: true
+			id: "2CB7A05D5A61C884"
+			optional: true
+			rewards: [{
+				id: "66CB9805A1DA62E4"
+				item: "mekanism:energy_tablet"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "6D96D4A6BA57EF51"
+				item: "mekanism:electric_bow"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.0d
 		}
 	]
 	title: "Basics"

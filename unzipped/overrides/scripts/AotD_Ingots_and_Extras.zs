@@ -6,7 +6,7 @@ import crafttweaker.api.ingredient.type.IIngredientEmpty;
 
 // AotD Extras resources ---------------------------------------------------------------------------------------------------------------------
 
-craftingTable.addShapeless("aotdextras.obscurium_ingot", <item: aotdextras:obscurium_ingot> * 3,
+craftingTable.addShapeless("aotdextras.obscurium_ingot", <item: aotdextras:obscurium_ingot> * 2,
 	[<tag:items: aotdextras:any_rotten>, <tag:items: aotdextras:raw_meat>, <tag:items: aotdextras:any_rotten>,
 	 <tag:items: aotdextras:raw_fish>,   <tag:items: aotdextras:sticky>,   <tag:items: aotdextras:raw_fish>,
 	 <tag:items: aotdextras:any_rotten>, <tag:items: aotdextras:raw_meat>, <tag:items: aotdextras:any_rotten>]);
@@ -108,10 +108,17 @@ craftingTable.addShaped("undead_unleashed.grave_metal_ingot", <item:undead_unlea
 
 // add Glow TNT
 craftingTable.remove(<item:aotdextras:glow_tnt>);
-craftingTable.addShaped("aotdextras.glow_tnt", <item:aotdextras:glow_tnt> * 9,
+craftingTable.addShaped("aotdextras.glow_tnt", <item:aotdextras:glow_tnt> * 8,
 	[[<item:minecraft:tnt>, <item:minecraft:tnt>,          <item:minecraft:tnt>],
 	 [<item:minecraft:tnt>, <item:aotdextras:luxum_ingot>, <item:minecraft:tnt>],
 	 [<item:minecraft:tnt>, <item:minecraft:tnt>,          <item:minecraft:tnt>]]);
+
+// adjust Lunar Token recipe
+craftingTable.remove(<item:aotdextras:lunar_token>);
+craftingTable.addShaped("aotdextras.lunar_token", <item:aotdextras:lunar_token> * 4,
+	[[IIngredientEmpty.getInstance(), <item:minecraft:quartz>,           IIngredientEmpty.getInstance()],
+	 [<item:minecraft:quartz>,        <item:aotdextras:obscurium_ingot>, <item:minecraft:quartz>],
+	 [IIngredientEmpty.getInstance(), <item:minecraft:quartz>,           IIngredientEmpty.getInstance()]]);
 
 // incorporate nature's compass recipe
 craftingTable.remove(<item: naturescompass:naturescompass>);
