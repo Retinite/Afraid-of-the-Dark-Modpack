@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "Afraid of the Dark",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "author": "",
   "files": [
     {
@@ -136,7 +136,7 @@
     },
     {
       "projectID": 283644,
-      "fileID": 5180198,
+      "fileID": 6274259,
       "required": true
     },
     {
@@ -411,7 +411,7 @@
     },
     {
       "projectID": 898104,
-      "fileID": 5504496,
+      "fileID": 6276166,
       "required": true
     },
     {
@@ -831,7 +831,7 @@
     },
     {
       "projectID": 238222,
-      "fileID": 5106178,
+      "fileID": 5846858,
       "required": true
     },
     {

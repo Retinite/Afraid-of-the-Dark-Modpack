@@ -415,6 +415,8 @@
 		{
 			dependencies: ["318126553F4ED0EC"]
 			description: [
+				"&6NOTE: Garland's recipe is hidden from JEI in a way that I can't add it back. The recipe is just 8 small flowers in a circle, similar to the furnace recipe.&r"
+				""
 				"&l&cDynamic Lights&r"
 				"Hold any light source in your hand or offhand and generate light! Also works when dropping a light source!"
 				""
@@ -771,6 +773,7 @@
 				"Gardens of the Dead"
 				"Night's Light"
 				"Nyctophobia (FORGE)"
+				"Philip's Ruins"
 				"Searchlight (\\& Wall Lights) (Forge)"
 				"Sound Physics Remastered"
 				"YUNG's Better Desert Temples (Forge)"
@@ -795,6 +798,7 @@
 				"Mekanism"
 				"Mekanism Generators"
 				"Mekanism Tools"
+				"Pufferfish's Skills [Fabric \\& Forge \\& NeoForge]"
 				"True Darkness"
 				"{@pagebreak}"
 				"&a&lMinor Mods&r"
@@ -912,6 +916,7 @@
 		}
 		{
 			can_repeat: true
+			dependencies: ["318126553F4ED0EC"]
 			description: ["Intended to make the first night easier, but feel free to keep using it."]
 			disable_toast: true
 			icon: {
