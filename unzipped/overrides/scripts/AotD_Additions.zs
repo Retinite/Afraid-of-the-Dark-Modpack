@@ -107,16 +107,10 @@ craftingTable.addShapeless("unusualend.void_totem", <item: unusualend:void_totem
 smithing.addRecipe("aquamirae.coral_transmutation", <item:aquamirae:coral_lance>, <item:aquamirae:sweet_lance>, <item:born_in_chaos_v1:transmuting_elixir>);
 smithing.addRecipe("aquamirae.sweet_transmutation", <item:aquamirae:sweet_lance>, <item:aquamirae:coral_lance>, <item:born_in_chaos_v1:transmuting_elixir>);
 
-// add Mekanism recipes for Illuminative's Glowing Mushrooms and Deep Dark Regrowth Infected Mushrooms
-<recipetype:mekanism:crushing>.addRecipe("glowing_into_biofuel", <item: illuminative:glowing_mushroom>, <item: mekanism:bio_fuel> * 5);
-<recipetype:mekanism:crushing>.addRecipe("glowing_block_into_biofuel", <item: illuminative:glowing_mushroom_block>, <item: mekanism:bio_fuel> * 45);
-<recipetype:mekanism:infusion_conversion>.addRecipe("glowing_into_fungi", <item: illuminative:glowing_mushroom>, <infuse_type:mekanism:fungi> * 10);
+// add Mekanism recipes for Deep Dark Regrowth Infected Mushrooms
 <recipetype:mekanism:infusion_conversion>.addRecipe("infected_into_fungi", <item: deep_dark_regrowth:infected_mushroom>, <infuse_type:mekanism:fungi> * 10);
 <recipetype:mekanism:infusion_conversion>.addRecipe("short_infected_into_fungi", <item: deep_dark_regrowth:short_infected_mushroom>, <infuse_type:mekanism:fungi> * 8);
 <recipetype:mekanism:infusion_conversion>.addRecipe("large_infected_into_fungi", <item: deep_dark_regrowth:large_infected_mushroom>, <infuse_type:mekanism:fungi> * 15);
-
-// add Illuminative's (missing?) Glow Ink Sac decompression recipe
-craftingTable.addShapeless("illuminative.glow_decompress", <item: minecraft:glow_ink_sac> * 9, [<item: illuminative:glow_inc_sac_block>]);
 
 // add Born in Chaos's Staff of Blindness
 smithing.addRecipe("born_in_chaos_v1.staffof_blindness", <item: born_in_chaos_v1:staffof_blindness>, <item: minecraft:blaze_rod>, <item: born_in_chaos_v1:transmuting_elixir>);

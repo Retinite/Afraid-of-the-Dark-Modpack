@@ -44,9 +44,9 @@ craftingTable.addShapeless("aotdextras.occultium_block_decompress", <item: aotde
 craftingTable.remove(<item:aotdextras:luxum_lamp>);
 craftingTable.removeByName("aotdextras:luxum_lamp_decompress");
 craftingTable.addShapeless("aotdextras.luxum_ingot", <item: aotdextras:luxum_ingot> * 2,
-	[<item: illuminative:glow_inc_sac_block>,        <item: illuminative:glow_fish_item>, <item: illuminative:glowstone_torch>,
-	 <item: gardens_of_the_dead:glowing_soul_spore>, <item: aotdextras:obscurium_ingot>,       <item: minecraft:glow_lichen>,
-	 <item: aquamirae:luminescent_lamp>,	         <item: observed:observereye>,             <item: minecraft:shroomlight>]);
+	[<item: minecraft:glow_ink_sac>,                 <item: minecraft:soul_torch>,       <item: minecraft:torch>,
+	 <item: gardens_of_the_dead:glowing_soul_spore>, <item: aotdextras:obscurium_ingot>, <item: minecraft:glow_lichen>,
+	 <item: aquamirae:luminescent_lamp>,	         <item: observed:observereye>,       <item: minecraft:shroomlight>]);
 
 craftingTable.addShaped("aotdextras.nihilum_ingot", <item: aotdextras:nihilum_ingot> * 2,
 	[[<item: deep_dark_regrowth:galm>,          <item: aotdextras:occultium_ingot>, <item: born_in_chaos_v1:black_argillite>],

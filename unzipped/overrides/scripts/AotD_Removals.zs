@@ -26,10 +26,6 @@ Jei.hideIngredient(<item: fluxnetworks:herculean_flux_storage>);
 craftingTable.removeByName("fluxnetworks:gargantuanfluxstorage");
 Jei.hideIngredient(<item: fluxnetworks:gargantuan_flux_storage>);
 
-// remove Illuminative Magma Rod due to bugged placement
-craftingTable.removeByName("illuminative:magma_rod_recipe");
-Jei.hideIngredient(<item: illuminative:magma_rod>);
-
 // remove Born in Chaos's Spawn Structures (removing from JEI doesn't work?)
 /*Jei.hideIngredient(<item: born_in_chaos_v1:spawn_structures_firewell>);
 Jei.hideIngredient(<item: born_in_chaos_v1:spawn_structures_lookout_tower>);

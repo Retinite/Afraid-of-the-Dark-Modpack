@@ -38,18 +38,12 @@ addLightRecipe(<item:minecraft:glow_lichen>, 2);
 addLightRecipe(<item:minecraft:glowstone_dust>, 12);
 addLightRecipe(<item:minecraft:glowstone>, 48);
 addLightRecipe(<item:minecraft:glow_ink_sac>, 1);
-addLightRecipe(<item:illuminative:glow_inc_sac_block>, 9);
-addLightRecipe(<item:illuminative:glow_fish_item>, 2);
-addLightRecipe(<item:illuminative:glowing_mushroom_block>, 9);
-addLightRecipe(<item:illuminative:glowing_mushroom>, 2);
-addLightRecipe(<item:illuminative:cooked_glow_fish>, 1);
 addLightRecipe(<item:observed:observereye>, 18);
 addLightRecipe(<item:gardens_of_the_dead:glowing_soul_spore>, 2);
 addLightRecipe(<item:aquamirae:esca>, 8);
 addLightRecipe(<item:aotdextras:luxum_lamp>, 512);
 
 <recipetype:mekanism:crystallizing>.addRecipe("glowstone_dust_from_light", <gas:crafttweaker:light_essence> * 1200, <item:minecraft:glowstone_dust>);
-<recipetype:mekanism:injecting>.addRecipe("glowstone_torch_injection", <item:minecraft:stick>, <gas:crafttweaker:light_essence>, <item:illuminative:glowstone_torch>);
 <recipetype:mekanism:injecting>.addRecipe("luminescent_lamp_injection", <item:upgrade_aquatic:prismarine_rod>, <gas:crafttweaker:light_essence>, <item:aquamirae:luminescent_lamp>);
 <recipetype:mekanism:injecting>.addRecipe("luminescent_bubble_injection", <item:aquamirae:oxygelium>, <gas:crafttweaker:light_essence>, <item:aquamirae:luminescent_bubble> * 3);
 <recipetype:mekanism:injecting>.addRecipe("luxum_ingot_injection", <item:aotdextras:occultium_ingot>, <gas:crafttweaker:light_essence> * 128, <item:aotdextras:luxum_ingot>);

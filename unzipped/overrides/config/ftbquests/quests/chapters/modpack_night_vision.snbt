@@ -84,34 +84,22 @@
 			y: 0.0d
 		}
 		{
-			description: [
-				"Raw - 10 Seconds"
-				"Cooked - 5 Seconds"
-			]
+			description: ["Provides 10 seconds of &eglowing&r."]
 			id: "6ECB0F799B4A44E2"
 			min_required_tasks: 1
 			shape: "rsquare"
 			subtitle: "Eat Up!"
-			tasks: [
-				{
-					disable_toast: true
-					id: "0670D2083D2128C9"
-					item: "illuminative:glow_fish_item"
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "725FFC1883343B45"
-					item: "illuminative:cooked_glow_fish"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "43739AFC2510C813"
+				item: "aquamirae:esca"
+				type: "item"
+			}]
 			title: "Glow Fish"
 			x: 2.5d
 			y: -3.0d
 		}
 		{
-			description: ["90 Seconds (1:30)"]
+			description: ["Provides 90 seconds of &9nightvision&r."]
 			id: "5CC11DE7FC468891"
 			shape: "rsquare"
 			subtitle: "Chew Up!"

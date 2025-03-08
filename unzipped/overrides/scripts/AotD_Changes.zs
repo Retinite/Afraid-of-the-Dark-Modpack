@@ -131,13 +131,6 @@ craftingTable.addShaped("waystones.sharestone", <item:waystones:sharestone>,
 	[IIngredientEmpty.getInstance(),              <item: mekanism:teleporter>,       IIngredientEmpty.getInstance()],
 	[<item: mekanism:teleporter_frame>,           <item: mekanism:teleporter_frame>, <item: mekanism:teleporter_frame>]]);
 
-// fix Illuminative's Magma Lamp
-craftingTable.remove(<item: illuminative:magma_lamp>);
-craftingTable.addShaped("illuminative.magma_lamp_recipe", <item: illuminative:magma_lamp>,
-	[[IIngredientEmpty.getInstance(), <item: minecraft:iron_ingot>,  IIngredientEmpty.getInstance()],
-	[<item: minecraft:iron_ingot>,    <item: minecraft:magma_block>, <item: minecraft:iron_ingot>],
-	[IIngredientEmpty.getInstance(),  <item: minecraft:iron_ingot>,  IIngredientEmpty.getInstance()]]);
-
 // remove Night Vision Potion dependency from Apotheosis's Shelf of Sight
 craftingTable.remove(<item: apotheosis:sightshelf>);
 craftingTable.addShaped("apotheosis.sightshelf", <item:apotheosis:sightshelf>,

@@ -12,7 +12,7 @@
 			description: [
 				"In alphabetical order (aside from &lDrink Beer Refill&r items)."
 				""
-				"Health will be maxed out after eating 105 out of 117 total food items."
+				"Health will be maxed out after eating 105 out of 115 total food items."
 			]
 			icon: "solcarrot:food_book"
 			id: "3013BAC5A71D0B7E"
@@ -117,11 +117,6 @@
 				{
 					id: "316F469585656CF7"
 					item: "minecraft:cooked_cod"
-					type: "item"
-				}
-				{
-					id: "5A028390CEB75600"
-					item: "illuminative:cooked_glow_fish"
 					type: "item"
 				}
 				{
@@ -367,11 +362,6 @@
 				{
 					id: "376EE707DAAA08A8"
 					item: "minecraft:cod"
-					type: "item"
-				}
-				{
-					id: "6EDD5608F7702CCE"
-					item: "illuminative:glow_fish_item"
 					type: "item"
 				}
 				{
@@ -1368,7 +1358,11 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["34EA6A77A2533CA2"]
+			dependencies: [
+				"34EA6A77A2533CA2"
+				"12931D31C93A1B03"
+				"0B4E177CC1CE99AC"
+			]
 			icon: "minecraft:golden_carrot"
 			id: "54FA8D1C2F01D0BB"
 			rewards: [{
