@@ -48,19 +48,19 @@ craftingTable.addShapeless("aotdextras.luxum_ingot", <item: aotdextras:luxum_ing
 	 <item: gardens_of_the_dead:glowing_soul_spore>, <item: aotdextras:obscurium_ingot>, <item: minecraft:glow_lichen>,
 	 <item: aquamirae:luminescent_lamp>,	         <item: observed:observereye>,       <item: minecraft:shroomlight>]);
 
-craftingTable.addShaped("aotdextras.nihilum_ingot", <item: aotdextras:nihilum_ingot> * 2,
+craftingTable.addShaped("aotdextras.nihilum_ingot", <item: aotdextras:nihilum_ingot> * 7,
 	[[<item: deep_dark_regrowth:galm>,          <item: aotdextras:occultium_ingot>, <item: born_in_chaos_v1:black_argillite>],
 	 [<item: aotdextras:occultium_ingot>,       <item: aotdextras:luxum_block>,      <item: aotdextras:occultium_ingot>],
 	 [<item: born_in_chaos_v1:black_argillite>, <item: aotdextras:occultium_ingot>, <item: deep_dark_regrowth:galm>]]);
-craftingTable.addShaped("aotdextras.nihilum_ingot_alt", <item: aotdextras:nihilum_ingot> * 2,
+craftingTable.addShaped("aotdextras.nihilum_ingot_alt", <item: aotdextras:nihilum_ingot> * 7,
 	[[<tag:items: aotdextras:boss_drops>, <tag:items: aotdextras:epic_drops>, <tag:items: aotdextras:boss_drops>],
 	 [<tag:items: aotdextras:epic_drops>, <item: aotdextras:obscurium_block>, <tag:items: aotdextras:epic_drops>],
 	 [<tag:items: aotdextras:boss_drops>, <tag:items: aotdextras:epic_drops>, <tag:items: aotdextras:boss_drops>]]);
-craftingTable.addShaped("aotdextras.nihilum_ingot_alt_b", <item: aotdextras:nihilum_ingot> * 3,
+craftingTable.addShaped("aotdextras.nihilum_ingot_alt_b", <item: aotdextras:nihilum_ingot> * 9,
 	[[<tag:items: aotdextras:boss_drops>, <tag:items: aotdextras:epic_drops>, <tag:items: aotdextras:boss_drops>],
 	 [<tag:items: aotdextras:epic_drops>, <item: aotdextras:occultium_block>, <tag:items: aotdextras:epic_drops>],
 	 [<tag:items: aotdextras:boss_drops>, <tag:items: aotdextras:epic_drops>, <tag:items: aotdextras:boss_drops>]]);
-<recipetype:mekanism:combining>.addRecipe("aotd.nihilum_from_astral", <item:aotdextras:luxum_ingot> * 4, <item:obscure_api:astral_dust>, <item:aotdextras:nihilum_ingot> * 4);
+<recipetype:mekanism:combining>.addRecipe("aotd.nihilum_from_astral", <item:aotdextras:luxum_ingot> * 16, <item:obscure_api:astral_dust>, <item:aotdextras:nihilum_ingot> * 16);
 <recipetype:mekanism:combining>.addRecipe("aotd.nihilum_from_luxum", <item:aotdextras:luxum_ingot> * 16, <item:mekanism:pellet_antimatter>, <item:aotdextras:nihilum_ingot> * 4);
 <recipetype:mekanism:combining>.addRecipe("aotd.nihilum_from_luxum_block", <item:aotdextras:luxum_block> * 16, <item:mekanism:pellet_antimatter>, <item:aotdextras:nihilum_block> * 4);
 

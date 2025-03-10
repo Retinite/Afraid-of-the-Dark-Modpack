@@ -79,6 +79,10 @@
   },
   "crystalPendingRespawns": {
     "desc:": "List of crystal respawn locations for the end crystals, filled automatically on destroy recommended to not touch. XYZ coords seperated by semicolon",
-    "crystalPendingRespawns": []
+    "crystalPendingRespawns": [
+      "-8;64;0",
+      "8;64;0",
+      "0;64;8"
+    ]
   }
 }

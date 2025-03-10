@@ -12,7 +12,7 @@
 			description: [
 				"In alphabetical order (aside from &lDrink Beer Refill&r items)."
 				""
-				"Health will be maxed out after eating 105 out of 115 total food items."
+				"Health will be maxed out after eating 105 out of 129 total food items."
 			]
 			icon: "solcarrot:food_book"
 			id: "3013BAC5A71D0B7E"
@@ -50,6 +50,11 @@
 					type: "item"
 				}
 				{
+					id: "731D49F4E6CF25F8"
+					item: "luminousworld:bass_item"
+					type: "item"
+				}
+				{
 					id: "1E52CBEBB22780F8"
 					item: "minecraft:beetroot"
 					type: "item"
@@ -60,6 +65,16 @@
 					type: "item"
 				}
 				{
+					id: "76564FCCE05116A7"
+					item: "luminousworld:blackberry"
+					type: "item"
+				}
+				{
+					id: "7B51311F18144C88"
+					item: "luminousworld:blueberry"
+					type: "item"
+				}
+				{
 					id: "60BADC1A86BE5694"
 					item: "upgrade_aquatic:boiled_blue_pickerelweed"
 					type: "item"
@@ -67,6 +82,11 @@
 				{
 					id: "291C7E4B1BA2FDE4"
 					item: "upgrade_aquatic:boiled_purple_pickerelweed"
+					type: "item"
+				}
+				{
+					id: "384C74E8143110BE"
+					item: "luminousworld:bleach"
 					type: "item"
 				}
 				{
@@ -107,6 +127,11 @@
 				{
 					id: "1A4EA6D638D07B01"
 					item: "unusualend:chorus_tea"
+					type: "item"
+				}
+				{
+					id: "44978E1A7FCF048D"
+					item: "luminousworld:cooked_bass"
 					type: "item"
 				}
 				{
@@ -160,6 +185,26 @@
 					type: "item"
 				}
 				{
+					id: "65B1913B8A01AB3E"
+					item: "luminousworld:cooked_squirrel"
+					type: "item"
+				}
+				{
+					id: "09BFC4870B3E506E"
+					item: "luminousworld:cooked_sunny"
+					type: "item"
+				}
+				{
+					id: "03C5E973DC623684"
+					item: "luminousworld:cooked_trout"
+					type: "item"
+				}
+				{
+					id: "3E1FF9946D142E7D"
+					item: "luminousworld:cooked_venison"
+					type: "item"
+				}
+				{
 					id: "38C35F7D9598F647"
 					item: "minecraft:cookie"
 					type: "item"
@@ -167,6 +212,11 @@
 				{
 					id: "79AC642C9FFF3451"
 					item: "born_in_chaos_v1:corpse_maggot"
+					type: "item"
+				}
+				{
+					id: "14BC1CBE6A601AB6"
+					item: "luminousworld:creepberries"
 					type: "item"
 				}
 				{
@@ -400,6 +450,16 @@
 					type: "item"
 				}
 				{
+					id: "609EBBA5694A33A7"
+					item: "luminousworld:raw_squirrel"
+					type: "item"
+				}
+				{
+					id: "2579A43DD040D5C7"
+					item: "luminousworld:raw_venison"
+					type: "item"
+				}
+				{
 					id: "53CD11F221EEAFB8"
 					item: {
 						Count: 1b
@@ -476,6 +536,11 @@
 					type: "item"
 				}
 				{
+					id: "071D0222C2DB6DB8"
+					item: "luminousworld:sunny"
+					type: "item"
+				}
+				{
 					id: "4A84B6D5168C82EC"
 					item: "minecraft:suspicious_stew"
 					type: "item"
@@ -491,23 +556,13 @@
 					type: "item"
 				}
 				{
+					id: "11B8634DA6CC538C"
+					item: "luminousworld:trout"
+					type: "item"
+				}
+				{
 					id: "6A3B08BB5F636934"
 					item: "unusualend:wandering_stew"
-					type: "item"
-				}
-				{
-					id: "2A852079CCDDE5AB"
-					item: "drinkbeer:beer_mug"
-					type: "item"
-				}
-				{
-					id: "0C701323C2639DC0"
-					item: "drinkbeer:beer_mug_blaze_stout"
-					type: "item"
-				}
-				{
-					id: "436E062CF87F979E"
-					item: "drinkbeer:beer_mug_blaze_milk_stout"
 					type: "item"
 				}
 				{
@@ -516,23 +571,13 @@
 					type: "item"
 				}
 				{
-					id: "460EED8A4746728B"
-					item: "drinkbeer:beer_mug_sweet_berry_kriek"
+					id: "436E062CF87F979E"
+					item: "drinkbeer:beer_mug_blaze_milk_stout"
 					type: "item"
 				}
 				{
-					id: "78A75AB2FF6E0499"
-					item: "drinkbeer:beer_mug_haars_icey_pale_lager"
-					type: "item"
-				}
-				{
-					id: "60A01823ED2E83F5"
-					item: "drinkbeer:beer_mug_pumpkin_kvass"
-					type: "item"
-				}
-				{
-					id: "62C4890A7569EBCA"
-					item: "drinkbeer:beer_mug_night_howl_kvass"
+					id: "0C701323C2639DC0"
+					item: "drinkbeer:beer_mug_blaze_stout"
 					type: "item"
 				}
 				{
@@ -541,18 +586,28 @@
 					type: "item"
 				}
 				{
-					id: "249CA6CFF970100E"
-					item: "drinkbeer:spice_blaze_paprika"
+					id: "78A75AB2FF6E0499"
+					item: "drinkbeer:beer_mug_haars_icey_pale_lager"
 					type: "item"
 				}
 				{
-					id: "466EBDF3696B8D1C"
-					item: "drinkbeer:spice_dried_eglia_bud"
+					id: "2A852079CCDDE5AB"
+					item: "drinkbeer:beer_mug"
 					type: "item"
 				}
 				{
-					id: "2606F76BE27DA8EC"
-					item: "drinkbeer:spice_smoked_eglia_bud"
+					id: "62C4890A7569EBCA"
+					item: "drinkbeer:beer_mug_night_howl_kvass"
+					type: "item"
+				}
+				{
+					id: "60A01823ED2E83F5"
+					item: "drinkbeer:beer_mug_pumpkin_kvass"
+					type: "item"
+				}
+				{
+					id: "460EED8A4746728B"
+					item: "drinkbeer:beer_mug_sweet_berry_kriek"
 					type: "item"
 				}
 				{
@@ -561,8 +616,33 @@
 					type: "item"
 				}
 				{
+					id: "249CA6CFF970100E"
+					item: "drinkbeer:spice_blaze_paprika"
+					type: "item"
+				}
+				{
 					id: "3F257D40AADB96F3"
 					item: "drinkbeer:spice_citrine_nigella_seeds"
+					type: "item"
+				}
+				{
+					id: "466EBDF3696B8D1C"
+					item: "drinkbeer:spice_dried_eglia_bud"
+					type: "item"
+				}
+				{
+					id: "0E2EDD26241F51C0"
+					item: "drinkbeer:spice_frozen_persimmon"
+					type: "item"
+				}
+				{
+					id: "7DB2CCDC086C3637"
+					item: "drinkbeer:spice_glace_goji_berries"
+					type: "item"
+				}
+				{
+					id: "660116B5682F4187"
+					item: "drinkbeer:spice_golden_cinnamon_powder"
 					type: "item"
 				}
 				{
@@ -576,8 +656,8 @@
 					type: "item"
 				}
 				{
-					id: "2D8411DD0F2FB209"
-					item: "drinkbeer:spice_storm_shards"
+					id: "26D90C13BA2A9FB8"
+					item: "drinkbeer:spice_roasted_pecans"
 					type: "item"
 				}
 				{
@@ -586,18 +666,8 @@
 					type: "item"
 				}
 				{
-					id: "7DB2CCDC086C3637"
-					item: "drinkbeer:spice_glace_goji_berries"
-					type: "item"
-				}
-				{
-					id: "0E2EDD26241F51C0"
-					item: "drinkbeer:spice_frozen_persimmon"
-					type: "item"
-				}
-				{
-					id: "26D90C13BA2A9FB8"
-					item: "drinkbeer:spice_roasted_pecans"
+					id: "5F486EF15C533310"
+					item: "drinkbeer:spice_dried_selaginella"
 					type: "item"
 				}
 				{
@@ -606,13 +676,13 @@
 					type: "item"
 				}
 				{
-					id: "660116B5682F4187"
-					item: "drinkbeer:spice_golden_cinnamon_powder"
+					id: "2606F76BE27DA8EC"
+					item: "drinkbeer:spice_smoked_eglia_bud"
 					type: "item"
 				}
 				{
-					id: "5F486EF15C533310"
-					item: "drinkbeer:spice_dried_selaginella"
+					id: "2D8411DD0F2FB209"
+					item: "drinkbeer:spice_storm_shards"
 					type: "item"
 				}
 			]
@@ -1098,6 +1168,17 @@
 					item: "mekanism:qio_drive_supermassive"
 					type: "item"
 				}
+				{
+					id: "42C309A0B8DCC744"
+					item: {
+						Count: 1b
+						id: "luminousworld:netherite_hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
 			]
 			title: "&dUltimate Obsession&r"
 			x: 0.0d
@@ -1325,6 +1406,14 @@
 				"4C09ABEB358C0F24"
 				"251069B43E6AF820"
 				"19F1674292AE31C2"
+				"15B47AEAE3A318EF"
+				"1340D2F41D6BB37C"
+				"175CC73DAF75F601"
+				"45425731C8497FDD"
+				"407606FAF11D7DD9"
+				"7ECF1E273C63D752"
+				"3AE36924D38EA657"
+				"1BFB0754FA3E9A7F"
 			]
 			icon: "minecraft:dragon_head"
 			id: "71F8B333C1AA58A0"
@@ -1577,7 +1666,10 @@
 				"28C6B363AE5A6C6D"
 				"699C2395CD000121"
 				"608FF9D964F58F85"
+				"55351B1D50BC0031"
+				"604A3F2CEF11A46F"
 			]
+			description: ["Including &oall&r optional equipment."]
 			icon: {
 				Count: 1b
 				id: "minecraft:netherite_hoe"
@@ -2105,6 +2197,82 @@
 							Damage: 0
 						}
 					}
+					type: "item"
+				}
+				{
+					id: "5E52631D67939497"
+					item: {
+						Count: 1b
+						id: "luminousworld:enchanted_root"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "459EAE6C424CB4B3"
+					item: {
+						Count: 1b
+						id: "luminousworld:shellmet_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "436E8AF649B5FBD8"
+					item: {
+						Count: 1b
+						id: "luminousworld:headwraps_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0EBC9F2A8027ECF2"
+					item: {
+						Count: 1b
+						id: "luminousworld:frigid_horn"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0ED13220C217B2C3"
+					item: {
+						Count: 1b
+						id: "luminousworld:vipertooth"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2C8007F9D0E393DA"
+					item: "luminousworld:pheonix_feather"
+					type: "item"
+				}
+				{
+					id: "064A133D23FD9F12"
+					item: {
+						Count: 1b
+						id: "luminousworld:gator_tooth"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "553459B0DF0347A2"
+					item: "luminousworld:bone_rattle"
 					type: "item"
 				}
 			]

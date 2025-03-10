@@ -83,6 +83,24 @@ craftingTable.addShapeless("enemyexpansion.wasp_thorax_into_bone_meal", <item: m
 <recipetype:mekanism:sawing>.addRecipe("sawing.scorched", <tag:items: born_in_chaos_v1:scorched_log>, <item: born_in_chaos_v1:scorched_planks> * 6, <item: mekanism:sawdust>, 0.25);
 <recipetype:mekanism:sawing>.addRecipe("sawing.smoldering", <tag:items: born_in_chaos_v1:smoldering_scorched_log>, <item: born_in_chaos_v1:scorched_planks> * 6, <item: born_in_chaos_v1:fire_dust>, 0.25);
 <recipetype:mekanism:sawing>.addRecipe("sawing.soulblight", <tag:items: gardens_of_the_dead:soulblight_stem>, <item: gardens_of_the_dead:soulblight_planks> * 6, <item: gardens_of_the_dead:soulblight_sprouts>, 0.25);
+<recipetype:mekanism:sawing>.addRecipe("sawing.white_oak", <tag:items: luminousworld:white_oak_log>, <item: luminousworld:white_oak_plank> * 6, <item: mekanism:sawdust>, 0.25);
+<recipetype:mekanism:sawing>.addRecipe("mekanism.sawing/fence_gate/white_oak", <item: luminousworld:white_oakfencegate>, <item: luminousworld:white_oak_plank> * 2, <item: minecraft:stick> * 4, 1.00);
+<recipetype:mekanism:sawing>.addRecipe("mekanism.sawing/door/white_oak", <item: luminousworld:white_oak_door>, <item: luminousworld:white_oak_plank> * 2);
+<recipetype:mekanism:sawing>.addRecipe("mekanism.sawing/trapdoor/white_oak", <item: luminousworld:whiteoaktrapdoor>, <item: luminousworld:white_oak_plank> * 3);
+<recipetype:mekanism:sawing>.addRecipe("sawing.palm", <tag:items: luminousworld:palm_log>, <item: luminousworld:palmplank> * 6, <item: mekanism:sawdust>, 0.25);
+<recipetype:mekanism:sawing>.addRecipe("mekanism.sawing/fence_gate/palm", <item: luminousworld:palm_fencegate>, <item: luminousworld:palmplank> * 2, <item: minecraft:stick> * 4, 1.00);
+<recipetype:mekanism:sawing>.addRecipe("mekanism.sawing/door/palm", <item: luminousworld:palm_door>, <item: luminousworld:palmplank> * 2);
+<recipetype:mekanism:sawing>.addRecipe("mekanism.sawing/trapdoor/palm", <item: luminousworld:palmtrapdoor>, <item: luminousworld:palmplank> * 3);
+<recipetype:mekanism:sawing>.addRecipe("sawing.auburn", <tag:items: luminousworld:auburn_log>, <item: luminousworld:autumnplank> * 6, <item: mekanism:sawdust>, 0.25);
+<recipetype:mekanism:sawing>.addRecipe("mekanism.sawing/fence_gate/auburn", <item: luminousworld:autumnfencegate>, <item: luminousworld:autumnplank> * 2, <item: minecraft:stick> * 4, 1.00);
+<recipetype:mekanism:sawing>.addRecipe("mekanism.sawing/door/auburn", <item: luminousworld:auburn_door>, <item: luminousworld:autumnplank> * 2);
+<recipetype:mekanism:sawing>.addRecipe("mekanism.sawing/trapdoor/auburn", <item: luminousworld:auburntrapdoor>, <item: luminousworld:autumnplank> * 3);
+<recipetype:mekanism:sawing>.addRecipe("sawing.baobab", <tag:items: luminousworld:baobab_log>, <item: luminousworld:baobab_plank> * 6, <item: mekanism:sawdust>, 0.25);
+<recipetype:mekanism:sawing>.addRecipe("mekanism.sawing/fence_gate/baobab", <item: luminousworld:baobab_fence_gate>, <item: luminousworld:baobab_plank> * 2, <item: minecraft:stick> * 4, 1.00);
+<recipetype:mekanism:sawing>.addRecipe("mekanism.sawing/door/baobab", <item: luminousworld:baobab_door>, <item: luminousworld:baobab_plank> * 2);
+<recipetype:mekanism:sawing>.addRecipe("mekanism.sawing/trapdoor/baobab", <item: luminousworld:baobabtrapdoor>, <item: luminousworld:baobab_plank> * 3);
+craftingTable.addShapeless("newbirch_rec_2", <item: minecraft:birch_planks> * 4, [<item: luminousworld:tall_birch_wood>]);
+<recipetype:mekanism:sawing>.addRecipe("sawing.soft_birch", <tag:items: luminousworld:soft_birch_log>, <item: minecraft:birch_planks> * 6, <item: mekanism:sawdust>, 0.25);
 
 // add recipe for budding amethyst
 craftingTable.addShaped("aotd.budding_amethyst", <item: minecraft:budding_amethyst>,
@@ -180,6 +198,17 @@ brewing.addRecipe(<item:minecraft:potion>.withTag({Potion: "minecraft:regenerati
 // add Etherium Gem recipes
 <recipetype:mekanism:crushing>.addRecipe("deep_dark_regrowth.etherium_block_decompress", <item:deep_dark_regrowth:etherium_block>, <item:deep_dark_regrowth:etherium_gem> * 2);
 <recipetype:mekanism:enriching>.addRecipe("enrich_enlightened_deepslate", <item:deep_dark_regrowth:enlightened_deepslate>, <item:deep_dark_regrowth:etherium_gem> * 2);
+
+// add a recipe for the Luminous Bestiary
+craftingTable.addShapeless("luminousworld.bestiary", <item: luminousworld:beastiary>, [<item: ftbquests:book>, <item: patchouli:guide_book>.withTag({"patchouli:book": "apotheosis:apoth_chronicle"})]);
+
+// add Twisted Horrors compressed recipes
+craftingTable.addShaped("twisted_horrors.flint_block", <item: twisted_horrors:block_of_flint>,
+	[[<item: minecraft:flint>, <item: minecraft:flint>, <item: minecraft:flint>],
+	 [<item: minecraft:flint>, <item: minecraft:flint>, <item: minecraft:flint>],
+	 [<item: minecraft:flint>, <item: minecraft:flint>, <item: minecraft:flint>]]);
+craftingTable.addShapeless("twisted_horrors.flint_decompress", <item: minecraft:flint> * 9, [<item: twisted_horrors:block_of_flint>]);
+craftingTable.addShapeless("twisted_horrors.charcoal_decompress", <item: minecraft:charcoal> * 9, [<item: twisted_horrors:block_of_charcoal>]);
 
 // various iron recycling recipes ------------------------------------------------------------------------------------------------------------
 

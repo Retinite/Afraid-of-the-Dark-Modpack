@@ -2982,7 +2982,7 @@
 			y: 2.0d
 		}
 		{
-			description: ["Has high armor penetration when both in water (no actual damage buff)."]
+			description: ["Has high armor penetration when both you and your target are in water (no actual damage buff)."]
 			id: "6A9478DE5A4196D4"
 			optional: true
 			rewards: [{
@@ -3172,9 +3172,9 @@
 		{
 			dependencies: ["190091266990DB82"]
 			description: [
-				"Deals delayed, percent-based damage based on target's current health percent."
+				"Deals delayed, percent-based damage based on target's current health."
 				""
-				"I.e. deals bigger damage to healthy targets with high max health."
+				"I.e. deals more damage to healthy targets with high max health."
 			]
 			id: "741CFE6852EB8686"
 			optional: true
@@ -5091,6 +5091,56 @@
 			}]
 			x: 5.0d
 			y: 2.0d
+		}
+		{
+			id: "55351B1D50BC0031"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "639C9585CA5591BA"
+				item: "minecraft:fire_charge"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "4090C1F6ED884CF1"
+				item: {
+					Count: 1b
+					id: "twisted_horrors:calamitous_charge"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: 2.0d
+		}
+		{
+			description: ["No special effects. Just Netherite Sword but faster."]
+			id: "604A3F2CEF11A46F"
+			optional: true
+			rewards: [{
+				id: "6006E775FCD880B9"
+				item: "twisted_horrors:twisted_bones"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "4462E48E87130930"
+				item: {
+					Count: 1b
+					id: "twisted_horrors:twisted_dagger"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: 3.5d
 		}
 	]
 	title: "Equipment"

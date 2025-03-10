@@ -807,6 +807,27 @@
 			x: 0.0d
 			y: 0.0d
 		}
+		{
+			id: "545CA00F6DD66037"
+			optional: true
+			rewards: [{
+				count: 64
+				id: "5BAF7D8AED8EDFEC"
+				item: "luminousworld:creepberries"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				entity: "enemyexpansion:intruder"
+				icon: "minecraft:creeper_head"
+				id: "625D88536CF8D95F"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
 	]
 	title: "Creepies \\& Cryptids"
 }

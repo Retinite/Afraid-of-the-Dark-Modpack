@@ -11,3 +11,4 @@ GasBuilder.builder().color(0x14574C).build("end_essence");
 GasBuilder.builder().color(0xFFFFC0).build("light_essence");
 SlurryBuilder.dirty().color(0x332139).build("dirty_enderium");
 SlurryBuilder.clean().color(0x67436D).build("clean_enderium");
+GasBuilder.builder().color(0xFFFFFF).build("bleach");

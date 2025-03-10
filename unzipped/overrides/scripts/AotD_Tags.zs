@@ -7,14 +7,14 @@
 import crafttweaker.api.tag.MCTag;
 
 // AotD-specific tags ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-<tag:items: aotdextras:any_rotten>.add([<item: minecraft:rotten_flesh>, <item: born_in_chaos_v1:rotten_fish>, <item: rottencreatures:magma_rotten_flesh>, <item: rottencreatures:frozen_rotten_flesh>, <item: born_in_chaos_v1:monster_flesh>, <item: minecraft:poisonous_potato>, <item: minecraft:spider_eye>]);
+<tag:items: aotdextras:any_rotten>.add([<item: minecraft:rotten_flesh>, <item: born_in_chaos_v1:rotten_fish>, <item: rottencreatures:magma_rotten_flesh>, <item: rottencreatures:frozen_rotten_flesh>, <item: born_in_chaos_v1:monster_flesh>, <item: minecraft:poisonous_potato>, <item: minecraft:spider_eye>, <item: luminousworld:bleach>]);
 <tag:items: aotdextras:rotten>.add([<item: born_in_chaos_v1:rotten_fish>, <item: rottencreatures:magma_rotten_flesh>, <item: rottencreatures:frozen_rotten_flesh>, <item: born_in_chaos_v1:monster_flesh>, <item: minecraft:poisonous_potato>, <item: minecraft:spider_eye>]);
-<tag:items: aotdextras:raw_meat>.add([<item: minecraft:porkchop>, <item: minecraft:beef>, <item: minecraft:chicken>, <item: minecraft:rabbit>, <item: minecraft:mutton>, <item: born_in_chaos_v1:corpse_maggot>]);
-<tag:items: aotdextras:raw_fish>.add([<item: minecraft:cod>, <item: minecraft:salmon>, <item: minecraft:tropical_fish>, <item: minecraft:pufferfish>, <item: upgrade_aquatic:pike>, <item: upgrade_aquatic:lionfish>, <item: upgrade_aquatic:perch>, <item: aquamirae:spinefish>]);
+<tag:items: aotdextras:raw_meat>.add([<item: minecraft:porkchop>, <item: minecraft:beef>, <item: minecraft:chicken>, <item: minecraft:rabbit>, <item: minecraft:mutton>, <item: born_in_chaos_v1:corpse_maggot>, <item: luminousworld:raw_squirrel>, <item: luminousworld:raw_venison>]);
+<tag:items: aotdextras:raw_fish>.add([<item: minecraft:cod>, <item: minecraft:salmon>, <item: minecraft:tropical_fish>, <item: minecraft:pufferfish>, <item: upgrade_aquatic:pike>, <item: upgrade_aquatic:lionfish>, <item: upgrade_aquatic:perch>, <item: aquamirae:spinefish>, <item: luminousworld:sunny>, <item: luminousworld:trout>, <item: luminousworld:bass_item>]);
 <tag:items: aotdextras:sticky>.add([<item: minecraft:slime_ball>, <item: minecraft:cobweb>]);
-<tag:items: aotdextras:rare_drops>.add([<item: born_in_chaos_v1:seedof_chaos>, <item: undead_unleashed:necrotic_dust>, <item: minecraft:ghast_tear>, <item: apotheosis:epic_material>, <item:undead_unleashed:lost_soul>]);
+<tag:items: aotdextras:rare_drops>.add([<item: born_in_chaos_v1:seedof_chaos>, <item: undead_unleashed:necrotic_dust>, <item: minecraft:ghast_tear>, <item: apotheosis:epic_material>, <item: undead_unleashed:lost_soul>, <item: twisted_horrors:twisted_bones>, <item: twisted_horrors:calamitous_powder>]);
 <tag:items: aotdextras:evil_ingots>.add([<item: born_in_chaos_v1:dark_metal_ingot>, <item: undead_unleashed:grave_metal_ingot>, <item: graveyard:dark_iron_ingot>]);
-<tag:items: aotdextras:epic_drops>.add([<item: majruszsdifficulty:cerberus_fang>, <item: deep_dark_regrowth:plasmatic_sculk>, <item: deep_dark_regrowth:etherium_gem>, <item: deep_dark_regrowth:aware_lens>, <item: apotheosis:mythic_material>, <item: unusualend:shiny_crystal>]);
+<tag:items: aotdextras:epic_drops>.add([<item: majruszsdifficulty:cerberus_fang>, <item: deep_dark_regrowth:plasmatic_sculk>, <item: deep_dark_regrowth:etherium_gem>, <item: deep_dark_regrowth:aware_lens>, <item: apotheosis:mythic_material>, <item: unusualend:shiny_crystal>, <item: luminousworld:enchanted_root>, <item: luminousworld:shellmet_helmet>, <item: luminousworld:headwraps_helmet>, <item: luminousworld:frigid_horn>, <item: luminousworld:vipertooth>, <item: luminousworld:pheonix_feather>, <item: luminousworld:gator_tooth>, <item: luminousworld:bone_rattle>]);
 <tag:items: aotdextras:boss_drops>.add([<item: minecraft:nether_star>, <item: deep_dark_regrowth:soul_of_the_depths>, <item: aquamirae:abyssal_amethyst>, <item: whisperwoods:hirschgeist_skull>, <item: apotheosis:warden_tendril>]);
 // for iron paxel crafting alternatives
 <tag:items:aotdextras:iron_level_pickaxe>.add([<item:minecraft:iron_pickaxe>, <item:enemyexpansion:troll_molar>]);
@@ -58,3 +58,10 @@ import crafttweaker.api.tag.MCTag;
 <tag:items: born_in_chaos_v1:scorched_log>.add([<item: born_in_chaos_v1:scorched_log>, <item: born_in_chaos_v1:scorched_wood>, <item: born_in_chaos_v1:stripped_scorched_log>, <item: born_in_chaos_v1:stripped_scorched_wood>]);
 <tag:items: born_in_chaos_v1:smoldering_scorched_log>.add([<item: born_in_chaos_v1:smoldering_scorched_log>, <item: born_in_chaos_v1:smoldering_scorched_wood>]);
 <tag:items: gardens_of_the_dead:soulblight_stem>.add([<item: gardens_of_the_dead:soulblight_stem>, <item: gardens_of_the_dead:soulblight_hyphae>, <item: gardens_of_the_dead:stripped_soulblight_stem>, <item: gardens_of_the_dead:stripped_soulblight_hyphae>]);
+<tag:items: luminousworld:white_oak_log>.add([<item: luminousworld:whiteoaklog>, <item: luminousworld:white_oak_wood>]);
+<tag:items: luminousworld:palm_log>.add([<item: luminousworld:palm_log>, <item: luminousworld:palm_wood>]);
+<tag:items: luminousworld:auburn_log>.add([<item: luminousworld:auburnlog>, <item: luminousworld:auburn_wood>]);
+<tag:items: luminousworld:baobab_log>.add([<item: luminousworld:bao_bob_log>, <item: luminousworld:bao_bob_wood>]);
+<tag:items: luminousworld:soft_birch_log>.add([<item: luminousworld:soft_birch_log>, <item: luminousworld:tall_birch_wood>]);
+// Luminous wood integrations
+<tag:items: forge:fences/wooden>.add([<item: luminousworld:white_oak_fence>, <item: luminousworld:palmfence>, <item: luminousworld:autumnfence>, <item: luminousworld:baobabfence>]);

@@ -290,3 +290,11 @@ craftingTable.addShaped("born_in_chaos_v1.solsoil_k", <item:minecraft:soul_soil>
 	[[<item:born_in_chaos_v1:ethereal_spirit>, <item:born_in_chaos_v1:ethereal_spirit>, <item:born_in_chaos_v1:ethereal_spirit>],
 	 [<item:born_in_chaos_v1:ethereal_spirit>, <tag:items:minecraft:sand>,              <item:born_in_chaos_v1:ethereal_spirit>],
 	 [<item:born_in_chaos_v1:ethereal_spirit>, <item:born_in_chaos_v1:ethereal_spirit>, <item:born_in_chaos_v1:ethereal_spirit>]]);
+
+// change bleach recipe to use proper tag name, add bleach recipes
+craftingTable.removeByName("luminousworld:bleachcarpet");
+craftingTable.addShapeless("luminousworld.bleachcarpet", <item: minecraft:white_carpet>, [<tag:items: minecraft:wool_carpets>, <item: luminousworld:bleach>]);
+craftingTable.addShapeless("luminousworld.bleached_bed", <item: minecraft:white_bed>, [<tag:items: minecraft:beds>, <item: luminousworld:bleach>]);
+craftingTable.addShapeless("luminousworld.bleached_bedroll", <item: upgrade_aquatic:bedroll>, [<tag:items: upgrade_aquatic:bedrolls>, <item: luminousworld:bleach>]);
+craftingTable.addShapeless("luminousworld.bleached_candle", <item: minecraft:candle>, [<tag:items: mekanism:colorable/candle>, <item: luminousworld:bleach>]);
+craftingTable.addShapeless("luminousworld.bleached_sharestone", <item: waystones:sharestone>, [<tag:items: waystones:dyed_sharestone>, <item: luminousworld:bleach>]);

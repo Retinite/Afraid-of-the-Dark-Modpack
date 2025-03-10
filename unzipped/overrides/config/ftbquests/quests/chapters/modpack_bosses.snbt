@@ -403,6 +403,258 @@
 			x: 0.5d
 			y: 2.5d
 		}
+		{
+			dependencies: ["1706255F31D38766"]
+			id: "7ECF1E273C63D752"
+			rewards: [{
+				id: "52443407E844C66F"
+				item: "bhc:yellow_heart_canister"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.75d
+			tasks: [{
+				entity: "luminousworld:treant"
+				icon: "luminousworld:tree_ant_trophy"
+				id: "2B4E64B0DCD7AA46"
+				type: "kill"
+				value: 1L
+			}]
+			x: -0.75d
+			y: 4.125d
+		}
+		{
+			dependencies: ["1706255F31D38766"]
+			id: "3AE36924D38EA657"
+			rewards: [{
+				id: "39A3B58BBFEC19DB"
+				item: "bhc:yellow_heart_canister"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.75d
+			tasks: [{
+				entity: "luminousworld:king_crab"
+				icon: "luminousworld:king_crab_plaque"
+				id: "72E98857F21F3903"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: 4.125d
+		}
+		{
+			dependencies: ["1706255F31D38766"]
+			id: "175CC73DAF75F601"
+			rewards: [{
+				id: "2FB2C2B39D08B140"
+				item: "bhc:yellow_heart_canister"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.75d
+			tasks: [{
+				entity: "luminousworld:mummy"
+				icon: "luminousworld:mummy_trophy"
+				id: "5243143A111DA730"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.75d
+			y: 4.125d
+		}
+		{
+			dependencies: ["1706255F31D38766"]
+			id: "45425731C8497FDD"
+			rewards: [{
+				id: "0DA3873AB050AE6D"
+				item: "bhc:yellow_heart_canister"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.75d
+			tasks: [{
+				entity: "luminousworld:frost_golem"
+				icon: "luminousworld:frost_golem_plaque"
+				id: "087E57C2F279A685"
+				type: "kill"
+				value: 1L
+			}]
+			x: -0.75d
+			y: 4.875d
+		}
+		{
+			dependencies: ["1706255F31D38766"]
+			id: "1BFB0754FA3E9A7F"
+			rewards: [{
+				id: "363C9A2792051E24"
+				item: "bhc:green_heart_canister"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.75d
+			tasks: [{
+				entity: "luminousworld:sea_viper"
+				icon: "luminousworld:viper_plaque"
+				id: "2AAD23CD7639E72F"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.75d
+			y: 4.875d
+		}
+		{
+			dependencies: ["1706255F31D38766"]
+			id: "407606FAF11D7DD9"
+			rewards: [{
+				id: "6256B8D5CAFBDEC4"
+				item: "bhc:yellow_heart_canister"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.75d
+			tasks: [{
+				entity: "luminousworld:toxic_gator"
+				icon: "luminousworld:croc_trophy"
+				id: "2DA01EA02A3A92DC"
+				type: "kill"
+				value: 1L
+			}]
+			x: -0.75d
+			y: 5.625d
+		}
+		{
+			dependencies: ["1706255F31D38766"]
+			id: "15B47AEAE3A318EF"
+			rewards: [{
+				id: "45D67E82C0917798"
+				item: "bhc:yellow_heart_canister"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.75d
+			tasks: [{
+				entity: "luminousworld:baby_pheonix"
+				icon: "luminousworld:pheonix_trophy"
+				id: "224FE425451A848E"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Kill: 1x (Baby) Phoenix"
+			x: 0.0d
+			y: 5.625d
+		}
+		{
+			dependencies: ["1706255F31D38766"]
+			description: ["The spawned minions (Phantom Stalkers) have incorrect textures in the current version."]
+			id: "1340D2F41D6BB37C"
+			rewards: [{
+				id: "4820F6296FC15F9C"
+				item: "bhc:yellow_heart_canister"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.75d
+			tasks: [{
+				entity: "luminousworld:bone_stalker"
+				icon: "luminousworld:bone_stalker_trophy"
+				id: "6CCB37E376D98CBC"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.75d
+			y: 5.625d
+		}
+		{
+			description: [
+				"This page contains a total of:"
+				"15x &eYellow&r Heart Canister rewards"
+				"8x &aGreen&r Heart Canister rewards"
+				"7x &9Blue&r Heart Canister rewards"
+				""
+				"Also be aware that some bosses drop certain hearts by default, such as the &0Wither&r dropping &eYellow&r Hearts or &aGreen&r Hearts, and the &eEnder Dragon&r dropping &9Blue&r Hearts."
+				""
+				"Even if you don't lose any heart canisters from dying, you will need 20 of each to max out both your health and the damage of the &oVitality Blade&r."
+			]
+			id: "1706255F31D38766"
+			rewards: [
+				{
+					id: "47E4E50A5E076B30"
+					item: {
+						Count: 1b
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "apotheosis:apoth_chronicle"
+						}
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					count: 16
+					id: "1A9B2A0A23DF8CD7"
+					item: "luminousworld:blackberry"
+					team_reward: false
+					type: "item"
+				}
+				{
+					count: 16
+					id: "0449DEA7D7AD5FDD"
+					item: "luminousworld:blueberry"
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			size: 0.75d
+			subtitle: "About This Page"
+			tasks: [{
+				id: "646209FA384F063B"
+				item: "luminousworld:beastiary"
+				type: "item"
+			}]
+			title: "A Note on Bosses"
+			x: 0.0d
+			y: 4.875d
+		}
+		{
+			dependencies: ["57094FFF7B93A19C"]
+			description: ["VERY glitchy boss. Not required for 100% completion."]
+			id: "71603BF84A4DD212"
+			optional: true
+			shape: "diamond"
+			subtitle: "CAUTION"
+			tasks: [{
+				entity: "twisted_horrors:cactathural"
+				icon: "twisted_horrors:cactathural_trophy"
+				id: "531959582F974615"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			id: "57094FFF7B93A19C"
+			optional: true
+			shape: "diamond"
+			subtitle: "USE AT YOUR OWN RISK"
+			tasks: [{
+				id: "556000A95256E80F"
+				item: "twisted_horrors:prickly_heart"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.5d
+		}
 	]
 	title: "Bosses"
 }
